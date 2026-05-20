@@ -217,6 +217,7 @@ export default async function EngineDetailPage({ params }: Props) {
                   <SpecRow label="Dimensions (L×W×H)" value={engine.length_mm ? `${engine.length_mm} × ${engine.width_mm} × ${engine.height_mm} mm` : undefined} />
                   <SpecRow label="Emissions Standard" value={engine.emissions_standard} />
                   <SpecRow label="Certifications" value={engine.certifications?.join(', ')} />
+                  <SpecRow label="Country of Origin" value={engine.origin} />
                   <SpecRow label="Year Introduced" value={engine.year_introduced} />
                   <SpecRow label="Year Discontinued" value={engine.year_discontinued} />
                   <SpecRow label="Compatible Generators" value={engine.compatible_generator_brands?.join(', ')} />

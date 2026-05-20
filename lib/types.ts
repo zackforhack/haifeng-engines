@@ -48,6 +48,7 @@ export interface Engine {
   certifications?: string[]
   compatible_generator_brands?: string[]
 
+  origin?: string
   description?: string
   pdfs?: EnginePDF[]
 

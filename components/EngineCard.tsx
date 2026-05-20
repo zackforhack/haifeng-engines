@@ -53,6 +53,9 @@ export function EngineCard({ engine }: { engine: Engine }) {
         {engine.emissions_standard && (
           <span className="text-green-700 font-medium">{engine.emissions_standard}</span>
         )}
+        {engine.origin && (
+          <span className="text-gray-400">Made in {engine.origin}</span>
+        )}
       </div>
 
       {engine.year_discontinued && (
