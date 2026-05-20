@@ -33,23 +33,17 @@ export function EngineCard({ engine }: { engine: Engine }) {
         <StatusBadge status={engine.status} />
       </div>
 
-      {/* Power ratings */}
-      {standby50 && (
-        <div className="mb-2">
-          <PowerPill kwm={standby50} kwe={engine.standby_power_kwe_50hz} kva={engine.standby_power_kva_50hz} rpm={1500} />
+      {/* Power ratings — show both frequencies if available */}
+      {(standby50 || standby60) ? (
+        <div className="mb-2 space-y-1">
+          {standby50 && <PowerPill kwm={standby50} kwe={engine.standby_power_kwe_50hz} kva={engine.standby_power_kva_50hz} rpm={1500} />}
+          {standby60 && <PowerPill kwm={standby60} kwe={engine.standby_power_kwe_60hz} kva={engine.standby_power_kva_60hz} rpm={1800} />}
         </div>
-      )}
-      {!standby50 && standby60 && (
-        <div className="mb-2">
-          <PowerPill kwm={standby60} kwe={engine.standby_power_kwe_60hz} kva={engine.standby_power_kva_60hz} rpm={1800} />
-        </div>
-      )}
-      {/* Fallback for legacy power_kw only engines */}
-      {!standby50 && !standby60 && engine.power_kw && (
+      ) : engine.power_kw ? (
         <div className="mb-2">
           <span className="text-sm font-bold text-gray-900">{engine.power_kw}<span className="text-xs font-normal text-gray-500 ml-0.5">kW</span></span>
         </div>
-      )}
+      ) : null}
 
       {/* Engine specs row */}
       <div className="flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-gray-500 mt-1">
