@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Engine } from '@/lib/types'
 import { StatusBadge } from './StatusBadge'
 
-function PowerPill({ kwm, kwe, kva, rpm }: { kwm: number; kwe?: number | null; kva?: number | null; rpm: 1500 | 1800 }) {
+function PowerPill({ kwm, kwe, kva, rpm }: { kwm: number; kwe?: number | null; kva?: number | null; rpm: number }) {
   return (
     <div className="flex items-baseline gap-1.5 flex-wrap">
       <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide mr-0.5">Standby</span>
@@ -15,9 +15,10 @@ function PowerPill({ kwm, kwe, kva, rpm }: { kwm: number; kwe?: number | null; k
 }
 
 export function EngineCard({ engine }: { engine: Engine }) {
-  // Prefer 50Hz data, fall back to 60Hz
   const standby50 = engine.standby_power_kw_50hz
   const standby60 = engine.standby_power_kw_60hz
+  const rpm50 = engine.rpm_rated ?? 1500
+  const rpm60 = Math.round(rpm50 * 6 / 5)
 
   return (
     <Link
@@ -36,8 +37,8 @@ export function EngineCard({ engine }: { engine: Engine }) {
       {/* Power ratings — show both frequencies if available */}
       {(standby50 || standby60) ? (
         <div className="mb-2 space-y-1">
-          {standby50 && <PowerPill kwm={standby50} kwe={engine.standby_power_kwe_50hz} kva={engine.standby_power_kva_50hz} rpm={1500} />}
-          {standby60 && <PowerPill kwm={standby60} kwe={engine.standby_power_kwe_60hz} kva={engine.standby_power_kva_60hz} rpm={1800} />}
+          {standby50 && <PowerPill kwm={standby50} kwe={engine.standby_power_kwe_50hz} kva={engine.standby_power_kva_50hz} rpm={rpm50} />}
+          {standby60 && <PowerPill kwm={standby60} kwe={engine.standby_power_kwe_60hz} kva={engine.standby_power_kva_60hz} rpm={rpm60} />}
         </div>
       ) : engine.power_kw ? (
         <div className="mb-2">

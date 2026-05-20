@@ -47,6 +47,9 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
   const has60hz = engine.prime_power_kw_60hz || engine.standby_power_kw_60hz
   if (!has50hz && !has60hz) return null
 
+  const rpm50 = engine.rpm_rated ?? 1500
+  const rpm60 = Math.round(rpm50 * 6 / 5)
+
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-6">
       <h2 className="text-lg font-semibold text-gray-900 mb-4">Power Ratings</h2>
@@ -59,7 +62,7 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
           <div>
             <h3 className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
               <span className="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs font-bold">50 Hz</span>
-              1500 RPM
+              {rpm50} RPM
             </h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
@@ -98,7 +101,7 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
           <div>
             <h3 className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
               <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">60 Hz</span>
-              1800 RPM
+              {rpm60} RPM
             </h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
