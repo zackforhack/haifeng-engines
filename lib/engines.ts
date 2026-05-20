@@ -1,5 +1,5 @@
 import { supabase } from './supabase'
-import type { Engine, EnginePDF } from './types'
+import type { Engine } from './types'
 
 export async function getAllEngines(): Promise<Engine[]> {
   const { data, error } = await supabase
