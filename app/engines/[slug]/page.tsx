@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { getAllEngines, getEngineBySlug } from '@/lib/engines'
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
+import type { Engine } from '@/lib/types'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -13,9 +14,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const engine = await getEngineBySlug(slug)
   if (!engine) return {}
 
+  const standby = engine.standby_power_kw_50hz ?? engine.power_kw
   const title = `${engine.brand} ${engine.model} Specs`
   const description = engine.description
-    ?? `Full specifications for the ${engine.brand} ${engine.model} diesel engine. ${engine.power_kw ? `${engine.power_kw} kW` : ''} ${engine.cylinders ? `${engine.cylinders}-cylinder` : ''} diesel engine.`
+    ?? `Full specifications for the ${engine.brand} ${engine.model} diesel engine. ${standby ? `${standby} kW standby` : ''} ${engine.cylinders ? `${engine.cylinders}-cylinder` : ''} diesel engine for generator sets.`
 
   return {
     title,
@@ -40,10 +42,107 @@ function SpecRow({ label, value }: { label: string; value?: string | number | nu
   )
 }
 
+function PowerRatingsTable({ engine }: { engine: Engine }) {
+  const has50hz = engine.prime_power_kw_50hz || engine.standby_power_kw_50hz
+  const has60hz = engine.prime_power_kw_60hz || engine.standby_power_kw_60hz
+  if (!has50hz && !has60hz) return null
+
+  return (
+    <div className="bg-white rounded-xl border border-gray-200 p-6">
+      <h2 className="text-lg font-semibold text-gray-900 mb-4">Power Ratings</h2>
+      <p className="text-xs text-gray-400 mb-4">
+        kWm = mechanical power · kWe = electrical power (kWm × gen. eff.) · kVA = kWe ÷ 0.8 power factor
+      </p>
+
+      <div className="space-y-6">
+        {has50hz && (
+          <div>
+            <h3 className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+              <span className="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs font-bold">50 Hz</span>
+              1500 RPM
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="text-left py-2 px-3 text-xs text-gray-500 font-semibold w-36"></th>
+                    <th className="text-right py-2 px-3 text-xs text-gray-500 font-semibold">kWm</th>
+                    <th className="text-right py-2 px-3 text-xs text-gray-500 font-semibold">kWe</th>
+                    <th className="text-right py-2 px-3 text-xs text-gray-500 font-semibold">kVA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {engine.prime_power_kw_50hz && (
+                    <tr className="border-t border-gray-100">
+                      <td className="py-2 px-3 text-gray-600 font-medium">Prime Power</td>
+                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.prime_power_kw_50hz}</td>
+                      <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kwe_50hz ?? '—'}</td>
+                      <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kva_50hz ?? '—'}</td>
+                    </tr>
+                  )}
+                  {engine.standby_power_kw_50hz && (
+                    <tr className="border-t border-gray-100">
+                      <td className="py-2 px-3 text-gray-600 font-medium">Standby Power</td>
+                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.standby_power_kw_50hz}</td>
+                      <td className="py-2 px-3 text-right text-gray-700">{engine.standby_power_kwe_50hz ?? '—'}</td>
+                      <td className="py-2 px-3 text-right text-gray-700">{engine.standby_power_kva_50hz ?? '—'}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
+        {has60hz && (
+          <div>
+            <h3 className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
+              <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">60 Hz</span>
+              1800 RPM
+            </h3>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="text-left py-2 px-3 text-xs text-gray-500 font-semibold w-36"></th>
+                    <th className="text-right py-2 px-3 text-xs text-gray-500 font-semibold">kWm</th>
+                    <th className="text-right py-2 px-3 text-xs text-gray-500 font-semibold">kWe</th>
+                    <th className="text-right py-2 px-3 text-xs text-gray-500 font-semibold">kVA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {engine.prime_power_kw_60hz && (
+                    <tr className="border-t border-gray-100">
+                      <td className="py-2 px-3 text-gray-600 font-medium">Prime Power</td>
+                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.prime_power_kw_60hz}</td>
+                      <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kwe_60hz ?? '—'}</td>
+                      <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kva_60hz ?? '—'}</td>
+                    </tr>
+                  )}
+                  {engine.standby_power_kw_60hz && (
+                    <tr className="border-t border-gray-100">
+                      <td className="py-2 px-3 text-gray-600 font-medium">Standby Power</td>
+                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.standby_power_kw_60hz}</td>
+                      <td className="py-2 px-3 text-right text-gray-700">{engine.standby_power_kwe_60hz ?? '—'}</td>
+                      <td className="py-2 px-3 text-right text-gray-700">{engine.standby_power_kva_60hz ?? '—'}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
 export default async function EngineDetailPage({ params }: Props) {
   const { slug } = await params
   const engine = await getEngineBySlug(slug)
   if (!engine) notFound()
+
+  const standby = engine.standby_power_kw_50hz ?? engine.standby_power_kw_60hz ?? engine.power_kw
 
   const structuredData = {
     '@context': 'https://schema.org',
@@ -51,8 +150,8 @@ export default async function EngineDetailPage({ params }: Props) {
     name: `${engine.brand} ${engine.model}`,
     brand: { '@type': 'Brand', name: engine.brand },
     description: engine.description ?? `${engine.brand} ${engine.model} diesel engine specifications`,
-    ...(engine.power_kw && {
-      additionalProperty: [{ '@type': 'PropertyValue', name: 'Power Output', value: `${engine.power_kw} kW` }],
+    ...(standby && {
+      additionalProperty: [{ '@type': 'PropertyValue', name: 'Standby Power Output', value: `${standby} kW` }],
     }),
   }
 
@@ -91,37 +190,39 @@ export default async function EngineDetailPage({ params }: Props) {
             </div>
           )}
 
-          {engine.description && (
-            <p className="text-gray-600">{engine.description}</p>
-          )}
+          {engine.description && <p className="text-gray-600">{engine.description}</p>}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Specs */}
-          <div className="lg:col-span-2 bg-white rounded-xl border border-gray-200 p-6">
-            <h2 className="text-lg font-semibold text-gray-900 mb-4">Technical Specifications</h2>
-            <table className="w-full">
-              <tbody>
-                <SpecRow label="Brand" value={engine.brand} />
-                <SpecRow label="Model" value={engine.model} />
-                <SpecRow label="Series" value={engine.series} />
-                <SpecRow label="Configuration" value={engine.configuration} />
-                <SpecRow label="Cylinders" value={engine.cylinders} />
-                <SpecRow label="Displacement" value={engine.displacement_l ? `${engine.displacement_l} L` : undefined} />
-                <SpecRow label="Power Output" value={engine.power_kw ? `${engine.power_kw} kW / ${engine.power_hp ?? Math.round(engine.power_kw * 1.341)} HP` : undefined} />
-                <SpecRow label="Rated RPM" value={engine.rpm_rated ? `${engine.rpm_rated} rpm` : undefined} />
-                <SpecRow label="Max RPM" value={engine.rpm_max ? `${engine.rpm_max} rpm` : undefined} />
-                <SpecRow label="Compression Ratio" value={engine.compression_ratio} />
-                <SpecRow label="Fuel Consumption" value={engine.fuel_consumption_l_per_hr ? `${engine.fuel_consumption_l_per_hr} L/hr` : undefined} />
-                <SpecRow label="Dry Weight" value={engine.weight_kg ? `${engine.weight_kg} kg` : undefined} />
-                <SpecRow label="Dimensions (L×W×H)" value={engine.length_mm ? `${engine.length_mm} × ${engine.width_mm} × ${engine.height_mm} mm` : undefined} />
-                <SpecRow label="Emissions Standard" value={engine.emissions_standard} />
-                <SpecRow label="Certifications" value={engine.certifications?.join(', ')} />
-                <SpecRow label="Year Introduced" value={engine.year_introduced} />
-                <SpecRow label="Year Discontinued" value={engine.year_discontinued} />
-                <SpecRow label="Compatible Generators" value={engine.compatible_generator_brands?.join(', ')} />
-              </tbody>
-            </table>
+          {/* Left column */}
+          <div className="lg:col-span-2 space-y-6">
+
+            {/* Power Ratings Table */}
+            <PowerRatingsTable engine={engine} />
+
+            {/* General Specs */}
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">Technical Specifications</h2>
+              <table className="w-full">
+                <tbody>
+                  <SpecRow label="Brand" value={engine.brand} />
+                  <SpecRow label="Model" value={engine.model} />
+                  <SpecRow label="Series" value={engine.series} />
+                  <SpecRow label="Configuration" value={engine.configuration} />
+                  <SpecRow label="Cylinders" value={engine.cylinders} />
+                  <SpecRow label="Displacement" value={engine.displacement_l ? `${engine.displacement_l} L` : undefined} />
+                  <SpecRow label="Compression Ratio" value={engine.compression_ratio} />
+                  <SpecRow label="Fuel Consumption" value={engine.fuel_consumption_l_per_hr ? `${engine.fuel_consumption_l_per_hr} L/hr` : undefined} />
+                  <SpecRow label="Dry Weight" value={engine.weight_kg ? `${engine.weight_kg} kg` : undefined} />
+                  <SpecRow label="Dimensions (L×W×H)" value={engine.length_mm ? `${engine.length_mm} × ${engine.width_mm} × ${engine.height_mm} mm` : undefined} />
+                  <SpecRow label="Emissions Standard" value={engine.emissions_standard} />
+                  <SpecRow label="Certifications" value={engine.certifications?.join(', ')} />
+                  <SpecRow label="Year Introduced" value={engine.year_introduced} />
+                  <SpecRow label="Year Discontinued" value={engine.year_discontinued} />
+                  <SpecRow label="Compatible Generators" value={engine.compatible_generator_brands?.join(', ')} />
+                </tbody>
+              </table>
+            </div>
           </div>
 
           {/* Sidebar */}

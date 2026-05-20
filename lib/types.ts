@@ -10,36 +10,45 @@ export interface Engine {
   year_introduced?: number
   year_discontinued?: number
 
-  // Power specs
+  // Legacy single power field (kept for backwards compat)
   power_kw?: number
   power_hp?: number
+
+  // Detailed power ratings — 50Hz / 1500 RPM
+  prime_power_kw_50hz?: number
+  prime_power_kwe_50hz?: number
+  prime_power_kva_50hz?: number
+  standby_power_kw_50hz?: number
+  standby_power_kwe_50hz?: number
+  standby_power_kva_50hz?: number
+
+  // Detailed power ratings — 60Hz / 1800 RPM
+  prime_power_kw_60hz?: number
+  prime_power_kwe_60hz?: number
+  prime_power_kva_60hz?: number
+  standby_power_kw_60hz?: number
+  standby_power_kwe_60hz?: number
+  standby_power_kva_60hz?: number
+
   displacement_l?: number
   cylinders?: number
-  configuration?: string // e.g. "Inline-6", "V8"
+  configuration?: string
 
-  // Performance
   rpm_rated?: number
   rpm_max?: number
   fuel_consumption_l_per_hr?: number
   compression_ratio?: string
 
-  // Physical
   weight_kg?: number
   length_mm?: number
   width_mm?: number
   height_mm?: number
 
-  // Compliance
   emissions_standard?: string
   certifications?: string[]
-
-  // Compatibility
   compatible_generator_brands?: string[]
 
-  // Content
   description?: string
-
-  // Relations
   pdfs?: EnginePDF[]
 
   created_at: string
