@@ -5,12 +5,75 @@ import path from 'path'
 
 export const MAX_UPLOAD_BYTES = 5 * 1024 * 1024 // 5 MB
 
+// Standard Quartz filter: 144 DPI, JPEG 0.70 — good quality, used when file is moderately large
+const STANDARD_QFILTER = `<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Domains</key><dict><key>Applications</key><true/></dict>
+  <key>FilterData</key><dict><key>ColorSettings</key><dict><key>ImageSettings</key><dict>
+    <key>Compression Quality</key><real>0.70</real>
+    <key>ImageCompression</key><string>ImageJPEGCompress</string>
+    <key>ImageScaleSettings</key><dict>
+      <key>ImageResolution</key><integer>144</integer>
+      <key>ImageScaleInterpolate</key><true/>
+      <key>ImageSizeMax</key><integer>2400</integer>
+      <key>ImageSizeMin</key><integer>0</integer>
+    </dict>
+  </dict></dict></dict>
+  <key>FilterType</key><integer>1</integer>
+  <key>Name</key><string>Standard Compress</string>
+</dict></plist>`
+
+// Aggressive Quartz filter: 60 DPI, JPEG 0.30 — fallback for very large files
+const AGGRESSIVE_QFILTER = `<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Domains</key><dict><key>Applications</key><true/></dict>
+  <key>FilterData</key><dict><key>ColorSettings</key><dict><key>ImageSettings</key><dict>
+    <key>Compression Quality</key><real>0.30</real>
+    <key>ImageCompression</key><string>ImageJPEGCompress</string>
+    <key>ImageScaleSettings</key><dict>
+      <key>ImageResolution</key><integer>60</integer>
+      <key>ImageScaleInterpolate</key><true/>
+      <key>ImageSizeMax</key><integer>1200</integer>
+      <key>ImageSizeMin</key><integer>0</integer>
+    </dict>
+  </dict></dict></dict>
+  <key>FilterType</key><integer>1</integer>
+  <key>Name</key><string>Aggressive Compress</string>
+</dict></plist>`
+
+function runJxaCompress(inputPath, outputPath, filterPlist) {
+  const ts = Date.now()
+  const filterFile = path.join(tmpdir(), `qf-${ts}.qfilter`)
+  const scriptFile = path.join(tmpdir(), `jxa-${ts}.js`)
+  fs.writeFileSync(filterFile, filterPlist)
+  fs.writeFileSync(scriptFile,
+    `ObjC.import('Foundation');ObjC.import('CoreGraphics');ObjC.import('Quartz')\n` +
+    `var f=$.QuartzFilter.quartzFilterWithURL($.NSURL.fileURLWithPath(ObjC.wrap(${JSON.stringify(filterFile)})))\n` +
+    `var doc=$.CGPDFDocumentCreateWithURL($.NSURL.fileURLWithPath(ObjC.wrap(${JSON.stringify(inputPath)})))\n` +
+    `var n=$.CGPDFDocumentGetNumberOfPages(doc)\n` +
+    `var ctx=$.CGPDFContextCreateWithURL($.NSURL.fileURLWithPath(ObjC.wrap(${JSON.stringify(outputPath)})),$.CGRectZero,$.NSDictionary.dictionary)\n` +
+    `f.applyToContext(ctx)\n` +
+    `for(var i=1;i<=n;i++){var pg=$.CGPDFDocumentGetPage(doc,i);var r=$.CGPDFPageGetBoxRect(pg,1);$.CGContextBeginPage(ctx,r);$.CGContextDrawPDFPage(ctx,pg);$.CGContextEndPage(ctx)}\n` +
+    `$.CGPDFContextClose(ctx);$.CGContextRelease(ctx)\n`
+  )
+  try {
+    execSync(`osascript -l JavaScript ${scriptFile}`, { timeout: 300_000 })
+  } finally {
+    try { fs.unlinkSync(filterFile) } catch {}
+    try { fs.unlinkSync(scriptFile) } catch {}
+  }
+}
+
 /**
- * Attempt to compress a PDF using Ghostscript (if installed).
- * Returns a Buffer of the compressed PDF, or null if gs is unavailable.
+ * Attempt to compress a PDF using Ghostscript (preferred) or macOS CoreGraphics (fallback).
+ * Returns a Buffer of the compressed PDF, or null if all methods fail.
  */
 export async function compressPdf(filePath) {
   const tmpOut = path.join(tmpdir(), `compressed-${Date.now()}.pdf`)
+
+  // 1. Try Ghostscript first (best quality/ratio if installed)
   try {
     execSync(
       `gs -sDEVICE=pdfwrite -dNOPAUSE -dQUIET -dBATCH -dPDFSETTINGS=/ebook` +
@@ -20,10 +83,26 @@ export async function compressPdf(filePath) {
     const buf = fs.readFileSync(tmpOut)
     fs.unlinkSync(tmpOut)
     return buf
-  } catch {
-    try { fs.unlinkSync(tmpOut) } catch {}
-    return null
-  }
+  } catch {}
+
+  // 2. Try macOS CoreGraphics/Quartz (standard quality first)
+  try {
+    runJxaCompress(filePath, tmpOut, STANDARD_QFILTER)
+    const buf = fs.readFileSync(tmpOut)
+    fs.unlinkSync(tmpOut)
+    if (buf.length < fs.statSync(filePath).size) return buf
+  } catch {}
+
+  // 3. Try aggressive Quartz filter for very large files
+  try {
+    runJxaCompress(filePath, tmpOut, AGGRESSIVE_QFILTER)
+    const buf = fs.readFileSync(tmpOut)
+    fs.unlinkSync(tmpOut)
+    if (buf.length < fs.statSync(filePath).size) return buf
+  } catch {}
+
+  try { fs.unlinkSync(tmpOut) } catch {}
+  return null
 }
 
 /**
