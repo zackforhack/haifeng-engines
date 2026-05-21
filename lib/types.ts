@@ -44,6 +44,10 @@ export interface Engine {
   width_mm?: number
   height_mm?: number
 
+  fuel_type?: string
+  ignition_type?: string
+  cooling_method?: string
+
   emissions_standard?: string
   certifications?: string[]
   compatible_generator_brands?: string[]

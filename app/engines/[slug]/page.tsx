@@ -218,6 +218,9 @@ export default async function EngineDetailPage({ params }: Props) {
                   <SpecRow label="Fuel Consumption" value={engine.fuel_consumption_l_per_hr ? `${engine.fuel_consumption_l_per_hr} L/hr` : undefined} />
                   <SpecRow label="Dry Weight" value={engine.weight_kg ? `${engine.weight_kg} kg` : undefined} />
                   <SpecRow label="Dimensions (L×W×H)" value={engine.length_mm ? `${engine.length_mm} × ${engine.width_mm} × ${engine.height_mm} mm` : undefined} />
+                  <SpecRow label="Fuel Type" value={engine.fuel_type} />
+                  <SpecRow label="Ignition Type" value={engine.ignition_type} />
+                  <SpecRow label="Cooling Method" value={engine.cooling_method} />
                   <SpecRow label="Emissions Standard" value={engine.emissions_standard} />
                   <SpecRow label="Certifications" value={engine.certifications?.join(', ')} />
                   <SpecRow label="Country of Origin" value={engine.origin} />
