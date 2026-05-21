@@ -2,10 +2,10 @@ import Link from 'next/link'
 import type { Engine } from '@/lib/types'
 import { StatusBadge } from './StatusBadge'
 
-function PowerPill({ kwm, kwe, kva, rpm }: { kwm: number; kwe?: number | null; kva?: number | null; rpm: number }) {
+function PowerPill({ label, kwm, kwe, kva, rpm }: { label: string; kwm: number; kwe?: number | null; kva?: number | null; rpm: number }) {
   return (
     <div className="flex items-baseline gap-1.5 flex-wrap">
-      <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide mr-0.5">Standby</span>
+      <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide mr-0.5">{label}</span>
       <span className="text-sm font-bold text-gray-900">{kwm}<span className="text-xs font-normal text-gray-500 ml-0.5">kWm</span></span>
       {kwe && <span className="text-sm font-bold text-gray-900">{kwe}<span className="text-xs font-normal text-gray-500 ml-0.5">kWe</span></span>}
       {kva && <span className="text-sm font-bold text-gray-900">{kva}<span className="text-xs font-normal text-gray-500 ml-0.5">kVA</span></span>}
@@ -15,10 +15,18 @@ function PowerPill({ kwm, kwe, kva, rpm }: { kwm: number; kwe?: number | null; k
 }
 
 export function EngineCard({ engine }: { engine: Engine }) {
-  const standby50 = engine.standby_power_kw_50hz
-  const standby60 = engine.standby_power_kw_60hz
   const rpm50 = engine.rpm_rated ?? 1500
   const rpm60 = Math.round(rpm50 * 6 / 5)
+
+  const show50kw   = engine.standby_power_kw_50hz ?? engine.prime_power_kw_50hz
+  const show50kwe  = engine.standby_power_kw_50hz ? engine.standby_power_kwe_50hz : engine.prime_power_kwe_50hz
+  const show50kva  = engine.standby_power_kw_50hz ? engine.standby_power_kva_50hz : engine.prime_power_kva_50hz
+  const label50    = engine.standby_power_kw_50hz ? 'Standby' : 'Prime'
+
+  const show60kw   = engine.standby_power_kw_60hz ?? engine.prime_power_kw_60hz
+  const show60kwe  = engine.standby_power_kw_60hz ? engine.standby_power_kwe_60hz : engine.prime_power_kwe_60hz
+  const show60kva  = engine.standby_power_kw_60hz ? engine.standby_power_kva_60hz : engine.prime_power_kva_60hz
+  const label60    = engine.standby_power_kw_60hz ? 'Standby' : 'Prime'
 
   return (
     <Link
@@ -34,11 +42,11 @@ export function EngineCard({ engine }: { engine: Engine }) {
         <StatusBadge status={engine.status} />
       </div>
 
-      {/* Power ratings — show both frequencies if available */}
-      {(standby50 || standby60) ? (
+      {/* Power ratings — standby if available, otherwise prime; show both frequencies */}
+      {(show50kw || show60kw) ? (
         <div className="mb-2 space-y-1">
-          {standby50 && <PowerPill kwm={standby50} kwe={engine.standby_power_kwe_50hz} kva={engine.standby_power_kva_50hz} rpm={rpm50} />}
-          {standby60 && <PowerPill kwm={standby60} kwe={engine.standby_power_kwe_60hz} kva={engine.standby_power_kva_60hz} rpm={rpm60} />}
+          {show50kw && <PowerPill label={label50} kwm={show50kw} kwe={show50kwe} kva={show50kva} rpm={rpm50} />}
+          {show60kw && <PowerPill label={label60} kwm={show60kw} kwe={show60kwe} kva={show60kva} rpm={rpm60} />}
         </div>
       ) : engine.power_kw ? (
         <div className="mb-2">
