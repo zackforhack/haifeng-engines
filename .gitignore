@@ -41,3 +41,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local data files (PDFs, raw extracts, generated SQL)
+/data/**/*.pdf
+/data/source-pdfs/
+/data/*-pdfs/
+/data/volvo-raw.txt
+/data/volvo-pdf-inventory.json
+/data/volvo-pdf-results.json
