@@ -16,10 +16,14 @@ const LOCAL_PDF = '/Users/ziqianhuang/Library/Containers/com.tencent.xinWeChat/D
 const LABEL = 'Perkins 5000S Generator Set Power Selector Chart (2026)'
 
 const SLUGS = [
+  // EU Stage II / China NR III — 50Hz
   'perkins-5006ac-e23tag1', 'perkins-5006ac-e23tag2',
   'perkins-5008ac-e30tag1', 'perkins-5008ac-e30tag2', 'perkins-5008ac-e30tag3',
   'perkins-5012ac-e46tag1', 'perkins-5012ac-e46tag2', 'perkins-5012ac-e46tag3', 'perkins-5012ac-e46tag4',
   'perkins-5016ac-e61trg0', 'perkins-5016ac-e61trg1', 'perkins-5016ac-e61trg2', 'perkins-5016ac-e61trg3',
+  // U.S. EPA Tier 2 — 60Hz
+  'perkins-5008c-e30tag4', 'perkins-5008c-e30tag5',
+  'perkins-5012c-e46tag5', 'perkins-5012c-e46tag6',
 ]
 
 const { data: engines, error: engErr } = await supabase
