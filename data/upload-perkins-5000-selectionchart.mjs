@@ -24,6 +24,11 @@ const SLUGS = [
   // U.S. EPA Tier 2 — 60Hz
   'perkins-5008c-e30tag4', 'perkins-5008c-e30tag5',
   'perkins-5012c-e46tag5', 'perkins-5012c-e46tag6',
+  // Fuel Optimised — 50Hz
+  'perkins-5006a-e23tag1', 'perkins-5006a-e23tag2',
+  'perkins-5008a-e30tag1', 'perkins-5008a-e30tag2', 'perkins-5008a-e30tag3',
+  'perkins-5012a-e46tag1', 'perkins-5012a-e46tag2', 'perkins-5012a-e46tag3', 'perkins-5012a-e46tag4',
+  'perkins-5016a-e61trg0', 'perkins-5016a-e61trg1', 'perkins-5016a-e61trg2', 'perkins-5016a-e61trg3',
 ]
 
 const { data: engines, error: engErr } = await supabase
