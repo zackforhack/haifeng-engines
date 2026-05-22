@@ -1,5 +1,5 @@
 // Uploads the Perkins regulated engine selection chart PDF to Supabase
-// and links it to all 47 Perkins regulated engine slugs in engine_pdfs table.
+// and links it to all 45 Perkins regulated engine slugs in engine_pdfs table.
 
 import { createClient } from '@supabase/supabase-js'
 import { uploadPdf } from './pdf-upload-utils.mjs'
@@ -30,9 +30,9 @@ const SLUGS = [
   'perkins-1104d-44tg1', 'perkins-1104d-e44tg1',
   'perkins-1104d-44tg2', 'perkins-1104d-e44tag1', 'perkins-1104d-e44tag2',
   'perkins-1106d-e70tag2', 'perkins-1106d-e70tag3', 'perkins-1106d-e70tag4',
-  'perkins-1106j-e70tag3', 'perkins-1106d-e70tag5',
+  'perkins-1106d-e70tag5',
   // 1200 Series
-  'perkins-1204j-e44tag1', 'perkins-1204j-e44ttag2',
+  'perkins-1204j-e44ttag2',
   'perkins-1206d-e70ttag1', 'perkins-1206d-e70ttag2', 'perkins-1206d-e70ttag3',
   'perkins-1206j-e70ttag3', 'perkins-1206j-e70ttag4',
   // 1700 Series

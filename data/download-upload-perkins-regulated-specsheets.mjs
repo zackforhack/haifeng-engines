@@ -5,7 +5,8 @@
 // Skips engines already covered by download-upload-perkins-specsheets.mjs:
 //   403D-11G, 403D-15G, 404D-22G, 404D-22TG, 1104D-E44TG1/TAG1/TAG2, 2506C-E15TAG2/3/4
 //
-// No spec sheets found for: 904J-E36TAG1/3, 1103D-33G2, 1106J-E70TAG3, 1204J-E44TAG1, 2406J-E13TAG3
+// Manually uploaded via upload-perkins-missing-specsheets.mjs: 904J-E36TAG1/3, 1103D-33G2, 2406J-E13TAG3
+// Note: 1106J-E70TAG3 and 1204J-E44TAG1 may be incorrect DB entries (no such Perkins models exist)
 
 import { createClient } from '@supabase/supabase-js'
 import { uploadPdf } from './pdf-upload-utils.mjs'
