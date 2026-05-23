@@ -83,7 +83,7 @@ INSERT INTO engines (
 
 ('Cummins', 'NTA855-G3', 'NT Series', 'cummins-nta855-g3', 'active',
   6, 'Inline 6', 14,
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
   NULL, 'China',
   NULL, NULL,
   NULL, NULL,
@@ -369,7 +369,7 @@ INSERT INTO engines (
 
 ('Cummins', 'KTA38-G4', 'K38 Series', 'cummins-kta38-g4', 'active',
   12, 'V12', 38,
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
   NULL, 'China',
   NULL, NULL,
   NULL, NULL,
@@ -380,7 +380,7 @@ INSERT INTO engines (
 
 ('Cummins', 'KTA38-G4B', 'K38 Series', 'cummins-kta38-g4b', 'active',
   12, 'V12', 38,
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
   NULL, 'China',
   NULL, NULL,
   NULL, NULL,
@@ -468,7 +468,7 @@ INSERT INTO engines (
 
 ('Cummins', 'KTA50-G9', 'K50 Series', 'cummins-kta50-g9', 'active',
   16, 'V16', 50.3,
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
   NULL, 'China',
   NULL, NULL,
   NULL, NULL,
@@ -688,7 +688,7 @@ INSERT INTO engines (
 
 ('Cummins', 'QSK19-G5', 'QSK19 Series', 'cummins-qsk19-g5', 'active',
   6, 'Inline 6', 19,
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
   'China Nonroad Stage III', 'China',
   NULL, NULL,
   NULL, NULL,
@@ -710,7 +710,7 @@ INSERT INTO engines (
 
 ('Cummins', 'QSK19-G8', 'QSK19 Series', 'cummins-qsk19-g8', 'active',
   6, 'Inline 6', 19,
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
   'China Nonroad Stage III', 'China',
   NULL, NULL,
   NULL, NULL,
@@ -842,7 +842,7 @@ INSERT INTO engines (
 
 ('Cummins', 'QSK38-G4', 'QSK38 Series', 'cummins-qsk38-g4', 'active',
   12, 'V12', 38,
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
   'China Nonroad Stage III', 'China',
   NULL, NULL,
   NULL, NULL,
