@@ -50,28 +50,28 @@ INSERT INTO engines (
 -- 2206C-E13TAG5 (50Hz) / 2206A-E13TAG5 (60Hz catalog name) — same physical engine family
 ('perkins-2206c-e13tag5','Perkins','2206C-E13TAG5','2200 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, 396, 435, 364, 455, 400, 500, 349, 381, 320, 400, 350, 438),
 -- 2206A-E13TAG6 — 60Hz only in catalog
-('perkins-2206a-e13tag6','Perkins','2206A-E13TAG6','2200 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1800, NULL, NULL, NULL, NULL, NULL, NULL, 381, 435, 350, 438, 400, 500),
+('perkins-2206a-e13tag6','Perkins','2206A-E13TAG6','2200 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, NULL, NULL, NULL, NULL, NULL, NULL, 381, 435, 350, 438, 400, 500),
 
 -- ── 2500 Series ──────────────────────────────────────────────────────────────
 -- 2506C-E15TAG1 and TAG2 share the same 60Hz rating in the catalog
 ('perkins-2506c-e15tag1','Perkins','2506C-E15TAG1','2500 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, 396, 435, 364, 455, 400, 500, 435, 490, 400, 500, 450, 563),
 ('perkins-2506c-e15tag2','Perkins','2506C-E15TAG2','2500 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, 435, 478, 400, 500, 440, 550, 435, 490, 400, 500, 450, 563),
 -- 2506C-E15TAG3 and TAG4 — 60Hz only in catalog
-('perkins-2506c-e15tag3','Perkins','2506C-E15TAG3','2500 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1800, NULL, NULL, NULL, NULL, NULL, NULL, 509, 562, 468, 585, 517, 646),
+('perkins-2506c-e15tag3','Perkins','2506C-E15TAG3','2500 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, NULL, NULL, NULL, NULL, NULL, NULL, 509, 562, 468, 585, 517, 646),
 -- TAG4 is standby-only at 60Hz
-('perkins-2506c-e15tag4','Perkins','2506C-E15TAG4','2500 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1800, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 597, NULL, NULL, 550, 687),
+('perkins-2506c-e15tag4','Perkins','2506C-E15TAG4','2500 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 597, NULL, NULL, 550, 687),
 
 -- ── 2800 Series ──────────────────────────────────────────────────────────────
 ('perkins-2806c-e18tag1a','Perkins','2806C-E18TAG1A','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, 514, 565, 473, 591, 520, 650, 543, 598, 500, 625, 550, 687),
 ('perkins-2806a-e18tag2', 'Perkins','2806A-E18TAG2', '2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, 565, 609, 520, 650, 560, 700, 543, 598, 500, 625, 550, 687),
 -- 2806A/C-E18TAG3 — 60Hz only
-('perkins-2806a-e18tag3', 'Perkins','2806A-E18TAG3', '2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1800, NULL, NULL, NULL, NULL, NULL, NULL, 592, 652, 545, 681, 600, 750),
+('perkins-2806a-e18tag3', 'Perkins','2806A-E18TAG3', '2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, NULL, NULL, NULL, NULL, NULL, NULL, 592, 652, 545, 681, 600, 750),
 -- TTAG4 and TTAG5 share the same 60Hz rating in the catalog
 ('perkins-2806a-e18ttag4','Perkins','2806A-E18TTAG4','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, 595, 657, 565, 706, 624, 780, 675, 748, 642, 802, 710, 888),
 ('perkins-2806a-e18ttag5','Perkins','2806A-E18TTAG5','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, 648, 716, 616, 770, 680, 850, 675, 748, 642, 802, 710, 888),
 -- TTAG6 and TTAG7 — 60Hz only
-('perkins-2806a-e18ttag6','Perkins','2806A-E18TTAG6','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1800, NULL, NULL, NULL, NULL, NULL, NULL, 685, 754, 650, 813, 716, 895),
-('perkins-2806a-e18ttag7','Perkins','2806A-E18TTAG7','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1800, NULL, NULL, NULL, NULL, NULL, NULL, 716, 790, 680, 850, 750, 938),
+('perkins-2806a-e18ttag6','Perkins','2806A-E18TTAG6','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, NULL, NULL, NULL, NULL, NULL, NULL, 685, 754, 650, 813, 716, 895),
+('perkins-2806a-e18ttag7','Perkins','2806A-E18TTAG7','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, NULL, NULL, NULL, NULL, NULL, NULL, 716, 790, 680, 850, 750, 938),
 
 -- ── 4006 / 4008 / 4012 Series ────────────────────────────────────────────────
 ('perkins-4006-23tag2a','Perkins','4006-23TAG2A','4000 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500,  628,  691,  597,  746,  656,  820,  638,  702,  600,  750,  660,  825),

@@ -100,16 +100,16 @@ INSERT INTO engines (
   standby_power_kwe_60hz, standby_power_kva_60hz
 ) VALUES
 ('Perkins', '5008C-E30TAG4', '5008 Series', 'perkins-5008c-e30tag4', 'active',
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 'U.S. EPA Tier 2', 8,
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 'U.S. EPA Tier 2', 8,
   853, 947, 810, 1013, 900, 1125),
 ('Perkins', '5008C-E30TAG5', '5008 Series', 'perkins-5008c-e30tag5', 'active',
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 'U.S. EPA Tier 2', 8,
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 'U.S. EPA Tier 2', 8,
   947, 1053, 900, 1125, 1000, 1250),
 ('Perkins', '5012C-E46TAG5', '5012 Series', 'perkins-5012c-e46tag5', 'active',
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 'U.S. EPA Tier 2', 12,
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 'U.S. EPA Tier 2', 12,
   1186, 1316, 1127, 1408, 1250, 1563),
 ('Perkins', '5012C-E46TAG6', '5012 Series', 'perkins-5012c-e46tag6', 'active',
-  1800, 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 'U.S. EPA Tier 2', 12,
+  1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 'U.S. EPA Tier 2', 12,
   1422, 1580, 1351, 1688, 1501, 1876)
 ON CONFLICT (slug) DO UPDATE SET
   prime_power_kw_60hz    = EXCLUDED.prime_power_kw_60hz,

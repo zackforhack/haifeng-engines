@@ -46,13 +46,13 @@ INSERT INTO engines (
   38, 41, 32, 40, 35, 44,   45, 50, 36, 45, 40, 50),
 
 -- ── 400 Series — 60Hz only ───────────────────────────────────────────────────
-('perkins-402d-05g',     'Perkins', '402D-05G',     '400 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 3',
+('perkins-402d-05g',     'Perkins', '402D-05G',     '400 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 3',
    NULL, NULL, NULL, NULL, NULL, NULL,   5,  5,  4,  5,  4,  5),
 
-('perkins-403d-07g',     'Perkins', '403D-07G',     '400 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 3',
+('perkins-403d-07g',     'Perkins', '403D-07G',     '400 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 3',
    NULL, NULL, NULL, NULL, NULL, NULL,   7,  7,  6,  7,  6,  8),
 
-('perkins-403f-11g',     'Perkins', '403F-11G',     '400 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 4 Final',
+('perkins-403f-11g',     'Perkins', '403F-11G',     '400 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 4 Final',
    NULL, NULL, NULL, NULL, NULL, NULL,   9,  9,  7,  9,  8, 10),
 
 -- ── 900 Series ───────────────────────────────────────────────────────────────
@@ -80,10 +80,10 @@ INSERT INTO engines (
 
 -- ── 1100 Series — 60Hz only ──────────────────────────────────────────────────
 -- 1104D-44TG1: standby-only rating at 60Hz
-('perkins-1104d-44tg1',  'Perkins', '1104D-44TG1',  '1100 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 3',
+('perkins-1104d-44tg1',  'Perkins', '1104D-44TG1',  '1100 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 3',
    NULL, NULL, NULL, NULL, NULL, NULL,   NULL, 63, NULL, NULL, 57, 71),
 
-('perkins-1104d-e44tg1', 'Perkins', '1104D-E44TG1', '1100 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 3',
+('perkins-1104d-e44tg1', 'Perkins', '1104D-E44TG1', '1100 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 3',
    NULL, NULL, NULL, NULL, NULL, NULL,   65, 71, 55, 68, 60, 75),
 
 -- ── 1100 Series — 1106D: Stage IIIA (50Hz) / Tier 3 ESE (60Hz); switchable ──
@@ -97,11 +97,11 @@ INSERT INTO engines (
   165, 182, 144, 180, 160, 200,   180, 199, 160, 200, 175, 219),
 
 -- 1106J-E70TAG3: Tier 4 Final; 60Hz only
-('perkins-1106j-e70tag3','Perkins', '1106J-E70TAG3','1100 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 4 Final',
+('perkins-1106j-e70tag3','Perkins', '1106J-E70TAG3','1100 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 4 Final',
    NULL, NULL, NULL, NULL, NULL, NULL,   151, 168, 135, 169, 150, 188),
 
 -- 1106D-E70TAG5: Tier 3 ESE; standby-only at 60Hz
-('perkins-1106d-e70tag5','Perkins', '1106D-E70TAG5','1100 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 3',
+('perkins-1106d-e70tag5','Perkins', '1106D-E70TAG5','1100 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 3',
    NULL, NULL, NULL, NULL, NULL, NULL,   NULL, 224, NULL, NULL, 200, 250),
 
 -- ── 1200 Series — 1204J ──────────────────────────────────────────────────────
@@ -110,7 +110,7 @@ INSERT INTO engines (
   107, 119, 97, 123, 109, 136,   NULL, NULL, NULL, NULL, NULL, NULL),
 
 -- 1204J-E44TTAG2: Tier 4 Final; 60Hz only
-('perkins-1204j-e44ttag2','Perkins','1204J-E44TTAG2','1200 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1800, 'EPA Tier 4 Final',
+('perkins-1204j-e44ttag2','Perkins','1204J-E44TTAG2','1200 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, 'EPA Tier 4 Final',
    NULL, NULL, NULL, NULL, NULL, NULL,   106, 118, 98, 122, 109, 136),
 
 -- ── 1200 Series — 1206D: Stage IIIA; 50Hz only ───────────────────────────────
@@ -141,15 +141,15 @@ INSERT INTO engines (
   265, 292, 249, 312, 275, 343,   291, 321, 267, 334, 296, 369),
 
 -- ── 1700 Series — 1706D: Tier 3 ESE; 60Hz only ───────────────────────────────
-('perkins-1706d-e93tag1','Perkins', '1706D-E93TAG1','1700 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 3',
+('perkins-1706d-e93tag1','Perkins', '1706D-E93TAG1','1700 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 3',
    NULL, NULL, NULL, NULL, NULL, NULL,   254, 281, 237, 296, 261, 327),
 
-('perkins-1706d-e93tag2','Perkins', '1706D-E93TAG2','1700 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 3',
+('perkins-1706d-e93tag2','Perkins', '1706D-E93TAG2','1700 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 3',
    NULL, NULL, NULL, NULL, NULL, NULL,   309, 341, 288, 359, 318, 397),
 
 -- ── 2200 Series ──────────────────────────────────────────────────────────────
 -- 2206D-E13TAG2: Tier 3 ESE; 60Hz only
-('perkins-2206d-e13tag2','Perkins', '2206D-E13TAG2','2200 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 3',
+('perkins-2206d-e13tag2','Perkins', '2206D-E13TAG2','2200 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 3',
    NULL, NULL, NULL, NULL, NULL, NULL,   349, 381, 320, 400, 350, 438),
 
 -- 2206D-E13TAG3: Stage IIIA / Tier 3 ESE; switchable
@@ -167,15 +167,15 @@ INSERT INTO engines (
   435, 478, 400, 500, 440, 550,   NULL, NULL, NULL, NULL, NULL, NULL),
 
 -- 2506D-E15TAG1: Tier 3 ESE; 60Hz only
-('perkins-2506d-e15tag1','Perkins', '2506D-E15TAG1','2500 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 3',
+('perkins-2506d-e15tag1','Perkins', '2506D-E15TAG1','2500 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 3',
    NULL, NULL, NULL, NULL, NULL, NULL,   435, 490, 400, 500, 450, 563),
 
 -- 2506C-E15TAG3/4: Tier 2 ESE; 60Hz only (also in unregulated catalog)
-('perkins-2506c-e15tag3','Perkins', '2506C-E15TAG3','2500 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'Euro Stage II / EPA Tier 2',
+('perkins-2506c-e15tag3','Perkins', '2506C-E15TAG3','2500 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'Euro Stage II / EPA Tier 2',
    NULL, NULL, NULL, NULL, NULL, NULL,   509, 562, 468, 585, 517, 646),
 
 -- TAG4 is standby-only at 60Hz
-('perkins-2506c-e15tag4','Perkins', '2506C-E15TAG4','2500 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'Euro Stage II / EPA Tier 2',
+('perkins-2506c-e15tag4','Perkins', '2506C-E15TAG4','2500 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'Euro Stage II / EPA Tier 2',
    NULL, NULL, NULL, NULL, NULL, NULL,   NULL, 597, NULL, NULL, 550, 687),
 
 -- ── 2800 Series ──────────────────────────────────────────────────────────────
@@ -184,18 +184,18 @@ INSERT INTO engines (
   479, 530, 444, 554, 488, 610,   NULL, NULL, NULL, NULL, NULL, NULL),
 
 -- 2806F-E18TAG1: Tier 4 Final; 60Hz only
-('perkins-2806f-e18tag1','Perkins', '2806F-E18TAG1','2800 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'EPA Tier 4 Final',
+('perkins-2806f-e18tag1','Perkins', '2806F-E18TAG1','2800 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'EPA Tier 4 Final',
    NULL, NULL, NULL, NULL, NULL, NULL,   475, 529, 455, 569, 500, 625),
 
 -- 2806C-E18TAG3: Tier 2 ESE; 60Hz only (switchable)
-('perkins-2806c-e18tag3','Perkins', '2806C-E18TAG3','2800 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1800, 'Euro Stage II / EPA Tier 2',
+('perkins-2806c-e18tag3','Perkins', '2806C-E18TAG3','2800 Series', 'active', 'Diesel', 'Compression Ignition', 'Liquid-Cooled', 1500, 'Euro Stage II / EPA Tier 2',
    NULL, NULL, NULL, NULL, NULL, NULL,   592, 652, 545, 681, 600, 750),
 
 -- 2806C-E18TTAG6/7: Tier 2 ESE; 60Hz only
-('perkins-2806c-e18ttag6','Perkins','2806C-E18TTAG6','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1800, 'Euro Stage II / EPA Tier 2',
+('perkins-2806c-e18ttag6','Perkins','2806C-E18TTAG6','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, 'Euro Stage II / EPA Tier 2',
    NULL, NULL, NULL, NULL, NULL, NULL,   685, 754, 650, 813, 716, 895),
 
-('perkins-2806c-e18ttag7','Perkins','2806C-E18TTAG7','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1800, 'Euro Stage II / EPA Tier 2',
+('perkins-2806c-e18ttag7','Perkins','2806C-E18TTAG7','2800 Series','active','Diesel','Compression Ignition','Liquid-Cooled',1500, 'Euro Stage II / EPA Tier 2',
    NULL, NULL, NULL, NULL, NULL, NULL,   716, 790, 680, 850, 750, 938)
 
 ON CONFLICT (slug) DO UPDATE SET
