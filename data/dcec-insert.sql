@@ -456,7 +456,7 @@ INSERT INTO engines (
   105, 116,
   131, 145),
 
-('Cummins', '6BTAA5.9-G9', 'B5.9 Series', 'cummins-6btaa59-g9', 'active',
+('Cummins', '6BTAA5.9-G2', 'B5.9 Series', 'cummins-6btaa59-g2', 'active',
   6, 'Inline 6', 5.9,
   1500, 'Diesel', 'Compression Ignition', 'Liquid-Cooled',
   NULL, 'China',
