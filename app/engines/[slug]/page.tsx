@@ -44,7 +44,9 @@ function SpecRow({ label, value }: { label: string; value?: string | number | nu
 
 function PowerRatingsTable({ engine }: { engine: Engine }) {
   const has50hz = engine.prime_power_kw_50hz || engine.standby_power_kw_50hz
+    || engine.prime_power_kwe_50hz || engine.standby_power_kwe_50hz
   const has60hz = engine.prime_power_kw_60hz || engine.standby_power_kw_60hz
+    || engine.prime_power_kwe_60hz || engine.standby_power_kwe_60hz
   if (!has50hz && !has60hz) return null
 
   const rpm50 = engine.rpm_rated ?? 1500
@@ -75,18 +77,18 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {engine.prime_power_kw_50hz && (
+                  {(engine.prime_power_kw_50hz || engine.prime_power_kwe_50hz || engine.prime_power_kva_50hz) && (
                     <tr className="border-t border-gray-100">
                       <td className="py-2 px-3 text-gray-600 font-medium">Prime Power</td>
-                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.prime_power_kw_50hz}</td>
+                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.prime_power_kw_50hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kwe_50hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kva_50hz ?? '—'}</td>
                     </tr>
                   )}
-                  {engine.standby_power_kw_50hz && (
+                  {(engine.standby_power_kw_50hz || engine.standby_power_kwe_50hz || engine.standby_power_kva_50hz) && (
                     <tr className="border-t border-gray-100">
                       <td className="py-2 px-3 text-gray-600 font-medium">Standby Power</td>
-                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.standby_power_kw_50hz}</td>
+                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.standby_power_kw_50hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.standby_power_kwe_50hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.standby_power_kva_50hz ?? '—'}</td>
                     </tr>
@@ -114,18 +116,18 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {engine.prime_power_kw_60hz && (
+                  {(engine.prime_power_kw_60hz || engine.prime_power_kwe_60hz || engine.prime_power_kva_60hz) && (
                     <tr className="border-t border-gray-100">
                       <td className="py-2 px-3 text-gray-600 font-medium">Prime Power</td>
-                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.prime_power_kw_60hz}</td>
+                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.prime_power_kw_60hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kwe_60hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kva_60hz ?? '—'}</td>
                     </tr>
                   )}
-                  {engine.standby_power_kw_60hz && (
+                  {(engine.standby_power_kw_60hz || engine.standby_power_kwe_60hz || engine.standby_power_kva_60hz) && (
                     <tr className="border-t border-gray-100">
                       <td className="py-2 px-3 text-gray-600 font-medium">Standby Power</td>
-                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.standby_power_kw_60hz}</td>
+                      <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.standby_power_kw_60hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.standby_power_kwe_60hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.standby_power_kva_60hz ?? '—'}</td>
                     </tr>
