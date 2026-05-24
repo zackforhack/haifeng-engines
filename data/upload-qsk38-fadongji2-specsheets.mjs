@@ -1,0 +1,108 @@
+// Upload QSK38 spec sheets from baifapower fadongji2
+// Covers all 16 models in the fadongji2 directory
+
+import { createClient } from '@supabase/supabase-js'
+import { uploadPdf } from './pdf-upload-utils.mjs'
+import fs from 'fs'
+import path from 'path'
+import os from 'os'
+
+const SUPABASE_URL = 'https://ntrysdovwnbegxtjsqkz.supabase.co'
+const SUPABASE_SERVICE_KEY = process.env.SUPABASE_SERVICE_KEY
+if (!SUPABASE_SERVICE_KEY) { console.error('Missing SUPABASE_SERVICE_KEY'); process.exit(1) }
+
+const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY)
+const BUCKET = 'engine-pdfs'
+const STORAGE_PREFIX = 'cummins/spec-sheets'
+const TMP_DIR = path.join(os.tmpdir(), 'qsk38-fadongji2')
+fs.mkdirSync(TMP_DIR, { recursive: true })
+
+// [model, filename, slug, sourceFilename]
+// sourceFilename is the filename as it appears on baifapower (G5A stays uppercase)
+const ENTRIES = [
+  ['QSK38-G1',  'qsk38-g1.pdf',  'cummins-qsk38-g1',  'QSK38-G1.pdf'],
+  ['QSK38-G2',  'qsk38-g2.pdf',  'cummins-qsk38-g2',  'QSK38-G2.pdf'],
+  ['QSK38-G4',  'qsk38-g4.pdf',  'cummins-qsk38-g4',  'QSK38-G4.pdf'],
+  ['QSK38-G5A', 'qsk38-g5a.pdf', 'cummins-qsk38-g5a', 'QSK38-G5A.pdf'],
+  ['QSK38-G6',  'qsk38-g6.pdf',  'cummins-qsk38-g6',  'QSK38-G6.pdf'],
+  ['QSK38-G7',  'qsk38-g7.pdf',  'cummins-qsk38-g7',  'QSK38-G7.pdf'],
+  ['QSK38-G8',  'qsk38-g8.pdf',  'cummins-qsk38-g8',  'QSK38-G8.pdf'],
+  ['QSK38-G9',  'qsk38-g9.pdf',  'cummins-qsk38-g9',  'QSK38-G9.pdf'],
+  ['QSK38-G10', 'qsk38-g10.pdf', 'cummins-qsk38-g10', 'QSK38-G10.pdf'],
+  ['QSK38-G11', 'qsk38-g11.pdf', 'cummins-qsk38-g11', 'QSK38-G11.pdf'],
+  ['QSK38-G12', 'qsk38-g12.pdf', 'cummins-qsk38-g12', 'QSK38-G12.pdf'],
+  ['QSK38-G13', 'qsk38-g13.pdf', 'cummins-qsk38-g13', 'QSK38-G13.pdf'],
+  ['QSK38-G14', 'qsk38-g14.pdf', 'cummins-qsk38-g14', 'QSK38-G14.pdf'],
+  ['QSK38-G15', 'qsk38-g15.pdf', 'cummins-qsk38-g15', 'QSK38-G15.pdf'],
+  ['QSK38-G19', 'qsk38-g19.pdf', 'cummins-qsk38-g19', 'QSK38-G19.pdf'],
+  ['QSK38-G29', 'qsk38-g29.pdf', 'cummins-qsk38-g29', 'QSK38-G29.pdf'],
+]
+
+const allSlugs = ENTRIES.map(([,,slug]) => slug)
+const { data: engines, error: engErr } = await supabase
+  .from('engines').select('id, slug').in('slug', allSlugs)
+if (engErr) { console.error('Failed to fetch engines:', engErr.message); process.exit(1) }
+const slugToId = Object.fromEntries(engines.map(e => [e.slug, e.id]))
+console.log(`Found ${engines.length} / ${allSlugs.length} engine records\n`)
+
+let ok = 0, failed = 0
+
+for (const [model, filename, slug, srcFilename] of ENTRIES) {
+  const storagePath = `${STORAGE_PREFIX}/${filename}`
+  const localPath   = path.join(TMP_DIR, filename)
+  const sourceUrl   = `https://www.baifapower.com/static/upload/download/fadongji2/${srcFilename}`
+
+  process.stdout.write(`${model} ... `)
+
+  let buf
+  try {
+    const res = await fetch(sourceUrl, {
+      headers: { 'User-Agent': 'Mozilla/5.0' },
+      signal: AbortSignal.timeout(30000),
+    })
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    buf = Buffer.from(await res.arrayBuffer())
+    if (buf.slice(0, 4).toString() !== '%PDF') throw new Error(`Not a PDF (got: ${buf.slice(0,20).toString().trim()})`)
+  } catch (e) {
+    console.log(`Download failed: ${e.message}`)
+    failed++
+    continue
+  }
+
+  fs.writeFileSync(localPath, buf)
+  process.stdout.write(`${Math.round(buf.length / 1024)}KB `)
+
+  const { ok: uploaded } = await uploadPdf(supabase, BUCKET, localPath, storagePath)
+  if (!uploaded) {
+    console.log('Upload failed')
+    failed++
+    fs.unlinkSync(localPath)
+    continue
+  }
+
+  const engineId = slugToId[slug]
+  if (!engineId) {
+    console.warn(`Not in DB: ${slug}`)
+    failed++
+    fs.unlinkSync(localPath)
+    continue
+  }
+
+  await supabase.from('engine_pdfs').delete()
+    .eq('engine_id', engineId).eq('storage_path', storagePath)
+  const { error: insertErr } = await supabase.from('engine_pdfs').insert({
+    engine_id: engineId,
+    type: 'datasheet',
+    label: `${model} Specification Sheet`,
+    storage_path: storagePath,
+    file_size_bytes: buf.length,
+  })
+  if (insertErr) console.warn(`DB insert failed for ${slug}: ${insertErr.message}`)
+  else process.stdout.write(`→${slug} `)
+
+  console.log()
+  fs.unlinkSync(localPath)
+  ok++
+}
+
+console.log(`\n=== DONE: ${ok} uploaded, ${failed} failed ===`)
