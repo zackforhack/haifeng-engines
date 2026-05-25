@@ -2,14 +2,22 @@ import { supabase } from './supabase'
 import type { Engine } from './types'
 
 export async function getAllEngines(): Promise<Engine[]> {
-  const { data, error } = await supabase
-    .from('engines')
-    .select('*, pdfs:engine_pdfs(*)')
-    .order('brand', { ascending: true })
-    .order('model', { ascending: true })
-
-  if (error) throw error
-  return data ?? []
+  const PAGE = 1000
+  const all: Engine[] = []
+  let from = 0
+  while (true) {
+    const { data, error } = await supabase
+      .from('engines')
+      .select('*, pdfs:engine_pdfs(*)')
+      .order('brand', { ascending: true })
+      .order('model', { ascending: true })
+      .range(from, from + PAGE - 1)
+    if (error) throw error
+    all.push(...(data ?? []))
+    if (!data || data.length < PAGE) break
+    from += PAGE
+  }
+  return all
 }
 
 export async function getEngineBySlug(slug: string): Promise<Engine | null> {
