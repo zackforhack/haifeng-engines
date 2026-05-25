@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export async function generateStaticParams() {
   const brands = await getAllBrands()
-  return brands.map((b) => ({ brand: encodeURIComponent(b.toLowerCase()) }))
+  return brands.map((b) => ({ brand: b.toLowerCase() }))
 }
 
 export default async function BrandPage({ params }: Props) {
