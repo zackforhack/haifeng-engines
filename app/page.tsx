@@ -45,7 +45,7 @@ export default async function HomePage() {
           <Link href="/brands" className="text-sm text-blue-600 hover:underline">View all →</Link>
         </div>
         <div className="flex flex-wrap gap-2">
-          {brands.slice(0, 20).map((brand) => (
+          {brands.map((brand) => (
             <Link
               key={brand}
               href={`/brands/${encodeURIComponent(brand.toLowerCase())}`}
