@@ -46,11 +46,12 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
         `brand.ilike.%${params.q}%,model.ilike.%${params.q}%,series.ilike.%${params.q}%`
       )
     }
-    if (params.brand)     q = q.eq('brand', params.brand)
-    if (params.origin)    q = q.eq('origin', params.origin)
-    if (params.emissions) q = q.eq('emissions_standard', params.emissions)
-    if (params.config)    q = q.eq('configuration', params.config)
-    if (params.status)    q = q.eq('status', params.status)
+    if (params.brand)  q = q.eq('brand', params.brand)
+    if (params.origin) q = q.eq('origin', params.origin)
+    if (params.config) q = q.eq('configuration', params.config)
+    if (params.status) q = q.eq('status', params.status)
+    // emissions: intentionally NOT pushed to DB — matched post-fetch so that
+    // selecting "U.S. EPA Final Tier 4" also returns "Euro Stage V / U.S. EPA Final Tier 4"
 
     if (params.hz === '50') {
       q = q.or('prime_power_kwe_50hz.not.is.null,standby_power_kwe_50hz.not.is.null')
@@ -75,8 +76,23 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
     from += PAGE
   }
 
-  // Power range filter (post-fetch — too complex for PostgREST OR across 4 columns)
+  // Post-fetch filters
   let result = all
+
+  // Emissions: match exact OR as a component of a slash-separated dual standard.
+  // e.g. "U.S. EPA Final Tier 4" matches "Euro Stage V / U.S. EPA Final Tier 4".
+  // Plain ilike would cause "Stage II" to falsely match "Stage IIIA".
+  if (params.emissions) {
+    const em = params.emissions
+    result = result.filter(
+      (e) =>
+        e.emissions_standard === em ||
+        e.emissions_standard?.startsWith(em + ' / ') ||
+        e.emissions_standard?.endsWith(' / ' + em)
+    )
+  }
+
+  // Power range filter (too complex for PostgREST OR across 4 columns)
   if (params.min_kwe != null || params.max_kwe != null) {
     result = result.filter((e) => {
       const kwe = representativeKwe(e)
