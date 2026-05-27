@@ -163,7 +163,7 @@ function FilterSelect({
         onChange={(e) => onUpdate(param, e.target.value)}
         className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded bg-white text-gray-700 focus:ring-1 focus:ring-blue-500 focus:outline-none"
       >
-        <option value="">All {label}s</option>
+        <option value="">All {label}{label.endsWith('s') ? '' : 's'}</option>
         {options.map((o) => (
           <option key={o} value={o}>{o}</option>
         ))}
