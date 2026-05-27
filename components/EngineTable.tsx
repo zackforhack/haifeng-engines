@@ -108,46 +108,41 @@ export function EngineTable({ engines }: Props) {
                           key={brand}
                           className="px-1.5 py-1.5 border-r border-gray-100 last:border-r-0 align-top"
                         >
-                          {(() => {
-                            const dense = cells.length > 4
-                            return (
-                              <div className={dense ? 'grid grid-cols-2 divide-x divide-gray-100' : 'flex flex-col'}>
-                                {cells.map((e) => (
-                                  <Link
-                                    key={e.id}
-                                    href={`/engines/${e.slug}`}
-                                    title={e.model ?? undefined}
-                                    className="flex flex-col gap-px px-1.5 py-1 border-b border-gray-100 last:border-0 hover:bg-blue-50 transition-colors overflow-hidden"
-                                  >
-                                    <span className="font-semibold text-gray-900 truncate">
-                                      {e.model}
+                          <div className="flex flex-col">
+                            {cells.map((e) => (
+                              <Link
+                                key={e.id}
+                                href={`/engines/${e.slug}`}
+                                title={e.model ?? undefined}
+                                className="flex flex-col gap-px px-1.5 py-1 border-b border-gray-100 last:border-0 hover:bg-blue-50 transition-colors"
+                              >
+                                <span className="font-semibold text-gray-900 truncate">
+                                  {e.model}
+                                </span>
+                                <div className="flex flex-col gap-px">
+                                  {(e.standby_power_kwe_50hz || e.prime_power_kwe_50hz) && (
+                                    <span className="text-gray-500 whitespace-nowrap">
+                                      <span className="text-gray-400">50Hz </span>
+                                      {e.standby_power_kwe_50hz && <span className="font-medium text-gray-700">{e.standby_power_kwe_50hz}</span>}
+                                      {e.standby_power_kwe_50hz && e.prime_power_kwe_50hz && <span className="text-gray-300 mx-px">/</span>}
+                                      {e.prime_power_kwe_50hz && <span>{e.prime_power_kwe_50hz}</span>}
+                                      <span className="text-gray-400"> kWe</span>
                                     </span>
-                                    <div className="flex flex-col gap-px">
-                                      {(e.standby_power_kwe_50hz || e.prime_power_kwe_50hz) && (
-                                        <span className="text-gray-500 truncate">
-                                          <span className="text-gray-400">50Hz </span>
-                                          {e.standby_power_kwe_50hz && <span className="font-medium text-gray-700">{e.standby_power_kwe_50hz}</span>}
-                                          {e.standby_power_kwe_50hz && e.prime_power_kwe_50hz && <span className="text-gray-300 mx-px">/</span>}
-                                          {e.prime_power_kwe_50hz && <span>{e.prime_power_kwe_50hz}</span>}
-                                          <span className="text-gray-400"> kWe</span>
-                                        </span>
-                                      )}
-                                      {(e.standby_power_kwe_60hz || e.prime_power_kwe_60hz) && (
-                                        <span className="text-gray-500 truncate">
-                                          <span className="text-gray-400">60Hz </span>
-                                          {e.standby_power_kwe_60hz && <span className="font-medium text-gray-700">{e.standby_power_kwe_60hz}</span>}
-                                          {e.standby_power_kwe_60hz && e.prime_power_kwe_60hz && <span className="text-gray-300 mx-px">/</span>}
-                                          {e.prime_power_kwe_60hz && <span>{e.prime_power_kwe_60hz}</span>}
-                                          <span className="text-gray-400"> kWe</span>
-                                        </span>
-                                      )}
-                                      {e.emissions_standard && <EmissionsBadge value={e.emissions_standard} />}
-                                    </div>
-                                  </Link>
-                                ))}
-                              </div>
-                            )
-                          })()}
+                                  )}
+                                  {(e.standby_power_kwe_60hz || e.prime_power_kwe_60hz) && (
+                                    <span className="text-gray-500 whitespace-nowrap">
+                                      <span className="text-gray-400">60Hz </span>
+                                      {e.standby_power_kwe_60hz && <span className="font-medium text-gray-700">{e.standby_power_kwe_60hz}</span>}
+                                      {e.standby_power_kwe_60hz && e.prime_power_kwe_60hz && <span className="text-gray-300 mx-px">/</span>}
+                                      {e.prime_power_kwe_60hz && <span>{e.prime_power_kwe_60hz}</span>}
+                                      <span className="text-gray-400"> kWe</span>
+                                    </span>
+                                  )}
+                                  {e.emissions_standard && <EmissionsBadge value={e.emissions_standard} />}
+                                </div>
+                              </Link>
+                            ))}
+                          </div>
                         </td>
                       )
                     })}
