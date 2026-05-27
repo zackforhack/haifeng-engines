@@ -125,7 +125,7 @@ export function EngineTable({ engines }: Props) {
                                     <div className="flex flex-col gap-px">
                                       {(e.standby_power_kwe_50hz || e.prime_power_kwe_50hz) && (
                                         <span className="text-gray-500 truncate">
-                                          {!dense && <span className="text-gray-400">50Hz </span>}
+                                          <span className="text-gray-400">50Hz </span>
                                           {e.standby_power_kwe_50hz && <span className="font-medium text-gray-700">{e.standby_power_kwe_50hz}</span>}
                                           {e.standby_power_kwe_50hz && e.prime_power_kwe_50hz && <span className="text-gray-300 mx-px">/</span>}
                                           {e.prime_power_kwe_50hz && <span>{e.prime_power_kwe_50hz}</span>}
@@ -134,14 +134,14 @@ export function EngineTable({ engines }: Props) {
                                       )}
                                       {(e.standby_power_kwe_60hz || e.prime_power_kwe_60hz) && (
                                         <span className="text-gray-500 truncate">
-                                          {!dense && <span className="text-gray-400">60Hz </span>}
+                                          <span className="text-gray-400">60Hz </span>
                                           {e.standby_power_kwe_60hz && <span className="font-medium text-gray-700">{e.standby_power_kwe_60hz}</span>}
                                           {e.standby_power_kwe_60hz && e.prime_power_kwe_60hz && <span className="text-gray-300 mx-px">/</span>}
                                           {e.prime_power_kwe_60hz && <span>{e.prime_power_kwe_60hz}</span>}
                                           <span className="text-gray-400"> kWe</span>
                                         </span>
                                       )}
-                                      {e.emissions_standard && !dense && <EmissionsBadge value={e.emissions_standard} />}
+                                      {e.emissions_standard && <EmissionsBadge value={e.emissions_standard} />}
                                     </div>
                                   </Link>
                                 ))}
