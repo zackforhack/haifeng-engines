@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
-import { filterEngines, getFilterOptions } from '@/lib/engines'
+import Link from 'next/link'
+import { filterEngines, getFilterOptions, getDbStats } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
 import { SearchBar } from '@/components/SearchBar'
 import { EngineFilters } from '@/components/EngineFilters'
+
+const PAGE_SIZE = 24
 
 interface Props {
   searchParams: Promise<{
@@ -17,21 +20,166 @@ interface Props {
     min_kwe?: string
     max_kwe?: string
     sort?: string
+    page?: string
   }>
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
-  const { q } = await searchParams
+  const { q, brand, emissions } = await searchParams
+  if (brand) return { title: `${brand} Diesel Engines`, description: `Browse ${brand} diesel generator engine specifications.` }
+  if (emissions) return { title: `${emissions} Engines`, description: `Diesel engines meeting ${emissions} emissions standards.` }
+  if (q) return { title: `Search: ${q}`, description: 'Search results for diesel generator engine specifications.' }
   return {
-    title: q ? `Search: ${q}` : 'Browse All Diesel Engines',
-    description: 'Browse the complete database of diesel generator engine specifications.',
+    title: 'Browse Diesel Engines',
+    description: 'The complete database of diesel generator engine specifications. Search by brand, emissions standard, power output, and more.',
   }
+}
+
+const POWER_PRESETS: { label: string; params: Record<string, string> }[] = [
+  { label: 'Under 100 kWe',    params: { max_kwe: '100' } },
+  { label: '100 – 500 kWe',    params: { min_kwe: '100', max_kwe: '500' } },
+  { label: '500 – 1,500 kWe',  params: { min_kwe: '500', max_kwe: '1500' } },
+  { label: '1,500+ kWe',       params: { min_kwe: '1500' } },
+]
+
+function presetHref(params: Record<string, string>) {
+  return `/engines?${new URLSearchParams(params).toString()}`
 }
 
 export default async function EnginesPage({ searchParams }: Props) {
   const p = await searchParams
 
-  const [engines, options] = await Promise.all([
+  const hasFilters = !!(
+    p.q || p.brand || p.origin || p.emissions || p.config ||
+    p.hz || p.status || p.min_kwe || p.max_kwe
+  )
+
+  // ── No filters: landing / discovery view ─────────────────────────────────
+  if (!hasFilters) {
+    const [stats, options] = await Promise.all([getDbStats(), getFilterOptions()])
+
+    return (
+      <div>
+        {/* Hero */}
+        <div className="text-center py-10 mb-10">
+          <h1 className="text-4xl font-extrabold text-gray-900 mb-3">
+            {stats.total.toLocaleString()}+ Diesel Engine Specifications
+          </h1>
+          <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
+            The most complete database of diesel generator engines. Search by brand, model, emissions standard, power output, and more.
+          </p>
+
+          {/* Stat chips */}
+          <div className="flex justify-center gap-6 flex-wrap mb-10">
+            {[
+              { value: stats.total.toLocaleString(), label: 'Engines' },
+              { value: stats.brandCount.toString(), label: 'Brands' },
+              { value: stats.originCount.toString(), label: 'Countries' },
+            ].map(({ value, label }) => (
+              <div key={label} className="text-center">
+                <p className="text-3xl font-bold text-blue-600">{value}</p>
+                <p className="text-sm text-gray-500 mt-0.5">{label}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Search */}
+          <div className="flex justify-center">
+            <Suspense>
+              <SearchBar defaultValue="" />
+            </Suspense>
+          </div>
+        </div>
+
+        {/* Preset shortcuts */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+
+          {/* Emissions standards */}
+          <div className="md:col-span-2">
+            <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
+              Browse by Emissions Standard
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {options.emissions.map((em) => (
+                <Link
+                  key={em}
+                  href={presetHref({ emissions: em })}
+                  className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
+                >
+                  {em}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Power + Frequency */}
+          <div className="space-y-6">
+            <div>
+              <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
+                Browse by Power Range
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {POWER_PRESETS.map(({ label, params }) => (
+                  <Link
+                    key={label}
+                    href={presetHref(params)}
+                    className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
+                Browse by Frequency
+              </h2>
+              <div className="flex gap-2">
+                {[['50', '50 Hz'], ['60', '60 Hz']].map(([val, label]) => (
+                  <Link
+                    key={val}
+                    href={presetHref({ hz: val })}
+                    className="px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Brand grid */}
+        <div>
+          <div className="flex items-baseline justify-between mb-3">
+            <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+              Browse by Brand
+            </h2>
+            <Link href="/brands" className="text-sm text-blue-600 hover:underline">
+              View all brands →
+            </Link>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {options.brands.map((brand) => (
+              <Link
+                key={brand}
+                href={presetHref({ brand })}
+                className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
+              >
+                {brand}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // ── Filters active: results view ─────────────────────────────────────────
+  const currentPage = Math.max(1, Number(p.page) || 1)
+
+  const [allEngines, options] = await Promise.all([
     filterEngines({
       q:         p.q,
       brand:     p.brand,
@@ -47,11 +195,33 @@ export default async function EnginesPage({ searchParams }: Props) {
     getFilterOptions(),
   ])
 
+  const total = allEngines.length
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE))
+  const safePage = Math.min(currentPage, totalPages)
+  const engines = allEngines.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE)
+
+  function pageHref(pg: number) {
+    const sp = new URLSearchParams({
+      ...(p.q         ? { q: p.q }                 : {}),
+      ...(p.brand     ? { brand: p.brand }          : {}),
+      ...(p.origin    ? { origin: p.origin }        : {}),
+      ...(p.emissions ? { emissions: p.emissions }  : {}),
+      ...(p.config    ? { config: p.config }        : {}),
+      ...(p.hz        ? { hz: p.hz }                : {}),
+      ...(p.status    ? { status: p.status }        : {}),
+      ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
+      ...(p.max_kwe   ? { max_kwe: p.max_kwe }      : {}),
+      ...(p.sort      ? { sort: p.sort }            : {}),
+      ...(pg > 1      ? { page: String(pg) }        : {}),
+    })
+    return `/engines?${sp.toString()}`
+  }
+
   return (
     <div>
       <div className="mb-5">
         <h1 className="text-2xl font-bold text-gray-900 mb-4">
-          {p.q ? `Results for "${p.q}"` : 'All Diesel Engines'}
+          {p.q ? `Results for "${p.q}"` : 'Diesel Engines'}
         </h1>
         <Suspense>
           <SearchBar defaultValue={p.q ?? ''} />
@@ -59,7 +229,7 @@ export default async function EnginesPage({ searchParams }: Props) {
       </div>
 
       <Suspense>
-        <EngineFilters options={options} totalCount={engines.length} />
+        <EngineFilters options={options} totalCount={total} />
       </Suspense>
 
       {engines.length === 0 ? (
@@ -68,11 +238,47 @@ export default async function EnginesPage({ searchParams }: Props) {
           <p className="text-sm mt-1">Try adjusting your filters or search query.</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {engines.map((engine) => (
-            <EngineCard key={engine.id} engine={engine} />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {engines.map((engine) => (
+              <EngineCard key={engine.id} engine={engine} />
+            ))}
+          </div>
+
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-2 mt-10">
+              {safePage > 1 ? (
+                <Link
+                  href={pageHref(safePage - 1)}
+                  className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 hover:text-blue-700 bg-white transition-colors"
+                >
+                  ← Previous
+                </Link>
+              ) : (
+                <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed select-none">
+                  ← Previous
+                </span>
+              )}
+
+              <span className="text-sm text-gray-500 px-3">
+                Page {safePage} of {totalPages}
+              </span>
+
+              {safePage < totalPages ? (
+                <Link
+                  href={pageHref(safePage + 1)}
+                  className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 hover:text-blue-700 bg-white transition-colors"
+                >
+                  Next →
+                </Link>
+              ) : (
+                <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed select-none">
+                  Next →
+                </span>
+              )}
+            </div>
+          )}
+        </>
       )}
     </div>
   )

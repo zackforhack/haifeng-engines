@@ -155,6 +155,25 @@ export async function getEnginesByBrand(brand: string): Promise<Engine[]> {
   return data ?? []
 }
 
+export interface DbStats {
+  total: number
+  brandCount: number
+  originCount: number
+}
+
+export async function getDbStats(): Promise<DbStats> {
+  const { data, error } = await supabase
+    .from('engines')
+    .select('brand, origin')
+  if (error) throw error
+  const rows = data ?? []
+  return {
+    total: rows.length,
+    brandCount: new Set(rows.map((r) => r.brand).filter(Boolean)).size,
+    originCount: new Set(rows.map((r) => r.origin).filter(Boolean)).size,
+  }
+}
+
 export async function getAllBrands(): Promise<string[]> {
   const { data, error } = await supabase
     .from('engines')
