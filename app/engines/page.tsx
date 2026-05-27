@@ -5,6 +5,7 @@ import { filterEngines, getFilterOptions, getDbStats } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
 import { SearchBar } from '@/components/SearchBar'
 import { EngineFilters } from '@/components/EngineFilters'
+import { PowerScatterChart } from '@/components/PowerScatterChart'
 
 const PAGE_SIZE = 24
 
@@ -21,6 +22,7 @@ interface Props {
     max_kwe?: string
     sort?: string
     page?: string
+    view?: string
   }>
 }
 
@@ -163,6 +165,7 @@ export default async function EnginesPage({ searchParams }: Props) {
   }
 
   // ── Filters active: results view ─────────────────────────────────────────
+  const isChart = p.view === 'chart'
   const currentPage = Math.max(1, Number(p.page) || 1)
 
   const [allEngines, options] = await Promise.all([
@@ -203,6 +206,23 @@ export default async function EnginesPage({ searchParams }: Props) {
     return `/engines?${sp.toString()}`
   }
 
+  function viewHref(v: 'grid' | 'chart') {
+    const sp = new URLSearchParams({
+      ...(p.q         ? { q: p.q }                 : {}),
+      ...(p.brand     ? { brand: p.brand }          : {}),
+      ...(p.origin    ? { origin: p.origin }        : {}),
+      ...(p.emissions ? { emissions: p.emissions }  : {}),
+      ...(p.config    ? { config: p.config }        : {}),
+      ...(p.hz        ? { hz: p.hz }                : {}),
+      ...(p.status    ? { status: p.status }        : {}),
+      ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
+      ...(p.max_kwe   ? { max_kwe: p.max_kwe }      : {}),
+      ...(p.sort      ? { sort: p.sort }            : {}),
+      ...(v === 'chart' ? { view: 'chart' }         : {}),
+    })
+    return `/engines?${sp.toString()}`
+  }
+
   return (
     <div>
       <div className="mb-5">
@@ -218,11 +238,39 @@ export default async function EnginesPage({ searchParams }: Props) {
         <EngineFilters options={options} totalCount={total} />
       </Suspense>
 
-      {engines.length === 0 ? (
+      {/* View toggle */}
+      {total > 0 && (
+        <div className="flex gap-1 mb-4">
+          <Link
+            href={viewHref('grid')}
+            className={`px-3 py-1.5 rounded-lg border text-sm font-medium transition-colors ${
+              !isChart
+                ? 'bg-blue-600 text-white border-blue-600'
+                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
+            }`}
+          >
+            Grid
+          </Link>
+          <Link
+            href={viewHref('chart')}
+            className={`px-3 py-1.5 rounded-lg border text-sm font-medium transition-colors ${
+              isChart
+                ? 'bg-blue-600 text-white border-blue-600'
+                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
+            }`}
+          >
+            Chart
+          </Link>
+        </div>
+      )}
+
+      {total === 0 ? (
         <div className="text-center py-20 text-gray-400">
           <p className="text-lg">No engines found.</p>
           <p className="text-sm mt-1">Try adjusting your filters or search query.</p>
         </div>
+      ) : isChart ? (
+        <PowerScatterChart engines={allEngines} />
       ) : (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
