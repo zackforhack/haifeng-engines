@@ -1,10 +1,23 @@
 import type { Metadata } from 'next'
-import { getAllEngines, searchEngines } from '@/lib/engines'
+import { Suspense } from 'react'
+import { filterEngines, getFilterOptions } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
 import { SearchBar } from '@/components/SearchBar'
+import { EngineFilters } from '@/components/EngineFilters'
 
 interface Props {
-  searchParams: Promise<{ q?: string; status?: string }>
+  searchParams: Promise<{
+    q?: string
+    brand?: string
+    origin?: string
+    emissions?: string
+    config?: string
+    hz?: string
+    status?: string
+    min_kwe?: string
+    max_kwe?: string
+    sort?: string
+  }>
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
@@ -16,55 +29,43 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
 }
 
 export default async function EnginesPage({ searchParams }: Props) {
-  const { q, status } = await searchParams
+  const p = await searchParams
 
-  let engines = q ? await searchEngines(q) : await getAllEngines()
-
-  if (status) {
-    engines = engines.filter((e) => e.status === status)
-  }
+  const [engines, options] = await Promise.all([
+    filterEngines({
+      q:         p.q,
+      brand:     p.brand,
+      origin:    p.origin,
+      emissions: p.emissions,
+      config:    p.config,
+      hz:        p.hz === '50' || p.hz === '60' ? p.hz : undefined,
+      status:    p.status,
+      min_kwe:   p.min_kwe ? Number(p.min_kwe) : undefined,
+      max_kwe:   p.max_kwe ? Number(p.max_kwe) : undefined,
+      sort:      p.sort,
+    }),
+    getFilterOptions(),
+  ])
 
   return (
     <div>
-      <div className="mb-6">
+      <div className="mb-5">
         <h1 className="text-2xl font-bold text-gray-900 mb-4">
-          {q ? `Results for "${q}"` : 'All Diesel Engines'}
+          {p.q ? `Results for "${p.q}"` : 'All Diesel Engines'}
         </h1>
-        <SearchBar defaultValue={q ?? ''} />
+        <Suspense>
+          <SearchBar defaultValue={p.q ?? ''} />
+        </Suspense>
       </div>
 
-      {/* Filters */}
-      <div className="flex gap-2 mb-6 text-sm">
-        {[
-          { label: 'All', value: '' },
-          { label: 'In Production', value: 'active' },
-          { label: 'Discontinued', value: 'discontinued' },
-          { label: 'Limited', value: 'limited' },
-        ].map(({ label, value }) => {
-          const href = value
-            ? `/engines${q ? `?q=${encodeURIComponent(q)}&` : '?'}status=${value}`
-            : `/engines${q ? `?q=${encodeURIComponent(q)}` : ''}`
-          const active = (status ?? '') === value
-          return (
-            <a
-              key={value}
-              href={href}
-              className={`px-3 py-1.5 rounded-full border font-medium transition-colors ${
-                active
-                  ? 'bg-blue-600 text-white border-blue-600'
-                  : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
-              }`}
-            >
-              {label}
-            </a>
-          )
-        })}
-        <span className="ml-auto text-gray-400 py-1.5">{engines.length} engines</span>
-      </div>
+      <Suspense>
+        <EngineFilters options={options} totalCount={engines.length} />
+      </Suspense>
 
       {engines.length === 0 ? (
         <div className="text-center py-20 text-gray-400">
-          <p className="text-lg">No engines found{q ? ` for "${q}"` : ''}.</p>
+          <p className="text-lg">No engines found.</p>
+          <p className="text-sm mt-1">Try adjusting your filters or search query.</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -1,19 +1,20 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { useState } from 'react'
 
 export function SearchBar({ defaultValue = '' }: { defaultValue?: string }) {
   const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
   const [query, setQuery] = useState(defaultValue)
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    if (query.trim()) {
-      router.push(`/engines?q=${encodeURIComponent(query.trim())}`)
-    } else {
-      router.push('/engines')
-    }
+    const p = new URLSearchParams(searchParams.toString())
+    if (query.trim()) p.set('q', query.trim())
+    else p.delete('q')
+    router.push(`${pathname}?${p.toString()}`)
   }
 
   return (

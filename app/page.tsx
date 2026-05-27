@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Suspense } from 'react'
 import { getAllBrands, getAllEngines } from '@/lib/engines'
 import { SearchBar } from '@/components/SearchBar'
 
@@ -20,7 +21,9 @@ export default async function HomePage() {
           Find datasheets, manuals, and full technical specs for every major brand and model.
         </p>
         <div className="flex justify-center">
-          <SearchBar />
+          <Suspense>
+            <SearchBar />
+          </Suspense>
         </div>
       </section>
 
