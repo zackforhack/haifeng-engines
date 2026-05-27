@@ -111,18 +111,18 @@ export function EngineTable({ engines }: Props) {
                           <Link
                             key={e.id}
                             href={`/engines/${e.slug}`}
-                            className="block rounded-md border border-gray-200 bg-white px-2.5 py-2 hover:border-blue-400 hover:shadow-sm transition-all"
+                            className="flex items-start justify-between gap-3 rounded-md border border-gray-200 bg-white px-2.5 py-2 hover:border-blue-400 hover:shadow-sm transition-all"
                           >
-                            {/* Model name */}
-                            <p className="font-semibold text-gray-900 text-xs mb-1.5 leading-snug">
+                            {/* Model name — left */}
+                            <p className="font-semibold text-gray-900 text-xs leading-snug shrink-0">
                               {e.model}
                             </p>
 
-                            {/* Power rows */}
-                            <div className="space-y-0.5 mb-1.5">
+                            {/* Specs — right, aligned */}
+                            <div className="flex flex-col items-end gap-0.5 min-w-0">
                               {(e.standby_power_kwe_50hz || e.prime_power_kwe_50hz) && (
                                 <p className="text-[11px] text-gray-500 whitespace-nowrap">
-                                  <span className="text-gray-400 w-8 inline-block">50Hz</span>
+                                  <span className="text-gray-400">50Hz </span>
                                   {e.standby_power_kwe_50hz && (
                                     <span className="font-medium text-gray-700">{e.standby_power_kwe_50hz}</span>
                                   )}
@@ -132,12 +132,12 @@ export function EngineTable({ engines }: Props) {
                                   {e.prime_power_kwe_50hz && (
                                     <span className="text-gray-500">{e.prime_power_kwe_50hz}</span>
                                   )}
-                                  <span className="text-gray-400 ml-0.5">kWe</span>
+                                  <span className="text-gray-400"> kWe</span>
                                 </p>
                               )}
                               {(e.standby_power_kwe_60hz || e.prime_power_kwe_60hz) && (
                                 <p className="text-[11px] text-gray-500 whitespace-nowrap">
-                                  <span className="text-gray-400 w-8 inline-block">60Hz</span>
+                                  <span className="text-gray-400">60Hz </span>
                                   {e.standby_power_kwe_60hz && (
                                     <span className="font-medium text-gray-700">{e.standby_power_kwe_60hz}</span>
                                   )}
@@ -147,15 +147,13 @@ export function EngineTable({ engines }: Props) {
                                   {e.prime_power_kwe_60hz && (
                                     <span className="text-gray-500">{e.prime_power_kwe_60hz}</span>
                                   )}
-                                  <span className="text-gray-400 ml-0.5">kWe</span>
+                                  <span className="text-gray-400"> kWe</span>
                                 </p>
                               )}
+                              {e.emissions_standard && (
+                                <EmissionsBadge value={e.emissions_standard} />
+                              )}
                             </div>
-
-                            {/* Emissions badge */}
-                            {e.emissions_standard && (
-                              <EmissionsBadge value={e.emissions_standard} />
-                            )}
                           </Link>
                         ))}
                       </div>
