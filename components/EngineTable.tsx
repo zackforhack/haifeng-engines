@@ -105,22 +105,23 @@ export function EngineTable({ engines }: Props) {
                     style={{ background: rowIdx % 2 === 0 ? 'white' : '#f9fafb' }}
                   >
                     {cells.length > 0 && (
-                      <div className="flex flex-col divide-y divide-gray-100">
+                      <div className={
+                        cells.length > 4
+                          ? 'grid grid-cols-2 divide-x divide-gray-100'
+                          : 'flex flex-col divide-y divide-gray-100'
+                      }>
                         {[...cells]
                           .sort((a, b) => (representativeKwe(a) ?? 0) - (representativeKwe(b) ?? 0))
                           .map((e) => (
                             <Link
                               key={e.id}
                               href={`/engines/${e.slug}`}
-                              className="flex items-start justify-between gap-2 px-1.5 py-1 hover:bg-blue-50 transition-colors"
+                              className="flex flex-col gap-px px-1.5 py-1 hover:bg-blue-50 transition-colors border-b border-gray-100 last:border-0"
                             >
-                              {/* Model name */}
-                              <span className="font-semibold text-gray-900 min-w-0 break-words leading-snug">
+                              <span className="font-semibold text-gray-900 whitespace-nowrap leading-snug">
                                 {e.model}
                               </span>
-
-                              {/* Specs */}
-                              <div className="flex flex-col items-end gap-px shrink-0 text-right">
+                              <div className="flex flex-col gap-px">
                                 {(e.standby_power_kwe_50hz || e.prime_power_kwe_50hz) && (
                                   <span className="text-gray-500 whitespace-nowrap">
                                     <span className="text-gray-400">50Hz </span>
@@ -139,9 +140,7 @@ export function EngineTable({ engines }: Props) {
                                     <span className="text-gray-400"> kWe</span>
                                   </span>
                                 )}
-                                {e.emissions_standard && (
-                                  <EmissionsBadge value={e.emissions_standard} />
-                                )}
+                                {e.emissions_standard && <EmissionsBadge value={e.emissions_standard} />}
                               </div>
                             </Link>
                           ))}
