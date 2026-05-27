@@ -73,7 +73,7 @@ export function EngineTable({ engines }: Props) {
 
   return (
     <div className="overflow-x-auto rounded-lg border border-gray-200">
-      <table className="text-sm border-collapse">
+      <table className="text-sm border-collapse w-full">
         <thead>
           <tr className="bg-gray-50 border-b border-gray-200">
             <th className="sticky left-0 z-10 bg-gray-50 px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide border-r border-gray-200 whitespace-nowrap min-w-[160px]">
