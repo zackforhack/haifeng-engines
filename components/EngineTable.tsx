@@ -107,7 +107,7 @@ export function EngineTable({ engines }: Props) {
                   >
                     {cells.length === 0 ? null : (
                       <div className="flex flex-col gap-1.5">
-                        {cells.map((e) => (
+                        {[...cells].sort((a, b) => (representativeKwe(a) ?? 0) - (representativeKwe(b) ?? 0)).map((e) => (
                           <Link
                             key={e.id}
                             href={`/engines/${e.slug}`}
