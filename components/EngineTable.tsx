@@ -87,14 +87,18 @@ export function EngineTable({ engines }: Props) {
               <table className="text-xs border-collapse w-full">
                 <thead>
                   <tr className="bg-gray-50 border-b border-gray-200">
-                    {rangeBrands.map((brand) => (
-                      <th
-                        key={brand}
-                        className="px-2 py-2 text-center font-semibold text-gray-700 border-r border-gray-200 last:border-r-0 whitespace-nowrap min-w-[160px]"
-                      >
-                        {brand}
-                      </th>
-                    ))}
+                    {rangeBrands.map((brand) => {
+                      const count = lookup[i].get(brand)?.length ?? 0
+                      const dense = count > 4
+                      return (
+                        <th
+                          key={brand}
+                          className={`px-2 py-2 text-center font-semibold text-gray-700 border-r border-gray-200 last:border-r-0 whitespace-nowrap ${dense ? 'min-w-[300px]' : 'min-w-[160px]'}`}
+                        >
+                          {brand}
+                        </th>
+                      )
+                    })}
                   </tr>
                 </thead>
                 <tbody>
@@ -103,12 +107,13 @@ export function EngineTable({ engines }: Props) {
                       const cells = (lookup[i].get(brand) ?? []).sort(
                         (a, b) => (representativeKwe(a) ?? 0) - (representativeKwe(b) ?? 0)
                       )
+                      const dense = cells.length > 4
                       return (
                         <td
                           key={brand}
                           className="px-1.5 py-1.5 border-r border-gray-100 last:border-r-0 align-top"
                         >
-                          <div className="flex flex-col">
+                          <div className={dense ? 'grid grid-cols-2 divide-x divide-gray-100' : 'flex flex-col'}>
                             {cells.map((e) => (
                               <Link
                                 key={e.id}
