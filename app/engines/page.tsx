@@ -5,7 +5,7 @@ import { filterEngines, getFilterOptions, getDbStats } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
 import { SearchBar } from '@/components/SearchBar'
 import { EngineFilters } from '@/components/EngineFilters'
-import { PowerScatterChart } from '@/components/PowerScatterChart'
+import { EngineTable } from '@/components/EngineTable'
 
 const PAGE_SIZE = 24
 
@@ -259,7 +259,7 @@ export default async function EnginesPage({ searchParams }: Props) {
                 : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
             }`}
           >
-            Chart
+            Table
           </Link>
         </div>
       )}
@@ -270,7 +270,7 @@ export default async function EnginesPage({ searchParams }: Props) {
           <p className="text-sm mt-1">Try adjusting your filters or search query.</p>
         </div>
       ) : isChart ? (
-        <PowerScatterChart engines={allEngines} />
+        <EngineTable engines={allEngines} />
       ) : (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
