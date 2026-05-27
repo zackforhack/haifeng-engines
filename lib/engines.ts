@@ -79,17 +79,19 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
   // Post-fetch filters
   let result = all
 
-  // Emissions: match exact OR as a component of a slash-separated dual standard.
-  // e.g. "U.S. EPA Final Tier 4" matches "Euro Stage V / U.S. EPA Final Tier 4".
-  // Plain ilike would cause "Stage II" to falsely match "Stage IIIA".
+  // Emissions: exact component match OR word-boundary prefix match.
+  // Exact/component: "U.S. EPA Final Tier 4" matches "Euro Stage V / U.S. EPA Final Tier 4".
+  // Prefix: "U.S. EPA" matches "U.S. EPA Final Tier 4" and each component of dual standards.
+  // Space suffix prevents "Stage II" from falsely matching "Stage IIIA".
   if (params.emissions) {
     const em = params.emissions
-    result = result.filter(
-      (e) =>
-        e.emissions_standard === em ||
-        e.emissions_standard?.startsWith(em + ' / ') ||
-        e.emissions_standard?.endsWith(' / ' + em)
-    )
+    result = result.filter((e) => {
+      const std = e.emissions_standard
+      if (!std) return false
+      if (std === em) return true
+      // Check each slash-separated component for exact or prefix match
+      return std.split(' / ').some((p) => p === em || p.startsWith(em + ' '))
+    })
   }
 
   // Power range filter (too complex for PostgREST OR across 4 columns)

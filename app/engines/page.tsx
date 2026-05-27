@@ -92,60 +92,46 @@ export default async function EnginesPage({ searchParams }: Props) {
         </div>
 
         {/* Preset shortcuts */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
 
           {/* Emissions standards */}
-          <div className="md:col-span-2">
+          <div>
             <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
               Browse by Emissions Standard
             </h2>
             <div className="flex flex-wrap gap-2">
-              {options.emissions.map((em) => (
+              {[
+                { label: 'U.S. EPA',              value: 'U.S. EPA' },
+                { label: 'Euro Stage',             value: 'Euro Stage' },
+                { label: 'U.S. EPA Final Tier 4',  value: 'U.S. EPA Final Tier 4' },
+                { label: 'Euro Stage V',            value: 'Euro Stage V' },
+              ].map(({ label, value }) => (
                 <Link
-                  key={em}
-                  href={presetHref({ emissions: em })}
+                  key={value}
+                  href={presetHref({ emissions: value })}
                   className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
                 >
-                  {em}
+                  {label}
                 </Link>
               ))}
             </div>
           </div>
 
-          {/* Power + Frequency */}
-          <div className="space-y-6">
-            <div>
-              <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
-                Browse by Power Range
-              </h2>
-              <div className="flex flex-wrap gap-2">
-                {POWER_PRESETS.map(({ label, params }) => (
-                  <Link
-                    key={label}
-                    href={presetHref(params)}
-                    className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
-                  >
-                    {label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
-                Browse by Frequency
-              </h2>
-              <div className="flex gap-2">
-                {[['50', '50 Hz'], ['60', '60 Hz']].map(([val, label]) => (
-                  <Link
-                    key={val}
-                    href={presetHref({ hz: val })}
-                    className="px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
-                  >
-                    {label}
-                  </Link>
-                ))}
-              </div>
+          {/* Power range */}
+          <div>
+            <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
+              Browse by Power Range
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {POWER_PRESETS.map(({ label, params }) => (
+                <Link
+                  key={label}
+                  href={presetHref(params)}
+                  className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
+                >
+                  {label}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
