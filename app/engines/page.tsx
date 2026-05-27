@@ -107,6 +107,7 @@ export default async function EnginesPage({ searchParams }: Props) {
                 { label: 'Euro Stage',             value: 'Euro Stage' },
                 { label: 'U.S. EPA Final Tier 4',  value: 'U.S. EPA Final Tier 4' },
                 { label: 'Euro Stage V',            value: 'Euro Stage V' },
+                { label: 'Unregulated',             value: 'Unregulated' },
               ].map(({ label, value }) => (
                 <Link
                   key={value}
