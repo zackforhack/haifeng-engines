@@ -114,7 +114,7 @@ export function EngineTable({ engines }: Props) {
                             className="flex items-start justify-between gap-3 rounded-md border border-gray-200 bg-white px-2.5 py-2 hover:border-blue-400 hover:shadow-sm transition-all"
                           >
                             {/* Model name — left */}
-                            <p className="font-semibold text-gray-900 text-xs leading-snug shrink-0">
+                            <p className="font-semibold text-gray-900 text-xs leading-snug min-w-0 break-words">
                               {e.model}
                             </p>
 
