@@ -162,15 +162,23 @@ export interface DbStats {
 }
 
 export async function getDbStats(): Promise<DbStats> {
-  const { data, error } = await supabase
-    .from('engines')
-    .select('brand, origin')
-  if (error) throw error
-  const rows = data ?? []
+  const PAGE = 1000
+  const all: { brand: string | null; origin: string | null }[] = []
+  let from = 0
+  while (true) {
+    const { data, error } = await supabase
+      .from('engines')
+      .select('brand, origin')
+      .range(from, from + PAGE - 1)
+    if (error) throw error
+    all.push(...(data ?? []))
+    if (!data || data.length < PAGE) break
+    from += PAGE
+  }
   return {
-    total: rows.length,
-    brandCount: new Set(rows.map((r) => r.brand).filter(Boolean)).size,
-    originCount: new Set(rows.map((r) => r.origin).filter(Boolean)).size,
+    total: all.length,
+    brandCount: new Set(all.map((r) => r.brand).filter(Boolean)).size,
+    originCount: new Set(all.map((r) => r.origin).filter(Boolean)).size,
   }
 }
 
