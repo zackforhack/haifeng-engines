@@ -165,7 +165,7 @@ export default async function EnginesPage({ searchParams }: Props) {
   }
 
   // ── Filters active: results view ─────────────────────────────────────────
-  const isChart = p.view === 'chart'
+  const isGrid = p.view === 'grid'
   const currentPage = Math.max(1, Number(p.page) || 1)
 
   const [allEngines, options] = await Promise.all([
@@ -206,7 +206,7 @@ export default async function EnginesPage({ searchParams }: Props) {
     return `/engines?${sp.toString()}`
   }
 
-  function viewHref(v: 'grid' | 'chart') {
+  function viewHref(v: 'table' | 'grid') {
     const sp = new URLSearchParams({
       ...(p.q         ? { q: p.q }                 : {}),
       ...(p.brand     ? { brand: p.brand }          : {}),
@@ -218,7 +218,7 @@ export default async function EnginesPage({ searchParams }: Props) {
       ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
       ...(p.max_kwe   ? { max_kwe: p.max_kwe }      : {}),
       ...(p.sort      ? { sort: p.sort }            : {}),
-      ...(v === 'chart' ? { view: 'chart' }         : {}),
+      ...(v === 'grid' ? { view: 'grid' }           : {}),
     })
     return `/engines?${sp.toString()}`
   }
@@ -242,24 +242,24 @@ export default async function EnginesPage({ searchParams }: Props) {
       {total > 0 && (
         <div className="flex gap-1 mb-4">
           <Link
-            href={viewHref('grid')}
+            href={viewHref('table')}
             className={`px-3 py-1.5 rounded-lg border text-sm font-medium transition-colors ${
-              !isChart
-                ? 'bg-blue-600 text-white border-blue-600'
-                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
-            }`}
-          >
-            Grid
-          </Link>
-          <Link
-            href={viewHref('chart')}
-            className={`px-3 py-1.5 rounded-lg border text-sm font-medium transition-colors ${
-              isChart
+              !isGrid
                 ? 'bg-blue-600 text-white border-blue-600'
                 : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
             }`}
           >
             Table
+          </Link>
+          <Link
+            href={viewHref('grid')}
+            className={`px-3 py-1.5 rounded-lg border text-sm font-medium transition-colors ${
+              isGrid
+                ? 'bg-blue-600 text-white border-blue-600'
+                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
+            }`}
+          >
+            Grid
           </Link>
         </div>
       )}
@@ -269,7 +269,7 @@ export default async function EnginesPage({ searchParams }: Props) {
           <p className="text-lg">No engines found.</p>
           <p className="text-sm mt-1">Try adjusting your filters or search query.</p>
         </div>
-      ) : isChart ? (
+      ) : !isGrid ? (
         <EngineTable engines={allEngines} />
       ) : (
         <>
