@@ -30,7 +30,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span className="text-xl font-light text-gray-600">Encyclopedia</span>
             </Link>
             <nav className="flex items-center gap-6 text-sm font-medium text-gray-600">
-              <Link href="/engines" className="hover:text-blue-600 transition-colors">Browse All</Link>
+              <Link href="/engines" className="hover:text-blue-600 transition-colors">Engines</Link>
+              <Link href="/alternators" className="hover:text-blue-600 transition-colors">Alternators</Link>
               <Link href="/brands" className="hover:text-blue-600 transition-colors">By Brand</Link>
               <a
                 href="https://www.haifengmachinery.com"
