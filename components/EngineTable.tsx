@@ -27,15 +27,15 @@ function rangeIndex(e: Engine): number {
 }
 
 function EmissionsBadge({ value }: { value: string }) {
-  let cls = 'bg-gray-100 text-gray-600'
+  let cls = 'bg-gray-100 text-gray-500'
   if (value.includes('U.S. EPA') || value.includes('EPA'))
-    cls = 'bg-blue-50 text-blue-700'
+    cls = 'bg-blue-50 text-blue-600'
   else if (value.includes('Euro Stage'))
     cls = 'bg-green-50 text-green-700'
   else if (value.includes('China'))
-    cls = 'bg-red-50 text-red-700'
+    cls = 'bg-red-50 text-red-600'
   return (
-    <span className={`inline-block px-1.5 py-0.5 rounded text-[10px] font-medium leading-tight ${cls}`}>
+    <span className={`inline-block px-1 py-px rounded text-[10px] font-medium leading-tight ${cls}`}>
       {value}
     </span>
   )
@@ -73,14 +73,14 @@ export function EngineTable({ engines }: Props) {
 
   return (
     <div className="overflow-x-auto rounded-lg border border-gray-200">
-      <table className="text-sm border-collapse w-full">
+      <table className="text-xs border-collapse w-full">
         <thead>
           <tr className="bg-gray-50 border-b border-gray-200">
-            <th className="sticky left-0 z-10 bg-gray-50 px-4 py-3 text-left text-xs font-semibold text-gray-500 uppercase tracking-wide border-r border-gray-200 whitespace-nowrap min-w-[160px]">
+            <th className="sticky left-0 z-10 bg-gray-50 px-3 py-2 text-left font-semibold text-gray-500 uppercase tracking-wide border-r border-gray-200 whitespace-nowrap min-w-[130px]">
               Power Range
             </th>
             {brands.map((brand) => (
-              <th key={brand} className="px-3 py-3 text-center text-xs font-semibold text-gray-700 border-r border-gray-200 whitespace-nowrap min-w-[180px]">
+              <th key={brand} className="px-2 py-2 text-center font-semibold text-gray-700 border-r border-gray-200 whitespace-nowrap min-w-[160px]">
                 {brand}
               </th>
             ))}
@@ -89,9 +89,8 @@ export function EngineTable({ engines }: Props) {
         <tbody>
           {activeRanges.map(({ label, i }, rowIdx) => (
             <tr key={label} className="border-b border-gray-100 last:border-0">
-              {/* Range label */}
               <td
-                className="sticky left-0 z-10 px-4 py-3 font-semibold text-xs text-blue-700 border-r border-gray-200 align-top whitespace-nowrap"
+                className="sticky left-0 z-10 px-3 py-2 font-semibold text-blue-700 border-r border-gray-200 align-top whitespace-nowrap"
                 style={{ background: rowIdx % 2 === 0 ? 'white' : '#f9fafb' }}
               >
                 {label}
@@ -102,60 +101,50 @@ export function EngineTable({ engines }: Props) {
                 return (
                   <td
                     key={brand}
-                    className="px-2 py-2 border-r border-gray-100 align-top"
+                    className="px-1.5 py-1.5 border-r border-gray-100 align-top"
                     style={{ background: rowIdx % 2 === 0 ? 'white' : '#f9fafb' }}
                   >
-                    {cells.length === 0 ? null : (
-                      <div className="flex flex-col gap-1.5">
-                        {[...cells].sort((a, b) => (representativeKwe(a) ?? 0) - (representativeKwe(b) ?? 0)).map((e) => (
-                          <Link
-                            key={e.id}
-                            href={`/engines/${e.slug}`}
-                            className="flex items-start justify-between gap-3 rounded-md border border-gray-200 bg-white px-2.5 py-2 hover:border-blue-400 hover:shadow-sm transition-all"
-                          >
-                            {/* Model name — left */}
-                            <p className="font-semibold text-gray-900 text-xs leading-snug min-w-0 break-words">
-                              {e.model}
-                            </p>
+                    {cells.length > 0 && (
+                      <div className="flex flex-col divide-y divide-gray-100">
+                        {[...cells]
+                          .sort((a, b) => (representativeKwe(a) ?? 0) - (representativeKwe(b) ?? 0))
+                          .map((e) => (
+                            <Link
+                              key={e.id}
+                              href={`/engines/${e.slug}`}
+                              className="flex items-start justify-between gap-2 px-1.5 py-1 hover:bg-blue-50 transition-colors"
+                            >
+                              {/* Model name */}
+                              <span className="font-semibold text-gray-900 min-w-0 break-words leading-snug">
+                                {e.model}
+                              </span>
 
-                            {/* Specs — right, aligned */}
-                            <div className="flex flex-col items-end gap-0.5 min-w-0">
-                              {(e.standby_power_kwe_50hz || e.prime_power_kwe_50hz) && (
-                                <p className="text-[11px] text-gray-500 whitespace-nowrap">
-                                  <span className="text-gray-400">50Hz </span>
-                                  {e.standby_power_kwe_50hz && (
-                                    <span className="font-medium text-gray-700">{e.standby_power_kwe_50hz}</span>
-                                  )}
-                                  {e.standby_power_kwe_50hz && e.prime_power_kwe_50hz && (
-                                    <span className="text-gray-300 mx-0.5">/</span>
-                                  )}
-                                  {e.prime_power_kwe_50hz && (
-                                    <span className="text-gray-500">{e.prime_power_kwe_50hz}</span>
-                                  )}
-                                  <span className="text-gray-400"> kWe</span>
-                                </p>
-                              )}
-                              {(e.standby_power_kwe_60hz || e.prime_power_kwe_60hz) && (
-                                <p className="text-[11px] text-gray-500 whitespace-nowrap">
-                                  <span className="text-gray-400">60Hz </span>
-                                  {e.standby_power_kwe_60hz && (
-                                    <span className="font-medium text-gray-700">{e.standby_power_kwe_60hz}</span>
-                                  )}
-                                  {e.standby_power_kwe_60hz && e.prime_power_kwe_60hz && (
-                                    <span className="text-gray-300 mx-0.5">/</span>
-                                  )}
-                                  {e.prime_power_kwe_60hz && (
-                                    <span className="text-gray-500">{e.prime_power_kwe_60hz}</span>
-                                  )}
-                                  <span className="text-gray-400"> kWe</span>
-                                </p>
-                              )}
-                              {e.emissions_standard && (
-                                <EmissionsBadge value={e.emissions_standard} />
-                              )}
-                            </div>
-                          </Link>
-                        ))}
+                              {/* Specs */}
+                              <div className="flex flex-col items-end gap-px shrink-0 text-right">
+                                {(e.standby_power_kwe_50hz || e.prime_power_kwe_50hz) && (
+                                  <span className="text-gray-500 whitespace-nowrap">
+                                    <span className="text-gray-400">50Hz </span>
+                                    {e.standby_power_kwe_50hz && <span className="font-medium text-gray-700">{e.standby_power_kwe_50hz}</span>}
+                                    {e.standby_power_kwe_50hz && e.prime_power_kwe_50hz && <span className="text-gray-300 mx-px">/</span>}
+                                    {e.prime_power_kwe_50hz && <span>{e.prime_power_kwe_50hz}</span>}
+                                    <span className="text-gray-400"> kWe</span>
+                                  </span>
+                                )}
+                                {(e.standby_power_kwe_60hz || e.prime_power_kwe_60hz) && (
+                                  <span className="text-gray-500 whitespace-nowrap">
+                                    <span className="text-gray-400">60Hz </span>
+                                    {e.standby_power_kwe_60hz && <span className="font-medium text-gray-700">{e.standby_power_kwe_60hz}</span>}
+                                    {e.standby_power_kwe_60hz && e.prime_power_kwe_60hz && <span className="text-gray-300 mx-px">/</span>}
+                                    {e.prime_power_kwe_60hz && <span>{e.prime_power_kwe_60hz}</span>}
+                                    <span className="text-gray-400"> kWe</span>
+                                  </span>
+                                )}
+                                {e.emissions_standard && (
+                                  <EmissionsBadge value={e.emissions_standard} />
+                                )}
+                              </div>
+                            </Link>
+                          ))}
                       </div>
                     )}
                   </td>
@@ -166,18 +155,11 @@ export function EngineTable({ engines }: Props) {
         </tbody>
       </table>
 
-      {/* Legend */}
-      <div className="px-4 py-2 border-t border-gray-100 bg-gray-50 flex items-center gap-4 text-[11px] text-gray-400">
+      <div className="px-3 py-1.5 border-t border-gray-100 bg-gray-50 flex items-center gap-4 text-[10px] text-gray-400">
         <span>Standby / Prime kWe</span>
-        <span className="flex items-center gap-1.5">
-          <span className="inline-block w-2 h-2 rounded-sm bg-blue-100 border border-blue-300" />U.S. EPA
-        </span>
-        <span className="flex items-center gap-1.5">
-          <span className="inline-block w-2 h-2 rounded-sm bg-green-100 border border-green-300" />Euro Stage
-        </span>
-        <span className="flex items-center gap-1.5">
-          <span className="inline-block w-2 h-2 rounded-sm bg-red-100 border border-red-300" />China
-        </span>
+        <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-blue-100 border border-blue-300" />U.S. EPA</span>
+        <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-green-100 border border-green-300" />Euro Stage</span>
+        <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-red-100 border border-red-300" />China</span>
       </div>
     </div>
   )
