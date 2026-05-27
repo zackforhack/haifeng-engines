@@ -128,7 +128,11 @@ export async function getFilterOptions(): Promise<FilterOptions> {
   return {
     brands:    uniq(rows.map((r) => r.brand)),
     origins:   uniq(rows.map((r) => r.origin)),
-    emissions: uniq(rows.map((r) => r.emissions_standard)).filter((v) => !v.includes(' / ')),
+    emissions: [
+      'U.S. EPA',
+      'Euro Stage',
+      ...uniq(rows.map((r) => r.emissions_standard)).filter((v) => !v.includes(' / ')),
+    ],
     configs:   uniq(rows.map((r) => r.configuration)),
   }
 }
