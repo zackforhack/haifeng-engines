@@ -7,6 +7,9 @@ import { SearchBar } from '@/components/SearchBar'
 import { EngineFilters } from '@/components/EngineFilters'
 import { EngineTable } from '@/components/EngineTable'
 
+// Always fetch fresh data — prevents Next.js data cache from hiding new DB rows.
+export const dynamic = 'force-dynamic'
+
 const PAGE_SIZE = 24
 
 interface Props {
