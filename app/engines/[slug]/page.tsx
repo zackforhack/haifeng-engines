@@ -42,6 +42,15 @@ function SpecRow({ label, value }: { label: string; value?: string | number | nu
   )
 }
 
+function kweIsEstimated(engine: Engine): boolean {
+  const b = engine.brand ?? ''
+  const m = engine.model ?? ''
+  if (b === 'Isuzu' || b === 'Hatz' || b === 'JCB') return true
+  if (b === 'Mitsubishi') return true
+  if (b === 'FPT' && (m.includes('TEVP') || m.includes('ETVP'))) return true
+  return false
+}
+
 function PowerRatingsTable({ engine }: { engine: Engine }) {
   const has50hz = engine.prime_power_kw_50hz || engine.standby_power_kw_50hz
     || engine.prime_power_kwe_50hz || engine.standby_power_kwe_50hz
@@ -51,12 +60,14 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
 
   const rpm50 = engine.rpm_rated ?? 1500
   const rpm60 = Math.round(rpm50 * 6 / 5)
+  const estimated = kweIsEstimated(engine)
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-6">
       <h2 className="text-lg font-semibold text-gray-900 mb-4">Power Ratings</h2>
       <p className="text-xs text-gray-400 mb-4">
-        kWm = mechanical power · kWe = electrical power (kWm × gen. eff.) · kVA = kWe ÷ 0.8 power factor
+        kWm = mechanical shaft power · kWe = electrical output · kVA = kWe ÷ 0.8 pf
+        {estimated && <span className="text-amber-500"> · kWe estimated — see note below</span>}
       </p>
 
       <div className="space-y-6">
@@ -138,6 +149,13 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
           </div>
         )}
       </div>
+      {estimated && (
+        <p className="mt-4 text-xs text-amber-600 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+          <strong>Note:</strong> The manufacturer does not publish a separate kWe rating for this engine.
+          kWe values shown are estimated from the rated mechanical output (kWm) using a conservative
+          90% alternator efficiency factor.
+        </p>
+      )}
     </div>
   )
 }
