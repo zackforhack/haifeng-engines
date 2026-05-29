@@ -135,7 +135,7 @@ export async function getFilterOptions(): Promise<FilterOptions> {
         rows.flatMap((r) =>
           r.emissions_standard ? r.emissions_standard.split(' / ') : []
         )
-      ).filter((v) => v !== 'U.S. EPA' && !v.startsWith('U.S. EPA ') && !v.startsWith('Euro Stage')),
+      ).filter((v) => v !== 'U.S. EPA' && v !== 'Euro Stage'),
     ],
     configs:   uniq(rows.map((r) => r.configuration)),
   }
