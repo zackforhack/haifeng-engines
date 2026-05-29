@@ -16,6 +16,10 @@ function representativeKwe(e: Engine): number | null {
     e.prime_power_kwe_50hz ??
     e.standby_power_kwe_60hz ??
     e.prime_power_kwe_60hz ??
+    e.standby_power_kw_50hz ??
+    e.prime_power_kw_50hz ??
+    e.standby_power_kw_60hz ??
+    e.prime_power_kw_60hz ??
     null
   )
 }
@@ -125,25 +129,34 @@ export function EngineTable({ engines }: Props) {
                                   {e.model}
                                 </span>
                                 <div className="flex flex-col gap-px">
-                                  {(e.standby_power_kwe_50hz || e.prime_power_kwe_50hz) && (
-                                    <span className="text-gray-500 whitespace-nowrap">
-                                      <span className="text-gray-400">50Hz </span>
-                                      {e.standby_power_kwe_50hz && <span className="font-medium text-gray-700">{e.standby_power_kwe_50hz}</span>}
-                                      {e.standby_power_kwe_50hz && e.prime_power_kwe_50hz && <span className="text-gray-300 mx-px">/</span>}
-                                      {e.prime_power_kwe_50hz && <span>{e.prime_power_kwe_50hz}</span>}
-                                      <span className="text-gray-400"> kWe</span>
-                                    </span>
-                                  )}
-                                  {(e.standby_power_kwe_60hz || e.prime_power_kwe_60hz) && (
-                                    <span className="text-gray-500 whitespace-nowrap">
-                                      <span className="text-gray-400">60Hz </span>
-                                      {e.standby_power_kwe_60hz && <span className="font-medium text-gray-700">{e.standby_power_kwe_60hz}</span>}
-                                      {e.standby_power_kwe_60hz && e.prime_power_kwe_60hz && <span className="text-gray-300 mx-px">/</span>}
-                                      {e.prime_power_kwe_60hz && <span>{e.prime_power_kwe_60hz}</span>}
-                                      <span className="text-gray-400"> kWe</span>
-                                    </span>
-                                  )}
-                                  {e.emissions_standard && <EmissionsBadge value={e.emissions_standard} />}
+                                  {(() => {
+                                    const sb50 = e.standby_power_kwe_50hz ?? e.standby_power_kw_50hz
+                                    const pr50 = e.prime_power_kwe_50hz   ?? e.prime_power_kw_50hz
+                                    const sb60 = e.standby_power_kwe_60hz ?? e.standby_power_kw_60hz
+                                    const pr60 = e.prime_power_kwe_60hz   ?? e.prime_power_kw_60hz
+                                    const unit = (e.standby_power_kwe_50hz || e.prime_power_kwe_50hz || e.standby_power_kwe_60hz || e.prime_power_kwe_60hz) ? 'kWe' : 'kW'
+                                    return (<>
+                                      {(sb50 || pr50) && (
+                                        <span className="text-gray-500 whitespace-nowrap">
+                                          <span className="text-gray-400">50Hz </span>
+                                          {sb50 && <span className="font-medium text-gray-700">{sb50}</span>}
+                                          {sb50 && pr50 && <span className="text-gray-300 mx-px">/</span>}
+                                          {pr50 && <span>{pr50}</span>}
+                                          <span className="text-gray-400"> {unit}</span>
+                                        </span>
+                                      )}
+                                      {(sb60 || pr60) && (
+                                        <span className="text-gray-500 whitespace-nowrap">
+                                          <span className="text-gray-400">60Hz </span>
+                                          {sb60 && <span className="font-medium text-gray-700">{sb60}</span>}
+                                          {sb60 && pr60 && <span className="text-gray-300 mx-px">/</span>}
+                                          {pr60 && <span>{pr60}</span>}
+                                          <span className="text-gray-400"> {unit}</span>
+                                        </span>
+                                      )}
+                                      {e.emissions_standard && <EmissionsBadge value={e.emissions_standard} />}
+                                    </>)
+                                  })()}
                                 </div>
                               </Link>
                             ))}
