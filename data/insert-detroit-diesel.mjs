@@ -12,7 +12,9 @@ const supabase = createClient(
 //
 // Sources:
 //   Series 92 (8V-92TA): Spectrum 400DS spec sheet M5-100 (exact ekW)
-//   Series 60 12.7L / 14.0L: Kohler REOZD / Spectrum genset ratings, EPA Tier 3
+//   Series 60 14.0L: Kohler 400REOZD spec sheet G5-182 (exact range top: 60Hz
+//     standby 425/prime 385, 50Hz standby 364/prime 332; engine 14.0L 635 BHP)
+//   Series 60 12.7L: lower-displacement S60 genset package (~350 kW class)
 //
 // Genset ratings are electrical (ekW): kVA = ekW/0.8, kWm = ekW/0.9.
 
@@ -21,8 +23,8 @@ const r1 = (n) => (n == null ? null : Math.round(n * 10) / 10)
 // [model, disp_l, cyls, config, emissions,
 //  prime50_ekw, standby50_ekw, prime60_ekw, standby60_ekw]
 const rows = [
-  ['Series 60 12.7L', 12.7, 6, 'In-line 6, Turbocharged Aftercooled',          'U.S. EPA Tier 3', 320, 350, 360, 400],
-  ['Series 60 14.0L', 14.0, 6, 'In-line 6, Turbocharged Aftercooled',          'U.S. EPA Tier 3', 364, 400, 410, 450],
+  ['Series 60 12.7L', 12.7, 6, 'In-line 6, Turbocharged Intercooled',          'U.S. EPA Tier 3', 272, 300, 320, 350],
+  ['Series 60 14.0L', 14.0, 6, 'In-line 6, Turbocharged Intercooled',          'U.S. EPA Tier 3', 332, 364, 385, 425],
   ['8V-92TA',         12.1, 8, 'V8, 2-cycle, Turbocharged Aftercooled',        'Unregulated',     304, 336, 370, 410],
 ]
 
