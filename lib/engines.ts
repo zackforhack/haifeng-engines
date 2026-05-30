@@ -118,11 +118,22 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
 }
 
 export async function getFilterOptions(): Promise<FilterOptions> {
-  const { data, error } = await supabase
-    .from('engines')
-    .select('brand, origin, emissions_standard, configuration')
-  if (error) throw error
-  const rows = data ?? []
+  // Paginate — PostgREST caps a single request at 1000 rows, and the table
+  // now exceeds that, so an unpaginated query silently drops brands/emissions
+  // that only appear in later rows (e.g. recently-added Caterpillar).
+  const PAGE = 1000
+  const rows: { brand: string | null; origin: string | null; emissions_standard: string | null; configuration: string | null }[] = []
+  let from = 0
+  while (true) {
+    const { data, error } = await supabase
+      .from('engines')
+      .select('brand, origin, emissions_standard, configuration')
+      .range(from, from + PAGE - 1)
+    if (error) throw error
+    rows.push(...(data ?? []))
+    if (!data || data.length < PAGE) break
+    from += PAGE
+  }
   const uniq = (arr: (string | null | undefined)[]) =>
     [...new Set(arr.filter((x): x is string => !!x))].sort()
   return {
