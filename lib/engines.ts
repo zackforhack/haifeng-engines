@@ -204,12 +204,23 @@ export async function getDbStats(): Promise<DbStats> {
 }
 
 export async function getAllBrands(): Promise<string[]> {
-  const { data, error } = await supabase
-    .from('engines')
-    .select('brand')
-    .order('brand', { ascending: true })
-  if (error) throw error
-  return [...new Set((data ?? []).map((r) => r.brand))]
+  // Paginate past the 1000-row PostgREST cap, otherwise late-alphabet brands
+  // (ordered by brand) beyond row 1000 are dropped.
+  const PAGE = 1000
+  const all: { brand: string | null }[] = []
+  let from = 0
+  while (true) {
+    const { data, error } = await supabase
+      .from('engines')
+      .select('brand')
+      .order('brand', { ascending: true })
+      .range(from, from + PAGE - 1)
+    if (error) throw error
+    all.push(...(data ?? []))
+    if (!data || data.length < PAGE) break
+    from += PAGE
+  }
+  return [...new Set(all.map((r) => r.brand).filter((b): b is string => !!b))]
 }
 
 export async function searchEngines(query: string): Promise<Engine[]> {
