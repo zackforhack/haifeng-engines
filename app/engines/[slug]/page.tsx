@@ -45,7 +45,7 @@ function SpecRow({ label, value }: { label: string; value?: string | number | nu
 function kweIsEstimated(engine: Engine): boolean {
   const b = engine.brand ?? ''
   const m = engine.model ?? ''
-  if (b === 'Isuzu' || b === 'Hatz' || b === 'JCB' || b === 'Kirloskar') return true
+  if (b === 'Isuzu' || b === 'Hatz' || b === 'JCB' || b === 'Kirloskar' || b === 'MAN') return true
   if (b === 'Mitsubishi') return true
   if (b === 'FPT' && (m.includes('TEVP') || m.includes('ETVP'))) return true
   return false
