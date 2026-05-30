@@ -13,8 +13,11 @@ const supabase = createClient(
 //            kWm = kWe / 0.9   (mechanical, 90% alternator efficiency)
 // Origin: USA (Caterpillar Inc.)
 //
-// Exact spec-sheet values: C4.4 60Hz (LEHE0874), C15 50Hz (LEHE1637),
-// C18 50Hz (LEHE1844). Others are CAT's representative published genset ratings.
+// Power values verified against individual Cat Electric Power spec sheets
+// (LEHE0874 C4.4, LEHE0709 C7.1, LEHE1612 C9, LEHE1571 C13, LEHE1637 C15,
+//  LEHE1844 C18, SS-8047908 C27, SS-9033714 3512C, DM8266 3516C). C32 from
+// Cat published 60Hz range (830-1250 ekW) / 50Hz range (910-1500 kVA).
+// All values are electrical ekW; kVA = ekW/0.8, kWm = ekW/0.9.
 
 const r1 = (n) => (n == null ? null : Math.round(n * 10) / 10)
 
@@ -22,15 +25,15 @@ const r1 = (n) => (n == null ? null : Math.round(n * 10) / 10)
 //  prime50_ekw, standby50_ekw, prime60_ekw, standby60_ekw]
 const rows = [
   ['C4.4',  4.4,   4,  'In-line 4, Turbocharged',                  'U.S. EPA Tier 3',          40,   45,   45,   50],
-  ['C7.1',  7.01,  6,  'In-line 6, Turbocharged Aftercooled',      'U.S. EPA Tier 3',         150,  165,  175,  200],
-  ['C9',    8.8,   6,  'In-line 6, Turbocharged Aftercooled',      'U.S. EPA Tier 3',         200,  250,  250,  300],
-  ['C13',   12.5,  6,  'In-line 6, Turbocharged Aftercooled',      'U.S. EPA Tier 3',         320,  365,  365,  400],
+  ['C7.1',  7.0,   4,  'In-line 4, Turbocharged Aftercooled',      'U.S. EPA Tier 3',         120,  132,  135,  150],
+  ['C9',    8.8,   6,  'In-line 6, Turbocharged Aftercooled',      'U.S. EPA Tier 3',         240,  264,  270,  300],
+  ['C13',   12.5,  6,  'In-line 6, Turbocharged Aftercooled',      'U.S. EPA Tier 3',         320,  350,  365,  400],
   ['C15',   15.2,  6,  'In-line 6, Turbocharged Air-to-Air',       'U.S. EPA Tier 2',         360,  400,  455,  500],
-  ['C18',   18.13, 6,  'In-line 6, Turbocharged Air-to-Air',       'U.S. EPA Tier 2',         564,  624,  635,  750],
-  ['C27',   27.03, 12, 'V12, Turbocharged Aftercooled',            'U.S. EPA Tier 2',         600,  680,  680,  800],
-  ['C32',   32.1,  12, 'V12, Turbocharged Aftercooled',            'U.S. EPA Tier 2',         800, 1000, 1000, 1250],
-  ['3512C', 51.8,  12, 'V12, Turbocharged Aftercooled',            'U.S. EPA Tier 2',        1000, 1100, 1200, 1400],
-  ['3516C', 78.0,  16, 'V16, Turbocharged Aftercooled',            'U.S. EPA Tier 2',        1600, 1750, 2000, 2250],
+  ['C18',   18.13, 6,  'In-line 6, Turbocharged Air-to-Air',       'U.S. EPA Tier 2',         564,  624,  680,  750],
+  ['C27',   27.03, 12, 'V12, Turbocharged Aftercooled',            'U.S. EPA Tier 2',         580,  640,  725,  800],
+  ['C32',   32.1,  12, 'V12, Turbocharged Aftercooled',            'U.S. EPA Tier 2',        1090, 1200, 1000, 1250],
+  ['3512C', 51.8,  12, 'V12, Turbocharged Aftercooled',            'U.S. EPA Tier 2',        1280, 1400, 1230, 1500],
+  ['3516C', 78.08, 16, 'V16, Turbocharged Aftercooled',            'U.S. EPA Tier 2',        1825, 2000, 2250, 2500],
 ]
 
 const records = rows.map(([model, displacement_l, cylinders, configuration, emissions_standard,
