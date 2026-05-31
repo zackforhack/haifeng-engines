@@ -58,8 +58,13 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
     || engine.prime_power_kwe_60hz || engine.standby_power_kwe_60hz
   if (!has50hz && !has60hz) return null
 
-  const rpm50 = engine.rpm_rated ?? 1500
-  const rpm60 = Math.round(rpm50 * 6 / 5)
+  // rpm_rated may hold a 50Hz (1500/3000) or 60Hz (1800/3600) rated speed. Derive each
+  // frequency's true speed instead of blindly ×6/5, which turned 60Hz-rated engines into
+  // impossible figures (e.g. 1800 → 2160).
+  const rated = engine.rpm_rated ?? 1500
+  const ratedIs60 = rated === 1800 || rated === 3600
+  const rpm50 = ratedIs60 ? Math.round(rated * 5 / 6) : rated
+  const rpm60 = ratedIs60 ? rated : Math.round(rated * 6 / 5)
   const estimated = kweIsEstimated(engine)
 
   return (

@@ -15,8 +15,12 @@ function PowerPill({ label, kwm, kwe, kva, rpm }: { label: string; kwm?: number 
 }
 
 export function EngineCard({ engine }: { engine: Engine }) {
-  const rpm50 = engine.rpm_rated ?? 1500
-  const rpm60 = Math.round(rpm50 * 6 / 5)
+  // rpm_rated may hold a 50Hz (1500/3000) or 60Hz (1800/3600) rated speed; derive each
+  // frequency's true speed rather than blindly ×6/5 (which produced impossible RPM like 2160).
+  const rated = engine.rpm_rated ?? 1500
+  const ratedIs60 = rated === 1800 || rated === 3600
+  const rpm50 = ratedIs60 ? Math.round(rated * 5 / 6) : rated
+  const rpm60 = ratedIs60 ? rated : Math.round(rated * 6 / 5)
 
   const hasStandby50 = engine.standby_power_kw_50hz || engine.standby_power_kwe_50hz
   const hasPrime50   = engine.prime_power_kw_50hz   || engine.prime_power_kwe_50hz
