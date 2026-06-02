@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllBrands, getAllEngines } from '@/lib/engines'
+import { BrandLogo } from '@/components/BrandLogo'
 
 export const metadata: Metadata = {
   title: 'Generator Engine Brands',
@@ -28,6 +29,7 @@ export default async function BrandsPage() {
             href={`/brands/${encodeURIComponent(brand.toLowerCase())}`}
             className="bg-white border border-gray-200 rounded-lg p-5 hover:border-blue-400 hover:shadow-md transition-all"
           >
+            <BrandLogo brand={brand} size="md" className="mb-3" />
             <h2 className="text-lg font-bold text-gray-900 mb-1">{brand}</h2>
             <p className="text-sm text-gray-500">
               {total} engine{total !== 1 ? 's' : ''} &middot; {active} in production
