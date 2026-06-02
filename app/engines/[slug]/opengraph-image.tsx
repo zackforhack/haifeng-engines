@@ -37,7 +37,7 @@ export default async function Image({ params }: Props) {
   if (kva) stats.push({ label: `${hp?.rating ?? 'Standby'} · ${hp?.hz ?? 50} Hz`, value: `${kva.toLocaleString()} kVA` })
   if (out) stats.push({ label: 'Output', value: `${out.value.toLocaleString()} ${out.unit}` })
   if (engine.displacement_l) stats.push({ label: 'Displacement', value: `${engine.displacement_l} L` })
-  if (engine.cylinders) stats.push({ label: 'Cylinders', value: `${engine.configuration ?? ''}${engine.cylinders}`.trim() })
+  if (engine.configuration || engine.cylinders) stats.push({ label: 'Cylinders', value: engine.configuration ?? String(engine.cylinders) })
   if (!kva) stats.push({ label: 'Speed', value: `${speed.toLocaleString()} RPM` })
 
   return new ImageResponse(

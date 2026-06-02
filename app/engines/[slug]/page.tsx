@@ -185,7 +185,7 @@ function SpecHero({ engine }: { engine: Engine }) {
   const cards: { label: string; value: string }[] = []
   if (kva) cards.push({ label: `${hp?.rating ?? 'Standby'} Power · ${hp?.hz ?? 50} Hz`, value: `${kva.toLocaleString()} kVA` })
   if (out) cards.push({ label: 'Electrical Output', value: `${out.value.toLocaleString()} ${out.unit}` })
-  if (engine.cylinders) cards.push({ label: 'Cylinders', value: `${engine.configuration ?? ''}${engine.cylinders}`.trim() })
+  if (engine.configuration || engine.cylinders) cards.push({ label: 'Cylinders', value: engine.configuration ?? String(engine.cylinders) })
   if (engine.displacement_l) cards.push({ label: 'Displacement', value: `${engine.displacement_l} L` })
   cards.push({ label: 'Rated Speed', value: `${speed.toLocaleString()} RPM` })
 
