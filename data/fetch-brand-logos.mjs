@@ -70,6 +70,7 @@ const DIRECT_FILE = {
 const LOCAL_LOGOS = {
   'Ashok Leyland': 'ashok-leyland.png',
   'Baudouin': 'baudouin.png',
+  'Daihatsu': 'daihatsu.png',   // user-provided red-on-white (P154 was a white-only variant)
   'Deutz': 'deutz.png',
   'FAWDE': 'fawde.png',
   'Googol': 'googol.webp',

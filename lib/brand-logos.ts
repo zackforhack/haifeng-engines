@@ -6,7 +6,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "Baudouin": "/brand-logos/baudouin.png",
   "Caterpillar": "/brand-logos/caterpillar.svg",
   "Cummins": "/brand-logos/cummins.svg",
-  "Daihatsu": "/brand-logos/daihatsu.svg",
+  "Daihatsu": "/brand-logos/daihatsu.png",
   "Detroit Diesel": "/brand-logos/detroit-diesel.svg",
   "Deutz": "/brand-logos/deutz.png",
   "FAWDE": "/brand-logos/fawde.png",
