@@ -130,30 +130,29 @@ export function EngineTable({ engines }: Props) {
                                 </span>
                                 <div className="flex flex-col gap-px">
                                   {(() => {
-                                    const sb50 = e.standby_power_kwe_50hz ?? e.standby_power_kw_50hz
-                                    const pr50 = e.prime_power_kwe_50hz   ?? e.prime_power_kw_50hz
-                                    const sb60 = e.standby_power_kwe_60hz ?? e.standby_power_kw_60hz
-                                    const pr60 = e.prime_power_kwe_60hz   ?? e.prime_power_kw_60hz
-                                    const unit = (e.standby_power_kwe_50hz || e.prime_power_kwe_50hz || e.standby_power_kwe_60hz || e.prime_power_kwe_60hz) ? 'kWe' : 'kW'
+                                    // Lead with the STANDBY kWe rating (what matters for backup gensets);
+                                    // only show prime — clearly marked — when no standby rating exists.
+                                    const rows = ([
+                                      ['50Hz', e.standby_power_kwe_50hz ?? e.standby_power_kw_50hz, e.prime_power_kwe_50hz ?? e.prime_power_kw_50hz, !!(e.standby_power_kwe_50hz || e.prime_power_kwe_50hz)],
+                                      ['60Hz', e.standby_power_kwe_60hz ?? e.standby_power_kw_60hz, e.prime_power_kwe_60hz ?? e.prime_power_kw_60hz, !!(e.standby_power_kwe_60hz || e.prime_power_kwe_60hz)],
+                                    ] as const).filter(([, sb, pr]) => sb || pr)
                                     return (<>
-                                      {(sb50 || pr50) && (
-                                        <span className="text-gray-500 whitespace-nowrap">
-                                          <span className="text-gray-400">50Hz </span>
-                                          {sb50 && <span className="font-medium text-gray-700">{sb50}</span>}
-                                          {sb50 && pr50 && <span className="text-gray-300 mx-px">/</span>}
-                                          {pr50 && <span>{pr50}</span>}
-                                          <span className="text-gray-400"> {unit}</span>
-                                        </span>
-                                      )}
-                                      {(sb60 || pr60) && (
-                                        <span className="text-gray-500 whitespace-nowrap">
-                                          <span className="text-gray-400">60Hz </span>
-                                          {sb60 && <span className="font-medium text-gray-700">{sb60}</span>}
-                                          {sb60 && pr60 && <span className="text-gray-300 mx-px">/</span>}
-                                          {pr60 && <span>{pr60}</span>}
-                                          <span className="text-gray-400"> {unit}</span>
-                                        </span>
-                                      )}
+                                      {rows.map(([hz, sb, pr, isKwe]) => {
+                                        const unit = isKwe ? 'kWe' : 'kW'
+                                        return (
+                                          <span key={hz} className="whitespace-nowrap">
+                                            <span className="text-gray-400">{hz} </span>
+                                            {sb ? (
+                                              <>
+                                                <span className="font-bold text-gray-900">{sb}</span>
+                                                <span className="text-gray-400"> {unit} standby</span>
+                                              </>
+                                            ) : (
+                                              <span className="text-gray-500 italic">{pr} {unit} prime</span>
+                                            )}
+                                          </span>
+                                        )
+                                      })}
                                       {e.emissions_standard && <EmissionsBadge value={e.emissions_standard} />}
                                     </>)
                                   })()}
@@ -174,7 +173,7 @@ export function EngineTable({ engines }: Props) {
 
       {/* Legend */}
       <div className="flex items-center gap-4 text-[10px] text-gray-400 px-0.5">
-        <span>Standby / Prime kWe</span>
+        <span>Standby kWe (prime shown only where no standby rating)</span>
         <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-blue-100 border border-blue-300" />U.S. EPA</span>
         <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-green-100 border border-green-300" />Euro Stage</span>
         <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-red-100 border border-red-300" />China</span>
