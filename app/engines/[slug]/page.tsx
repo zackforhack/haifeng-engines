@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getAllEngines, getEngineBySlug } from '@/lib/engines'
+import { getAllEngines, getEngineBySlug, getRelatedEngines } from '@/lib/engines'
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
+import { headlinePower, displayKva, displayOutput, ratedSpeeds, buildIntro } from '@/lib/engine-display'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -14,16 +16,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const engine = await getEngineBySlug(slug)
   if (!engine) return {}
 
-  const standby = engine.standby_power_kw_50hz ?? engine.power_kw
-  const title = `${engine.brand} ${engine.model} Specs`
-  const description = engine.description
-    ?? `Full specifications for the ${engine.brand} ${engine.model} diesel engine. ${standby ? `${standby} kW standby` : ''} ${engine.cylinders ? `${engine.cylinders}-cylinder` : ''} diesel engine for generator sets.`
+  const kva = displayKva(headlinePower(engine))
+  const title = `${engine.brand} ${engine.model} Specs${kva ? ` – ${kva.toLocaleString()} kVA` : ''}`
+  const description = engine.description ?? buildIntro(engine)
 
   return {
     title,
     description,
-    openGraph: { title, description, type: 'article' },
+    keywords: [
+      `${engine.brand} ${engine.model}`,
+      `${engine.model} specs`,
+      `${engine.model} datasheet`,
+      `${engine.brand} diesel engine`,
+      engine.series ?? '',
+      'diesel generator engine',
+    ].filter(Boolean),
     alternates: { canonical: `/engines/${slug}` },
+    openGraph: { title, description, type: 'website', url: `/engines/${slug}` },
+    twitter: { card: 'summary_large_image', title, description },
   }
 }
 
@@ -165,37 +175,129 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
   )
 }
 
+function SpecHero({ engine }: { engine: Engine }) {
+  const hp = headlinePower(engine)
+  const kva = displayKva(hp)
+  const out = displayOutput(hp)
+  const { rpm50, rpm60 } = ratedSpeeds(engine)
+  const speed = hp ? (hp.hz === 60 ? rpm60 : rpm50) : rpm50
+
+  const cards: { label: string; value: string }[] = []
+  if (kva) cards.push({ label: `${hp?.rating ?? 'Standby'} Power · ${hp?.hz ?? 50} Hz`, value: `${kva.toLocaleString()} kVA` })
+  if (out) cards.push({ label: 'Electrical Output', value: `${out.value.toLocaleString()} ${out.unit}` })
+  if (engine.cylinders) cards.push({ label: 'Cylinders', value: `${engine.configuration ?? ''}${engine.cylinders}`.trim() })
+  if (engine.displacement_l) cards.push({ label: 'Displacement', value: `${engine.displacement_l} L` })
+  cards.push({ label: 'Rated Speed', value: `${speed.toLocaleString()} RPM` })
+
+  if (cards.length === 0) return null
+
+  return (
+    <dl className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-6">
+      {cards.slice(0, 5).map((c) => (
+        <div key={c.label} className="bg-white rounded-xl border border-gray-200 px-4 py-3">
+          <dt className="text-xs text-gray-500 font-medium leading-tight">{c.label}</dt>
+          <dd className="text-lg font-bold text-gray-900 mt-1">{c.value}</dd>
+        </div>
+      ))}
+    </dl>
+  )
+}
+
+function RelatedEngines({ engines }: { engines: Engine[] }) {
+  if (!engines.length) return null
+  return (
+    <div className="bg-white rounded-xl border border-gray-200 p-6">
+      <h2 className="text-lg font-semibold text-gray-900 mb-4">Related Engines</h2>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        {engines.map((e) => {
+          const kva = displayKva(headlinePower(e))
+          return (
+            <li key={e.slug}>
+              <Link
+                href={`/engines/${e.slug}`}
+                className="flex items-center justify-between gap-2 rounded-lg border border-gray-100 hover:border-blue-300 hover:bg-blue-50 px-3 py-2 transition-colors"
+              >
+                <span className="text-sm font-medium text-gray-800 truncate">{e.brand} {e.model}</span>
+                {kva && <span className="flex-shrink-0 text-xs text-gray-500">{kva.toLocaleString()} kVA</span>}
+              </Link>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
+  )
+}
+
 export default async function EngineDetailPage({ params }: Props) {
   const { slug } = await params
   const engine = await getEngineBySlug(slug)
   if (!engine) notFound()
 
-  const standby = engine.standby_power_kw_50hz ?? engine.standby_power_kw_60hz ?? engine.power_kw
+  const related = await getRelatedEngines(engine)
+  const intro = engine.description ?? buildIntro(engine)
+  const base = 'https://engines.haifengmachinery.com'
 
-  const structuredData = {
+  const hp = headlinePower(engine)
+  const kva = displayKva(hp)
+  const out = displayOutput(hp)
+  const { rpm50, rpm60 } = ratedSpeeds(engine)
+
+  // Build PropertyValue specs from whatever is populated.
+  const props: { '@type': 'PropertyValue'; name: string; value: string }[] = []
+  const addProp = (name: string, value?: string | number | null) => {
+    if (value !== undefined && value !== null && value !== '') props.push({ '@type': 'PropertyValue', name, value: String(value) })
+  }
+  if (kva) addProp(`${hp?.rating ?? 'Standby'} Power (${hp?.hz ?? 50} Hz)`, `${kva} kVA`)
+  if (out) addProp('Electrical Output', `${out.value} ${out.unit}`)
+  addProp('Configuration', engine.configuration)
+  addProp('Cylinders', engine.cylinders)
+  addProp('Displacement', engine.displacement_l ? `${engine.displacement_l} L` : undefined)
+  addProp('Rated Speed', `${hp?.hz === 60 ? rpm60 : rpm50} RPM`)
+  addProp('Cooling', engine.cooling_method)
+  addProp('Fuel Type', engine.fuel_type)
+  addProp('Emissions Standard', engine.emissions_standard)
+  addProp('Dry Weight', engine.weight_kg ? `${engine.weight_kg} kg` : undefined)
+  addProp('Country of Origin', engine.origin)
+
+  const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
+    '@id': `${base}/engines/${slug}#product`,
     name: `${engine.brand} ${engine.model}`,
+    sku: engine.model,
+    mpn: engine.model,
+    ...(engine.series && { model: engine.series }),
+    category: 'Diesel Generator Engine',
+    image: `${base}/engines/${slug}/opengraph-image`,
+    description: intro,
     brand: { '@type': 'Brand', name: engine.brand },
-    description: engine.description ?? `${engine.brand} ${engine.model} diesel engine specifications`,
-    ...(standby && {
-      additionalProperty: [{ '@type': 'PropertyValue', name: 'Standby Power Output', value: `${standby} kW` }],
-    }),
+    manufacturer: { '@type': 'Organization', name: engine.brand },
+    url: `${base}/engines/${slug}`,
+    ...(props.length && { additionalProperty: props }),
   }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Engines', item: `${base}/engines` },
+      { '@type': 'ListItem', position: 2, name: engine.brand, item: `${base}/brands/${encodeURIComponent(engine.brand.toLowerCase())}` },
+      { '@type': 'ListItem', position: 3, name: engine.model, item: `${base}/engines/${slug}` },
+    ],
+  }
+
+  const jsonLd = JSON.stringify([productSchema, breadcrumbSchema]).replace(/</g, '\\u003c')
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
 
       <div className="max-w-4xl">
         {/* Breadcrumb */}
         <nav className="text-sm text-gray-400 mb-4">
-          <a href="/engines" className="hover:text-blue-600">Engines</a>
+          <Link href="/engines" className="hover:text-blue-600">Engines</Link>
           {' / '}
-          <a href={`/brands/${encodeURIComponent(engine.brand.toLowerCase())}`} className="hover:text-blue-600">{engine.brand}</a>
+          <Link href={`/brands/${encodeURIComponent(engine.brand.toLowerCase())}`} className="hover:text-blue-600">{engine.brand}</Link>
           {' / '}
           <span className="text-gray-700">{engine.model}</span>
         </nav>
@@ -205,7 +307,7 @@ export default async function EngineDetailPage({ params }: Props) {
           <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
             <div>
               <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-1">{engine.brand}</p>
-              <h1 className="text-3xl font-bold text-gray-900">{engine.model}</h1>
+              <h1 className="text-3xl font-bold text-gray-900">{engine.brand} {engine.model}</h1>
               {engine.series && <p className="text-gray-500 mt-1">{engine.series}</p>}
             </div>
             <StatusBadge status={engine.status} />
@@ -218,8 +320,10 @@ export default async function EngineDetailPage({ params }: Props) {
             </div>
           )}
 
-          {engine.description && <p className="text-gray-600">{engine.description}</p>}
+          <p className="text-gray-600 leading-relaxed">{intro}</p>
         </div>
+
+        <SpecHero engine={engine} />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Left column */}
@@ -255,6 +359,8 @@ export default async function EngineDetailPage({ params }: Props) {
                 </tbody>
               </table>
             </div>
+
+            <RelatedEngines engines={related} />
           </div>
 
           {/* Sidebar */}

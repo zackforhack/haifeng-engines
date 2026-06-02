@@ -1,3 +1,4 @@
+import { cache } from 'react'
 import { supabase } from './supabase'
 import type { Engine } from './types'
 
@@ -156,7 +157,9 @@ export async function getAllEngines(): Promise<Engine[]> {
   return filterEngines({})
 }
 
-export async function getEngineBySlug(slug: string): Promise<Engine | null> {
+// Memoized for the request: generateMetadata, the page body, and the OG image route all
+// call this for the same slug — cache() collapses those into a single Supabase round-trip.
+export const getEngineBySlug = cache(async (slug: string): Promise<Engine | null> => {
   const { data, error } = await supabase
     .from('engines')
     .select('*, pdfs:engine_pdfs(*)')
@@ -164,6 +167,20 @@ export async function getEngineBySlug(slug: string): Promise<Engine | null> {
     .single()
   if (error) return null
   return data
+})
+
+// Other engines from the same brand for internal linking, with same-series models first.
+export async function getRelatedEngines(engine: Engine, limit = 6): Promise<Engine[]> {
+  const siblings = await getEnginesByBrand(engine.brand)
+  return siblings
+    .filter((e) => e.slug !== engine.slug)
+    .sort((a, b) => {
+      const aSeries = a.series && a.series === engine.series ? 0 : 1
+      const bSeries = b.series && b.series === engine.series ? 0 : 1
+      if (aSeries !== bSeries) return aSeries - bSeries
+      return a.model.localeCompare(b.model)
+    })
+    .slice(0, limit)
 }
 
 export async function getEnginesByBrand(brand: string): Promise<Engine[]> {
