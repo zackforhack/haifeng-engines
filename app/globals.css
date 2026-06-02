@@ -32,14 +32,14 @@
 @font-face {
   font-family: 'WeblySleek UI';
   font-style: normal;
-  font-weight: 400 500;
+  font-weight: 400;
   font-display: swap;
   src: url('/fonts/weblysleekuisl.woff') format('woff');
 }
 @font-face {
   font-family: 'WeblySleek UI';
   font-style: normal;
-  font-weight: 600 800;
+  font-weight: 500 800;
   font-display: swap;
   src: url('/fonts/weblysleekuisb.woff') format('woff');
 }
@@ -48,6 +48,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'WeblySleek UI', 'Segoe UI', system-ui, -apple-system, Tahoma, Arial, sans-serif;
+  /* Base weight 500 → SemiBold for stronger contrast on the dark theme */
+  font-weight: 500;
 }
 
 /* ── Dark theme ──────────────────────────────────────────────────────────────
@@ -56,17 +58,17 @@ body {
    to dark equivalents here. These plain (unlayered) rules win over Tailwind's
    layered utilities. Surface hierarchy: page < panel < card < raised. Brand
    accents (blue/green/amber) are kept but lightened for contrast on dark. */
-.bg-white      { background-color: #17171b; }
-.bg-gray-50    { background-color: #111114; }
-.bg-gray-100   { background-color: #26262b; }
+.bg-white      { background-color: #21212a; }
+.bg-gray-50    { background-color: #16161a; }
+.bg-gray-100   { background-color: #303039; }
 
-.text-gray-900 { color: #f4f4f5; }
-.text-gray-800 { color: #e4e4e7; }
-.text-gray-700 { color: #d4d4d8; }
-.text-gray-600 { color: #bcbcc4; }
-.text-gray-500 { color: #9b9ba4; }
-.text-gray-400 { color: #7e7e88; }
-.text-gray-300 { color: #56565e; }
+.text-gray-900 { color: #ffffff; }
+.text-gray-800 { color: #f6f6f8; }
+.text-gray-700 { color: #ececf0; }
+.text-gray-600 { color: #d6d6dd; }
+.text-gray-500 { color: #b4b4bf; }
+.text-gray-400 { color: #9a9aa6; }
+.text-gray-300 { color: #6b6b75; }
 
 .border-gray-100 { border-color: rgba(255, 255, 255, 0.06); }
 .border-gray-200 { border-color: rgba(255, 255, 255, 0.10); }
