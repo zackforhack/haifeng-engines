@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0b0b0d;
+  --foreground: #f4f4f5;
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -48,6 +49,63 @@ body {
   color: var(--foreground);
   font-family: 'WeblySleek UI', 'Segoe UI', system-ui, -apple-system, Tahoma, Arial, sans-serif;
 }
+
+/* ── Dark theme ──────────────────────────────────────────────────────────────
+   The app's components use light Tailwind utilities (bg-white, text-gray-900, …).
+   Rather than touch ~330 class strings across 14 files, we remap those utilities
+   to dark equivalents here. These plain (unlayered) rules win over Tailwind's
+   layered utilities. Surface hierarchy: page < panel < card < raised. Brand
+   accents (blue/green/amber) are kept but lightened for contrast on dark. */
+.bg-white      { background-color: #17171b; }
+.bg-gray-50    { background-color: #111114; }
+.bg-gray-100   { background-color: #26262b; }
+
+.text-gray-900 { color: #f4f4f5; }
+.text-gray-800 { color: #e4e4e7; }
+.text-gray-700 { color: #d4d4d8; }
+.text-gray-600 { color: #bcbcc4; }
+.text-gray-500 { color: #9b9ba4; }
+.text-gray-400 { color: #7e7e88; }
+.text-gray-300 { color: #56565e; }
+
+.border-gray-100 { border-color: rgba(255, 255, 255, 0.06); }
+.border-gray-200 { border-color: rgba(255, 255, 255, 0.10); }
+.border-gray-300 { border-color: rgba(255, 255, 255, 0.15); }
+
+/* Blue accents (links, eyebrows, tints) */
+.text-blue-600 { color: #60a5fa; }
+.text-blue-700 { color: #93c5fd; }
+.bg-blue-50    { background-color: rgba(59, 130, 246, 0.12); }
+.bg-blue-100   { background-color: rgba(59, 130, 246, 0.20); }
+.border-blue-100 { border-color: rgba(59, 130, 246, 0.25); }
+.border-blue-200 { border-color: rgba(59, 130, 246, 0.35); }
+
+/* Status / emissions pills + estimated-note (dark translucent, light text) */
+.bg-green-100  { background-color: rgba(34, 197, 94, 0.16); }
+.bg-green-200  { background-color: rgba(34, 197, 94, 0.22); }
+.border-green-200 { border-color: rgba(34, 197, 94, 0.30); }
+.text-green-700 { color: #4ade80; }
+.text-green-800 { color: #4ade80; }
+.bg-yellow-100 { background-color: rgba(234, 179, 8, 0.16); }
+.border-yellow-200 { border-color: rgba(234, 179, 8, 0.30); }
+.text-yellow-800 { color: #fde047; }
+.bg-amber-50   { background-color: rgba(245, 158, 11, 0.10); }
+.border-amber-100 { border-color: rgba(245, 158, 11, 0.25); }
+.text-amber-600 { color: #fbbf24; }
+.text-amber-500 { color: #f59e0b; }
+
+/* Hover variants that would otherwise flash a light surface */
+.hover\:bg-gray-50:hover  { background-color: #1a1a1e; }
+.hover\:bg-gray-100:hover { background-color: #26262b; }
+.hover\:bg-blue-50:hover  { background-color: rgba(59, 130, 246, 0.16); }
+.hover\:bg-blue-100:hover { background-color: rgba(59, 130, 246, 0.24); }
+.hover\:text-gray-900:hover { color: #f4f4f5; }
+.hover\:text-blue-700:hover { color: #bfdbfe; }
+.hover\:text-blue-900:hover { color: #dbeafe; }
+
+/* Form controls */
+input, select, textarea { background-color: #111114; color: #f4f4f5; }
+select option { background-color: #17171b; color: #f4f4f5; }
 
 /* ── Futuristic animated hero background ─────────────────────────────────────
    Flowing gradient "blobs" + a drifting tech grid + a slow sheen sweep. Pure CSS,
