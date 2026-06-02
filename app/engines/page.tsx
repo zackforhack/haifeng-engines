@@ -35,8 +35,8 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   if (emissions) return { title: `${emissions} Engines`, description: `Diesel engines meeting ${emissions} emissions standards.` }
   if (q) return { title: `Search: ${q}`, description: 'Search results for diesel generator engine specifications.' }
   return {
-    title: 'Browse Diesel Engines',
-    description: 'The complete database of diesel generator engine specifications. Search by brand, emissions standard, power output, and more.',
+    title: 'Diesel & Gas Generator Engine Specs',
+    description: 'The complete database of diesel and gas engine specifications for electrical power generation. Search by brand, model, emissions standard, and power output.',
   }
 }
 
@@ -66,12 +66,15 @@ export default async function EnginesPage({ searchParams }: Props) {
     return (
       <div>
         {/* Hero */}
-        <div className="text-center py-10 mb-10">
-          <h1 className="text-4xl font-extrabold text-gray-900 mb-3">
-            {stats.total.toLocaleString()}+ Diesel Engine Specifications
+        <div className="text-center py-12 mb-10">
+          <span className="inline-block text-xs font-semibold tracking-wider uppercase text-blue-700 bg-blue-50 border border-blue-100 rounded-full px-3 py-1 mb-4">
+            Engines for Electrical Power Generation
+          </span>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+            {stats.total.toLocaleString()}+ Generator Engine Specifications
           </h1>
           <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
-            The most complete database of diesel generator engines. Search by brand, model, emissions standard, power output, and more.
+            The complete reference for <strong className="font-semibold text-gray-700">diesel and gas</strong> engines used in electrical power generation — search specs, datasheets, and manuals by brand, model, emissions standard, and power output.
           </p>
 
           {/* Stat chips */}
