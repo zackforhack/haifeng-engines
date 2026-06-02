@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { getAllBrands, getAllEngines } from '@/lib/engines'
 
 export const metadata: Metadata = {
-  title: 'Diesel Engine Brands',
-  description: 'Browse diesel generator engine specifications by brand. Find Cummins, Perkins, Volvo, Deutz, and more.',
+  title: 'Generator Engine Brands',
+  description: 'Browse diesel and gas generator engine specifications by brand. Find Cummins, Perkins, Volvo, Deutz, and more.',
 }
 
 export default async function BrandsPage() {

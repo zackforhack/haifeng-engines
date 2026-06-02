@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { brand } = await params
   const decoded = decodeURIComponent(brand)
   return {
-    title: `${decoded} Diesel Engine Specs`,
-    description: `Browse all ${decoded} diesel generator engine specifications, datasheets, and manuals.`,
+    title: `${decoded} Generator Engine Specs`,
+    description: `Browse all ${decoded} diesel and gas generator engine specifications, datasheets, and manuals for electrical power generation.`,
   }
 }
 
@@ -42,7 +42,7 @@ export default async function BrandPage({ params }: Props) {
       </nav>
 
       <BrandLogo brand={engines[0].brand} size="lg" className="mb-3" />
-      <h1 className="text-2xl font-bold text-gray-900 mb-1">{engines[0].brand} Diesel Engines</h1>
+      <h1 className="text-2xl font-bold text-gray-900 mb-1">{engines[0].brand} Generator Engines</h1>
       <p className="text-gray-500 mb-8">{engines.length} engines in the database</p>
 
       {activeEngines.length > 0 && (
