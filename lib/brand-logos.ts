@@ -32,7 +32,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "Perkins": "/brand-logos/perkins.svg",
   "PSI": "/brand-logos/psi.jpg",
   "Scania": "/brand-logos/scania.svg",
-  "SDEC": "/brand-logos/sdec.svg",
+  "SDEC": "/brand-logos/sdec.png",
   "VM Motori": "/brand-logos/vm-motori.svg",
   "Volvo Penta": "/brand-logos/volvo-penta.svg",
   "Weichai": "/brand-logos/weichai.png",

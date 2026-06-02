@@ -75,7 +75,7 @@ const LOCAL_LOGOS = {
   'Googol': 'googol.webp',
   'Lovol': 'lovol.png',
   'PSI': 'psi.jpg',
-  'SDEC': 'sdec.svg',
+  'SDEC': 'sdec.png',
   'Yuchai': 'yuchai.png',
   'Yunnei': 'yunnei.webp',
 }
