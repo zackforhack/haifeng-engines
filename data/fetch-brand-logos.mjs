@@ -74,9 +74,13 @@ const LOCAL_LOGOS = {
   'Deutz': 'deutz.png',
   'FAWDE': 'fawde.png',
   'Googol': 'googol.webp',
+  'Komatsu': 'komatsu.png',     // P154 SVGs were white-only variants (invisible on white chip)
+  'Liebherr': 'liebherr.png',
   'Lovol': 'lovol.png',
   'PSI': 'psi.jpg',
   'SDEC': 'sdec.png',
+  'Volvo Penta': 'volvo-penta.png',
+  'Yanmar': 'yanmar.png',
   'Yuchai': 'yuchai.png',
   'Yunnei': 'yunnei.webp',
 }
