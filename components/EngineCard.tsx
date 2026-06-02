@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { Engine } from '@/lib/types'
 import { StatusBadge } from './StatusBadge'
+import { BrandLogo } from './BrandLogo'
 
 function PowerPill({ label, kwm, kwe, kva, rpm }: { label: string; kwm?: number | null; kwe?: number | null; kva?: number | null; rpm: number }) {
   return (
@@ -45,7 +46,10 @@ export function EngineCard({ engine }: { engine: Engine }) {
     >
       <div className="flex items-start justify-between gap-2 mb-3">
         <div>
-          <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide">{engine.brand}</p>
+          <div className="flex items-center gap-2 mb-0.5">
+            <BrandLogo brand={engine.brand} size="sm" />
+            <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide">{engine.brand}</p>
+          </div>
           <h3 className="text-base font-bold text-gray-900">{engine.model}</h3>
           {engine.series && <p className="text-xs text-gray-500">{engine.series}</p>}
         </div>

@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getAllBrands, getEnginesByBrand } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
+import { BrandLogo } from '@/components/BrandLogo'
 
 interface Props {
   params: Promise<{ brand: string }>
@@ -34,11 +36,12 @@ export default async function BrandPage({ params }: Props) {
   return (
     <div>
       <nav className="text-sm text-gray-400 mb-4">
-        <a href="/brands" className="hover:text-blue-600">Brands</a>
+        <Link href="/brands" className="hover:text-blue-600">Brands</Link>
         {' / '}
         <span className="text-gray-700 capitalize">{decoded}</span>
       </nav>
 
+      <BrandLogo brand={engines[0].brand} size="lg" className="mb-3" />
       <h1 className="text-2xl font-bold text-gray-900 mb-1">{engines[0].brand} Diesel Engines</h1>
       <p className="text-gray-500 mb-8">{engines.length} engines in the database</p>
 
