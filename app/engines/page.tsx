@@ -19,6 +19,7 @@ interface Props {
     origin?: string
     emissions?: string
     config?: string
+    fuel?: string
     hz?: string
     status?: string
     min_kwe?: string
@@ -30,10 +31,12 @@ interface Props {
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
-  const { q, brand, emissions } = await searchParams
-  if (brand) return { title: `${brand} Diesel Engines`, description: `Browse ${brand} diesel generator engine specifications.` }
-  if (emissions) return { title: `${emissions} Engines`, description: `Diesel engines meeting ${emissions} emissions standards.` }
-  if (q) return { title: `Search: ${q}`, description: 'Search results for diesel generator engine specifications.' }
+  const { q, brand, emissions, fuel } = await searchParams
+  if (brand) return { title: `${brand} Generator Engines`, description: `Browse ${brand} diesel and gas generator engine specifications.` }
+  if (fuel === 'gas') return { title: 'Gas Generator Engines', description: 'Natural gas, CNG/LNG and biogas engine specifications for electrical power generation.' }
+  if (fuel === 'diesel') return { title: 'Diesel Generator Engines', description: 'Diesel engine specifications for electrical power generation.' }
+  if (emissions) return { title: `${emissions} Engines`, description: `Generator engines meeting ${emissions} emissions standards.` }
+  if (q) return { title: `Search: ${q}`, description: 'Search results for diesel and gas generator engine specifications.' }
   return {
     title: 'Diesel & Gas Generator Engine Specs',
     description: 'The complete database of diesel and gas engine specifications for electrical power generation. Search by brand, model, emissions standard, and power output.',
@@ -55,7 +58,7 @@ export default async function EnginesPage({ searchParams }: Props) {
   const p = await searchParams
 
   const hasFilters = !!(
-    p.q || p.brand || p.origin || p.emissions || p.config ||
+    p.q || p.brand || p.origin || p.emissions || p.config || p.fuel ||
     p.hz || p.status || p.min_kwe || p.max_kwe
   )
 
@@ -96,6 +99,27 @@ export default async function EnginesPage({ searchParams }: Props) {
             <Suspense>
               <SearchBar defaultValue="" />
             </Suspense>
+          </div>
+        </div>
+
+        {/* Fuel type */}
+        <div className="mb-8">
+          <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
+            Browse by Fuel Type
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { label: 'Diesel', value: 'diesel' },
+              { label: 'Gas (Natural Gas · CNG/LNG · Biogas)', value: 'gas' },
+            ].map(({ label, value }) => (
+              <Link
+                key={value}
+                href={presetHref({ fuel: value })}
+                className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
+              >
+                {label}
+              </Link>
+            ))}
           </div>
         </div>
 
@@ -182,6 +206,7 @@ export default async function EnginesPage({ searchParams }: Props) {
       origin:    p.origin,
       emissions: p.emissions,
       config:    p.config,
+      fuel:      p.fuel === 'diesel' || p.fuel === 'gas' ? p.fuel : undefined,
       hz:        p.hz === '50' || p.hz === '60' ? p.hz : undefined,
       status:    p.status,
       min_kwe:   p.min_kwe ? Number(p.min_kwe) : undefined,
@@ -203,6 +228,7 @@ export default async function EnginesPage({ searchParams }: Props) {
       ...(p.origin    ? { origin: p.origin }        : {}),
       ...(p.emissions ? { emissions: p.emissions }  : {}),
       ...(p.config    ? { config: p.config }        : {}),
+      ...(p.fuel      ? { fuel: p.fuel }            : {}),
       ...(p.hz        ? { hz: p.hz }                : {}),
       ...(p.status    ? { status: p.status }        : {}),
       ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
@@ -220,6 +246,7 @@ export default async function EnginesPage({ searchParams }: Props) {
       ...(p.origin    ? { origin: p.origin }        : {}),
       ...(p.emissions ? { emissions: p.emissions }  : {}),
       ...(p.config    ? { config: p.config }        : {}),
+      ...(p.fuel      ? { fuel: p.fuel }            : {}),
       ...(p.hz        ? { hz: p.hz }                : {}),
       ...(p.status    ? { status: p.status }        : {}),
       ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),

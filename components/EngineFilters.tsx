@@ -21,13 +21,14 @@ export function EngineFilters({ options, totalCount }: Props) {
   const origin    = get('origin')
   const emissions = get('emissions')
   const config    = get('config')
+  const fuel      = get('fuel')
   const hz        = get('hz')
   const status    = get('status')
   const minKwe    = get('min_kwe')
   const maxKwe    = get('max_kwe')
   const sort      = get('sort')
 
-  const activeCount = [brand, origin, emissions, config, hz, minKwe, maxKwe, status].filter(Boolean).length
+  const activeCount = [brand, origin, emissions, config, fuel, hz, minKwe, maxKwe, status].filter(Boolean).length
 
   function update(key: string, value: string) {
     const p = new URLSearchParams(searchParams.toString())
@@ -103,6 +104,16 @@ export function EngineFilters({ options, totalCount }: Props) {
                 value={status}
                 options={[['', 'All'], ['active', 'Active'], ['discontinued', 'Disc.'], ['limited', 'Limited']]}
                 onSelect={(v) => update('status', v)}
+              />
+            </div>
+
+            {/* Fuel */}
+            <div>
+              <p className="text-xs font-medium text-gray-500 mb-1.5">Fuel</p>
+              <ToggleGroup
+                value={fuel}
+                options={[['', 'All'], ['diesel', 'Diesel'], ['gas', 'Gas']]}
+                onSelect={(v) => update('fuel', v)}
               />
             </div>
 

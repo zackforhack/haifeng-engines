@@ -8,11 +8,20 @@ export interface FilterParams {
   origin?: string
   emissions?: string
   config?: string
+  fuel?: 'diesel' | 'gas'
   hz?: '50' | '60'
   status?: string
   min_kwe?: number
   max_kwe?: number
   sort?: string
+}
+
+// "Gas" covers gaseous power-gen fuels (natural gas, CNG/LNG, biogas, LPG/propane);
+// "diesel" matches the compression-ignition diesels. Gasoline and unknown fuels match neither.
+const GAS_FUEL = /natural gas|biogas|cng|lng|lpg|propane/i
+export function matchesFuel(fuelType: string | null | undefined, fuel: 'diesel' | 'gas'): boolean {
+  const ft = fuelType ?? ''
+  return fuel === 'gas' ? GAS_FUEL.test(ft) : /diesel/i.test(ft)
 }
 
 export interface FilterOptions {
@@ -93,6 +102,11 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
       // Check each slash-separated component for exact or prefix match
       return std.split(' / ').some((p) => p === em || p.startsWith(em + ' '))
     })
+  }
+
+  // Fuel category (post-fetch: "gas" spans several fuel_type strings)
+  if (params.fuel) {
+    result = result.filter((e) => matchesFuel(e.fuel_type, params.fuel!))
   }
 
   // Power range filter (too complex for PostgREST OR across 4 columns)
