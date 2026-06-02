@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { getAllEngines, getEngineBySlug, getRelatedEngines } from '@/lib/engines'
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
+import { BrandLogo } from '@/components/BrandLogo'
 import { headlinePower, displayKva, displayOutput, ratedSpeeds, buildIntro } from '@/lib/engine-display'
 import type { Engine } from '@/lib/types'
 
@@ -306,6 +307,7 @@ export default async function EngineDetailPage({ params }: Props) {
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
           <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
             <div>
+              <BrandLogo brand={engine.brand} className="mb-3" />
               <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-1">{engine.brand}</p>
               <h1 className="text-3xl font-bold text-gray-900">{engine.brand} {engine.model}</h1>
               {engine.series && <p className="text-gray-500 mt-1">{engine.series}</p>}
