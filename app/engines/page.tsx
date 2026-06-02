@@ -70,12 +70,9 @@ export default async function EnginesPage({ searchParams }: Props) {
       <div>
         {/* Hero — futuristic animated background panel */}
         <div className="relative overflow-hidden rounded-3xl border border-white/10 mb-10 shadow-xl">
-          <div className="hero-bg" aria-hidden="true">
-            <div className="blob b1" />
-            <div className="blob b2" />
-            <div className="blob b3" />
-            <div className="grid" />
-            <div className="sheen" />
+          <div className="hero-photo" aria-hidden="true">
+            <div className="img" />
+            <div className="overlay" />
           </div>
 
           <div className="relative z-10 text-center px-6 py-16 sm:py-24">

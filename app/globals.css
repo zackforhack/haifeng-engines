@@ -100,3 +100,26 @@ body {
   .hero-bg .grid,
   .hero-bg .sheen { animation: none; }
 }
+
+/* ── Photo hero with a slow "Ken Burns" zoom (video-like loop from a still) ── */
+.hero-photo { position: absolute; inset: 0; overflow: hidden; background: #0a0e1a; }
+.hero-photo .img {
+  position: absolute; inset: -3%;
+  background: url('/hero/cummins-engine.jpg') center center / cover no-repeat;
+  transform: scale(1.06);
+  animation: heroKenBurns 34s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.hero-photo .overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(110deg, rgba(7, 12, 24, 0.93) 0%, rgba(8, 13, 28, 0.7) 48%, rgba(11, 20, 44, 0.52) 100%),
+    radial-gradient(ellipse at 50% 120%, rgba(2, 6, 16, 0.6), transparent 60%);
+}
+@keyframes heroKenBurns {
+  0% { transform: scale(1.06) translate(0, 0); }
+  100% { transform: scale(1.18) translate(-2%, -1.5%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo .img { animation: none; }
+}
