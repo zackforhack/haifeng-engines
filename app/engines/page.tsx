@@ -68,37 +68,50 @@ export default async function EnginesPage({ searchParams }: Props) {
 
     return (
       <div>
-        {/* Hero */}
-        <div className="text-center py-12 mb-10">
-          <span className="inline-block text-xs font-semibold tracking-wider uppercase text-blue-700 bg-blue-50 border border-blue-100 rounded-full px-3 py-1 mb-4">
-            Engines for Electrical Power Generation
-          </span>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
-            {stats.total.toLocaleString()}+ Generator Engine Specifications
-          </h1>
-          <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
-            The complete reference for <strong className="font-semibold text-gray-700">diesel and gas</strong> engines used in electrical power generation — search specs, datasheets, and manuals by brand, model, emissions standard, and power output.
-          </p>
-
-          {/* Stat chips */}
-          <div className="flex justify-center gap-6 flex-wrap mb-10">
-            {[
-              { value: stats.total.toLocaleString(), label: 'Engines' },
-              { value: stats.brandCount.toString(), label: 'Brands' },
-              { value: stats.originCount.toString(), label: 'Countries' },
-            ].map(({ value, label }) => (
-              <div key={label} className="text-center">
-                <p className="text-3xl font-bold text-blue-600">{value}</p>
-                <p className="text-sm text-gray-500 mt-0.5">{label}</p>
-              </div>
-            ))}
+        {/* Hero — futuristic animated background panel */}
+        <div className="relative overflow-hidden rounded-3xl border border-white/10 mb-10 shadow-xl">
+          <div className="hero-bg" aria-hidden="true">
+            <div className="blob b1" />
+            <div className="blob b2" />
+            <div className="blob b3" />
+            <div className="grid" />
+            <div className="sheen" />
           </div>
 
-          {/* Search */}
-          <div className="flex justify-center">
-            <Suspense>
-              <SearchBar defaultValue="" />
-            </Suspense>
+          <div className="relative z-10 text-center px-6 py-16 sm:py-24">
+            <span className="inline-block text-xs font-semibold tracking-wider uppercase text-cyan-200 bg-white/10 border border-white/20 backdrop-blur rounded-full px-3 py-1 mb-5">
+              Engines for Electrical Power Generation
+            </span>
+            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4 text-white">
+              <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-300 bg-clip-text text-transparent">
+                {stats.total.toLocaleString()}+
+              </span>{' '}
+              Generator Engine Specifications
+            </h1>
+            <p className="text-slate-300 text-lg mb-9 max-w-2xl mx-auto">
+              The complete reference for <strong className="font-semibold text-white">diesel and gas</strong> engines used in electrical power generation — search specs, datasheets, and manuals by brand, model, emissions standard, and power output.
+            </p>
+
+            {/* Stat chips */}
+            <div className="flex justify-center gap-8 sm:gap-12 flex-wrap mb-10">
+              {[
+                { value: stats.total.toLocaleString(), label: 'Engines' },
+                { value: stats.brandCount.toString(), label: 'Brands' },
+                { value: stats.originCount.toString(), label: 'Countries' },
+              ].map(({ value, label }) => (
+                <div key={label} className="text-center">
+                  <p className="text-3xl font-bold text-cyan-300">{value}</p>
+                  <p className="text-sm text-slate-400 mt-0.5">{label}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Search */}
+            <div className="flex justify-center">
+              <Suspense>
+                <SearchBar defaultValue="" />
+              </Suspense>
+            </div>
           </div>
         </div>
 
