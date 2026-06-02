@@ -59,10 +59,25 @@ const DIRECT_FILE = {
   'Hatz': 'Motorenfabrik Hatz logo.svg',
   'JCB': 'JCB-Logo.jpg',                       // construction JCB (not the JCB card network)
   'Kirloskar': 'Kirloskar Group Logo.svg',
-  'Lovol': 'Weichai Lovol logo.png',
   'Mahindra': 'Mahindra logo.svg',
   // Deutz & Ashok Leyland: Commons only has a route-marker placeholder / a grille-emblem
   // photo respectively — no clean free corporate logo, so they are intentionally omitted.
+}
+
+// User-provided logos already placed in public/brand-logos/ (brands with no clean free
+// Wikimedia logo, plus a cleaner Lovol than the Commons Weichai-Lovol mark). These take
+// priority over the Wikimedia fetch and are kept in the manifest on every re-run.
+const LOCAL_LOGOS = {
+  'Ashok Leyland': 'ashok-leyland.png',
+  'Baudouin': 'baudouin.png',
+  'Deutz': 'deutz.png',
+  'FAWDE': 'fawde.png',
+  'Googol': 'googol.webp',
+  'Lovol': 'lovol.png',
+  'PSI': 'psi.jpg',
+  'SDEC': 'sdec.svg',
+  'Yuchai': 'yuchai.png',
+  'Yunnei': 'yunnei.webp',
 }
 
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
@@ -113,6 +128,13 @@ const report = []
 
 for (const [brand, title] of Object.entries(TITLES)) {
   const slug = slugify(brand)
+  // User-provided local logo wins — skip the network fetch entirely.
+  if (LOCAL_LOGOS[brand]) {
+    const fname = LOCAL_LOGOS[brand]
+    if (fs.existsSync(path.join(OUT_DIR, fname))) { manifest[brand] = `/brand-logos/${fname}`; report.push([brand, 'OK', `local → ${fname}`]) }
+    else report.push([brand, 'MISS', `local file missing: ${fname}`])
+    continue
+  }
   if (!title && !DIRECT_FILE[brand]) { report.push([brand, 'SKIP', 'no Wikipedia article / no logo on Commons']); continue }
   try {
     let src = null, via = ''

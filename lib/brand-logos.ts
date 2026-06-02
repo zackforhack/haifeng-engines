@@ -2,11 +2,16 @@
 // Logos are trademarks of their respective owners, used nominatively to identify the
 // manufacturer of each engine. Re-run the script to refresh.
 export const BRAND_LOGOS: Record<string, string> = {
+  "Ashok Leyland": "/brand-logos/ashok-leyland.png",
+  "Baudouin": "/brand-logos/baudouin.png",
   "Caterpillar": "/brand-logos/caterpillar.svg",
   "Cummins": "/brand-logos/cummins.svg",
   "Daihatsu": "/brand-logos/daihatsu.svg",
   "Detroit Diesel": "/brand-logos/detroit-diesel.svg",
+  "Deutz": "/brand-logos/deutz.png",
+  "FAWDE": "/brand-logos/fawde.png",
   "FPT": "/brand-logos/fpt.jpg",
+  "Googol": "/brand-logos/googol.webp",
   "Greaves": "/brand-logos/greaves.png",
   "Hatz": "/brand-logos/hatz.svg",
   "Hino": "/brand-logos/hino.svg",
@@ -25,9 +30,13 @@ export const BRAND_LOGOS: Record<string, string> = {
   "Mitsubishi": "/brand-logos/mitsubishi.svg",
   "MTU": "/brand-logos/mtu.svg",
   "Perkins": "/brand-logos/perkins.svg",
+  "PSI": "/brand-logos/psi.jpg",
   "Scania": "/brand-logos/scania.svg",
+  "SDEC": "/brand-logos/sdec.svg",
   "VM Motori": "/brand-logos/vm-motori.svg",
   "Volvo Penta": "/brand-logos/volvo-penta.svg",
   "Weichai": "/brand-logos/weichai.png",
   "Yanmar": "/brand-logos/yanmar.svg",
+  "Yuchai": "/brand-logos/yuchai.png",
+  "Yunnei": "/brand-logos/yunnei.webp",
 }
