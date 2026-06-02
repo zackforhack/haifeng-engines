@@ -5,7 +5,7 @@ import { getAllEngines, getEngineBySlug, getRelatedEngines } from '@/lib/engines
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
-import { headlinePower, displayKva, displayOutput, ratedSpeeds, buildIntro } from '@/lib/engine-display'
+import { headlinePower, displayKva, displayOutput, ratedSpeedLabel, buildIntro } from '@/lib/engine-display'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -180,15 +180,13 @@ function SpecHero({ engine }: { engine: Engine }) {
   const hp = headlinePower(engine)
   const kva = displayKva(hp)
   const out = displayOutput(hp)
-  const { rpm50, rpm60 } = ratedSpeeds(engine)
-  const speed = hp ? (hp.hz === 60 ? rpm60 : rpm50) : rpm50
 
   const cards: { label: string; value: string }[] = []
   if (kva) cards.push({ label: `${hp?.rating ?? 'Standby'} Power · ${hp?.hz ?? 50} Hz`, value: `${kva.toLocaleString()} kVA` })
   if (out) cards.push({ label: 'Electrical Output', value: `${out.value.toLocaleString()} ${out.unit}` })
   if (engine.configuration || engine.cylinders) cards.push({ label: 'Cylinders', value: engine.configuration ?? String(engine.cylinders) })
   if (engine.displacement_l) cards.push({ label: 'Displacement', value: `${engine.displacement_l} L` })
-  cards.push({ label: 'Rated Speed', value: `${speed.toLocaleString()} RPM` })
+  cards.push({ label: 'Rated Speed', value: ratedSpeedLabel(engine) })
 
   if (cards.length === 0) return null
 
@@ -241,7 +239,6 @@ export default async function EngineDetailPage({ params }: Props) {
   const hp = headlinePower(engine)
   const kva = displayKva(hp)
   const out = displayOutput(hp)
-  const { rpm50, rpm60 } = ratedSpeeds(engine)
 
   // Build PropertyValue specs from whatever is populated.
   const props: { '@type': 'PropertyValue'; name: string; value: string }[] = []
@@ -253,7 +250,7 @@ export default async function EngineDetailPage({ params }: Props) {
   addProp('Configuration', engine.configuration)
   addProp('Cylinders', engine.cylinders)
   addProp('Displacement', engine.displacement_l ? `${engine.displacement_l} L` : undefined)
-  addProp('Rated Speed', `${hp?.hz === 60 ? rpm60 : rpm50} RPM`)
+  addProp('Rated Speed', ratedSpeedLabel(engine))
   addProp('Cooling', engine.cooling_method)
   addProp('Fuel Type', engine.fuel_type)
   addProp('Emissions Standard', engine.emissions_standard)

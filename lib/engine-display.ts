@@ -19,6 +19,23 @@ export function ratedSpeeds(engine: Engine): RatedSpeeds {
   return { rpm50, rpm60, ratedIs60 }
 }
 
+// Which frequencies the engine actually carries a power rating for.
+export function ratedFrequencies(e: Engine): { has50: boolean; has60: boolean } {
+  const f = e as unknown as Record<string, number | undefined>
+  const has = (hz: 50 | 60) =>
+    !!(f[`prime_power_kw_${hz}hz`] || f[`standby_power_kw_${hz}hz`] || f[`prime_power_kwe_${hz}hz`] || f[`standby_power_kwe_${hz}hz`])
+  return { has50: has(50), has60: has(60) }
+}
+
+// "1,500 / 1,800 RPM" when the engine is rated for both frequencies, else the single speed.
+export function ratedSpeedLabel(e: Engine): string {
+  const { rpm50, rpm60 } = ratedSpeeds(e)
+  const { has50, has60 } = ratedFrequencies(e)
+  if (has50 && has60) return `${rpm50.toLocaleString()} / ${rpm60.toLocaleString()} RPM`
+  if (has60 && !has50) return `${rpm60.toLocaleString()} RPM`
+  return `${rpm50.toLocaleString()} RPM`
+}
+
 export interface HeadlinePower {
   kva?: number
   kwe?: number
