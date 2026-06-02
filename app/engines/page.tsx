@@ -6,6 +6,7 @@ import { EngineCard } from '@/components/EngineCard'
 import { SearchBar } from '@/components/SearchBar'
 import { EngineFilters } from '@/components/EngineFilters'
 import { EngineTable } from '@/components/EngineTable'
+import { CountUp } from '@/components/CountUp'
 
 // Always fetch fresh data — prevents Next.js data cache from hiding new DB rows.
 export const dynamic = 'force-dynamic'
@@ -81,7 +82,7 @@ export default async function EnginesPage({ searchParams }: Props) {
             </span>
             <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4 text-white">
               <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-300 bg-clip-text text-transparent">
-                {stats.total.toLocaleString()}+
+                <CountUp end={stats.total} />+
               </span>{' '}
               Generator Engine Specifications
             </h1>
@@ -92,12 +93,12 @@ export default async function EnginesPage({ searchParams }: Props) {
             {/* Stat chips */}
             <div className="flex justify-center gap-8 sm:gap-12 flex-wrap mb-10">
               {[
-                { value: stats.total.toLocaleString(), label: 'Engines' },
-                { value: stats.brandCount.toString(), label: 'Brands' },
-                { value: stats.originCount.toString(), label: 'Countries' },
+                { value: stats.total, label: 'Engines' },
+                { value: stats.brandCount, label: 'Brands' },
+                { value: stats.originCount, label: 'Countries' },
               ].map(({ value, label }) => (
                 <div key={label} className="text-center">
-                  <p className="text-3xl font-bold text-cyan-300">{value}</p>
+                  <p className="text-3xl font-bold text-cyan-300"><CountUp end={value} /></p>
                   <p className="text-sm text-slate-400 mt-0.5">{label}</p>
                 </div>
               ))}
