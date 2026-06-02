@@ -1,9 +1,6 @@
 import type { Metadata } from 'next'
-import { Geist } from 'next/font/google'
 import Link from 'next/link'
 import './globals.css'
-
-const geist = Geist({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://engines.haifengmachinery.com'),
@@ -21,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={geist.className}>
+    <html lang="en">
       <body className="bg-gray-50 text-gray-900 min-h-screen">
         <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">

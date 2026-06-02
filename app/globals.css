@@ -19,10 +19,34 @@
   }
 }
 
+/* WeblySleek UI — self-hosted (Light / SemiLight / SemiBold). SemiLight serves as the
+   regular body weight; SemiBold covers 600–800 (bold/semibold/extrabold headings). */
+@font-face {
+  font-family: 'WeblySleek UI';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/weblysleekuil.woff') format('woff');
+}
+@font-face {
+  font-family: 'WeblySleek UI';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url('/fonts/weblysleekuisl.woff') format('woff');
+}
+@font-face {
+  font-family: 'WeblySleek UI';
+  font-style: normal;
+  font-weight: 600 800;
+  font-display: swap;
+  src: url('/fonts/weblysleekuisb.woff') format('woff');
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'WeblySleek UI', 'Segoe UI', system-ui, -apple-system, Tahoma, Arial, sans-serif;
 }
 
 /* ── Futuristic animated hero background ─────────────────────────────────────
