@@ -8,13 +8,13 @@ const geist = Geist({ subsets: ['latin'] })
 export const metadata: Metadata = {
   metadataBase: new URL('https://engines.haifengmachinery.com'),
   title: {
-    default: 'Diesel Engine Encyclopedia – Generator Engine Specs Database',
-    template: '%s | Diesel Engine Encyclopedia',
+    default: 'The Generator Engine Encyclopedia – Diesel & Gas Engine Specs Database',
+    template: '%s | The Generator Engine Encyclopedia',
   },
   description:
-    'The complete diesel engine specifications database for generator engines. Browse specs, datasheets, and manuals for every diesel engine brand and model worldwide.',
+    'The complete specifications database for diesel and gas engines used in electrical power generation. Browse specs, datasheets, and manuals for every generator engine brand and model worldwide.',
   openGraph: {
-    siteName: 'Diesel Engine Encyclopedia',
+    siteName: 'The Generator Engine Encyclopedia',
     type: 'website',
   },
 }
@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-xl font-bold text-blue-700">Diesel Engine</span>
+              <span className="text-xl font-bold text-blue-700">The Generator Engine</span>
               <span className="text-xl font-light text-gray-600">Encyclopedia</span>
             </Link>
             <nav className="flex items-center gap-6 text-sm font-medium text-gray-600">
@@ -53,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-500">
             <div className="flex flex-col sm:flex-row justify-between gap-4">
               <p>
-                Diesel Engine Encyclopedia — a free resource by{' '}
+                The Generator Engine Encyclopedia — a free resource by{' '}
                 <a href="https://www.haifengmachinery.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                   Haifeng Machinery
                 </a>

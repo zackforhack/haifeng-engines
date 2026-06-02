@@ -20,7 +20,7 @@ export default async function Image({ params }: Props) {
     return new ImageResponse(
       (
         <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0f172a', color: 'white', fontSize: 56 }}>
-          Diesel Engine Encyclopedia
+          The Generator Engine Encyclopedia
         </div>
       ),
       size,
@@ -88,7 +88,7 @@ export default async function Image({ params }: Props) {
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 44, fontSize: 26, color: '#94a3b8' }}>
-          <span>Diesel Engine Encyclopedia</span>
+          <span>The Generator Engine Encyclopedia</span>
           <span>engines.haifengmachinery.com</span>
         </div>
       </div>
