@@ -197,6 +197,13 @@ export async function getRelatedEngines(engine: Engine, limit = 6): Promise<Engi
     .slice(0, limit)
 }
 
+// Resolve a lowercase URL slug (e.g. "vm motori") back to the stored brand casing
+// ("VM Motori") for titles/headings. ilike is a case-insensitive exact match here (no wildcards).
+export const getBrandDisplayName = cache(async (slug: string): Promise<string | null> => {
+  const { data } = await supabase.from('engines').select('brand').ilike('brand', slug).limit(1)
+  return data?.[0]?.brand ?? null
+})
+
 export async function getEnginesByBrand(brand: string): Promise<Engine[]> {
   const { data, error } = await supabase
     .from('engines')

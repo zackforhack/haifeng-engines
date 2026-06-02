@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getAllBrands, getEnginesByBrand } from '@/lib/engines'
+import { getAllBrands, getEnginesByBrand, getBrandDisplayName } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
 import { BrandLogo } from '@/components/BrandLogo'
 
@@ -12,9 +12,10 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { brand } = await params
   const decoded = decodeURIComponent(brand)
+  const name = (await getBrandDisplayName(decoded)) ?? decoded
   return {
-    title: `${decoded} Generator Engine Specs`,
-    description: `Browse all ${decoded} diesel and gas generator engine specifications, datasheets, and manuals for electrical power generation.`,
+    title: `${name} Generator Engine Specs`,
+    description: `Browse all ${name} diesel and gas generator engine specifications, datasheets, and manuals for electrical power generation.`,
   }
 }
 
