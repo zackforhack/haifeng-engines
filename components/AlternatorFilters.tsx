@@ -14,16 +14,15 @@ export function AlternatorFilters({ options, totalCount }: Props) {
   const searchParams = useSearchParams()
 
   const get = (k: string) => searchParams.get(k) ?? ''
-  const q         = get('q')
-  const brand     = get('brand')
-  const excitation = get('excitation')
-  const poles     = get('poles')
-  const ip        = get('ip')
-  const minKva    = get('min_kva')
-  const maxKva    = get('max_kva')
-  const sort      = get('sort')
+  const q       = get('q')
+  const brand   = get('brand')
+  const series  = get('series')
+  const poles   = get('poles')
+  const minKva  = get('min_kva')
+  const maxKva  = get('max_kva')
+  const sort    = get('sort')
 
-  const activeCount = [brand, excitation, poles, ip, minKva, maxKva].filter(Boolean).length
+  const activeCount = [brand, series, poles, minKva, maxKva].filter(Boolean).length
 
   function update(key: string, value: string) {
     const p = new URLSearchParams(searchParams.toString())
@@ -41,7 +40,7 @@ export function AlternatorFilters({ options, totalCount }: Props) {
 
   return (
     <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-3">
+      <div className="grid grid-cols-3 gap-3 mb-3">
         {/* Brand */}
         <div>
           <label className="block text-xs font-medium text-gray-500 mb-1">Brand</label>
@@ -51,13 +50,13 @@ export function AlternatorFilters({ options, totalCount }: Props) {
             {options.brands.map((b) => <option key={b} value={b}>{b}</option>)}
           </select>
         </div>
-        {/* Excitation */}
+        {/* Series */}
         <div>
-          <label className="block text-xs font-medium text-gray-500 mb-1">Excitation</label>
-          <select value={excitation} onChange={(e) => update('excitation', e.target.value)}
+          <label className="block text-xs font-medium text-gray-500 mb-1">Series</label>
+          <select value={series} onChange={(e) => update('series', e.target.value)}
             className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded bg-white focus:ring-1 focus:ring-blue-500 focus:outline-none">
-            <option value="">All Types</option>
-            {options.excitations.map((e) => <option key={e} value={e}>{e}</option>)}
+            <option value="">All Series</option>
+            {options.series.map((s) => <option key={s} value={s}>{s}</option>)}
           </select>
         </div>
         {/* Poles */}
@@ -67,15 +66,6 @@ export function AlternatorFilters({ options, totalCount }: Props) {
             className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded bg-white focus:ring-1 focus:ring-blue-500 focus:outline-none">
             <option value="">All</option>
             {options.poles.map((p) => <option key={p} value={p}>{p}-pole</option>)}
-          </select>
-        </div>
-        {/* IP */}
-        <div>
-          <label className="block text-xs font-medium text-gray-500 mb-1">IP Rating</label>
-          <select value={ip} onChange={(e) => update('ip', e.target.value)}
-            className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded bg-white focus:ring-1 focus:ring-blue-500 focus:outline-none">
-            <option value="">All</option>
-            {options.ips.map((i) => <option key={i} value={i}>{i}</option>)}
           </select>
         </div>
       </div>

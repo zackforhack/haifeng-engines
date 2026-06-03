@@ -60,42 +60,18 @@ export interface Engine {
   updated_at: string
 }
 
+// Lean by design: the catalog lists each model and links its official spec sheet
+// (which carries the full voltage/RPM/winding ratings) rather than replicating them.
 export interface Alternator {
   id: string
   slug: string
   brand: string
   model: string
-  series?: string
-  frame?: string
-
-  prime_kva_50hz?: number
-  prime_kw_50hz?: number
-  standby_kva_50hz?: number
-  standby_kw_50hz?: number
-
-  prime_kva_60hz?: number
-  prime_kw_60hz?: number
-  standby_kva_60hz?: number
-  standby_kw_60hz?: number
-
-  poles?: number
-  power_factor?: number
-  voltage_output?: string
-  phases?: number
-
-  weight_kg?: number
-  length_mm?: number
-  width_mm?: number
-  height_mm?: number
-
-  insulation_class?: string
-  ip_rating?: string
-  excitation_type?: string
-  efficiency?: number
-
-  origin?: string
+  series?: string        // readable family, e.g. PI734, S4L1D, HCI634
+  poles?: number         // 2 / 4 / 6
+  kva?: number           // nominal prime kVA @ 50Hz — browse/sort only
+  spec_sheet_url?: string // official manufacturer data-sheet link
   status: string
-  description?: string
 
   created_at: string
   updated_at: string

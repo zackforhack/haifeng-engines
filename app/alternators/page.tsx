@@ -4,10 +4,11 @@ import Link from 'next/link'
 import { filterAlternators, getAlternatorFilterOptions } from '@/lib/alternators'
 import { SearchBar } from '@/components/SearchBar'
 import { AlternatorFilters } from '@/components/AlternatorFilters'
+import type { Alternator } from '@/lib/types'
 
 export const metadata: Metadata = {
   title: 'Browse Alternators',
-  description: 'Browse alternator specifications by brand, kVA output, excitation type and more.',
+  description: 'Browse generator alternator models by brand, series, kVA output and pole count, with links to official manufacturer data sheets.',
 }
 
 const PAGE_SIZE = 24
@@ -24,9 +25,8 @@ interface Props {
   searchParams: Promise<{
     q?: string
     brand?: string
-    excitation?: string
+    series?: string
     poles?: string
-    ip?: string
     min_kva?: string
     max_kva?: string
     sort?: string
@@ -38,7 +38,7 @@ interface Props {
 export default async function AlternatorsPage({ searchParams }: Props) {
   const p = await searchParams
 
-  const hasFilters = !!(p.q || p.brand || p.excitation || p.poles || p.ip || p.min_kva || p.max_kva)
+  const hasFilters = !!(p.q || p.brand || p.series || p.poles || p.min_kva || p.max_kva)
 
   // ── Landing view ──────────────────────────────────────────────────────────
   if (!hasFilters) {
@@ -55,7 +55,8 @@ export default async function AlternatorsPage({ searchParams }: Props) {
             Alternator Specifications
           </h1>
           <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
-            Browse alternator specs by brand, kVA output, excitation type, and protection rating.
+            Browse generator alternator models by brand, series, kVA output and pole
+            count — each links to the manufacturer&rsquo;s official data sheet.
           </p>
           <div className="flex justify-center">
             <Suspense>
@@ -85,23 +86,40 @@ export default async function AlternatorsPage({ searchParams }: Props) {
             </div>
           </div>
 
-          {/* Excitation type */}
-          {options.excitations.length > 0 && (
+          {/* Poles */}
+          {options.poles.length > 0 && (
             <div>
               <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
-                Browse by Excitation
+                Browse by Poles
               </h2>
               <div className="flex flex-wrap gap-2">
-                {options.excitations.map((ex) => (
-                  <Link key={ex} href={presetHref({ excitation: ex })}
+                {options.poles.map((pole) => (
+                  <Link key={pole} href={presetHref({ poles: pole })}
                     className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
-                    {ex}
+                    {pole}-pole
                   </Link>
                 ))}
               </div>
             </div>
           )}
         </div>
+
+        {/* Series */}
+        {options.series.length > 0 && (
+          <div className="mb-10">
+            <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
+              Browse by Series
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {options.series.map((s) => (
+                <Link key={s} href={presetHref({ series: s })}
+                  className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
+                  {s}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Brands */}
         {options.brands.length > 0 && (
@@ -136,14 +154,13 @@ export default async function AlternatorsPage({ searchParams }: Props) {
 
   const [allAlternators, options] = await Promise.all([
     filterAlternators({
-      q:          p.q,
-      brand:      p.brand,
-      excitation: p.excitation,
-      poles:      p.poles,
-      ip:         p.ip,
-      min_kva:    p.min_kva ? Number(p.min_kva) : undefined,
-      max_kva:    p.max_kva ? Number(p.max_kva) : undefined,
-      sort:       p.sort,
+      q:       p.q,
+      brand:   p.brand,
+      series:  p.series,
+      poles:   p.poles,
+      min_kva: p.min_kva ? Number(p.min_kva) : undefined,
+      max_kva: p.max_kva ? Number(p.max_kva) : undefined,
+      sort:    p.sort,
     }),
     getAlternatorFilterOptions(),
   ])
@@ -155,14 +172,13 @@ export default async function AlternatorsPage({ searchParams }: Props) {
 
   function href(extra: Record<string, string>) {
     const sp = new URLSearchParams({
-      ...(p.q         ? { q: p.q }                 : {}),
-      ...(p.brand     ? { brand: p.brand }          : {}),
-      ...(p.excitation ? { excitation: p.excitation } : {}),
-      ...(p.poles     ? { poles: p.poles }          : {}),
-      ...(p.ip        ? { ip: p.ip }                : {}),
-      ...(p.min_kva   ? { min_kva: p.min_kva }      : {}),
-      ...(p.max_kva   ? { max_kva: p.max_kva }      : {}),
-      ...(p.sort      ? { sort: p.sort }            : {}),
+      ...(p.q       ? { q: p.q }             : {}),
+      ...(p.brand   ? { brand: p.brand }     : {}),
+      ...(p.series  ? { series: p.series }   : {}),
+      ...(p.poles   ? { poles: p.poles }     : {}),
+      ...(p.min_kva ? { min_kva: p.min_kva } : {}),
+      ...(p.max_kva ? { max_kva: p.max_kva } : {}),
+      ...(p.sort    ? { sort: p.sort }       : {}),
       ...extra,
     })
     return `/alternators?${sp.toString()}`
@@ -211,32 +227,20 @@ export default async function AlternatorsPage({ searchParams }: Props) {
                 className="block bg-white border border-gray-200 rounded-lg p-4 hover:border-blue-400 hover:shadow-md transition-all">
                 <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide">{a.brand}</p>
                 <h3 className="text-base font-bold text-gray-900">{a.model}</h3>
-                {a.frame && <p className="text-xs text-gray-500">{a.frame}</p>}
-                <div className="mt-2 space-y-0.5">
-                  {(a.prime_kva_50hz || a.standby_kva_50hz) && (
-                    <p className="text-sm text-gray-700">
-                      <span className="text-gray-400 text-xs">50Hz </span>
-                      {a.prime_kva_50hz && <span className="font-medium">{a.prime_kva_50hz}</span>}
-                      {a.prime_kva_50hz && a.standby_kva_50hz && <span className="text-gray-300"> / </span>}
-                      {a.standby_kva_50hz && <span>{a.standby_kva_50hz}</span>}
-                      <span className="text-gray-400 text-xs"> kVA</span>
-                    </p>
-                  )}
-                  {(a.prime_kva_60hz || a.standby_kva_60hz) && (
-                    <p className="text-sm text-gray-700">
-                      <span className="text-gray-400 text-xs">60Hz </span>
-                      {a.prime_kva_60hz && <span className="font-medium">{a.prime_kva_60hz}</span>}
-                      {a.prime_kva_60hz && a.standby_kva_60hz && <span className="text-gray-300"> / </span>}
-                      {a.standby_kva_60hz && <span>{a.standby_kva_60hz}</span>}
-                      <span className="text-gray-400 text-xs"> kVA</span>
-                    </p>
+                {a.series && <p className="text-xs text-gray-500">{a.series} series</p>}
+                <div className="mt-2 flex items-baseline gap-1">
+                  {a.kva != null ? (
+                    <>
+                      <span className="text-lg font-semibold text-gray-900">{a.kva.toLocaleString()}</span>
+                      <span className="text-gray-400 text-xs">kVA prime</span>
+                    </>
+                  ) : (
+                    <span className="text-sm text-gray-400">See data sheet for ratings</span>
                   )}
                 </div>
                 <div className="flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-gray-500 mt-2">
                   {a.poles && <span>{a.poles}-pole</span>}
-                  {a.excitation_type && <span>{a.excitation_type}</span>}
-                  {a.ip_rating && <span>{a.ip_rating}</span>}
-                  {a.insulation_class && <span>Class {a.insulation_class}</span>}
+                  {a.spec_sheet_url && <span className="text-blue-600">Data sheet ↗</span>}
                 </div>
               </Link>
             ))}
@@ -269,24 +273,18 @@ export default async function AlternatorsPage({ searchParams }: Props) {
 }
 
 // ── Inline table component ─────────────────────────────────────────────────
-import type { Alternator } from '@/lib/types'
-
 const KVA_RANGES_TABLE = [
   { label: '< 100 kVA',         min: 0,    max: 99 },
   { label: '100 – 499 kVA',     min: 100,  max: 499 },
   { label: '500 – 999 kVA',     min: 500,  max: 999 },
   { label: '1,000 – 2,499 kVA', min: 1000, max: 2499 },
   { label: '2,500+ kVA',        min: 2500, max: Infinity },
+  { label: 'kVA not specified', min: NaN,  max: NaN },
 ]
 
-function repKva(a: Alternator): number | null {
-  return a.prime_kva_50hz ?? a.standby_kva_50hz ?? a.prime_kva_60hz ?? a.standby_kva_60hz ?? null
-}
-
 function rangeIdx(a: Alternator): number {
-  const k = repKva(a)
-  if (k === null) return -1
-  return KVA_RANGES_TABLE.findIndex((r) => k >= r.min && k <= r.max)
+  if (a.kva == null) return KVA_RANGES_TABLE.length - 1 // "kVA not specified" bucket
+  return KVA_RANGES_TABLE.findIndex((r) => a.kva! >= r.min && a.kva! <= r.max)
 }
 
 function AlternatorTable({ alternators }: { alternators: Alternator[] }) {
@@ -332,7 +330,7 @@ function AlternatorTable({ alternators }: { alternators: Alternator[] }) {
                 <tbody>
                   <tr>
                     {rangeBrands.map((brand) => {
-                      const cells = (lookup[i].get(brand) ?? []).sort((a, b) => (repKva(a) ?? 0) - (repKva(b) ?? 0))
+                      const cells = (lookup[i].get(brand) ?? []).sort((a, b) => (a.kva ?? 0) - (b.kva ?? 0))
                       const dense = cells.length > 4
                       return (
                         <td key={brand} className="px-1.5 py-1.5 border-r border-gray-100 last:border-r-0 align-top">
@@ -341,29 +339,12 @@ function AlternatorTable({ alternators }: { alternators: Alternator[] }) {
                               <Link key={a.id} href={`/alternators/${a.slug}`} title={a.model}
                                 className="flex flex-col gap-px px-1.5 py-1 border-b border-gray-100 last:border-0 hover:bg-blue-50 transition-colors">
                                 <span className="font-semibold text-gray-900 truncate">{a.model}</span>
-                                <div className="flex flex-col gap-px">
-                                  {(a.prime_kva_50hz || a.standby_kva_50hz) && (
-                                    <span className="text-gray-500 whitespace-nowrap">
-                                      <span className="text-gray-400">50Hz </span>
-                                      {a.prime_kva_50hz && <span className="font-medium text-gray-700">{a.prime_kva_50hz}</span>}
-                                      {a.prime_kva_50hz && a.standby_kva_50hz && <span className="text-gray-300 mx-px">/</span>}
-                                      {a.standby_kva_50hz && <span>{a.standby_kva_50hz}</span>}
-                                      <span className="text-gray-400"> kVA</span>
-                                    </span>
-                                  )}
-                                  {(a.prime_kva_60hz || a.standby_kva_60hz) && (
-                                    <span className="text-gray-500 whitespace-nowrap">
-                                      <span className="text-gray-400">60Hz </span>
-                                      {a.prime_kva_60hz && <span className="font-medium text-gray-700">{a.prime_kva_60hz}</span>}
-                                      {a.prime_kva_60hz && a.standby_kva_60hz && <span className="text-gray-300 mx-px">/</span>}
-                                      {a.standby_kva_60hz && <span>{a.standby_kva_60hz}</span>}
-                                      <span className="text-gray-400"> kVA</span>
-                                    </span>
-                                  )}
-                                  {a.excitation_type && (
-                                    <span className="text-purple-600 text-[10px] font-medium">{a.excitation_type}</span>
-                                  )}
-                                </div>
+                                <span className="text-gray-500 whitespace-nowrap">
+                                  {a.kva != null
+                                    ? <><span className="font-medium text-gray-700">{a.kva.toLocaleString()}</span><span className="text-gray-400"> kVA</span></>
+                                    : <span className="text-gray-400">see data sheet</span>}
+                                  {a.poles && <span className="text-gray-400"> · {a.poles}p</span>}
+                                </span>
                               </Link>
                             ))}
                           </div>
@@ -378,7 +359,7 @@ function AlternatorTable({ alternators }: { alternators: Alternator[] }) {
         )
       })}
       <div className="flex items-center gap-4 text-[10px] text-gray-400">
-        <span>Prime / Standby kVA</span>
+        <span>Nominal prime kVA @ 50 Hz · full ratings on each model&rsquo;s data sheet</span>
       </div>
     </div>
   )
