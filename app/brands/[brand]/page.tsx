@@ -34,8 +34,42 @@ export default async function BrandPage({ params }: Props) {
   const activeEngines = engines.filter((e) => e.status === 'active')
   const discontinuedEngines = engines.filter((e) => e.status !== 'active')
 
+  const base = 'https://engines.haifengmachinery.com'
+  const name = engines[0].brand
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: `${name} Generator Engines`,
+      url: `${base}/brands/${encodeURIComponent(decoded.toLowerCase())}`,
+      description: `All ${name} diesel and gas generator engine specifications and datasheets.`,
+      mainEntity: {
+        '@type': 'ItemList',
+        numberOfItems: engines.length,
+        itemListElement: engines.map((e, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: `${e.brand} ${e.model}`,
+          url: `${base}/engines/${e.slug}`,
+        })),
+      },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Brands', item: `${base}/brands` },
+        { '@type': 'ListItem', position: 2, name, item: `${base}/brands/${encodeURIComponent(decoded.toLowerCase())}` },
+      ],
+    },
+  ]
+
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }}
+      />
       <nav className="text-sm text-gray-400 mb-4">
         <Link href="/brands" className="hover:text-blue-600">Brands</Link>
         {' / '}

@@ -40,16 +40,35 @@ export default async function AlternatorDetailPage({ params }: Props) {
   const a = await getAlternatorBySlug(slug)
   if (!a) notFound()
 
-  const structuredData = {
+  const base = 'https://engines.haifengmachinery.com'
+  const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
+    '@id': `${base}/alternators/${slug}#product`,
     name: `${a.brand} ${a.model}`,
+    sku: a.model,
+    mpn: a.model,
+    ...(a.series && { model: a.series }),
+    category: 'Generator Alternator',
+    image: `${base}/alternators/${slug}/opengraph-image`,
+    url: `${base}/alternators/${slug}`,
     brand: { '@type': 'Brand', name: a.brand },
+    manufacturer: { '@type': 'Organization', name: a.brand },
     description: `${a.brand} ${a.model} generator alternator specifications`,
     ...(a.kva != null && {
       additionalProperty: [{ '@type': 'PropertyValue', name: 'Nominal Prime Output', value: `${a.kva} kVA` }],
     }),
   }
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Alternators', item: `${base}/alternators` },
+      { '@type': 'ListItem', position: 2, name: a.brand, item: `${base}/alternators?brand=${encodeURIComponent(a.brand)}` },
+      { '@type': 'ListItem', position: 3, name: a.model, item: `${base}/alternators/${slug}` },
+    ],
+  }
+  const structuredData = [productSchema, breadcrumbSchema]
 
   return (
     <>

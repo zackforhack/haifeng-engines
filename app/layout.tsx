@@ -16,10 +16,42 @@ export const metadata: Metadata = {
   },
 }
 
+const BASE = 'https://engines.haifengmachinery.com'
+
+// Site-wide structured data: identifies the publisher (Organization) and the site
+// (WebSite) and enables Google's sitelinks search box via SearchAction.
+const siteSchema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${BASE}/#org`,
+    name: 'Haifeng Machinery',
+    url: 'https://www.haifengmachinery.com',
+    logo: `${BASE}/icon.png`,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${BASE}/#website`,
+    name: 'The Generator Engine Encyclopedia',
+    url: BASE,
+    publisher: { '@id': `${BASE}/#org` },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: { '@type': 'EntryPoint', urlTemplate: `${BASE}/engines?q={search_term_string}` },
+      'query-input': 'required name=search_term_string',
+    },
+  },
+]
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-gray-50 text-gray-900 min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema).replace(/</g, '\\u003c') }}
+        />
         <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
