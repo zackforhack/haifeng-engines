@@ -97,6 +97,24 @@ export async function getAlternatorFilterOptions(): Promise<AlternatorFilterOpti
   }
 }
 
+export async function getAllAlternators(): Promise<Alternator[]> {
+  const PAGE = 1000
+  const all: Alternator[] = []
+  let from = 0
+  while (true) {
+    const { data, error } = await supabase
+      .from('alternators')
+      .select('slug, updated_at, status')
+      .order('brand').order('model')
+      .range(from, from + PAGE - 1)
+    if (error) throw error
+    all.push(...((data ?? []) as Alternator[]))
+    if (!data || data.length < PAGE) break
+    from += PAGE
+  }
+  return all
+}
+
 export async function getAlternatorBySlug(slug: string): Promise<Alternator | null> {
   const { data, error } = await supabase
     .from('alternators')
