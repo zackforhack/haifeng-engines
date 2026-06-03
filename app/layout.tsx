@@ -31,12 +31,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/alternators" className="hover:text-blue-600 transition-colors">Alternators</Link>
               <Link href="/brands" className="hover:text-blue-600 transition-colors">Brands</Link>
               <a
-                href="https://www.haifengmachinery.com"
+                href="https://www.haifengmachinery.com/contact-us/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
               >
-                Haifeng Machinery ↗
+                Contact Us ↗
               </a>
             </nav>
           </div>
