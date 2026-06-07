@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 380" role="img" aria-label="How air-cooled and water-cooled engines shed heat: air-cooled uses finned cylinders and a fan; water-cooled circulates coolant through a jacket to a radiator.">
+  <defs>
+    <marker id="hot" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#dc2626"/></marker>
+    <marker id="cool" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2563eb"/></marker>
+    <marker id="airm" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#d97706"/></marker>
+  </defs>
+  <rect width="660" height="380" rx="14" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">How Engines Shed Heat</text>
+  <line x1="330" y1="64" x2="330" y2="356" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <!-- ── AIR-COOLED (left) ── -->
+  <text x="170" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#d97706">AIR-COOLED</text>
+  <!-- finned cylinder -->
+  <rect x="150" y="150" width="34" height="150" rx="3" fill="#9ca3af"/>
+  <g stroke="#6b7280" stroke-width="4">
+    <line x1="120" y1="162" x2="214" y2="162"/>
+    <line x1="120" y1="182" x2="214" y2="182"/>
+    <line x1="120" y1="202" x2="214" y2="202"/>
+    <line x1="120" y1="222" x2="214" y2="222"/>
+    <line x1="120" y1="242" x2="214" y2="242"/>
+    <line x1="120" y1="262" x2="214" y2="262"/>
+  </g>
+  <!-- fan -->
+  <circle cx="167" cy="330" r="22" fill="none" stroke="#6b7280" stroke-width="3"/>
+  <g stroke="#6b7280" stroke-width="3"><line x1="167" y1="330" x2="167" y2="312"/><line x1="167" y1="330" x2="183" y2="339"/><line x1="167" y1="330" x2="151" y2="339"/></g>
+  <text x="167" y="368" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">cooling fan</text>
+  <!-- heat-out arrows -->
+  <line x1="118" y1="190" x2="86" y2="176" stroke="#d97706" stroke-width="2.5" marker-end="url(#airm)"/>
+  <line x1="216" y1="232" x2="248" y2="218" stroke="#d97706" stroke-width="2.5" marker-end="url(#airm)"/>
+  <text x="170" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#b45309">Heat leaves straight to the air</text>
+
+  <!-- ── WATER-COOLED (right) ── -->
+  <text x="495" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#2563eb">WATER-COOLED</text>
+  <!-- cylinder + jacket -->
+  <rect x="400" y="160" width="34" height="130" rx="3" fill="#9ca3af"/>
+  <rect x="390" y="150" width="54" height="150" rx="8" fill="none" stroke="#2563eb" stroke-width="3"/>
+  <text x="417" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">coolant jacket</text>
+  <!-- radiator -->
+  <rect x="540" y="120" width="74" height="80" rx="4" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <g stroke="#93c5fd" stroke-width="2"><line x1="555" y1="120" x2="555" y2="200"/><line x1="570" y1="120" x2="570" y2="200"/><line x1="585" y1="120" x2="585" y2="200"/><line x1="600" y1="120" x2="600" y2="200"/></g>
+  <text x="577" y="216" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">radiator</text>
+  <!-- hot coolant: jacket top -> radiator -->
+  <path d="M444,165 L500,165 L500,135 L536,135" fill="none" stroke="#dc2626" stroke-width="3" marker-end="url(#hot)"/>
+  <!-- cool coolant: radiator -> pump -> jacket bottom -->
+  <path d="M536,185 L500,185 L500,260 L470,260" fill="none" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="452" cy="260" r="16" fill="#ffffff" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="452" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#2563eb">P</text>
+  <path d="M452,244 L452,285 L444,285" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#cool)"/>
+  <text x="452" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">pump</text>
+  <text x="495" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#1d4ed8">Coolant carries heat to a radiator</text>
+</svg>
