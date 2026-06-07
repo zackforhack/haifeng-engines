@@ -272,3 +272,25 @@ export function getPDFUrl(storagePath: string): string {
   const safe = storagePath.split('/').map(encodeURIComponent).join('/')
   return `/specsheets/${safe}`
 }
+
+// Distinct spec-sheet PDF paths (many range datasheets are shared across engines),
+// each with the latest link date — used to list the masked /specsheets URLs in the sitemap.
+export async function getAllPdfPaths(): Promise<{ path: string; updatedAt: string }[]> {
+  const PAGE = 1000
+  const latest = new Map<string, string>()
+  let from = 0
+  while (true) {
+    const { data, error } = await supabase
+      .from('engine_pdfs')
+      .select('storage_path, created_at')
+      .range(from, from + PAGE - 1)
+    if (error) throw error
+    for (const r of data ?? []) {
+      const prev = latest.get(r.storage_path)
+      if (!prev || r.created_at > prev) latest.set(r.storage_path, r.created_at)
+    }
+    if (!data || data.length < PAGE) break
+    from += PAGE
+  }
+  return [...latest].map(([path, updatedAt]) => ({ path, updatedAt }))
+}

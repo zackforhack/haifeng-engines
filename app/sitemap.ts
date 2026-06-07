@@ -1,14 +1,15 @@
 import type { MetadataRoute } from 'next'
-import { getAllEngines, getAllBrands } from '@/lib/engines'
+import { getAllEngines, getAllBrands, getAllPdfPaths } from '@/lib/engines'
 import { getAllAlternators } from '@/lib/alternators'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = 'https://engines.haifengmachinery.com'
 
-  const [engines, brands, alternators] = await Promise.all([
+  const [engines, brands, alternators, pdfPaths] = await Promise.all([
     getAllEngines(),
     getAllBrands(),
     getAllAlternators(),
+    getAllPdfPaths(),
   ])
 
   const engineUrls = engines.map((e) => ({
@@ -31,6 +32,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
+  // Masked spec-sheet PDFs, now served under our own domain via /specsheets.
+  const pdfUrls = pdfPaths.map(({ path, updatedAt }) => ({
+    url: `${base}/specsheets/${path.split('/').map(encodeURIComponent).join('/')}`,
+    lastModified: new Date(updatedAt),
+    changeFrequency: 'yearly' as const,
+    priority: 0.4,
+  }))
+
   return [
     { url: base, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${base}/engines`, changeFrequency: 'weekly', priority: 0.9 },
@@ -39,5 +48,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...brandUrls,
     ...engineUrls,
     ...alternatorUrls,
+    ...pdfUrls,
   ]
 }
