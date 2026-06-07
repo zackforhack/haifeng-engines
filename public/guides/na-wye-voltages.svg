@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 410" role="img" aria-label="North American wye voltages: line-to-line voltage equals the square root of 3 times the line-to-neutral voltage, giving 120/208V and 277/480V systems.">
+  <rect width="660" height="410" rx="14" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">North American &#8220;Wye&#8221; Voltages</text>
+
+  <!-- formula banner -->
+  <rect x="30" y="56" width="600" height="44" rx="10" fill="#eff6ff" stroke="#dbeafe"/>
+  <text x="330" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#1d4ed8">V&#8202;<tspan font-size="11" baseline-shift="sub">L-L</tspan> = &#8730;3 &#215; V&#8202;<tspan font-size="11" baseline-shift="sub">L-N</tspan>   (&#8730;3 &#8776; 1.732)</text>
+
+  <!-- wye diagram (left) -->
+  <!-- legs from neutral N(165,255) -->
+  <line x1="165" y1="255" x2="165" y2="150" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+  <line x1="165" y1="255" x2="78" y2="312" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+  <line x1="165" y1="255" x2="252" y2="312" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+  <!-- V_LL dashed between L2 and L3 -->
+  <line x1="78" y1="312" x2="252" y2="312" stroke="#d97706" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <!-- nodes -->
+  <circle cx="165" cy="255" r="7" fill="#6b7280"/>
+  <circle cx="165" cy="150" r="9" fill="#2563eb"/>
+  <circle cx="78" cy="312" r="9" fill="#2563eb"/>
+  <circle cx="252" cy="312" r="9" fill="#2563eb"/>
+  <!-- labels -->
+  <g font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#111827">
+    <text x="165" y="140" text-anchor="middle">L1</text>
+    <text x="60" y="330" text-anchor="middle">L2</text>
+    <text x="270" y="330" text-anchor="middle">L3</text>
+    <text x="180" y="262" fill="#6b7280">N</text>
+  </g>
+  <text x="120" y="205" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#1d4ed8">V&#8202;<tspan font-size="9" baseline-shift="sub">L-N</tspan></text>
+  <text x="165" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#b45309">V&#8202;<tspan font-size="9" baseline-shift="sub">L-L</tspan></text>
+
+  <!-- system cards (right) -->
+  <rect x="350" y="124" width="280" height="120" rx="10" fill="#ffffff" stroke="#dbeafe"/>
+  <text x="368" y="150" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#1d4ed8">120 / 208 V Wye</text>
+  <text x="368" y="176" font-family="Arial, sans-serif" font-size="13" fill="#374151">Line&#8211;neutral: <tspan font-weight="700" fill="#111827">120 V</tspan></text>
+  <text x="368" y="198" font-family="Arial, sans-serif" font-size="13" fill="#374151">Line&#8211;line: <tspan font-weight="700" fill="#111827">208 V</tspan></text>
+  <text x="368" y="224" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Commercial &#183; offices, light industry</text>
+
+  <rect x="350" y="256" width="280" height="120" rx="10" fill="#ffffff" stroke="#fde68a"/>
+  <text x="368" y="282" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#b45309">277 / 480 V Wye</text>
+  <text x="368" y="308" font-family="Arial, sans-serif" font-size="13" fill="#374151">Line&#8211;neutral: <tspan font-weight="700" fill="#111827">277 V</tspan></text>
+  <text x="368" y="330" font-family="Arial, sans-serif" font-size="13" fill="#374151">Line&#8211;line: <tspan font-weight="700" fill="#111827">480 V</tspan></text>
+  <text x="368" y="356" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Industrial &#183; factories, data centres</text>
+
+  <text x="30" y="398" font-family="Arial, sans-serif" font-size="10.5" fill="#9ca3af">120 &#215; 1.732 &#8776; 208 V &#183; 277 &#215; 1.732 &#8776; 480 V. The &#8730;3 factor comes from the 120&#176; phase shift between phases.</text>
+</svg>
