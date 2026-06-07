@@ -35,6 +35,11 @@ So a 45 kW DOL motor adds about `45 × (3 − 1) = 90 kW` of *extra* startup dem
 
 > **Peak demand = total running load + (largest motor running × (start factor − 1))**
 
+<figure>
+  <img src="/guides/generator-sizing-breakdown.svg" alt="Bar chart: a 200 kW running load plus a 90 kW starting surge from the largest motor equals a 290 kW peak demand." />
+  <figcaption>The generator must cover the running load plus the brief surge when the largest motor starts.</figcaption>
+</figure>
+
 ## Step 3 — Convert kW to kVA with power factor
 
 Generators are rated in both kW (real power) and kVA (apparent power). Convert with the standard **0.8 power factor**:

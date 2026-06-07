@@ -31,6 +31,11 @@ So a generator rated **500 kVA** delivers **400 kW** of real power at 0.8 PF. If
 | 1,000 kVA | 800 kW |
 | 400 kW | 500 kVA |
 
+<figure>
+  <img src="/guides/power-triangle.svg" alt="The power triangle showing real power (400 kW), reactive power (300 kVAR) and apparent power (500 kVA) with a 0.8 power factor." />
+  <figcaption>The power triangle: real power (kW) and apparent power (kVA) are linked by the power factor — the cosine of the angle φ.</figcaption>
+</figure>
+
 ## Why kWe is lower than kWm
 
 The engine's mechanical output (kWm) is always a bit higher than the electrical output (kWe), because the alternator is not 100% efficient and a belt-driven fan consumes power. A typical generator efficiency is around **94%**, so:

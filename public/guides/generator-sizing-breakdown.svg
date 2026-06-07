@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 360" role="img" aria-label="Generator sizing breakdown: running load plus the largest motor's starting surge equals peak demand.">
+  <rect width="660" height="360" rx="14" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="30" y="42" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Why You Add the Starting Surge</text>
+  <text x="30" y="66" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Example: 200 kW running load + a 45 kW direct-on-line motor</text>
+
+  <!-- scale: 0..300 kW over x 40..600 (560px → 1.867 px/kW) -->
+  <!-- gridlines -->
+  <g font-family="Arial, sans-serif" font-size="11" fill="#9ca3af">
+    <line x1="40"  y1="250" x2="40"  y2="262" stroke="#d1d5db"/><text x="40"  y="278" text-anchor="middle">0</text>
+    <line x1="227" y1="250" x2="227" y2="262" stroke="#d1d5db"/><text x="227" y="278" text-anchor="middle">100</text>
+    <line x1="413" y1="250" x2="413" y2="262" stroke="#d1d5db"/><text x="413" y="278" text-anchor="middle">200</text>
+    <line x1="600" y1="250" x2="600" y2="262" stroke="#d1d5db"/><text x="600" y="278" text-anchor="middle">300 kW</text>
+  </g>
+
+  <!-- Running load bar (200 kW → width 373) -->
+  <text x="40" y="118" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#374151">Running load</text>
+  <rect x="40" y="126" width="373" height="40" rx="6" fill="#2563eb"/>
+  <text x="226" y="151" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">200 kW</text>
+
+  <!-- Peak demand bar: running (373) + surge (168) -->
+  <text x="40" y="196" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#374151">Peak demand at startup</text>
+  <rect x="40" y="204" width="373" height="40" rx="6" fill="#2563eb"/>
+  <rect x="413" y="204" width="168" height="40" rx="6" fill="#d97706"/>
+  <text x="226" y="229" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">200 kW</text>
+  <text x="497" y="229" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">+90</text>
+
+  <!-- total callout -->
+  <text x="592" y="196" text-anchor="end" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#b45309">= 290 kW peak</text>
+
+  <!-- legend -->
+  <g font-family="Arial, sans-serif" font-size="12" fill="#4b5563">
+    <rect x="40" y="306" width="14" height="14" rx="3" fill="#2563eb"/><text x="62" y="318">Running load (drawn continuously)</text>
+    <rect x="320" y="306" width="14" height="14" rx="3" fill="#d97706"/><text x="342" y="318">Largest-motor starting surge (brief)</text>
+  </g>
+</svg>
