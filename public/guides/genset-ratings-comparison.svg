@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 430" role="img" aria-label="Comparison of the four ISO 8528 genset power ratings — ESP, DCP, PRP and COP — by relative power and permitted running hours.">
+  <rect width="660" height="430" rx="14" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">The Four Genset Power Ratings</text>
+  <text x="30" y="63" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Power relative to Prime (PRP = 100%) — a higher rating allows fewer running hours.</text>
+
+  <!-- baseline -->
+  <line x1="40" y1="330" x2="620" y2="330" stroke="#d1d5db" stroke-width="1.5"/>
+
+  <!-- ESP -->
+  <rect x="70" y="110" width="110" height="220" rx="5" fill="#d97706"/>
+  <text x="125" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309">~110%</text>
+  <text x="125" y="356" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#111827">ESP</text>
+  <text x="125" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4b5563">Emergency Standby</text>
+  <text x="125" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#b45309">200 h / year</text>
+
+  <!-- DCP -->
+  <rect x="215" y="120" width="110" height="210" rx="5" fill="#4f46e5"/>
+  <text x="270" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#4338ca">~105%</text>
+  <text x="270" y="356" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#111827">DCP</text>
+  <text x="270" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4b5563">Data Centre</text>
+  <text x="270" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#4338ca">Unlimited*</text>
+
+  <!-- PRP -->
+  <rect x="360" y="130" width="110" height="200" rx="5" fill="#2563eb"/>
+  <text x="415" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8">100%</text>
+  <text x="415" y="356" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#111827">PRP</text>
+  <text x="415" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4b5563">Prime</text>
+  <text x="415" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#1d4ed8">Unlimited*</text>
+
+  <!-- COP -->
+  <rect x="505" y="150" width="110" height="180" rx="5" fill="#0d9488"/>
+  <text x="560" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e">~90%</text>
+  <text x="560" y="356" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#111827">COP</text>
+  <text x="560" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4b5563">Continuous</text>
+  <text x="560" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0f766e">Unlimited</text>
+
+  <text x="40" y="420" font-family="Arial, sans-serif" font-size="10.5" fill="#9ca3af">*Unlimited hours, but the 24-hour average load is capped (typically ~70% for PRP/ESP). Exact values vary by manufacturer.</text>
+</svg>
