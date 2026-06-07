@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" role="img" aria-label="Typical generator power range by fuel: gasoline for small portable sets, diesel across the widest range, natural gas for mid-to-large continuous power.">
+  <rect width="660" height="340" rx="14" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Which Fuel, at What Size</text>
+  <text x="30" y="63" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">Typical generator power range by fuel type (log scale).</text>
+
+  <!-- axis gridlines: 1kW(130) 10kW(255) 100kW(380) 1MW(505) -->
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="130" y1="92" x2="130" y2="270"/>
+    <line x1="255" y1="92" x2="255" y2="270"/>
+    <line x1="380" y1="92" x2="380" y2="270"/>
+    <line x1="505" y1="92" x2="505" y2="270"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="11" fill="#9ca3af" text-anchor="middle">
+    <text x="130" y="288">1 kW</text>
+    <text x="255" y="288">10 kW</text>
+    <text x="380" y="288">100 kW</text>
+    <text x="505" y="288">1 MW</text>
+    <text x="600" y="288">4 MW+</text>
+  </g>
+
+  <!-- Gasoline: 1kW(130) → 15kW(277) -->
+  <text x="20" y="125" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e">Gasoline</text>
+  <rect x="130" y="108" width="147" height="30" rx="6" fill="#0d9488"/>
+  <text x="203" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff">portable</text>
+
+  <!-- Diesel: 8kW(243) → 4MW(580) -->
+  <text x="20" y="183" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8">Diesel</text>
+  <rect x="243" y="166" width="337" height="30" rx="6" fill="#2563eb"/>
+  <text x="411" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff">backup &amp; prime — the widest range</text>
+
+  <!-- Natural gas: 30kW(315) → 5MW(592) -->
+  <text x="20" y="241" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#b45309">Natural gas</text>
+  <rect x="315" y="224" width="277" height="30" rx="6" fill="#d97706"/>
+  <text x="453" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#ffffff">continuous &amp; CHP</text>
+
+  <text x="30" y="318" font-family="Arial, sans-serif" font-size="10.5" fill="#9ca3af">Ranges are indicative — overlap is common. Larger gas and diesel power plants extend well beyond 4 MW.</text>
+</svg>
