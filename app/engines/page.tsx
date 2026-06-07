@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Link from 'next/link'
-import { filterEngines, getFilterOptions, getDbStats } from '@/lib/engines'
+import { filterEngines, getFilterOptions } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
 import { SearchBar } from '@/components/SearchBar'
 import { EngineFilters } from '@/components/EngineFilters'
 import { EngineTable } from '@/components/EngineTable'
-import { CountUp } from '@/components/CountUp'
 
 // Always fetch fresh data — prevents Next.js data cache from hiding new DB rows.
 export const dynamic = 'force-dynamic'
@@ -48,17 +47,6 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
   }
 }
 
-const POWER_PRESETS: { label: string; params: Record<string, string> }[] = [
-  { label: 'Under 100 kWe',    params: { max_kwe: '100' } },
-  { label: '100 – 500 kWe',    params: { min_kwe: '100', max_kwe: '500' } },
-  { label: '500 – 1,500 kWe',  params: { min_kwe: '500', max_kwe: '1500' } },
-  { label: '1,500+ kWe',       params: { min_kwe: '1500' } },
-]
-
-function presetHref(params: Record<string, string>) {
-  return `/engines?${new URLSearchParams(params).toString()}`
-}
-
 export default async function EnginesPage({ searchParams }: Props) {
   const p = await searchParams
 
@@ -67,150 +55,7 @@ export default async function EnginesPage({ searchParams }: Props) {
     p.hz || p.status || p.min_kwe || p.max_kwe
   )
 
-  // ── No filters: landing / discovery view ─────────────────────────────────
-  if (!hasFilters) {
-    const [stats, options] = await Promise.all([getDbStats(), getFilterOptions()])
-
-    return (
-      <div>
-        {/* Hero — futuristic animated background panel */}
-        <div className="relative overflow-hidden rounded-3xl border border-white/10 mb-10 shadow-xl">
-          <div className="hero-photo" aria-hidden="true">
-            <div className="img" />
-            <div className="overlay" />
-          </div>
-
-          <div className="relative z-10 text-center px-6 py-16 sm:py-24">
-            <span className="inline-block text-xs font-semibold tracking-wider uppercase text-cyan-200 bg-white/10 border border-white/20 backdrop-blur rounded-full px-3 py-1 mb-5">
-              Engines for Electrical Power Generation
-            </span>
-            <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4 text-white">
-              <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-300 bg-clip-text text-transparent">
-                <CountUp end={stats.total} />+
-              </span>{' '}
-              Generator Engine Specifications
-            </h1>
-            <p className="text-slate-300 text-lg mb-9 max-w-2xl mx-auto">
-              The complete reference for <strong className="font-semibold text-white">diesel and gas</strong> engines used in electrical power generation — search specs, datasheets, and manuals by brand, model, emissions standard, and power output.
-            </p>
-
-            {/* Stat chips */}
-            <div className="flex justify-center gap-8 sm:gap-12 flex-wrap mb-10">
-              {[
-                { value: stats.total, label: 'Engines' },
-                { value: stats.brandCount, label: 'Brands' },
-                { value: stats.originCount, label: 'Countries' },
-              ].map(({ value, label }) => (
-                <div key={label} className="text-center">
-                  <p className="text-3xl font-bold text-cyan-300"><CountUp end={value} /></p>
-                  <p className="text-sm text-slate-400 mt-0.5">{label}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Search */}
-            <div className="flex justify-center">
-              <Suspense>
-                <SearchBar defaultValue="" />
-              </Suspense>
-            </div>
-          </div>
-        </div>
-
-        {/* Fuel type */}
-        <div className="mb-8">
-          <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
-            Browse by Fuel Type
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {[
-              { label: 'Diesel', value: 'diesel' },
-              { label: 'Gas (Natural Gas · CNG/LNG · Biogas)', value: 'gas' },
-            ].map(({ label, value }) => (
-              <Link
-                key={value}
-                href={presetHref({ fuel: value })}
-                className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
-              >
-                {label}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* Preset shortcuts */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-
-          {/* Emissions standards */}
-          <div>
-            <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
-              Browse by Emissions Standard
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { label: 'U.S. EPA',              value: 'U.S. EPA' },
-                { label: 'Euro Stage',             value: 'Euro Stage' },
-                { label: 'U.S. EPA Final Tier 4',  value: 'U.S. EPA Final Tier 4' },
-                { label: 'Euro Stage V',            value: 'Euro Stage V' },
-                { label: 'Unregulated',             value: 'Unregulated' },
-              ].map(({ label, value }) => (
-                <Link
-                  key={value}
-                  href={presetHref({ emissions: value })}
-                  className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Power range */}
-          <div>
-            <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">
-              Browse by Power Range
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              {POWER_PRESETS.map(({ label, params }) => (
-                <Link
-                  key={label}
-                  href={presetHref(params)}
-                  className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Brand grid */}
-        <div>
-          <div className="flex items-baseline justify-between mb-3">
-            <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
-              Browse by Brand
-            </h2>
-            <Link href="/brands" className="text-sm text-blue-600 hover:underline">
-              View all brands →
-            </Link>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {options.brands.map((brand) => (
-              <Link
-                key={brand}
-                href={presetHref({ brand })}
-                className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors"
-              >
-                {brand}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-    )
-  }
-
-  // ── Filters active: results view ─────────────────────────────────────────
+  // The full catalogue list. Unfiltered shows every engine; filters narrow it.
   const isGrid = p.view === 'grid'
   const currentPage = Math.max(1, Number(p.page) || 1)
 
@@ -276,7 +121,7 @@ export default async function EnginesPage({ searchParams }: Props) {
     <div>
       <div className="mb-5">
         <h1 className="text-2xl font-bold text-gray-900 mb-4">
-          {p.q ? `Results for "${p.q}"` : 'Diesel Engines'}
+          {p.q ? `Results for "${p.q}"` : 'Generator Engine Specifications'}
         </h1>
         <Suspense>
           <SearchBar defaultValue={p.q ?? ''} />
