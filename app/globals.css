@@ -267,3 +267,4 @@ select option { background-color: #17171b; color: #f4f4f5; }
 .guide-content img { display: block; width: 100%; max-width: 660px; height: auto; margin: 1.75rem auto 0.5rem; border-radius: 12px; }
 .guide-content figure { margin: 2rem 0; }
 .guide-content figcaption { text-align: center; font-size: 0.85rem; color: #6b7280; margin-top: 0.25rem; }
+.guide-hero { display: block; width: 100%; height: auto; border-radius: 14px; margin: 0.25rem 0 1.5rem; border: 1px solid #e5e7eb; background: #f8fafc; }

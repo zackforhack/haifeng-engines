@@ -15,6 +15,7 @@ export interface GuideMeta {
   cluster: string
   order: number
   updated: string
+  hero?: string
 }
 
 export interface Guide extends GuideMeta {
@@ -44,6 +45,7 @@ function toMeta(slug: string, data: Record<string, unknown>): GuideMeta {
     cluster: String(data.cluster ?? 'Power & Sizing'),
     order: Number(data.order ?? 99),
     updated: String(data.updated ?? new Date().toISOString().slice(0, 10)),
+    hero: data.hero ? String(data.hero) : undefined,
   }
 }
 

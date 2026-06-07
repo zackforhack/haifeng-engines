@@ -5,6 +5,7 @@ keyword: "kva vs kw"
 cluster: "Power & Sizing"
 order: 1
 updated: "2026-06-07"
+hero: "/guides/hero-power-ratings.jpg"
 ---
 
 Generator spec sheets throw a lot of power units at you — **kVA**, **kW**, **kWe**, **kWm** — and they are *not* interchangeable. Getting them confused is the single most common mistake when sizing a generator set. Here is what each one means and how to convert between them.

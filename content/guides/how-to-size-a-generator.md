@@ -5,6 +5,7 @@ keyword: "how to size a generator"
 cluster: "Power & Sizing"
 order: 2
 updated: "2026-06-07"
+hero: "/guides/hero-sizing.jpg"
 ---
 
 Undersize a generator and it will stall, overheat, or fail to start your motors; oversize it and you waste money and run it inefficiently (which causes "wet stacking" in diesels). The right size covers your **running load plus the surge** when your biggest motor starts — with a sensible margin on top.

@@ -71,6 +71,11 @@ export default async function GuidePage({ params }: Props) {
           <span className="text-gray-700">{g.title}</span>
         </nav>
 
+        {g.hero && (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img src={g.hero} alt="" className="guide-hero" />
+        )}
+
         <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">{g.cluster}</p>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">{g.title}</h1>
         <p className="text-gray-500 mb-8">
