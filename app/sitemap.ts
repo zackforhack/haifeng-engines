@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { getAllEngines, getAllBrands, getAllPdfPaths } from '@/lib/engines'
 import { getAllAlternators } from '@/lib/alternators'
+import { getAllGuides } from '@/lib/guides'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = 'https://engines.haifengmachinery.com'
@@ -32,6 +33,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
+  const guideUrls = getAllGuides().map((g) => ({
+    url: `${base}/guides/${g.slug}`,
+    lastModified: new Date(g.updated),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
   // Masked spec-sheet PDFs, now served under our own domain via /specsheets.
   const pdfUrls = pdfPaths.map(({ path, updatedAt }) => ({
     url: `${base}/specsheets/${path.split('/').map(encodeURIComponent).join('/')}`,
@@ -45,6 +53,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${base}/engines`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${base}/alternators`, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/brands`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/guides`, changeFrequency: 'weekly', priority: 0.7 },
+    ...guideUrls,
     ...brandUrls,
     ...engineUrls,
     ...alternatorUrls,

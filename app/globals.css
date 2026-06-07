@@ -207,3 +207,23 @@ select option { background-color: #17171b; color: #f4f4f5; }
 @media (prefers-reduced-motion: reduce) {
   .hero-photo .img { animation: none; }
 }
+
+/* Article body styling for /guides (rendered Markdown) */
+.guide-content { color: #1f2937; line-height: 1.75; font-size: 1.05rem; }
+.guide-content > * + * { margin-top: 1.15rem; }
+.guide-content h2 { font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 0.5rem; line-height: 1.3; }
+.guide-content h3 { font-size: 1.2rem; font-weight: 700; color: #111827; margin-top: 1.75rem; margin-bottom: 0.25rem; }
+.guide-content p { color: #374151; }
+.guide-content a { color: #2563eb; text-decoration: underline; text-underline-offset: 2px; }
+.guide-content a:hover { color: #1d4ed8; }
+.guide-content strong { color: #111827; font-weight: 700; }
+.guide-content ul, .guide-content ol { padding-left: 1.4rem; }
+.guide-content ul { list-style: disc; }
+.guide-content ol { list-style: decimal; }
+.guide-content li { margin-top: 0.4rem; padding-left: 0.2rem; }
+.guide-content blockquote { border-left: 3px solid #93c5fd; padding-left: 1rem; color: #4b5563; font-style: italic; }
+.guide-content code { background: #f3f4f6; padding: 0.1rem 0.35rem; border-radius: 0.25rem; font-size: 0.9em; }
+.guide-content table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.guide-content th, .guide-content td { border: 1px solid #e5e7eb; padding: 0.5rem 0.75rem; text-align: left; }
+.guide-content th { background: #f9fafb; font-weight: 600; }
+.guide-content hr { border: 0; border-top: 1px solid #e5e7eb; margin: 2rem 0; }

@@ -62,6 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/engines" className="hover:text-blue-600 transition-colors">Engines</Link>
               <Link href="/alternators" className="hover:text-blue-600 transition-colors">Alternators</Link>
               <Link href="/brands" className="hover:text-blue-600 transition-colors">Brands</Link>
+              <Link href="/guides" className="hover:text-blue-600 transition-colors">Guides</Link>
               <a
                 href="https://www.haifengmachinery.com/contact-us/"
                 target="_blank"
@@ -89,6 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </p>
               <div className="flex gap-4">
                 <Link href="/engines" className="hover:text-gray-900">Browse Engines</Link>
+                <Link href="/guides" className="hover:text-gray-900">Guides</Link>
                 <Link href="/brands" className="hover:text-gray-900">Brands</Link>
               </div>
             </div>
