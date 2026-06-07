@@ -19,6 +19,12 @@ export const metadata: Metadata = {
 
 const BASE = 'https://engines.haifengmachinery.com'
 
+const SOCIALS = [
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/showcase/taizhou-haifeng/' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@haifengmachinery8351' },
+  { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61579731085161' },
+]
+
 // Site-wide structured data: identifies the publisher (Organization) and the site
 // (WebSite) and enables Google's sitelinks search box via SearchAction.
 const siteSchema = [
@@ -29,6 +35,7 @@ const siteSchema = [
     name: 'Haifeng Machinery',
     url: 'https://www.haifengmachinery.com',
     logo: `${BASE}/icon.png`,
+    sameAs: SOCIALS.map((s) => s.href),
   },
   {
     '@context': 'https://schema.org',
@@ -81,6 +88,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Link href="/guides" className="hover:text-gray-900">Guides</Link>
                 <Link href="/brands" className="hover:text-gray-900">Brands</Link>
               </div>
+            </div>
+            <div className="flex gap-4 mt-6 pt-6 border-t border-gray-100">
+              {SOCIALS.map((s) => (
+                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-blue-600 transition-colors text-xs font-medium">
+                  {s.label}
+                </a>
+              ))}
             </div>
           </div>
         </footer>
