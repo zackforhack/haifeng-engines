@@ -9,6 +9,7 @@ import type { Alternator } from '@/lib/types'
 export const metadata: Metadata = {
   title: 'Browse Alternators',
   description: 'Browse generator alternator models by brand, series, kVA output and pole count, with links to official manufacturer data sheets.',
+  alternates: { canonical: '/alternators' },
 }
 
 const PAGE_SIZE = 24

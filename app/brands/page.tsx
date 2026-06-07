@@ -6,6 +6,7 @@ import { BrandLogo } from '@/components/BrandLogo'
 export const metadata: Metadata = {
   title: 'Generator Engine Brands',
   description: 'Browse diesel and gas generator engine specifications by brand. Find Cummins, Perkins, Volvo, Deutz, and more.',
+  alternates: { canonical: '/brands' },
 }
 
 export default async function BrandsPage() {

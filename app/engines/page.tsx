@@ -33,12 +33,16 @@ interface Props {
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
   const { q, brand, emissions, fuel } = await searchParams
-  if (brand) return { title: `${brand} Generator Engines`, description: `Browse ${brand} diesel and gas generator engine specifications.` }
-  if (fuel === 'gas') return { title: 'Gas Generator Engines', description: 'Natural gas, CNG/LNG and biogas engine specifications for electrical power generation.' }
-  if (fuel === 'diesel') return { title: 'Diesel Generator Engines', description: 'Diesel engine specifications for electrical power generation.' }
-  if (emissions) return { title: `${emissions} Engines`, description: `Generator engines meeting ${emissions} emissions standards.` }
-  if (q) return { title: `Search: ${q}`, description: 'Search results for diesel and gas generator engine specifications.' }
+  // Filtered views share one canonical (/engines) so filter permutations don't
+  // dilute as duplicate URLs; brand/model pages are indexed on their own paths.
+  const canonical = { alternates: { canonical: '/engines' } }
+  if (brand) return { ...canonical, title: `${brand} Generator Engines`, description: `Browse ${brand} diesel and gas generator engine specifications.` }
+  if (fuel === 'gas') return { ...canonical, title: 'Gas Generator Engines', description: 'Natural gas, CNG/LNG and biogas engine specifications for electrical power generation.' }
+  if (fuel === 'diesel') return { ...canonical, title: 'Diesel Generator Engines', description: 'Diesel engine specifications for electrical power generation.' }
+  if (emissions) return { ...canonical, title: `${emissions} Engines`, description: `Generator engines meeting ${emissions} emissions standards.` }
+  if (q) return { ...canonical, title: `Search: ${q}`, description: 'Search results for diesel and gas generator engine specifications.' }
   return {
+    ...canonical,
     title: 'Diesel & Gas Generator Engine Specs',
     description: 'The complete database of diesel and gas engine specifications for electrical power generation. Search by brand, model, emissions standard, and power output.',
   }

@@ -16,6 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${name} Generator Engine Specs`,
     description: `Browse all ${name} diesel and gas generator engine specifications, datasheets, and manuals for electrical power generation.`,
+    alternates: { canonical: `/brands/${encodeURIComponent(decoded.toLowerCase())}` },
   }
 }
 
