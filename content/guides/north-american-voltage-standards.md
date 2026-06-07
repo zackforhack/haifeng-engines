@@ -38,7 +38,7 @@ A three-phase, four-wire **Wye** (plus ground):
 **Why 208 V and not 240 V?** Unlike Europe's 230/400V system, the North American Wye is built from three transformer windings each supplying 120 V. Measure between any two phases and the vectors add to **208 V** — not the 240 V you get from a residential split-phase service.
 
 <figure>
-  <img src="/guides/v-120-240-split-phase.png" alt="Split-phase 120/240V: Line 1 and Line 2 each measure 120 V to the neutral, and 240 V between the two lines." />
+  <img src="/guides/v-120-240-split-phase.svg" alt="Split-phase 120/240V: Line 1 and Line 2 each measure 120 V to the neutral, and 240 V between the two lines." />
   <figcaption>Single-phase split-phase (residential): two 120 V legs sum to 240 V line-to-line — not the same as a 208 V Wye.</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ One distribution system then serves both:
 - **208 V three-phase** loads — HVAC, kitchen equipment, elevators, IT infrastructure.
 
 <figure>
-  <img src="/guides/v-120-208-wye.png" alt="120/208V Wye three-phase supply: each line is 120 V to neutral and 208 V between any two lines." />
+  <img src="/guides/v-120-208-wye.svg" alt="120/208V Wye three-phase supply: each line is 120 V to neutral and 208 V between any two lines." />
   <figcaption>120/208V Wye: 120 V line-to-neutral, 208 V line-to-line — the commercial standard.</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ Also a three-phase, four-wire **Wye**:
 **Why 480 V wins for power:** because power = √3 × V × I × pf, a higher voltage carries the same power at a **lower current**. At 480 V the current is **less than half** that of a 208 V system for the same kW — meaning smaller conductors, lower voltage drop over distance, and cheaper cable runs. This is why diesel gensets, UPS systems and transfer switches for industrial sites are commonly 480 V.
 
 <figure>
-  <img src="/guides/v-277-480-wye.png" alt="277/480V Wye supply: 277 V from each line to neutral and 480 V between any two lines." />
+  <img src="/guides/v-277-480-wye.svg" alt="277/480V Wye supply: 277 V from each line to neutral and 480 V between any two lines." />
   <figcaption>277/480V Wye: 277 V line-to-neutral feeds lighting, 480 V line-to-line powers the building.</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ Also a three-phase, four-wire **Wye**:
 In Canada, large facilities often run **347/600V** instead of 277/480V — the same Wye arrangement, scaled up. The line-to-neutral voltage is **347 V** (347 × 1.732 ≈ 600) and feeds 347 V lighting, while **600 V** line-to-line moves power even more efficiently than 480 V. If you're specifying a genset for a Canadian industrial site, expect 600 V.
 
 <figure>
-  <img src="/guides/v-347-600-wye.png" alt="347/600V Wye supply: 347 V from each line to neutral and 600 V between any two lines." />
+  <img src="/guides/v-347-600-wye.svg" alt="347/600V Wye supply: 347 V from each line to neutral and 600 V between any two lines." />
   <figcaption>347/600V Wye: Canada's industrial equivalent of 277/480 V.</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ A common and dangerous mix-up: **not every 208 V is the same.**
 > A meter reading of "208 V" tells you nothing on its own. Connect 120 V equipment to a high-leg delta and you can destroy it.
 
 <figure>
-  <img src="/guides/v-240-high-leg-delta.png" alt="240V high-leg (open) delta: Phase B is the wild leg reading 208 V to neutral, the phases are 240 V apart, and Phases A and C give 120 V to neutral." />
+  <img src="/guides/v-240-high-leg-delta.svg" alt="240V high-leg (open) delta: Phase B is the wild leg reading 208 V to neutral, the phases are 240 V apart, and Phases A and C give 120 V to neutral." />
   <figcaption>High-leg (wild-leg) delta: the "B" phase reads ~208 V to neutral and must never feed 120 V loads.</figcaption>
 </figure>
 

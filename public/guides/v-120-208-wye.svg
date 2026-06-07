@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 330" role="img" aria-label="120/208V three-phase Wye supply: 120 V line-to-neutral and 208 V line-to-line.">
+  <defs>
+    <marker id="ah208" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#374151"/></marker>
+  </defs>
+  <rect width="660" height="330" rx="14" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#111827">120 / 208 V — Three-Phase Wye</text>
+
+  <!-- neutral bar (left) -->
+  <line x1="95" y1="92" x2="95" y2="276" stroke="#6b7280" stroke-width="3"/>
+  <!-- coils on each phase connector + buses -->
+  <g fill="none" stroke-width="3">
+    <!-- L1 -->
+    <path d="M99,92 a6,6 0 1 1 12,0 a6,6 0 1 1 12,0 a6,6 0 1 1 12,0 a6,6 0 1 1 12,0" stroke="#111827"/>
+    <line x1="147" y1="92" x2="560" y2="92" stroke="#111827"/>
+    <!-- L2 -->
+    <path d="M99,152 a6,6 0 1 1 12,0 a6,6 0 1 1 12,0 a6,6 0 1 1 12,0 a6,6 0 1 1 12,0" stroke="#dc2626"/>
+    <line x1="147" y1="152" x2="560" y2="152" stroke="#dc2626"/>
+    <!-- L3 -->
+    <path d="M99,212 a6,6 0 1 1 12,0 a6,6 0 1 1 12,0 a6,6 0 1 1 12,0 a6,6 0 1 1 12,0" stroke="#1d4ed8"/>
+    <line x1="147" y1="212" x2="560" y2="212" stroke="#1d4ed8"/>
+    <!-- neutral out -->
+    <line x1="95" y1="276" x2="560" y2="276" stroke="#6b7280"/>
+  </g>
+  <!-- line labels -->
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="700">
+    <text x="568" y="97" fill="#111827">L1</text>
+    <text x="568" y="157" fill="#dc2626">L2</text>
+    <text x="568" y="217" fill="#1d4ed8">L3</text>
+    <text x="568" y="281" fill="#6b7280">N</text>
+  </g>
+
+  <!-- V_LL 208 (L1-L2) -->
+  <line x1="300" y1="92" x2="300" y2="152" stroke="#374151" stroke-width="1.5" marker-start="url(#ah208)" marker-end="url(#ah208)"/>
+  <rect x="270" y="108" width="60" height="28" rx="6" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="300" y="127" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#b45309">208 V</text>
+
+  <!-- V_LN 120 (L1-N) -->
+  <line x1="430" y1="92" x2="430" y2="276" stroke="#374151" stroke-width="1.5" marker-start="url(#ah208)" marker-end="url(#ah208)"/>
+  <rect x="400" y="170" width="60" height="28" rx="6" fill="#eff6ff" stroke="#dbeafe"/>
+  <text x="430" y="189" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1d4ed8">120 V</text>
+
+  <g font-family="Arial, sans-serif" font-size="12" fill="#6b7280">
+    <text x="300" y="305" text-anchor="middle">line-to-line</text>
+    <text x="430" y="305" text-anchor="middle">line-to-neutral</text>
+  </g>
+</svg>
