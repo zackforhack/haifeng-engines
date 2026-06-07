@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 410" role="img" aria-label="Anatomy of an engine nameplate: engine model, serial number, rated power and displacement, EPA engine family, build date, emission standard and approved fuel.">
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef0f3"/><stop offset="1" stop-color="#d4d7dd"/>
+    </linearGradient>
+  </defs>
+  <rect width="660" height="410" rx="14" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Anatomy of an Engine Nameplate</text>
+
+  <!-- mock data plate -->
+  <rect x="40" y="74" width="300" height="306" rx="8" fill="url(#metal)" stroke="#9ca3af" stroke-width="2"/>
+  <text x="56" y="100" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#4b5563">EMISSION CONTROL INFORMATION</text>
+  <line x1="56" y1="108" x2="324" y2="108" stroke="#b6b9c0"/>
+  <text x="56" y="134" font-family="monospace" font-size="18" font-weight="700" fill="#111827">404D-22</text>
+  <text x="56" y="160" font-family="monospace" font-size="13" fill="#374151">GN71039R085563L</text>
+  <text x="56" y="190" font-family="monospace" font-size="14" font-weight="700" fill="#111827">24.3 kW &#160;&#160;Displ. 2.22 L</text>
+  <text x="56" y="216" font-family="monospace" font-size="12" fill="#374151">EPA Family: TPKXL02.2NLC</text>
+  <text x="56" y="242" font-family="monospace" font-size="13" fill="#374151">Oct 2025</text>
+  <text x="56" y="272" font-family="Arial, sans-serif" font-size="11" fill="#374151">Conforms to 2026 U.S. EPA</text>
+  <text x="56" y="287" font-family="Arial, sans-serif" font-size="11" fill="#374151">stationary CI engines</text>
+  <text x="56" y="320" font-family="Arial, sans-serif" font-size="10" fill="#374151">Certified on commercially</text>
+  <text x="56" y="334" font-family="Arial, sans-serif" font-size="10" fill="#374151">available diesel fuel</text>
+  <text x="56" y="366" font-family="Arial, sans-serif" font-size="10" font-style="italic" fill="#6b7280">Manufactured by Perkins Engines Co.</text>
+
+  <!-- callouts -->
+  <g font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8">
+    <!-- model -->
+    <circle cx="160" cy="128" r="3.5" fill="#2563eb"/>
+    <polyline points="160,128 380,128 396,128" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="402" y="132">Engine model</text>
+    <!-- serial -->
+    <circle cx="200" cy="156" r="3.5" fill="#2563eb"/>
+    <polyline points="200,156 380,166 396,166" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="402" y="170">Serial number</text>
+    <!-- power/displ -->
+    <circle cx="120" cy="185" r="3.5" fill="#2563eb"/>
+    <polyline points="120,185 380,204 396,204" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="402" y="208">Rated power &amp; displacement</text>
+    <!-- epa family -->
+    <circle cx="150" cy="212" r="3.5" fill="#2563eb"/>
+    <polyline points="150,212 380,242 396,242" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="402" y="246">EPA engine family</text>
+    <!-- build date -->
+    <circle cx="90" cy="238" r="3.5" fill="#2563eb"/>
+    <polyline points="90,238 380,280 396,280" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="402" y="284">Build date</text>
+    <!-- emission std -->
+    <circle cx="120" cy="272" r="3.5" fill="#2563eb"/>
+    <polyline points="120,272 380,318 396,318" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="402" y="322">Emission standard</text>
+    <!-- fuel -->
+    <circle cx="120" cy="327" r="3.5" fill="#2563eb"/>
+    <polyline points="120,327 380,356 396,356" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="402" y="360">Approved fuel</text>
+  </g>
+</svg>
