@@ -265,7 +265,10 @@ export async function searchEngines(query: string): Promise<Engine[]> {
   return filterEngines({ q: query })
 }
 
+// Spec-sheet PDFs are served under our own domain (/specsheets/...) and proxied to
+// Supabase storage by a rewrite in next.config — so the link, branding and any SEO
+// equity stay on engines.haifengmachinery.com rather than the Supabase host.
 export function getPDFUrl(storagePath: string): string {
-  const { data } = supabase.storage.from('engine-pdfs').getPublicUrl(storagePath)
-  return data.publicUrl
+  const safe = storagePath.split('/').map(encodeURIComponent).join('/')
+  return `/specsheets/${safe}`
 }
