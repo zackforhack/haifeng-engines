@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { SiteNav } from '@/components/SiteNav'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -52,26 +53,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema).replace(/</g, '\\u003c') }}
         />
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
+        <header className="bg-white border-b border-gray-200 sticky top-0 z-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-xl font-bold text-blue-700">The Generator Engine</span>
-              <span className="text-xl font-light text-gray-600">Encyclopedia</span>
+            <Link href="/" className="flex items-center gap-1.5 sm:gap-2 min-w-0">
+              <span className="text-base sm:text-xl font-bold text-blue-700 whitespace-nowrap">The Generator Engine</span>
+              <span className="hidden sm:inline text-base sm:text-xl font-light text-gray-600 whitespace-nowrap">Encyclopedia</span>
             </Link>
-            <nav className="flex items-center gap-6 text-sm font-medium text-gray-600">
-              <Link href="/engines" className="hover:text-blue-600 transition-colors">Engines</Link>
-              <Link href="/alternators" className="hover:text-blue-600 transition-colors">Alternators</Link>
-              <Link href="/brands" className="hover:text-blue-600 transition-colors">Brands</Link>
-              <Link href="/guides" className="hover:text-blue-600 transition-colors">Guides</Link>
-              <a
-                href="https://www.haifengmachinery.com/contact-us/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Contact Us ↗
-              </a>
-            </nav>
+            <SiteNav />
           </div>
         </header>
 
