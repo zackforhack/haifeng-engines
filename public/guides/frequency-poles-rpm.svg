@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" role="img" aria-label="How alternator poles and engine speed set the output frequency: RPM = 120 x frequency divided by number of poles, with a table for 2, 4 and 6 pole machines at 50 and 60 Hz.">
+  <rect width="660" height="400" rx="14" fill="#f8fafc" stroke="#e5e7eb"/>
+  <text x="30" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#111827">Frequency, Poles &amp; Speed</text>
+  <text x="30" y="63" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">The alternator's pole count and the engine's RPM together set the output frequency.</text>
+
+  <!-- formula -->
+  <rect x="30" y="84" width="600" height="46" rx="10" fill="#eff6ff" stroke="#dbeafe"/>
+  <text x="330" y="113" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1d4ed8">RPM = (120 &#215; Frequency) &#247; Number of poles</text>
+
+  <!-- table -->
+  <!-- header row -->
+  <g font-family="Arial, sans-serif">
+    <rect x="30" y="150" width="200" height="46" fill="#21212a" rx="0"/>
+    <rect x="230" y="150" width="200" height="46" fill="#2563eb"/>
+    <rect x="430" y="150" width="200" height="46" fill="#d97706"/>
+    <text x="130" y="179" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">Poles</text>
+    <text x="330" y="172" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">50 Hz</text>
+    <text x="330" y="189" text-anchor="middle" font-size="11" fill="#dbeafe">(Europe, Asia, Africa)</text>
+    <text x="530" y="172" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">60 Hz</text>
+    <text x="530" y="189" text-anchor="middle" font-size="11" fill="#fde68a">(N. America)</text>
+  </g>
+
+  <!-- rows -->
+  <g font-family="Arial, sans-serif" font-size="15">
+    <!-- 2-pole -->
+    <rect x="30" y="196" width="600" height="58" fill="#ffffff" stroke="#e5e7eb"/>
+    <text x="130" y="231" text-anchor="middle" font-weight="700" fill="#111827">2-pole</text>
+    <text x="330" y="227" text-anchor="middle" font-weight="700" fill="#1d4ed8">3,000 RPM</text>
+    <text x="530" y="227" text-anchor="middle" font-weight="700" fill="#b45309">3,600 RPM</text>
+    <!-- 4-pole -->
+    <rect x="30" y="254" width="600" height="58" fill="#f9fafb" stroke="#e5e7eb"/>
+    <text x="130" y="289" text-anchor="middle" font-weight="700" fill="#111827">4-pole</text>
+    <text x="330" y="282" text-anchor="middle" font-weight="700" fill="#1d4ed8">1,500 RPM</text>
+    <text x="330" y="300" text-anchor="middle" font-size="11" fill="#9ca3af">most common</text>
+    <text x="530" y="282" text-anchor="middle" font-weight="700" fill="#b45309">1,800 RPM</text>
+    <text x="530" y="300" text-anchor="middle" font-size="11" fill="#9ca3af">most common</text>
+    <!-- 6-pole -->
+    <rect x="30" y="312" width="600" height="58" fill="#ffffff" stroke="#e5e7eb"/>
+    <text x="130" y="347" text-anchor="middle" font-weight="700" fill="#111827">6-pole</text>
+    <text x="330" y="347" text-anchor="middle" font-weight="700" fill="#1d4ed8">1,000 RPM</text>
+    <text x="530" y="347" text-anchor="middle" font-weight="700" fill="#b45309">1,200 RPM</text>
+  </g>
+
+  <text x="30" y="390" font-family="Arial, sans-serif" font-size="10.5" fill="#9ca3af">A 4-pole set runs at 1,500 RPM for 50 Hz or 1,800 RPM for 60 Hz — the two standard genset speeds.</text>
+</svg>
