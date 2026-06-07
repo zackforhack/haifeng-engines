@@ -173,7 +173,7 @@ export default async function AlternatorDetailPage({ params }: Props) {
                   All {a.brand} alternators →
                 </Link>
                 {a.series && (
-                  <Link href={`/alternators?series=${encodeURIComponent(a.series)}`}
+                  <Link href={`/alternators/series/${a.series.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`}
                     className="block text-blue-600 hover:underline">
                     {a.series} series →
                   </Link>

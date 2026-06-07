@@ -18,13 +18,13 @@ export const metadata: Metadata = {
 
 const BASE = 'https://engines.haifengmachinery.com'
 
-const POWER_PRESETS: { label: string; params: Record<string, string> }[] = [
-  { label: 'Under 100 kWe',   params: { max_kwe: '100' } },
-  { label: '100 – 500 kWe',   params: { min_kwe: '100', max_kwe: '500' } },
-  { label: '500 – 1,500 kWe', params: { min_kwe: '500', max_kwe: '1500' } },
-  { label: '1,500+ kWe',      params: { min_kwe: '1500' } },
+const POWER_PRESETS = [
+  { label: 'Under 100 kWe',   slug: 'under-100-kwe' },
+  { label: '100 – 500 kWe',   slug: '100-500-kwe' },
+  { label: '500 – 1,500 kWe', slug: '500-1500-kwe' },
+  { label: '1,500+ kWe',      slug: '1500-plus-kwe' },
 ]
-const presetHref = (params: Record<string, string>) => `/engines?${new URLSearchParams(params).toString()}`
+const brandHref = (brand: string) => `/brands/${encodeURIComponent(brand.toLowerCase())}`
 
 export default async function HomePage() {
   const [stats, options, alternators, guides] = await Promise.all([
@@ -110,7 +110,7 @@ export default async function HomePage() {
         <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Browse Engines by Fuel Type</h2>
         <div className="flex flex-wrap gap-2">
           {[{ label: 'Diesel', value: 'diesel' }, { label: 'Gas (Natural Gas · CNG/LNG · Biogas)', value: 'gas' }].map(({ label, value }) => (
-            <Link key={value} href={presetHref({ fuel: value })}
+            <Link key={value} href={`/engines/fuel/${value}`}
               className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
               {label}
             </Link>
@@ -123,7 +123,7 @@ export default async function HomePage() {
           <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Browse by Emissions Standard</h2>
           <div className="flex flex-wrap gap-2">
             {['U.S. EPA', 'Euro Stage', 'U.S. EPA Final Tier 4', 'Euro Stage V', 'Unregulated'].map((value) => (
-              <Link key={value} href={presetHref({ emissions: value })}
+              <Link key={value} href={`/engines?${new URLSearchParams({ emissions: value }).toString()}`}
                 className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
                 {value}
               </Link>
@@ -133,8 +133,8 @@ export default async function HomePage() {
         <div>
           <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Browse by Power Range</h2>
           <div className="flex flex-wrap gap-2">
-            {POWER_PRESETS.map(({ label, params }) => (
-              <Link key={label} href={presetHref(params)}
+            {POWER_PRESETS.map(({ label, slug }) => (
+              <Link key={label} href={`/engines/power/${slug}`}
                 className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
                 {label}
               </Link>
@@ -151,7 +151,7 @@ export default async function HomePage() {
         </div>
         <div className="flex flex-wrap gap-2">
           {options.brands.map((brand) => (
-            <Link key={brand} href={presetHref({ brand })}
+            <Link key={brand} href={brandHref(brand)}
               className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
               {brand}
             </Link>

@@ -113,7 +113,7 @@ export default async function AlternatorsPage({ searchParams }: Props) {
             </h2>
             <div className="flex flex-wrap gap-2">
               {options.series.map((s) => (
-                <Link key={s} href={presetHref({ series: s })}
+                <Link key={s} href={`/alternators/series/${s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`}
                   className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
                   {s}
                 </Link>
