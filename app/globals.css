@@ -208,23 +208,59 @@ select option { background-color: #17171b; color: #f4f4f5; }
   .hero-photo .img { animation: none; }
 }
 
-/* Article body styling for /guides (rendered Markdown) — tuned for the dark theme */
-.guide-content { color: #d4d4dd; line-height: 1.75; font-size: 1.05rem; }
+/* ── /guides: light reading surface (matches haifengmachinery.com) ──────────── */
+/* Full-bleed white band that breaks out of the centered, padded <main>. */
+.guide-light {
+  background: #ffffff;
+  color: #1f2937;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: -2rem;            /* cancel <main> py-8 so it meets the header */
+  margin-bottom: -4rem;         /* and the footer (mt-16 below) */
+  padding: 2.5rem max(1.25rem, calc(50vw - 38rem)) 4rem;
+  min-height: 78vh;
+}
+/* Re-map the global dark-theme utility colors back to light, scoped to guides. */
+.guide-light .bg-white     { background-color: #ffffff; }
+.guide-light .bg-gray-50   { background-color: #f9fafb; }
+.guide-light .bg-gray-100  { background-color: #f3f4f6; }
+.guide-light .bg-gray-900  { background-color: #111827; }
+.guide-light .text-gray-900 { color: #111827; }
+.guide-light .text-gray-700 { color: #374151; }
+.guide-light .text-gray-600 { color: #4b5563; }
+.guide-light .text-gray-500 { color: #6b7280; }
+.guide-light .text-gray-400 { color: #9ca3af; }
+.guide-light .text-gray-300 { color: #d1d5db; }
+.guide-light .text-blue-600 { color: #2563eb; }
+.guide-light .text-blue-700 { color: #1d4ed8; }
+.guide-light .bg-blue-50   { background-color: #eff6ff; }
+.guide-light .bg-blue-100  { background-color: #dbeafe; }
+.guide-light .border-gray-200 { border-color: #e5e7eb; }
+.guide-light .border-gray-100 { border-color: #f3f4f6; }
+.guide-light .border-blue-100 { border-color: #dbeafe; }
+.guide-light .hover\:border-blue-400:hover { border-color: #60a5fa; }
+/* Light form controls (override the global dark-theme input styling). */
+.guide-light input, .guide-light select, .guide-light textarea { background-color: #ffffff; color: #111827; }
+.guide-light select option { background-color: #ffffff; color: #111827; }
+.guide-light ::placeholder { color: #9ca3af; }
+
+/* Article body styling for /guides (rendered Markdown) — light theme */
+.guide-content { color: #374151; line-height: 1.75; font-size: 1.05rem; }
 .guide-content > * + * { margin-top: 1.15rem; }
-.guide-content h2 { font-size: 1.5rem; font-weight: 700; color: #ffffff; margin-top: 2.5rem; margin-bottom: 0.5rem; line-height: 1.3; }
-.guide-content h3 { font-size: 1.2rem; font-weight: 700; color: #ffffff; margin-top: 1.75rem; margin-bottom: 0.25rem; }
-.guide-content p { color: #d4d4dd; }
-.guide-content a { color: #60a5fa; text-decoration: underline; text-underline-offset: 2px; }
-.guide-content a:hover { color: #93c5fd; }
-.guide-content strong { color: #ffffff; font-weight: 700; }
+.guide-content h2 { font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 0.5rem; line-height: 1.3; }
+.guide-content h3 { font-size: 1.2rem; font-weight: 700; color: #111827; margin-top: 1.75rem; margin-bottom: 0.25rem; }
+.guide-content p { color: #374151; }
+.guide-content a { color: #2563eb; text-decoration: underline; text-underline-offset: 2px; }
+.guide-content a:hover { color: #1d4ed8; }
+.guide-content strong { color: #111827; font-weight: 700; }
 .guide-content ul, .guide-content ol { padding-left: 1.4rem; }
 .guide-content ul { list-style: disc; }
 .guide-content ol { list-style: decimal; }
 .guide-content li { margin-top: 0.4rem; padding-left: 0.2rem; }
-.guide-content li::marker { color: #8b8b99; }
-.guide-content blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #c7c7d1; font-style: italic; }
-.guide-content code { background: #2a2a33; color: #e5e7eb; padding: 0.1rem 0.35rem; border-radius: 0.25rem; font-size: 0.9em; }
+.guide-content li::marker { color: #9ca3af; }
+.guide-content blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #4b5563; font-style: italic; }
+.guide-content code { background: #f3f4f6; color: #1f2937; padding: 0.1rem 0.35rem; border-radius: 0.25rem; font-size: 0.9em; }
 .guide-content table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
-.guide-content th, .guide-content td { border: 1px solid #3a3a44; padding: 0.5rem 0.75rem; text-align: left; color: #d4d4dd; }
-.guide-content th { background: #21212a; font-weight: 600; color: #ffffff; }
-.guide-content hr { border: 0; border-top: 1px solid #3a3a44; margin: 2rem 0; }
+.guide-content th, .guide-content td { border: 1px solid #e5e7eb; padding: 0.5rem 0.75rem; text-align: left; color: #374151; }
+.guide-content th { background: #f9fafb; font-weight: 600; color: #111827; }
+.guide-content hr { border: 0; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
