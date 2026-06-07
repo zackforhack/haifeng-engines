@@ -2,8 +2,13 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getAllGuides, getGuideBySlug } from '@/lib/guides'
+import { GeneratorSizingCalculator } from '@/components/GeneratorSizingCalculator'
 
 const BASE = 'https://engines.haifengmachinery.com'
+
+// Guides may embed an interactive tool by placing <!--CALCULATOR--> in the Markdown;
+// the article HTML is split around it and the React component rendered in between.
+const CALC_MARKER = '<!--CALCULATOR-->'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -72,7 +77,20 @@ export default async function GuidePage({ params }: Props) {
           Updated {new Date(g.updated).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
         </p>
 
-        <div className="guide-content" dangerouslySetInnerHTML={{ __html: g.html }} />
+        {g.html.includes(CALC_MARKER) ? (
+          (() => {
+            const [before, after] = g.html.split(CALC_MARKER)
+            return (
+              <div className="guide-content">
+                <div dangerouslySetInnerHTML={{ __html: before }} />
+                <GeneratorSizingCalculator />
+                <div dangerouslySetInnerHTML={{ __html: after ?? '' }} />
+              </div>
+            )
+          })()
+        ) : (
+          <div className="guide-content" dangerouslySetInnerHTML={{ __html: g.html }} />
+        )}
 
         <div className="mt-12 bg-blue-50 border border-blue-100 rounded-xl p-6 flex flex-wrap items-center justify-between gap-4">
           <div>
