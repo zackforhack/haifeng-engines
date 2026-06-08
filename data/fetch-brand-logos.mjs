@@ -23,6 +23,7 @@ const TITLES = {
   'FPT': 'FPT Industrial',
   'Ford': 'Ford Motor Company',
   'Googol': null,
+  'Guascor': null,            // official SVG from guascor-energy.com, served via LOCAL_LOGOS
   'Greaves': 'Greaves Cotton',
   'Hatz': 'Motorenfabrik Hatz',
   'Hino': 'Hino Motors',
@@ -81,6 +82,7 @@ const LOCAL_LOGOS = {
   'Deutz': 'deutz.png',
   'FAWDE': 'fawde.png',
   'Googol': 'googol.webp',
+  'Guascor': 'guascor.svg',     // official "Guascor Energy" SVG (teal #005172 + green)
   'Komatsu': 'komatsu.png',     // P154 SVGs were white-only variants (invisible on white chip)
   'Liebherr': 'liebherr.png',
   'Liyu Power': 'liyu-power.png',   // site only ships a white "fanbai" logo; recolored dark for the white chip
