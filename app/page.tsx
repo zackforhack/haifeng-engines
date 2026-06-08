@@ -56,7 +56,7 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList).replace(/</g, '\\u003c') }} />
 
       {/* Hero */}
-      <div className="relative overflow-hidden rounded-3xl border border-white/10 mb-10 shadow-xl">
+      <div className="relative rounded-3xl border border-white/10 mb-10 shadow-xl">
         <div className="hero-photo" aria-hidden="true">
           <div className="img" />
           <div className="overlay" />

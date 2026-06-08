@@ -186,7 +186,9 @@ select option { background-color: #17171b; color: #f4f4f5; }
 }
 
 /* ── Photo hero with a slow "Ken Burns" zoom (video-like loop from a still) ── */
-.hero-photo { position: absolute; inset: 0; overflow: hidden; background: #0a0e1a; }
+/* Background layer clips the photo to the hero's rounded corners itself, so the hero
+   wrapper no longer needs overflow:hidden (which was clipping the search autocomplete). */
+.hero-photo { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; background: #0a0e1a; }
 .hero-photo .img {
   position: absolute; inset: -3%;
   background: url('/hero/cummins-engine.jpg') center center / cover no-repeat;
