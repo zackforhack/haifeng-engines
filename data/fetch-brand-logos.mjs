@@ -78,6 +78,7 @@ const LOCAL_LOGOS = {
   'Liebherr': 'liebherr.png',
   'Lovol': 'lovol.png',
   'PSI': 'psi.jpg',
+  'PUSH': 'push.png',
   'SDEC': 'sdec.png',
   'VMAN': 'vman.png',
   'Volvo Penta': 'volvo-penta.png',

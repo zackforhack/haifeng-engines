@@ -31,6 +31,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "MTU": "/brand-logos/mtu.svg",
   "Perkins": "/brand-logos/perkins.svg",
   "PSI": "/brand-logos/psi.jpg",
+  "PUSH": "/brand-logos/push.png",
   "Scania": "/brand-logos/scania.svg",
   "SDEC": "/brand-logos/sdec.png",
   "VM Motori": "/brand-logos/vm-motori.svg",
