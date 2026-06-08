@@ -21,6 +21,7 @@ const TITLES = {
   'Deutz': null,                  // P154 is a photo of an old KHD badge; no clean free logo on Commons
   'FAWDE': 'FAW Group',
   'FPT': 'FPT Industrial',
+  'Ford': 'Ford Motor Company',
   'Googol': null,
   'Greaves': 'Greaves Cotton',
   'Hatz': 'Motorenfabrik Hatz',
@@ -49,6 +50,12 @@ const TITLES = {
   'Yanmar': 'Yanmar',
   'Yuchai': 'Guangxi Yuchai Machinery',
   'Yunnei': null,
+  // Chinese gas-engine brands with no clean free Wikimedia logo — served from LOCAL_LOGOS.
+  // They must be listed here (the emit loop iterates TITLES) or a re-run drops them.
+  'Liyu Power': null,
+  'PUSH': null,
+  'VMAN': null,
+  'Xinchai': null,
 }
 
 // Curated Commons File: names (found via Commons file search). Takes priority over P154 —
