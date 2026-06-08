@@ -3,7 +3,17 @@
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { useState } from 'react'
 
-export function SearchBar({ defaultValue = '' }: { defaultValue?: string }) {
+export function SearchBar({
+  defaultValue = '',
+  target,
+}: {
+  defaultValue?: string
+  // Where to send the search. Omit to search the current page (preserving its
+  // other filters — used on /engines and /alternators). Set to e.g. "/engines"
+  // on pages that don't handle `q` themselves (the homepage), so the query lands
+  // on the results page instead of reloading a page that ignores it.
+  target?: string
+}) {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -11,10 +21,13 @@ export function SearchBar({ defaultValue = '' }: { defaultValue?: string }) {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    const p = new URLSearchParams(searchParams.toString())
+    // Cross-page search starts from a clean query; same-page search preserves filters.
+    const p = new URLSearchParams(target ? '' : searchParams.toString())
     if (query.trim()) p.set('q', query.trim())
     else p.delete('q')
-    router.push(`${pathname}?${p.toString()}`)
+    const dest = target ?? pathname
+    const qs = p.toString()
+    router.push(qs ? `${dest}?${qs}` : dest)
   }
 
   return (

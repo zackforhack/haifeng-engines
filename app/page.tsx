@@ -88,7 +88,7 @@ export default async function HomePage() {
             ))}
           </div>
           <div className="flex justify-center">
-            <Suspense><SearchBar defaultValue="" /></Suspense>
+            <Suspense><SearchBar defaultValue="" target="/engines" /></Suspense>
           </div>
         </div>
       </div>
