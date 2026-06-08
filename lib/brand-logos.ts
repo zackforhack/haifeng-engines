@@ -42,6 +42,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "VM Motori": "/brand-logos/vm-motori.svg",
   "VMAN": "/brand-logos/vman.png",
   "Volvo Penta": "/brand-logos/volvo-penta.png",
+  "Wärtsilä": "/brand-logos/wartsila.png",
   "Waukesha": "/brand-logos/waukesha.svg",
   "Weichai": "/brand-logos/weichai.png",
   "Xinchai": "/brand-logos/xinchai.png",

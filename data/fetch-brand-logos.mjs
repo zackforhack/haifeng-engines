@@ -50,6 +50,7 @@ const TITLES = {
   'Scania': 'Scania AB',
   'VM Motori': 'VM Motori',
   'Volvo Penta': 'Volvo Penta',
+  'Wärtsilä': null,           // official SVG/PNG from wartsila.com, served via LOCAL_LOGOS
   'Weichai': 'Weichai Power',
   'Yanmar': 'Yanmar',
   'Yuchai': 'Guangxi Yuchai Machinery',
@@ -98,6 +99,7 @@ const LOCAL_LOGOS = {
   'SDEC': 'sdec.png',
   'VMAN': 'vman.png',
   'Volvo Penta': 'volvo-penta.png',
+  'Wärtsilä': 'wartsila.png',   // official blue/orange swoosh + WÄRTSILÄ wordmark
   'Xinchai': 'xinchai.png',
   'Yanmar': 'yanmar.png',
   'Yuchai': 'yuchai.png',
