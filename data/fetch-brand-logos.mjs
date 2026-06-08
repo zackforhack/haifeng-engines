@@ -27,6 +27,8 @@ const TITLES = {
   'Greaves': 'Greaves Cotton',
   'Hatz': 'Motorenfabrik Hatz',
   'Hino': 'Hino Motors',
+  'Jenbacher': null,          // official SVG from jenbacher.com, served via LOCAL_LOGOS
+  'Waukesha': null,           // official SVG from waukeshaengine.com, served via LOCAL_LOGOS
   'Hyundai': 'Hyundai Motor Company',
   'Isuzu': 'Isuzu',
   'JCB': 'JCB (company)',
@@ -84,6 +86,8 @@ const LOCAL_LOGOS = {
   'FAWDE': 'fawde.png',
   'Googol': 'googol.webp',
   'Guascor': 'guascor.svg',     // official "Guascor Energy" SVG (teal #005172 + green)
+  'Jenbacher': 'jenbacher.svg', // official black wordmark (green "N" accent)
+  'Waukesha': 'waukesha.svg',   // official orange (#EF773C) script wordmark
   'Komatsu': 'komatsu.png',     // P154 SVGs were white-only variants (invisible on white chip)
   'Liebherr': 'liebherr.png',
   'Liyu Power': 'liyu-power.png',   // site only ships a white "fanbai" logo; recolored dark for the white chip
