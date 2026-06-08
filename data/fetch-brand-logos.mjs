@@ -76,6 +76,7 @@ const LOCAL_LOGOS = {
   'Googol': 'googol.webp',
   'Komatsu': 'komatsu.png',     // P154 SVGs were white-only variants (invisible on white chip)
   'Liebherr': 'liebherr.png',
+  'Liyu Power': 'liyu-power.png',   // site only ships a white "fanbai" logo; recolored dark for the white chip
   'Lovol': 'lovol.png',
   'PSI': 'psi.jpg',
   'PUSH': 'push.png',

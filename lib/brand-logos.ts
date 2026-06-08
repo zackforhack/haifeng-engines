@@ -24,6 +24,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "Komatsu": "/brand-logos/komatsu.png",
   "Kubota": "/brand-logos/kubota.svg",
   "Liebherr": "/brand-logos/liebherr.png",
+  "Liyu Power": "/brand-logos/liyu-power.png",
   "Lovol": "/brand-logos/lovol.png",
   "Mahindra": "/brand-logos/mahindra.svg",
   "MAN": "/brand-logos/man.png",
