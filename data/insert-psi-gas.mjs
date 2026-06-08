@@ -46,7 +46,10 @@ const bySlug = new Map((existing ?? []).map((e) => [e.slug, e.id]))
 
 let upd = 0, ins = 0
 for (const [model, displ, cyl, config, asp, p50e, p50m, s50e, s50m, p60e, p60m, s60e, s60m] of MODELS) {
-  const slug = 'psi-gas-' + model.replace(/^PSI /, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+  // Stored model omits the brand prefix (the UI renders "brand + model", so a "PSI " prefix
+  // here would show as "PSI PSI 20L"). Display name re-adds "PSI " only in the description.
+  const disp = model.replace(/^PSI /, '')
+  const slug = 'psi-gas-' + disp.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
   const pw = {}
   if (p50e != null) Object.assign(pw, { prime_power_kw_50hz: p50m, prime_power_kwe_50hz: p50e, prime_power_kva_50hz: kva(p50e) })
   if (s50e != null) Object.assign(pw, { standby_power_kw_50hz: s50m, standby_power_kwe_50hz: s50e, standby_power_kva_50hz: kva(s50e) })
@@ -57,7 +60,7 @@ for (const [model, displ, cyl, config, asp, p50e, p50m, s50e, s50m, p60e, p60m, 
     fuel_type: 'Natural Gas', ignition_type: 'Spark Ignition', cooling_method: 'Liquid-Cooled',
     rpm_rated: 1800, cylinders: cyl, configuration: config, displacement_l: displ,
     emissions_standard: 'EPA Certified', certifications: ['EPA'], power_kw: p50m ?? p60m ?? s50m ?? s60m, ...pw,
-    description: `PSI ${model} — ${displ} L ${config} spark-ignition gas engine, ${asp.toLowerCase()}, `
+    description: `PSI ${disp} — ${displ} L ${config} spark-ignition gas engine, ${asp.toLowerCase()}, `
       + `running on natural gas or propane (LPG). Up to ${headlineKwe} kWe standby; 50/60 Hz `
       + `(1500/1800 rpm). U.S. EPA factory-certified for power generation.`,
   }
@@ -66,7 +69,7 @@ for (const [model, displ, cyl, config, asp, p50e, p50m, s50e, s50m, p60e, p60m, 
     if (error) console.error(`✗ ${model}: ${error.message}`); else upd++
   } else {
     const { error } = await supabase.from('engines').insert({
-      slug, brand: 'PSI', model, status: 'active', origin: 'United States', ...fields,
+      slug, brand: 'PSI', model: disp, status: 'active', origin: 'United States', ...fields,
     })
     if (error) console.error(`✗ ${model}: ${error.message}`); else ins++
   }
