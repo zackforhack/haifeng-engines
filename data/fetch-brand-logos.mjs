@@ -14,6 +14,7 @@ const UA = 'HaifengEngineEncyclopedia/1.0 (logo fetch; contact zackforhack@gmail
 const TITLES = {
   'Ashok Leyland': null,          // P154 is a grille-emblem photo; no clean free logo on Commons
   'Baudouin': 'Moteurs Baudouin',
+  'Bergen': null,             // official navy SVG from bergenengines.com, served via LOCAL_LOGOS
   'Caterpillar': 'Caterpillar Inc.',
   'Cummins': 'Cummins',
   'Daihatsu': 'Daihatsu',
@@ -82,6 +83,7 @@ const DIRECT_FILE = {
 const LOCAL_LOGOS = {
   'Ashok Leyland': 'ashok-leyland.png',
   'Baudouin': 'baudouin.png',
+  'Bergen': 'bergen.svg',       // official navy "Bergen Engines" wordmark (red accent)
   'Daihatsu': 'daihatsu.png',   // user-provided red-on-white (P154 was a white-only variant)
   'Deutz': 'deutz.png',
   'FAWDE': 'fawde.png',
