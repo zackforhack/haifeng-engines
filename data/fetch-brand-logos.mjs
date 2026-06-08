@@ -38,6 +38,7 @@ const TITLES = {
   'Liebherr': 'Liebherr Group',
   'Lovol': 'Lovol',
   'MAN': 'MAN SE',
+  'MWM': null,                // official 'MWM' JPG from mwm.net, served via LOCAL_LOGOS
   'MTU': 'MTU Friedrichshafen',
   'Mahindra': 'Mahindra & Mahindra',
   'Mitsubishi': 'Mitsubishi Heavy Industries',
@@ -87,6 +88,7 @@ const LOCAL_LOGOS = {
   'Liebherr': 'liebherr.png',
   'Liyu Power': 'liyu-power.png',   // site only ships a white "fanbai" logo; recolored dark for the white chip
   'Lovol': 'lovol.png',
+  'MWM': 'mwm.jpg',                 // official MWM "Energy. Efficiency. Environment." wordmark
   'PSI': 'psi.jpg',
   'PUSH': 'push.png',
   'SDEC': 'sdec.png',
@@ -179,6 +181,19 @@ for (const [brand, title] of Object.entries(TITLES)) {
     report.push([brand, 'ERR', e.message])
   }
   await sleep(120)
+}
+
+// Safety net: a transient network failure must never drop a brand from the committed manifest.
+// For any TITLES brand we didn't just resolve, reuse an existing on-disk logo (slug.<ext>) if one
+// is present from a previous successful run. This makes re-runs idempotent and regression-proof.
+for (const brand of Object.keys(TITLES)) {
+  if (manifest[brand]) continue
+  const slug = slugify(brand)
+  const found = fs.readdirSync(OUT_DIR).find((f) => f.replace(/\.[^.]+$/, '') === slug)
+  if (found) {
+    manifest[brand] = `/brand-logos/${found}`
+    report.push([brand, 'KEEP', `fetch failed — kept existing ${found}`])
+  }
 }
 
 // emit manifest

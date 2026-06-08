@@ -32,6 +32,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "MAN": "/brand-logos/man.png",
   "Mitsubishi": "/brand-logos/mitsubishi.svg",
   "MTU": "/brand-logos/mtu.svg",
+  "MWM": "/brand-logos/mwm.jpg",
   "Perkins": "/brand-logos/perkins.svg",
   "PSI": "/brand-logos/psi.jpg",
   "PUSH": "/brand-logos/push.png",
