@@ -80,6 +80,7 @@ const LOCAL_LOGOS = {
   'PSI': 'psi.jpg',
   'SDEC': 'sdec.png',
   'Volvo Penta': 'volvo-penta.png',
+  'Xinchai': 'xinchai.png',
   'Yanmar': 'yanmar.png',
   'Yuchai': 'yuchai.png',
   'Yunnei': 'yunnei.webp',
