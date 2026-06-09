@@ -20,6 +20,8 @@ const TITLES = {
   'Daihatsu': 'Daihatsu',
   'Detroit Diesel': 'Detroit Diesel',
   'Deutz': null,                  // P154 is a photo of an old KHD badge; no clean free logo on Commons
+  'Doosan': 'Doosan',
+  'Kawasaki': 'Kawasaki Heavy Industries',
   'FAWDE': 'FAW Group',
   'FPT': 'FPT Industrial',
   'Ford': 'Ford Motor Company',
