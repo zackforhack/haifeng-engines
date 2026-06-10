@@ -36,6 +36,8 @@ const TITLES = {
   'Hyundai': 'Hyundai Motor Company',
   'Isuzu': 'Isuzu',
   'JCB': 'JCB (company)',
+  // 'Jichai' intentionally has no logo: no clean free CNPC-China / Jichai mark exists on Commons
+  // (the only "CNPC Logo" there is Mexico's civil-protection agency). Renders without a chip logo.
   'John Deere': 'John Deere',
   'Kirloskar': 'Kirloskar Oil Engines',
   'Kohler': 'Kohler Co.',
