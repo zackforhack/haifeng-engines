@@ -49,6 +49,7 @@ const TITLES = {
   'MTU': 'MTU Friedrichshafen',
   'Mahindra': 'Mahindra & Mahindra',
   'Mitsubishi': 'Mitsubishi Heavy Industries',
+  'Niigata': 'IHI Corporation',   // Niigata Power Systems is part of the IHI Group; use the IHI mark
   'PSI': 'Power Solutions International',
   'Perkins': 'Perkins Engines',
   'SDEC': null,
