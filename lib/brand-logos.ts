@@ -14,6 +14,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "FAWDE": "/brand-logos/fawde.png",
   "Ford": "/brand-logos/ford.svg",
   "FPT": "/brand-logos/fpt.jpg",
+  "Generac": "/brand-logos/generac.png",
   "Googol": "/brand-logos/googol.webp",
   "Greaves": "/brand-logos/greaves.png",
   "Guascor": "/brand-logos/guascor.svg",

@@ -25,6 +25,7 @@ const TITLES = {
   'FAWDE': 'FAW Group',
   'FPT': 'FPT Industrial',
   'Ford': 'Ford Motor Company',
+  'Generac': 'Generac',
   'Googol': null,
   'Guascor': null,            // official SVG from guascor-energy.com, served via LOCAL_LOGOS
   'Greaves': 'Greaves Cotton',
