@@ -36,8 +36,7 @@ const TITLES = {
   'Hyundai': 'Hyundai Motor Company',
   'Isuzu': 'Isuzu',
   'JCB': 'JCB (company)',
-  // 'Jichai' intentionally has no logo: no clean free CNPC-China / Jichai mark exists on Commons
-  // (the only "CNPC Logo" there is Mexico's civil-protection agency). Renders without a chip logo.
+  'Jichai': null,             // CNPC Jichai — official CNPC logo (en.wikipedia fair-use), via LOCAL_LOGOS
   'John Deere': 'John Deere',
   'Kirloskar': 'Kirloskar Oil Engines',
   'Kohler': 'Kohler Co.',
@@ -96,6 +95,7 @@ const LOCAL_LOGOS = {
   'FAWDE': 'fawde.png',
   'Googol': 'googol.webp',
   'Guascor': 'guascor.svg',     // official "Guascor Energy" SVG (teal #005172 + green)
+  'Jichai': 'jichai.svg',       // CNPC corporate logo (red sunburst) for CNPC Jichai
   'Jenbacher': 'jenbacher.svg', // official black wordmark (green "N" accent)
   'Waukesha': 'waukesha.svg',   // official orange (#EF773C) script wordmark
   'Komatsu': 'komatsu.png',     // P154 SVGs were white-only variants (invisible on white chip)

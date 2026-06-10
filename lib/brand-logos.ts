@@ -24,6 +24,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "Isuzu": "/brand-logos/isuzu.svg",
   "JCB": "/brand-logos/jcb.jpg",
   "Jenbacher": "/brand-logos/jenbacher.svg",
+  "Jichai": "/brand-logos/jichai.svg",
   "John Deere": "/brand-logos/john-deere.png",
   "Kawasaki": "/brand-logos/kawasaki.svg",
   "Kirloskar": "/brand-logos/kirloskar.svg",
