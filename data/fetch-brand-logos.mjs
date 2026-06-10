@@ -44,6 +44,7 @@ const TITLES = {
   'Liebherr': 'Liebherr Group',
   'Lovol': 'Lovol',
   'MAN': 'MAN SE',
+  'Mesa': null,               // mesapowersolutions.com ships a white-only SVG; recolored dark, via LOCAL_LOGOS
   'MWM': null,                // official 'MWM' JPG from mwm.net, served via LOCAL_LOGOS
   'MTU': 'MTU Friedrichshafen',
   'Mahindra': 'Mahindra & Mahindra',
@@ -98,6 +99,7 @@ const LOCAL_LOGOS = {
   'Liebherr': 'liebherr.png',
   'Liyu Power': 'liyu-power.png',   // site only ships a white "fanbai" logo; recolored dark for the white chip
   'Lovol': 'lovol.png',
+  'Mesa': 'mesa.svg',               // recolored from the site's white-only mps-logo.svg
   'MWM': 'mwm.jpg',                 // official MWM "Energy. Efficiency. Environment." wordmark
   'PSI': 'psi.jpg',
   'PUSH': 'push.png',
