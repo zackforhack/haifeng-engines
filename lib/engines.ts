@@ -9,6 +9,7 @@ export interface FilterParams {
   emissions?: string
   config?: string
   fuel?: 'diesel' | 'gas'
+  fuel_type?: string
   hz?: '50' | '60'
   status?: string
   min_kwe?: number
@@ -16,9 +17,11 @@ export interface FilterParams {
   sort?: string
 }
 
-// "Gas" covers gaseous power-gen fuels (natural gas, CNG/LNG, biogas, LPG/propane);
-// "diesel" matches the compression-ignition diesels. Gasoline and unknown fuels match neither.
-const GAS_FUEL = /natural gas|biogas|cng|lng|lpg|propane/i
+// "Gas" covers gaseous power-gen fuels (natural gas, CNG/LNG, biogas/biomethane, coal-mine
+// gas/CBM, LPG/propane); "diesel" matches the compression-ignition diesels. Methanol (a liquid
+// alt-fuel), gasoline and unknown fuels match neither broad bucket but are still selectable via
+// the granular Fuel Type dropdown.
+const GAS_FUEL = /natural gas|biogas|biomethane|coal gas|cng|lng|lpg|propane/i
 export function matchesFuel(fuelType: string | null | undefined, fuel: 'diesel' | 'gas'): boolean {
   const ft = fuelType ?? ''
   return fuel === 'gas' ? GAS_FUEL.test(ft) : /diesel/i.test(ft)
@@ -29,6 +32,7 @@ export interface FilterOptions {
   origins: string[]
   emissions: string[]
   configs: string[]
+  fuelTypes: string[]
 }
 
 function representativeKwe(e: Engine): number | null {
@@ -109,6 +113,11 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
     result = result.filter((e) => matchesFuel(e.fuel_type, params.fuel!))
   }
 
+  // Granular fuel type (exact fuel_type match, e.g. "Coal Gas", "Methanol", "Natural Gas")
+  if (params.fuel_type) {
+    result = result.filter((e) => e.fuel_type === params.fuel_type)
+  }
+
   // Power range filter (too complex for PostgREST OR across 4 columns)
   if (params.min_kwe != null || params.max_kwe != null) {
     result = result.filter((e) => {
@@ -137,12 +146,12 @@ export async function getFilterOptions(): Promise<FilterOptions> {
   // now exceeds that, so an unpaginated query silently drops brands/emissions
   // that only appear in later rows (e.g. recently-added Caterpillar).
   const PAGE = 1000
-  const rows: { brand: string | null; origin: string | null; emissions_standard: string | null; configuration: string | null }[] = []
+  const rows: { brand: string | null; origin: string | null; emissions_standard: string | null; configuration: string | null; fuel_type: string | null }[] = []
   let from = 0
   while (true) {
     const { data, error } = await supabase
       .from('engines')
-      .select('brand, origin, emissions_standard, configuration')
+      .select('brand, origin, emissions_standard, configuration, fuel_type')
       .range(from, from + PAGE - 1)
     if (error) throw error
     rows.push(...(data ?? []))
@@ -164,6 +173,15 @@ export async function getFilterOptions(): Promise<FilterOptions> {
       ).filter((v) => v !== 'U.S. EPA' && v !== 'Euro Stage'),
     ],
     configs:   uniq(rows.map((r) => r.configuration)),
+    // Most common fuels first (Diesel, Natural Gas), then the rest alphabetically.
+    fuelTypes: (() => {
+      const pref = ['Diesel', 'Natural Gas']
+      const list = uniq(rows.map((r) => r.fuel_type))
+      return [
+        ...pref.filter((f) => list.includes(f)),
+        ...list.filter((f) => !pref.includes(f)),
+      ]
+    })(),
   }
 }
 

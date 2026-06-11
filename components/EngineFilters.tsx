@@ -22,18 +22,37 @@ export function EngineFilters({ options, totalCount }: Props) {
   const emissions = get('emissions')
   const config    = get('config')
   const fuel      = get('fuel')
+  const fuelType  = get('fuel_type')
   const hz        = get('hz')
   const status    = get('status')
   const minKwe    = get('min_kwe')
   const maxKwe    = get('max_kwe')
   const sort      = get('sort')
 
-  const activeCount = [brand, origin, emissions, config, fuel, hz, minKwe, maxKwe, status].filter(Boolean).length
+  const activeCount = [brand, origin, emissions, config, fuel, fuelType, hz, minKwe, maxKwe, status].filter(Boolean).length
 
   function update(key: string, value: string) {
     const p = new URLSearchParams(searchParams.toString())
     if (value) p.set(key, value)
     else p.delete(key)
+    router.replace(`${pathname}?${p.toString()}`)
+  }
+
+  // The broad Fuel toggle (Diesel/Gas) and the granular Fuel Type dropdown target the same
+  // column, so setting one clears the other to avoid contradictory (empty-result) combinations.
+  function setFuel(value: string) {
+    const p = new URLSearchParams(searchParams.toString())
+    if (value) p.set('fuel', value)
+    else p.delete('fuel')
+    p.delete('fuel_type')
+    router.replace(`${pathname}?${p.toString()}`)
+  }
+
+  function setFuelType(value: string) {
+    const p = new URLSearchParams(searchParams.toString())
+    if (value) p.set('fuel_type', value)
+    else p.delete('fuel_type')
+    p.delete('fuel')
     router.replace(`${pathname}?${p.toString()}`)
   }
 
@@ -93,6 +112,7 @@ export function EngineFilters({ options, totalCount }: Props) {
             <FilterSelect label="Origin"        param="origin"    value={origin}    options={options.origins}   onUpdate={update} />
             <FilterSelect label="Emissions"     param="emissions" value={emissions} options={options.emissions} onUpdate={update} />
             <FilterSelect label="Configuration" param="config"    value={config}    options={options.configs}   onUpdate={update} />
+            <FilterSelect label="Fuel Type"     param="fuel_type" value={fuelType}  options={options.fuelTypes} onUpdate={(_, v) => setFuelType(v)} />
           </div>
 
           {/* Toggles + power range row */}
@@ -107,13 +127,13 @@ export function EngineFilters({ options, totalCount }: Props) {
               />
             </div>
 
-            {/* Fuel */}
+            {/* Fuel (broad bucket; mutually exclusive with the Fuel Type dropdown) */}
             <div>
               <p className="text-xs font-medium text-gray-500 mb-1.5">Fuel</p>
               <ToggleGroup
                 value={fuel}
                 options={[['', 'All'], ['diesel', 'Diesel'], ['gas', 'Gas']]}
-                onSelect={(v) => update('fuel', v)}
+                onSelect={(v) => setFuel(v)}
               />
             </div>
 

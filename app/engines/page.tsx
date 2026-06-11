@@ -20,6 +20,7 @@ interface Props {
     emissions?: string
     config?: string
     fuel?: string
+    fuel_type?: string
     hz?: string
     status?: string
     min_kwe?: string
@@ -51,7 +52,7 @@ export default async function EnginesPage({ searchParams }: Props) {
   const p = await searchParams
 
   const hasFilters = !!(
-    p.q || p.brand || p.origin || p.emissions || p.config || p.fuel ||
+    p.q || p.brand || p.origin || p.emissions || p.config || p.fuel || p.fuel_type ||
     p.hz || p.status || p.min_kwe || p.max_kwe
   )
 
@@ -67,6 +68,7 @@ export default async function EnginesPage({ searchParams }: Props) {
       emissions: p.emissions,
       config:    p.config,
       fuel:      p.fuel === 'diesel' || p.fuel === 'gas' ? p.fuel : undefined,
+      fuel_type: p.fuel_type,
       hz:        p.hz === '50' || p.hz === '60' ? p.hz : undefined,
       status:    p.status,
       min_kwe:   p.min_kwe ? Number(p.min_kwe) : undefined,
@@ -89,6 +91,7 @@ export default async function EnginesPage({ searchParams }: Props) {
       ...(p.emissions ? { emissions: p.emissions }  : {}),
       ...(p.config    ? { config: p.config }        : {}),
       ...(p.fuel      ? { fuel: p.fuel }            : {}),
+      ...(p.fuel_type ? { fuel_type: p.fuel_type }  : {}),
       ...(p.hz        ? { hz: p.hz }                : {}),
       ...(p.status    ? { status: p.status }        : {}),
       ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
@@ -107,6 +110,7 @@ export default async function EnginesPage({ searchParams }: Props) {
       ...(p.emissions ? { emissions: p.emissions }  : {}),
       ...(p.config    ? { config: p.config }        : {}),
       ...(p.fuel      ? { fuel: p.fuel }            : {}),
+      ...(p.fuel_type ? { fuel_type: p.fuel_type }  : {}),
       ...(p.hz        ? { hz: p.hz }                : {}),
       ...(p.status    ? { status: p.status }        : {}),
       ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
