@@ -64,8 +64,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="bg-white border-b border-gray-200 sticky top-0 z-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-1.5 sm:gap-2 min-w-0">
-              <span className="text-base sm:text-xl font-bold text-blue-700 whitespace-nowrap">The Generator Engine</span>
-              <span className="hidden sm:inline text-base sm:text-xl font-light text-gray-600 whitespace-nowrap">Encyclopedia</span>
+              <span className="text-sm sm:text-xl font-bold text-blue-700 whitespace-nowrap">The Generator Engine</span>
+              <span className="text-sm sm:text-xl font-light text-gray-600 whitespace-nowrap">Encyclopedia</span>
             </Link>
             <SiteNav />
           </div>

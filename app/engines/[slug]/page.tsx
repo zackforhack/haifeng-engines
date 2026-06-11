@@ -5,7 +5,7 @@ import { getAllEngines, getEngineBySlug, getRelatedEngines } from '@/lib/engines
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
-import { headlinePower, displayKva, displayOutput, ratedSpeedLabel, buildIntro } from '@/lib/engine-display'
+import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, buildIntro } from '@/lib/engine-display'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -209,7 +209,7 @@ function RelatedEngines({ engines }: { engines: Engine[] }) {
       <h2 className="text-lg font-semibold text-gray-900 mb-4">Related Engines</h2>
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         {engines.map((e) => {
-          const kva = displayKva(headlinePower(e))
+          const kwe = displayKwe(headlinePower(e))
           return (
             <li key={e.slug}>
               <Link
@@ -217,7 +217,7 @@ function RelatedEngines({ engines }: { engines: Engine[] }) {
                 className="flex items-center justify-between gap-2 rounded-lg border border-gray-100 hover:border-blue-300 hover:bg-blue-50 px-3 py-2 transition-colors"
               >
                 <span className="text-sm font-medium text-gray-800 truncate">{e.brand} {e.model}</span>
-                {kva && <span className="flex-shrink-0 text-xs text-gray-500">{kva.toLocaleString()} kVA</span>}
+                {kwe != null && <span className="flex-shrink-0 text-xs text-gray-500">{kwe.toLocaleString()} kWe</span>}
               </Link>
             </li>
           )

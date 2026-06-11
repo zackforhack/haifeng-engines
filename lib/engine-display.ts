@@ -71,6 +71,14 @@ export function displayKva(p: HeadlinePower | null): number | null {
   return null
 }
 
+// kWe for headlines: stored value if present, else derived from kVA at 0.8 pf.
+export function displayKwe(p: HeadlinePower | null): number | null {
+  if (!p) return null
+  if (p.kwe) return Math.round(p.kwe)
+  if (p.kva) return Math.round(p.kva * 0.8)
+  return null
+}
+
 // Best electrical (kWe) or mechanical (kW) output for a headline.
 export function displayOutput(p: HeadlinePower | null): { value: number; unit: 'kWe' | 'kW' } | null {
   if (!p) return null
