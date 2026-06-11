@@ -27,6 +27,14 @@ export function matchesFuel(fuelType: string | null | undefined, fuel: 'diesel' 
   return fuel === 'gas' ? GAS_FUEL.test(ft) : /diesel/i.test(ft)
 }
 
+// Granular Fuel Type match. "Natural Gas" is a family: it also covers the variant strings
+// "Natural Gas (CNG/LNG)" and "Natural Gas / Biomethane". All other fuels match exactly.
+export function matchesFuelType(fuelType: string | null | undefined, selected: string): boolean {
+  const ft = fuelType ?? ''
+  if (selected === 'Natural Gas') return /^natural gas/i.test(ft)
+  return ft === selected
+}
+
 export interface FilterOptions {
   brands: string[]
   origins: string[]
@@ -113,9 +121,9 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
     result = result.filter((e) => matchesFuel(e.fuel_type, params.fuel!))
   }
 
-  // Granular fuel type (exact fuel_type match, e.g. "Coal Gas", "Methanol", "Natural Gas")
+  // Granular fuel type (e.g. "Coal Gas", "Methanol"; "Natural Gas" spans its CNG/LNG + biomethane variants)
   if (params.fuel_type) {
-    result = result.filter((e) => e.fuel_type === params.fuel_type)
+    result = result.filter((e) => matchesFuelType(e.fuel_type, params.fuel_type!))
   }
 
   // Power range filter (too complex for PostgREST OR across 4 columns)
@@ -174,9 +182,13 @@ export async function getFilterOptions(): Promise<FilterOptions> {
     ],
     configs:   uniq(rows.map((r) => r.configuration)),
     // Most common fuels first (Diesel, Natural Gas), then the rest alphabetically.
+    // The "Natural Gas (CNG/LNG)" and "Natural Gas / Biomethane" variants collapse into a
+    // single "Natural Gas" entry, which the filter expands back to all of them.
     fuelTypes: (() => {
       const pref = ['Diesel', 'Natural Gas']
-      const list = uniq(rows.map((r) => r.fuel_type))
+      const list = [...new Set(
+        uniq(rows.map((r) => r.fuel_type)).map((f) => (/^natural gas/i.test(f) ? 'Natural Gas' : f)),
+      )]
       return [
         ...pref.filter((f) => list.includes(f)),
         ...list.filter((f) => !pref.includes(f)),
