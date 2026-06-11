@@ -240,6 +240,13 @@ export default async function EngineDetailPage({ params }: Props) {
   const kva = displayKva(hp)
   const out = displayOutput(hp)
 
+  // Descriptive alt/caption for the spec-card image (Google Images + accessibility).
+  const imageAlt =
+    `${engine.brand} ${engine.model}` +
+    `${engine.displacement_l ? ` ${engine.displacement_l}L` : ''}${engine.configuration ? ` ${engine.configuration}` : ''}` +
+    ` ${(engine.fuel_type ?? 'diesel').toLowerCase()} generator engine` +
+    `${kva ? ` — ${kva.toLocaleString()} kVA ${(hp?.rating ?? 'standby').toLowerCase()}` : ''} specifications`
+
   // Build PropertyValue specs from whatever is populated.
   const props: { '@type': 'PropertyValue'; name: string; value: string }[] = []
   const addProp = (name: string, value?: string | number | null) => {
@@ -256,6 +263,17 @@ export default async function EngineDetailPage({ params }: Props) {
   addProp('Emissions Standard', engine.emissions_standard)
   addProp('Dry Weight', engine.weight_kg ? `${engine.weight_kg} kg` : undefined)
   addProp('Country of Origin', engine.origin)
+  addProp('Compression Ratio', engine.compression_ratio)
+  addProp('Fuel Consumption', engine.fuel_consumption_l_per_hr ? `${engine.fuel_consumption_l_per_hr} L/hr` : undefined)
+  addProp('Ignition Type', engine.ignition_type)
+  addProp('Certifications', engine.certifications?.join(', '))
+  addProp('Dimensions (L×W×H)', engine.length_mm ? `${engine.length_mm} × ${engine.width_mm} × ${engine.height_mm} mm` : undefined)
+  addProp('Year Introduced', engine.year_introduced)
+  // Full power matrix (so the structured data mirrors the on-page ratings table)
+  addProp('Standby Power (50 Hz)', engine.standby_power_kwe_50hz ? `${engine.standby_power_kwe_50hz} kWe` : undefined)
+  addProp('Prime Power (50 Hz)',   engine.prime_power_kwe_50hz   ? `${engine.prime_power_kwe_50hz} kWe`   : undefined)
+  addProp('Standby Power (60 Hz)', engine.standby_power_kwe_60hz ? `${engine.standby_power_kwe_60hz} kWe` : undefined)
+  addProp('Prime Power (60 Hz)',   engine.prime_power_kwe_60hz   ? `${engine.prime_power_kwe_60hz} kWe`   : undefined)
 
   const productSchema = {
     '@context': 'https://schema.org',
@@ -266,7 +284,13 @@ export default async function EngineDetailPage({ params }: Props) {
     mpn: engine.model,
     ...(engine.series && { model: engine.series }),
     category: 'Diesel Generator Engine',
-    image: `${base}/engines/${slug}/opengraph-image`,
+    image: {
+      '@type': 'ImageObject',
+      url: `${base}/engines/${slug}/opengraph-image`,
+      width: 1200,
+      height: 630,
+      caption: imageAlt,
+    },
     description: intro,
     brand: { '@type': 'Brand', name: engine.brand },
     manufacturer: { '@type': 'Organization', name: engine.brand },
@@ -321,6 +345,19 @@ export default async function EngineDetailPage({ params }: Props) {
 
           <p className="text-gray-600 leading-relaxed">{intro}</p>
         </div>
+
+        {/* Spec-card lead image — a unique, owned, indexable graphic (Google Images / social). */}
+        <figure className="mb-6">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={`/engines/${slug}/opengraph-image`}
+            alt={imageAlt}
+            width={1200}
+            height={630}
+            className="w-full h-auto rounded-xl border border-gray-200"
+          />
+          <figcaption className="sr-only">{imageAlt}</figcaption>
+        </figure>
 
         <SpecHero engine={engine} />
 
