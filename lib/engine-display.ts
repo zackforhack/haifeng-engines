@@ -36,6 +36,20 @@ export function ratedSpeedLabel(e: Engine): string {
   return `${rpm50.toLocaleString()} RPM`
 }
 
+// Compact cylinder-layout token (L6 / V12 / W18) for tight spaces like the OG card stat tiles.
+// Defends against any verbose/aspiration-only `configuration` value sneaking in: it extracts the
+// layout token, or derives it from the cylinder count (≤6 = inline, ≥8 = V).
+export function compactConfig(e: Engine): string | null {
+  const c = (e.configuration || '').trim()
+  if (/^[LVW]\d+$/i.test(c)) return c.toUpperCase()
+  let m
+  if ((m = c.match(/^in-?line\s*(\d+)/i))) return 'L' + m[1]
+  if ((m = c.match(/^([vw])\s*(\d+)/i)))   return m[1].toUpperCase() + m[2]
+  if (/^single-cylinder/i.test(c))         return 'L1'
+  if (e.cylinders) return (e.cylinders <= 6 ? 'L' : 'V') + e.cylinders
+  return c || null
+}
+
 export interface HeadlinePower {
   kva?: number
   kwe?: number

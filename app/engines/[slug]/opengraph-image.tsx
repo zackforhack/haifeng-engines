@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
 import { getEngineBySlug } from '@/lib/engines'
-import { headlinePower, displayKva, displayOutput, ratedSpeeds } from '@/lib/engine-display'
+import { headlinePower, displayKva, displayOutput, ratedSpeeds, compactConfig } from '@/lib/engine-display'
 
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
@@ -37,7 +37,7 @@ export default async function Image({ params }: Props) {
   if (kva) stats.push({ label: `${hp?.rating ?? 'Standby'} · ${hp?.hz ?? 50} Hz`, value: `${kva.toLocaleString()} kVA` })
   if (out) stats.push({ label: 'Output', value: `${out.value.toLocaleString()} ${out.unit}` })
   if (engine.displacement_l) stats.push({ label: 'Displacement', value: `${engine.displacement_l} L` })
-  if (engine.configuration || engine.cylinders) stats.push({ label: 'Cylinders', value: engine.configuration ?? String(engine.cylinders) })
+  if (engine.configuration || engine.cylinders) stats.push({ label: 'Cylinders', value: compactConfig(engine) ?? String(engine.cylinders) })
   if (!kva) stats.push({ label: 'Speed', value: `${speed.toLocaleString()} RPM` })
 
   return new ImageResponse(
