@@ -10,6 +10,7 @@ export interface FilterParams {
   config?: string
   fuel?: 'diesel' | 'gas'
   fuel_type?: string
+  rpm?: number
   hz?: '50' | '60'
   status?: string
   min_kwe?: number
@@ -71,6 +72,7 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
     if (params.brand)  q = q.eq('brand', params.brand)
     if (params.origin) q = q.eq('origin', params.origin)
     if (params.config) q = q.eq('configuration', params.config)
+    if (params.rpm)    q = q.eq('rpm_rated', params.rpm)
     if (params.status) q = q.eq('status', params.status)
     // emissions: intentionally NOT pushed to DB — matched post-fetch so that
     // selecting "U.S. EPA Final Tier 4" also returns "Euro Stage V / U.S. EPA Final Tier 4"

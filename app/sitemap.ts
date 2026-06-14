@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { getAllEngines, getAllBrands } from '@/lib/engines'
 import { getAllAlternators, getAlternatorFilterOptions } from '@/lib/alternators'
 import { getAllGuides } from '@/lib/guides'
+import { CONFIG_FACETS, EMISSIONS_FACETS, RPM_FACETS } from '@/lib/facets'
 
 // Generate from live data on each request rather than a single build-time snapshot — the catalogue
 // grows often, and a one-shot build fetch can transiently undercount, caching a partial sitemap.
@@ -57,6 +58,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     `${base}/engines/power/100-500-kwe`,
     `${base}/engines/power/500-1500-kwe`,
     `${base}/engines/power/1500-plus-kwe`,
+    ...Object.keys(CONFIG_FACETS).map((s) => `${base}/engines/configuration/${s}`),
+    ...Object.keys(EMISSIONS_FACETS).map((s) => `${base}/engines/emissions/${s}`),
+    ...Object.keys(RPM_FACETS).map((s) => `${base}/engines/rpm/${s}`),
     ...altOptions.series.map((s) => `${base}/alternators/series/${seriesSlug(s)}`),
   ].map((url) => ({ url, changeFrequency: 'weekly' as const, priority: 0.7 }))
 

@@ -6,6 +6,7 @@ import { EngineCard } from '@/components/EngineCard'
 import { SearchBar } from '@/components/SearchBar'
 import { EngineFilters } from '@/components/EngineFilters'
 import { EngineTable } from '@/components/EngineTable'
+import { BrowseFacets } from '@/components/BrowseFacets'
 
 // Always fetch fresh data — prevents Next.js data cache from hiding new DB rows.
 export const dynamic = 'force-dynamic'
@@ -212,6 +213,9 @@ export default async function EnginesPage({ searchParams }: Props) {
           )}
         </>
       )}
+
+      {/* Internal-linking hub — shown on the canonical (unfiltered) listing. */}
+      {!hasFilters && <BrowseFacets />}
     </div>
   )
 }
