@@ -1,24 +1,30 @@
 import type { MetadataRoute } from 'next'
-import { getAllEngines, getAllBrands, getAllPdfPaths } from '@/lib/engines'
+import { getAllEngines, getAllBrands } from '@/lib/engines'
 import { getAllAlternators, getAlternatorFilterOptions } from '@/lib/alternators'
 import { getAllGuides } from '@/lib/guides'
+
+// Generate from live data on each request rather than a single build-time snapshot — the catalogue
+// grows often, and a one-shot build fetch can transiently undercount, caching a partial sitemap.
+export const dynamic = 'force-dynamic'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = 'https://engines.haifengmachinery.com'
 
-  const [engines, brands, alternators, pdfPaths, altOptions] = await Promise.all([
+  const [engines, brands, alternators, altOptions] = await Promise.all([
     getAllEngines(),
     getAllBrands(),
     getAllAlternators(),
-    getAllPdfPaths(),
     getAlternatorFilterOptions(),
   ])
 
+  // Each detail page advertises its own generated spec-card image (image sitemap entry)
+  // so Google Images can discover the unique, owned graphic on every page.
   const engineUrls = engines.map((e) => ({
     url: `${base}/engines/${e.slug}`,
     lastModified: new Date(e.updated_at),
     changeFrequency: e.status === 'active' ? 'monthly' as const : 'yearly' as const,
     priority: e.status === 'active' ? 0.8 : 0.5,
+    images: [`${base}/engines/${e.slug}/opengraph-image`],
   }))
 
   const alternatorUrls = alternators.map((a) => ({
@@ -26,6 +32,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: a.updated_at ? new Date(a.updated_at) : undefined,
     changeFrequency: a.status === 'active' ? 'monthly' as const : 'yearly' as const,
     priority: a.status === 'active' ? 0.7 : 0.5,
+    images: [`${base}/alternators/${a.slug}/opengraph-image`],
   }))
 
   const brandUrls = brands.map((b) => ({
@@ -53,13 +60,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...altOptions.series.map((s) => `${base}/alternators/series/${seriesSlug(s)}`),
   ].map((url) => ({ url, changeFrequency: 'weekly' as const, priority: 0.7 }))
 
-  // Masked spec-sheet PDFs, now served under our own domain via /specsheets.
-  const pdfUrls = pdfPaths.map(({ path, updatedAt }) => ({
-    url: `${base}/specsheets/${path.split('/').map(encodeURIComponent).join('/')}`,
-    lastModified: new Date(updatedAt),
-    changeFrequency: 'yearly' as const,
-    priority: 0.4,
-  }))
+  // Note: masked spec-sheet PDFs (/specsheets/*) are intentionally excluded — they are served
+  // with X-Robots-Tag: none (noindex), so listing them here would send Google contradictory
+  // signals and waste crawl budget. Users still reach them via the linked downloads on each page.
 
   return [
     { url: base, changeFrequency: 'weekly', priority: 1.0 },
@@ -72,6 +75,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...brandUrls,
     ...engineUrls,
     ...alternatorUrls,
-    ...pdfUrls,
   ]
 }
