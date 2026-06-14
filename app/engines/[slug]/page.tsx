@@ -6,6 +6,7 @@ import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
 import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, buildIntro, compactConfig } from '@/lib/engine-display'
+import { competitorsFor, pairSlug } from '@/lib/compare'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -233,6 +234,7 @@ export default async function EngineDetailPage({ params }: Props) {
   if (!engine) notFound()
 
   const related = await getRelatedEngines(engine)
+  const competitors = await competitorsFor(engine, 4)
   const intro = engine.description ?? buildIntro(engine)
   const base = 'https://engines.haifengmachinery.com'
 
@@ -397,6 +399,24 @@ export default async function EngineDetailPage({ params }: Props) {
             </div>
 
             <RelatedEngines engines={related} />
+            {competitors.length > 0 && (
+              <div className="bg-white rounded-xl border border-gray-200 p-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-4">Compare {engine.brand} {engine.model}</h2>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {competitors.map((c) => (
+                    <li key={c.slug}>
+                      <Link
+                        href={`/engines/compare/${pairSlug(engine.slug, c.slug)}`}
+                        className="flex items-center gap-2 rounded-lg border border-gray-100 hover:border-blue-300 hover:bg-blue-50 px-3 py-2 text-sm text-gray-700 transition-colors"
+                      >
+                        <span className="text-gray-400">vs</span>
+                        <span className="font-medium truncate">{c.brand} {c.model}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
 
           {/* Sidebar */}
