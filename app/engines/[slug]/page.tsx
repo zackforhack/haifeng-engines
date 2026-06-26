@@ -7,6 +7,7 @@ import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
 import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, buildIntro, compactConfig } from '@/lib/engine-display'
 import { competitorsFor, pairSlug } from '@/lib/compare'
+import { buildEngineFaqs } from '@/lib/engine-faq'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -310,7 +311,24 @@ export default async function EngineDetailPage({ params }: Props) {
     ],
   }
 
-  const jsonLd = JSON.stringify([productSchema, breadcrumbSchema]).replace(/</g, '\\u003c')
+  // Quotable, data-derived FAQ — both rendered on-page and emitted as FAQPage schema (same text),
+  // giving AI engines and featured snippets concise passages to cite from an otherwise table-heavy page.
+  const faqs = buildEngineFaqs(engine)
+  const faqSchema = faqs.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null
+
+  const jsonLd = JSON.stringify(
+    [productSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])],
+  ).replace(/</g, '\\u003c')
 
   return (
     <>
@@ -397,6 +415,20 @@ export default async function EngineDetailPage({ params }: Props) {
                 </tbody>
               </table>
             </div>
+
+            {faqs.length > 0 && (
+              <div className="bg-white rounded-xl border border-gray-200 p-6">
+                <h2 className="text-lg font-semibold text-gray-900 mb-4">Frequently asked questions</h2>
+                <div className="space-y-5">
+                  {faqs.map((f) => (
+                    <div key={f.q}>
+                      <h3 className="text-sm font-semibold text-gray-900 mb-1">{f.q}</h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">{f.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <RelatedEngines engines={related} />
             {competitors.length > 0 && (
