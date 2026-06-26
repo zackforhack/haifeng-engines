@@ -32,5 +32,16 @@ export function CountUp({
     return () => cancelAnimationFrame(raf)
   }, [end, duration])
 
-  return <span className={className}>{value.toLocaleString()}</span>
+  // Reserve the final value's width up front so counting up from 0 can't reflow surrounding
+  // content (the source of the homepage's mobile CLS). tabular-nums keeps digit widths equal;
+  // text alignment is left to inherit so the hero stays centered and the cards stay left-aligned.
+  const reserved = end.toLocaleString()
+  return (
+    <span
+      className={className}
+      style={{ display: 'inline-block', minWidth: `${reserved.length}ch`, fontVariantNumeric: 'tabular-nums' }}
+    >
+      {value.toLocaleString()}
+    </span>
+  )
 }

@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { filterEngines } from '@/lib/engines'
 import { EngineTable } from '@/components/EngineTable'
+import { HubContent } from '@/components/HubContent'
+import { hubItemListElements } from '@/lib/hub-stats'
 
 const BASE = 'https://engines.haifengmachinery.com'
 
@@ -50,8 +52,15 @@ export default async function EngineFuelPage({ params }: Props) {
   const jsonLd = {
     '@context': 'https://schema.org', '@type': 'CollectionPage',
     name: cfg.title, url: `${BASE}/engines/fuel/${fuel}`, description: cfg.intro,
-    mainEntity: { '@type': 'ItemList', numberOfItems: engines.length },
+    mainEntity: { '@type': 'ItemList', numberOfItems: engines.length, itemListElement: hubItemListElements(engines, BASE) },
   }
+  const related = [
+    { label: fuel === 'diesel' ? 'Gas engines' : 'Diesel engines', href: `/engines/fuel/${fuel === 'diesel' ? 'gas' : 'diesel'}` },
+    { label: 'Under 100 kWe', href: '/engines/power/under-100-kwe' },
+    { label: '100–500 kWe', href: '/engines/power/100-500-kwe' },
+    { label: '500–1,500 kWe', href: '/engines/power/500-1500-kwe' },
+    { label: '1,500+ kWe', href: '/engines/power/1500-plus-kwe' },
+  ]
   const breadcrumb = {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
     itemListElement: [
@@ -74,6 +83,7 @@ export default async function EngineFuelPage({ params }: Props) {
         <div className="mt-8 text-sm">
           <Link href="/engines" className="text-blue-600 hover:underline">← All engines</Link>
         </div>
+        <HubContent subject={`${cfg.label.toLowerCase()} generator engines`} engines={engines} related={related} />
       </div>
     </>
   )

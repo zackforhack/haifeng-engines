@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import type { Engine } from '@/lib/types'
 import { EngineTable } from '@/components/EngineTable'
+import { HubContent } from '@/components/HubContent'
+import { computeHubStats } from '@/lib/hub-stats'
 
 export interface FacetSibling { label: string; href: string; active?: boolean }
 
@@ -8,16 +10,22 @@ export interface FacetSibling { label: string; href: string; active?: boolean }
 // sibling chips weave the facets into a tight internal-link mesh that funnels crawl equity down to
 // the engine detail pages.
 export function FacetHub({
-  facetLabel, h1, intro, engines, siblings, siblingHeading,
+  facetLabel, h1, intro, subject, engines, siblings, siblingHeading,
 }: {
   facetLabel: string
   h1: string
   intro: string
+  subject: string
   engines: Engine[]
   siblings: FacetSibling[]
   siblingHeading: string
 }) {
-  const brands = new Set(engines.map((e) => e.brand)).size
+  const stats = computeHubStats(engines)
+  const brands = stats.brandCount
+  const related = stats.topBrands.map((b) => ({
+    label: `${b.name} engines`,
+    href: `/brands/${encodeURIComponent(b.name.toLowerCase())}`,
+  }))
   return (
     <div>
       <nav className="text-sm text-gray-400 mb-4">
@@ -53,6 +61,8 @@ export function FacetHub({
       <div className="mt-8 text-sm">
         <Link href="/engines" className="text-blue-600 hover:underline">← All engines</Link>
       </div>
+
+      <HubContent subject={subject} engines={engines} related={related} />
     </div>
   )
 }

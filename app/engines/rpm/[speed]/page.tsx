@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { filterEngines } from '@/lib/engines'
 import { RPM_FACETS } from '@/lib/facets'
 import { FacetHub } from '@/components/FacetHub'
+import { hubItemListElements } from '@/lib/hub-stats'
 
 const BASE = 'https://engines.haifengmachinery.com'
 
@@ -39,7 +40,7 @@ export default async function RpmFacetPage({ params }: Props) {
   }))
 
   const jsonLd = [
-    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: h1, url: `${BASE}/engines/rpm/${speed}`, description: intro, mainEntity: { '@type': 'ItemList', numberOfItems: engines.length } },
+    { '@context': 'https://schema.org', '@type': 'CollectionPage', name: h1, url: `${BASE}/engines/rpm/${speed}`, description: intro, mainEntity: { '@type': 'ItemList', numberOfItems: engines.length, itemListElement: hubItemListElements(engines, BASE) } },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Engines', item: `${BASE}/engines` },
       { '@type': 'ListItem', position: 2, name: h1, item: `${BASE}/engines/rpm/${speed}` },
@@ -49,7 +50,7 @@ export default async function RpmFacetPage({ params }: Props) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
-      <FacetHub facetLabel={cfg.label} h1={h1} intro={intro} engines={engines} siblings={siblings} siblingHeading="Browse by rated speed" />
+      <FacetHub facetLabel={cfg.label} h1={h1} intro={intro} subject={`${cfg.label} generator engines`} engines={engines} siblings={siblings} siblingHeading="Browse by rated speed" />
     </>
   )
 }

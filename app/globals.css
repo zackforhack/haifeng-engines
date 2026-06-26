@@ -189,9 +189,9 @@ select option { background-color: #17171b; color: #f4f4f5; }
 /* Background layer clips the photo to the hero's rounded corners itself, so the hero
    wrapper no longer needs overflow:hidden (which was clipping the search autocomplete). */
 .hero-photo { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; background: #0a0e1a; }
-.hero-photo .img {
-  position: absolute; inset: -3%;
-  background: url('/hero/cummins-engine.jpg') center center / cover no-repeat;
+/* next/image (fill) sets position/inset/size; we add cover + the Ken Burns zoom here. */
+.hero-img {
+  object-fit: cover;
   transform: scale(1.06);
   animation: heroKenBurns 34s ease-in-out infinite alternate;
   will-change: transform;
@@ -207,7 +207,7 @@ select option { background-color: #17171b; color: #f4f4f5; }
   100% { transform: scale(1.18) translate(-2%, -1.5%); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hero-photo .img { animation: none; }
+  .hero-img { animation: none; }
 }
 
 /* ── /guides: light reading surface (matches haifengmachinery.com) ──────────── */

@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation'
 import { getAllBrands, getEnginesByBrand, getBrandDisplayName } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
 import { BrandLogo } from '@/components/BrandLogo'
+import { HubContent } from '@/components/HubContent'
+import { hubItemListElements } from '@/lib/hub-stats'
 
 interface Props {
   params: Promise<{ brand: string }>
@@ -47,12 +49,7 @@ export default async function BrandPage({ params }: Props) {
       mainEntity: {
         '@type': 'ItemList',
         numberOfItems: engines.length,
-        itemListElement: engines.map((e, i) => ({
-          '@type': 'ListItem',
-          position: i + 1,
-          name: `${e.brand} ${e.model}`,
-          url: `${base}/engines/${e.slug}`,
-        })),
+        itemListElement: hubItemListElements(engines, base),
       },
     },
     {
@@ -102,6 +99,20 @@ export default async function BrandPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      <HubContent
+        subject={`${name} generator engines`}
+        engines={engines}
+        related={[
+          { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+          { label: 'Gas engines', href: '/engines/fuel/gas' },
+          { label: 'Under 100 kWe', href: '/engines/power/under-100-kwe' },
+          { label: '100–500 kWe', href: '/engines/power/100-500-kwe' },
+          { label: '500–1,500 kWe', href: '/engines/power/500-1500-kwe' },
+          { label: '1,500+ kWe', href: '/engines/power/1500-plus-kwe' },
+          { label: 'All brands', href: '/brands' },
+        ]}
+      />
     </div>
   )
 }

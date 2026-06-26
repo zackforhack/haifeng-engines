@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { filterEngines } from '@/lib/engines'
 import { EngineTable } from '@/components/EngineTable'
+import { HubContent } from '@/components/HubContent'
+import { hubItemListElements } from '@/lib/hub-stats'
 
 const BASE = 'https://engines.haifengmachinery.com'
 
@@ -41,11 +43,18 @@ export default async function EnginePowerPage({ params }: Props) {
   if (!engines.length) notFound()
 
   const brands = new Set(engines.map((e) => e.brand)).size
+  const related = [
+    ...Object.entries(RANGES)
+      .filter(([slug]) => slug !== range)
+      .map(([slug, c]) => ({ label: c.label, href: `/engines/power/${slug}` })),
+    { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+    { label: 'Gas engines', href: '/engines/fuel/gas' },
+  ]
   const jsonLd = [
     {
       '@context': 'https://schema.org', '@type': 'CollectionPage',
       name: `${cfg.label} Generator Engines`, url: `${BASE}/engines/power/${range}`,
-      mainEntity: { '@type': 'ItemList', numberOfItems: engines.length },
+      mainEntity: { '@type': 'ItemList', numberOfItems: engines.length, itemListElement: hubItemListElements(engines, BASE) },
     },
     {
       '@context': 'https://schema.org', '@type': 'BreadcrumbList',
@@ -73,6 +82,7 @@ export default async function EnginePowerPage({ params }: Props) {
         <div className="mt-8 text-sm">
           <Link href="/engines" className="text-blue-600 hover:underline">← All engines</Link>
         </div>
+        <HubContent subject={`${cfg.label.toLowerCase()} generator engines`} engines={engines} related={related} />
       </div>
     </>
   )

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import heroPhoto from '@/public/hero/cummins-engine.jpg'
 import { getDbStats, getFilterOptions } from '@/lib/engines'
 import { getAllAlternators } from '@/lib/alternators'
 import { getAllGuides } from '@/lib/guides'
@@ -58,7 +60,17 @@ export default async function HomePage() {
       {/* Hero */}
       <div className="relative rounded-3xl border border-white/10 mb-10 shadow-xl">
         <div className="hero-photo" aria-hidden="true">
-          <div className="img" />
+          {/* LCP element: optimized + preloaded so it paints fast on mobile (next/image
+              serves resized AVIF/WebP and emits a preload <link>). Ken Burns zoom via .hero-img. */}
+          <Image
+            src={heroPhoto}
+            alt=""
+            fill
+            preload
+            placeholder="blur"
+            sizes="100vw"
+            className="hero-img"
+          />
           <div className="overlay" />
         </div>
         <div className="relative z-10 text-center px-6 py-16 sm:py-24">
