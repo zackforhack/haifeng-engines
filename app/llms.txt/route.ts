@@ -26,6 +26,9 @@ export async function GET() {
 - [Alternators](${base}/alternators): browse generator alternators by brand, series, kVA output and pole count, with links to official manufacturer datasheets.
 - [Brands](${base}/brands): index of every engine brand in the database.
 
+## Full data
+- [Full engine data](${base}/llms-full.txt): a flat plain-text dump of every engine's specifications (power ratings, displacement, configuration, fuel, emissions, origin, datasheet) for deep ingestion.
+
 ## Engine brands
 ${brands.map((b) => `- [${b}](${base}/brands/${encodeURIComponent(b.toLowerCase())})`).join('\n')}
 
