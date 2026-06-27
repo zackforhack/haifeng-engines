@@ -1,8 +1,7 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 const LINKS = [
   { href: '/engines', label: 'Engines' },
@@ -15,10 +14,6 @@ const CONTACT = 'https://www.haifengmachinery.com/contact-us/'
 
 export function SiteNav() {
   const [open, setOpen] = useState(false)
-  const pathname = usePathname()
-
-  // Close the mobile menu whenever the route changes.
-  useEffect(() => setOpen(false), [pathname])
 
   return (
     <>

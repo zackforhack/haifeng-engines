@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Haifeng Engines
 
-## Getting Started
+Generator engine and alternator specification catalog built with Next.js App Router,
+Supabase, and Vercel.
 
-First, run the development server:
+The site powers `engines.haifengmachinery.com` and includes:
+
+- Engine and alternator browse/search pages
+- Engine, alternator, brand, guide, category, and comparison detail routes
+- SEO metadata, Open Graph images, robots, sitemap, and llms.txt routes
+- Markdown-authored buying/specification guides
+- Supabase-backed catalog data and PDF spec-sheet links
+
+## Stack
+
+- Next.js 16.2
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Supabase JavaScript client
+- Vercel Analytics
+- Recharts
+
+This project uses the App Router. Before changing Next.js APIs or route conventions,
+check the local versioned docs in `node_modules/next/dist/docs/`.
+
+## Environment
+
+Create `.env.local` from `.env.local.example`:
+
+```bash
+cp .env.local.example .env.local
+```
+
+Required:
+
+```bash
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+```
+
+Optional:
+
+```bash
+NEXT_PUBLIC_GA_ID=
+```
+
+The same variables must be configured in Vercel. Production builds query Supabase
+while collecting page data and generating static routes.
+
+## Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Validate the app:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`npm run build` uses `next build --webpack` and requires network access to Supabase.
+The project pins Node 22 through `.nvmrc` and `package.json` so local, CI, and
+Vercel builds use the same major runtime.
 
-## Learn More
+## Project Layout
 
-To learn more about Next.js, take a look at the following resources:
+- `app/` - App Router pages, route handlers, metadata routes, and Open Graph images
+- `components/` - UI components for filters, tables, cards, charts, nav, and downloads
+- `lib/` - Supabase access, catalog filtering, display helpers, facets, guides, and comparisons
+- `content/guides/` - Markdown guide content with frontmatter
+- `public/` - brand logos, guide images, hero image, fonts, and static assets
+- `supabase/` - schema and migration SQL
+- `data/` - one-off import, extraction, upload, and QA scripts for catalog maintenance
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Data Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The runtime catalog reads from Supabase tables including:
 
-## Deploy on Vercel
+- `engines`
+- `engine_pdfs`
+- `alternators`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The PDF route `/specsheets/:path*` is rewritten in `next.config.ts` to the public
+Supabase storage bucket, keeping public links on the site domain.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+Vercel should use the GitHub integration with `main` as the production branch.
+The default install/build flow is:
+
+```bash
+npm ci
+npm run build
+```
+
+GitHub Actions runs on pushes and pull requests to `main`:
+
+- `npm ci`
+- `npx tsc --noEmit`
+- `npm run lint`
+- `npm run build`
+
+Configure these GitHub repository secrets for CI:
+
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `NEXT_PUBLIC_GA_ID` (optional)
+
+Configure the same environment variables in Vercel for Production, Preview, and
+Development as needed. Vercel performs the actual deployment after GitHub receives
+the commit; GitHub Actions acts as the quality gate.
+
+Current build output prerenders thousands of static catalog pages through
+`generateStaticParams`, while selected routes remain dynamic for fresh catalog data
+and generated assets.

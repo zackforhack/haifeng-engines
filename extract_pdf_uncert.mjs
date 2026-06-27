@@ -1,9 +1,4 @@
-import { createRequire } from 'module';
 import { readFileSync } from 'fs';
-import { fileURLToPath } from 'url';
-import path from 'path';
-
-const require = createRequire(import.meta.url);
 
 // Load pdfjs-dist (legacy build for Node.js)
 const pdfjsLib = await import('/Users/ziqianhuang/haifeng-engines/node_modules/pdfjs-dist/legacy/build/pdf.mjs');

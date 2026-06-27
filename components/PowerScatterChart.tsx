@@ -10,6 +10,7 @@ import {
   CartesianGrid,
   ReferenceLine,
 } from 'recharts'
+import type { ScatterShapeProps } from 'recharts'
 import type { Engine } from '@/lib/types'
 
 function representativeKwe(e: Engine): number | null {
@@ -108,7 +109,7 @@ export function PowerScatterChart({ engines }: Props) {
             fill="#2563eb"
             fillOpacity={0.6}
             stroke="none"
-            shape={(props: any) => {
+            shape={(props: ScatterShapeProps) => {
               const colorIdx = (props.x !== undefined ? Math.round(props.x) : 0) % COLORS.length
               return (
                 <circle

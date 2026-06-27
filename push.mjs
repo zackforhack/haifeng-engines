@@ -3,7 +3,6 @@ import { createRequire } from 'module'
 const require = createRequire(import.meta.url)
 const http = require('./node_modules/isomorphic-git/http/node/index.cjs')
 import fs from 'fs'
-import path from 'path'
 
 const dir = process.cwd()
 const token = process.env.GH_TOKEN

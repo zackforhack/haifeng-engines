@@ -8,13 +8,6 @@ const typeLabel: Record<EnginePDF['type'], string> = {
   other: 'Document',
 }
 
-const typeIcon: Record<EnginePDF['type'], string> = {
-  datasheet: '📄',
-  manual: '📋',
-  brochure: '📑',
-  other: '📁',
-}
-
 function formatBytes(bytes?: number): string {
   if (!bytes) return ''
   const mb = bytes / 1024 / 1024
