@@ -1,0 +1,75 @@
+name: SEO Monitor
+
+on:
+  schedule:
+    - cron: '20 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: seo-monitor
+  cancel-in-progress: false
+
+jobs:
+  report:
+    name: Google SEO and data QA reports
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+      GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+      GSC_SITE_URL: sc-domain:engines.haifengmachinery.com
+      GA4_PROPERTY_ID: '543350245'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check monitoring secrets
+        id: secrets
+        run: |
+          if [ -z "$GOOGLE_SERVICE_ACCOUNT_JSON" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::GOOGLE_SERVICE_ACCOUNT_JSON is not configured; skipping SEO monitor."
+          elif [ -z "$NEXT_PUBLIC_SUPABASE_URL" ] || [ -z "$NEXT_PUBLIC_SUPABASE_ANON_KEY" ]; then
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Supabase secrets are not configured; skipping SEO monitor."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Write Google credentials
+        if: steps.secrets.outputs.configured == 'true'
+        run: |
+          printf '%s' "$GOOGLE_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/google-service-account.json"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$RUNNER_TEMP/google-service-account.json" >> "$GITHUB_ENV"
+
+      - name: Generate Google SEO report
+        if: steps.secrets.outputs.configured == 'true'
+        run: npm run seo:report
+
+      - name: Generate data QA report
+        if: steps.secrets.outputs.configured == 'true'
+        run: npm run data:qa
+
+      - name: Upload reports
+        if: steps.secrets.outputs.configured == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-monitor-reports
+          path: |
+            reports/seo/
+            reports/data-qa/
+          retention-days: 30

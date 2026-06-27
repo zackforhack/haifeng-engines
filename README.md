@@ -155,6 +155,15 @@ The service account needs read-only access:
 
 Generated reports are written to `reports/seo/` and ignored by git.
 
+GitHub Actions also includes a manual/daily `SEO Monitor` workflow. To enable it,
+add this repository secret:
+
+- `GOOGLE_SERVICE_ACCOUNT_JSON` - the full Google service-account JSON content
+
+The workflow reuses the existing Supabase CI secrets, runs `npm run seo:report`
+and `npm run data:qa`, then uploads the generated `reports/` files as a workflow
+artifact for 30 days. It does not commit generated reports back to the repository.
+
 ## Data QA
 
 Run the catalog integrity report with:
