@@ -8,6 +8,7 @@ import { BrandLogo } from '@/components/BrandLogo'
 import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, buildIntro, compactConfig } from '@/lib/engine-display'
 import { competitorsFor, pairSlug } from '@/lib/compare'
 import { buildEngineFaqs } from '@/lib/engine-faq'
+import { brandSlug } from '@/lib/seo'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -317,7 +318,7 @@ export default async function EngineDetailPage({ params }: Props) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Engines', item: `${base}/engines` },
-      { '@type': 'ListItem', position: 2, name: engine.brand, item: `${base}/brands/${encodeURIComponent(engine.brand.toLowerCase())}` },
+      { '@type': 'ListItem', position: 2, name: engine.brand, item: `${base}/brands/${brandSlug(engine.brand)}` },
       { '@type': 'ListItem', position: 3, name: engine.model, item: `${base}/engines/${slug}` },
     ],
   }
@@ -350,7 +351,7 @@ export default async function EngineDetailPage({ params }: Props) {
         <nav className="text-sm text-gray-400 mb-4">
           <Link href="/engines" className="hover:text-blue-600">Engines</Link>
           {' / '}
-          <Link href={`/brands/${encodeURIComponent(engine.brand.toLowerCase())}`} className="hover:text-blue-600">{engine.brand}</Link>
+          <Link href={`/brands/${brandSlug(engine.brand)}`} className="hover:text-blue-600">{engine.brand}</Link>
           {' / '}
           <span className="text-gray-700">{engine.model}</span>
         </nav>

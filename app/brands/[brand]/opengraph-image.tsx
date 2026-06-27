@@ -1,5 +1,6 @@
 import { ImageResponse } from 'next/og'
-import { getEnginesByBrand, getBrandDisplayName } from '@/lib/engines'
+import { getAllBrands, getEnginesByBrand } from '@/lib/engines'
+import { resolveBrandSlug } from '@/lib/seo'
 
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
@@ -13,11 +14,9 @@ interface Props {
 export default async function Image({ params }: Props) {
   const { brand } = await params
   const decoded = decodeURIComponent(brand)
-  const [name, engines] = await Promise.all([
-    getBrandDisplayName(decoded),
-    getEnginesByBrand(decoded),
-  ])
-  const display = name ?? decoded
+  const brands = await getAllBrands()
+  const display = resolveBrandSlug(decoded, brands) ?? decoded
+  const engines = await getEnginesByBrand(display)
 
   return new ImageResponse(
     (

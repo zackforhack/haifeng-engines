@@ -1,4 +1,5 @@
 import type { Engine } from '@/lib/types'
+import { STRUCTURED_DATA_ITEM_LIMIT } from '@/lib/seo'
 
 // Best-available electrical rating (kWe) for an engine, preferring standby then prime,
 // 50 Hz then 60 Hz, falling back to the legacy mechanical kW field. Used only for the
@@ -159,7 +160,7 @@ export function buildHubFaqs(subject: string, s: HubStats): HubFaq[] {
 }
 
 // ItemList itemListElement array for CollectionPage schema, capped to keep payload sane.
-export function hubItemListElements(engines: Engine[], base: string, cap = 100) {
+export function hubItemListElements(engines: Engine[], base: string, cap = STRUCTURED_DATA_ITEM_LIMIT) {
   return engines.slice(0, cap).map((e, i) => ({
     '@type': 'ListItem' as const,
     position: i + 1,

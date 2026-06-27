@@ -5,12 +5,7 @@ import { filterAlternators, getAlternatorFilterOptions } from '@/lib/alternators
 import { SearchBar } from '@/components/SearchBar'
 import { AlternatorFilters } from '@/components/AlternatorFilters'
 import type { Alternator } from '@/lib/types'
-
-export const metadata: Metadata = {
-  title: 'Browse Alternators',
-  description: 'Browse generator alternator models by brand, series, kVA output and pole count, with links to official manufacturer data sheets.',
-  alternates: { canonical: '/alternators' },
-}
+import { hasSearchParams, noindexFollowRobots } from '@/lib/seo'
 
 const PAGE_SIZE = 24
 
@@ -34,6 +29,16 @@ interface Props {
     page?: string
     view?: string
   }>
+}
+
+export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
+  const p = await searchParams
+  return {
+    title: 'Browse Alternators',
+    description: 'Browse generator alternator models by brand, series, kVA output and pole count, with links to official manufacturer data sheets.',
+    alternates: { canonical: '/alternators' },
+    ...(hasSearchParams(p) ? { robots: noindexFollowRobots } : {}),
+  }
 }
 
 export default async function AlternatorsPage({ searchParams }: Props) {
@@ -219,7 +224,7 @@ export default async function AlternatorsPage({ searchParams }: Props) {
           <p className="text-sm mt-1">Try adjusting your filters.</p>
         </div>
       ) : isTable ? (
-        <AlternatorTable alternators={allAlternators} />
+        <AlternatorTable alternators={pageItems} />
       ) : (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -246,28 +251,28 @@ export default async function AlternatorsPage({ searchParams }: Props) {
               </Link>
             ))}
           </div>
-          {totalPages > 1 && (
-            <div className="flex items-center justify-center gap-2 mt-10">
-              {safePage > 1 ? (
-                <Link href={href({ page: String(safePage - 1) })}
-                  className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 bg-white transition-colors">
-                  ← Previous
-                </Link>
-              ) : (
-                <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed">← Previous</span>
-              )}
-              <span className="text-sm text-gray-500 px-3">Page {safePage} of {totalPages}</span>
-              {safePage < totalPages ? (
-                <Link href={href({ page: String(safePage + 1) })}
-                  className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 bg-white transition-colors">
-                  Next →
-                </Link>
-              ) : (
-                <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed">Next →</span>
-              )}
-            </div>
-          )}
         </>
+      )}
+      {totalPages > 1 && (
+        <div className="flex items-center justify-center gap-2 mt-10">
+          {safePage > 1 ? (
+            <Link href={href({ page: String(safePage - 1) })}
+              className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 bg-white transition-colors">
+              ← Previous
+            </Link>
+          ) : (
+            <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed">← Previous</span>
+          )}
+          <span className="text-sm text-gray-500 px-3">Page {safePage} of {totalPages}</span>
+          {safePage < totalPages ? (
+            <Link href={href({ page: String(safePage + 1) })}
+              className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 bg-white transition-colors">
+              Next →
+            </Link>
+          ) : (
+            <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed">Next →</span>
+          )}
+        </div>
       )}
     </div>
   )

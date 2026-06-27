@@ -1,5 +1,6 @@
 import { getAllBrands } from '@/lib/engines'
 import { supabase } from '@/lib/supabase'
+import { brandSlug } from '@/lib/seo'
 
 export const revalidate = 86400 // regenerate at most once a day
 
@@ -30,7 +31,7 @@ export async function GET() {
 - [Full engine data](${base}/llms-full.txt): a flat plain-text dump of every engine's specifications (power ratings, displacement, configuration, fuel, emissions, origin, datasheet) for deep ingestion.
 
 ## Engine brands
-${brands.map((b) => `- [${b}](${base}/brands/${encodeURIComponent(b.toLowerCase())})`).join('\n')}
+${brands.map((b) => `- [${b}](${base}/brands/${brandSlug(b)})`).join('\n')}
 
 ## About
 - Each engine page lists power ratings (prime/standby kWe & kVA at 50 Hz/1500 RPM and 60 Hz/1800 RPM), displacement, cylinder configuration, cooling, emissions standard, origin, and downloadable spec sheets where available.

@@ -3,6 +3,7 @@ import type { Engine } from '@/lib/types'
 import { EngineTable } from '@/components/EngineTable'
 import { HubContent } from '@/components/HubContent'
 import { computeHubStats } from '@/lib/hub-stats'
+import { brandSlug, limitedEngines, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
 
 export interface FacetSibling { label: string; href: string; active?: boolean }
 
@@ -24,8 +25,9 @@ export function FacetHub({
   const brands = stats.brandCount
   const related = stats.topBrands.map((b) => ({
     label: `${b.name} engines`,
-    href: `/brands/${encodeURIComponent(b.name.toLowerCase())}`,
+    href: `/brands/${brandSlug(b.name)}`,
   }))
+  const displayedEngines = limitedEngines(engines)
   return (
     <div>
       <nav className="text-sm text-gray-400 mb-4">
@@ -56,7 +58,12 @@ export function FacetHub({
         </div>
       )}
 
-      <EngineTable engines={engines} />
+      <EngineTable engines={displayedEngines} />
+      {engines.length > displayedEngines.length && (
+        <p className="text-xs text-gray-400 mt-3">
+          Showing the first {ENGINE_HUB_DISPLAY_LIMIT.toLocaleString()} of {engines.length.toLocaleString()} models on this hub page. Use the filters on the main engine database for the full set.
+        </p>
+      )}
 
       <div className="mt-8 text-sm">
         <Link href="/engines" className="text-blue-600 hover:underline">← All engines</Link>

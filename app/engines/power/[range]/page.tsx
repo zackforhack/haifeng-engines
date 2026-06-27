@@ -5,6 +5,7 @@ import { filterEngines } from '@/lib/engines'
 import { EngineTable } from '@/components/EngineTable'
 import { HubContent } from '@/components/HubContent'
 import { hubItemListElements } from '@/lib/hub-stats'
+import { limitedEngines, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
 
 const BASE = 'https://engines.haifengmachinery.com'
 
@@ -41,6 +42,7 @@ export default async function EnginePowerPage({ params }: Props) {
 
   const engines = await filterEngines({ min_kwe: cfg.min, max_kwe: cfg.max })
   if (!engines.length) notFound()
+  const displayedEngines = limitedEngines(engines)
 
   const brands = new Set(engines.map((e) => e.brand)).size
   const related = [
@@ -78,7 +80,12 @@ export default async function EnginePowerPage({ params }: Props) {
           Diesel and gas generator engines rated {cfg.label}, by standby kWe.
           <span className="text-gray-400"> ({engines.length.toLocaleString()} models across {brands} brands.)</span>
         </p>
-        <EngineTable engines={engines} />
+        <EngineTable engines={displayedEngines} />
+        {engines.length > displayedEngines.length && (
+          <p className="text-xs text-gray-400 mt-3">
+            Showing the first {ENGINE_HUB_DISPLAY_LIMIT.toLocaleString()} of {engines.length.toLocaleString()} models on this power-range page. Use the filters on the main engine database for the full set.
+          </p>
+        )}
         <div className="mt-8 text-sm">
           <Link href="/engines" className="text-blue-600 hover:underline">← All engines</Link>
         </div>

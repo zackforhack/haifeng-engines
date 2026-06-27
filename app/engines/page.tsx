@@ -7,11 +7,10 @@ import { SearchBar } from '@/components/SearchBar'
 import { EngineFilters } from '@/components/EngineFilters'
 import { EngineTable } from '@/components/EngineTable'
 import { BrowseFacets } from '@/components/BrowseFacets'
+import { ENGINE_GRID_PAGE_SIZE, ENGINE_TABLE_PAGE_SIZE, hasSearchParams, noindexFollowRobots } from '@/lib/seo'
 
 // Always fetch fresh data — prevents Next.js data cache from hiding new DB rows.
 export const dynamic = 'force-dynamic'
-
-const PAGE_SIZE = 24
 
 interface Props {
   searchParams: Promise<{
@@ -33,10 +32,14 @@ interface Props {
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
-  const { q, brand, emissions, fuel } = await searchParams
+  const p = await searchParams
+  const { q, brand, emissions, fuel } = p
   // Filtered views share one canonical (/engines) so filter permutations don't
   // dilute as duplicate URLs; brand/model pages are indexed on their own paths.
-  const canonical = { alternates: { canonical: '/engines' } }
+  const canonical = {
+    alternates: { canonical: '/engines' },
+    ...(hasSearchParams(p) ? { robots: noindexFollowRobots } : {}),
+  }
   if (brand) return { ...canonical, title: `${brand} Generator Engines`, description: `Browse ${brand} diesel and gas generator engine specifications.` }
   if (fuel === 'gas') return { ...canonical, title: 'Gas Generator Engines', description: 'Natural gas, CNG/LNG and biogas engine specifications for electrical power generation.' }
   if (fuel === 'diesel') return { ...canonical, title: 'Diesel Generator Engines', description: 'Diesel engine specifications for electrical power generation.' }
@@ -57,8 +60,8 @@ export default async function EnginesPage({ searchParams }: Props) {
     p.hz || p.status || p.min_kwe || p.max_kwe
   )
 
-  // The full catalogue list. Unfiltered shows every engine; filters narrow it.
   const isGrid = p.view === 'grid'
+  const pageSize = isGrid ? ENGINE_GRID_PAGE_SIZE : ENGINE_TABLE_PAGE_SIZE
   const currentPage = Math.max(1, Number(p.page) || 1)
 
   const [allEngines, options] = await Promise.all([
@@ -80,9 +83,9 @@ export default async function EnginesPage({ searchParams }: Props) {
   ])
 
   const total = allEngines.length
-  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE))
+  const totalPages = Math.max(1, Math.ceil(total / pageSize))
   const safePage = Math.min(currentPage, totalPages)
-  const engines = allEngines.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE)
+  const engines = allEngines.slice((safePage - 1) * pageSize, safePage * pageSize)
 
   function pageHref(pg: number) {
     const sp = new URLSearchParams({
@@ -169,48 +172,53 @@ export default async function EnginesPage({ searchParams }: Props) {
           <p className="text-sm mt-1">Try adjusting your filters or search query.</p>
         </div>
       ) : !isGrid ? (
-        <EngineTable engines={allEngines} />
+        <EngineTable engines={engines} />
       ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {engines.map((engine) => (
+            <EngineCard key={engine.id} engine={engine} />
+          ))}
+        </div>
+      )}
+
+      {total > pageSize && (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {engines.map((engine) => (
-              <EngineCard key={engine.id} engine={engine} />
-            ))}
-          </div>
-
-          {totalPages > 1 && (
-            <div className="flex items-center justify-center gap-2 mt-10">
-              {safePage > 1 ? (
-                <Link
-                  href={pageHref(safePage - 1)}
-                  className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 hover:text-blue-700 bg-white transition-colors"
-                >
-                  ← Previous
-                </Link>
-              ) : (
-                <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed select-none">
-                  ← Previous
-                </span>
-              )}
-
-              <span className="text-sm text-gray-500 px-3">
-                Page {safePage} of {totalPages}
-              </span>
-
-              {safePage < totalPages ? (
-                <Link
-                  href={pageHref(safePage + 1)}
-                  className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 hover:text-blue-700 bg-white transition-colors"
-                >
-                  Next →
-                </Link>
-              ) : (
-                <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed select-none">
-                  Next →
-                </span>
-              )}
-            </div>
+          {!isGrid && (
+            <p className="text-xs text-gray-400 mt-3">
+              Showing {((safePage - 1) * pageSize + 1).toLocaleString()}-{Math.min(safePage * pageSize, total).toLocaleString()} of {total.toLocaleString()} engines.
+            </p>
           )}
+          <div className="flex items-center justify-center gap-2 mt-10">
+            {safePage > 1 ? (
+              <Link
+                href={pageHref(safePage - 1)}
+                className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 hover:text-blue-700 bg-white transition-colors"
+              >
+                ← Previous
+              </Link>
+            ) : (
+              <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed select-none">
+                ← Previous
+              </span>
+            )}
+
+            <span className="text-sm text-gray-500 px-3">
+              Page {safePage} of {totalPages}
+            </span>
+
+            {safePage < totalPages ? (
+              <Link
+                href={pageHref(safePage + 1)}
+                className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 hover:text-blue-700 bg-white transition-colors"
+              >
+                Next →
+              </Link>
+            ) : (
+              <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed select-none">
+                Next →
+              </span>
+            )}
+          </div>
         </>
       )}
 

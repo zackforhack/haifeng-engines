@@ -4,6 +4,7 @@ import { getAllAlternators, getAlternatorFilterOptions } from '@/lib/alternators
 import { getAllGuides } from '@/lib/guides'
 import { CONFIG_FACETS, EMISSIONS_FACETS, RPM_FACETS } from '@/lib/facets'
 import { getComparisonPairs } from '@/lib/compare'
+import { brandSlug } from '@/lib/seo'
 
 // Generate from live data on each request rather than a single build-time snapshot — the catalogue
 // grows often, and a one-shot build fetch can transiently undercount, caching a partial sitemap.
@@ -45,7 +46,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }))
 
   const brandUrls = brands.map((b) => ({
-    url: `${base}/brands/${encodeURIComponent(b.toLowerCase())}`,
+    url: `${base}/brands/${brandSlug(b)}`,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))

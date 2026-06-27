@@ -5,6 +5,7 @@ import { filterEngines } from '@/lib/engines'
 import { EngineTable } from '@/components/EngineTable'
 import { HubContent } from '@/components/HubContent'
 import { hubItemListElements } from '@/lib/hub-stats'
+import { limitedEngines, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
 
 const BASE = 'https://engines.haifengmachinery.com'
 
@@ -47,6 +48,7 @@ export default async function EngineFuelPage({ params }: Props) {
 
   const engines = await filterEngines({ fuel: fuel as FuelKey })
   if (!engines.length) notFound()
+  const displayedEngines = limitedEngines(engines)
 
   const brands = new Set(engines.map((e) => e.brand)).size
   const jsonLd = {
@@ -79,7 +81,12 @@ export default async function EngineFuelPage({ params }: Props) {
         </nav>
         <h1 className="text-2xl font-bold text-gray-900 mb-2">{cfg.title}</h1>
         <p className="text-gray-500 mb-6 max-w-3xl">{cfg.intro} <span className="text-gray-400">({engines.length.toLocaleString()} models across {brands} brands.)</span></p>
-        <EngineTable engines={engines} />
+        <EngineTable engines={displayedEngines} />
+        {engines.length > displayedEngines.length && (
+          <p className="text-xs text-gray-400 mt-3">
+            Showing the first {ENGINE_HUB_DISPLAY_LIMIT.toLocaleString()} of {engines.length.toLocaleString()} models on this fuel page. Use the filters on the main engine database for the full set.
+          </p>
+        )}
         <div className="mt-8 text-sm">
           <Link href="/engines" className="text-blue-600 hover:underline">← All engines</Link>
         </div>

@@ -8,6 +8,7 @@ import { getAllAlternators } from '@/lib/alternators'
 import { getAllGuides } from '@/lib/guides'
 import { SearchBar } from '@/components/SearchBar'
 import { CountUp } from '@/components/CountUp'
+import { brandSlug } from '@/lib/seo'
 
 export const dynamic = 'force-dynamic'
 
@@ -26,7 +27,7 @@ const POWER_PRESETS = [
   { label: '500 – 1,500 kWe', slug: '500-1500-kwe' },
   { label: '1,500+ kWe',      slug: '1500-plus-kwe' },
 ]
-const brandHref = (brand: string) => `/brands/${encodeURIComponent(brand.toLowerCase())}`
+const brandHref = (brand: string) => `/brands/${brandSlug(brand)}`
 
 export default async function HomePage() {
   const [stats, options, alternators, guides] = await Promise.all([
