@@ -5,11 +5,23 @@ import { getAllBrands, getEnginesByBrand } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
 import { BrandLogo } from '@/components/BrandLogo'
 import { HubContent } from '@/components/HubContent'
-import { hubItemListElements } from '@/lib/hub-stats'
+import { buildHubOverview, computeHubStats, engineKwe, hubItemListElements } from '@/lib/hub-stats'
 import { brandSlug, limitedEngines, resolveBrandSlug, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
+import type { Engine } from '@/lib/types'
 
 interface Props {
   params: Promise<{ brand: string }>
+}
+
+function brandMetaDescription(name: string, engines: Engine[]): string {
+  const stats = computeHubStats(engines)
+  const kwes = engines.map(engineKwe).filter((v): v is number => v != null)
+  const power =
+    kwes.length && Math.max(...kwes) > Math.min(...kwes)
+      ? ` from ${Math.round(Math.min(...kwes)).toLocaleString()} to ${Math.round(Math.max(...kwes)).toLocaleString()} kWe`
+      : ''
+  const fuel = stats.hasDiesel && stats.hasGas ? 'diesel and gas' : stats.hasGas ? 'gas' : 'diesel'
+  return `Browse ${engines.length.toLocaleString()} ${name} ${fuel} generator engine specifications${power}, including emissions ratings, datasheets, and manuals.`
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -18,10 +30,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const brands = await getAllBrands()
   const name = resolveBrandSlug(decoded, brands) ?? decoded
   const slug = brandSlug(name)
+  const engines = resolveBrandSlug(decoded, brands) ? await getEnginesByBrand(name) : []
+  const description = engines.length
+    ? brandMetaDescription(name, engines)
+    : `Browse all ${name} diesel and gas generator engine specifications, datasheets, and manuals for electrical power generation.`
+
   return {
     title: `${name} Generator Engine Specs`,
-    description: `Browse all ${name} diesel and gas generator engine specifications, datasheets, and manuals for electrical power generation.`,
+    description,
     alternates: { canonical: `/brands/${slug}` },
+    openGraph: {
+      title: `${name} Generator Engine Specs`,
+      description,
+      type: 'website',
+      url: `/brands/${slug}`,
+    },
   }
 }
 
@@ -53,6 +76,9 @@ export default async function BrandPage({ params }: Props) {
 
   const base = 'https://engines.haifengmachinery.com'
   const name = engines[0].brand
+  const subject = `${name} generator engines`
+  const stats = computeHubStats(engines)
+  const overview = buildHubOverview(subject, stats)
   const structuredData = [
     {
       '@context': 'https://schema.org',
@@ -90,7 +116,8 @@ export default async function BrandPage({ params }: Props) {
 
       <BrandLogo brand={engines[0].brand} size="lg" className="mb-3" />
       <h1 className="text-2xl font-bold text-gray-900 mb-1">{engines[0].brand} Generator Engines</h1>
-      <p className="text-gray-500 mb-8">{engines.length} engines in the database</p>
+      <p className="text-gray-500 mb-4">{engines.length} engines in the database</p>
+      <p className="text-gray-600 leading-relaxed max-w-3xl mb-8">{overview}</p>
 
       {activeEngines.length > 0 && (
         <section className="mb-10">
@@ -121,8 +148,9 @@ export default async function BrandPage({ params }: Props) {
       )}
 
       <HubContent
-        subject={`${name} generator engines`}
+        subject={subject}
         engines={engines}
+        showOverview={false}
         related={[
           { label: 'Diesel engines', href: '/engines/fuel/diesel' },
           { label: 'Gas engines', href: '/engines/fuel/gas' },

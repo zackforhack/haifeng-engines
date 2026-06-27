@@ -11,10 +11,12 @@ export function HubContent({
   subject,
   engines,
   related,
+  showOverview = true,
 }: {
   subject: string
   engines: Engine[]
   related?: HubRelatedLink[]
+  showOverview?: boolean
 }) {
   const stats = computeHubStats(engines)
   const overview = buildHubOverview(subject, stats)
@@ -52,7 +54,7 @@ export function HubContent({
 
       <h2 className="text-lg font-semibold text-gray-800 mb-3">About {subject}</h2>
 
-      <dl className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-5">
+      <dl className={`grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 ${showOverview ? 'mb-5' : 'mb-8'}`}>
         {facts.map((f) => (
           <div key={f.label} className="rounded-lg border border-gray-200 bg-white px-3 py-2">
             <dt className="text-xs font-medium text-gray-500">{f.label}</dt>
@@ -61,7 +63,7 @@ export function HubContent({
         ))}
       </dl>
 
-      <p className="text-gray-600 leading-relaxed max-w-3xl mb-8">{overview}</p>
+      {showOverview && <p className="text-gray-600 leading-relaxed max-w-3xl mb-8">{overview}</p>}
 
       {faqs.length > 0 && (
         <>
