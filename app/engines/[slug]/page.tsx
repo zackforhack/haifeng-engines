@@ -239,6 +239,17 @@ export default async function EngineDetailPage({ params }: Props) {
   const intro = engine.description ?? buildIntro(engine)
   const base = 'https://engines.haifengmachinery.com'
 
+  // Contextual link to the matching Haifeng Machinery genset product line (gas vs diesel, and
+  // for diesel, emissions-regulated vs non-regulated) — useful to buyers and a relevant link to
+  // the parent commercial site.
+  const isGas = /gas|lng|cng|biogas|methane/i.test(engine.fuel_type ?? '')
+  const hasEmissions = !!engine.emissions_standard && !/unregulated/i.test(engine.emissions_standard)
+  const productPackage = isGas
+    ? { href: 'https://www.haifengmachinery.com/gas-power-package-50hz-60hz/', label: 'gas generator sets' }
+    : hasEmissions
+      ? { href: 'https://www.haifengmachinery.com/diesel-power-package-regulated/', label: 'diesel generator sets' }
+      : { href: 'https://www.haifengmachinery.com/diesel-power-package-non-regulated/', label: 'diesel generator sets' }
+
   const hp = headlinePower(engine)
   const kva = displayKva(hp)
   const out = displayOutput(hp)
@@ -462,7 +473,7 @@ export default async function EngineDetailPage({ params }: Props) {
             <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
               <p className="font-semibold text-gray-900 mb-1">Need this engine?</p>
               <p className="text-sm text-gray-600 mb-3">
-                Haifeng Machinery supplies diesel generators and engines worldwide.
+                Haifeng Machinery supplies diesel and gas generators and engines worldwide.
               </p>
               <a
                 href="https://www.haifengmachinery.com/contact-us/"
@@ -472,6 +483,12 @@ export default async function EngineDetailPage({ params }: Props) {
               >
                 Get a Quote ↗
               </a>
+              <p className="text-sm text-gray-600 mt-3">
+                Or browse Haifeng&apos;s{' '}
+                <a href={productPackage.href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                  {productPackage.label} ↗
+                </a>
+              </p>
             </div>
           </div>
         </div>
