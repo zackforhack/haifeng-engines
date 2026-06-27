@@ -154,3 +154,26 @@ The service account needs read-only access:
 - Service account added as a Viewer on the GA4 property
 
 Generated reports are written to `reports/seo/` and ignored by git.
+
+## Data QA
+
+Run the catalog integrity report with:
+
+```bash
+npm run data:qa
+```
+
+The script reads Supabase using the local `NEXT_PUBLIC_SUPABASE_URL` and
+`NEXT_PUBLIC_SUPABASE_ANON_KEY` values, then writes ignored reports to
+`reports/data-qa/`.
+
+Checks include:
+
+- engine completeness score
+- missing key fields and datasheets
+- duplicate brand/model rows
+- kVA/kWe/kWm consistency
+- prime vs standby consistency
+- fuel/ignition sanity
+- alternator missing data-sheet and rating checks
+- SEO-priority data fixes using the latest `reports/seo/*.json` file when present

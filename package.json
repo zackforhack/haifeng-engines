@@ -10,6 +10,7 @@
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
+    "data:qa": "node scripts/data-qa.mjs",
     "seo:report": "node scripts/seo-report.mjs"
   },
   "dependencies": {
