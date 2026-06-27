@@ -189,7 +189,13 @@ function analyzeEngines(engines) {
       const prime = num(e[`prime_power_kwe_${hz}hz`])
       const standby = num(e[`standby_power_kwe_${hz}hz`])
       if (prime != null && standby != null && prime > standby + 0.5) {
-        issues.push(issue('high', 'prime_gt_standby', e, `${id(e)} ${hz}Hz prime ${prime} kWe exceeds standby ${standby} kWe`))
+        const primeKwm = num(e[`prime_power_kw_${hz}hz`])
+        const standbyKwm = num(e[`standby_power_kw_${hz}hz`])
+        if (primeKwm != null && standbyKwm != null && standbyKwm > primeKwm) {
+          issues.push(issue('low', 'esp_electrical_below_prime_review', e, `${id(e)} ${hz}Hz has ESP engine output above PRP (${standbyKwm} vs ${primeKwm} kWm) but typical ESP generator output below PRP (${standby} vs ${prime} kWe); verify against source table`))
+        } else {
+          issues.push(issue('high', 'prime_gt_standby', e, `${id(e)} ${hz}Hz prime ${prime} kWe exceeds standby ${standby} kWe`))
+        }
       }
     }
 
