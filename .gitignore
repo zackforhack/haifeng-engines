@@ -49,3 +49,7 @@ next-env.d.ts
 /data/volvo-raw.txt
 /data/volvo-pdf-inventory.json
 /data/volvo-pdf-results.json
+
+# local SEO analytics exports and credentials
+/reports/seo/
+/google-service-account*.json

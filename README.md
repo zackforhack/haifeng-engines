@@ -124,3 +124,33 @@ the commit; GitHub Actions acts as the quality gate.
 Current build output prerenders thousands of static catalog pages through
 `generateStaticParams`, while selected routes remain dynamic for fresh catalog data
 and generated assets.
+
+## SEO Reporting
+
+The project includes a local read-only reporting script for Google Search Console
+and GA4:
+
+```bash
+npm run seo:report
+```
+
+Required local environment:
+
+```bash
+GOOGLE_APPLICATION_CREDENTIALS=/absolute/path/to/google-service-account.json
+GSC_SITE_URL=https://engines.haifengmachinery.com/
+GA4_PROPERTY_ID=123456789
+```
+
+`GA4_PROPERTY_ID` is the numeric GA4 property id, not the `G-...` measurement id.
+`GOOGLE_APPLICATION_CREDENTIALS` should point to a Google Cloud service-account
+JSON file that is not committed to git.
+
+The service account needs read-only access:
+
+- Google Search Console API enabled in Google Cloud
+- Google Analytics Data API enabled in Google Cloud
+- Service account added as a Search Console user for `https://engines.haifengmachinery.com/`
+- Service account added as a Viewer on the GA4 property
+
+Generated reports are written to `reports/seo/` and ignored by git.
