@@ -75,6 +75,40 @@ function issue(severity, category, engine, message, extra = {}) {
   }
 }
 
+function normalize(value) {
+  if (value == null || value === '') return ''
+  return String(value).trim().toLowerCase()
+}
+
+function engineSpecSignature(e) {
+  const fields = [
+    'fuel_type',
+    'emissions_standard',
+    'prime_power_kwe_50hz',
+    'standby_power_kwe_50hz',
+    'prime_power_kwe_60hz',
+    'standby_power_kwe_60hz',
+    'displacement_l',
+    'cylinders',
+    'rpm_rated',
+    'status',
+  ]
+  return fields.map((field) => `${field}:${normalize(e[field])}`).join('|')
+}
+
+function engineVariantSummary(e) {
+  const ratings = [
+    `50Hz ${num(e.prime_power_kwe_50hz) ?? '-'} / ${num(e.standby_power_kwe_50hz) ?? '-'} kWe`,
+    `60Hz ${num(e.prime_power_kwe_60hz) ?? '-'} / ${num(e.standby_power_kwe_60hz) ?? '-'} kWe`,
+  ].join('; ')
+  return {
+    slug: e.slug,
+    emissions: e.emissions_standard ?? '',
+    fuel: e.fuel_type ?? '',
+    ratings,
+  }
+}
+
 function completeness(e) {
   const checks = [
     ['brand', bool(e.brand), 8],
@@ -151,6 +185,7 @@ function pageSignals(seo) {
 function analyzeEngines(engines) {
   const issues = []
   const scored = []
+  const modelVariants = []
 
   const slugs = new Map()
   const brandModels = new Map()
@@ -226,10 +261,33 @@ function analyzeEngines(engines) {
     if (rows.length > 1) issues.push(issue('critical', 'duplicate_slug', rows[0], `Duplicate slug ${slug} appears ${rows.length} times`))
   }
   for (const [key, rows] of brandModels) {
-    if (rows.length > 1) issues.push(issue('medium', 'duplicate_brand_model', rows[0], `Duplicate brand/model ${key.replace('|', ' ')} appears ${rows.length} times`))
+    if (rows.length <= 1) continue
+
+    const signatureGroups = new Map()
+    for (const row of rows) {
+      const signature = engineSpecSignature(row)
+      signatureGroups.set(signature, [...(signatureGroups.get(signature) ?? []), row])
+    }
+
+    const exactDuplicates = [...signatureGroups.values()].filter((group) => group.length > 1)
+    for (const group of exactDuplicates) {
+      issues.push(issue('medium', 'duplicate_brand_model_exact_specs', group[0], `Duplicate brand/model with matching spec signature ${key.replace('|', ' ')} appears ${group.length} times`, {
+        pages: group.map((row) => `/engines/${row.slug}`),
+      }))
+    }
+
+    if (!exactDuplicates.length) {
+      modelVariants.push({
+        brandModel: key.replace('|', ' '),
+        count: rows.length,
+        variants: rows
+          .sort((a, b) => String(a.slug).localeCompare(String(b.slug)))
+          .map(engineVariantSummary),
+      })
+    }
   }
 
-  return { issues, scored }
+  return { issues, scored, modelVariants }
 }
 
 function analyzeAlternators(alternators) {
@@ -277,6 +335,7 @@ function buildMarkdown(report) {
 
   const lowCompleteness = report.lowCompleteness.slice(0, 40)
   const seoPriority = report.seoPriority.slice(0, 30)
+  const modelVariants = report.modelVariants.slice(0, 40)
 
   return `# Data QA Report
 
@@ -339,6 +398,16 @@ ${seoPriority.length ? table(seoPriority, [
   { label: 'Page', value: (r) => `/engines/${r.engine.slug}` },
   { label: 'Missing', value: (r) => r.missing.join(', ') },
 ]) : 'No GSC-linked data quality priorities found in the latest SEO report.'}
+
+## Same-Model Variant Groups
+
+These rows share a brand/model value but differ by emissions, frequency, or rating package. They are not counted as duplicate issues unless the spec signature also matches.
+
+${modelVariants.length ? table(modelVariants, [
+  { label: 'Brand / Model', value: (r) => r.brandModel },
+  { label: 'Rows', value: (r) => r.count },
+  { label: 'Pages', value: (r) => r.variants.map((v) => `/engines/${v.slug}`).join('<br>') },
+]) : 'No same-model variant groups found.'}
 `
 }
 
@@ -367,6 +436,7 @@ async function main() {
     generatedAt: new Date().toISOString(),
     counts: { engines: engines.length, alternators: alternators.length },
     issues: [...engineQa.issues, ...alternatorIssues].sort((a, b) => severityRank(a.severity) - severityRank(b.severity)),
+    modelVariants: engineQa.modelVariants,
     lowCompleteness: engineQa.scored
       .filter((row) => row.score < 85)
       .sort((a, b) => a.score - b.score),
