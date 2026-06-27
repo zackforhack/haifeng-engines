@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { getAllEngines, getEngineBySlug, getRelatedEngines } from '@/lib/engines'
+import { getAllEngines, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/lib/engines'
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
@@ -230,6 +230,39 @@ function RelatedEngines({ engines }: { engines: Engine[] }) {
   )
 }
 
+function ReferencePanel({ engine, slug }: { engine: Engine; slug: string }) {
+  const modified = engine.updated_at ? engine.updated_at.slice(0, 10) : null
+  const datasheetCount = engine.pdfs?.length ?? 0
+
+  return (
+    <div className="bg-white rounded-xl border border-gray-200 p-6">
+      <h2 className="text-lg font-semibold text-gray-900 mb-4">Reference</h2>
+      <dl className="space-y-3 text-sm">
+        <div>
+          <dt className="text-gray-500">Canonical page</dt>
+          <dd>
+            <Link href={`/engines/${slug}`} className="font-medium text-blue-600 hover:underline">
+              /engines/{slug}
+            </Link>
+          </dd>
+        </div>
+        {modified && (
+          <div>
+            <dt className="text-gray-500">Last database update</dt>
+            <dd className="font-medium text-gray-900">{modified}</dd>
+          </div>
+        )}
+        <div>
+          <dt className="text-gray-500">Manufacturer files</dt>
+          <dd className="font-medium text-gray-900">
+            {datasheetCount > 0 ? `${datasheetCount} datasheet${datasheetCount === 1 ? '' : 's'} linked` : 'No datasheet linked yet'}
+          </dd>
+        </div>
+      </dl>
+    </div>
+  )
+}
+
 export default async function EngineDetailPage({ params }: Props) {
   const { slug } = await params
   const engine = await getEngineBySlug(slug)
@@ -310,6 +343,17 @@ export default async function EngineDetailPage({ params }: Props) {
     brand: { '@type': 'Brand', name: engine.brand },
     manufacturer: { '@type': 'Organization', name: engine.brand },
     url: `${base}/engines/${slug}`,
+    mainEntityOfPage: `${base}/engines/${slug}`,
+    datePublished: engine.created_at,
+    dateModified: engine.updated_at,
+    ...(engine.pdfs?.length && {
+      isBasedOn: engine.pdfs.map((pdf) => ({
+        '@type': 'DigitalDocument',
+        name: pdf.label,
+        encodingFormat: 'application/pdf',
+        url: `${base}${getPDFUrl(pdf.storage_path)}`,
+      })),
+    }),
     ...(props.length && { additionalProperty: props }),
   }
 
@@ -470,6 +514,8 @@ export default async function EngineDetailPage({ params }: Props) {
                 <PDFDownloadList pdfs={engine.pdfs} />
               </div>
             )}
+
+            <ReferencePanel engine={engine} slug={slug} />
 
             <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
               <p className="font-semibold text-gray-900 mb-1">Need this engine?</p>
