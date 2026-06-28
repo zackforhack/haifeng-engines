@@ -37,35 +37,42 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Check monitoring secrets
-        id: secrets
+      - name: Check Google credentials
+        id: google
         run: |
           if [ -z "$GOOGLE_SERVICE_ACCOUNT_JSON" ]; then
             echo "configured=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::GOOGLE_SERVICE_ACCOUNT_JSON is not configured; skipping SEO monitor."
-          elif [ -z "$NEXT_PUBLIC_SUPABASE_URL" ] || [ -z "$NEXT_PUBLIC_SUPABASE_ANON_KEY" ]; then
+            echo "::notice::GOOGLE_SERVICE_ACCOUNT_JSON is not configured; skipping Google SEO report."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check Supabase credentials
+        id: supabase
+        run: |
+          if [ -z "$NEXT_PUBLIC_SUPABASE_URL" ] || [ -z "$NEXT_PUBLIC_SUPABASE_ANON_KEY" ]; then
             echo "configured=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::Supabase secrets are not configured; skipping SEO monitor."
+            echo "::notice::Supabase secrets are not configured; skipping data QA report."
           else
             echo "configured=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Write Google credentials
-        if: steps.secrets.outputs.configured == 'true'
+        if: steps.google.outputs.configured == 'true'
         run: |
           printf '%s' "$GOOGLE_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/google-service-account.json"
           echo "GOOGLE_APPLICATION_CREDENTIALS=$RUNNER_TEMP/google-service-account.json" >> "$GITHUB_ENV"
 
       - name: Generate Google SEO report
-        if: steps.secrets.outputs.configured == 'true'
+        if: steps.google.outputs.configured == 'true'
         run: npm run seo:report
 
       - name: Generate data QA report
-        if: steps.secrets.outputs.configured == 'true'
+        if: steps.supabase.outputs.configured == 'true'
         run: npm run data:qa
 
       - name: Upload reports
-        if: steps.secrets.outputs.configured == 'true'
+        if: steps.google.outputs.configured == 'true' || steps.supabase.outputs.configured == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: seo-monitor-reports

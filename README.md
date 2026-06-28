@@ -109,7 +109,7 @@ GitHub Actions runs on pushes and pull requests to `main`:
 - `npm ci`
 - `npx tsc --noEmit`
 - `npm run lint`
-- `npm run build`
+- `npm run build` when Supabase Actions secrets are configured
 
 Configure these GitHub repository secrets for CI:
 
@@ -160,9 +160,10 @@ add this repository secret:
 
 - `GOOGLE_SERVICE_ACCOUNT_JSON` - the full Google service-account JSON content
 
-The workflow reuses the existing Supabase CI secrets, runs `npm run seo:report`
-and `npm run data:qa`, then uploads the generated `reports/` files as a workflow
-artifact for 30 days. It does not commit generated reports back to the repository.
+The workflow runs `npm run seo:report` when Google credentials are configured.
+It also runs `npm run data:qa` when the Supabase Actions secrets are configured,
+then uploads generated `reports/` files as a workflow artifact for 30 days. It
+does not commit generated reports back to the repository.
 
 ## Data QA
 
