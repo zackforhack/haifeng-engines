@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import heroPhoto from '@/public/hero/cummins-engine.jpg'
 import { getDbStats, getFilterOptions } from '@/lib/engines'
 import { getAllAlternators } from '@/lib/alternators'
 import { getAllGuides } from '@/lib/guides'
@@ -64,11 +63,10 @@ export default async function HomePage() {
           {/* LCP element: optimized + preloaded so it paints fast on mobile (next/image
               serves resized AVIF/WebP and emits a preload <link>). Ken Burns zoom via .hero-img. */}
           <Image
-            src={heroPhoto}
+            src="/hero/cummins-engine.jpg"
             alt=""
             fill
             preload
-            placeholder="blur"
             sizes="100vw"
             className="hero-img"
           />
