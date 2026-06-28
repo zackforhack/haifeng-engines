@@ -155,6 +155,18 @@ The service account needs read-only access:
 
 Generated reports are written to `reports/seo/` and ignored by git.
 
+Generate a daily Search Console indexing queue with:
+
+```bash
+npm run seo:indexing-queue
+```
+
+The queue writes `reports/seo/indexing-queue-YYYY-MM-DD.md` and groups URLs into
+10-URL daily batches by default. Set `INDEXING_DAILY_QUOTA=20` or another value
+to change the batch size. The queue prioritizes canonical hubs first, then
+curated engine facets, high-inventory brand hubs, alternator series hubs, and
+GSC-visible detail pages from the latest local SEO report.
+
 GitHub Actions also includes a manual/daily `SEO Monitor` workflow. To enable it,
 add this repository secret:
 

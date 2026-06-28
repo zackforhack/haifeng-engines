@@ -11,7 +11,8 @@
     "start": "next start",
     "lint": "eslint",
     "data:qa": "node scripts/data-qa.mjs",
-    "seo:report": "node scripts/seo-report.mjs"
+    "seo:report": "node scripts/seo-report.mjs",
+    "seo:indexing-queue": "node scripts/indexing-queue.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",
