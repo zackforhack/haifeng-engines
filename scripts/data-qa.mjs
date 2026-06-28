@@ -129,6 +129,11 @@ function canonicalSlugText(value) {
     .replace(/^-|-$/g, '')
 }
 
+function configurationCylinders(configuration) {
+  const match = String(configuration ?? '').trim().match(/^[LVW](\d+)$/i)
+  return match ? Number(match[1]) : null
+}
+
 function completeness(e) {
   const checks = [
     ['brand', bool(e.brand), 8],
@@ -237,6 +242,11 @@ function analyzeEngines(engines) {
     const cylinders = num(e.cylinders)
     if (cylinders != null && (cylinders < 1 || cylinders > 24)) {
       issues.push(issue('high', 'cylinder_range', e, `${id(e)} has unusual cylinder count ${cylinders}`))
+    }
+
+    const configCylinders = configurationCylinders(e.configuration)
+    if (configCylinders != null && cylinders != null && configCylinders !== cylinders) {
+      issues.push(issue('high', 'configuration_cylinder_mismatch', e, `${id(e)} configuration "${e.configuration}" conflicts with cylinder count ${cylinders}`))
     }
 
     const displacement = num(e.displacement_l)
