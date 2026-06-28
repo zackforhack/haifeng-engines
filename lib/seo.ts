@@ -26,6 +26,17 @@ export function limitedEngines(engines: Engine[], limit = ENGINE_HUB_DISPLAY_LIM
 export function brandSlug(brand: string): string {
   return brand
     .trim()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+}
+
+function legacyBrandSlug(brand: string): string {
+  return brand
+    .trim()
     .toLowerCase()
     .replace(/&/g, ' and ')
     .replace(/[^a-z0-9]+/g, '-')
@@ -35,5 +46,9 @@ export function brandSlug(brand: string): string {
 export function resolveBrandSlug(input: string, brands: string[]): string | null {
   const normalized = brandSlug(input)
   const lower = input.trim().toLowerCase()
-  return brands.find((brand) => brandSlug(brand) === normalized || brand.toLowerCase() === lower) ?? null
+  return brands.find((brand) => (
+    brandSlug(brand) === normalized ||
+    legacyBrandSlug(brand) === normalized ||
+    brand.toLowerCase() === lower
+  )) ?? null
 }

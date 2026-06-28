@@ -109,6 +109,26 @@ function engineVariantSummary(e) {
   }
 }
 
+const ORIGIN_ALIASES = new Map([
+  ['USA', 'United States'],
+  ['U.S.A.', 'United States'],
+  ['US', 'United States'],
+  ['U.S.', 'United States'],
+  ['UK', 'United Kingdom'],
+  ['U.K.', 'United Kingdom'],
+])
+
+function canonicalSlugText(value) {
+  return String(value ?? '')
+    .trim()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+}
+
 function completeness(e) {
   const checks = [
     ['brand', bool(e.brand), 8],
@@ -154,7 +174,7 @@ async function fetchAll(supabase, table, select) {
 async function latestSeoReport() {
   try {
     const files = (await fs.readdir(SEO_DIR))
-      .filter((f) => f.endsWith('.json'))
+      .filter((f) => f.endsWith('.json') && f.includes('_to_'))
       .sort()
     const latest = files.at(-1)
     if (!latest) return null
@@ -198,6 +218,21 @@ function analyzeEngines(engines) {
     if (!e.brand) issues.push(issue('critical', 'missing_brand', e, `Missing brand for slug ${e.slug ?? '(missing)'}`))
     if (!e.model) issues.push(issue('critical', 'missing_model', e, `Missing model for ${id(e)}`))
     if (!e.slug) issues.push(issue('critical', 'missing_slug', e, `Missing slug for ${id(e)}`))
+
+    const originAlias = ORIGIN_ALIASES.get(String(e.origin ?? '').trim())
+    if (originAlias) {
+      issues.push(issue('low', 'origin_alias', e, `${id(e)} uses origin "${e.origin}"; prefer "${originAlias}" for taxonomy consistency`, {
+        current: e.origin,
+        preferred: originAlias,
+      }))
+    }
+
+    if (e.brand && /[^\x00-\x7F]/.test(e.brand)) {
+      const canonical = canonicalSlugText(e.brand)
+      if (!canonical || !e.slug?.startsWith(`${canonical}-`)) {
+        issues.push(issue('medium', 'non_ascii_brand_slug_review', e, `${id(e)} brand contains non-ASCII characters; verify canonical brand slug starts with "${canonical}"`))
+      }
+    }
 
     const cylinders = num(e.cylinders)
     if (cylinders != null && (cylinders < 1 || cylinders > 24)) {
