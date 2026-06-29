@@ -40,7 +40,7 @@ for (const [sfx, model, engKw, kwe] of H12) {
   await upsert('jichai-' + sfx, {
     brand: 'Jichai', model, status: 'active', origin: 'China', series: '190 series',
     fuel_type: 'Diesel', ignition_type: 'Compression Ignition', cooling_method: 'Liquid-Cooled',
-    rpm_rated: 1500, cylinders: 12, configuration: 'V12', displacement_l: 73.16, compression_ratio: 14,
+    rpm_rated: 1500, cylinders: 12, configuration: 'V12', displacement_l: 73.16, compression_ratio: '14:1',
     emissions_standard: 'China III (GB20891)', weight_kg: 9300, length_mm: 2950, width_mm: 1980, height_mm: 2206,
     power_kw: engKw, prime_power_kwe_50hz: kwe, prime_power_kva_50hz: round1(kwe / 0.8),
     description: `Jichai ${model} — 73.16 L V12 (190 × 215 mm) ECU common-rail turbocharged diesel generator `

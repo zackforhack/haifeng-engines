@@ -6,6 +6,7 @@ import { createClient } from '@supabase/supabase-js'
 const supabase = createClient('https://ntrysdovwnbegxtjsqkz.supabase.co', process.env.SUPABASE_SERVICE_KEY)
 const round1 = (n) => Math.round(n * 10) / 10
 const LB_TO_KG = 0.453592
+const crText = (cr) => `${cr}:1`
 
 // [model, series, cylinders, config, displ_L, compression, aspiration, weightLb, ngKwm, ngHp, lpKwm, lpHp]
 const MODELS = [
@@ -27,13 +28,13 @@ for (const [model, series, cyl, config, displ, cr, asp, weightLb, ngKwm, ngHp, l
   const kva = round1(kwe / 0.8)
   const fields = {
     series, fuel_type: 'Natural Gas', ignition_type: 'Spark Ignition', cooling_method: 'Liquid-Cooled',
-    rpm_rated: 1800, cylinders: cyl, configuration: config, displacement_l: displ, compression_ratio: cr,
+    rpm_rated: 1800, cylinders: cyl, configuration: config, displacement_l: displ, compression_ratio: crText(cr),
     weight_kg: round1(weightLb * LB_TO_KG), power_kw: ngKwm, power_hp: ngHp,
     prime_power_kw_60hz: ngKwm, prime_power_kwe_60hz: kwe, prime_power_kva_60hz: kva,
     certifications: ['EPA', 'CARB', '3-way catalyst'],
     description: `Ford Power Products ${model} — ${displ} L ${config} spark-ignition genset engine, `
       + `${asp.toLowerCase()}, bi-fuel natural gas / LPG. ${ngKwm} kWm (${ngHp} hp) on natural gas, `
-      + `${lpKwm} kWm (${lpHp} hp) on LPG at 1800 rpm (SAE J1349 intermittent); ${cr}:1 compression, `
+      + `${lpKwm} kWm (${lpHp} hp) on LPG at 1800 rpm (SAE J1349 intermittent); ${crText(cr)} compression, `
       + `EPA/CARB certified with 3-way catalyst.`,
   }
   if (bySlug.has(slug)) {

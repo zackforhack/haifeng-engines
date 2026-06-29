@@ -6,6 +6,7 @@
 import { createClient } from '@supabase/supabase-js'
 const supabase = createClient('https://ntrysdovwnbegxtjsqkz.supabase.co', process.env.SUPABASE_SERVICE_KEY)
 const r1 = (n) => Math.round(n * 10) / 10
+const crText = (cr) => cr == null ? null : `${cr}:1`
 
 // p = [stby50kWe, stby50kWm, stby60kWe, stby60kWm, prime50kWe, prime50kWm, prime60kWe, prime60kWm] (NG); null entries skipped
 const D = [
@@ -52,9 +53,9 @@ let n = 0, skipped = []
 for (const [slug, displ, cr, wt, bore, stroke, induction, p, note] of D) {
   const row = bySlug.get(slug)
   if (!row) { skipped.push(slug); continue }
-  const upd = { displacement_l: displ, compression_ratio: cr, bore_stroke_note: undefined }
+  const upd = { displacement_l: displ, compression_ratio: crText(cr), bore_stroke_note: undefined }
   if (wt != null) upd.weight_kg = wt
-  if (cr != null) upd.compression_ratio = cr
+  if (cr != null) upd.compression_ratio = crText(cr)
   delete upd.bore_stroke_note
   // power matrix (NG)
   if (p) {
@@ -70,7 +71,7 @@ for (const [slug, displ, cr, wt, bore, stroke, induction, p, note] of D) {
     ? (p[0]!=null ? `${p[0]} kWe standby / ${p[4]??'–'} kWe prime @ 50 Hz` : (p[6]!=null?`${p[6]} kWe prime @ 60 Hz`:''))
     : ''
   upd.description = `PSI ${row.model} — ${displ} L ${row.configuration} (${bore} × ${stroke} mm bore × stroke) `
-    + `${induction} ${fuel} generator engine, ${cr}:1 compression${wt!=null?`, ${wt} kg dry`:''}. `
+    + `${induction} ${fuel} generator engine, ${crText(cr)} compression${wt!=null?`, ${wt} kg dry`:''}. `
     + `${headline ? headline + '. ' : ''}From the official PSI ${row.model} spec sheet${note ? ` (${note})` : ''}.`
   const { error } = await supabase.from('engines').update(upd).eq('id', row.id)
   if (error) console.error('✗', slug, error.message); else { n++; console.log('· enriched', slug) }

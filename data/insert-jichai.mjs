@@ -35,7 +35,7 @@ for (const [model, kind, cyl, config, displ, bore, stroke, kw, rpm, kwMin] of MO
     series: bore + ' series', fuel_type: gas ? 'Natural Gas' : 'Diesel',
     ignition_type: gas ? 'Spark Ignition' : 'Compression Ignition', cooling_method: 'Liquid-Cooled',
     rpm_rated: rpm, cylinders: cyl, configuration: config, displacement_l: displ,
-    ...(gas ? {} : { compression_ratio: 14 }),
+    ...(gas ? {} : { compression_ratio: '14:1' }),
     prime_power_kwe_50hz: kw, prime_power_kva_50hz: round1(kw / 0.8), power_kw: kw,
     description: `Jichai ${model} — ${displ} L ${config} (${bore} × ${stroke} mm) ${gas ? 'spark-ignited gas' : 'turbocharged diesel'} `
       + `generator engine (CNPC Jichai). ${kwMin}–${kw} kWe at ${rpm} rpm`

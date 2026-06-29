@@ -20,7 +20,7 @@ for (const [sfx, model, engKw, kwe, rpm, fr] of H) {
   await upsert('jichai-' + sfx, {
     brand: 'Jichai', model, status: 'active', origin: 'China', series: '190 series',
     fuel_type: 'Diesel', ignition_type: 'Compression Ignition', cooling_method: 'Liquid-Cooled',
-    rpm_rated: rpm, cylinders: 16, configuration: 'V16', displacement_l: 97.53, compression_ratio: 14,
+    rpm_rated: rpm, cylinders: 16, configuration: 'V16', displacement_l: 97.53, compression_ratio: '14:1',
     emissions_standard: 'China III (GB20891)', weight_kg: 13000, length_mm: 3510, width_mm: 3036, height_mm: 2344,
     power_kw: engKw, prime_power_kwe_50hz: kwe, prime_power_kva_50hz: round1(kwe / 0.8),
     description: `Jichai ${model} — 97.53 L V16 (190 × 215 mm) high-boost turbocharged diesel generator engine `

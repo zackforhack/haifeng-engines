@@ -7,6 +7,7 @@ import { createClient } from '@supabase/supabase-js'
 const supabase = createClient('https://ntrysdovwnbegxtjsqkz.supabase.co', process.env.SUPABASE_SERVICE_KEY)
 const round1 = (n) => Math.round(n * 10) / 10
 const kva = (kwe) => (kwe == null ? null : round1(kwe / 0.8))
+const crText = (cr) => cr == null ? null : `${cr}:1`
 
 // [model, series, cyl, config, displ_L, compression, kWb50, kWe50, kWb60, kWe60]
 const MODELS = [
@@ -38,7 +39,7 @@ for (const [model, series, cyl, config, displ, cr, kw50, kwe50, kw60, kwe60] of 
   const fields = {
     series, fuel_type: 'Natural Gas', ignition_type: 'Spark Ignition', cooling_method: 'Liquid-Cooled',
     rpm_rated: 1500, cylinders: cyl, configuration: config, displacement_l: displ,
-    ...(cr != null ? { compression_ratio: cr } : {}),
+    ...(cr != null ? { compression_ratio: crText(cr) } : {}),
     prime_power_kw_50hz: kw50, prime_power_kwe_50hz: kwe50, prime_power_kva_50hz: kva(kwe50),
     ...(dual ? {
       prime_power_kw_60hz: kw60, prime_power_kwe_60hz: kwe60, prime_power_kva_60hz: kva(kwe60),
@@ -46,7 +47,7 @@ for (const [model, series, cyl, config, displ, cr, kw50, kwe50, kw60, kwe60] of 
     description: `Guascor ${model} — ${displ} L ${config} spark-ignition gas engine (${series} series), `
       + `multi-fuel: natural gas, biogas, landfill/sewage gas, syngas, propane and wellhead/flare gas. `
       + `${kwe50} kWe at 1500 rpm / 50 Hz${dual ? `, ${kwe60} kWe at 1800 rpm / 60 Hz` : ''}`
-      + `${cr != null ? `; ${cr}:1 compression` : ''}; low-emission (NOx < 1 g/bhp·hr).`,
+      + `${cr != null ? `; ${crText(cr)} compression` : ''}; low-emission (NOx < 1 g/bhp·hr).`,
   }
   if (bySlug.has(slug)) {
     const { error } = await supabase.from('engines').update(fields).eq('id', bySlug.get(slug))

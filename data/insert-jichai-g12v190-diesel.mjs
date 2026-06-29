@@ -17,7 +17,7 @@ for (const [model, engKw, kwe, fr, wt, L, W, H] of MODELS) {
   const fields = {
     series: '190 series', fuel_type: 'Diesel', ignition_type: 'Compression Ignition', cooling_method: 'Liquid-Cooled',
     rpm_rated: 1500, cylinders: 12, configuration: 'V12', displacement_l: 71.45, weight_kg: wt,
-    length_mm: L, width_mm: W, height_mm: H, emissions_standard: 'China III (GB20891)', compression_ratio: 14,
+    length_mm: L, width_mm: W, height_mm: H, emissions_standard: 'China III (GB20891)', compression_ratio: '14:1',
     power_kw: engKw, prime_power_kwe_50hz: kwe, prime_power_kva_50hz: round1(kwe / 0.8),
     description: `Jichai ${model} — 71.45 L V12 (190 × 210 mm) common-rail turbocharged diesel generator `
       + `engine (CNPC Jichai G12V190 series, upgraded from the Z12V190). ${engKw} kW engine / ${kwe} kWe genset `

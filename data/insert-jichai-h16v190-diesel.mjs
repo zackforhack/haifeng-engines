@@ -17,7 +17,7 @@ for (const [model, engKw, kwe, rpm, fr] of MODELS) {
   const slug = 'jichai-' + model.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
   const fields = {
     series: '190 series', fuel_type: 'Diesel', ignition_type: 'Compression Ignition', cooling_method: 'Liquid-Cooled',
-    rpm_rated: rpm, cylinders: 16, configuration: 'V16', displacement_l: 97.53, compression_ratio: 14,
+    rpm_rated: rpm, cylinders: 16, configuration: 'V16', displacement_l: 97.53, compression_ratio: '14:1',
     emissions_standard: 'China III (GB20891)', power_kw: engKw, prime_power_kwe_50hz: kwe, prime_power_kva_50hz: round1(kwe / 0.8),
     description: `Jichai ${model} — 97.53 L V16 (190 × 215 mm) high-boost turbocharged diesel generator engine `
       + `(CNPC Jichai H16V190 series). ${engKw} kW engine / ${kwe} kWe genset (400 V–10.5 kV) at ${rpm} rpm, `

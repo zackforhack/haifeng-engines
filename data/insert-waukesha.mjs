@@ -6,6 +6,7 @@
 import { createClient } from '@supabase/supabase-js'
 const supabase = createClient('https://ntrysdovwnbegxtjsqkz.supabase.co', process.env.SUPABASE_SERVICE_KEY)
 const round1 = (n) => Math.round(n * 10) / 10
+const crText = (cr) => cr == null ? null : `${cr}:1`
 
 // [model, series, cyl, config, displ_L, compression, rpm, freq, kWe, kWm(or null), bhp(or null)]
 const MODELS = [
@@ -30,7 +31,7 @@ for (const [model, series, cyl, config, displ, cr, rpm, freq, kwe, kwm, bhp] of 
   const fields = {
     series, fuel_type: 'Natural Gas', ignition_type: 'Spark Ignition', cooling_method: 'Liquid-Cooled',
     rpm_rated: rpm, cylinders: cyl, configuration: config, displacement_l: displ,
-    ...(cr != null ? { compression_ratio: cr } : {}), power_kw: kwm ?? kwe, ...pw,
+    ...(cr != null ? { compression_ratio: crText(cr) } : {}), power_kw: kwm ?? kwe, ...pw,
     description: `Waukesha ${model} — ${displ} L ${config} spark-ignition natural-gas engine (${series} series), `
       + `${kwe} kWe at ${rpm} rpm / ${freq} Hz${bhp ? ` (${bhp} bhp)` : ''}; lean-burn, for power generation.`,
   }
