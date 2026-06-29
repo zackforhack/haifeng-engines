@@ -134,6 +134,14 @@ function configurationCylinders(configuration) {
   return match ? Number(match[1]) : null
 }
 
+function normalizedCompressionRatio(value) {
+  if (value == null || value === '') return null
+  const text = String(value).trim()
+  if (/^\d+(?:\.\d+)?:1$/i.test(text)) return text
+  if (/^\d+(?:\.\d+)?$/.test(text)) return `${text}:1`
+  return null
+}
+
 function completeness(e) {
   const checks = [
     ['brand', bool(e.brand), 8],
@@ -252,6 +260,13 @@ function analyzeEngines(engines) {
     const displacement = num(e.displacement_l)
     if (displacement != null && (displacement < 0.2 || displacement > 1200)) {
       issues.push(issue('high', 'displacement_range', e, `${id(e)} has unusual displacement ${displacement} L`))
+    }
+
+    if (e.compression_ratio && normalizedCompressionRatio(e.compression_ratio) !== String(e.compression_ratio).trim()) {
+      issues.push(issue('low', 'compression_ratio_format', e, `${id(e)} compression ratio "${e.compression_ratio}" should use N:1 format`, {
+        current: e.compression_ratio,
+        preferred: normalizedCompressionRatio(e.compression_ratio),
+      }))
     }
 
     for (const hz of ['50', '60']) {
