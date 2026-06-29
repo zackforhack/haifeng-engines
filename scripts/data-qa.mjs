@@ -118,6 +118,10 @@ const ORIGIN_ALIASES = new Map([
   ['U.K.', 'United Kingdom'],
 ])
 
+const COOLING_METHOD_ALIASES = new Map([
+  ['Liquid-cooled', 'Liquid-Cooled'],
+])
+
 function canonicalSlugText(value) {
   return String(value ?? '')
     .trim()
@@ -237,6 +241,14 @@ function analyzeEngines(engines) {
       issues.push(issue('low', 'origin_alias', e, `${id(e)} uses origin "${e.origin}"; prefer "${originAlias}" for taxonomy consistency`, {
         current: e.origin,
         preferred: originAlias,
+      }))
+    }
+
+    const coolingAlias = COOLING_METHOD_ALIASES.get(String(e.cooling_method ?? '').trim())
+    if (coolingAlias) {
+      issues.push(issue('low', 'cooling_method_alias', e, `${id(e)} uses cooling method "${e.cooling_method}"; prefer "${coolingAlias}" for taxonomy consistency`, {
+        current: e.cooling_method,
+        preferred: coolingAlias,
       }))
     }
 
