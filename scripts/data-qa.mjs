@@ -146,6 +146,10 @@ function normalizedCompressionRatio(value) {
   return null
 }
 
+function firstIdentityToken(value) {
+  return String(value ?? '').trim().toLowerCase().split(/[\s/-]/)[0] ?? ''
+}
+
 function completeness(e) {
   const checks = [
     ['brand', bool(e.brand), 8],
@@ -285,6 +289,15 @@ function analyzeEngines(engines) {
       issues.push(issue('low', 'description_too_short', e, `${id(e)} description is only ${String(e.description).trim().length} characters; enrich from structured specs`, {
         length: String(e.description).trim().length,
       }))
+    }
+
+    if (e.description) {
+      const description = String(e.description).toLowerCase()
+      const brandToken = firstIdentityToken(e.brand)
+      const modelToken = firstIdentityToken(e.model)
+      if ((brandToken && !description.includes(brandToken)) || (modelToken && !description.includes(modelToken))) {
+        issues.push(issue('low', 'description_missing_identity', e, `${id(e)} description should include the brand/model so it stands alone in snippets and exports`))
+      }
     }
 
     for (const hz of ['50', '60']) {
