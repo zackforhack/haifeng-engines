@@ -269,6 +269,12 @@ function analyzeEngines(engines) {
       }))
     }
 
+    if (e.description && String(e.description).trim().length < 80) {
+      issues.push(issue('low', 'description_too_short', e, `${id(e)} description is only ${String(e.description).trim().length} characters; enrich from structured specs`, {
+        length: String(e.description).trim().length,
+      }))
+    }
+
     for (const hz of ['50', '60']) {
       for (const rating of ['prime', 'standby']) {
         const kwm = num(e[`${rating}_power_kw_${hz}hz`])
