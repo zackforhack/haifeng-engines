@@ -43,6 +43,7 @@ const TITLES = {
   'Komatsu': 'Komatsu Limited',
   'Kubota': 'Kubota',
   'Liebherr': 'Liebherr Group',
+  'Lister Petter': null,       // user-provided logo, served via LOCAL_LOGOS
   'Lovol': 'Lovol',
   'MAN': 'MAN SE',
   'Mesa': null,               // mesapowersolutions.com ships a white-only SVG; recolored dark, via LOCAL_LOGOS
@@ -100,6 +101,7 @@ const LOCAL_LOGOS = {
   'Waukesha': 'waukesha.svg',   // official orange (#EF773C) script wordmark
   'Komatsu': 'komatsu.png',     // P154 SVGs were white-only variants (invisible on white chip)
   'Liebherr': 'liebherr.png',
+  'Lister Petter': 'lister-petter.png',
   'Liyu Power': 'liyu-power.png',   // site only ships a white "fanbai" logo; recolored dark for the white chip
   'Lovol': 'lovol.png',
   'Mesa': 'mesa.svg',               // recolored from the site's white-only mps-logo.svg
