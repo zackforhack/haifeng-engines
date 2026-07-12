@@ -35,8 +35,29 @@ const siteSchema = [
     '@type': 'Organization',
     '@id': `${BASE}/#org`,
     name: 'Haifeng Machinery',
+    legalName: 'Taizhou Haifeng Machinery Manufacturing Co., Ltd.',
+    alternateName: ['Haifeng Power', 'Taizhou Haifeng Machinery'],
     url: 'https://www.haifengmachinery.com',
-    logo: `${BASE}/icon.png`,
+    logo: 'https://ecdn.cnyandex.com/haifengmachinery/uploads/haifeng-logo-560-1.webp',
+    email: 'sales@haifengmachinery.com',
+    telephone: '+1 4163179500',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '89 Fenghuang West Road, Economic Development District',
+      addressLocality: 'Taizhou City',
+      addressRegion: 'Jiangsu Province',
+      addressCountry: 'CN',
+    },
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        telephone: '+1 4163179500',
+        email: 'sales@haifengmachinery.com',
+        availableLanguage: ['en', 'zh'],
+        url: 'https://www.haifengmachinery.com/contact-us/',
+      },
+    ],
     sameAs: SOCIALS.map((s) => s.href),
   },
   {
@@ -83,7 +104,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 The Generator Engine Encyclopedia — a free resource by{' '}
                 <a href="https://www.haifengmachinery.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                   Haifeng Machinery
-                </a>
+                </a>{' '}
+                / Haifeng Power
               </p>
               <div className="flex gap-4">
                 <Link href="/engines" className="hover:text-gray-900">Browse Engines</Link>

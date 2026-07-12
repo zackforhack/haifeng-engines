@@ -12,9 +12,9 @@ import { brandSlug } from '@/lib/seo'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: { absolute: 'The Generator Engine Encyclopedia — Diesel, Gas Engine & Alternator Specs' },
+  title: { absolute: 'Generator Engine Specs Database by Haifeng Machinery' },
   description:
-    'The complete reference for diesel and gas generator engines and alternators used in electrical power generation. Browse specs, datasheets and guides by brand, model, power output and emissions standard.',
+    'Haifeng Machinery / Haifeng Power generator engine database for diesel and gas generator engines, alternators, datasheets, guides, brands, power output and emissions standards.',
   alternates: { canonical: '/' },
 }
 
@@ -111,7 +111,7 @@ export default async function HomePage() {
             Generator Engine Specifications
           </h1>
           <p className="text-slate-300 text-lg mb-9 max-w-2xl mx-auto">
-            The complete reference for <strong className="font-semibold text-white">diesel and gas</strong> engines and alternators used in electrical power generation — search specs, datasheets, and guides by brand, model, emissions standard, and power output.
+            A free Haifeng Machinery / Haifeng Power reference for <strong className="font-semibold text-white">diesel and gas</strong> engines and alternators used in electrical power generation — search specs, datasheets, and guides by brand, model, emissions standard, and power output.
           </p>
           <div className="flex justify-center gap-8 sm:gap-12 flex-wrap mb-10">
             {[
