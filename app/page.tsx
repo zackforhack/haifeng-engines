@@ -8,7 +8,7 @@ import { getAllGuides } from '@/lib/guides'
 import { SearchBar } from '@/components/SearchBar'
 import { CountUp } from '@/components/CountUp'
 import { brandSlug } from '@/lib/seo'
-import { PRIORITY_BRAND_HUBS } from '@/lib/seo-opportunities'
+import { PRIORITY_BRAND_HUBS, PRIORITY_MODEL_SPECS } from '@/lib/seo-opportunities'
 
 export const dynamic = 'force-dynamic'
 
@@ -28,33 +28,6 @@ const POWER_PRESETS = [
   { label: '1,500+ kWe',      slug: '1500-plus-kwe' },
 ]
 
-const HIGH_INTEREST_SPECS = [
-  {
-    href: '/engines/kohler-kd62v12',
-    label: 'Kohler KD62V12',
-    desc: '2,250-2,500 kWe KD Series diesel generator engine',
-  },
-  {
-    href: '/alternators/stamford-uci224g',
-    label: 'Stamford UCI224G',
-    desc: 'UCI224 alternator spec page for generator-set matching',
-  },
-  {
-    href: '/engines/cummins-hsk78g',
-    label: 'Cummins HSK78G',
-    desc: '78 L natural-gas generator engine for prime and CHP power',
-  },
-  {
-    href: '/engines/perkins-1206a-e70ttag2',
-    label: 'Perkins 1206A-E70TTAG2',
-    desc: '1200 Series 200 kWe standby diesel generator engine',
-  },
-  {
-    href: '/engines/yuchai-yc16vtd2270-d30',
-    label: 'Yuchai YC16VTD2270-D30',
-    desc: '16VTD 1,500 kWe standby diesel generator engine',
-  },
-]
 const brandHref = (brand: string) => `/brands/${brandSlug(brand)}`
 
 export default async function HomePage() {
@@ -151,7 +124,7 @@ export default async function HomePage() {
           <Link href="/engines" className="text-sm text-blue-600 hover:underline">Browse all specs →</Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
-          {HIGH_INTEREST_SPECS.map((spec) => (
+          {PRIORITY_MODEL_SPECS.map((spec) => (
             <Link
               key={spec.href}
               href={spec.href}

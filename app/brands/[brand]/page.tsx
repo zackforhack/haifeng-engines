@@ -7,7 +7,7 @@ import { BrandLogo } from '@/components/BrandLogo'
 import { HubContent } from '@/components/HubContent'
 import { buildHubOverview, computeHubStats, engineKwe, hubItemListElements } from '@/lib/hub-stats'
 import { brandSlug, limitedEngines, resolveBrandSlug, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
-import { PRIORITY_BRAND_HUBS } from '@/lib/seo-opportunities'
+import { PRIORITY_BRAND_HUBS, PRIORITY_MODEL_SPECS } from '@/lib/seo-opportunities'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -54,6 +54,12 @@ function relatedBrandHubs(name: string, brands: string[]) {
     .slice(0, 4)
 }
 
+function prioritySpecsForBrand(name: string) {
+  return PRIORITY_MODEL_SPECS
+    .filter((spec) => spec.type === 'engine')
+    .filter((spec) => brandSlug(spec.brand) === brandSlug(name))
+}
+
 function BrandBuyerGuide({
   name,
   engines,
@@ -72,6 +78,7 @@ function BrandBuyerGuide({
   const apps = brandApplications(name, stats).slice(0, 6)
   const searches = brandSearchPhrases(name, stats)
   const relatedBrands = relatedBrandHubs(name, brands)
+  const prioritySpecs = prioritySpecsForBrand(name)
 
   return (
     <section className="mb-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -123,6 +130,24 @@ function BrandBuyerGuide({
             ))}
           </ul>
         </div>
+
+        {prioritySpecs.length > 0 && (
+          <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-3">Priority model specs</h2>
+            <div className="space-y-3">
+              {prioritySpecs.map((spec) => (
+                <Link key={spec.href} href={spec.href} className="block group">
+                  <span className="block text-sm font-semibold text-blue-600 group-hover:underline">
+                    {spec.label}
+                  </span>
+                  <span className="block text-xs text-gray-500 leading-relaxed mt-0.5">
+                    {spec.desc}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <h2 className="text-lg font-semibold text-gray-900 mb-3">Common searches</h2>
