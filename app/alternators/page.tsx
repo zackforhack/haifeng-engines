@@ -99,6 +99,28 @@ export default async function AlternatorsPage({ searchParams }: Props) {
           </section>
         )}
 
+        <section className="mb-12 bg-blue-50 border border-blue-100 rounded-xl p-6">
+          <h2 className="text-lg font-semibold text-gray-900 mb-2">Need help matching an alternator?</h2>
+          <p className="text-sm text-gray-600 leading-relaxed mb-4">
+            Haifeng Machinery can help match alternators with diesel or gas engines, controller systems,
+            voltage requirements, enclosure design, ambient conditions, duty class, and compliance needs
+            for a complete generator package.
+          </p>
+          <div className="flex flex-wrap gap-2 text-sm">
+            <a
+              href="https://www.haifengmachinery.com/contact-us/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg bg-blue-600 text-white px-4 py-2 font-semibold hover:bg-blue-700"
+            >
+              Request alternator support ↗
+            </a>
+            <Link href="/guides/alternator-voltage-and-frequency" className="rounded-lg border border-blue-200 bg-white px-4 py-2 font-medium text-blue-600 hover:bg-blue-50">
+              Alternator voltage guide
+            </Link>
+          </div>
+        </section>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* kVA ranges */}
           <div>

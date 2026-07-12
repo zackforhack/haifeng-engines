@@ -105,6 +105,30 @@ export default async function AlternatorSeriesPage({ params }: Props) {
           </section>
         )}
 
+        <section className="mb-8 bg-blue-50 border border-blue-100 rounded-xl p-5">
+          <h2 className="text-lg font-semibold text-gray-900 mb-2">
+            Match a {series} alternator to a generator package
+          </h2>
+          <p className="text-sm text-gray-600 leading-relaxed mb-4">
+            Alternator selection should be checked together with engine output, voltage, 50/60 Hz frequency,
+            controller features, enclosure layout, site temperature, altitude, transient load response,
+            and local compliance requirements.
+          </p>
+          <div className="flex flex-wrap gap-2 text-sm">
+            <a
+              href="https://www.haifengmachinery.com/contact-us/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg bg-blue-600 text-white px-4 py-2 font-semibold hover:bg-blue-700"
+            >
+              Request alternator matching ↗
+            </a>
+            <Link href="/guides/alternator-voltage-and-frequency" className="rounded-lg border border-blue-200 bg-white px-4 py-2 font-medium text-blue-600 hover:bg-blue-50">
+              Voltage and frequency guide
+            </Link>
+          </div>
+        </section>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {items.map((a: Alternator) => (
             <Link key={a.id} href={`/alternators/${a.slug}`}
