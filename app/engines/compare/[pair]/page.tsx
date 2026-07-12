@@ -3,7 +3,7 @@ import { notFound, redirect } from 'next/navigation'
 import Link from 'next/link'
 import type { Engine } from '@/lib/types'
 import {
-  getEngineForCompare, parsePair, pairSlug, canonicalPair, competitorsFor, getComparisonPairs,
+  getEngineForCompare, parsePair, pairSlug, canonicalPair, competitorsFor, getComparisonPairs, fuelCategory,
 } from '@/lib/compare'
 import { headlinePower, displayKva, ratedSpeedLabel, compactConfig } from '@/lib/engine-display'
 
@@ -77,6 +77,60 @@ function buildIntro(a: Engine, b: Engine): string {
   }
   s += 'The table below compares their full specifications side by side.'
   return s
+}
+
+function packageLinkFor(a: Engine, b: Engine): { href: string; label: string } {
+  const fuel = fuelCategory(a) === 'gas' || fuelCategory(b) === 'gas' ? 'gas' : 'diesel'
+  if (fuel === 'gas') {
+    return { href: 'https://www.haifengmachinery.com/gas-power-package-50hz-60hz/', label: 'gas generator packages' }
+  }
+
+  const regulated = [a.emissions_standard, b.emissions_standard].some((standard) => standard && !/unregulated/i.test(standard))
+  return regulated
+    ? { href: 'https://www.haifengmachinery.com/diesel-power-package-regulated/', label: 'regulated diesel generator packages' }
+    : { href: 'https://www.haifengmachinery.com/diesel-power-package-non-regulated/', label: 'diesel generator packages' }
+}
+
+function ComparisonBuyerGuide({ a, b }: { a: Engine; b: Engine }) {
+  const productPackage = packageLinkFor(a, b)
+  const aKva = displayKva(headlinePower(a))
+  const bKva = displayKva(headlinePower(b))
+  const higher = aKva && bKva && aKva !== bKva ? (aKva > bKva ? a : b) : null
+
+  return (
+    <section className="mt-8 bg-white rounded-xl border border-gray-200 p-6">
+      <h2 className="text-lg font-semibold text-gray-900 mb-3">
+        Choosing between {label(a)} and {label(b)}
+      </h2>
+      <p className="text-sm text-gray-600 leading-relaxed mb-4">
+        Use this comparison as an engineering shortlist, then confirm the complete generator package against
+        load profile, voltage, 50/60 Hz frequency, duty class, emissions rules, cooling margin, altitude,
+        ambient temperature, enclosure design, controller features, and alternator sizing.
+        {higher ? ` The ${label(higher)} has the higher headline kVA rating in this pair, but site conditions and duty cycle can still change the final recommendation.` : ''}
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
+        <a
+          href={productPackage.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200"
+        >
+          Haifeng {productPackage.label}
+        </a>
+        <a
+          href="https://www.haifengmachinery.com/contact-us/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200"
+        >
+          Request sizing support
+        </a>
+        <Link href="/guides/how-to-choose-a-generator-engine" className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200">
+          Generator engine selection guide
+        </Link>
+      </div>
+    </section>
+  )
 }
 
 export default async function ComparePage({ params }: Props) {
@@ -167,6 +221,8 @@ export default async function ComparePage({ params }: Props) {
             {label(b)} full specs →
           </Link>
         </div>
+
+        <ComparisonBuyerGuide a={a} b={b} />
 
         {siblings.length > 0 && (
           <div className="mt-10">
