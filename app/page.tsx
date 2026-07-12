@@ -8,6 +8,7 @@ import { getAllGuides } from '@/lib/guides'
 import { SearchBar } from '@/components/SearchBar'
 import { CountUp } from '@/components/CountUp'
 import { brandSlug } from '@/lib/seo'
+import { PRIORITY_BRAND_HUBS } from '@/lib/seo-opportunities'
 
 export const dynamic = 'force-dynamic'
 
@@ -158,6 +159,25 @@ export default async function HomePage() {
             >
               <h3 className="text-sm font-bold text-gray-900">{spec.label}</h3>
               <p className="text-xs text-gray-500 mt-1 leading-relaxed">{spec.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <div className="flex items-baseline justify-between mb-3">
+          <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Generator brand hubs</h2>
+          <Link href="/brands" className="text-sm text-blue-600 hover:underline">View all brands →</Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+          {PRIORITY_BRAND_HUBS.map((brand) => (
+            <Link
+              key={brand.name}
+              href={brandHref(brand.name)}
+              className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-md transition-all"
+            >
+              <h3 className="text-sm font-bold text-gray-900">{brand.name} generator engines</h3>
+              <p className="text-xs text-gray-500 mt-1 leading-relaxed">{brand.desc}</p>
             </Link>
           ))}
         </div>

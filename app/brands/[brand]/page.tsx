@@ -7,6 +7,7 @@ import { BrandLogo } from '@/components/BrandLogo'
 import { HubContent } from '@/components/HubContent'
 import { buildHubOverview, computeHubStats, engineKwe, hubItemListElements } from '@/lib/hub-stats'
 import { brandSlug, limitedEngines, resolveBrandSlug, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
+import { PRIORITY_BRAND_HUBS } from '@/lib/seo-opportunities'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -33,12 +34,39 @@ function brandApplications(name: string, stats: ReturnType<typeof computeHubStat
   return [...new Set(apps)].map((app) => `${name} ${app}`)
 }
 
-function BrandBuyerGuide({ name, engines, stats }: { name: string; engines: Engine[]; stats: ReturnType<typeof computeHubStats> }) {
+function brandSearchPhrases(name: string, stats: ReturnType<typeof computeHubStats>): string[] {
+  const phrases = [`${name} generator`, `${name} generators`, `${name} generator engines`]
+  if (stats.hasDiesel) phrases.push(`${name} diesel generators`)
+  if (stats.hasGas) phrases.push(`${name} gas engines`)
+  return phrases
+}
+
+function relatedBrandHubs(name: string, brands: string[]) {
+  const available = new Set(brands.map(brandSlug))
+  return PRIORITY_BRAND_HUBS
+    .filter((brand) => brandSlug(brand.name) !== brandSlug(name))
+    .filter((brand) => available.has(brandSlug(brand.name)))
+    .slice(0, 4)
+}
+
+function BrandBuyerGuide({
+  name,
+  engines,
+  stats,
+  brands,
+}: {
+  name: string
+  engines: Engine[]
+  stats: ReturnType<typeof computeHubStats>
+  brands: string[]
+}) {
   const ranked = [...engines]
     .map((engine) => ({ engine, kwe: engineKwe(engine) }))
     .sort((a, b) => (b.kwe ?? 0) - (a.kwe ?? 0))
     .slice(0, 8)
   const apps = brandApplications(name, stats).slice(0, 6)
+  const searches = brandSearchPhrases(name, stats)
+  const relatedBrands = relatedBrandHubs(name, brands)
 
   return (
     <section className="mb-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -90,6 +118,34 @@ function BrandBuyerGuide({ name, engines, stats }: { name: string; engines: Engi
             ))}
           </ul>
         </div>
+
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <h2 className="text-lg font-semibold text-gray-900 mb-3">Common searches</h2>
+          <div className="flex flex-wrap gap-2">
+            {searches.map((phrase) => (
+              <span key={phrase} className="px-2.5 py-1 rounded-full bg-gray-100 text-xs font-medium text-gray-600">
+                {phrase}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {relatedBrands.length > 0 && (
+          <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-3">Related generator brands</h2>
+            <div className="space-y-2">
+              {relatedBrands.map((brand) => (
+                <Link
+                  key={brand.name}
+                  href={`/brands/${brandSlug(brand.name)}`}
+                  className="block text-sm font-medium text-blue-600 hover:underline"
+                >
+                  {brand.name} generator engines
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
           <p className="font-semibold text-gray-900 mb-1">Need a {name} generator package?</p>
@@ -206,7 +262,7 @@ export default async function BrandPage({ params }: Props) {
       <p className="text-gray-500 mb-4">{engines.length} engines in the database</p>
       <p className="text-gray-600 leading-relaxed max-w-3xl mb-8">{overview}</p>
 
-      <BrandBuyerGuide name={name} engines={engines} stats={stats} />
+      <BrandBuyerGuide name={name} engines={engines} stats={stats} brands={brands} />
 
       {activeEngines.length > 0 && (
         <section className="mb-10">
