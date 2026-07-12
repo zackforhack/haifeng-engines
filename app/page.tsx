@@ -26,6 +26,34 @@ const POWER_PRESETS = [
   { label: '500 – 1,500 kWe', slug: '500-1500-kwe' },
   { label: '1,500+ kWe',      slug: '1500-plus-kwe' },
 ]
+
+const HIGH_INTEREST_SPECS = [
+  {
+    href: '/engines/kohler-kd62v12',
+    label: 'Kohler KD62V12',
+    desc: '2,250-2,500 kWe KD Series diesel generator engine',
+  },
+  {
+    href: '/alternators/stamford-uci224g',
+    label: 'Stamford UCI224G',
+    desc: 'UCI224 alternator spec page for generator-set matching',
+  },
+  {
+    href: '/engines/cummins-hsk78g',
+    label: 'Cummins HSK78G',
+    desc: '78 L natural-gas generator engine for prime and CHP power',
+  },
+  {
+    href: '/engines/perkins-1206a-e70ttag2',
+    label: 'Perkins 1206A-E70TTAG2',
+    desc: '1200 Series 200 kWe standby diesel generator engine',
+  },
+  {
+    href: '/engines/yuchai-yc16vtd2270-d30',
+    label: 'Yuchai YC16VTD2270-D30',
+    desc: '16VTD 1,500 kWe standby diesel generator engine',
+  },
+]
 const brandHref = (brand: string) => `/brands/${brandSlug(brand)}`
 
 export default async function HomePage() {
@@ -115,6 +143,25 @@ export default async function HomePage() {
           </Link>
         ))}
       </div>
+
+      <section className="mb-12">
+        <div className="flex items-baseline justify-between mb-3">
+          <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">High-interest generator specs</h2>
+          <Link href="/engines" className="text-sm text-blue-600 hover:underline">Browse all specs →</Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+          {HIGH_INTEREST_SPECS.map((spec) => (
+            <Link
+              key={spec.href}
+              href={spec.href}
+              className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-md transition-all"
+            >
+              <h3 className="text-sm font-bold text-gray-900">{spec.label}</h3>
+              <p className="text-xs text-gray-500 mt-1 leading-relaxed">{spec.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       {/* Browse by fuel */}
       <div className="mb-8">
