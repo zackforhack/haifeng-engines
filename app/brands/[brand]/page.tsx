@@ -22,7 +22,12 @@ function brandMetaDescription(name: string, engines: Engine[]): string {
       ? ` from ${Math.round(Math.min(...kwes)).toLocaleString()} to ${Math.round(Math.max(...kwes)).toLocaleString()} kWe`
       : ''
   const fuel = stats.hasDiesel && stats.hasGas ? 'diesel and gas' : stats.hasGas ? 'gas' : 'diesel'
-  return `Browse ${engines.length.toLocaleString()} ${name} ${fuel} generator engine specifications${power}, including emissions ratings, datasheets, and manuals.`
+  return `Browse ${engines.length.toLocaleString()} ${name} generator engine specifications for ${fuel} generators${power}, including emissions ratings, datasheets, manuals, and generator-set selection context.`
+}
+
+function brandMetaTitle(name: string, stats: ReturnType<typeof computeHubStats>): string {
+  const fuel = stats.hasDiesel && stats.hasGas ? 'Diesel & Gas' : stats.hasGas ? 'Gas' : 'Diesel'
+  return `${name} Generators & ${fuel} Engine Specs`
 }
 
 function brandApplications(name: string, stats: ReturnType<typeof computeHubStats>): string[] {
@@ -174,16 +179,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const name = resolveBrandSlug(decoded, brands) ?? decoded
   const slug = brandSlug(name)
   const engines = resolveBrandSlug(decoded, brands) ? await getEnginesByBrand(name) : []
+  const stats = computeHubStats(engines)
   const description = engines.length
     ? brandMetaDescription(name, engines)
     : `Browse all ${name} diesel and gas generator engine specifications, datasheets, and manuals for electrical power generation.`
+  const title = engines.length ? brandMetaTitle(name, stats) : `${name} Generator Engine Specs`
 
   return {
-    title: `${name} Generator Engine Specs`,
+    title,
     description,
     alternates: { canonical: `/brands/${slug}` },
     openGraph: {
-      title: `${name} Generator Engine Specs`,
+      title,
       description,
       type: 'website',
       url: `/brands/${slug}`,
@@ -222,13 +229,16 @@ export default async function BrandPage({ params }: Props) {
   const subject = `${name} generator engines`
   const stats = computeHubStats(engines)
   const overview = buildHubOverview(subject, stats)
+  const searchPhrases = brandSearchPhrases(name, stats)
   const structuredData = [
     {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
       name: `${name} Generator Engines`,
+      alternateName: searchPhrases,
       url: `${base}/brands/${canonicalSlug}`,
-      description: `All ${name} diesel and gas generator engine specifications and datasheets.`,
+      description: brandMetaDescription(name, engines),
+      about: searchPhrases.map((phrase) => ({ '@type': 'Thing', name: phrase })),
       mainEntity: {
         '@type': 'ItemList',
         numberOfItems: engines.length,
