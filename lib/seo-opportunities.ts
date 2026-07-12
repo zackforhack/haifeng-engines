@@ -9,6 +9,7 @@ export const PRIORITY_MODEL_SPECS = [
   {
     href: '/alternators/stamford-uci224g',
     brand: 'Stamford',
+    series: 'UCI224',
     label: 'Stamford UCI224G',
     desc: 'UCI224 alternator spec page for generator-set matching.',
     type: 'alternator',

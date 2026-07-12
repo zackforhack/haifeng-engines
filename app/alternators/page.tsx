@@ -6,6 +6,7 @@ import { SearchBar } from '@/components/SearchBar'
 import { AlternatorFilters } from '@/components/AlternatorFilters'
 import type { Alternator } from '@/lib/types'
 import { hasSearchParams, noindexFollowRobots } from '@/lib/seo'
+import { PRIORITY_MODEL_SPECS } from '@/lib/seo-opportunities'
 
 const PAGE_SIZE = 24
 
@@ -16,6 +17,8 @@ const KVA_RANGES = [
   { label: '1,000 – 2,499 kVA',  min: 1000, max: 2499 },
   { label: '2,500+ kVA',         min: 2500, max: Infinity },
 ]
+
+const PRIORITY_ALTERNATOR_SPECS = PRIORITY_MODEL_SPECS.filter((spec) => spec.type === 'alternator')
 
 interface Props {
   searchParams: Promise<{
@@ -70,6 +73,31 @@ export default async function AlternatorsPage({ searchParams }: Props) {
             </Suspense>
           </div>
         </div>
+
+        {PRIORITY_ALTERNATOR_SPECS.length > 0 && (
+          <section className="mb-12">
+            <div className="flex items-baseline justify-between mb-3">
+              <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+                High-interest alternator specs
+              </h2>
+              <Link href="/alternators?brand=Stamford" className="text-sm text-blue-600 hover:underline">
+                Browse Stamford alternators →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {PRIORITY_ALTERNATOR_SPECS.map((spec) => (
+                <Link
+                  key={spec.href}
+                  href={spec.href}
+                  className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-md transition-all"
+                >
+                  <h3 className="text-sm font-bold text-gray-900">{spec.label}</h3>
+                  <p className="text-xs text-gray-500 mt-1 leading-relaxed">{spec.desc}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* kVA ranges */}

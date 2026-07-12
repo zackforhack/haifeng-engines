@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { filterAlternators, getAlternatorFilterOptions } from '@/lib/alternators'
 import type { Alternator } from '@/lib/types'
+import { PRIORITY_MODEL_SPECS } from '@/lib/seo-opportunities'
 
 const BASE = 'https://engines.haifengmachinery.com'
 const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
@@ -12,6 +13,12 @@ interface Props { params: Promise<{ series: string }> }
 async function resolveSeries(slug: string): Promise<string | null> {
   const { series } = await getAlternatorFilterOptions()
   return series.find((s) => slugify(s) === slug) ?? null
+}
+
+function priorityAlternatorSpecsForSeries(series: string) {
+  return PRIORITY_MODEL_SPECS
+    .filter((spec) => spec.type === 'alternator')
+    .filter((spec) => spec.series && slugify(spec.series) === slugify(series))
 }
 
 export async function generateStaticParams() {
@@ -44,6 +51,7 @@ export default async function AlternatorSeriesPage({ params }: Props) {
   const kvas = items.map((a) => a.kva).filter((k): k is number => k != null)
   const range = kvas.length ? `${Math.min(...kvas).toLocaleString()}–${Math.max(...kvas).toLocaleString()} kVA` : null
   const poles = [...new Set(items.map((a) => a.poles).filter(Boolean))].join(' / ')
+  const prioritySpecs = priorityAlternatorSpecsForSeries(series)
 
   const jsonLd = [
     {
@@ -78,6 +86,24 @@ export default async function AlternatorSeriesPage({ params }: Props) {
           {items.length} model{items.length !== 1 ? 's' : ''} in the {brand} {series} series
           {range ? `, ${range}` : ''}{poles ? ` · ${poles}-pole` : ''}.
         </p>
+
+        {prioritySpecs.length > 0 && (
+          <section className="mb-8 bg-white border border-gray-200 rounded-xl p-5">
+            <h2 className="text-lg font-semibold text-gray-900 mb-3">Priority alternator specs</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {prioritySpecs.map((spec) => (
+                <Link key={spec.href} href={spec.href} className="block group">
+                  <span className="block text-sm font-semibold text-blue-600 group-hover:underline">
+                    {spec.label}
+                  </span>
+                  <span className="block text-xs text-gray-500 leading-relaxed mt-0.5">
+                    {spec.desc}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {items.map((a: Alternator) => (
