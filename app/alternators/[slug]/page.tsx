@@ -12,10 +12,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const a = await getAlternatorBySlug(slug)
   if (!a) return {}
 
-  const title = `${a.brand} ${a.model} Alternator Specs`
+  const title = `${a.brand} ${a.model} Generator Alternator Specs`
   const bits = [a.kva != null ? `${a.kva} kVA` : '', a.poles ? `${a.poles}-pole` : '', a.series ? `${a.series} series` : '']
     .filter(Boolean).join(', ')
-  const description = `Specifications and official data sheet for the ${a.brand} ${a.model} generator alternator${bits ? ` — ${bits}` : ''}.`
+  const description = `Specifications, generator-set context, FAQ, and official data sheet for the ${a.brand} ${a.model} generator alternator${bits ? ` — ${bits}` : ''}.`
 
   return {
     title,
@@ -32,6 +32,77 @@ function SpecRow({ label, value }: { label: string; value?: string | number | nu
       <td className="py-2 pr-4 text-sm text-gray-500 font-medium w-48">{label}</td>
       <td className="py-2 text-sm text-gray-900">{value}</td>
     </tr>
+  )
+}
+
+function alternatorAliases(model: string): string[] {
+  const compact = model.replace(/[^a-z0-9]/gi, '')
+  const compactLower = compact.toLowerCase()
+  const spaced = model.replace(/[-_/]+/g, ' ')
+  return [...new Set([compactLower, compact, spaced, model.toLowerCase()].filter((v) => v && v !== model))].slice(0, 4)
+}
+
+function AlternatorIntro({ a }: { a: NonNullable<Awaited<ReturnType<typeof getAlternatorBySlug>>> }) {
+  const aliases = alternatorAliases(a.model)
+  return (
+    <div className="bg-white rounded-xl border border-gray-200 p-6">
+      <h2 className="text-lg font-semibold text-gray-900 mb-3">{a.brand} {a.model} generator-set use</h2>
+      <p className="text-sm text-gray-600 leading-relaxed">
+        The {a.brand} {a.model} is a generator alternator used to convert engine shaft power into electrical output
+        for diesel and gas generator sets. This page summarizes the searchable model identity, nominal output,
+        pole count, family, and data-sheet link so buyers can match the alternator with an engine, voltage,
+        controller, enclosure, and duty rating.
+      </p>
+      {a.kva != null && (
+        <p className="mt-3 text-sm text-gray-600">
+          For quick sizing, this database lists the {a.model} at {a.kva.toLocaleString()} kVA nominal prime output at 50 Hz.
+          Confirm voltage, winding, temperature rise, and overload capability on the manufacturer data sheet.
+        </p>
+      )}
+      {aliases.length > 0 && (
+        <div className="mt-4">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Also searched as</p>
+          <div className="flex flex-wrap gap-2">
+            {aliases.map((alias) => (
+              <span key={alias} className="rounded-full bg-gray-50 border border-gray-200 px-3 py-1 text-xs text-gray-700">
+                {alias}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function AlternatorFaq({ a }: { a: NonNullable<Awaited<ReturnType<typeof getAlternatorBySlug>>> }) {
+  const faqs = [
+    {
+      q: `What is the ${a.brand} ${a.model} used for?`,
+      a: `The ${a.brand} ${a.model} is used as a generator alternator in engine-driven generator sets, converting mechanical shaft power into electrical output for standby, prime, or continuous-duty packages.`,
+    },
+    ...(a.kva != null ? [{
+      q: `What kVA rating is listed for the ${a.model}?`,
+      a: `This database lists the ${a.model} at ${a.kva.toLocaleString()} kVA nominal prime output at 50 Hz. Final sizing should confirm voltage, winding, temperature rise, and duty rating from the official data sheet.`,
+    }] : []),
+    {
+      q: `Can Haifeng Machinery package this alternator with an engine?`,
+      a: `Yes. Haifeng Machinery can help match alternators such as the ${a.brand} ${a.model} with a diesel or gas engine, controller, enclosure, voltage configuration, and compliance requirements for a complete generator package.`,
+    },
+  ]
+
+  return (
+    <div className="bg-white rounded-xl border border-gray-200 p-6">
+      <h2 className="text-lg font-semibold text-gray-900 mb-4">Frequently asked questions</h2>
+      <div className="space-y-5">
+        {faqs.map((f) => (
+          <div key={f.q}>
+            <h3 className="text-sm font-semibold text-gray-900 mb-1">{f.q}</h3>
+            <p className="text-sm text-gray-600 leading-relaxed">{f.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
   )
 }
 
@@ -68,7 +139,28 @@ export default async function AlternatorDetailPage({ params }: Props) {
       { '@type': 'ListItem', position: 3, name: a.model, item: `${base}/alternators/${slug}` },
     ],
   }
-  const structuredData = [productSchema, breadcrumbSchema]
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `What is the ${a.brand} ${a.model} used for?`,
+        acceptedAnswer: { '@type': 'Answer', text: `The ${a.brand} ${a.model} is used as a generator alternator in engine-driven generator sets, converting mechanical shaft power into electrical output for standby, prime, or continuous-duty packages.` },
+      },
+      ...(a.kva != null ? [{
+        '@type': 'Question',
+        name: `What kVA rating is listed for the ${a.model}?`,
+        acceptedAnswer: { '@type': 'Answer', text: `This database lists the ${a.model} at ${a.kva.toLocaleString()} kVA nominal prime output at 50 Hz. Final sizing should confirm voltage, winding, temperature rise, and duty rating from the official data sheet.` },
+      }] : []),
+      {
+        '@type': 'Question',
+        name: `Can Haifeng Machinery package this alternator with an engine?`,
+        acceptedAnswer: { '@type': 'Answer', text: `Yes. Haifeng Machinery can help match alternators such as the ${a.brand} ${a.model} with a diesel or gas engine, controller, enclosure, voltage configuration, and compliance requirements for a complete generator package.` },
+      },
+    ],
+  }
+  const structuredData = [productSchema, breadcrumbSchema, faqSchema]
 
   return (
     <>
@@ -92,7 +184,7 @@ export default async function AlternatorDetailPage({ params }: Props) {
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-1">{a.brand}</p>
-              <h1 className="text-3xl font-bold text-gray-900">{a.model}</h1>
+              <h1 className="text-3xl font-bold text-gray-900">{a.brand} {a.model}</h1>
               {a.series && <p className="text-gray-500 mt-1">{a.series} series</p>}
             </div>
             <span className={`px-2.5 py-1 rounded-full text-xs font-semibold capitalize ${
@@ -112,6 +204,8 @@ export default async function AlternatorDetailPage({ params }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Left column */}
           <div className="lg:col-span-2 space-y-6">
+            <AlternatorIntro a={a} />
+
             <div className="bg-white rounded-xl border border-gray-200 p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4">Specifications</h2>
               <table className="w-full">
@@ -128,6 +222,8 @@ export default async function AlternatorDetailPage({ params }: Props) {
                 the manufacturer&rsquo;s data sheet.
               </p>
             </div>
+
+            <AlternatorFaq a={a} />
           </div>
 
           {/* Sidebar */}
@@ -153,7 +249,8 @@ export default async function AlternatorDetailPage({ params }: Props) {
             <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
               <p className="font-semibold text-gray-900 mb-1">Need this alternator?</p>
               <p className="text-sm text-gray-600 mb-3">
-                Haifeng Machinery supplies alternators and complete generator sets worldwide.
+                Haifeng Machinery can match this alternator with an engine, controller,
+                enclosure, voltage, and duty rating for a complete generator package.
               </p>
               <a
                 href="https://www.haifengmachinery.com/contact-us/"

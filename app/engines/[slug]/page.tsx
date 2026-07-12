@@ -5,7 +5,7 @@ import { getAllEngines, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
-import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, buildIntro, compactConfig } from '@/lib/engine-display'
+import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, buildIntro, compactConfig, ratedFrequencies } from '@/lib/engine-display'
 import { competitorsFor, pairSlug } from '@/lib/compare'
 import { buildEngineFaqs } from '@/lib/engine-faq'
 import { brandSlug } from '@/lib/seo'
@@ -21,8 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!engine) return {}
 
   const kva = displayKva(headlinePower(engine))
-  const title = `${engine.brand} ${engine.model} Specs${kva ? ` – ${kva.toLocaleString()} kVA` : ''}`
+  const title = `${engine.brand} ${engine.model} Generator Engine Specs${kva ? ` – ${kva.toLocaleString()} kVA` : ''}`
   const description = engine.description ?? buildIntro(engine)
+  const aliases = modelAliases(engine)
 
   return {
     title,
@@ -31,6 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `${engine.brand} ${engine.model}`,
       `${engine.model} specs`,
       `${engine.model} datasheet`,
+      ...aliases,
       `${engine.brand} diesel engine`,
       engine.series ?? '',
       'diesel generator engine',
@@ -226,6 +228,86 @@ function RelatedEngines({ engines }: { engines: Engine[] }) {
           )
         })}
       </ul>
+    </div>
+  )
+}
+
+function modelAliases(engine: Engine): string[] {
+  const model = engine.model.trim()
+  const compact = model.replace(/[^a-z0-9]/gi, '')
+  const compactLower = compact.toLowerCase()
+  const spaced = model.replace(/[-_/]+/g, ' ')
+  const aliases = new Set<string>()
+
+  if (compactLower && compactLower !== model) aliases.add(compactLower)
+  if (compact && compact.toLowerCase() !== model.toLowerCase()) aliases.add(compact)
+  if (spaced && spaced.toLowerCase() !== model.toLowerCase()) aliases.add(spaced)
+  aliases.add(`${engine.brand} ${model}`)
+  if (engine.series && !model.toLowerCase().includes(engine.series.toLowerCase())) aliases.add(`${engine.series} ${model}`)
+
+  return [...aliases].filter((a) => a.length >= 4).slice(0, 5)
+}
+
+function EngineBuyerContext({
+  engine,
+  productPackage,
+  competitors,
+}: {
+  engine: Engine
+  productPackage: { href: string; label: string }
+  competitors: Engine[]
+}) {
+  const hp = headlinePower(engine)
+  const kva = displayKva(hp)
+  const out = displayOutput(hp)
+  const { has50, has60 } = ratedFrequencies(engine)
+  const aliases = modelAliases(engine)
+  const ratingBits = [
+    kva ? `${kva.toLocaleString()} kVA` : null,
+    out ? `${out.value.toLocaleString()} ${out.unit}` : null,
+    hp ? `${hp.rating.toLowerCase()} rating` : null,
+  ].filter(Boolean)
+  const frequencyText = has50 && has60 ? '50 Hz and 60 Hz generator sets' : has60 ? '60 Hz generator sets' : '50 Hz generator sets'
+  const fuel = (engine.fuel_type ?? 'diesel').toLowerCase()
+
+  return (
+    <div className="bg-white rounded-xl border border-gray-200 p-6">
+      <h2 className="text-lg font-semibold text-gray-900 mb-3">
+        {engine.brand} {engine.model} generator set context
+      </h2>
+      <p className="text-sm text-gray-600 leading-relaxed">
+        The {engine.brand} {engine.model} is listed here as a {fuel} generator-drive engine for {frequencyText}
+        {ratingBits.length ? `, with a headline ${ratingBits.join(' / ')}` : ''}. Use this page to compare the published
+        engine output, electrical kWe/kVA ratings, emissions level, datasheet availability, and neighboring models before
+        specifying an alternator, controller, enclosure, voltage, and compliance package.
+      </p>
+
+      {aliases.length > 0 && (
+        <div className="mt-4">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Also searched as</p>
+          <div className="flex flex-wrap gap-2">
+            {aliases.map((alias) => (
+              <span key={alias} className="rounded-full bg-gray-50 border border-gray-200 px-3 py-1 text-xs text-gray-700">
+                {alias}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
+        <Link href={`/brands/${brandSlug(engine.brand)}`} className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200">
+          All {engine.brand} engines
+        </Link>
+        {competitors[0] && (
+          <Link href={`/engines/compare/${pairSlug(engine.slug, competitors[0].slug)}`} className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200">
+            Compare similar engines
+          </Link>
+        )}
+        <a href={productPackage.href} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200">
+          Haifeng {productPackage.label}
+        </a>
+      </div>
     </div>
   )
 }
@@ -444,6 +526,8 @@ export default async function EngineDetailPage({ params }: Props) {
             {/* Power Ratings Table */}
             <PowerRatingsTable engine={engine} />
 
+            <EngineBuyerContext engine={engine} productPackage={productPackage} competitors={competitors} />
+
             {/* General Specs */}
             <div className="bg-white rounded-xl border border-gray-200 p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4">Technical Specifications</h2>
@@ -520,7 +604,8 @@ export default async function EngineDetailPage({ params }: Props) {
             <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
               <p className="font-semibold text-gray-900 mb-1">Need this engine?</p>
               <p className="text-sm text-gray-600 mb-3">
-                Haifeng Machinery supplies diesel and gas generators and engines worldwide.
+                Need a generator package using this engine? Haifeng Machinery can help with sizing,
+                alternator selection, controller, enclosure, voltage, and compliance support.
               </p>
               <a
                 href="https://www.haifengmachinery.com/contact-us/"

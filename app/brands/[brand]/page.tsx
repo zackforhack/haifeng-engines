@@ -24,6 +24,93 @@ function brandMetaDescription(name: string, engines: Engine[]): string {
   return `Browse ${engines.length.toLocaleString()} ${name} ${fuel} generator engine specifications${power}, including emissions ratings, datasheets, and manuals.`
 }
 
+function brandApplications(name: string, stats: ReturnType<typeof computeHubStats>): string[] {
+  const apps = ['standby generator sets', 'prime-power generator packages', 'industrial power modules']
+  if (stats.hasGas) apps.push('gas generator sets and CHP projects')
+  if (stats.hasDiesel) apps.push('diesel standby and emergency power')
+  if ((stats.kweMax ?? 0) >= 1000) apps.push('data center, mining, oil and gas, and utility-scale packages')
+  if ((stats.kweMin ?? 999999) <= 100) apps.push('compact commercial and telecom standby sets')
+  return [...new Set(apps)].map((app) => `${name} ${app}`)
+}
+
+function BrandBuyerGuide({ name, engines, stats }: { name: string; engines: Engine[]; stats: ReturnType<typeof computeHubStats> }) {
+  const ranked = [...engines]
+    .map((engine) => ({ engine, kwe: engineKwe(engine) }))
+    .sort((a, b) => (b.kwe ?? 0) - (a.kwe ?? 0))
+    .slice(0, 8)
+  const apps = brandApplications(name, stats).slice(0, 6)
+
+  return (
+    <section className="mb-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="lg:col-span-2 bg-white rounded-xl border border-gray-200 p-6">
+        <h2 className="text-lg font-semibold text-gray-900 mb-3">{name} generator engine selection guide</h2>
+        <p className="text-sm text-gray-600 leading-relaxed mb-4">
+          Use this {name} hub to shortlist generator engines by electrical output, fuel type, emissions standard,
+          datasheet coverage, and 50 Hz or 60 Hz rating. For a complete generator set, the engine choice should be
+          checked together with alternator sizing, controller features, enclosure layout, voltage, cooling, exhaust,
+          fuel system, and local compliance requirements.
+        </p>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="text-left py-2 px-3 text-xs font-semibold text-gray-500">Model</th>
+                <th className="text-right py-2 px-3 text-xs font-semibold text-gray-500">Output</th>
+                <th className="text-left py-2 px-3 text-xs font-semibold text-gray-500">Fuel</th>
+                <th className="text-left py-2 px-3 text-xs font-semibold text-gray-500">Emissions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {ranked.map(({ engine, kwe }) => (
+                <tr key={engine.slug} className="border-t border-gray-100">
+                  <td className="py-2 px-3">
+                    <Link href={`/engines/${engine.slug}`} className="font-medium text-blue-600 hover:underline">
+                      {engine.model}
+                    </Link>
+                  </td>
+                  <td className="py-2 px-3 text-right text-gray-700">{kwe != null ? `${Math.round(kwe).toLocaleString()} kWe` : '—'}</td>
+                  <td className="py-2 px-3 text-gray-700">{engine.fuel_type ?? '—'}</td>
+                  <td className="py-2 px-3 text-gray-700">{engine.emissions_standard ?? '—'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="space-y-4">
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <h2 className="text-lg font-semibold text-gray-900 mb-3">Common applications</h2>
+          <ul className="space-y-2 text-sm text-gray-600">
+            {apps.map((app) => (
+              <li key={app} className="flex gap-2">
+                <span className="text-blue-500">-</span>
+                <span>{app}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
+          <p className="font-semibold text-gray-900 mb-1">Need a {name} generator package?</p>
+          <p className="text-sm text-gray-600 mb-3">
+            Haifeng Machinery can help select the engine, alternator, controller, enclosure, voltage,
+            cooling package, and compliance path for a complete generator set.
+          </p>
+          <a
+            href="https://www.haifengmachinery.com/contact-us/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-center bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Request generator support ↗
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { brand } = await params
   const decoded = decodeURIComponent(brand)
@@ -118,6 +205,8 @@ export default async function BrandPage({ params }: Props) {
       <h1 className="text-2xl font-bold text-gray-900 mb-1">{engines[0].brand} Generator Engines</h1>
       <p className="text-gray-500 mb-4">{engines.length} engines in the database</p>
       <p className="text-gray-600 leading-relaxed max-w-3xl mb-8">{overview}</p>
+
+      <BrandBuyerGuide name={name} engines={engines} stats={stats} />
 
       {activeEngines.length > 0 && (
         <section className="mb-10">
