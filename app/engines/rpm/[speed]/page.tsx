@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cfg = RPM_FACETS[speed]
   if (!cfg) return {}
   return {
-    title: `${cfg.label} Generator Engines`,
-    description: `Generator engines rated at ${cfg.label} — ${cfg.blurb}. Specifications, power ratings and datasheets by brand and model.`,
+    title: cfg.seoLabel,
+    description: `Browse ${cfg.subject}: diesel and gas generator-set engines rated at ${cfg.label}. ${cfg.blurb}. Compare specifications, power ratings and datasheets by brand and model.`,
     alternates: { canonical: `/engines/rpm/${speed}` },
   }
 }
@@ -32,8 +32,8 @@ export default async function RpmFacetPage({ params }: Props) {
   const engines = await filterEngines({ rpm: cfg.rpm })
   if (!engines.length) notFound()
 
-  const h1 = `${cfg.label} Generator Engines`
-  const intro = `Diesel and gas generator engines with a rated speed of ${cfg.label} — ${cfg.blurb}. Compare specifications, power ratings and datasheets by brand and model.`
+  const h1 = cfg.seoLabel
+  const intro = `Diesel and gas generator engines with a rated speed of ${cfg.label}. ${cfg.blurb}. Compare generator-set specifications, prime and standby power ratings, emissions standards and datasheets by brand and model.`
 
   const siblings = Object.entries(RPM_FACETS).map(([slug, c]) => ({
     label: c.label, href: `/engines/rpm/${slug}`, active: slug === speed,
@@ -50,7 +50,7 @@ export default async function RpmFacetPage({ params }: Props) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
-      <FacetHub facetLabel={cfg.label} h1={h1} intro={intro} subject={`${cfg.label} generator engines`} engines={engines} siblings={siblings} siblingHeading="Browse by rated speed" />
+      <FacetHub facetLabel={cfg.label} h1={h1} intro={intro} subject={cfg.subject} engines={engines} siblings={siblings} siblingHeading="Browse by rated speed" />
     </>
   )
 }

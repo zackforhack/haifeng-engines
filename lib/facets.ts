@@ -29,9 +29,27 @@ export const EMISSIONS_FACETS: Record<string, EmissionsFacet> = {
   'china-stage-iv':   { value: 'China National Stage IV',  label: 'China Stage IV',     blurb: 'China National Stage IV' },
 }
 
-export interface RpmFacet { rpm: number; label: string; blurb: string }
+export interface RpmFacet { rpm: number; label: string; seoLabel: string; subject: string; blurb: string }
 export const RPM_FACETS: Record<string, RpmFacet> = {
-  '1500-rpm': { rpm: 1500, label: '1500 RPM', blurb: '1,500 rpm — the standard 4-pole speed for 50 Hz power' },
-  '1800-rpm': { rpm: 1800, label: '1800 RPM', blurb: '1,800 rpm — the standard 4-pole speed for 60 Hz power' },
-  '1000-rpm': { rpm: 1000, label: '1000 RPM', blurb: '1,000 rpm — low-speed running for long life and continuous duty' },
+  '1500-rpm': {
+    rpm: 1500,
+    label: '1500 RPM',
+    seoLabel: '1500 RPM / 50 Hz Generator Engines',
+    subject: '1500 RPM 50 Hz generator engines',
+    blurb: '1,500 rpm is the standard 4-pole generator speed for 50 Hz power systems',
+  },
+  '1800-rpm': {
+    rpm: 1800,
+    label: '1800 RPM',
+    seoLabel: '1800 RPM / 60 Hz Generator Engines',
+    subject: '1800 RPM 60 Hz generator engines',
+    blurb: '1,800 rpm is the standard 4-pole generator speed for 60 Hz power systems',
+  },
+  '1000-rpm': {
+    rpm: 1000,
+    label: '1000 RPM',
+    seoLabel: '1000 RPM Low-Speed Generator Engines',
+    subject: '1000 RPM low-speed generator engines',
+    blurb: '1,000 rpm is used by selected low-speed engines for long-life continuous-duty generator sets',
+  },
 }
