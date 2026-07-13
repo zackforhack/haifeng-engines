@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getAllGuides, getGuideBySlug } from '@/lib/guides'
+import { getAllGuides, getGuideBySlug, getRelatedGuides } from '@/lib/guides'
 import { GeneratorSizingCalculator } from '@/components/GeneratorSizingCalculator'
 
 const BASE = 'https://engines.haifengmachinery.com'
@@ -35,19 +35,43 @@ export default async function GuidePage({ params }: Props) {
   const { slug } = await params
   const g = getGuideBySlug(slug)
   if (!g) notFound()
+  const relatedGuides = getRelatedGuides(slug)
 
   const jsonLd = [
     {
       '@context': 'https://schema.org',
       '@type': 'Article',
+      '@id': `${BASE}/guides/${slug}#article`,
       headline: g.title,
       description: g.description,
+      image: g.hero ? `${BASE}${g.hero}` : `${BASE}/guides/${slug}/opengraph-image`,
       datePublished: g.updated,
       dateModified: g.updated,
+      articleSection: g.cluster,
+      keywords: g.keyword,
       author: { '@type': 'Organization', name: 'Haifeng Machinery', url: 'https://www.haifengmachinery.com' },
       publisher: { '@id': `${BASE}/#org` },
-      mainEntityOfPage: `${BASE}/guides/${slug}`,
+      isPartOf: { '@id': `${BASE}/#website` },
+      about: [
+        { '@type': 'Thing', name: 'Generator engines' },
+        { '@type': 'Thing', name: 'Diesel and gas generator sets' },
+        { '@type': 'Thing', name: g.cluster },
+      ],
+      mainEntityOfPage: { '@type': 'WebPage', '@id': `${BASE}/guides/${slug}` },
     },
+    ...(relatedGuides.length
+      ? [{
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: `Related guides for ${g.title}`,
+          itemListElement: relatedGuides.map((guide, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: guide.title,
+            url: `${BASE}/guides/${guide.slug}`,
+          })),
+        }]
+      : []),
     {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -95,6 +119,24 @@ export default async function GuidePage({ params }: Props) {
           })()
         ) : (
           <div className="guide-content" dangerouslySetInnerHTML={{ __html: g.html }} />
+        )}
+
+        {relatedGuides.length > 0 && (
+          <section className="mt-12 border-t border-gray-200 pt-8">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Related generator guides</h2>
+            <div className="grid gap-3 sm:grid-cols-3">
+              {relatedGuides.map((guide) => (
+                <Link
+                  key={guide.slug}
+                  href={`/guides/${guide.slug}`}
+                  className="rounded-lg border border-gray-200 bg-white p-4 hover:border-blue-300 hover:bg-blue-50 transition-colors"
+                >
+                  <h3 className="text-sm font-semibold text-gray-900 mb-2">{guide.title}</h3>
+                  <p className="text-xs text-gray-500 leading-relaxed line-clamp-3">{guide.description}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
         )}
 
         <div className="mt-12 bg-blue-50 border border-blue-100 rounded-xl p-6 flex flex-wrap items-center justify-between gap-4">

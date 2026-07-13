@@ -55,6 +55,24 @@ export function getAllGuides(): GuideMeta[] {
     .sort((a, b) => a.cluster.localeCompare(b.cluster) || a.order - b.order)
 }
 
+export function getRelatedGuides(slug: string, limit = 3): GuideMeta[] {
+  const guides = getAllGuides()
+  const current = guides.find((g) => g.slug === slug)
+  if (!current) return []
+
+  const sameCluster = guides.filter((g) => g.slug !== slug && g.cluster === current.cluster)
+  const coreGuides = [
+    'how-to-choose-a-generator-engine',
+    'how-to-size-a-generator',
+    'kva-vs-kw',
+    'alternator-voltage-and-frequency',
+  ]
+    .map((coreSlug) => guides.find((g) => g.slug === coreSlug))
+    .filter((g): g is GuideMeta => !!g && g.slug !== slug && !sameCluster.some((s) => s.slug === g.slug))
+
+  return [...sameCluster, ...coreGuides].slice(0, limit)
+}
+
 export function getGuideBySlug(slug: string): Guide | null {
   const file = readFiles().find((f) => f.slug === slug)
   if (!file) return null
