@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getAlternatorBySlug } from '@/lib/alternators'
+import { quickWinAlternatorSeo, type QuickWinPageSeo } from '@/lib/quick-win-seo'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -11,15 +13,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const a = await getAlternatorBySlug(slug)
   if (!a) return {}
+  const quickWin = quickWinAlternatorSeo(slug)
 
-  const title = `${a.brand} ${a.model} Generator Alternator Specs`
+  const title = quickWin?.title ?? `${a.brand} ${a.model} Generator Alternator Specs`
   const bits = [a.kva != null ? `${a.kva} kVA` : '', a.poles ? `${a.poles}-pole` : '', a.series ? `${a.series} series` : '']
     .filter(Boolean).join(', ')
-  const description = `Specifications, generator-set context, FAQ, and official data sheet for the ${a.brand} ${a.model} generator alternator${bits ? ` — ${bits}` : ''}.`
+  const description = quickWin?.description ?? `Specifications, generator-set context, FAQ, and official data sheet for the ${a.brand} ${a.model} generator alternator${bits ? ` — ${bits}` : ''}.`
 
   return {
     title,
     description,
+    keywords: quickWin?.aliases,
     openGraph: { title, description, type: 'article' },
     alternates: { canonical: `/alternators/${slug}` },
   }
@@ -42,16 +46,56 @@ function alternatorAliases(model: string): string[] {
   return [...new Set([compactLower, compact, spaced, model.toLowerCase()].filter((v) => v && v !== model))].slice(0, 4)
 }
 
-function AlternatorIntro({ a }: { a: NonNullable<Awaited<ReturnType<typeof getAlternatorBySlug>>> }) {
-  const aliases = alternatorAliases(a.model)
+function uniqueAliases(aliases: string[]): string[] {
+  const seen = new Set<string>()
+  const out: string[] = []
+  for (const alias of aliases) {
+    const cleaned = alias.trim()
+    const key = cleaned.toLowerCase()
+    if (!cleaned || cleaned.length < 4 || seen.has(key)) continue
+    seen.add(key)
+    out.push(cleaned)
+  }
+  return out.slice(0, 10)
+}
+
+function SmartLink({
+  href,
+  className,
+  children,
+}: {
+  href: string
+  className: string
+  children: ReactNode
+}) {
+  if (/^https?:\/\//.test(href)) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    )
+  }
+  return <Link href={href} className={className}>{children}</Link>
+}
+
+function AlternatorIntro({
+  a,
+  quickWin,
+}: {
+  a: NonNullable<Awaited<ReturnType<typeof getAlternatorBySlug>>>
+  quickWin: QuickWinPageSeo | null
+}) {
+  const aliases = uniqueAliases([...(quickWin?.aliases ?? []), ...alternatorAliases(a.model)])
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-6">
       <h2 className="text-lg font-semibold text-gray-900 mb-3">{a.brand} {a.model} generator-set use</h2>
       <p className="text-sm text-gray-600 leading-relaxed">
-        The {a.brand} {a.model} is a generator alternator used to convert engine shaft power into electrical output
-        for diesel and gas generator sets. This page summarizes the searchable model identity, nominal output,
-        pole count, family, and data-sheet link so buyers can match the alternator with an engine, voltage,
-        controller, enclosure, and duty rating.
+        {quickWin?.intro ?? (
+          <>The {a.brand} {a.model} is a generator alternator used to convert engine shaft power into electrical output
+          for diesel and gas generator sets. This page summarizes the searchable model identity, nominal output,
+          pole count, family, and data-sheet link so buyers can match the alternator with an engine, voltage,
+          controller, enclosure, and duty rating.</>
+        )}
       </p>
       {a.kva != null && (
         <p className="mt-3 text-sm text-gray-600">
@@ -68,6 +112,36 @@ function AlternatorIntro({ a }: { a: NonNullable<Awaited<ReturnType<typeof getAl
                 {alias}
               </span>
             ))}
+          </div>
+        </div>
+      )}
+      {quickWin?.links.length ? (
+        <div className="mt-5">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Helpful next pages</p>
+          <div className="flex flex-wrap gap-2 text-sm">
+            {quickWin.links.map((link) => (
+              <SmartLink
+                key={link.href}
+                href={link.href}
+                className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200"
+              >
+                {link.label}
+              </SmartLink>
+            ))}
+          </div>
+        </div>
+      ) : null}
+      {quickWin && (
+        <div className="mt-5 rounded-lg border border-blue-100 bg-blue-50 p-4">
+          <h3 className="text-sm font-semibold text-gray-900 mb-1">{quickWin.cta.title}</h3>
+          <p className="text-sm text-gray-600 leading-relaxed mb-3">{quickWin.cta.body}</p>
+          <div className="flex flex-wrap gap-2 text-sm">
+            <SmartLink href={quickWin.cta.primaryHref} className="rounded-lg bg-blue-600 text-white px-4 py-2 font-semibold hover:bg-blue-700">
+              {quickWin.cta.primaryLabel} ↗
+            </SmartLink>
+            <SmartLink href={quickWin.cta.secondaryHref} className="rounded-lg border border-blue-200 bg-white px-4 py-2 font-medium text-blue-600 hover:bg-blue-100">
+              {quickWin.cta.secondaryLabel}
+            </SmartLink>
           </div>
         </div>
       )}
@@ -110,6 +184,7 @@ export default async function AlternatorDetailPage({ params }: Props) {
   const { slug } = await params
   const a = await getAlternatorBySlug(slug)
   if (!a) notFound()
+  const quickWin = quickWinAlternatorSeo(slug)
 
   const base = 'https://engines.haifengmachinery.com'
   const productSchema = {
@@ -125,7 +200,7 @@ export default async function AlternatorDetailPage({ params }: Props) {
     url: `${base}/alternators/${slug}`,
     brand: { '@type': 'Brand', name: a.brand },
     manufacturer: { '@type': 'Organization', name: a.brand },
-    description: `${a.brand} ${a.model} generator alternator specifications`,
+    description: quickWin?.intro ?? `${a.brand} ${a.model} generator alternator specifications`,
     ...(a.kva != null && {
       additionalProperty: [{ '@type': 'PropertyValue', name: 'Nominal Prime Output', value: `${a.kva} kVA` }],
     }),
@@ -184,7 +259,7 @@ export default async function AlternatorDetailPage({ params }: Props) {
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-1">{a.brand}</p>
-              <h1 className="text-3xl font-bold text-gray-900">{a.brand} {a.model}</h1>
+              <h1 className="text-3xl font-bold text-gray-900">{quickWin?.h1 ?? `${a.brand} ${a.model}`}</h1>
               {a.series && <p className="text-gray-500 mt-1">{a.series} series</p>}
             </div>
             <span className={`px-2.5 py-1 rounded-full text-xs font-semibold capitalize ${
@@ -204,7 +279,7 @@ export default async function AlternatorDetailPage({ params }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Left column */}
           <div className="lg:col-span-2 space-y-6">
-            <AlternatorIntro a={a} />
+            <AlternatorIntro a={a} quickWin={quickWin} />
 
             <div className="bg-white rounded-xl border border-gray-200 p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4">Specifications</h2>

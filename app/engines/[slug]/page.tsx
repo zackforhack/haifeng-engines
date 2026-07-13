@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getAllEngines, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/lib/engines'
@@ -9,6 +10,7 @@ import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, 
 import { competitorsFor, pairSlug } from '@/lib/compare'
 import { buildEngineFaqs } from '@/lib/engine-faq'
 import { brandSlug } from '@/lib/seo'
+import { quickWinEngineSeo, type QuickWinPageSeo } from '@/lib/quick-win-seo'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -21,9 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!engine) return {}
 
   const kva = displayKva(headlinePower(engine))
-  const title = `${engine.brand} ${engine.model} Generator Engine Specs${kva ? ` – ${kva.toLocaleString()} kVA` : ''}`
-  const description = engine.description ?? buildIntro(engine)
-  const aliases = modelAliases(engine)
+  const quickWin = quickWinEngineSeo(slug)
+  const title = quickWin?.title ?? `${engine.brand} ${engine.model} Generator Engine Specs${kva ? ` – ${kva.toLocaleString()} kVA` : ''}`
+  const description = quickWin?.description ?? engine.description ?? buildIntro(engine)
+  const aliases = uniqueAliases([...(quickWin?.aliases ?? []), ...modelAliases(engine)])
 
   return {
     title,
@@ -248,20 +251,54 @@ function modelAliases(engine: Engine): string[] {
   return [...aliases].filter((a) => a.length >= 4).slice(0, 5)
 }
 
+function uniqueAliases(aliases: string[]): string[] {
+  const seen = new Set<string>()
+  const out: string[] = []
+  for (const alias of aliases) {
+    const cleaned = alias.trim()
+    const key = cleaned.toLowerCase()
+    if (!cleaned || cleaned.length < 4 || seen.has(key)) continue
+    seen.add(key)
+    out.push(cleaned)
+  }
+  return out.slice(0, 10)
+}
+
+function SmartLink({
+  href,
+  className,
+  children,
+}: {
+  href: string
+  className: string
+  children: ReactNode
+}) {
+  if (/^https?:\/\//.test(href)) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    )
+  }
+  return <Link href={href} className={className}>{children}</Link>
+}
+
 function EngineBuyerContext({
   engine,
   productPackage,
   competitors,
+  quickWin,
 }: {
   engine: Engine
   productPackage: { href: string; label: string }
   competitors: Engine[]
+  quickWin: QuickWinPageSeo | null
 }) {
   const hp = headlinePower(engine)
   const kva = displayKva(hp)
   const out = displayOutput(hp)
   const { has50, has60 } = ratedFrequencies(engine)
-  const aliases = modelAliases(engine)
+  const aliases = uniqueAliases([...(quickWin?.aliases ?? []), ...modelAliases(engine)])
   const ratingBits = [
     kva ? `${kva.toLocaleString()} kVA` : null,
     out ? `${out.value.toLocaleString()} ${out.unit}` : null,
@@ -276,10 +313,12 @@ function EngineBuyerContext({
         {engine.brand} {engine.model} generator set context
       </h2>
       <p className="text-sm text-gray-600 leading-relaxed">
-        The {engine.brand} {engine.model} is listed here as a {fuel} generator-drive engine for {frequencyText}
-        {ratingBits.length ? `, with a headline ${ratingBits.join(' / ')}` : ''}. Use this page to compare the published
-        engine output, electrical kWe/kVA ratings, emissions level, datasheet availability, and neighboring models before
-        specifying an alternator, controller, enclosure, voltage, and compliance package.
+        {quickWin?.intro ?? (
+          <>The {engine.brand} {engine.model} is listed here as a {fuel} generator-drive engine for {frequencyText}
+          {ratingBits.length ? `, with a headline ${ratingBits.join(' / ')}` : ''}. Use this page to compare the published
+          engine output, electrical kWe/kVA ratings, emissions level, datasheet availability, and neighboring models before
+          specifying an alternator, controller, enclosure, voltage, and compliance package.</>
+        )}
       </p>
 
       {aliases.length > 0 && (
@@ -308,6 +347,38 @@ function EngineBuyerContext({
           Haifeng {productPackage.label}
         </a>
       </div>
+
+      {quickWin?.links.length ? (
+        <div className="mt-5">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Helpful next pages</p>
+          <div className="flex flex-wrap gap-2 text-sm">
+            {quickWin.links.map((link) => (
+              <SmartLink
+                key={link.href}
+                href={link.href}
+                className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200"
+              >
+                {link.label}
+              </SmartLink>
+            ))}
+          </div>
+        </div>
+      ) : null}
+
+      {quickWin && (
+        <div className="mt-5 rounded-lg border border-blue-100 bg-blue-50 p-4">
+          <h3 className="text-sm font-semibold text-gray-900 mb-1">{quickWin.cta.title}</h3>
+          <p className="text-sm text-gray-600 leading-relaxed mb-3">{quickWin.cta.body}</p>
+          <div className="flex flex-wrap gap-2 text-sm">
+            <SmartLink href={quickWin.cta.primaryHref} className="rounded-lg bg-blue-600 text-white px-4 py-2 font-semibold hover:bg-blue-700">
+              {quickWin.cta.primaryLabel} ↗
+            </SmartLink>
+            <SmartLink href={quickWin.cta.secondaryHref} className="rounded-lg border border-blue-200 bg-white px-4 py-2 font-medium text-blue-600 hover:bg-blue-100">
+              {quickWin.cta.secondaryLabel}
+            </SmartLink>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
@@ -352,7 +423,8 @@ export default async function EngineDetailPage({ params }: Props) {
 
   const related = await getRelatedEngines(engine)
   const competitors = await competitorsFor(engine, 4)
-  const intro = engine.description ?? buildIntro(engine)
+  const quickWin = quickWinEngineSeo(slug)
+  const intro = quickWin?.intro ?? engine.description ?? buildIntro(engine)
   const base = 'https://engines.haifengmachinery.com'
 
   // Contextual link to the matching Haifeng Machinery genset product line (gas vs diesel, and
@@ -488,7 +560,7 @@ export default async function EngineDetailPage({ params }: Props) {
             <div>
               <BrandLogo brand={engine.brand} className="mb-3" />
               <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-1">{engine.brand}</p>
-              <h1 className="text-3xl font-bold text-gray-900">{engine.brand} {engine.model}</h1>
+              <h1 className="text-3xl font-bold text-gray-900">{quickWin?.h1 ?? `${engine.brand} ${engine.model}`}</h1>
               {engine.series && <p className="text-gray-500 mt-1">{engine.series}</p>}
             </div>
             <StatusBadge status={engine.status} />
@@ -526,7 +598,7 @@ export default async function EngineDetailPage({ params }: Props) {
             {/* Power Ratings Table */}
             <PowerRatingsTable engine={engine} />
 
-            <EngineBuyerContext engine={engine} productPackage={productPackage} competitors={competitors} />
+            <EngineBuyerContext engine={engine} productPackage={productPackage} competitors={competitors} quickWin={quickWin} />
 
             {/* General Specs */}
             <div className="bg-white rounded-xl border border-gray-200 p-6">
