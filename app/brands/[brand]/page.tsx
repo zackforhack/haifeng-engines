@@ -8,6 +8,7 @@ import { HubContent } from '@/components/HubContent'
 import { buildHubOverview, computeHubStats, engineKwe, hubItemListElements } from '@/lib/hub-stats'
 import { brandSlug, limitedEngines, resolveBrandSlug, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
 import { PRIORITY_BRAND_HUBS, PRIORITY_MODEL_SPECS } from '@/lib/seo-opportunities'
+import { brandHubProfile, type BrandHubProfile } from '@/lib/brand-hub-seo'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -30,7 +31,8 @@ function brandMetaTitle(name: string, stats: ReturnType<typeof computeHubStats>)
   return `${name} Generators & ${fuel} Engine Specs`
 }
 
-function brandApplications(name: string, stats: ReturnType<typeof computeHubStats>): string[] {
+function brandApplications(name: string, stats: ReturnType<typeof computeHubStats>, profile?: BrandHubProfile | null): string[] {
+  if (profile) return profile.applications
   const apps = ['standby generator sets', 'prime-power generator packages', 'industrial power modules']
   if (stats.hasGas) apps.push('gas generator sets and CHP projects')
   if (stats.hasDiesel) apps.push('diesel standby and emergency power')
@@ -39,11 +41,12 @@ function brandApplications(name: string, stats: ReturnType<typeof computeHubStat
   return [...new Set(apps)].map((app) => `${name} ${app}`)
 }
 
-function brandSearchPhrases(name: string, stats: ReturnType<typeof computeHubStats>): string[] {
+function brandSearchPhrases(name: string, stats: ReturnType<typeof computeHubStats>, profile?: BrandHubProfile | null): string[] {
   const phrases = [`${name} generator`, `${name} generators`, `${name} generator engines`]
   if (stats.hasDiesel) phrases.push(`${name} diesel generators`)
   if (stats.hasGas) phrases.push(`${name} gas engines`)
-  return phrases
+  if (profile) phrases.push(...profile.commonSearches)
+  return [...new Set(phrases)]
 }
 
 function relatedBrandHubs(name: string, brands: string[]) {
@@ -65,31 +68,58 @@ function BrandBuyerGuide({
   engines,
   stats,
   brands,
+  profile,
 }: {
   name: string
   engines: Engine[]
   stats: ReturnType<typeof computeHubStats>
   brands: string[]
+  profile: BrandHubProfile | null
 }) {
-  const ranked = [...engines]
+  const featured = profile?.featuredModels.length
+    ? profile.featuredModels
+        .map((slug) => engines.find((engine) => engine.slug === slug))
+        .filter((engine): engine is Engine => !!engine)
+    : []
+  const fallbackRanked = [...engines]
     .map((engine) => ({ engine, kwe: engineKwe(engine) }))
     .sort((a, b) => (b.kwe ?? 0) - (a.kwe ?? 0))
+    .map(({ engine }) => engine)
+  const ranked = (featured.length ? featured : fallbackRanked)
+    .map((engine) => ({ engine, kwe: engineKwe(engine) }))
     .slice(0, 8)
-  const apps = brandApplications(name, stats).slice(0, 6)
-  const searches = brandSearchPhrases(name, stats)
+  const apps = brandApplications(name, stats, profile).slice(0, 6)
+  const searches = brandSearchPhrases(name, stats, profile)
   const relatedBrands = relatedBrandHubs(name, brands)
   const prioritySpecs = prioritySpecsForBrand(name)
 
   return (
     <section className="mb-10 grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div className="lg:col-span-2 bg-white rounded-xl border border-gray-200 p-6">
-        <h2 className="text-lg font-semibold text-gray-900 mb-3">{name} generator engine selection guide</h2>
+        <h2 className="text-lg font-semibold text-gray-900 mb-3">
+          {profile ? `How to choose ${name} for a generator set` : `${name} generator engine selection guide`}
+        </h2>
         <p className="text-sm text-gray-600 leading-relaxed mb-4">
-          Use this {name} hub to shortlist generator engines by electrical output, fuel type, emissions standard,
-          datasheet coverage, and 50 Hz or 60 Hz rating. For a complete generator set, the engine choice should be
-          checked together with alternator sizing, controller features, enclosure layout, voltage, cooling, exhaust,
-          fuel system, and local compliance requirements.
+          {profile?.overview ?? (
+            <>Use this {name} hub to shortlist generator engines by electrical output, fuel type, emissions standard,
+            datasheet coverage, and 50 Hz or 60 Hz rating. For a complete generator set, the engine choice should be
+            checked together with alternator sizing, controller features, enclosure layout, voltage, cooling, exhaust,
+            fuel system, and local compliance requirements.</>
+          )}
         </p>
+        {profile && (
+          <div className="mb-5 rounded-lg border border-blue-100 bg-blue-50 p-4">
+            <h3 className="text-sm font-semibold text-gray-900 mb-2">Selection checklist</h3>
+            <ul className="space-y-2 text-sm text-gray-600">
+              {profile.howToChoose.map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span className="text-blue-500">-</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -119,6 +149,23 @@ function BrandBuyerGuide({
       </div>
 
       <div className="space-y-4">
+        {profile?.links.length ? (
+          <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <h2 className="text-lg font-semibold text-gray-900 mb-3">Related resources</h2>
+            <div className="space-y-2">
+              {profile.links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="block text-sm font-medium text-blue-600 hover:underline"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        ) : null}
+
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <h2 className="text-lg font-semibold text-gray-900 mb-3">Common applications</h2>
           <ul className="space-y-2 text-sm text-gray-600">
@@ -178,19 +225,30 @@ function BrandBuyerGuide({
         )}
 
         <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
-          <p className="font-semibold text-gray-900 mb-1">Need a {name} generator package?</p>
+          <p className="font-semibold text-gray-900 mb-1">{profile?.cta.title ?? `Need a ${name} generator package?`}</p>
           <p className="text-sm text-gray-600 mb-3">
-            Haifeng Machinery can help select the engine, alternator, controller, enclosure, voltage,
-            cooling package, and compliance path for a complete generator set.
+            {profile?.cta.body ?? 'Haifeng Machinery can help select the engine, alternator, controller, enclosure, voltage, cooling package, and compliance path for a complete generator set.'}
           </p>
-          <a
-            href="https://www.haifengmachinery.com/contact-us/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block text-center bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-          >
-            Request generator support ↗
-          </a>
+          <div className="space-y-2">
+            <a
+              href={profile?.cta.primaryHref ?? 'https://www.haifengmachinery.com/contact-us/'}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              {profile?.cta.primaryLabel ?? 'Request generator support'} ↗
+            </a>
+            {profile && (
+              <a
+                href={profile.cta.secondaryHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center bg-white border border-blue-200 text-blue-600 text-sm font-semibold px-4 py-2 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                {profile.cta.secondaryLabel} ↗
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </section>
@@ -205,10 +263,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = brandSlug(name)
   const engines = resolveBrandSlug(decoded, brands) ? await getEnginesByBrand(name) : []
   const stats = computeHubStats(engines)
+  const profile = brandHubProfile(slug)
   const description = engines.length
-    ? brandMetaDescription(name, engines)
+    ? profile?.description ?? brandMetaDescription(name, engines)
     : `Browse all ${name} diesel and gas generator engine specifications, datasheets, and manuals for electrical power generation.`
-  const title = engines.length ? brandMetaTitle(name, stats) : `${name} Generator Engine Specs`
+  const title = engines.length ? profile?.title ?? brandMetaTitle(name, stats) : `${name} Generator Engine Specs`
 
   return {
     title,
@@ -253,16 +312,17 @@ export default async function BrandPage({ params }: Props) {
   const name = engines[0].brand
   const subject = `${name} generator engines`
   const stats = computeHubStats(engines)
-  const overview = buildHubOverview(subject, stats)
-  const searchPhrases = brandSearchPhrases(name, stats)
+  const profile = brandHubProfile(canonicalSlug)
+  const overview = profile?.overview ?? buildHubOverview(subject, stats)
+  const searchPhrases = brandSearchPhrases(name, stats, profile)
   const structuredData = [
     {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
-      name: `${name} Generator Engines`,
+      name: profile?.h1 ?? `${name} Generator Engines`,
       alternateName: searchPhrases,
       url: `${base}/brands/${canonicalSlug}`,
-      description: brandMetaDescription(name, engines),
+      description: profile?.description ?? brandMetaDescription(name, engines),
       about: searchPhrases.map((phrase) => ({ '@type': 'Thing', name: phrase })),
       mainEntity: {
         '@type': 'ItemList',
@@ -293,11 +353,11 @@ export default async function BrandPage({ params }: Props) {
       </nav>
 
       <BrandLogo brand={engines[0].brand} size="lg" className="mb-3" />
-      <h1 className="text-2xl font-bold text-gray-900 mb-1">{engines[0].brand} Generator Engines</h1>
+      <h1 className="text-2xl font-bold text-gray-900 mb-1">{profile?.h1 ?? `${engines[0].brand} Generator Engines`}</h1>
       <p className="text-gray-500 mb-4">{engines.length} engines in the database</p>
       <p className="text-gray-600 leading-relaxed max-w-3xl mb-8">{overview}</p>
 
-      <BrandBuyerGuide name={name} engines={engines} stats={stats} brands={brands} />
+      <BrandBuyerGuide name={name} engines={engines} stats={stats} brands={brands} profile={profile} />
 
       {activeEngines.length > 0 && (
         <section className="mb-10">
