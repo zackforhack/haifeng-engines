@@ -436,7 +436,7 @@ export default async function EngineDetailPage({ params }: Props) {
     ? { href: 'https://www.haifengmachinery.com/gas-power-package-50hz-60hz/', label: 'gas generator sets' }
     : hasEmissions
       ? { href: 'https://www.haifengmachinery.com/diesel-power-package-regulated/', label: 'diesel generator sets' }
-      : { href: 'https://www.haifengmachinery.com/diesel-power-package-non-regulated/', label: 'diesel generator sets' }
+      : { href: 'https://www.haifengmachinery.com/product-offerings/', label: 'diesel generator sets' }
 
   const hp = headlinePower(engine)
   const kva = displayKva(hp)

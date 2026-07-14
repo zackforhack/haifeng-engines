@@ -24,7 +24,7 @@ export interface QuickWinPageSeo {
 
 const CONTACT_URL = 'https://www.haifengmachinery.com/contact-us/'
 const DIESEL_REGULATED_URL = 'https://www.haifengmachinery.com/diesel-power-package-regulated/'
-const DIESEL_NON_REGULATED_URL = 'https://www.haifengmachinery.com/diesel-power-package-non-regulated/'
+const DIESEL_NON_REGULATED_URL = 'https://www.haifengmachinery.com/product-offerings/'
 const GAS_PACKAGE_URL = 'https://www.haifengmachinery.com/gas-power-package-50hz-60hz/'
 
 export const QUICK_WIN_ENGINE_SEO: Record<string, QuickWinPageSeo> = {

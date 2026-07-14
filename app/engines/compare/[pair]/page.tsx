@@ -88,7 +88,7 @@ function packageLinkFor(a: Engine, b: Engine): { href: string; label: string } {
   const regulated = [a.emissions_standard, b.emissions_standard].some((standard) => standard && !/unregulated/i.test(standard))
   return regulated
     ? { href: 'https://www.haifengmachinery.com/diesel-power-package-regulated/', label: 'regulated diesel generator packages' }
-    : { href: 'https://www.haifengmachinery.com/diesel-power-package-non-regulated/', label: 'diesel generator packages' }
+    : { href: 'https://www.haifengmachinery.com/product-offerings/', label: 'diesel generator packages' }
 }
 
 function ComparisonBuyerGuide({ a, b }: { a: Engine; b: Engine }) {
