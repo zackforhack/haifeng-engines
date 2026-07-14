@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cfg = FUELS[fuel as FuelKey]
   if (!cfg) return {}
   return {
-    title: cfg.title,
-    description: `${cfg.intro} Specifications, power ratings and datasheets for ${cfg.label.toLowerCase()} generator engines by brand and model.`,
+    title: { absolute: cfg.title },
+    description: `${cfg.label} generator engines with specs, power ratings, emissions context and datasheets by brand and model.`,
     alternates: { canonical: `/engines/fuel/${fuel}` },
   }
 }

@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cfg = RPM_FACETS[speed]
   if (!cfg) return {}
   return {
-    title: cfg.seoLabel,
-    description: `Browse ${cfg.subject}: diesel and gas generator-set engines rated at ${cfg.label}. ${cfg.blurb}. Compare specifications, power ratings and datasheets by brand and model.`,
+    title: { absolute: cfg.seoLabel },
+    description: `Browse ${cfg.subject} rated at ${cfg.label}: diesel and gas specs, power ratings, emissions context and datasheets by model.`,
     alternates: { canonical: `/engines/rpm/${speed}` },
   }
 }

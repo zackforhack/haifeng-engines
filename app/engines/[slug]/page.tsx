@@ -11,6 +11,7 @@ import { competitorsFor, pairSlug } from '@/lib/compare'
 import { buildEngineFaqs } from '@/lib/engine-faq'
 import { brandSlug } from '@/lib/seo'
 import { quickWinEngineSeo, type QuickWinPageSeo } from '@/lib/quick-win-seo'
+import { engineMetadataDescription, engineMetadataTitle } from '@/lib/metadata-lengths'
 import type { Engine } from '@/lib/types'
 
 interface Props {
@@ -22,14 +23,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const engine = await getEngineBySlug(slug)
   if (!engine) return {}
 
-  const kva = displayKva(headlinePower(engine))
   const quickWin = quickWinEngineSeo(slug)
-  const title = quickWin?.title ?? `${engine.brand} ${engine.model} Generator Engine Specs${kva ? ` – ${kva.toLocaleString()} kVA` : ''}`
-  const description = quickWin?.description ?? engine.description ?? buildIntro(engine)
+  const title = engineMetadataTitle(engine)
+  const description = engineMetadataDescription(engine, quickWin?.description ?? engine.description ?? buildIntro(engine))
   const aliases = uniqueAliases([...(quickWin?.aliases ?? []), ...modelAliases(engine)])
 
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords: [
       `${engine.brand} ${engine.model}`,

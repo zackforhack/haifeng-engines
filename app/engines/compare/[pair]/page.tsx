@@ -6,6 +6,7 @@ import {
   getEngineForCompare, parsePair, pairSlug, canonicalPair, competitorsFor, getComparisonPairs, fuelCategory,
 } from '@/lib/compare'
 import { headlinePower, displayKva, ratedSpeedLabel, compactConfig } from '@/lib/engine-display'
+import { compareMetadataDescription, compareMetadataTitle } from '@/lib/metadata-lengths'
 
 const BASE = 'https://engines.haifengmachinery.com'
 
@@ -28,9 +29,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const [a, b] = await Promise.all([getEngineForCompare(p.a), getEngineForCompare(p.b)])
   if (!a || !b) return {}
   const canonical = `/engines/compare/${pairSlug(a.slug, b.slug)}`
+  const title = compareMetadataTitle(a, b)
+  const description = compareMetadataDescription(a, b)
   return {
-    title: `${label(a)} vs ${label(b)} — Generator Engine Comparison`,
-    description: `Compare the ${label(a)} and ${label(b)} generator engines side by side: power ratings, displacement, configuration, cylinders, emissions and weight.`,
+    title: { absolute: title },
+    description,
     alternates: { canonical },
   }
 }

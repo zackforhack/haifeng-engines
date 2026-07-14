@@ -17,9 +17,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { standard } = await params
   const cfg = EMISSIONS_FACETS[standard]
   if (!cfg) return {}
+  const title = `${cfg.label} Generator Engines`
   return {
-    title: `${cfg.label} Generator Engines`,
-    description: `Generator engines certified to ${cfg.label} (${cfg.blurb}) — specifications, power ratings and datasheets by brand and model.`,
+    title: { absolute: title },
+    description: `${cfg.label} generator engines with diesel and gas specs, power ratings, emissions context and datasheets by brand and model.`,
     alternates: { canonical: `/engines/emissions/${standard}` },
   }
 }

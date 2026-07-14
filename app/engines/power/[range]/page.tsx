@@ -28,9 +28,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { range } = await params
   const cfg = RANGES[range as RangeKey]
   if (!cfg) return {}
+  const title = `${cfg.label} Generator Engines`
   return {
-    title: `${cfg.label} Generator Engines`,
-    description: `Diesel and gas generator engines rated ${cfg.label} — specifications, prime and standby power, and datasheets by brand and model.`,
+    title: { absolute: title },
+    description: `Diesel and gas generator engines rated ${cfg.label}, with specs, prime and standby power ratings and datasheets by brand and model.`,
     alternates: { canonical: `/engines/power/${range}` },
   }
 }

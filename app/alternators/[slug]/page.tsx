@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getAlternatorBySlug } from '@/lib/alternators'
 import { quickWinAlternatorSeo, type QuickWinPageSeo } from '@/lib/quick-win-seo'
+import { alternatorMetadataDescription, alternatorMetadataTitle } from '@/lib/metadata-lengths'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -15,13 +16,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!a) return {}
   const quickWin = quickWinAlternatorSeo(slug)
 
-  const title = quickWin?.title ?? `${a.brand} ${a.model} Generator Alternator Specs`
+  const title = alternatorMetadataTitle(a)
   const bits = [a.kva != null ? `${a.kva} kVA` : '', a.poles ? `${a.poles}-pole` : '', a.series ? `${a.series} series` : '']
     .filter(Boolean).join(', ')
-  const description = quickWin?.description ?? `Specifications, generator-set context, FAQ, and official data sheet for the ${a.brand} ${a.model} generator alternator${bits ? ` — ${bits}` : ''}.`
+  const fallbackDescription = `Specifications, generator-set context, FAQ, and official data sheet for the ${a.brand} ${a.model} generator alternator${bits ? ` - ${bits}` : ''}.`
+  const description = alternatorMetadataDescription(a, quickWin?.description ?? fallbackDescription)
 
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords: quickWin?.aliases,
     openGraph: { title, description, type: 'article' },
