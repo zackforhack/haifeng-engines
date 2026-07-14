@@ -340,6 +340,24 @@ export default async function AlternatorDetailPage({ params }: Props) {
             </div>
 
             <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <p className="text-sm font-semibold text-gray-700 mb-3">Generator package paths</p>
+              <div className="space-y-2 text-sm">
+                <a href="https://www.haifengmachinery.com/product-offerings/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
+                  All product offerings ↗
+                </a>
+                <a href="https://www.haifengmachinery.com/diesel-power-package-regulated/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
+                  EPA standby diesel generators ↗
+                </a>
+                <a href="https://www.haifengmachinery.com/gas-power-package-50hz-60hz/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
+                  CNG and LPG gas generator systems ↗
+                </a>
+                <a href="https://www.haifengmachinery.com/custom-epc-power-solutions/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
+                  Custom EPC power solutions ↗
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl border border-gray-200 p-6">
               <p className="text-sm font-semibold text-gray-700 mb-3">Browse More</p>
               <div className="space-y-2 text-sm">
                 <Link href={`/alternators?brand=${encodeURIComponent(a.brand)}`}

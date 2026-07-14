@@ -41,12 +41,15 @@ function buildSelectionGuidance(subject: string, s: ReturnType<typeof computeHub
 
 function buildProjectLinks(s: ReturnType<typeof computeHubStats>): HubProjectLink[] {
   return [
+    { label: 'All product offerings', href: 'https://www.haifengmachinery.com/product-offerings/' },
     ...(s.hasDiesel
       ? [{ label: 'Diesel generator packages', href: 'https://www.haifengmachinery.com/diesel-power-package-regulated/' }]
       : []),
     ...(s.hasGas
       ? [{ label: 'Gas generator packages', href: 'https://www.haifengmachinery.com/gas-power-package-50hz-60hz/' }]
       : []),
+    { label: 'Rental and towable power', href: 'https://www.haifengmachinery.com/towable-power-package/' },
+    { label: 'Custom EPC power solutions', href: 'https://www.haifengmachinery.com/custom-epc-power-solutions/' },
     { label: 'Generator engine selection guide', href: '/guides/how-to-choose-a-generator-engine' },
     { label: 'Alternator matching guide', href: '/guides/alternator-voltage-and-frequency' },
     { label: 'Browse alternators', href: '/alternators' },
