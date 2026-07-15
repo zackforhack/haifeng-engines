@@ -7,6 +7,7 @@ import { getAllAlternators } from '@/lib/alternators'
 import { getAllGuides } from '@/lib/guides'
 import { SearchBar } from '@/components/SearchBar'
 import { CountUp } from '@/components/CountUp'
+import { CommercialPathways } from '@/components/CommercialPathways'
 import { brandSlug } from '@/lib/seo'
 import { PRIORITY_BRAND_HUBS, PRIORITY_MODEL_SPECS } from '@/lib/seo-opportunities'
 
@@ -136,6 +137,12 @@ export default async function HomePage() {
           ))}
         </div>
       </section>
+
+      <CommercialPathways
+        eyebrow="From database to Haifeng Machinery"
+        title="Use the engine shortlist to choose the right generator package route"
+        intro="After comparing engine model, output, emissions standard, datasheet availability, and alternator fit, move into the Haifeng Machinery page that matches the commercial inquiry."
+      />
 
       <section className="mb-12">
         <div className="flex items-baseline justify-between mb-3">

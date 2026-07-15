@@ -7,6 +7,7 @@ import { SearchBar } from '@/components/SearchBar'
 import { EngineFilters } from '@/components/EngineFilters'
 import { EngineTable } from '@/components/EngineTable'
 import { BrowseFacets } from '@/components/BrowseFacets'
+import { CommercialPathways } from '@/components/CommercialPathways'
 import { ENGINE_GRID_PAGE_SIZE, ENGINE_TABLE_PAGE_SIZE, hasSearchParams, noindexFollowRobots } from '@/lib/seo'
 
 // Always fetch fresh data — prevents Next.js data cache from hiding new DB rows.
@@ -139,6 +140,14 @@ export default async function EnginesPage({ searchParams }: Props) {
       <Suspense>
         <EngineFilters options={options} totalCount={total} />
       </Suspense>
+
+      {!hasFilters && (
+        <CommercialPathways
+          eyebrow="Generator package routes"
+          title="Shortlist engines here, then choose the right Haifeng package path"
+          intro="The catalog helps compare model specifications before inquiry. These commercial routes connect engine shortlists to EPA standby diesel, gas, towable, EPC, and general industrial generator package pages."
+        />
+      )}
 
       {/* View toggle */}
       {total > 0 && (
