@@ -13,6 +13,8 @@ import { ENGINE_GRID_PAGE_SIZE, ENGINE_TABLE_PAGE_SIZE, hasSearchParams, noindex
 // Always fetch fresh data — prevents Next.js data cache from hiding new DB rows.
 export const dynamic = 'force-dynamic'
 
+const FILTERED_TABLE_FULL_RESULT_LIMIT = 200
+
 interface Props {
   searchParams: Promise<{
     q?: string
@@ -62,7 +64,6 @@ export default async function EnginesPage({ searchParams }: Props) {
   )
 
   const isGrid = p.view === 'grid'
-  const pageSize = isGrid ? ENGINE_GRID_PAGE_SIZE : ENGINE_TABLE_PAGE_SIZE
   const currentPage = Math.max(1, Number(p.page) || 1)
 
   const [allEngines, options] = await Promise.all([
@@ -84,6 +85,9 @@ export default async function EnginesPage({ searchParams }: Props) {
   ])
 
   const total = allEngines.length
+  const pageSize = !isGrid && hasFilters && total > 0 && total <= FILTERED_TABLE_FULL_RESULT_LIMIT
+    ? total
+    : isGrid ? ENGINE_GRID_PAGE_SIZE : ENGINE_TABLE_PAGE_SIZE
   const totalPages = Math.max(1, Math.ceil(total / pageSize))
   const safePage = Math.min(currentPage, totalPages)
   const engines = allEngines.slice((safePage - 1) * pageSize, safePage * pageSize)
@@ -181,7 +185,14 @@ export default async function EnginesPage({ searchParams }: Props) {
           <p className="text-sm mt-1">Try adjusting your filters or search query.</p>
         </div>
       ) : !isGrid ? (
-        <EngineTable engines={engines} />
+        <>
+          <EngineTable engines={engines} />
+          {hasFilters && total > ENGINE_TABLE_PAGE_SIZE && total <= FILTERED_TABLE_FULL_RESULT_LIMIT && (
+            <p className="text-xs text-gray-400 mt-3">
+              Showing all {total.toLocaleString()} filtered engines.
+            </p>
+          )}
+        </>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {engines.map((engine) => (

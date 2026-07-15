@@ -44,6 +44,26 @@ export interface FilterOptions {
   fuelTypes: string[]
 }
 
+function normalizeEmissionComponent(value: string): string {
+  const v = value.trim().replace(/\s+/g, ' ')
+  if (/^(?:U\.S\.\s*)?EPA\s+Final\s+Tier\s+4$/i.test(v)) return 'U.S. EPA Final Tier 4'
+  if (/^(?:U\.S\.\s*)?EPA\s+Tier\s+4\s+Final$/i.test(v)) return 'U.S. EPA Final Tier 4'
+  if (/^(?:US|U\.S\.\s*EPA)?\s*Tier\s+4f$/i.test(v)) return 'U.S. EPA Final Tier 4'
+  if (/^Stage\s+V$/i.test(v)) return 'Euro Stage V'
+  return v
+}
+
+function emissionComponents(value: string): string[] {
+  return value.split(/\s*\/\s*/).map(normalizeEmissionComponent).filter(Boolean)
+}
+
+function matchesEmission(emissionsStandard: string | null | undefined, selected: string): boolean {
+  if (!emissionsStandard) return false
+  const em = normalizeEmissionComponent(selected)
+  const components = emissionComponents(emissionsStandard)
+  return components.some((part) => part === em || part.startsWith(em + ' '))
+}
+
 function representativeKwe(e: Engine): number | null {
   return (
     e.standby_power_kwe_50hz ??
@@ -108,14 +128,7 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
   // Prefix: "U.S. EPA" matches "U.S. EPA Final Tier 4" and each component of dual standards.
   // Space suffix prevents "Stage II" from falsely matching "Stage IIIA".
   if (params.emissions) {
-    const em = params.emissions
-    result = result.filter((e) => {
-      const std = e.emissions_standard
-      if (!std) return false
-      if (std === em) return true
-      // Check each slash-separated component for exact or prefix match
-      return std.split(' / ').some((p) => p === em || p.startsWith(em + ' '))
-    })
+    result = result.filter((e) => matchesEmission(e.emissions_standard, params.emissions!))
   }
 
   // Fuel category (post-fetch: "gas" spans several fuel_type strings)
@@ -178,7 +191,7 @@ export async function getFilterOptions(): Promise<FilterOptions> {
       'Euro Stage',
       ...uniq(
         rows.flatMap((r) =>
-          r.emissions_standard ? r.emissions_standard.split(' / ') : []
+          r.emissions_standard ? emissionComponents(r.emissions_standard) : []
         )
       ).filter((v) => v !== 'U.S. EPA' && v !== 'Euro Stage'),
     ],
