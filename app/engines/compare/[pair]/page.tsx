@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
-import { notFound, redirect } from 'next/navigation'
+import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
 import type { Engine } from '@/lib/types'
 import {
-  getEngineForCompare, parsePair, pairSlug, canonicalPair, competitorsFor, getComparisonPairs, fuelCategory,
+  parsePair, pairSlug, competitorsFor, getComparisonPairs, fuelCategory, resolveComparePair,
 } from '@/lib/compare'
 import { headlinePower, displayKva, ratedSpeedLabel, compactConfig } from '@/lib/engine-display'
 import { compareMetadataDescription, compareMetadataTitle } from '@/lib/metadata-lengths'
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { pair } = await params
   const p = parsePair(pair)
   if (!p) return {}
-  const [a, b] = await Promise.all([getEngineForCompare(p.a), getEngineForCompare(p.b)])
+  const { a, b } = await resolveComparePair(p.a, p.b)
   if (!a || !b) return {}
   const canonical = `/engines/compare/${pairSlug(a.slug, b.slug)}`
   const title = compareMetadataTitle(a, b)
@@ -142,11 +142,9 @@ export default async function ComparePage({ params }: Props) {
   if (!parsed) notFound()
 
   // Enforce canonical (alphabetical) ordering — redirect B-vs-A to A-vs-B.
-  const [ca, cb] = canonicalPair(parsed.a, parsed.b)
-  if (`${ca}-vs-${cb}` !== pair) redirect(`/engines/compare/${ca}-vs-${cb}`)
-
-  const [a, b] = await Promise.all([getEngineForCompare(ca), getEngineForCompare(cb)])
+  const { a, b, canonical } = await resolveComparePair(parsed.a, parsed.b)
   if (!a || !b) notFound()
+  if (canonical && canonical !== pair) permanentRedirect(`/engines/compare/${canonical}`)
 
   const intro = buildIntro(a, b)
   const rows = specRows(a, b)

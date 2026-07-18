@@ -27,6 +27,59 @@ export async function getEngineForCompare(slug: string): Promise<Engine | null> 
   return (await engineMap()).get(slug) ?? null
 }
 
+const LEGACY_COMPARE_ALIASES: Record<string, string[]> = {
+  // Older comparison links used the Perkins 2806 family shorthand. Resolve it to the
+  // closest current 2806 variant for the other side of the comparison.
+  'perkins-2806': [
+    'perkins-2806a-e18ttag6',
+    'perkins-2806a-e18ttag7',
+    'perkins-2806a-e18ttag5',
+    'perkins-2806a-e18ttag4',
+    'perkins-2806a-e18tag3',
+    'perkins-2806a-e18tag2',
+    'perkins-2806c-e18tag1a',
+    'perkins-2806j-e18tag1',
+  ],
+}
+
+function aliasCandidates(slug: string, map: Map<string, Engine>): Engine[] {
+  const explicit = LEGACY_COMPARE_ALIASES[slug]
+  if (explicit) return explicit.map((s) => map.get(s)).filter((e): e is Engine => !!e)
+
+  return [...map.values()].filter((e) => e.slug !== slug && e.slug.startsWith(slug) && e.status === 'active')
+}
+
+function chooseAlias(candidates: Engine[], reference?: Engine | null): Engine | null {
+  if (!candidates.length) return null
+  const refKwe = reference ? repKwe(reference) : null
+  const refFuel = reference ? fuelCategory(reference) : null
+
+  return candidates
+    .map((engine) => {
+      const k = repKwe(engine)
+      const fuelPenalty = refFuel && fuelCategory(engine) !== refFuel ? 10 : 0
+      const powerPenalty = refKwe && k ? Math.abs(Math.log(k / refKwe)) : 1
+      const statusPenalty = engine.status === 'active' ? 0 : 5
+      return { engine, score: fuelPenalty + powerPenalty + statusPenalty }
+    })
+    .sort((a, b) => a.score - b.score || a.engine.slug.localeCompare(b.engine.slug))[0]?.engine ?? null
+}
+
+async function resolveEngineSlug(slug: string, reference?: Engine | null): Promise<Engine | null> {
+  const map = await engineMap()
+  return map.get(slug) ?? chooseAlias(aliasCandidates(slug, map), reference)
+}
+
+export async function resolveComparePair(aSlug: string, bSlug: string): Promise<{ a: Engine | null; b: Engine | null; canonical: string | null }> {
+  let [a, b] = await Promise.all([getEngineForCompare(aSlug), getEngineForCompare(bSlug)])
+  if (!a && b) a = await resolveEngineSlug(aSlug, b)
+  if (!b && a) b = await resolveEngineSlug(bSlug, a)
+  if (!a) a = await resolveEngineSlug(aSlug, b)
+  if (!b) b = await resolveEngineSlug(bSlug, a)
+
+  return { a, b, canonical: a && b ? pairSlug(a.slug, b.slug) : null }
+}
+
 // Canonical (alphabetical) ordering so A-vs-B and B-vs-A resolve to one URL — no duplicate content.
 export function canonicalPair(a: string, b: string): [string, string] {
   return a < b ? [a, b] : [b, a]
