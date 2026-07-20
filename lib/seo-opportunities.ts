@@ -55,6 +55,14 @@ export const PRIORITY_BRAND_HUBS = [
     desc: 'JCB diesel generator engine specs for standby and prime-power packages.',
   },
   {
+    name: 'Liebherr',
+    desc: 'Liebherr diesel and gas generator engine specs for engineered industrial power projects.',
+  },
+  {
+    name: 'MTU',
+    desc: 'MTU diesel and gas generator engine specs for high-power standby, prime, and EPC packages.',
+  },
+  {
     name: 'Detroit Diesel',
     desc: 'Detroit Diesel generator engine specs for legacy and industrial power sets.',
   },

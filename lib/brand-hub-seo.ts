@@ -22,6 +22,8 @@ const CONTACT_URL = 'https://www.haifengmachinery.com/contact-us/'
 const DIESEL_REGULATED_URL = 'https://www.haifengmachinery.com/diesel-power-package-regulated/'
 const DIESEL_NON_REGULATED_URL = 'https://www.haifengmachinery.com/product-offerings/'
 const GAS_PACKAGE_URL = 'https://www.haifengmachinery.com/gas-power-package-50hz-60hz/'
+const TOWABLE_PACKAGE_URL = 'https://www.haifengmachinery.com/towable-power-package/'
+const CUSTOM_EPC_URL = 'https://www.haifengmachinery.com/custom-epc-power-solutions/'
 
 export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
   'baudouin': {
@@ -61,6 +63,9 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
       'baudouin engine datasheet',
     ],
     links: [
+      { label: 'Haifeng product offerings', href: DIESEL_NON_REGULATED_URL },
+      { label: 'EPA standby diesel packages', href: DIESEL_REGULATED_URL },
+      { label: 'Custom EPC power solutions', href: CUSTOM_EPC_URL },
       { label: 'Baudouin high-power engines', href: '/engines/power/1500-plus-kwe' },
       { label: 'Diesel generator engines', href: '/engines/fuel/diesel' },
       { label: 'Gas generator engines', href: '/engines/fuel/gas' },
@@ -95,6 +100,8 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
     featuredModels: ['jenbacher-j624', 'jenbacher-j620', 'jenbacher-j616', 'jenbacher-j612', 'jenbacher-j420'],
     commonSearches: ['jenbacher generators', 'jenbacher gas engines', 'jenbacher industrial generators', 'jenbacher generator specs'],
     links: [
+      { label: 'CNG and LPG gas generator systems', href: GAS_PACKAGE_URL },
+      { label: 'Custom EPC power solutions', href: CUSTOM_EPC_URL },
       { label: 'Gas generator engines', href: '/engines/fuel/gas' },
       { label: '1,500+ kWe engines', href: '/engines/power/1500-plus-kwe' },
       { label: 'Gas vs diesel TCO guide', href: '/guides/diesel-vs-natural-gas-total-cost-of-ownership' },
@@ -126,6 +133,8 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
     featuredModels: ['hino-p11c', 'hino-j08e', 'hino-w06e', 'hino-j05e', 'hino-w04d'],
     commonSearches: ['genset hino', 'hino generator', 'hino generator engine', 'hino diesel generator'],
     links: [
+      { label: 'Haifeng product offerings', href: DIESEL_NON_REGULATED_URL },
+      { label: 'EPA standby diesel packages', href: DIESEL_REGULATED_URL },
       { label: 'Under 100 kWe engines', href: '/engines/power/under-100-kwe' },
       { label: '100-500 kWe engines', href: '/engines/power/100-500-kwe' },
       { label: 'Diesel generator engines', href: '/engines/fuel/diesel' },
@@ -157,6 +166,8 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
     featuredModels: ['jcb-448-sv-129', 'jcb-448-ta4f-110', 'jcb-448-ta3-100', 'jcb-448-ta3-75', 'jcb-448-ta4f-75'],
     commonSearches: ['jcb generators', 'jcb generator', 'jcb diesel generators', 'jcb generator engine'],
     links: [
+      { label: 'Rental and towable power', href: TOWABLE_PACKAGE_URL },
+      { label: 'Haifeng product offerings', href: DIESEL_NON_REGULATED_URL },
       { label: 'EPA Tier 4 Final engines', href: '/engines/emissions/epa-tier-4-final' },
       { label: 'Euro Stage V engines', href: '/engines/emissions/euro-stage-v' },
       { label: 'Under 100 kWe engines', href: '/engines/power/under-100-kwe' },
@@ -168,6 +179,78 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
       primaryHref: CONTACT_URL,
       secondaryLabel: 'Regulated diesel packages',
       secondaryHref: DIESEL_REGULATED_URL,
+    },
+  },
+  'liebherr': {
+    title: 'Liebherr Generators & Engine Specs',
+    h1: 'Liebherr Generator Engines',
+    description: 'Browse Liebherr generator engine specs for diesel and gas generator applications, including model ratings, fuel type, emissions context and datasheet references.',
+    overview: 'Liebherr generator engines in this database are relevant for buyers comparing heavy-duty diesel and gas engine platforms for industrial power, project power and engineered generator packages. Use this hub to compare output, displacement, emissions tags, fuel type and datasheet coverage before selecting the full generator-set package.',
+    applications: [
+      'Industrial standby and prime-power generator packages',
+      'Containerized generator projects for remote or harsh environments',
+      'Gas generator projects where the fuel supply and operating profile are stable',
+      'Mining, construction, oil and gas, and heavy industrial power systems',
+      'Custom EPC projects requiring coordinated engine, alternator, enclosure and controls review',
+    ],
+    howToChoose: [
+      'Start with the site duty, because a Liebherr engine used for routine prime power has different package requirements from a standby unit.',
+      'Compare diesel and gas options against fuel availability, operating hours, ambient temperature and service access.',
+      'Confirm alternator voltage, cooling airflow, enclosure or container layout, and emissions documentation before treating the engine rating as final.',
+    ],
+    featuredModels: ['liebherr-d976', 'liebherr-d9508', 'liebherr-d9512', 'liebherr-g9512'],
+    commonSearches: ['liebherr generator', 'liebherr generators', 'liebherr engine', 'liebherr gas engines', 'liebherr generator engine'],
+    links: [
+      { label: 'Custom EPC power solutions', href: CUSTOM_EPC_URL },
+      { label: 'CNG and LPG gas generator systems', href: GAS_PACKAGE_URL },
+      { label: 'Haifeng product offerings', href: DIESEL_NON_REGULATED_URL },
+      { label: 'Gas generator engines', href: '/engines/fuel/gas' },
+      { label: 'Diesel generator engines', href: '/engines/fuel/diesel' },
+      { label: 'Generator paralleling guide', href: '/guides/generator-paralleling-explained' },
+    ],
+    cta: {
+      title: 'Need a Liebherr generator package review?',
+      body: 'Haifeng Machinery can help compare Liebherr diesel or gas engine options with alternator, cooling, enclosure, controls and documentation requirements for engineered generator projects.',
+      primaryLabel: 'Request Liebherr package support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Custom EPC power solutions',
+      secondaryHref: CUSTOM_EPC_URL,
+    },
+  },
+  'mtu': {
+    title: 'MTU Generators & Engine Specs',
+    h1: 'MTU Generator Engines',
+    description: 'Browse MTU generator engine specs for diesel and gas generator sets, including Series 2000 and Series 4000 model ratings, emissions context and datasheet references.',
+    overview: 'MTU generator engines in this database cover high-value diesel and gas generator applications, including Series 2000 and Series 4000 model families used in standby, prime, data center, industrial and project-power packages. Use this hub to compare model output, fuel type, emissions context and datasheet coverage before selecting the full generator system.',
+    applications: [
+      'Mission-critical standby power for data centers and commercial facilities',
+      'High-power diesel generator packages for industrial and export projects',
+      'Gas generator systems where the project favors gaseous fuel and long runtime',
+      'Parallel generator systems and custom EPC packages',
+      'Projects where service access, documentation and alternator matching must be reviewed early',
+    ],
+    howToChoose: [
+      'Start by separating Series 2000 and Series 4000 options, then compare the kWe band and fuel type against the project duty.',
+      'Check whether the project needs diesel standby, gas operation, EPA-oriented documentation or a non-regulated export-market package.',
+      'Confirm voltage, frequency, alternator frame, cooling package, controls and enclosure space before quoting a complete MTU-based generator set.',
+    ],
+    featuredModels: ['mtu-20v4000-g83', 'mtu-20v4000-g63', 'mtu-16v4000-g83', 'mtu-12v4000-g84f', 'mtu-18v2000-g85'],
+    commonSearches: ['mtu generators', 'mtu generator', 'mtu engine models', 'mtu gas engines', 'mtu 20v4000'],
+    links: [
+      { label: 'Custom EPC power solutions', href: CUSTOM_EPC_URL },
+      { label: 'EPA standby diesel packages', href: DIESEL_REGULATED_URL },
+      { label: 'CNG and LPG gas generator systems', href: GAS_PACKAGE_URL },
+      { label: '1,500+ kWe engines', href: '/engines/power/1500-plus-kwe' },
+      { label: 'Diesel generator engines', href: '/engines/fuel/diesel' },
+      { label: 'Gas generator engines', href: '/engines/fuel/gas' },
+    ],
+    cta: {
+      title: 'Need an MTU generator package review?',
+      body: 'Haifeng Machinery can help compare MTU engine ratings with alternator, controller, enclosure, voltage, fuel, emissions and project documentation requirements.',
+      primaryLabel: 'Request MTU package support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Custom EPC power solutions',
+      secondaryHref: CUSTOM_EPC_URL,
     },
   },
   'detroit-diesel': {
