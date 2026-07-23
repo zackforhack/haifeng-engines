@@ -62,6 +62,9 @@ const smeRecords = smeRows.map(([
     cylinders,
     displacement_l,
     rpm_rated: 1500,
+    emissions_standard: model.includes('(T3)')
+      ? 'China National Stage III'
+      : 'Unregulated',
     prime_power_kw_50hz: prime,
     prime_power_kwe_50hz: primeKwe,
     prime_power_kva_50hz: kva(primeKwe),
