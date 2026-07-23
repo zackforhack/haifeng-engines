@@ -27,6 +27,13 @@ export function ratedFrequencies(e: Engine): { has50: boolean; has60: boolean } 
   return { has50: has(50), has60: has(60) }
 }
 
+export function isVariableSpeedMechanical(e: Engine): boolean {
+  const { has50, has60 } = ratedFrequencies(e)
+  const fixedGeneratorSpeeds = new Set([1500, 1800, 3000, 3600])
+  return !!e.power_kw && !has50 && !has60 && !!e.rpm_rated
+    && !fixedGeneratorSpeeds.has(e.rpm_rated)
+}
+
 // "1,500 / 1,800 RPM" when the engine is rated for both frequencies, else the single speed.
 export function ratedSpeedLabel(e: Engine): string {
   const { rpm50, rpm60 } = ratedSpeeds(e)
@@ -127,9 +134,14 @@ export function buildIntro(e: Engine): string {
   ].filter(Boolean).join(' ')
 
   const fuel = (e.fuel_type || 'diesel').toLowerCase()
-  let s = `The ${e.brand} ${e.model} is a ${descriptors ? descriptors + ' ' : ''}${fuel} engine for generator sets`
+  const variableSpeed = isVariableSpeedMechanical(e)
+  let s = variableSpeed
+    ? `The ${e.brand} ${e.model} is a ${descriptors ? descriptors + ' ' : ''}high-speed industrial ${fuel} engine`
+    : `The ${e.brand} ${e.model} is a ${descriptors ? descriptors + ' ' : ''}${fuel} engine for generator sets`
 
-  if (kva || out) {
+  if (variableSpeed && e.power_kw && e.rpm_rated) {
+    s += ` with a maximum mechanical output of ${e.power_kw.toLocaleString()} kW at ${e.rpm_rated.toLocaleString()} RPM`
+  } else if (kva || out) {
     const bits: string[] = []
     if (kva) bits.push(`${kva.toLocaleString()} kVA`)
     if (out) bits.push(`${out.value.toLocaleString()} ${out.unit}`)
@@ -137,6 +149,9 @@ export function buildIntro(e: Engine): string {
     s += `, rated at ${bits.join(' / ')} ${hp?.rating.toLowerCase() ?? 'standby'} power at ${speed.toLocaleString()} RPM (${hp?.hz ?? 50} Hz)`
   }
   s += '.'
+  if (variableSpeed) {
+    s += ' Generator use requires an engineered variable-speed drivetrain or power-electronics system; this is not a standard fixed-speed 50/60 Hz genset rating.'
+  }
 
   // "Liquid-cooled" already ends in "-cooled"; only append "-cooled" when missing.
   const cool = e.cooling_method

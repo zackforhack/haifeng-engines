@@ -6,7 +6,7 @@ import { getAllEngines, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
-import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, buildIntro, compactConfig, ratedFrequencies } from '@/lib/engine-display'
+import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, buildIntro, compactConfig, ratedFrequencies, isVariableSpeedMechanical } from '@/lib/engine-display'
 import { competitorsFor, pairSlug } from '@/lib/compare'
 import { buildEngineFaqs } from '@/lib/engine-faq'
 import { brandSlug } from '@/lib/seo'
@@ -188,10 +188,14 @@ function SpecHero({ engine }: { engine: Engine }) {
   const hp = headlinePower(engine)
   const kva = displayKva(hp)
   const out = displayOutput(hp)
+  const variableSpeed = isVariableSpeedMechanical(engine)
 
   const cards: { label: string; value: string }[] = []
   if (kva) cards.push({ label: `${hp?.rating ?? 'Standby'} Power · ${hp?.hz ?? 50} Hz`, value: `${kva.toLocaleString()} kVA` })
-  if (out) cards.push({ label: 'Electrical Output', value: `${out.value.toLocaleString()} ${out.unit}` })
+  if (out) cards.push({
+    label: variableSpeed ? 'Maximum Mechanical Power' : 'Electrical Output',
+    value: `${out.value.toLocaleString()} ${out.unit}`,
+  })
   if (engine.configuration || engine.cylinders) cards.push({ label: 'Cylinders', value: compactConfig(engine) ?? String(engine.cylinders) })
   if (engine.displacement_l) cards.push({ label: 'Displacement', value: `${engine.displacement_l} L` })
   cards.push({ label: 'Rated Speed', value: ratedSpeedLabel(engine) })
@@ -298,6 +302,7 @@ function EngineBuyerContext({
   const kva = displayKva(hp)
   const out = displayOutput(hp)
   const { has50, has60 } = ratedFrequencies(engine)
+  const variableSpeed = isVariableSpeedMechanical(engine)
   const aliases = uniqueAliases([...(quickWin?.aliases ?? []), ...modelAliases(engine)])
   const ratingBits = [
     kva ? `${kva.toLocaleString()} kVA` : null,
@@ -310,14 +315,20 @@ function EngineBuyerContext({
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-6">
       <h2 className="text-lg font-semibold text-gray-900 mb-3">
-        {engine.brand} {engine.model} generator set context
+        {engine.brand} {engine.model} {variableSpeed ? 'industrial power context' : 'generator set context'}
       </h2>
       <p className="text-sm text-gray-600 leading-relaxed">
         {quickWin?.intro ?? (
-          <>The {engine.brand} {engine.model} is listed here as a {fuel} generator-drive engine for {frequencyText}
-          {ratingBits.length ? `, with a headline ${ratingBits.join(' / ')}` : ''}. Use this page to compare the published
-          engine output, electrical kWe/kVA ratings, emissions level, datasheet availability, and neighboring models before
-          specifying an alternator, controller, enclosure, voltage, and compliance package.</>
+          variableSpeed
+            ? <>The {engine.brand} {engine.model} is a high-speed industrial {fuel} engine rated at
+              {' '}{engine.power_kw?.toLocaleString()} kW mechanical output at {engine.rpm_rated?.toLocaleString()} RPM.
+              It is used in off-road equipment and can support engineered variable-speed power systems, but its maximum
+              power is not a direct 50/60 Hz alternator rating. Verify the drivetrain, power electronics, cooling, and
+              emissions installation with Volvo Penta before specifying a generator package.</>
+            : <>The {engine.brand} {engine.model} is listed here as a {fuel} generator-drive engine for {frequencyText}
+              {ratingBits.length ? `, with a headline ${ratingBits.join(' / ')}` : ''}. Use this page to compare the published
+              engine output, electrical kWe/kVA ratings, emissions level, datasheet availability, and neighboring models before
+              specifying an alternator, controller, enclosure, voltage, and compliance package.</>
         )}
       </p>
 
@@ -441,12 +452,13 @@ export default async function EngineDetailPage({ params }: Props) {
   const hp = headlinePower(engine)
   const kva = displayKva(hp)
   const out = displayOutput(hp)
+  const variableSpeed = isVariableSpeedMechanical(engine)
 
   // Descriptive alt/caption for the spec-card image (Google Images + accessibility).
   const imageAlt =
     `${engine.brand} ${engine.model}` +
     `${engine.displacement_l ? ` ${engine.displacement_l}L` : ''}${engine.configuration ? ` ${engine.configuration}` : ''}` +
-    ` ${(engine.fuel_type ?? 'diesel').toLowerCase()} generator engine` +
+    ` ${(engine.fuel_type ?? 'diesel').toLowerCase()} ${variableSpeed ? 'high-speed industrial engine' : 'generator engine'}` +
     `${kva ? ` — ${kva.toLocaleString()} kVA ${(hp?.rating ?? 'standby').toLowerCase()}` : ''} specifications`
 
   // Build PropertyValue specs from whatever is populated.
@@ -455,7 +467,7 @@ export default async function EngineDetailPage({ params }: Props) {
     if (value !== undefined && value !== null && value !== '') props.push({ '@type': 'PropertyValue', name, value: String(value) })
   }
   if (kva) addProp(`${hp?.rating ?? 'Standby'} Power (${hp?.hz ?? 50} Hz)`, `${kva} kVA`)
-  if (out) addProp('Electrical Output', `${out.value} ${out.unit}`)
+  if (out) addProp(variableSpeed ? 'Maximum Mechanical Power' : 'Electrical Output', `${out.value} ${out.unit}`)
   addProp('Configuration', engine.configuration)
   addProp('Cylinders', engine.cylinders)
   addProp('Displacement', engine.displacement_l ? `${engine.displacement_l} L` : undefined)

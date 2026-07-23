@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
 import { getEngineBySlug } from '@/lib/engines'
-import { headlinePower, displayKva, displayOutput, ratedSpeeds, compactConfig } from '@/lib/engine-display'
+import { headlinePower, displayKva, displayOutput, ratedSpeeds, compactConfig, isVariableSpeedMechanical } from '@/lib/engine-display'
 
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
@@ -30,12 +30,13 @@ export default async function Image({ params }: Props) {
   const hp = headlinePower(engine)
   const kva = displayKva(hp)
   const out = displayOutput(hp)
+  const variableSpeed = isVariableSpeedMechanical(engine)
   const { rpm50, rpm60 } = ratedSpeeds(engine)
   const speed = hp ? (hp.hz === 60 ? rpm60 : rpm50) : rpm50
 
   const stats: { label: string; value: string }[] = []
   if (kva) stats.push({ label: `${hp?.rating ?? 'Standby'} · ${hp?.hz ?? 50} Hz`, value: `${kva.toLocaleString()} kVA` })
-  if (out) stats.push({ label: 'Output', value: `${out.value.toLocaleString()} ${out.unit}` })
+  if (out) stats.push({ label: variableSpeed ? 'Mechanical Power' : 'Output', value: `${out.value.toLocaleString()} ${out.unit}` })
   if (engine.displacement_l) stats.push({ label: 'Displacement', value: `${engine.displacement_l} L` })
   if (engine.configuration || engine.cylinders) stats.push({ label: 'Cylinders', value: compactConfig(engine) ?? String(engine.cylinders) })
   if (!kva) stats.push({ label: 'Speed', value: `${speed.toLocaleString()} RPM` })
