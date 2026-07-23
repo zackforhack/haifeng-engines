@@ -29,13 +29,15 @@ export function ratedFrequencies(e: Engine): { has50: boolean; has60: boolean } 
 
 export function isVariableSpeedMechanical(e: Engine): boolean {
   const { has50, has60 } = ratedFrequencies(e)
+  const explicitlyHighSpeed = e.series?.toLowerCase().includes('high-speed') ?? false
   const fixedGeneratorSpeeds = new Set([1500, 1800, 3000, 3600])
   return !!e.power_kw && !has50 && !has60 && !!e.rpm_rated
-    && !fixedGeneratorSpeeds.has(e.rpm_rated)
+    && (explicitlyHighSpeed || !fixedGeneratorSpeeds.has(e.rpm_rated))
 }
 
 // "1,500 / 1,800 RPM" when the engine is rated for both frequencies, else the single speed.
 export function ratedSpeedLabel(e: Engine): string {
+  if (isVariableSpeedMechanical(e)) return `${e.rpm_rated?.toLocaleString()} RPM`
   const { rpm50, rpm60 } = ratedSpeeds(e)
   const { has50, has60 } = ratedFrequencies(e)
   if (has50 && has60) return `${rpm50.toLocaleString()} / ${rpm60.toLocaleString()} RPM`

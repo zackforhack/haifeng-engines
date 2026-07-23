@@ -1,5 +1,5 @@
 import type { Engine } from './types'
-import { ratedSpeeds, ratedFrequencies, compactConfig } from './engine-display'
+import { ratedSpeeds, ratedFrequencies, compactConfig, isVariableSpeedMechanical } from './engine-display'
 
 export interface EngineFaq { q: string; a: string }
 
@@ -40,6 +40,7 @@ function configPhrase(e: Engine): string | null {
 export function buildEngineFaqs(engine: Engine): EngineFaq[] {
   const name = `${engine.brand} ${engine.model}`
   const faqs: EngineFaq[] = []
+  const variableSpeed = isVariableSpeedMechanical(engine)
   const { has50, has60 } = ratedFrequencies(engine)
   const { rpm50, rpm60 } = ratedSpeeds(engine)
 
@@ -59,6 +60,11 @@ export function buildEngineFaqs(engine: Engine): EngineFaq[] {
       q: `What is the power output of the ${name}?`,
       a: `The ${name} is rated at ${powerBits.join('; and ')}.`,
     })
+  } else if (variableSpeed && engine.power_kw && engine.rpm_rated) {
+    faqs.push({
+      q: `What is the maximum power output of the ${name}?`,
+      a: `The ${name} has a maximum mechanical output of ${engine.power_kw.toLocaleString()} kW at ${engine.rpm_rated.toLocaleString()} rpm. This is a variable-speed off-road rating, not a fixed-speed generator-set rating.`,
+    })
   }
 
   // Frequency / speed
@@ -77,7 +83,9 @@ export function buildEngineFaqs(engine: Engine): EngineFaq[] {
   // Fuel
   faqs.push({
     q: `What fuel does the ${name} use?`,
-    a: `The ${name} is a ${fuelNoun(engine)} generator-set engine.`,
+    a: variableSpeed
+      ? `The ${name} is a ${fuelNoun(engine)} variable-speed industrial engine.`
+      : `The ${name} is a ${fuelNoun(engine)} generator-set engine.`,
   })
 
   // Displacement + configuration

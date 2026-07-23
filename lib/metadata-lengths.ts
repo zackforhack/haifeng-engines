@@ -1,4 +1,4 @@
-import { compactConfig, displayKva, displayKwe, headlinePower } from './engine-display'
+import { compactConfig, displayKva, displayKwe, headlinePower, isVariableSpeedMechanical } from './engine-display'
 import type { Alternator, Engine } from './types'
 
 const MAX_TITLE = 60
@@ -78,6 +78,13 @@ export function engineMetadataDescription(engine: Engine, preferred?: string): s
   const emissions = engine.emissions_standard && !/unregulated|none/i.test(engine.emissions_standard)
     ? engine.emissions_standard
     : ''
+
+  if (isVariableSpeedMechanical(engine)) {
+    return firstWithin([
+      `${name} high-speed industrial engine specs: ${[...specs, emissions].filter(Boolean).join(', ')}. Compare maximum power, torque and datasheets.`,
+      `${name} off-road engine specs: ${specs.join(', ')}. Review maximum mechanical power, emissions and datasheets.`,
+    ], MAX_DESCRIPTION)
+  }
 
   return firstWithin([
     `${name} generator engine specs: ${[...specs, emissions].filter(Boolean).join(', ')}. Compare ratings, datasheets and generator-set fit.`,

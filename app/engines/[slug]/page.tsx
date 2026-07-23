@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = engineMetadataTitle(engine)
   const description = engineMetadataDescription(engine, quickWin?.description ?? engine.description ?? buildIntro(engine))
   const aliases = uniqueAliases([...(quickWin?.aliases ?? []), ...modelAliases(engine)])
+  const variableSpeed = isVariableSpeedMechanical(engine)
 
   return {
     title: { absolute: title },
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ...aliases,
       `${engine.brand} diesel engine`,
       engine.series ?? '',
-      'diesel generator engine',
+      variableSpeed ? 'high-speed industrial diesel engine' : 'diesel generator engine',
     ].filter(Boolean),
     alternates: { canonical: `/engines/${slug}` },
     openGraph: { title, description, type: 'website', url: `/engines/${slug}` },
@@ -497,7 +498,7 @@ export default async function EngineDetailPage({ params }: Props) {
     sku: engine.model,
     mpn: engine.model,
     ...(engine.series && { model: engine.series }),
-    category: 'Diesel Generator Engine',
+    category: variableSpeed ? 'Industrial Off-Road Engine' : 'Diesel Generator Engine',
     image: {
       '@type': 'ImageObject',
       url: `${base}/engines/${slug}/opengraph-image`,
