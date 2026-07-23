@@ -57,8 +57,11 @@ const targets = [
   's16r-a2ptaw2',
   's16r-f1ptaw2',
   's16r-y2ptaw2',
+  's16r2-a2ptaw',
   's16r2-f1ptaw',
+  's16r2-ptaw',
   's16r2-ptaw-e',
+  's16r2-ptaw2-e',
   // Medium-speed models.
   's6u-pta',
   's6u2-pta',
