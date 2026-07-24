@@ -67,6 +67,7 @@ CERTIFICATION_ALIASES = {
 
 REPRESENTED_STATUSES = {
     "exact_brand_match",
+    "brand_prefix_match",
     "base_brand_match",
     "certification_alias_match",
     "family_brand_match",
@@ -161,15 +162,23 @@ def read_1800_rpm_models(
     return models, source_rows
 
 
-def build_database_indexes(engines: list[dict]) -> tuple[dict, dict]:
+def build_database_indexes(engines: list[dict]) -> tuple[dict, dict, dict]:
     by_model: dict[str, list[dict]] = defaultdict(list)
+    by_model_without_brand_prefix: dict[str, list[dict]] = defaultdict(list)
     by_brand: dict[str, list[dict]] = defaultdict(list)
     for engine in engines:
         normalized = normalize_model(engine["model"])
         engine = {**engine, "normalized_model": normalized}
         by_model[normalized].append(engine)
         by_brand[engine["brand"]].append(engine)
-    return by_model, by_brand
+        normalized_brand = normalize_model(engine["brand"])
+        if (
+            normalized.startswith(normalized_brand)
+            and len(normalized) - len(normalized_brand) >= 5
+        ):
+            without_prefix = normalized[len(normalized_brand):]
+            by_model_without_brand_prefix[without_prefix].append(engine)
+    return by_model, by_model_without_brand_prefix, by_brand
 
 
 def probable_brand_matches(
@@ -202,7 +211,7 @@ def probable_brand_matches(
 
 
 def match_models(models: dict, engines: list[dict]) -> list[dict]:
-    by_model, by_brand = build_database_indexes(engines)
+    by_model, by_model_without_brand_prefix, by_brand = build_database_indexes(engines)
     results = []
 
     for record in models.values():
@@ -213,6 +222,11 @@ def match_models(models: dict, engines: list[dict]) -> list[dict]:
         exact_brand_candidates = [
             engine
             for engine in exact_candidates
+            if engine["brand"] in expected_brands
+        ]
+        brand_prefix_candidates = [
+            engine
+            for engine in by_model_without_brand_prefix.get(normalized_model, [])
             if engine["brand"] in expected_brands
         ]
         base_model = normalize_model(record["epa_model"].split("/", 1)[0])
@@ -249,6 +263,10 @@ def match_models(models: dict, engines: list[dict]) -> list[dict]:
         if exact_brand_candidates:
             status = "exact_brand_match"
             matches = exact_brand_candidates
+            probable = []
+        elif brand_prefix_candidates:
+            status = "brand_prefix_match"
+            matches = brand_prefix_candidates
             probable = []
         elif base_brand_candidates:
             status = "base_brand_match"
@@ -391,6 +409,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "- Joined manufacturer, certificate, tier, compliance standard and fuel from `Family Info` using model year and engine family.",
         "- Deduplicated recurring annual certifications by EPA manufacturer plus normalized engine model.",
         "- Counted a database model as present only when its normalized model and verified manufacturer-to-brand mapping both matched.",
+        "- Counted a redundant leading database brand as represented only when the remaining normalized model had at least five characters.",
         "- Counted slash-suffixed certification trims as represented only when the explicit base model before `/` matched the verified database brand.",
         "- Counted commercial family variants only for explicit EPA-manufacturer/database-brand mappings and a normalized family prefix of at least five characters.",
         "- Counted non-literal certification aliases only from the reviewed `CERTIFICATION_ALIASES` map.",
@@ -401,6 +420,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- 1800 RPM source rows: **{source_rows:,}**",
         f"- Distinct EPA manufacturer/model combinations: **{len(results):,}**",
         f"- Exact manufacturer/brand matches: **{statuses['exact_brand_match']:,}**",
+        f"- Matches after removing a redundant database brand prefix: **{statuses['brand_prefix_match']:,}**",
         f"- Slash-suffixed certification trims represented by a verified base model: **{statuses['base_brand_match']:,}**",
         f"- Reviewed certification aliases: **{statuses['certification_alias_match']:,}**",
         f"- Verified commercial family matches: **{statuses['family_brand_match']:,}**",
@@ -446,8 +466,8 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "",
         "## Manufacturer Coverage",
         "",
-        "| EPA manufacturer | Database brand | EPA models | Exact | Base trims | Cert. aliases | Families | Other-brand exact | Not found | Probable |",
-        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|",
+        "| EPA manufacturer | Database brand | EPA models | Exact | Brand prefix | Base trims | Cert. aliases | Families | Other-brand exact | Not found | Probable |",
+        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
         ]
     )
 
@@ -457,7 +477,8 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         brands = ", ".join(sorted(MANUFACTURER_BRANDS.get(manufacturer, set()))) or "Unmapped"
         lines.append(
             f"| {manufacturer} | {brands} | {counts['total']} | "
-            f"{counts['exact_brand_match']} | {counts['base_brand_match']} | "
+            f"{counts['exact_brand_match']} | {counts['brand_prefix_match']} | "
+            f"{counts['base_brand_match']} | "
             f"{counts['certification_alias_match']} | "
             f"{counts['family_brand_match']} | "
             f"{counts['exact_model_other_brand']} | "
@@ -470,7 +491,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
             "## Priority Review",
             "",
             "These are recent constant-speed EPA-certified models from mapped manufacturers that "
-            "were not found as exact, base-trim, reviewed certification-alias or "
+            "were not found as exact, brand-prefix, base-trim, reviewed certification-alias or "
             "verified commercial-family matches. "
             "The full records, including "
             "variable-speed-only models and candidate aliases, are in "
