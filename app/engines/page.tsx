@@ -13,7 +13,11 @@ import { ENGINE_GRID_PAGE_SIZE, ENGINE_TABLE_PAGE_SIZE, hasSearchParams, noindex
 // Always fetch fresh data — prevents Next.js data cache from hiding new DB rows.
 export const dynamic = 'force-dynamic'
 
-const FILTERED_TABLE_FULL_RESULT_LIMIT = 200
+// The table is a brand-by-power-band comparison matrix. Paginating its input
+// produces incomplete bands (for example, later-alphabet gas brands disappear
+// from 2,000+ kWe), so keep common filtered catalogs together. Broad and
+// unfiltered catalogs still use normal pagination below.
+const FILTERED_TABLE_FULL_RESULT_LIMIT = 500
 
 interface Props {
   searchParams: Promise<{
