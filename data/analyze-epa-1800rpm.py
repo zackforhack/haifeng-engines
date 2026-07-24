@@ -194,10 +194,20 @@ def match_models(models: dict, engines: list[dict]) -> list[dict]:
             for engine in exact_candidates
             if engine["brand"] in expected_brands
         ]
+        base_model = normalize_model(record["epa_model"].split("/", 1)[0])
+        base_brand_candidates = [
+            engine
+            for engine in by_model.get(base_model, [])
+            if engine["brand"] in expected_brands
+        ] if "/" in record["epa_model"] and len(base_model) >= 5 else []
 
         if exact_brand_candidates:
             status = "exact_brand_match"
             matches = exact_brand_candidates
+            probable = []
+        elif base_brand_candidates:
+            status = "base_brand_match"
+            matches = base_brand_candidates
             probable = []
         elif exact_candidates:
             status = "exact_model_other_brand"
@@ -253,7 +263,10 @@ def match_models(models: dict, engines: list[dict]) -> list[dict]:
     return sorted(
         results,
         key=lambda result: (
-            result["match_status"] != "exact_brand_match",
+            result["match_status"] not in {
+                "exact_brand_match",
+                "base_brand_match",
+            },
             -result["latest_model_year"],
             result["manufacturer"],
             result["epa_model"],
@@ -278,12 +291,18 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         1
         for result in results
         if result["mapped_database_brands"]
-        and result["match_status"] == "exact_brand_match"
+        and result["match_status"] in {
+            "exact_brand_match",
+            "base_brand_match",
+        }
     )
     recent_unmatched = [
         result
         for result in results
-        if result["match_status"] != "exact_brand_match"
+        if result["match_status"] not in {
+            "exact_brand_match",
+            "base_brand_match",
+        }
         and result["latest_model_year"] >= 2024
     ]
     constant_speed_models = [
@@ -328,18 +347,20 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "- Joined manufacturer, certificate, tier, compliance standard and fuel from `Family Info` using model year and engine family.",
         "- Deduplicated recurring annual certifications by EPA manufacturer plus normalized engine model.",
         "- Counted a database model as present only when its normalized model and verified manufacturer-to-brand mapping both matched.",
-        "- Exact model matches under another brand and similar suffix variants remain review items.",
+        "- Counted slash-suffixed certification trims as represented only when the explicit base model before `/` matched the verified database brand.",
+        "- Exact model matches under another brand and other similar suffix variants remain review items.",
         "",
         "## Summary",
         "",
         f"- 1800 RPM source rows: **{source_rows:,}**",
         f"- Distinct EPA manufacturer/model combinations: **{len(results):,}**",
         f"- Exact manufacturer/brand matches: **{statuses['exact_brand_match']:,}**",
+        f"- Slash-suffixed certification trims represented by a verified base model: **{statuses['base_brand_match']:,}**",
         f"- Exact matches whose database page uses 1800 as its primary RPM: **{exact_primary_1800:,}**",
         f"- Exact model under another database brand: **{statuses['exact_model_other_brand']:,}**",
         f"- Not found by exact model: **{statuses['not_found']:,}**",
         f"- Models from mapped manufacturers: **{mapped_total:,}**",
-        f"- Exact coverage within mapped manufacturers: **{mapped_matches / mapped_total:.1%}**",
+        f"- Represented coverage within mapped manufacturers: **{mapped_matches / mapped_total:.1%}**",
         f"- Unmatched models with a 2024+ certification: **{len(recent_unmatched):,}**",
         f"- Models with at least one constant-speed certification: **{len(constant_speed_models):,}**",
         f"- Variable-speed-only models retained for reference: **{len(variable_speed_only_models):,}**",
@@ -360,7 +381,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "",
         "## Generator-Priority Gaps by Brand",
         "",
-        "| Database brand | 2024+ constant-speed models without exact match |",
+        "| Database brand | 2024+ constant-speed models without represented match |",
         "|---|---:|",
     ]
 
@@ -374,8 +395,8 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "",
         "## Manufacturer Coverage",
         "",
-        "| EPA manufacturer | Database brand | EPA models | Exact matches | Other-brand exact | Not found | Probable aliases |",
-        "|---|---|---:|---:|---:|---:|---:|",
+        "| EPA manufacturer | Database brand | EPA models | Exact matches | Base trims | Other-brand exact | Not found | Probable aliases |",
+        "|---|---|---:|---:|---:|---:|---:|---:|",
         ]
     )
 
@@ -385,7 +406,8 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         brands = ", ".join(sorted(MANUFACTURER_BRANDS.get(manufacturer, set()))) or "Unmapped"
         lines.append(
             f"| {manufacturer} | {brands} | {counts['total']} | "
-            f"{counts['exact_brand_match']} | {counts['exact_model_other_brand']} | "
+            f"{counts['exact_brand_match']} | {counts['base_brand_match']} | "
+            f"{counts['exact_model_other_brand']} | "
             f"{counts['not_found']} | {counts['probable']} |"
         )
 
@@ -395,7 +417,8 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
             "## Priority Review",
             "",
             "These are recent constant-speed EPA-certified models from mapped manufacturers that "
-            "were not found as exact manufacturer/brand matches. The full records, including "
+            "were not found as exact manufacturer/brand or verified base-trim matches. "
+            "The full records, including "
             "variable-speed-only models and candidate aliases, are in "
             "`epa-1800rpm-model-match.json`.",
             "",

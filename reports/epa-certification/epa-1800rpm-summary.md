@@ -8,22 +8,24 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 - Joined manufacturer, certificate, tier, compliance standard and fuel from `Family Info` using model year and engine family.
 - Deduplicated recurring annual certifications by EPA manufacturer plus normalized engine model.
 - Counted a database model as present only when its normalized model and verified manufacturer-to-brand mapping both matched.
-- Exact model matches under another brand and similar suffix variants remain review items.
+- Counted slash-suffixed certification trims as represented only when the explicit base model before `/` matched the verified database brand.
+- Exact model matches under another brand and other similar suffix variants remain review items.
 
 ## Summary
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **68**
-- Exact matches whose database page uses 1800 as its primary RPM: **10**
+- Exact manufacturer/brand matches: **71**
+- Slash-suffixed certification trims represented by a verified base model: **14**
+- Exact matches whose database page uses 1800 as its primary RPM: **13**
 - Exact model under another database brand: **9**
-- Not found by exact model: **893**
+- Not found by exact model: **876**
 - Models from mapped manufacturers: **834**
-- Exact coverage within mapped manufacturers: **8.2%**
-- Unmatched models with a 2024+ certification: **474**
+- Represented coverage within mapped manufacturers: **10.2%**
+- Unmatched models with a 2024+ certification: **462**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **335**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **327**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -34,7 +36,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 
 ## Generator-Priority Gaps by Brand
 
-| Database brand | 2024+ constant-speed models without exact match |
+| Database brand | 2024+ constant-speed models without represented match |
 |---|---:|
 | Liebherr | 53 |
 | MTU | 53 |
@@ -43,69 +45,69 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | FPT | 24 |
 | Yanmar | 20 |
 | Kubota | 19 |
-| Caterpillar | 17 |
+| Caterpillar | 16 |
 | Mitsubishi | 16 |
 | Isuzu | 11 |
 | Deutz | 10 |
 | Baudouin | 9 |
-| Kohler | 9 |
 | Hyundai | 8 |
 | John Deere | 8 |
 | Kirloskar | 6 |
 | Weichai | 3 |
+| Kohler | 2 |
 | Volvo Penta | 1 |
 
 ## Manufacturer Coverage
 
-| EPA manufacturer | Database brand | EPA models | Exact matches | Other-brand exact | Not found | Probable aliases |
-|---|---|---:|---:|---:|---:|---:|
-| Rolls-Royce Solutions America Inc | MTU | 155 | 0 | 0 | 155 | 29 |
-| Cummins Inc. | Cummins | 80 | 14 | 0 | 66 | 19 |
-| Perkins Engines Co Ltd | Perkins | 79 | 6 | 6 | 67 | 8 |
-| FPT Industrial S.p.A. | FPT | 68 | 0 | 0 | 68 | 0 |
-| IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 3 | 55 | 0 |
-| Liebherr Machines Bulle SA | Liebherr | 56 | 0 | 0 | 56 | 2 |
-| Discovery Energy, LLC. | Kohler | 48 | 0 | 0 | 48 | 10 |
-| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 0 | 0 | 42 | 4 |
-| Kubota Corporation | Kubota | 37 | 0 | 0 | 37 | 0 |
-| Caterpillar Inc. | Caterpillar | 35 | 14 | 0 | 21 | 1 |
-| Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 11 | 0 | 18 | 1 |
-| AB Volvo Penta | Volvo Penta | 28 | 21 | 0 | 7 | 7 |
-| Deutz AG | Deutz | 28 | 0 | 0 | 28 | 0 |
-| HD Construction Equipment Co., Ltd. | Hyundai | 26 | 0 | 0 | 26 | 0 |
-| Isuzu Motors Limited | Isuzu | 24 | 0 | 0 | 24 | 0 |
-| Daedong Corporation | Unmapped | 19 | 0 | 0 | 19 | 0 |
-| Deere & Company | John Deere | 19 | 0 | 0 | 19 | 5 |
-| Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | Mitsubishi | 19 | 0 | 0 | 19 | 6 |
-| Scania CV AB | Scania | 11 | 0 | 0 | 11 | 0 |
-| Komatsu Ltd. | Komatsu | 10 | 0 | 0 | 10 | 1 |
-| Mercedes Benz | Unmapped | 10 | 0 | 0 | 10 | 0 |
-| KUKJE MACHINERY CO., LTD | Unmapped | 9 | 0 | 0 | 9 | 0 |
-| Societe Internationale des Moteurs-Baudouin | Baudouin | 9 | 0 | 0 | 9 | 0 |
-| Lister Petter Limited | Lister Petter | 7 | 0 | 0 | 7 | 0 |
-| Kirloskar Americas Corporation | Kirloskar | 6 | 0 | 0 | 6 | 0 |
-| Shandong Huayuan Laidong Engine Co.,LTD. | Unmapped | 6 | 0 | 0 | 6 | 0 |
-| Tianjin Lovol Engines Co., Ltd. | Lovol | 6 | 0 | 0 | 6 | 0 |
-| International Motors, LLC | Unmapped | 5 | 0 | 0 | 5 | 0 |
-| TYM Corporation | Unmapped | 5 | 0 | 0 | 5 | 0 |
-| Daimler Truck AG | Unmapped | 4 | 0 | 0 | 4 | 0 |
-| Lion (China) Engine Science and Technology Co.,Ltd. | Unmapped | 4 | 0 | 0 | 4 | 0 |
-| Yangdong Co., Ltd. | Unmapped | 4 | 0 | 0 | 4 | 0 |
-| MAN Truck & Bus AG | MAN | 3 | 1 | 0 | 2 | 0 |
-| Suzhou Jinding Machinery Manufacturing Co., Ltd. | Unmapped | 3 | 0 | 0 | 3 | 0 |
-| Volvo Construction Equipment | Unmapped | 3 | 0 | 0 | 3 | 0 |
-| Weichai Power Co.,Ltd. | Weichai | 3 | 0 | 0 | 3 | 0 |
-| Zhejiang Xinchai Co., Ltd. | Xinchai | 3 | 1 | 0 | 2 | 2 |
-| Detroit Diesel Corporation | Detroit Diesel | 2 | 0 | 0 | 2 | 1 |
-| PSA Peugeot Citroen | Unmapped | 2 | 0 | 0 | 2 | 0 |
-| Wuxi Kipor Power Co., Ltd. | Unmapped | 2 | 0 | 0 | 2 | 0 |
-| ENER-G Rudox LLC | Unmapped | 1 | 0 | 0 | 1 | 0 |
-| FAW JIEFANG AUTOMOTIVE CO.,LTD,WUXI DIESEL ENGINE WORKS | FAWDE | 1 | 0 | 0 | 1 | 0 |
-| Greaves Farymann Diesel GmbH | Unmapped | 1 | 0 | 0 | 1 | 0 |
+| EPA manufacturer | Database brand | EPA models | Exact matches | Base trims | Other-brand exact | Not found | Probable aliases |
+|---|---|---:|---:|---:|---:|---:|---:|
+| Rolls-Royce Solutions America Inc | MTU | 155 | 0 | 0 | 0 | 155 | 29 |
+| Cummins Inc. | Cummins | 80 | 14 | 0 | 0 | 66 | 19 |
+| Perkins Engines Co Ltd | Perkins | 79 | 6 | 0 | 6 | 67 | 8 |
+| FPT Industrial S.p.A. | FPT | 68 | 0 | 0 | 0 | 68 | 0 |
+| IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 3 | 55 | 0 |
+| Liebherr Machines Bulle SA | Liebherr | 56 | 0 | 0 | 0 | 56 | 2 |
+| Discovery Energy, LLC. | Kohler | 48 | 2 | 14 | 0 | 32 | 2 |
+| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 0 | 0 | 0 | 42 | 4 |
+| Kubota Corporation | Kubota | 37 | 0 | 0 | 0 | 37 | 0 |
+| Caterpillar Inc. | Caterpillar | 35 | 15 | 0 | 0 | 20 | 1 |
+| Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 11 | 0 | 0 | 18 | 1 |
+| AB Volvo Penta | Volvo Penta | 28 | 21 | 0 | 0 | 7 | 7 |
+| Deutz AG | Deutz | 28 | 0 | 0 | 0 | 28 | 0 |
+| HD Construction Equipment Co., Ltd. | Hyundai | 26 | 0 | 0 | 0 | 26 | 0 |
+| Isuzu Motors Limited | Isuzu | 24 | 0 | 0 | 0 | 24 | 0 |
+| Daedong Corporation | Unmapped | 19 | 0 | 0 | 0 | 19 | 0 |
+| Deere & Company | John Deere | 19 | 0 | 0 | 0 | 19 | 5 |
+| Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | Mitsubishi | 19 | 0 | 0 | 0 | 19 | 6 |
+| Scania CV AB | Scania | 11 | 0 | 0 | 0 | 11 | 0 |
+| Komatsu Ltd. | Komatsu | 10 | 0 | 0 | 0 | 10 | 1 |
+| Mercedes Benz | Unmapped | 10 | 0 | 0 | 0 | 10 | 0 |
+| KUKJE MACHINERY CO., LTD | Unmapped | 9 | 0 | 0 | 0 | 9 | 0 |
+| Societe Internationale des Moteurs-Baudouin | Baudouin | 9 | 0 | 0 | 0 | 9 | 0 |
+| Lister Petter Limited | Lister Petter | 7 | 0 | 0 | 0 | 7 | 0 |
+| Kirloskar Americas Corporation | Kirloskar | 6 | 0 | 0 | 0 | 6 | 0 |
+| Shandong Huayuan Laidong Engine Co.,LTD. | Unmapped | 6 | 0 | 0 | 0 | 6 | 0 |
+| Tianjin Lovol Engines Co., Ltd. | Lovol | 6 | 0 | 0 | 0 | 6 | 0 |
+| International Motors, LLC | Unmapped | 5 | 0 | 0 | 0 | 5 | 0 |
+| TYM Corporation | Unmapped | 5 | 0 | 0 | 0 | 5 | 0 |
+| Daimler Truck AG | Unmapped | 4 | 0 | 0 | 0 | 4 | 0 |
+| Lion (China) Engine Science and Technology Co.,Ltd. | Unmapped | 4 | 0 | 0 | 0 | 4 | 0 |
+| Yangdong Co., Ltd. | Unmapped | 4 | 0 | 0 | 0 | 4 | 0 |
+| MAN Truck & Bus AG | MAN | 3 | 1 | 0 | 0 | 2 | 0 |
+| Suzhou Jinding Machinery Manufacturing Co., Ltd. | Unmapped | 3 | 0 | 0 | 0 | 3 | 0 |
+| Volvo Construction Equipment | Unmapped | 3 | 0 | 0 | 0 | 3 | 0 |
+| Weichai Power Co.,Ltd. | Weichai | 3 | 0 | 0 | 0 | 3 | 0 |
+| Zhejiang Xinchai Co., Ltd. | Xinchai | 3 | 1 | 0 | 0 | 2 | 2 |
+| Detroit Diesel Corporation | Detroit Diesel | 2 | 0 | 0 | 0 | 2 | 1 |
+| PSA Peugeot Citroen | Unmapped | 2 | 0 | 0 | 0 | 2 | 0 |
+| Wuxi Kipor Power Co., Ltd. | Unmapped | 2 | 0 | 0 | 0 | 2 | 0 |
+| ENER-G Rudox LLC | Unmapped | 1 | 0 | 0 | 0 | 1 | 0 |
+| FAW JIEFANG AUTOMOTIVE CO.,LTD,WUXI DIESEL ENGINE WORKS | FAWDE | 1 | 0 | 0 | 0 | 1 | 0 |
+| Greaves Farymann Diesel GmbH | Unmapped | 1 | 0 | 0 | 0 | 1 | 0 |
 
 ## Priority Review
 
-These are recent constant-speed EPA-certified models from mapped manufacturers that were not found as exact manufacturer/brand matches. The full records, including variable-speed-only models and candidate aliases, are in `epa-1800rpm-model-match.json`.
+These are recent constant-speed EPA-certified models from mapped manufacturers that were not found as exact manufacturer/brand or verified base-trim matches. The full records, including variable-speed-only models and candidate aliases, are in `epa-1800rpm-model-match.json`.
 
 | Latest year | Manufacturer | EPA model | Tier | Power kW | Probable database model |
 |---:|---|---|---|---:|---|
@@ -127,7 +129,6 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Caterpillar Inc. | 5008C | Tier 2 | 1107 |  |
 | 2026 | Caterpillar Inc. | 5012C | Tier 2 | 1677 |  |
 | 2026 | Caterpillar Inc. | 5016C | Tier 2 | 2283 |  |
-| 2026 | Caterpillar Inc. | C32B | Tier 2, Tier 4 (Final or Phase In) | 1769 |  |
 | 2026 | Cummins Inc. | 4BT3.3G4 | Interim Tier 4, Tier 3 | 46 |  |
 | 2026 | Cummins Inc. | 4BT3.3G5 | Interim Tier 4, Tier 3 | 51 |  |
 | 2026 | Cummins Inc. | 4BTAA3.3G12 | Tier 3 | 74 |  |
@@ -173,14 +174,7 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Deutz AG | TCD2013L04 2V | Tier 3 | 114 |  |
 | 2026 | Deutz AG | TCD2013L06 2V | Tier 3 | 180 |  |
 | 2026 | Deutz AG | TCD2013L06 4V | Tier 3 | 260 |  |
-| 2026 | Discovery Energy, LLC. | KDI 2504TM/G18 | Tier 2 | 36 |  |
-| 2026 | Discovery Energy, LLC. | KDI 3404TCR/70G | Tier 3 | 70 | Kohler KDI3404TCR (0.870) |
-| 2026 | Discovery Energy, LLC. | KDI 3404TM/G18 | Tier 3 | 70 |  |
-| 2026 | Discovery Energy, LLC. | KDI 3404TM/G18A | Tier 3 | 60 |  |
-| 2026 | Discovery Energy, LLC. | KDI 3404TM/G18B | Tier 3 | 50 |  |
-| 2026 | Discovery Energy, LLC. | KDI1903ESM | Tier 2, Tier 4 (Final or Phase In) | 21 |  |
-| 2026 | Discovery Energy, LLC. | KDI1903M | Tier 4 (Final or Phase In) | 18 |  |
-| 2026 | Discovery Energy, LLC. | KDI2504ESM | Tier 2, Tier 4 (Final or Phase In) | 29 |  |
+| 2026 | Discovery Energy, LLC. | KDI1903ESM | Tier 2, Tier 4 (Final or Phase In) | 21 | Kohler KDI1903M (0.889) |
 | 2026 | Discovery Energy, LLC. | KSD-NATG 1403/18 | Tier 4 (Final or Phase In) | 17 |  |
 | 2026 | FPT Industrial S.p.A. | F2CCA615A*H | Tier 3 | 290 |  |
 | 2026 | FPT Industrial S.p.A. | F2CCP615A*H | Tier 3 | 330 |  |
@@ -259,6 +253,14 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Liebherr Machines Bulle SA | KD103V20-6AES | Tier 2 | 3758 |  |
 | 2026 | Liebherr Machines Bulle SA | KD103V20-6CES | Tier 2 | 4290 |  |
 | 2026 | Liebherr Machines Bulle SA | KD18L06-6AES | Tier 2 | 670 |  |
+| 2026 | Liebherr Machines Bulle SA | KD18L06-6BES | Tier 2 | 785 |  |
+| 2026 | Liebherr Machines Bulle SA | KD18L06-6CES | Tier 2 | 820 |  |
+| 2026 | Liebherr Machines Bulle SA | KD27V12-6AES | Tier 2 | 891 |  |
+| 2026 | Liebherr Machines Bulle SA | KD27V12-6BES | Tier 2 | 1019 |  |
+| 2026 | Liebherr Machines Bulle SA | KD27V12-6CES | Tier 2 | 1114 |  |
+| 2026 | Liebherr Machines Bulle SA | KD36V16-6AES | Tier 2 | 1391 |  |
+| 2026 | Liebherr Machines Bulle SA | KD36V16-6BES | Tier 2 | 1450 |  |
+| 2026 | Liebherr Machines Bulle SA | KD45V20-6AES | Tier 2 | 1391 |  |
 
 ## Interpretation
 

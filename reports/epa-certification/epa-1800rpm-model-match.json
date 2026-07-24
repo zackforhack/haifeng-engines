@@ -3291,6 +3291,75 @@
     "mapped_database_brands": [
       "Caterpillar"
     ],
+    "epa_model": "C32B",
+    "normalized_model": "C32B",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PCPXL32.0HXG",
+      "RCPXL32.1HXG",
+      "SCPXL32.1HXG",
+      "SCPXL32.1NZS",
+      "TCPXL32.1HXG",
+      "TCPXL32.1NZS"
+    ],
+    "engine_codes": [
+      "15",
+      "21",
+      "CERT TEST 1"
+    ],
+    "certificates": [
+      "PCPXL32.0HXG-020",
+      "RCPXL32.1HXG-011",
+      "SCPXL32.1HXG-011",
+      "SCPXL32.1NZS-029",
+      "TCPXL32.1HXG-020",
+      "TCPXL32.1NZS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 745,
+    "rated_power_kw_max": 1769,
+    "displacements_l": [
+      32.101
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Caterpillar",
+        "model": "C32B",
+        "slug": "caterpillar-c32b",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Caterpillar Inc.",
+    "mapped_database_brands": [
+      "Caterpillar"
+    ],
     "epa_model": "C9",
     "normalized_model": "C9",
     "first_model_year": 2012,
@@ -4138,6 +4207,908 @@
         "rpm_rated": 1500,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 1903TCR/18",
+    "normalized_model": "KDI1903TCR18",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HKHXL2.48TCR",
+      "JKHXL2.48TCR",
+      "KKHXL2.48TCR",
+      "LKHXL2.48TCR",
+      "MKHXL02.5TCR",
+      "NKHXL02.5TCR",
+      "PKHXL02.5TCR",
+      "RKHXL02.5TCR",
+      "SKHXL02.5TCR",
+      "TKHXL02.5TCR"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "HKHXL2.48TCR-007",
+      "JKHXL2.48TCR-009",
+      "KKHXL2.48TCR-010",
+      "LKHXL2.48TCR-001",
+      "MKHXL02.5TCR-004",
+      "NKHXL02.5TCR-004",
+      "PKHXL02.5TCR-003",
+      "RKHXL02.5TCR-006-R01",
+      "SKHXL02.5TCR-006",
+      "TKHXL02.5TCR-004"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 30,
+    "rated_power_kw_max": 30,
+    "displacements_l": [
+      1.861
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI1903TCR",
+        "slug": "kohler-kdi1903tcr",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 1903TCR/G18C",
+    "normalized_model": "KDI1903TCRG18C",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DKHXL2.48TCR",
+      "EKHXL2.48TCR",
+      "FKHXL2.48TCR",
+      "GKHXL2.48TCR",
+      "HKHXL2.48TCR",
+      "JKHXL2.48TCR",
+      "KKHXL2.48TCR",
+      "LKHXL2.48TCR",
+      "MKHXL02.5TCR",
+      "NKHXL02.5TCR",
+      "PKHXL02.5TCR",
+      "RKHXL02.5TCR",
+      "SKHXL02.5TCR",
+      "TKHXL02.5TCR"
+    ],
+    "engine_codes": [
+      "N/A",
+      "NA"
+    ],
+    "certificates": [
+      "DKHXL2.48TCR-001",
+      "EKHXL2.48TCR-003",
+      "FKHXL2.48TCR-004",
+      "GKHXL2.48TCR-007",
+      "HKHXL2.48TCR-007",
+      "JKHXL2.48TCR-009",
+      "KKHXL2.48TCR-010",
+      "LKHXL2.48TCR-001",
+      "MKHXL02.5TCR-004",
+      "NKHXL02.5TCR-004",
+      "PKHXL02.5TCR-003",
+      "RKHXL02.5TCR-006-R01",
+      "SKHXL02.5TCR-006",
+      "TKHXL02.5TCR-004"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 37,
+    "rated_power_kw_max": 37,
+    "displacements_l": [
+      1.861
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI1903TCR",
+        "slug": "kohler-kdi1903tcr",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 2504TCR/G18A",
+    "normalized_model": "KDI2504TCRG18A",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "EKHXL2.48TCR",
+      "FKHXL2.48TCR",
+      "GKHXL2.48TCR",
+      "HKHXL2.48TCR",
+      "JKHXL2.48TCR",
+      "KKHXL2.48TCR",
+      "LKHXL2.48TCR",
+      "MKHXL02.5TCR",
+      "NKHXL02.5TCR",
+      "PKHXL02.5TCR",
+      "RKHXL02.5TCR",
+      "SKHXL02.5TCR",
+      "TKHXL02.5TCR"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "EKHXL2.48TCR-003",
+      "FKHXL2.48TCR-004",
+      "GKHXL2.48TCR-007",
+      "HKHXL2.48TCR-007",
+      "JKHXL2.48TCR-009",
+      "KKHXL2.48TCR-010",
+      "LKHXL2.48TCR-001",
+      "MKHXL02.5TCR-004",
+      "NKHXL02.5TCR-004",
+      "PKHXL02.5TCR-003",
+      "RKHXL02.5TCR-006-R01",
+      "SKHXL02.5TCR-006",
+      "TKHXL02.5TCR-004"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 47,
+    "rated_power_kw_max": 47,
+    "displacements_l": [
+      2.482
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI2504TCR",
+        "slug": "kohler-kdi2504tcr",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 2504TM/G18",
+    "normalized_model": "KDI2504TMG18",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FKHXL2.48EST",
+      "GKHXL2.48EST",
+      "HKHXL2.48EST",
+      "JKHXL2.48EST",
+      "KKHXL2.48EST",
+      "LKHXL2.48EST",
+      "MKHXL02.5EST",
+      "NKHXL02.5EST",
+      "PKHXL02.5EST",
+      "RKHXL02.5EST",
+      "SKHXL02.5EST",
+      "TKHXL02.5EST"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "FKHXL2.48EST-009",
+      "GKHXL2.48EST-003",
+      "HKHXL2.48EST-006",
+      "JKHXL2.48EST-005",
+      "KKHXL2.48EST-009",
+      "LKHXL2.48EST-006",
+      "MKHXL02.5EST-003",
+      "NKHXL02.5EST-009",
+      "PKHXL02.5EST-010",
+      "RKHXL02.5EST-008-R01",
+      "SKHXL02.5EST-003",
+      "TKHXL02.5EST-008"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.482
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI2504TM",
+        "slug": "kohler-kdi2504tm",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 3404TCR/70G",
+    "normalized_model": "KDI3404TCR70G",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LKHXL3.36TCG",
+      "MKHXL03.4TCG",
+      "NKHXL03.4TCG",
+      "PKHXL03.4TCG",
+      "RKHXL03.4TCG",
+      "SKHXL03.4TCG",
+      "TKHXL03.4TCG"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "LKHXL3.36TCG-009",
+      "MKHXL03.4TCG-008",
+      "NKHXL03.4TCG-005",
+      "PKHXL03.4TCG-005",
+      "RKHXL03.4TCG-005-R01",
+      "SKHXL03.4TCG-007",
+      "TKHXL03.4TCG-007"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 70,
+    "rated_power_kw_max": 70,
+    "displacements_l": [
+      3.359
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI3404TCR",
+        "slug": "kohler-kdi3404tcr",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 3404TCR/G18",
+    "normalized_model": "KDI3404TCRG18",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FKHXL3.36TCR",
+      "GKHXL3.36TCR",
+      "HKHXL3.36TCR",
+      "JKHXL3.36TCR",
+      "KKHXL3.36TCR",
+      "LKHXL3.36TCR",
+      "MKHXL03.4TCR",
+      "NKHXL03.4TCR",
+      "PKHXL03.4TCR",
+      "RKHXL03.4TCR",
+      "SKHXL03.4TCR",
+      "TKHXL03.4TCR"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "FKHXL3.36TCR-010",
+      "GKHXL3.36TCR-001",
+      "HKHXL3.36TCR-010",
+      "JKHXL3.36TCR-008",
+      "KKHXL3.36TCR-005",
+      "LKHXL3.36TCR-002",
+      "MKHXL03.4TCR-006",
+      "NKHXL03.4TCR-003",
+      "PKHXL03.4TCR-004",
+      "RKHXL03.4TCR-007-R01",
+      "SKHXL03.4TCR-005",
+      "TKHXL03.4TCR-010"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 55,
+    "rated_power_kw_max": 55,
+    "displacements_l": [
+      3.359
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI3404TCR",
+        "slug": "kohler-kdi3404tcr",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 3404TM/G18",
+    "normalized_model": "KDI3404TMG18",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FKHXL3.36EST",
+      "GKHXL3.36EST",
+      "HKHXL3.36EST",
+      "JKHXL3.36EST",
+      "KKHXL3.36EST",
+      "LKHXL3.36EST",
+      "MKHXL03.4EST",
+      "NKHXL03.4EST",
+      "PKHXL03.4EST",
+      "RKHXL03.4EST",
+      "SKHXL03.4EST",
+      "TKHXL03.4EST"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "FKHXL3.36EST-008",
+      "GKHXL3.36EST-004",
+      "HKHXL3.36EST-008",
+      "JKHXL3.36EST-006",
+      "KKHXL3.36EST-004",
+      "LKHXL3.36EST-005",
+      "MKHXL03.4EST-005",
+      "NKHXL03.4EST-008",
+      "PKHXL03.4EST-006",
+      "RKHXL03.4EST-009-R01",
+      "SKHXL03.4EST-004",
+      "TKHXL03.4EST-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 70,
+    "rated_power_kw_max": 70,
+    "displacements_l": [
+      3.359
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI3404TM",
+        "slug": "kohler-kdi3404tm",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 3404TM/G18A",
+    "normalized_model": "KDI3404TMG18A",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FKHXL3.36EST",
+      "GKHXL3.36EST",
+      "HKHXL3.36EST",
+      "JKHXL3.36EST",
+      "KKHXL3.36EST",
+      "LKHXL3.36EST",
+      "MKHXL03.4EST",
+      "NKHXL03.4EST",
+      "PKHXL03.4EST",
+      "RKHXL03.4EST",
+      "SKHXL03.4EST",
+      "TKHXL03.4EST"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "FKHXL3.36EST-008",
+      "GKHXL3.36EST-004",
+      "HKHXL3.36EST-008",
+      "JKHXL3.36EST-006",
+      "KKHXL3.36EST-004",
+      "LKHXL3.36EST-005",
+      "MKHXL03.4EST-005",
+      "NKHXL03.4EST-008",
+      "PKHXL03.4EST-006",
+      "RKHXL03.4EST-009-R01",
+      "SKHXL03.4EST-004",
+      "TKHXL03.4EST-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 60,
+    "rated_power_kw_max": 60,
+    "displacements_l": [
+      3.359
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI3404TM",
+        "slug": "kohler-kdi3404tm",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 3404TM/G18B",
+    "normalized_model": "KDI3404TMG18B",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FKHXL3.36EST",
+      "GKHXL3.36EST",
+      "HKHXL3.36EST",
+      "JKHXL3.36EST",
+      "KKHXL3.36EST",
+      "LKHXL3.36EST",
+      "MKHXL03.4EST",
+      "NKHXL03.4EST",
+      "PKHXL03.4EST",
+      "RKHXL03.4EST",
+      "SKHXL03.4EST",
+      "TKHXL03.4EST"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "FKHXL3.36EST-008",
+      "GKHXL3.36EST-004",
+      "HKHXL3.36EST-008",
+      "JKHXL3.36EST-006",
+      "KKHXL3.36EST-004",
+      "LKHXL3.36EST-005",
+      "MKHXL03.4EST-005",
+      "NKHXL03.4EST-008",
+      "PKHXL03.4EST-006",
+      "RKHXL03.4EST-009-R01",
+      "SKHXL03.4EST-004",
+      "TKHXL03.4EST-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 50,
+    "rated_power_kw_max": 50,
+    "displacements_l": [
+      3.359
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI3404TM",
+        "slug": "kohler-kdi3404tm",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI1903M",
+    "normalized_model": "KDI1903M",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "EKHXL1.86DIM",
+      "FKHXL1.86DIM",
+      "GKHXL1.86DIM",
+      "HKHXL1.86DIM",
+      "JKHXL1.86DIM",
+      "KKHXL1.86DIM",
+      "MKHXL01.9DIM",
+      "NKHXL01.9DIM",
+      "PKHXL01.9DIM",
+      "RKHXL01.9DIM",
+      "SKHXL01.9DIM",
+      "TKHXL01.9DIM"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "EKHXL1.86DIM-005",
+      "FKHXL1.86DIM-002",
+      "GKHXL1.86DIM-005",
+      "HKHXL1.86DIM-004",
+      "JKHXL1.86DIM-002",
+      "KKHXL1.86DIM-008",
+      "MKHXL01.9DIM-001",
+      "NKHXL01.9DIM-006",
+      "PKHXL01.9DIM-008",
+      "RKHXL01.9DIM-003-R01",
+      "SKHXL01.9DIM-008",
+      "TKHXL01.9DIM-012"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.861
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI1903M",
+        "slug": "kohler-kdi1903m",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI2504ESM",
+    "normalized_model": "KDI2504ESM",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "EKHXL2.48ESM",
+      "LKHXL2.48ESM",
+      "MKHXL02.5ESM",
+      "NKHXL02.5ESM",
+      "PKHXL02.5ESM",
+      "RKHXL02.5ESM",
+      "SKHXL02.5ESM",
+      "TKHXL02.5ESM"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "EKHXL2.48ESM-007",
+      "LKHXL2.48ESM-007",
+      "MKHXL02.5ESM-002",
+      "NKHXL02.5ESM-007",
+      "PKHXL02.5ESM-009",
+      "RKHXL02.5ESM-010-R01",
+      "SKHXL02.5ESM-002",
+      "TKHXL02.5ESM-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 29,
+    "rated_power_kw_max": 29,
+    "displacements_l": [
+      2.482
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI2504ESM",
+        "slug": "kohler-kdi2504esm",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
       }
     ],
     "probable_database_matches": []
@@ -5033,6 +6004,382 @@
         "slug": "cummins-qsk50-g4",
         "rpm_rated": 1500,
         "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 1903TCR/G18",
+    "normalized_model": "KDI1903TCRG18",
+    "first_model_year": 2013,
+    "latest_model_year": 2022,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "DKHXL2.48TCR",
+      "EKHXL2.48TCR",
+      "FKHXL2.48TCR",
+      "GKHXL2.48TCR",
+      "HKHXL2.48TCR",
+      "JKHXL2.48TCR",
+      "KKHXL2.48TCR",
+      "LKHXL2.48TCR",
+      "MKHXL02.5TCR",
+      "NKHXL02.5TCR"
+    ],
+    "engine_codes": [
+      "N/A",
+      "NA"
+    ],
+    "certificates": [
+      "DKHXL2.48TCR-001",
+      "EKHXL2.48TCR-003",
+      "FKHXL2.48TCR-004",
+      "GKHXL2.48TCR-007",
+      "HKHXL2.48TCR-007",
+      "JKHXL2.48TCR-009",
+      "KKHXL2.48TCR-010",
+      "LKHXL2.48TCR-001",
+      "MKHXL02.5TCR-004",
+      "NKHXL02.5TCR-004"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 30,
+    "rated_power_kw_max": 30,
+    "displacements_l": [
+      1.861
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI1903TCR",
+        "slug": "kohler-kdi1903tcr",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 1903TCR/G18A",
+    "normalized_model": "KDI1903TCRG18A",
+    "first_model_year": 2013,
+    "latest_model_year": 2022,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "DKHXL2.48TCR",
+      "EKHXL2.48TCR",
+      "FKHXL2.48TCR",
+      "GKHXL2.48TCR",
+      "HKHXL2.48TCR",
+      "JKHXL2.48TCR",
+      "KKHXL2.48TCR",
+      "LKHXL2.48TCR",
+      "MKHXL02.5TCR",
+      "NKHXL02.5TCR"
+    ],
+    "engine_codes": [
+      "N/A",
+      "NA"
+    ],
+    "certificates": [
+      "DKHXL2.48TCR-001",
+      "EKHXL2.48TCR-003",
+      "FKHXL2.48TCR-004",
+      "GKHXL2.48TCR-007",
+      "HKHXL2.48TCR-007",
+      "JKHXL2.48TCR-009",
+      "KKHXL2.48TCR-010",
+      "LKHXL2.48TCR-001",
+      "MKHXL02.5TCR-004",
+      "NKHXL02.5TCR-004"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 24,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      1.861
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI1903TCR",
+        "slug": "kohler-kdi1903tcr",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 1903TCR/G18B",
+    "normalized_model": "KDI1903TCRG18B",
+    "first_model_year": 2013,
+    "latest_model_year": 2022,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "DKHXL2.48TCR",
+      "EKHXL2.48TCR",
+      "FKHXL2.48TCR",
+      "GKHXL2.48TCR",
+      "HKHXL2.48TCR",
+      "JKHXL2.48TCR",
+      "KKHXL2.48TCR",
+      "LKHXL2.48TCR",
+      "MKHXL02.5TCR",
+      "NKHXL02.5TCR"
+    ],
+    "engine_codes": [
+      "N/A",
+      "NA"
+    ],
+    "certificates": [
+      "DKHXL2.48TCR-001",
+      "EKHXL2.48TCR-003",
+      "FKHXL2.48TCR-004",
+      "GKHXL2.48TCR-007",
+      "HKHXL2.48TCR-007",
+      "JKHXL2.48TCR-009",
+      "KKHXL2.48TCR-010",
+      "LKHXL2.48TCR-001",
+      "MKHXL02.5TCR-004",
+      "NKHXL02.5TCR-004"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 32,
+    "rated_power_kw_max": 33,
+    "displacements_l": [
+      1.861
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI1903TCR",
+        "slug": "kohler-kdi1903tcr",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 2504TCR/G18",
+    "normalized_model": "KDI2504TCRG18",
+    "first_model_year": 2013,
+    "latest_model_year": 2022,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "DKHXL2.48TCR",
+      "EKHXL2.48TCR",
+      "FKHXL2.48TCR",
+      "GKHXL2.48TCR",
+      "HKHXL2.48TCR",
+      "JKHXL2.48TCR",
+      "KKHXL2.48TCR",
+      "LKHXL2.48TCR",
+      "MKHXL02.5TCR",
+      "NKHXL02.5TCR"
+    ],
+    "engine_codes": [
+      "N/A",
+      "NA"
+    ],
+    "certificates": [
+      "DKHXL2.48TCR-001",
+      "EKHXL2.48TCR-003",
+      "FKHXL2.48TCR-004",
+      "GKHXL2.48TCR-007",
+      "HKHXL2.48TCR-007",
+      "JKHXL2.48TCR-009",
+      "KKHXL2.48TCR-010",
+      "LKHXL2.48TCR-001",
+      "MKHXL02.5TCR-004",
+      "NKHXL02.5TCR-004"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 44,
+    "rated_power_kw_max": 44,
+    "displacements_l": [
+      2.482
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI2504TCR",
+        "slug": "kohler-kdi2504tcr",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI 3404TCR/G18A",
+    "normalized_model": "KDI3404TCRG18A",
+    "first_model_year": 2016,
+    "latest_model_year": 2019,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "GKHXL3.36TCG",
+      "HKHXL3.36TCG",
+      "JKHXL3.36TCG",
+      "KKHXL3.36TCG"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "GKHXL3.36TCG-010",
+      "HKHXL3.36TCG-009",
+      "JKHXL3.36TCG-007",
+      "KKHXL3.36TCG-007"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 70,
+    "rated_power_kw_max": 70,
+    "displacements_l": [
+      3.359
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI3404TCR",
+        "slug": "kohler-kdi3404tcr",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -7207,66 +8554,6 @@
     "rated_power_kw_max": 2283,
     "displacements_l": [
       61.123000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Caterpillar Inc.",
-    "mapped_database_brands": [
-      "Caterpillar"
-    ],
-    "epa_model": "C32B",
-    "normalized_model": "C32B",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PCPXL32.0HXG",
-      "RCPXL32.1HXG",
-      "SCPXL32.1HXG",
-      "SCPXL32.1NZS",
-      "TCPXL32.1HXG",
-      "TCPXL32.1NZS"
-    ],
-    "engine_codes": [
-      "15",
-      "21",
-      "CERT TEST 1"
-    ],
-    "certificates": [
-      "PCPXL32.0HXG-020",
-      "RCPXL32.1HXG-011",
-      "SCPXL32.1HXG-011",
-      "SCPXL32.1NZS-029",
-      "TCPXL32.1HXG-020",
-      "TCPXL32.1NZS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 745,
-    "rated_power_kw_max": 1769,
-    "displacements_l": [
-      32.101
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -14355,705 +15642,6 @@
     "mapped_database_brands": [
       "Kohler"
     ],
-    "epa_model": "KDI 1903TCR/18",
-    "normalized_model": "KDI1903TCR18",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HKHXL2.48TCR",
-      "JKHXL2.48TCR",
-      "KKHXL2.48TCR",
-      "LKHXL2.48TCR",
-      "MKHXL02.5TCR",
-      "NKHXL02.5TCR",
-      "PKHXL02.5TCR",
-      "RKHXL02.5TCR",
-      "SKHXL02.5TCR",
-      "TKHXL02.5TCR"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "HKHXL2.48TCR-007",
-      "JKHXL2.48TCR-009",
-      "KKHXL2.48TCR-010",
-      "LKHXL2.48TCR-001",
-      "MKHXL02.5TCR-004",
-      "NKHXL02.5TCR-004",
-      "PKHXL02.5TCR-003",
-      "RKHXL02.5TCR-006-R01",
-      "SKHXL02.5TCR-006",
-      "TKHXL02.5TCR-004"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 30,
-    "rated_power_kw_max": 30,
-    "displacements_l": [
-      1.861
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI1903TCR",
-        "slug": "kohler-kdi1903tcr",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 1903TCR/G18C",
-    "normalized_model": "KDI1903TCRG18C",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DKHXL2.48TCR",
-      "EKHXL2.48TCR",
-      "FKHXL2.48TCR",
-      "GKHXL2.48TCR",
-      "HKHXL2.48TCR",
-      "JKHXL2.48TCR",
-      "KKHXL2.48TCR",
-      "LKHXL2.48TCR",
-      "MKHXL02.5TCR",
-      "NKHXL02.5TCR",
-      "PKHXL02.5TCR",
-      "RKHXL02.5TCR",
-      "SKHXL02.5TCR",
-      "TKHXL02.5TCR"
-    ],
-    "engine_codes": [
-      "N/A",
-      "NA"
-    ],
-    "certificates": [
-      "DKHXL2.48TCR-001",
-      "EKHXL2.48TCR-003",
-      "FKHXL2.48TCR-004",
-      "GKHXL2.48TCR-007",
-      "HKHXL2.48TCR-007",
-      "JKHXL2.48TCR-009",
-      "KKHXL2.48TCR-010",
-      "LKHXL2.48TCR-001",
-      "MKHXL02.5TCR-004",
-      "NKHXL02.5TCR-004",
-      "PKHXL02.5TCR-003",
-      "RKHXL02.5TCR-006-R01",
-      "SKHXL02.5TCR-006",
-      "TKHXL02.5TCR-004"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 37,
-    "rated_power_kw_max": 37,
-    "displacements_l": [
-      1.861
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI1903TCR",
-        "slug": "kohler-kdi1903tcr",
-        "similarity": 0.833
-      }
-    ]
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 2504TCR/G18A",
-    "normalized_model": "KDI2504TCRG18A",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "EKHXL2.48TCR",
-      "FKHXL2.48TCR",
-      "GKHXL2.48TCR",
-      "HKHXL2.48TCR",
-      "JKHXL2.48TCR",
-      "KKHXL2.48TCR",
-      "LKHXL2.48TCR",
-      "MKHXL02.5TCR",
-      "NKHXL02.5TCR",
-      "PKHXL02.5TCR",
-      "RKHXL02.5TCR",
-      "SKHXL02.5TCR",
-      "TKHXL02.5TCR"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "EKHXL2.48TCR-003",
-      "FKHXL2.48TCR-004",
-      "GKHXL2.48TCR-007",
-      "HKHXL2.48TCR-007",
-      "JKHXL2.48TCR-009",
-      "KKHXL2.48TCR-010",
-      "LKHXL2.48TCR-001",
-      "MKHXL02.5TCR-004",
-      "NKHXL02.5TCR-004",
-      "PKHXL02.5TCR-003",
-      "RKHXL02.5TCR-006-R01",
-      "SKHXL02.5TCR-006",
-      "TKHXL02.5TCR-004"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 47,
-    "rated_power_kw_max": 47,
-    "displacements_l": [
-      2.482
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI2504TCR",
-        "slug": "kohler-kdi2504tcr",
-        "similarity": 0.833
-      }
-    ]
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 2504TM/G18",
-    "normalized_model": "KDI2504TMG18",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FKHXL2.48EST",
-      "GKHXL2.48EST",
-      "HKHXL2.48EST",
-      "JKHXL2.48EST",
-      "KKHXL2.48EST",
-      "LKHXL2.48EST",
-      "MKHXL02.5EST",
-      "NKHXL02.5EST",
-      "PKHXL02.5EST",
-      "RKHXL02.5EST",
-      "SKHXL02.5EST",
-      "TKHXL02.5EST"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "FKHXL2.48EST-009",
-      "GKHXL2.48EST-003",
-      "HKHXL2.48EST-006",
-      "JKHXL2.48EST-005",
-      "KKHXL2.48EST-009",
-      "LKHXL2.48EST-006",
-      "MKHXL02.5EST-003",
-      "NKHXL02.5EST-009",
-      "PKHXL02.5EST-010",
-      "RKHXL02.5EST-008-R01",
-      "SKHXL02.5EST-003",
-      "TKHXL02.5EST-008"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.482
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 3404TCR/70G",
-    "normalized_model": "KDI3404TCR70G",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LKHXL3.36TCG",
-      "MKHXL03.4TCG",
-      "NKHXL03.4TCG",
-      "PKHXL03.4TCG",
-      "RKHXL03.4TCG",
-      "SKHXL03.4TCG",
-      "TKHXL03.4TCG"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "LKHXL3.36TCG-009",
-      "MKHXL03.4TCG-008",
-      "NKHXL03.4TCG-005",
-      "PKHXL03.4TCG-005",
-      "RKHXL03.4TCG-005-R01",
-      "SKHXL03.4TCG-007",
-      "TKHXL03.4TCG-007"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 70,
-    "rated_power_kw_max": 70,
-    "displacements_l": [
-      3.359
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI3404TCR",
-        "slug": "kohler-kdi3404tcr",
-        "similarity": 0.87
-      }
-    ]
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 3404TCR/G18",
-    "normalized_model": "KDI3404TCRG18",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FKHXL3.36TCR",
-      "GKHXL3.36TCR",
-      "HKHXL3.36TCR",
-      "JKHXL3.36TCR",
-      "KKHXL3.36TCR",
-      "LKHXL3.36TCR",
-      "MKHXL03.4TCR",
-      "NKHXL03.4TCR",
-      "PKHXL03.4TCR",
-      "RKHXL03.4TCR",
-      "SKHXL03.4TCR",
-      "TKHXL03.4TCR"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "FKHXL3.36TCR-010",
-      "GKHXL3.36TCR-001",
-      "HKHXL3.36TCR-010",
-      "JKHXL3.36TCR-008",
-      "KKHXL3.36TCR-005",
-      "LKHXL3.36TCR-002",
-      "MKHXL03.4TCR-006",
-      "NKHXL03.4TCR-003",
-      "PKHXL03.4TCR-004",
-      "RKHXL03.4TCR-007-R01",
-      "SKHXL03.4TCR-005",
-      "TKHXL03.4TCR-010"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 55,
-    "rated_power_kw_max": 55,
-    "displacements_l": [
-      3.359
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI3404TCR",
-        "slug": "kohler-kdi3404tcr",
-        "similarity": 0.87
-      }
-    ]
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 3404TM/G18",
-    "normalized_model": "KDI3404TMG18",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FKHXL3.36EST",
-      "GKHXL3.36EST",
-      "HKHXL3.36EST",
-      "JKHXL3.36EST",
-      "KKHXL3.36EST",
-      "LKHXL3.36EST",
-      "MKHXL03.4EST",
-      "NKHXL03.4EST",
-      "PKHXL03.4EST",
-      "RKHXL03.4EST",
-      "SKHXL03.4EST",
-      "TKHXL03.4EST"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "FKHXL3.36EST-008",
-      "GKHXL3.36EST-004",
-      "HKHXL3.36EST-008",
-      "JKHXL3.36EST-006",
-      "KKHXL3.36EST-004",
-      "LKHXL3.36EST-005",
-      "MKHXL03.4EST-005",
-      "NKHXL03.4EST-008",
-      "PKHXL03.4EST-006",
-      "RKHXL03.4EST-009-R01",
-      "SKHXL03.4EST-004",
-      "TKHXL03.4EST-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 70,
-    "rated_power_kw_max": 70,
-    "displacements_l": [
-      3.359
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 3404TM/G18A",
-    "normalized_model": "KDI3404TMG18A",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FKHXL3.36EST",
-      "GKHXL3.36EST",
-      "HKHXL3.36EST",
-      "JKHXL3.36EST",
-      "KKHXL3.36EST",
-      "LKHXL3.36EST",
-      "MKHXL03.4EST",
-      "NKHXL03.4EST",
-      "PKHXL03.4EST",
-      "RKHXL03.4EST",
-      "SKHXL03.4EST",
-      "TKHXL03.4EST"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "FKHXL3.36EST-008",
-      "GKHXL3.36EST-004",
-      "HKHXL3.36EST-008",
-      "JKHXL3.36EST-006",
-      "KKHXL3.36EST-004",
-      "LKHXL3.36EST-005",
-      "MKHXL03.4EST-005",
-      "NKHXL03.4EST-008",
-      "PKHXL03.4EST-006",
-      "RKHXL03.4EST-009-R01",
-      "SKHXL03.4EST-004",
-      "TKHXL03.4EST-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 60,
-    "rated_power_kw_max": 60,
-    "displacements_l": [
-      3.359
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 3404TM/G18B",
-    "normalized_model": "KDI3404TMG18B",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FKHXL3.36EST",
-      "GKHXL3.36EST",
-      "HKHXL3.36EST",
-      "JKHXL3.36EST",
-      "KKHXL3.36EST",
-      "LKHXL3.36EST",
-      "MKHXL03.4EST",
-      "NKHXL03.4EST",
-      "PKHXL03.4EST",
-      "RKHXL03.4EST",
-      "SKHXL03.4EST",
-      "TKHXL03.4EST"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "FKHXL3.36EST-008",
-      "GKHXL3.36EST-004",
-      "HKHXL3.36EST-008",
-      "JKHXL3.36EST-006",
-      "KKHXL3.36EST-004",
-      "LKHXL3.36EST-005",
-      "MKHXL03.4EST-005",
-      "NKHXL03.4EST-008",
-      "PKHXL03.4EST-006",
-      "RKHXL03.4EST-009-R01",
-      "SKHXL03.4EST-004",
-      "TKHXL03.4EST-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 50,
-    "rated_power_kw_max": 50,
-    "displacements_l": [
-      3.359
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
     "epa_model": "KDI1903ESM",
     "normalized_model": "KDI1903ESM",
     "first_model_year": 2014,
@@ -15126,146 +15714,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI1903M",
-    "normalized_model": "KDI1903M",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "EKHXL1.86DIM",
-      "FKHXL1.86DIM",
-      "GKHXL1.86DIM",
-      "HKHXL1.86DIM",
-      "JKHXL1.86DIM",
-      "KKHXL1.86DIM",
-      "MKHXL01.9DIM",
-      "NKHXL01.9DIM",
-      "PKHXL01.9DIM",
-      "RKHXL01.9DIM",
-      "SKHXL01.9DIM",
-      "TKHXL01.9DIM"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "EKHXL1.86DIM-005",
-      "FKHXL1.86DIM-002",
-      "GKHXL1.86DIM-005",
-      "HKHXL1.86DIM-004",
-      "JKHXL1.86DIM-002",
-      "KKHXL1.86DIM-008",
-      "MKHXL01.9DIM-001",
-      "NKHXL01.9DIM-006",
-      "PKHXL01.9DIM-008",
-      "RKHXL01.9DIM-003-R01",
-      "SKHXL01.9DIM-008",
-      "TKHXL01.9DIM-012"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.861
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI2504ESM",
-    "normalized_model": "KDI2504ESM",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "EKHXL2.48ESM",
-      "LKHXL2.48ESM",
-      "MKHXL02.5ESM",
-      "NKHXL02.5ESM",
-      "PKHXL02.5ESM",
-      "RKHXL02.5ESM",
-      "SKHXL02.5ESM",
-      "TKHXL02.5ESM"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "EKHXL2.48ESM-007",
-      "LKHXL2.48ESM-007",
-      "MKHXL02.5ESM-002",
-      "NKHXL02.5ESM-007",
-      "PKHXL02.5ESM-009",
-      "RKHXL02.5ESM-010-R01",
-      "SKHXL02.5ESM-002",
-      "TKHXL02.5ESM-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 29,
-    "rated_power_kw_max": 29,
-    "displacements_l": [
-      2.482
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI1903M",
+        "slug": "kohler-kdi1903m",
+        "similarity": 0.889
+      }
+    ]
   },
   {
     "manufacturer": "Discovery Energy, LLC.",
@@ -41532,314 +41988,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 1903TCR/G18",
-    "normalized_model": "KDI1903TCRG18",
-    "first_model_year": 2013,
-    "latest_model_year": 2022,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "DKHXL2.48TCR",
-      "EKHXL2.48TCR",
-      "FKHXL2.48TCR",
-      "GKHXL2.48TCR",
-      "HKHXL2.48TCR",
-      "JKHXL2.48TCR",
-      "KKHXL2.48TCR",
-      "LKHXL2.48TCR",
-      "MKHXL02.5TCR",
-      "NKHXL02.5TCR"
-    ],
-    "engine_codes": [
-      "N/A",
-      "NA"
-    ],
-    "certificates": [
-      "DKHXL2.48TCR-001",
-      "EKHXL2.48TCR-003",
-      "FKHXL2.48TCR-004",
-      "GKHXL2.48TCR-007",
-      "HKHXL2.48TCR-007",
-      "JKHXL2.48TCR-009",
-      "KKHXL2.48TCR-010",
-      "LKHXL2.48TCR-001",
-      "MKHXL02.5TCR-004",
-      "NKHXL02.5TCR-004"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 30,
-    "rated_power_kw_max": 30,
-    "displacements_l": [
-      1.861
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI1903TCR",
-        "slug": "kohler-kdi1903tcr",
-        "similarity": 0.87
-      }
-    ]
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 1903TCR/G18A",
-    "normalized_model": "KDI1903TCRG18A",
-    "first_model_year": 2013,
-    "latest_model_year": 2022,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "DKHXL2.48TCR",
-      "EKHXL2.48TCR",
-      "FKHXL2.48TCR",
-      "GKHXL2.48TCR",
-      "HKHXL2.48TCR",
-      "JKHXL2.48TCR",
-      "KKHXL2.48TCR",
-      "LKHXL2.48TCR",
-      "MKHXL02.5TCR",
-      "NKHXL02.5TCR"
-    ],
-    "engine_codes": [
-      "N/A",
-      "NA"
-    ],
-    "certificates": [
-      "DKHXL2.48TCR-001",
-      "EKHXL2.48TCR-003",
-      "FKHXL2.48TCR-004",
-      "GKHXL2.48TCR-007",
-      "HKHXL2.48TCR-007",
-      "JKHXL2.48TCR-009",
-      "KKHXL2.48TCR-010",
-      "LKHXL2.48TCR-001",
-      "MKHXL02.5TCR-004",
-      "NKHXL02.5TCR-004"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 24,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      1.861
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI1903TCR",
-        "slug": "kohler-kdi1903tcr",
-        "similarity": 0.833
-      }
-    ]
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 1903TCR/G18B",
-    "normalized_model": "KDI1903TCRG18B",
-    "first_model_year": 2013,
-    "latest_model_year": 2022,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "DKHXL2.48TCR",
-      "EKHXL2.48TCR",
-      "FKHXL2.48TCR",
-      "GKHXL2.48TCR",
-      "HKHXL2.48TCR",
-      "JKHXL2.48TCR",
-      "KKHXL2.48TCR",
-      "LKHXL2.48TCR",
-      "MKHXL02.5TCR",
-      "NKHXL02.5TCR"
-    ],
-    "engine_codes": [
-      "N/A",
-      "NA"
-    ],
-    "certificates": [
-      "DKHXL2.48TCR-001",
-      "EKHXL2.48TCR-003",
-      "FKHXL2.48TCR-004",
-      "GKHXL2.48TCR-007",
-      "HKHXL2.48TCR-007",
-      "JKHXL2.48TCR-009",
-      "KKHXL2.48TCR-010",
-      "LKHXL2.48TCR-001",
-      "MKHXL02.5TCR-004",
-      "NKHXL02.5TCR-004"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 32,
-    "rated_power_kw_max": 33,
-    "displacements_l": [
-      1.861
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI1903TCR",
-        "slug": "kohler-kdi1903tcr",
-        "similarity": 0.833
-      }
-    ]
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 2504TCR/G18",
-    "normalized_model": "KDI2504TCRG18",
-    "first_model_year": 2013,
-    "latest_model_year": 2022,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "DKHXL2.48TCR",
-      "EKHXL2.48TCR",
-      "FKHXL2.48TCR",
-      "GKHXL2.48TCR",
-      "HKHXL2.48TCR",
-      "JKHXL2.48TCR",
-      "KKHXL2.48TCR",
-      "LKHXL2.48TCR",
-      "MKHXL02.5TCR",
-      "NKHXL02.5TCR"
-    ],
-    "engine_codes": [
-      "N/A",
-      "NA"
-    ],
-    "certificates": [
-      "DKHXL2.48TCR-001",
-      "EKHXL2.48TCR-003",
-      "FKHXL2.48TCR-004",
-      "GKHXL2.48TCR-007",
-      "HKHXL2.48TCR-007",
-      "JKHXL2.48TCR-009",
-      "KKHXL2.48TCR-010",
-      "LKHXL2.48TCR-001",
-      "MKHXL02.5TCR-004",
-      "NKHXL02.5TCR-004"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 44,
-    "rated_power_kw_max": 44,
-    "displacements_l": [
-      2.482
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI2504TCR",
-        "slug": "kohler-kdi2504tcr",
-        "similarity": 0.87
-      }
-    ]
-  },
-  {
     "manufacturer": "FPT Industrial S.p.A.",
     "mapped_database_brands": [
       "FPT"
@@ -45773,63 +45921,12 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI 3404TCR/G18A",
-    "normalized_model": "KDI3404TCRG18A",
-    "first_model_year": 2016,
-    "latest_model_year": 2019,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "GKHXL3.36TCG",
-      "HKHXL3.36TCG",
-      "JKHXL3.36TCG",
-      "KKHXL3.36TCG"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "GKHXL3.36TCG-010",
-      "HKHXL3.36TCG-009",
-      "JKHXL3.36TCG-007",
-      "KKHXL3.36TCG-007"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 70,
-    "rated_power_kw_max": 70,
-    "displacements_l": [
-      3.359
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
     "probable_database_matches": [
       {
         "brand": "Kohler",
-        "model": "KDI3404TCR",
-        "slug": "kohler-kdi3404tcr",
-        "similarity": 0.833
+        "model": "KDI2504ESM",
+        "slug": "kohler-kdi2504esm",
+        "similarity": 0.947
       }
     ]
   },
