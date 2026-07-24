@@ -63,6 +63,18 @@ CERTIFICATION_ALIASES = {
         "Discovery Energy, LLC.",
         "KSDNATG140318",
     ): ("Kohler", "KSD1403NA"),
+    ("FPT Industrial S.p.A.", "F2CCA615AH"): ("FPT", "C87 TE3F"),
+    ("FPT Industrial S.p.A.", "F2CCP615AH"): ("FPT", "C87 TE1PV"),
+    ("FPT Industrial S.p.A.", "F2CE9685AE"): ("FPT", "C87 TE3F"),
+    ("FPT Industrial S.p.A.", "F2CE9685CE"): ("FPT", "C87 TE3F"),
+    ("FPT Industrial S.p.A.", "F4GE9455AJ"): ("FPT", "NEF45SM2X"),
+    ("FPT Industrial S.p.A.", "F4GE9455BJ"): ("FPT", "NEF45SM1X"),
+    ("FPT Industrial S.p.A.", "F4GE9685AJ"): ("FPT", "NEF67 TM1X"),
+    ("FPT Industrial S.p.A.", "F4HE0485BJ"): ("FPT", "NEF45 TE2P"),
+    ("FPT Industrial S.p.A.", "F4HE0485CJ"): ("FPT", "NEF45 TE1P"),
+    ("FPT Industrial S.p.A.", "F4HE0685AJ"): ("FPT", "NEF67 TE3PV"),
+    ("FPT Industrial S.p.A.", "F4HE0685FJ"): ("FPT", "NEF67 TE2PV"),
+    ("FPT Industrial S.p.A.", "F4HE0685GJ"): ("FPT", "NEF67 TE1PV"),
     ("Liebherr Machines Bulle SA", "D9812G"): ("Liebherr", "D9812"),
     ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
     ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
@@ -487,6 +499,10 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "- `Caterpillar Inc.` is also compared with `Perkins` for reviewed family-prefix matches. "
         "Official Perkins product documentation identifies commercial models such as "
         "`1706J-E93TA` and `2406J-E13TA` behind the shorter EPA family names.",
+        "- `FPT Industrial S.p.A.` uses internal EPA certification codes for its Tier 3 engines. "
+        "Twelve reviewed aliases are mapped to N45, N67 and Cursor 9 commercial pages only where "
+        "displacement, certification family and published power node agree with FPT's official "
+        "power-generation brochure.",
         "- `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's "
         "official co-development announcement identifies the six KD commercial engine families "
         "manufactured for Kohler generator sets.",

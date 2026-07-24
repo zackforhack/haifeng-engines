@@ -23,17 +23,17 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **4**
+- Reviewed certification aliases: **16**
 - Verified commercial family matches: **34**
 - Exact matches whose database page uses 1800 as its primary RPM: **34**
 - Exact model under another database brand: **9**
-- Not represented after reviewed matching rules: **746**
+- Not represented after reviewed matching rules: **734**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **25.8%**
-- Unmatched models with a 2024+ certification: **352**
+- Represented coverage within mapped manufacturers: **27.2%**
+- Unmatched models with a 2024+ certification: **340**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **222**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **210**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -42,6 +42,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 - `Discovery Energy, LLC.` is compared with the existing `Kohler` brand. Rehlko's official [engine warranty page](https://www.engines.rehlko.com/warranty) identifies Discovery Energy as the responsible company and states that Kohler Engines is now Rehlko.
 - `HD Construction Equipment Co., Ltd.` is compared with the existing `Hyundai` brand. Its [official network page](https://www.hd-ce.com/en/network) lists the current company and its engine production and R&D operations.
 - `Caterpillar Inc.` is also compared with `Perkins` for reviewed family-prefix matches. Official Perkins product documentation identifies commercial models such as `1706J-E93TA` and `2406J-E13TA` behind the shorter EPA family names.
+- `FPT Industrial S.p.A.` uses internal EPA certification codes for its Tier 3 engines. Twelve reviewed aliases are mapped to N45, N67 and Cursor 9 commercial pages only where displacement, certification family and published power node agree with FPT's official power-generation brochure.
 - `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's official co-development announcement identifies the six KD commercial engine families manufactured for Kohler generator sets.
 
 ## Generator-Priority Gaps by Brand
@@ -50,11 +51,11 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 |---|---:|
 | MTU | 29 |
 | Cummins | 24 |
-| FPT | 24 |
 | Perkins | 22 |
 | Kubota | 19 |
 | Yanmar | 19 |
 | Mitsubishi | 16 |
+| FPT | 12 |
 | Isuzu | 11 |
 | Deutz | 10 |
 | Baudouin | 9 |
@@ -74,7 +75,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Rolls-Royce Solutions America Inc | MTU | 155 | 10 | 27 | 0 | 0 | 0 | 0 | 0 | 118 | 17 |
 | Cummins Inc. | Cummins | 80 | 23 | 0 | 0 | 0 | 0 | 13 | 0 | 44 | 11 |
 | Perkins Engines Co Ltd | Perkins | 79 | 6 | 0 | 0 | 0 | 0 | 6 | 6 | 61 | 2 |
-| FPT Industrial S.p.A. | FPT | 68 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 68 | 0 |
+| FPT Industrial S.p.A. | FPT | 68 | 0 | 0 | 0 | 0 | 12 | 0 | 0 | 56 | 0 |
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 55 | 0 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 2 | 0 | 0 | 44 | 3 | 0 | 0 | 7 | 0 |
 | Discovery Energy, LLC. | Kohler | 48 | 2 | 0 | 14 | 0 | 1 | 0 | 0 | 31 | 2 |
@@ -160,20 +161,8 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Deutz AG | TCD2013L06 2V | Tier 3 | 180 |  |
 | 2026 | Deutz AG | TCD2013L06 4V | Tier 3 | 260 |  |
 | 2026 | Discovery Energy, LLC. | KDI1903ESM | Tier 2, Tier 4 (Final or Phase In) | 21 | Kohler KDI1903M (0.889) |
-| 2026 | FPT Industrial S.p.A. | F2CCA615A*H | Tier 3 | 290 |  |
-| 2026 | FPT Industrial S.p.A. | F2CCP615A*H | Tier 3 | 330 |  |
-| 2026 | FPT Industrial S.p.A. | F2CE9685A*E | Tier 3 | 290 |  |
-| 2026 | FPT Industrial S.p.A. | F2CE9685C*E | Tier 3 | 290 |  |
 | 2026 | FPT Industrial S.p.A. | F2CE9685E*E | Tier 3 | 230 |  |
-| 2026 | FPT Industrial S.p.A. | F4GE9455A*J | Tier 3 | 69 |  |
-| 2026 | FPT Industrial S.p.A. | F4GE9455B*J | Tier 3 | 59 |  |
 | 2026 | FPT Industrial S.p.A. | F4GE9485A*J | Tier 3 | 98 |  |
-| 2026 | FPT Industrial S.p.A. | F4GE9685A*J | Tier 3 | 148 |  |
-| 2026 | FPT Industrial S.p.A. | F4HE0485B*J | Tier 3 | 125 |  |
-| 2026 | FPT Industrial S.p.A. | F4HE0485C*J | Tier 3 | 90 |  |
-| 2026 | FPT Industrial S.p.A. | F4HE0685A*J | Tier 3 | 220 |  |
-| 2026 | FPT Industrial S.p.A. | F4HE0685F*J | Tier 3 | 210 |  |
-| 2026 | FPT Industrial S.p.A. | F4HE0685G*J | Tier 3 | 165 |  |
 | 2026 | FPT Industrial S.p.A. | F4HE9685A*J | Tier 3 | 208 |  |
 | 2026 | FPT Industrial S.p.A. | F4HE9685B*J | Tier 3 | 172 |  |
 | 2026 | FPT Industrial S.p.A. | F4HGE415A*V | Tier 4 (Final or Phase In) | 125 |  |
@@ -271,6 +260,18 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Rolls-Royce Solutions America Inc | 12V2000G76S | Tier 2 | 890 |  |
 | 2026 | Rolls-Royce Solutions America Inc | 12V2000G86S | Tier 2 | 987 |  |
 | 2026 | Rolls-Royce Solutions America Inc | 12V4000G74S | Tier 2 | 1736 | MTU 12V4000 GS (0.900) |
+| 2026 | Rolls-Royce Solutions America Inc | 16V2000G26S | Tier 2 | 998 |  |
+| 2026 | Rolls-Royce Solutions America Inc | 16V2000G76S | Tier 2 | 1097 |  |
+| 2026 | Rolls-Royce Solutions America Inc | 16V2000G86S | Tier 2 | 1371 |  |
+| 2026 | Rolls-Royce Solutions America Inc | 18V2000G76S | Tier 2 | 1371 |  |
+| 2026 | Societe Internationale des Moteurs-Baudouin | 12M33 | Tier 2 | 1420 |  |
+| 2026 | Societe Internationale des Moteurs-Baudouin | 12M55 | Tier 2 | 2752 |  |
+| 2026 | Societe Internationale des Moteurs-Baudouin | 16M33 | Tier 2 | 1893 |  |
+| 2026 | Societe Internationale des Moteurs-Baudouin | 16M55 | Tier 2 | 3600 |  |
+| 2026 | Societe Internationale des Moteurs-Baudouin | 20M33 | Tier 2 | 2460 |  |
+| 2026 | Societe Internationale des Moteurs-Baudouin | 20M55 | Tier 2 | 4550 |  |
+| 2026 | Societe Internationale des Moteurs-Baudouin | 20M61 | Tier 2 | 5450 |  |
+| 2026 | Societe Internationale des Moteurs-Baudouin | 6M33 | Tier 2 | 726 |  |
 
 ## Interpretation
 

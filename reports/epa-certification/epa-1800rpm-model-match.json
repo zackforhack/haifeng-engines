@@ -8469,6 +8469,1008 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F2CCA615A*H",
+    "normalized_model": "F2CCA615AH",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HFPXL08.7TR3",
+      "JFPXL08.7TR3",
+      "KFPXL08.7TR3",
+      "LFPXL08.7TR3",
+      "MFPXL08.7TR3",
+      "NFPXL08.7TR3",
+      "PFPXL08.7TR3",
+      "RFPXL08.7TR3",
+      "SFPXL08.7TR3",
+      "TFPXL08.7TR3"
+    ],
+    "engine_codes": [
+      "F2CCA615A*H"
+    ],
+    "certificates": [
+      "HFPXL08.7TR3-004",
+      "JFPXL08.7TR3-006",
+      "KFPXL08.7TR3-006",
+      "LFPXL08.7TR3-003",
+      "MFPXL08.7TR3-004",
+      "NFPXL08.7TR3-013",
+      "PFPXL08.7TR3-031",
+      "RFPXL08.7TR3-002",
+      "SFPXL08.7TR3-008",
+      "TFPXL08.7TR3-017"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 290,
+    "rated_power_kw_max": 290,
+    "displacements_l": [
+      8.709
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "C87 TE3F",
+        "slug": "fpt-c87-te3f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F2CCP615A*H",
+    "normalized_model": "F2CCP615AH",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HFPXL08.7TR3",
+      "JFPXL08.7TR3",
+      "KFPXL08.7TR3",
+      "LFPXL08.7TR3",
+      "MFPXL08.7TR3",
+      "NFPXL08.7TR3",
+      "PFPXL08.7TR3",
+      "RFPXL08.7TR3",
+      "SFPXL08.7TR3",
+      "TFPXL08.7TR3"
+    ],
+    "engine_codes": [
+      "F2CCP615A*H"
+    ],
+    "certificates": [
+      "HFPXL08.7TR3-004",
+      "JFPXL08.7TR3-006",
+      "KFPXL08.7TR3-006",
+      "LFPXL08.7TR3-003",
+      "MFPXL08.7TR3-004",
+      "NFPXL08.7TR3-013",
+      "PFPXL08.7TR3-031",
+      "RFPXL08.7TR3-002",
+      "SFPXL08.7TR3-008",
+      "TFPXL08.7TR3-017"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 330,
+    "rated_power_kw_max": 330,
+    "displacements_l": [
+      8.709
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "C87 TE1PV",
+        "slug": "fpt-c87-te1pv",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F2CE9685A*E",
+    "normalized_model": "F2CE9685AE",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CFPXL08.7TR3",
+      "DFPXL08.7TR3",
+      "EFPXL08.7TR3",
+      "FFPXL08.7TR3",
+      "GFPXL08.7TR3",
+      "HFPXL08.7TR3",
+      "JFPXL08.7TR3",
+      "KFPXL08.7TR3",
+      "LFPXL08.7TR3",
+      "MFPXL08.7TR3",
+      "NFPXL08.7TR3",
+      "PFPXL08.7TR3",
+      "RFPXL08.7TR3",
+      "SFPXL08.7TR3",
+      "TFPXL08.7TR3"
+    ],
+    "engine_codes": [
+      "F2CE9685A*E"
+    ],
+    "certificates": [
+      "CFPXL08.7TR3-017",
+      "DFPXL08.7TR3-012",
+      "EFPXL08.7TR3-005",
+      "FFPXL08.7TR3-004",
+      "GFPXL08.7TR3-005",
+      "HFPXL08.7TR3-004",
+      "JFPXL08.7TR3-006",
+      "KFPXL08.7TR3-006",
+      "LFPXL08.7TR3-003",
+      "MFPXL08.7TR3-004",
+      "NFPXL08.7TR3-013",
+      "PFPXL08.7TR3-031",
+      "RFPXL08.7TR3-002",
+      "SFPXL08.7TR3-008",
+      "TFPXL08.7TR3-017"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 290,
+    "rated_power_kw_max": 290,
+    "displacements_l": [
+      8.709
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "C87 TE3F",
+        "slug": "fpt-c87-te3f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F2CE9685C*E",
+    "normalized_model": "F2CE9685CE",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HFPXL08.7TR3",
+      "JFPXL08.7TR3",
+      "KFPXL08.7TR3",
+      "LFPXL08.7TR3",
+      "MFPXL08.7TR3",
+      "NFPXL08.7TR3",
+      "PFPXL08.7TR3",
+      "RFPXL08.7TR3",
+      "SFPXL08.7TR3",
+      "TFPXL08.7TR3"
+    ],
+    "engine_codes": [
+      "F2CE9685C*E"
+    ],
+    "certificates": [
+      "HFPXL08.7TR3-004",
+      "JFPXL08.7TR3-006",
+      "KFPXL08.7TR3-006",
+      "LFPXL08.7TR3-003",
+      "MFPXL08.7TR3-004",
+      "NFPXL08.7TR3-013",
+      "PFPXL08.7TR3-031",
+      "RFPXL08.7TR3-002",
+      "SFPXL08.7TR3-008",
+      "TFPXL08.7TR3-017"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 290,
+    "rated_power_kw_max": 290,
+    "displacements_l": [
+      8.709
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "C87 TE3F",
+        "slug": "fpt-c87-te3f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4GE9455A*J",
+    "normalized_model": "F4GE9455AJ",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CFPXL04.5DTD",
+      "DFPXL04.5DTD",
+      "EFPXL04.5DTD",
+      "FFPXL04.5DTD",
+      "GFPXL04.5DTD",
+      "HFPXL04.5DTD",
+      "JFPXL04.5DTD",
+      "KFPXL04.5DTD",
+      "LFPXL04.5DTD",
+      "MFPXL04.5DTD",
+      "NFPXL04.5DTD",
+      "PFPXL04.5DTD",
+      "RFPXL04.5DTD",
+      "SFPXL04.5DTD",
+      "TFPXL04.5DTD"
+    ],
+    "engine_codes": [
+      "F4GE9455A*J"
+    ],
+    "certificates": [
+      "CFPXL04.5DTD-018",
+      "DFPXL04.5DTD-004",
+      "EFPXL04.5DTD-001",
+      "FFPXL04.5DTD-001",
+      "GFPXL04.5DTD-002",
+      "HFPXL04.5DTD-001",
+      "JFPXL04.5DTD-001",
+      "KFPXL04.5DTD-002",
+      "LFPXL04.5DTD-004",
+      "MFPXL04.5DTD-001",
+      "NFPXL04.5DTD-009",
+      "PFPXL04.5DTD-028",
+      "RFPXL04.5DTD-005",
+      "SFPXL04.5DTD-004",
+      "TFPXL04.5DTD-040"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 69,
+    "rated_power_kw_max": 69,
+    "displacements_l": [
+      4.485
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "NEF45SM2X",
+        "slug": "fpt-nef45sm2x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4GE9455B*J",
+    "normalized_model": "F4GE9455BJ",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CFPXL04.5DTD",
+      "DFPXL04.5DTD",
+      "EFPXL04.5DTD",
+      "FFPXL04.5DTD",
+      "GFPXL04.5DTD",
+      "HFPXL04.5DTD",
+      "JFPXL04.5DTD",
+      "KFPXL04.5DTD",
+      "LFPXL04.5DTD",
+      "MFPXL04.5DTD",
+      "NFPXL04.5DTD",
+      "PFPXL04.5DTD",
+      "RFPXL04.5DTD",
+      "SFPXL04.5DTD",
+      "TFPXL04.5DTD"
+    ],
+    "engine_codes": [
+      "F4GE9455B*J"
+    ],
+    "certificates": [
+      "CFPXL04.5DTD-018",
+      "DFPXL04.5DTD-004",
+      "EFPXL04.5DTD-001",
+      "FFPXL04.5DTD-001",
+      "GFPXL04.5DTD-002",
+      "HFPXL04.5DTD-001",
+      "JFPXL04.5DTD-001",
+      "KFPXL04.5DTD-002",
+      "LFPXL04.5DTD-004",
+      "MFPXL04.5DTD-001",
+      "NFPXL04.5DTD-009",
+      "PFPXL04.5DTD-028",
+      "RFPXL04.5DTD-005",
+      "SFPXL04.5DTD-004",
+      "TFPXL04.5DTD-040"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 59,
+    "rated_power_kw_max": 59,
+    "displacements_l": [
+      4.485
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "NEF45SM1X",
+        "slug": "fpt-nef45sm1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4GE9685A*J",
+    "normalized_model": "F4GE9685AJ",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CFPXL06.7DGB",
+      "DFPXL06.7DGB",
+      "EFPXL06.7DGB",
+      "FFPXL06.7DGB",
+      "GFPXL06.7DGB",
+      "HFPXL06.7DGB",
+      "JFPXL06.7DGB",
+      "KFPXL06.7DGB",
+      "LFPXL06.7DGB",
+      "MFPXL06.7DGB",
+      "NFPXL06.7DGB",
+      "PFPXL06.7DGB",
+      "RFPXL06.7DGB",
+      "SFPXL06.7DGB",
+      "TFPXL06.7DGB"
+    ],
+    "engine_codes": [
+      "F4GE9685A*J"
+    ],
+    "certificates": [
+      "CFPXL06.7DGB-015",
+      "DFPXL06.7DGB-006",
+      "EFPXL06.7DGB-003",
+      "FFPXL06.7DGB-002",
+      "GFPXL06.7DGB-003",
+      "HFPXL06.7DGB-002",
+      "JFPXL06.7DGB-002",
+      "KFPXL06.7DGB-003",
+      "LFPXL06.7DGB-002",
+      "MFPXL06.7DGB-003",
+      "NFPXL06.7DGB-007",
+      "PFPXL06.7DGB-029",
+      "RFPXL06.7DGB-007",
+      "SFPXL06.7DGB-005",
+      "TFPXL06.7DGB-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 148,
+    "rated_power_kw_max": 148,
+    "displacements_l": [
+      6.728000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "NEF67 TM1X",
+        "slug": "fpt-nef67-tm1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4HE0485B*J",
+    "normalized_model": "F4HE0485BJ",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HFPXL06.7DGS",
+      "JFPXL06.7DGS",
+      "KFPXL06.7DGS",
+      "LFPXL06.7DGS",
+      "MFPXL06.7DGS",
+      "NFPXL06.7DGS",
+      "PFPXL06.7DGS",
+      "RFPXL06.7DGS",
+      "SFPXL06.7DGS",
+      "TFPXL06.7DGS"
+    ],
+    "engine_codes": [
+      "F4HE0485B*J"
+    ],
+    "certificates": [
+      "HFPXL06.7DGS-003",
+      "JFPXL06.7DGS-005",
+      "KFPXL06.7DGS-007",
+      "LFPXL06.7DGS-005",
+      "MFPXL06.7DGS-002",
+      "NFPXL06.7DGS-006",
+      "PFPXL06.7DGS-027",
+      "RFPXL06.7DGS-001",
+      "SFPXL06.7DGS-006",
+      "TFPXL06.7DGS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 125,
+    "rated_power_kw_max": 125,
+    "displacements_l": [
+      4.485
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "NEF45 TE2P",
+        "slug": "fpt-nef45-te2p",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4HE0485C*J",
+    "normalized_model": "F4HE0485CJ",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HFPXL06.7DGS",
+      "JFPXL06.7DGS",
+      "KFPXL06.7DGS",
+      "LFPXL06.7DGS",
+      "MFPXL06.7DGS",
+      "NFPXL06.7DGS",
+      "PFPXL06.7DGS",
+      "RFPXL06.7DGS",
+      "SFPXL06.7DGS",
+      "TFPXL06.7DGS"
+    ],
+    "engine_codes": [
+      "F4HE0485C*J"
+    ],
+    "certificates": [
+      "HFPXL06.7DGS-003",
+      "JFPXL06.7DGS-005",
+      "KFPXL06.7DGS-007",
+      "LFPXL06.7DGS-005",
+      "MFPXL06.7DGS-002",
+      "NFPXL06.7DGS-006",
+      "PFPXL06.7DGS-027",
+      "RFPXL06.7DGS-001",
+      "SFPXL06.7DGS-006",
+      "TFPXL06.7DGS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 90,
+    "rated_power_kw_max": 90,
+    "displacements_l": [
+      4.485
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "NEF45 TE1P",
+        "slug": "fpt-nef45-te1p",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4HE0685A*J",
+    "normalized_model": "F4HE0685AJ",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HFPXL06.7DGS",
+      "JFPXL06.7DGS",
+      "KFPXL06.7DGS",
+      "LFPXL06.7DGS",
+      "MFPXL06.7DGS",
+      "NFPXL06.7DGS",
+      "PFPXL06.7DGS",
+      "RFPXL06.7DGS",
+      "SFPXL06.7DGS",
+      "TFPXL06.7DGS"
+    ],
+    "engine_codes": [
+      "F4HE0685A*J"
+    ],
+    "certificates": [
+      "HFPXL06.7DGS-003",
+      "JFPXL06.7DGS-005",
+      "KFPXL06.7DGS-007",
+      "LFPXL06.7DGS-005",
+      "MFPXL06.7DGS-002",
+      "NFPXL06.7DGS-006",
+      "PFPXL06.7DGS-027",
+      "RFPXL06.7DGS-001",
+      "SFPXL06.7DGS-006",
+      "TFPXL06.7DGS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 220,
+    "rated_power_kw_max": 220,
+    "displacements_l": [
+      6.728000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "NEF67 TE3PV",
+        "slug": "fpt-nef67-te3pv",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4HE0685F*J",
+    "normalized_model": "F4HE0685FJ",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HFPXL06.7DGS",
+      "JFPXL06.7DGS",
+      "KFPXL06.7DGS",
+      "LFPXL06.7DGS",
+      "MFPXL06.7DGS",
+      "NFPXL06.7DGS",
+      "PFPXL06.7DGS",
+      "RFPXL06.7DGS",
+      "SFPXL06.7DGS",
+      "TFPXL06.7DGS"
+    ],
+    "engine_codes": [
+      "F4HE0685F*J"
+    ],
+    "certificates": [
+      "HFPXL06.7DGS-003",
+      "JFPXL06.7DGS-005",
+      "KFPXL06.7DGS-007",
+      "LFPXL06.7DGS-005",
+      "MFPXL06.7DGS-002",
+      "NFPXL06.7DGS-006",
+      "PFPXL06.7DGS-027",
+      "RFPXL06.7DGS-001",
+      "SFPXL06.7DGS-006",
+      "TFPXL06.7DGS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 210,
+    "rated_power_kw_max": 210,
+    "displacements_l": [
+      6.728000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "NEF67 TE2PV",
+        "slug": "fpt-nef67-te2pv",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4HE0685G*J",
+    "normalized_model": "F4HE0685GJ",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HFPXL06.7DGS",
+      "JFPXL06.7DGS",
+      "KFPXL06.7DGS",
+      "LFPXL06.7DGS",
+      "MFPXL06.7DGS",
+      "NFPXL06.7DGS",
+      "PFPXL06.7DGS",
+      "RFPXL06.7DGS",
+      "SFPXL06.7DGS",
+      "TFPXL06.7DGS"
+    ],
+    "engine_codes": [
+      "F4HE0685G*J"
+    ],
+    "certificates": [
+      "HFPXL06.7DGS-003",
+      "JFPXL06.7DGS-005",
+      "KFPXL06.7DGS-007",
+      "LFPXL06.7DGS-005",
+      "MFPXL06.7DGS-002",
+      "NFPXL06.7DGS-006",
+      "PFPXL06.7DGS-027",
+      "RFPXL06.7DGS-001",
+      "SFPXL06.7DGS-006",
+      "TFPXL06.7DGS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 165,
+    "rated_power_kw_max": 165,
+    "displacements_l": [
+      6.728000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "NEF67 TE1PV",
+        "slug": "fpt-nef67-te1pv",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Liebherr Machines Bulle SA",
     "mapped_database_brands": [
       "Kohler",
@@ -24139,301 +25141,6 @@
     "mapped_database_brands": [
       "FPT"
     ],
-    "epa_model": "F2CCA615A*H",
-    "normalized_model": "F2CCA615AH",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HFPXL08.7TR3",
-      "JFPXL08.7TR3",
-      "KFPXL08.7TR3",
-      "LFPXL08.7TR3",
-      "MFPXL08.7TR3",
-      "NFPXL08.7TR3",
-      "PFPXL08.7TR3",
-      "RFPXL08.7TR3",
-      "SFPXL08.7TR3",
-      "TFPXL08.7TR3"
-    ],
-    "engine_codes": [
-      "F2CCA615A*H"
-    ],
-    "certificates": [
-      "HFPXL08.7TR3-004",
-      "JFPXL08.7TR3-006",
-      "KFPXL08.7TR3-006",
-      "LFPXL08.7TR3-003",
-      "MFPXL08.7TR3-004",
-      "NFPXL08.7TR3-013",
-      "PFPXL08.7TR3-031",
-      "RFPXL08.7TR3-002",
-      "SFPXL08.7TR3-008",
-      "TFPXL08.7TR3-017"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 290,
-    "rated_power_kw_max": 290,
-    "displacements_l": [
-      8.709
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F2CCP615A*H",
-    "normalized_model": "F2CCP615AH",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HFPXL08.7TR3",
-      "JFPXL08.7TR3",
-      "KFPXL08.7TR3",
-      "LFPXL08.7TR3",
-      "MFPXL08.7TR3",
-      "NFPXL08.7TR3",
-      "PFPXL08.7TR3",
-      "RFPXL08.7TR3",
-      "SFPXL08.7TR3",
-      "TFPXL08.7TR3"
-    ],
-    "engine_codes": [
-      "F2CCP615A*H"
-    ],
-    "certificates": [
-      "HFPXL08.7TR3-004",
-      "JFPXL08.7TR3-006",
-      "KFPXL08.7TR3-006",
-      "LFPXL08.7TR3-003",
-      "MFPXL08.7TR3-004",
-      "NFPXL08.7TR3-013",
-      "PFPXL08.7TR3-031",
-      "RFPXL08.7TR3-002",
-      "SFPXL08.7TR3-008",
-      "TFPXL08.7TR3-017"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 330,
-    "rated_power_kw_max": 330,
-    "displacements_l": [
-      8.709
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F2CE9685A*E",
-    "normalized_model": "F2CE9685AE",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CFPXL08.7TR3",
-      "DFPXL08.7TR3",
-      "EFPXL08.7TR3",
-      "FFPXL08.7TR3",
-      "GFPXL08.7TR3",
-      "HFPXL08.7TR3",
-      "JFPXL08.7TR3",
-      "KFPXL08.7TR3",
-      "LFPXL08.7TR3",
-      "MFPXL08.7TR3",
-      "NFPXL08.7TR3",
-      "PFPXL08.7TR3",
-      "RFPXL08.7TR3",
-      "SFPXL08.7TR3",
-      "TFPXL08.7TR3"
-    ],
-    "engine_codes": [
-      "F2CE9685A*E"
-    ],
-    "certificates": [
-      "CFPXL08.7TR3-017",
-      "DFPXL08.7TR3-012",
-      "EFPXL08.7TR3-005",
-      "FFPXL08.7TR3-004",
-      "GFPXL08.7TR3-005",
-      "HFPXL08.7TR3-004",
-      "JFPXL08.7TR3-006",
-      "KFPXL08.7TR3-006",
-      "LFPXL08.7TR3-003",
-      "MFPXL08.7TR3-004",
-      "NFPXL08.7TR3-013",
-      "PFPXL08.7TR3-031",
-      "RFPXL08.7TR3-002",
-      "SFPXL08.7TR3-008",
-      "TFPXL08.7TR3-017"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 290,
-    "rated_power_kw_max": 290,
-    "displacements_l": [
-      8.709
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F2CE9685C*E",
-    "normalized_model": "F2CE9685CE",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HFPXL08.7TR3",
-      "JFPXL08.7TR3",
-      "KFPXL08.7TR3",
-      "LFPXL08.7TR3",
-      "MFPXL08.7TR3",
-      "NFPXL08.7TR3",
-      "PFPXL08.7TR3",
-      "RFPXL08.7TR3",
-      "SFPXL08.7TR3",
-      "TFPXL08.7TR3"
-    ],
-    "engine_codes": [
-      "F2CE9685C*E"
-    ],
-    "certificates": [
-      "HFPXL08.7TR3-004",
-      "JFPXL08.7TR3-006",
-      "KFPXL08.7TR3-006",
-      "LFPXL08.7TR3-003",
-      "MFPXL08.7TR3-004",
-      "NFPXL08.7TR3-013",
-      "PFPXL08.7TR3-031",
-      "RFPXL08.7TR3-002",
-      "SFPXL08.7TR3-008",
-      "TFPXL08.7TR3-017"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 290,
-    "rated_power_kw_max": 290,
-    "displacements_l": [
-      8.709
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
     "epa_model": "F2CE9685E*E",
     "normalized_model": "F2CE9685EE",
     "first_model_year": 2017,
@@ -24998,176 +25705,6 @@
     "mapped_database_brands": [
       "FPT"
     ],
-    "epa_model": "F4GE9455A*J",
-    "normalized_model": "F4GE9455AJ",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CFPXL04.5DTD",
-      "DFPXL04.5DTD",
-      "EFPXL04.5DTD",
-      "FFPXL04.5DTD",
-      "GFPXL04.5DTD",
-      "HFPXL04.5DTD",
-      "JFPXL04.5DTD",
-      "KFPXL04.5DTD",
-      "LFPXL04.5DTD",
-      "MFPXL04.5DTD",
-      "NFPXL04.5DTD",
-      "PFPXL04.5DTD",
-      "RFPXL04.5DTD",
-      "SFPXL04.5DTD",
-      "TFPXL04.5DTD"
-    ],
-    "engine_codes": [
-      "F4GE9455A*J"
-    ],
-    "certificates": [
-      "CFPXL04.5DTD-018",
-      "DFPXL04.5DTD-004",
-      "EFPXL04.5DTD-001",
-      "FFPXL04.5DTD-001",
-      "GFPXL04.5DTD-002",
-      "HFPXL04.5DTD-001",
-      "JFPXL04.5DTD-001",
-      "KFPXL04.5DTD-002",
-      "LFPXL04.5DTD-004",
-      "MFPXL04.5DTD-001",
-      "NFPXL04.5DTD-009",
-      "PFPXL04.5DTD-028",
-      "RFPXL04.5DTD-005",
-      "SFPXL04.5DTD-004",
-      "TFPXL04.5DTD-040"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 69,
-    "rated_power_kw_max": 69,
-    "displacements_l": [
-      4.485
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4GE9455B*J",
-    "normalized_model": "F4GE9455BJ",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CFPXL04.5DTD",
-      "DFPXL04.5DTD",
-      "EFPXL04.5DTD",
-      "FFPXL04.5DTD",
-      "GFPXL04.5DTD",
-      "HFPXL04.5DTD",
-      "JFPXL04.5DTD",
-      "KFPXL04.5DTD",
-      "LFPXL04.5DTD",
-      "MFPXL04.5DTD",
-      "NFPXL04.5DTD",
-      "PFPXL04.5DTD",
-      "RFPXL04.5DTD",
-      "SFPXL04.5DTD",
-      "TFPXL04.5DTD"
-    ],
-    "engine_codes": [
-      "F4GE9455B*J"
-    ],
-    "certificates": [
-      "CFPXL04.5DTD-018",
-      "DFPXL04.5DTD-004",
-      "EFPXL04.5DTD-001",
-      "FFPXL04.5DTD-001",
-      "GFPXL04.5DTD-002",
-      "HFPXL04.5DTD-001",
-      "JFPXL04.5DTD-001",
-      "KFPXL04.5DTD-002",
-      "LFPXL04.5DTD-004",
-      "MFPXL04.5DTD-001",
-      "NFPXL04.5DTD-009",
-      "PFPXL04.5DTD-028",
-      "RFPXL04.5DTD-005",
-      "SFPXL04.5DTD-004",
-      "TFPXL04.5DTD-040"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 59,
-    "rated_power_kw_max": 59,
-    "displacements_l": [
-      4.485
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
     "epa_model": "F4GE9485A*J",
     "normalized_model": "F4GE9485AJ",
     "first_model_year": 2012,
@@ -25242,435 +25779,6 @@
     "rated_power_kw_max": 98,
     "displacements_l": [
       4.485
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4GE9685A*J",
-    "normalized_model": "F4GE9685AJ",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CFPXL06.7DGB",
-      "DFPXL06.7DGB",
-      "EFPXL06.7DGB",
-      "FFPXL06.7DGB",
-      "GFPXL06.7DGB",
-      "HFPXL06.7DGB",
-      "JFPXL06.7DGB",
-      "KFPXL06.7DGB",
-      "LFPXL06.7DGB",
-      "MFPXL06.7DGB",
-      "NFPXL06.7DGB",
-      "PFPXL06.7DGB",
-      "RFPXL06.7DGB",
-      "SFPXL06.7DGB",
-      "TFPXL06.7DGB"
-    ],
-    "engine_codes": [
-      "F4GE9685A*J"
-    ],
-    "certificates": [
-      "CFPXL06.7DGB-015",
-      "DFPXL06.7DGB-006",
-      "EFPXL06.7DGB-003",
-      "FFPXL06.7DGB-002",
-      "GFPXL06.7DGB-003",
-      "HFPXL06.7DGB-002",
-      "JFPXL06.7DGB-002",
-      "KFPXL06.7DGB-003",
-      "LFPXL06.7DGB-002",
-      "MFPXL06.7DGB-003",
-      "NFPXL06.7DGB-007",
-      "PFPXL06.7DGB-029",
-      "RFPXL06.7DGB-007",
-      "SFPXL06.7DGB-005",
-      "TFPXL06.7DGB-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 148,
-    "rated_power_kw_max": 148,
-    "displacements_l": [
-      6.728000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HE0485B*J",
-    "normalized_model": "F4HE0485BJ",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HFPXL06.7DGS",
-      "JFPXL06.7DGS",
-      "KFPXL06.7DGS",
-      "LFPXL06.7DGS",
-      "MFPXL06.7DGS",
-      "NFPXL06.7DGS",
-      "PFPXL06.7DGS",
-      "RFPXL06.7DGS",
-      "SFPXL06.7DGS",
-      "TFPXL06.7DGS"
-    ],
-    "engine_codes": [
-      "F4HE0485B*J"
-    ],
-    "certificates": [
-      "HFPXL06.7DGS-003",
-      "JFPXL06.7DGS-005",
-      "KFPXL06.7DGS-007",
-      "LFPXL06.7DGS-005",
-      "MFPXL06.7DGS-002",
-      "NFPXL06.7DGS-006",
-      "PFPXL06.7DGS-027",
-      "RFPXL06.7DGS-001",
-      "SFPXL06.7DGS-006",
-      "TFPXL06.7DGS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 125,
-    "rated_power_kw_max": 125,
-    "displacements_l": [
-      4.485
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HE0485C*J",
-    "normalized_model": "F4HE0485CJ",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HFPXL06.7DGS",
-      "JFPXL06.7DGS",
-      "KFPXL06.7DGS",
-      "LFPXL06.7DGS",
-      "MFPXL06.7DGS",
-      "NFPXL06.7DGS",
-      "PFPXL06.7DGS",
-      "RFPXL06.7DGS",
-      "SFPXL06.7DGS",
-      "TFPXL06.7DGS"
-    ],
-    "engine_codes": [
-      "F4HE0485C*J"
-    ],
-    "certificates": [
-      "HFPXL06.7DGS-003",
-      "JFPXL06.7DGS-005",
-      "KFPXL06.7DGS-007",
-      "LFPXL06.7DGS-005",
-      "MFPXL06.7DGS-002",
-      "NFPXL06.7DGS-006",
-      "PFPXL06.7DGS-027",
-      "RFPXL06.7DGS-001",
-      "SFPXL06.7DGS-006",
-      "TFPXL06.7DGS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 90,
-    "rated_power_kw_max": 90,
-    "displacements_l": [
-      4.485
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HE0685A*J",
-    "normalized_model": "F4HE0685AJ",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HFPXL06.7DGS",
-      "JFPXL06.7DGS",
-      "KFPXL06.7DGS",
-      "LFPXL06.7DGS",
-      "MFPXL06.7DGS",
-      "NFPXL06.7DGS",
-      "PFPXL06.7DGS",
-      "RFPXL06.7DGS",
-      "SFPXL06.7DGS",
-      "TFPXL06.7DGS"
-    ],
-    "engine_codes": [
-      "F4HE0685A*J"
-    ],
-    "certificates": [
-      "HFPXL06.7DGS-003",
-      "JFPXL06.7DGS-005",
-      "KFPXL06.7DGS-007",
-      "LFPXL06.7DGS-005",
-      "MFPXL06.7DGS-002",
-      "NFPXL06.7DGS-006",
-      "PFPXL06.7DGS-027",
-      "RFPXL06.7DGS-001",
-      "SFPXL06.7DGS-006",
-      "TFPXL06.7DGS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 220,
-    "rated_power_kw_max": 220,
-    "displacements_l": [
-      6.728000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HE0685F*J",
-    "normalized_model": "F4HE0685FJ",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HFPXL06.7DGS",
-      "JFPXL06.7DGS",
-      "KFPXL06.7DGS",
-      "LFPXL06.7DGS",
-      "MFPXL06.7DGS",
-      "NFPXL06.7DGS",
-      "PFPXL06.7DGS",
-      "RFPXL06.7DGS",
-      "SFPXL06.7DGS",
-      "TFPXL06.7DGS"
-    ],
-    "engine_codes": [
-      "F4HE0685F*J"
-    ],
-    "certificates": [
-      "HFPXL06.7DGS-003",
-      "JFPXL06.7DGS-005",
-      "KFPXL06.7DGS-007",
-      "LFPXL06.7DGS-005",
-      "MFPXL06.7DGS-002",
-      "NFPXL06.7DGS-006",
-      "PFPXL06.7DGS-027",
-      "RFPXL06.7DGS-001",
-      "SFPXL06.7DGS-006",
-      "TFPXL06.7DGS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 210,
-    "rated_power_kw_max": 210,
-    "displacements_l": [
-      6.728000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HE0685G*J",
-    "normalized_model": "F4HE0685GJ",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HFPXL06.7DGS",
-      "JFPXL06.7DGS",
-      "KFPXL06.7DGS",
-      "LFPXL06.7DGS",
-      "MFPXL06.7DGS",
-      "NFPXL06.7DGS",
-      "PFPXL06.7DGS",
-      "RFPXL06.7DGS",
-      "SFPXL06.7DGS",
-      "TFPXL06.7DGS"
-    ],
-    "engine_codes": [
-      "F4HE0685G*J"
-    ],
-    "certificates": [
-      "HFPXL06.7DGS-003",
-      "JFPXL06.7DGS-005",
-      "KFPXL06.7DGS-007",
-      "LFPXL06.7DGS-005",
-      "MFPXL06.7DGS-002",
-      "NFPXL06.7DGS-006",
-      "PFPXL06.7DGS-027",
-      "RFPXL06.7DGS-001",
-      "SFPXL06.7DGS-006",
-      "TFPXL06.7DGS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 165,
-    "rated_power_kw_max": 165,
-    "displacements_l": [
-      6.728000000000001
     ],
     "match_status": "not_found",
     "database_matches": [],
