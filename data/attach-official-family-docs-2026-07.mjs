@@ -80,18 +80,173 @@ const documents = [
       (model) => `lister-petter-${model.toLowerCase()}`,
     ),
   },
+  {
+    localFile: 'data/source-pdfs/2026 Volvo Engine Selector.pdf',
+    storagePath: 'volvo/guides/power-generation-engine-selector.pdf',
+    label: 'Volvo Penta Power Generation Engine Selector',
+    type: 'datasheet',
+    slugs: [
+      'volvo-penta-tad580ve',
+      'volvo-penta-tad581ve',
+      'volvo-penta-tad582ve',
+      'volvo-penta-tad880ve',
+      'volvo-penta-tad881ve',
+      'volvo-penta-tad882ve',
+      'volvo-penta-tad883ve',
+      'volvo-penta-tad1181ve',
+      'volvo-penta-tad1381ve',
+      'volvo-penta-tad1382ve',
+      'volvo-penta-tad1383ve',
+      'volvo-penta-tad1384ve',
+      'volvo-penta-tad1385ve',
+    ],
+  },
+  {
+    source: 'https://pubs.volvopenta.com/publications/47711550',
+    storagePath: 'volvo/industrial/twd1683ve-publication-47711550.pdf',
+    label: 'Volvo Penta TWD1683VE Product Datasheet',
+    type: 'datasheet',
+    slugs: ['volvo-penta-twd1683ve'],
+  },
+  {
+    source:
+      'https://www.cummins.com/sites/default/files/2018-08/201805%20-%20Cummins%20PowerHour%20-Lean%20Burn%20Natural%20Gas%20Generator%20Sets%20in%20Standby-Peak%20Shaving.pdf',
+    storagePath: 'cummins/brochures/lean-burn-natural-gas-powerhour.pdf',
+    label: 'Cummins Lean-Burn Natural Gas Generator Technical Presentation',
+    type: 'brochure',
+    slugs: ['cummins-qsv91g'],
+  },
+  {
+    source:
+      'https://fayfaantech.com/Uploads/pro/Natural-Gas--Biogas-Engines.34.1.pdf',
+    storagePath: 'cummins/brochures/chongqing-cummins-gas-engine-2024.pdf',
+    label:
+      'Chongqing Cummins Gas Engine 2024 Product Brochure (supplier-hosted copy)',
+    type: 'brochure',
+    slugs: [
+      'cummins-k19n-g1',
+      'cummins-k19n-g3',
+      'cummins-k19n-g4',
+      'cummins-k38n-g5',
+      'cummins-k38n-g6',
+      'cummins-k38n-g7',
+      'cummins-k38n-g8',
+      'cummins-k50n-g9',
+      'cummins-k50n-g10',
+    ],
+  },
+  {
+    source:
+      'https://baudouin.com/wp-content/uploads/2025/04/Baudouin-RatingCard-Diesel-50Hz-191125-WEB.pdf',
+    referer: 'https://baudouin.com/engine_product/6m31/',
+    storagePath:
+      'baudouin/rating-cards/baudouin-diesel-50hz-november-2025.pdf',
+    label: 'Baudouin Diesel PowerKit 50 Hz Rating Card (November 2025)',
+    type: 'datasheet',
+    slugs: [
+      'baudouin-4m08g2d3-5',
+      'baudouin-4m08g4d3-5',
+      'baudouin-4m08g6d3-5',
+      'baudouin-4m08g8d3-5',
+      'baudouin-4m08g10d3-5',
+      'baudouin-4m12g1d3-5',
+      'baudouin-4m12g2d3-5',
+      'baudouin-4m12g4d3-5',
+      'baudouin-4m12g2d5-s',
+      'baudouin-6m12g2d3-5',
+      'baudouin-6m12g4d3-5',
+      'baudouin-6m12g6d3-5',
+      'baudouin-6m12g8d3-5',
+      'baudouin-6m13g2d5-s',
+      'baudouin-6m13g4d5-s',
+      'baudouin-6m13g6d5-s',
+      'baudouin-6m13g8d5-s',
+      'baudouin-6m31g660-5',
+      'baudouin-6m31g725-5',
+      'baudouin-6m31g750-5',
+      'baudouin-6m31g825-5',
+      'baudouin-6m31g900-5',
+      'baudouin-6m31g1000-5',
+    ],
+  },
+  {
+    source:
+      'https://baudouin.com/wp-content/uploads/2025/04/Baudouin-RatingCard-Diesel-60Hz-191125-WEB.pdf',
+    referer: 'https://baudouin.com/engine_product/6m31/',
+    storagePath:
+      'baudouin/rating-cards/baudouin-diesel-60hz-november-2025.pdf',
+    label: 'Baudouin Diesel PowerKit 60 Hz Rating Card (November 2025)',
+    type: 'datasheet',
+    slugs: [
+      'baudouin-6m31g528-6',
+      'baudouin-6m31g580-6',
+      'baudouin-6m31g600-6',
+      'baudouin-6m31g700-6',
+      'baudouin-6m31g800-6',
+    ],
+  },
+  {
+    source:
+      'https://baudouin.com/wp-content/uploads/2022/05/10012_MB_NG_4M11_Spec_Sheet_revH_converted.pdf',
+    referer: 'https://baudouin.com/engine_product/4m11-2/',
+    storagePath: 'baudouin/datasheets/4m11-natural-gas-spec-sheet.pdf',
+    label: 'Baudouin 4M11 Natural Gas PowerKit Specification Sheet',
+    type: 'datasheet',
+    slugs: ['baudouin-4m11g4n0-5'],
+  },
+  {
+    localFile:
+      '/Users/ziqianhuang/Downloads/PSI_PowerSystems_ProductBrochure_Y24 FINAL.pdf',
+    storagePath: 'psi/brochures/power-systems-product-brochure-y24.pdf',
+    label: 'PSI Power Systems Product Brochure Y24',
+    type: 'brochure',
+    slugs: [
+      'psi-psi-26l-d-700kwe',
+      'psi-psi-26l-d-840kwe',
+      'psi-psi-66l-d-2300kwe',
+      'psi-psi-66l-d-2500kwe',
+    ],
+  },
+  {
+    source:
+      'https://www.mtu-solutions.com/content/dam/mtu/products/power-generation/powergeneration-product-list-latest/3237291_PG_spec_8V12V16V20V4000GS_3A_NG_NOx500_60Hz.pdf/_jcr_content/renditions/original./3237291_PG_spec_8V12V16V20V4000GS_3A_NG_NOx500_60Hz.pdf',
+    storagePath:
+      'mtu/datasheets/series-4000-natural-gas-60hz-nox500.pdf',
+    label:
+      'MTU Series 4000 Natural Gas 60 Hz Generator Set Specification Sheet',
+    type: 'datasheet',
+    slugs: [
+      'mtu-8v4000-gs',
+      'mtu-12v4000-gs',
+      'mtu-16v4000-gs',
+      'mtu-20v4000-gs',
+    ],
+  },
 ]
 
-async function downloadPdf(url) {
-  const response = await fetch(url, {
-    headers: { 'User-Agent': 'Mozilla/5.0' },
+async function loadPdf(document) {
+  if (document.localFile) {
+    const buffer = fs.readFileSync(path.resolve(document.localFile))
+    if (buffer.subarray(0, 4).toString() !== '%PDF') {
+      throw new Error(`${document.localFile}: file is not a PDF`)
+    }
+    return buffer
+  }
+
+  const response = await fetch(document.source, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0',
+      ...(document.referer ? { Referer: document.referer } : {}),
+    },
     redirect: 'follow',
     signal: AbortSignal.timeout(60000),
   })
-  if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`)
+  if (!response.ok) {
+    throw new Error(`${document.source}: HTTP ${response.status}`)
+  }
   const buffer = Buffer.from(await response.arrayBuffer())
   if (buffer.subarray(0, 4).toString() !== '%PDF') {
-    throw new Error(`${url}: response is not a PDF`)
+    throw new Error(`${document.source}: response is not a PDF`)
   }
   return buffer
 }
@@ -126,7 +281,7 @@ for (const document of documents) {
   )
   if (!APPLY || unlinked.length === 0) continue
 
-  const buffer = await downloadPdf(document.source)
+  const buffer = await loadPdf(document)
   const localPath = path.join(tempDir, path.basename(document.storagePath))
   fs.writeFileSync(localPath, buffer)
   const { ok } = await uploadPdf(
