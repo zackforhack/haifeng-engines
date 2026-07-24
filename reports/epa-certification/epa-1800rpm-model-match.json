@@ -4586,6 +4586,182 @@
     "mapped_database_brands": [
       "Cummins"
     ],
+    "epa_model": "QSB4.5",
+    "normalized_model": "QSB4P5",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CCEXL0275AAG",
+      "CCEXL0275AAK",
+      "DCEXL0275AAG",
+      "DCEXL0275AAK",
+      "ECEXL0275AAG",
+      "ECEXL0275AAK",
+      "FCEXL0275AAG",
+      "FCEXL0275AAK",
+      "FCEXL04.5AAJ",
+      "GCEXL0275AAG",
+      "GCEXL0275AAK",
+      "GCEXL04.5AAJ",
+      "HCEXL0275AAG",
+      "HCEXL0275AAK",
+      "HCEXL04.5AAJ",
+      "JCEXL0275AAG",
+      "JCEXL0275AAK",
+      "JCEXL04.5AAJ",
+      "KCEXL0275AAG",
+      "KCEXL0275AAK",
+      "KCEXL04.5AAJ",
+      "LCEXL0275AAG",
+      "LCEXL0275AAK",
+      "LCEXL04.5AAJ",
+      "MCEXL0275AAG",
+      "MCEXL0275AAK",
+      "MCEXL04.5AAJ",
+      "NCEXL0275AAG",
+      "NCEXL0275AAK",
+      "NCEXL04.5AAJ",
+      "PCEXL0275AAG",
+      "PCEXL0275AAK",
+      "PCEXL04.5AAJ",
+      "RCEXL0275AAG",
+      "RCEXL0275AAK",
+      "RCEXL04.5AAJ",
+      "SCEXL0275AAK",
+      "SCEXL04.5AAJ",
+      "TCEXL0275AAK",
+      "TCEXL04.5AAJ"
+    ],
+    "engine_codes": [
+      "1100:FR91964",
+      "1100:FR92202",
+      "1100:FR92203",
+      "2743:FR92383",
+      "2743;FR92384",
+      "2743;FR96432",
+      "3172:FR92672",
+      "4665;FR94887G",
+      "4665;FR95274G",
+      "4665;FR95275G",
+      "4980:FR96028",
+      "4981:FR96029",
+      "5402:FR96550",
+      "5402:FR96551",
+      "5402:FR96552",
+      "5403:FR96553",
+      "5403:FR96554",
+      "5403:FR96594",
+      "5404:FR96555",
+      "8754:FR91622",
+      "8755:FR91621",
+      "OB1",
+      "OB1G",
+      "OB2",
+      "OB2G",
+      "OB3",
+      "OB3G",
+      "OB4",
+      "OB5",
+      "OB6",
+      "OB7"
+    ],
+    "certificates": [
+      "CCEXL0275AAG-004",
+      "CCEXL0275AAK-007",
+      "DCEXL0275AAG-003",
+      "DCEXL0275AAK-005",
+      "ECEXL0275AAG-010",
+      "ECEXL0275AAK-004",
+      "FCEXL0275AAG-019",
+      "FCEXL0275AAK-008",
+      "FCEXL04.5AAJ-038",
+      "GCEXL0275AAG-009",
+      "GCEXL0275AAK-012",
+      "GCEXL04.5AAJ-004",
+      "HCEXL0275AAG-019",
+      "HCEXL0275AAK-021",
+      "HCEXL04.5AAJ-010",
+      "JCEXL0275AAG-026",
+      "JCEXL0275AAK-030",
+      "JCEXL04.5AAJ-008",
+      "KCEXL0275AAG-046",
+      "KCEXL0275AAK-050",
+      "KCEXL04.5AAJ-027",
+      "LCEXL0275AAG-024",
+      "LCEXL0275AAK-026",
+      "LCEXL04.5AAJ-010",
+      "MCEXL0275AAG-038",
+      "MCEXL0275AAK-045",
+      "MCEXL04.5AAJ-005",
+      "NCEXL0275AAG-033",
+      "NCEXL0275AAK-034",
+      "NCEXL04.5AAJ-015",
+      "PCEXL0275AAG-005",
+      "PCEXL0275AAK-025",
+      "PCEXL04.5AAJ-043",
+      "RCEXL0275AAG-006",
+      "RCEXL0275AAK-019",
+      "RCEXL04.5AAJ-038",
+      "SCEXL0275AAK-037",
+      "SCEXL04.5AAJ-028",
+      "TCEXL0275AAK-045",
+      "TCEXL04.5AAJ-047"
+    ],
+    "applicable_tiers": [
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 82,
+    "rated_power_kw_max": 155,
+    "displacements_l": [
+      4.46
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSB4.5",
+        "slug": "cummins-qsb45",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
     "epa_model": "QSB6.7",
     "normalized_model": "QSB6P7",
     "first_model_year": 2012,
@@ -5127,6 +5303,87 @@
     "mapped_database_brands": [
       "Cummins"
     ],
+    "epa_model": "QSK23",
+    "normalized_model": "QSK23",
+    "first_model_year": 2019,
+    "latest_model_year": 2026,
+    "model_years": [
+      2019,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "KCEXL23.0AAD",
+      "NCEXL23.0AAD",
+      "PCEXL23.0AAD",
+      "RCEXL23.0AAD",
+      "SCEXL023.AAB",
+      "SCEXL23.0AAD",
+      "TCEXL023.AAB",
+      "TCEXL23.0AAD"
+    ],
+    "engine_codes": [
+      "4361:FR5337",
+      "5361:FR5376",
+      "5361:FR5378",
+      "5361:FR5388",
+      "OK1",
+      "OK19",
+      "OK2",
+      "OK3",
+      "OK4"
+    ],
+    "certificates": [
+      "KCEXL23.0AAD-005",
+      "NCEXL23.0AAD-018",
+      "PCEXL23.0AAD-037",
+      "RCEXL23.0AAD-030",
+      "SCEXL023.AAB-044",
+      "SCEXL23.0AAD-023",
+      "TCEXL023.AAB-039",
+      "TCEXL23.0AAD-028"
+    ],
+    "applicable_tiers": [
+      "Tier 2",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 567,
+    "rated_power_kw_max": 962,
+    "displacements_l": [
+      23.152
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSK23",
+        "slug": "cummins-qsk23",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
     "epa_model": "QSK38",
     "normalized_model": "QSK38",
     "first_model_year": 2020,
@@ -5243,26 +5500,26 @@
       },
       {
         "brand": "Cummins",
-        "model": "QSK38-G19",
-        "slug": "cummins-qsk38-g19",
-        "rpm_rated": 1500,
-        "emissions_standard": "Unregulated",
-        "fuel_type": "Diesel"
-      },
-      {
-        "brand": "Cummins",
-        "model": "QSK38-G2",
-        "slug": "cummins-qsk38-g2",
-        "rpm_rated": 1500,
+        "model": "QSK38-G17",
+        "slug": "cummins-qsk38-g17",
+        "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       },
       {
         "brand": "Cummins",
-        "model": "QSK38-G26",
-        "slug": "cummins-qsk38-g26",
+        "model": "QSK38-G18",
+        "slug": "cummins-qsk38-g18",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Cummins",
+        "model": "QSK38-G19",
+        "slug": "cummins-qsk38-g19",
         "rpm_rated": 1500,
-        "emissions_standard": "China National Stage III / Unregulated",
+        "emissions_standard": "Unregulated",
         "fuel_type": "Diesel"
       }
     ],
@@ -5414,26 +5671,162 @@
       },
       {
         "brand": "Cummins",
-        "model": "QSK38-G19",
-        "slug": "cummins-qsk38-g19",
-        "rpm_rated": 1500,
-        "emissions_standard": "Unregulated",
-        "fuel_type": "Diesel"
-      },
-      {
-        "brand": "Cummins",
-        "model": "QSK38-G2",
-        "slug": "cummins-qsk38-g2",
-        "rpm_rated": 1500,
+        "model": "QSK38-G17",
+        "slug": "cummins-qsk38-g17",
+        "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       },
       {
         "brand": "Cummins",
-        "model": "QSK38-G26",
-        "slug": "cummins-qsk38-g26",
+        "model": "QSK38-G18",
+        "slug": "cummins-qsk38-g18",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Cummins",
+        "model": "QSK38-G19",
+        "slug": "cummins-qsk38-g19",
         "rpm_rated": 1500,
-        "emissions_standard": "China National Stage III / Unregulated",
+        "emissions_standard": "Unregulated",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
+    "epa_model": "QSK38-G17",
+    "normalized_model": "QSK38G17",
+    "first_model_year": 2021,
+    "latest_model_year": 2026,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "MCEXL050.AAD",
+      "NCEXL050.AAD",
+      "PCEXL050.AAD",
+      "RCEXL050.AAD",
+      "SCEXL050.AAD",
+      "TCEXL050.AAD"
+    ],
+    "engine_codes": [
+      "5776:FR60703",
+      "OK71"
+    ],
+    "certificates": [
+      "MCEXL050.AAD-007",
+      "NCEXL050.AAD-004",
+      "PCEXL050.AAD-033",
+      "RCEXL050.AAD-016",
+      "SCEXL050.AAD-039",
+      "TCEXL050.AAD-040"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 1399,
+    "rated_power_kw_max": 1399,
+    "displacements_l": [
+      37.885000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSK38-G17",
+        "slug": "cummins-qsk38-g17",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
+    "epa_model": "QSK38-G18",
+    "normalized_model": "QSK38G18",
+    "first_model_year": 2021,
+    "latest_model_year": 2026,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "MCEXL050.AAD",
+      "NCEXL050.AAD",
+      "PCEXL050.AAD",
+      "RCEXL050.AAD",
+      "SCEXL050.AAD",
+      "TCEXL050.AAD"
+    ],
+    "engine_codes": [
+      "5776:FR60666",
+      "OK72"
+    ],
+    "certificates": [
+      "MCEXL050.AAD-007",
+      "NCEXL050.AAD-004",
+      "PCEXL050.AAD-033",
+      "RCEXL050.AAD-016",
+      "SCEXL050.AAD-039",
+      "TCEXL050.AAD-040"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 1659,
+    "rated_power_kw_max": 1659,
+    "displacements_l": [
+      37.885000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSK38-G18",
+        "slug": "cummins-qsk38-g18",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -5589,6 +5982,14 @@
         "model": "QSK50-G2",
         "slug": "cummins-qsk50-g2",
         "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Cummins",
+        "model": "QSK50-G24",
+        "slug": "cummins-qsk50-g24",
+        "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       },
@@ -5780,6 +6181,14 @@
       },
       {
         "brand": "Cummins",
+        "model": "QSK50-G24",
+        "slug": "cummins-qsk50-g24",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Cummins",
         "model": "QSK50-G3",
         "slug": "cummins-qsk50-g3",
         "rpm_rated": 1500,
@@ -5815,6 +6224,74 @@
         "model": "QSK50-G7",
         "slug": "cummins-qsk50-g7",
         "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
+    "epa_model": "QSK50-G24",
+    "normalized_model": "QSK50G24",
+    "first_model_year": 2021,
+    "latest_model_year": 2026,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "MCEXL050.AAD",
+      "NCEXL050.AAD",
+      "PCEXL050.AAD",
+      "RCEXL050.AAD",
+      "SCEXL050.AAD",
+      "TCEXL050.AAD"
+    ],
+    "engine_codes": [
+      "5775:FR60524",
+      "OK79"
+    ],
+    "certificates": [
+      "MCEXL050.AAD-007",
+      "NCEXL050.AAD-004",
+      "PCEXL050.AAD-033",
+      "RCEXL050.AAD-016",
+      "SCEXL050.AAD-039",
+      "TCEXL050.AAD-040"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 2204,
+    "rated_power_kw_max": 2204,
+    "displacements_l": [
+      50.513000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSK50-G24",
+        "slug": "cummins-qsk50-g24",
+        "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
@@ -6326,6 +6803,219 @@
     "mapped_database_brands": [
       "Cummins"
     ],
+    "epa_model": "QSK78",
+    "normalized_model": "QSK78",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DCEXL78.0AAA",
+      "ECEXL78.0AAA",
+      "ECEXL78.0AAB",
+      "FCEXL78.0AAA",
+      "GCEXL78.0AAA",
+      "JCEXL78.0AAA",
+      "KCEXL78.0AAA",
+      "LCEXL78.0AAA",
+      "MCEXL78.0AAA",
+      "NCEXL78.0AAA",
+      "PCEXL78.0AAA",
+      "PCEXL95.0AAA",
+      "RCEXL78.0AAA",
+      "RCEXL95.0AAA",
+      "SCEXL95.0AAA",
+      "TCEXL95.0AAA"
+    ],
+    "engine_codes": [
+      "3924:FR6967",
+      "3925:FR6968",
+      "3926:FR6969",
+      "4456:FR60130",
+      "4457:FR60131",
+      "OK10",
+      "OK11",
+      "OK24",
+      "OK25",
+      "OK7",
+      "OK8",
+      "OK9"
+    ],
+    "certificates": [
+      "DCEXL78.0AAA-033-R01",
+      "ECEXL78.0AAA-024",
+      "ECEXL78.0AAB-022",
+      "FCEXL78.0AAA-002",
+      "GCEXL78.0AAA-025",
+      "JCEXL78.0AAA-001",
+      "KCEXL78.0AAA-009",
+      "LCEXL78.0AAA-046",
+      "MCEXL78.0AAA-036",
+      "NCEXL78.0AAA-040",
+      "PCEXL78.0AAA-003",
+      "PCEXL95.0AAA-004",
+      "RCEXL78.0AAA-003",
+      "RCEXL95.0AAA-004",
+      "SCEXL95.0AAA-020",
+      "TCEXL95.0AAA-029"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 2",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2764,
+    "rated_power_kw_max": 3312,
+    "displacements_l": [
+      77.62700000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSK78",
+        "slug": "cummins-qsk78",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
+    "epa_model": "QSK95",
+    "normalized_model": "QSK95",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FCEXL95.0AAA",
+      "GCEXL95.0AAA",
+      "HCEXL95.0AAA",
+      "JCEXL95.0AAA",
+      "KCEXL95.0AAA",
+      "LCEXL95.0AAA",
+      "MCEXL95.0AAA",
+      "NCEXL95.0AAA",
+      "PCEXL95.0AAA",
+      "RCEXL95.0AAA",
+      "SCEXL95.0AAA",
+      "TCEXL95.0AAA"
+    ],
+    "engine_codes": [
+      "3917:FR7372",
+      "3917:FR7439",
+      "3917:FR7511",
+      "3917:FR7525",
+      "3917:FR7556",
+      "3917:FR7557",
+      "3917:FR7585",
+      "5487:FR7531",
+      "5487:FR7533",
+      "5487:FR7534",
+      "5487:FR7586",
+      "5707:FR7551",
+      "OK1",
+      "OK12",
+      "OK13",
+      "OK14",
+      "OK16",
+      "OK19",
+      "OK2",
+      "OK20",
+      "OK22",
+      "OK23",
+      "OK5",
+      "OK6"
+    ],
+    "certificates": [
+      "FCEXL95.0AAA-039",
+      "GCEXL95.0AAA-007",
+      "HCEXL95.0AAA-028",
+      "JCEXL95.0AAA-006",
+      "KCEXL95.0AAA-015",
+      "LCEXL95.0AAA-039",
+      "MCEXL95.0AAA-034",
+      "NCEXL95.0AAA-044",
+      "PCEXL95.0AAA-004",
+      "RCEXL95.0AAA-004",
+      "SCEXL95.0AAA-020",
+      "TCEXL95.0AAA-029"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3506,
+    "rated_power_kw_max": 3922,
+    "displacements_l": [
+      95.266
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSK95",
+        "slug": "cummins-qsk95",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
     "epa_model": "QSL8.9",
     "normalized_model": "QSL8P9",
     "first_model_year": 2012,
@@ -6567,6 +7257,253 @@
         "slug": "cummins-qsl89-g4",
         "rpm_rated": 1500,
         "emissions_standard": "China National Stage III / Unregulated",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
+    "epa_model": "QST30",
+    "normalized_model": "QST30",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DCEXL60.0AAA",
+      "DCEXL78.0AAA",
+      "ECEXL78.0AAA",
+      "ECEXL78.0AAB",
+      "FCEXL78.0AAA",
+      "GCEXL78.0AAA",
+      "JCEXL30.0AAE",
+      "JCEXL78.0AAA",
+      "KCEXL30.0AAE",
+      "KCEXL78.0AAA",
+      "LCEXL30.0AAE",
+      "LCEXL78.0AAA",
+      "MCEXL30.0AAE",
+      "MCEXL78.0AAA",
+      "NCEXL30.0AAE",
+      "NCEXL78.0AAA",
+      "PCEXL30.0AAE",
+      "PCEXL78.0AAA",
+      "RCEXL30.0AAE",
+      "RCEXL78.0AAA",
+      "SCEXL30.0AAE",
+      "TCEXL30.0AAE"
+    ],
+    "engine_codes": [
+      "3927:FR5306",
+      "3928:FR5307",
+      "4811:FR5392",
+      "5249:FR5390",
+      "5250:FR5391",
+      "OK1",
+      "OK12",
+      "OK13",
+      "OK6",
+      "OT5"
+    ],
+    "certificates": [
+      "DCEXL60.0AAA-032",
+      "DCEXL78.0AAA-033-R01",
+      "ECEXL78.0AAA-024",
+      "ECEXL78.0AAB-022",
+      "FCEXL78.0AAA-002",
+      "GCEXL78.0AAA-025",
+      "JCEXL30.0AAE-017",
+      "JCEXL78.0AAA-001",
+      "KCEXL30.0AAE-011",
+      "KCEXL78.0AAA-009",
+      "LCEXL30.0AAE-004",
+      "LCEXL78.0AAA-046",
+      "MCEXL30.0AAE-043",
+      "MCEXL78.0AAA-036",
+      "NCEXL30.0AAE-053",
+      "NCEXL78.0AAA-040",
+      "PCEXL30.0AAE-036",
+      "PCEXL78.0AAA-003",
+      "RCEXL30.0AAE-023",
+      "RCEXL78.0AAA-003",
+      "SCEXL30.0AAE-030",
+      "TCEXL30.0AAE-032"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 746,
+    "rated_power_kw_max": 1111,
+    "displacements_l": [
+      30.48
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QST30",
+        "slug": "cummins-qst30",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
+    "epa_model": "QSX15",
+    "normalized_model": "QSX15",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "ECEXL15.0AAL",
+      "FCEXL15.0AAL",
+      "GCEXL15.0AAL",
+      "HCEXL15.0AAL",
+      "JCEXL15.0AAL",
+      "KCEXL15.0AAL",
+      "LCEXL15.0AAL",
+      "MCEXL15.0AAL",
+      "MCEXL15.0AAN",
+      "MCEXL15.0AAS",
+      "NCEXL15.0AAL",
+      "NCEXL15.0AAS",
+      "PCEXL15.0AAL",
+      "PCEXL15.0AAS",
+      "RCEXL15.0AAL",
+      "RCEXL15.0AAS",
+      "SCEXL15.0AAL",
+      "SCEXL15.0AAS",
+      "TCEXL15.0AAL",
+      "TCEXL15.0AAS"
+    ],
+    "engine_codes": [
+      "43869;FR11115",
+      "43869;FR11116",
+      "43869;FR11117",
+      "43869;FR11118",
+      "43869;FR11119",
+      "43869;FR11120",
+      "43869;FR11809",
+      "43869;FR11810",
+      "43869;FR11811",
+      "43869;FR11812",
+      "43869;FR11813",
+      "43869;FR11814",
+      "5429:FR11847",
+      "5429:FR11848",
+      "5429:FR11849",
+      "5429:FR11863",
+      "5429:FR11864",
+      "LX1",
+      "LX2",
+      "LX3",
+      "LX30",
+      "LX31",
+      "LX32",
+      "LX33",
+      "LX34",
+      "LX35",
+      "LX4",
+      "LX5",
+      "LX6"
+    ],
+    "certificates": [
+      "ECEXL15.0AAL-036",
+      "FCEXL15.0AAL-025",
+      "GCEXL15.0AAL-034",
+      "HCEXL15.0AAL-004",
+      "JCEXL15.0AAL-002",
+      "KCEXL15.0AAL-036",
+      "LCEXL15.0AAL-015",
+      "MCEXL15.0AAL-057",
+      "MCEXL15.0AAN-001",
+      "MCEXL15.0AAS-033",
+      "NCEXL15.0AAL-055",
+      "NCEXL15.0AAS-048",
+      "PCEXL15.0AAL-052",
+      "PCEXL15.0AAS-054",
+      "RCEXL15.0AAL-043",
+      "RCEXL15.0AAS-047",
+      "SCEXL15.0AAL-006",
+      "SCEXL15.0AAS-015",
+      "TCEXL15.0AAL-012",
+      "TCEXL15.0AAS-022"
+    ],
+    "applicable_tiers": [
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 373,
+    "rated_power_kw_max": 563,
+    "displacements_l": [
+      14.948
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSX15",
+        "slug": "cummins-qsx15",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -18345,173 +19282,6 @@
     "mapped_database_brands": [
       "Cummins"
     ],
-    "epa_model": "QSB4.5",
-    "normalized_model": "QSB4P5",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CCEXL0275AAG",
-      "CCEXL0275AAK",
-      "DCEXL0275AAG",
-      "DCEXL0275AAK",
-      "ECEXL0275AAG",
-      "ECEXL0275AAK",
-      "FCEXL0275AAG",
-      "FCEXL0275AAK",
-      "FCEXL04.5AAJ",
-      "GCEXL0275AAG",
-      "GCEXL0275AAK",
-      "GCEXL04.5AAJ",
-      "HCEXL0275AAG",
-      "HCEXL0275AAK",
-      "HCEXL04.5AAJ",
-      "JCEXL0275AAG",
-      "JCEXL0275AAK",
-      "JCEXL04.5AAJ",
-      "KCEXL0275AAG",
-      "KCEXL0275AAK",
-      "KCEXL04.5AAJ",
-      "LCEXL0275AAG",
-      "LCEXL0275AAK",
-      "LCEXL04.5AAJ",
-      "MCEXL0275AAG",
-      "MCEXL0275AAK",
-      "MCEXL04.5AAJ",
-      "NCEXL0275AAG",
-      "NCEXL0275AAK",
-      "NCEXL04.5AAJ",
-      "PCEXL0275AAG",
-      "PCEXL0275AAK",
-      "PCEXL04.5AAJ",
-      "RCEXL0275AAG",
-      "RCEXL0275AAK",
-      "RCEXL04.5AAJ",
-      "SCEXL0275AAK",
-      "SCEXL04.5AAJ",
-      "TCEXL0275AAK",
-      "TCEXL04.5AAJ"
-    ],
-    "engine_codes": [
-      "1100:FR91964",
-      "1100:FR92202",
-      "1100:FR92203",
-      "2743:FR92383",
-      "2743;FR92384",
-      "2743;FR96432",
-      "3172:FR92672",
-      "4665;FR94887G",
-      "4665;FR95274G",
-      "4665;FR95275G",
-      "4980:FR96028",
-      "4981:FR96029",
-      "5402:FR96550",
-      "5402:FR96551",
-      "5402:FR96552",
-      "5403:FR96553",
-      "5403:FR96554",
-      "5403:FR96594",
-      "5404:FR96555",
-      "8754:FR91622",
-      "8755:FR91621",
-      "OB1",
-      "OB1G",
-      "OB2",
-      "OB2G",
-      "OB3",
-      "OB3G",
-      "OB4",
-      "OB5",
-      "OB6",
-      "OB7"
-    ],
-    "certificates": [
-      "CCEXL0275AAG-004",
-      "CCEXL0275AAK-007",
-      "DCEXL0275AAG-003",
-      "DCEXL0275AAK-005",
-      "ECEXL0275AAG-010",
-      "ECEXL0275AAK-004",
-      "FCEXL0275AAG-019",
-      "FCEXL0275AAK-008",
-      "FCEXL04.5AAJ-038",
-      "GCEXL0275AAG-009",
-      "GCEXL0275AAK-012",
-      "GCEXL04.5AAJ-004",
-      "HCEXL0275AAG-019",
-      "HCEXL0275AAK-021",
-      "HCEXL04.5AAJ-010",
-      "JCEXL0275AAG-026",
-      "JCEXL0275AAK-030",
-      "JCEXL04.5AAJ-008",
-      "KCEXL0275AAG-046",
-      "KCEXL0275AAK-050",
-      "KCEXL04.5AAJ-027",
-      "LCEXL0275AAG-024",
-      "LCEXL0275AAK-026",
-      "LCEXL04.5AAJ-010",
-      "MCEXL0275AAG-038",
-      "MCEXL0275AAK-045",
-      "MCEXL04.5AAJ-005",
-      "NCEXL0275AAG-033",
-      "NCEXL0275AAK-034",
-      "NCEXL04.5AAJ-015",
-      "PCEXL0275AAG-005",
-      "PCEXL0275AAK-025",
-      "PCEXL04.5AAJ-043",
-      "RCEXL0275AAG-006",
-      "RCEXL0275AAK-019",
-      "RCEXL04.5AAJ-038",
-      "SCEXL0275AAK-037",
-      "SCEXL04.5AAJ-028",
-      "TCEXL0275AAK-045",
-      "TCEXL04.5AAJ-047"
-    ],
-    "applicable_tiers": [
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 82,
-    "rated_power_kw_max": 155,
-    "displacements_l": [
-      4.46
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
     "epa_model": "QSB7-G4",
     "normalized_model": "QSB7G4",
     "first_model_year": 2012,
@@ -18817,78 +19587,6 @@
     "mapped_database_brands": [
       "Cummins"
     ],
-    "epa_model": "QSK23",
-    "normalized_model": "QSK23",
-    "first_model_year": 2019,
-    "latest_model_year": 2026,
-    "model_years": [
-      2019,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "KCEXL23.0AAD",
-      "NCEXL23.0AAD",
-      "PCEXL23.0AAD",
-      "RCEXL23.0AAD",
-      "SCEXL023.AAB",
-      "SCEXL23.0AAD",
-      "TCEXL023.AAB",
-      "TCEXL23.0AAD"
-    ],
-    "engine_codes": [
-      "4361:FR5337",
-      "5361:FR5376",
-      "5361:FR5378",
-      "5361:FR5388",
-      "OK1",
-      "OK19",
-      "OK2",
-      "OK3",
-      "OK4"
-    ],
-    "certificates": [
-      "KCEXL23.0AAD-005",
-      "NCEXL23.0AAD-018",
-      "PCEXL23.0AAD-037",
-      "RCEXL23.0AAD-030",
-      "SCEXL023.AAB-044",
-      "SCEXL23.0AAD-023",
-      "TCEXL023.AAB-039",
-      "TCEXL23.0AAD-028"
-    ],
-    "applicable_tiers": [
-      "Tier 2",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 567,
-    "rated_power_kw_max": 962,
-    "displacements_l": [
-      23.152
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
     "epa_model": "QSK23-G7 NR2",
     "normalized_model": "QSK23G7NR2",
     "first_model_year": 2012,
@@ -19052,150 +19750,6 @@
     "mapped_database_brands": [
       "Cummins"
     ],
-    "epa_model": "QSK38-G17",
-    "normalized_model": "QSK38G17",
-    "first_model_year": 2021,
-    "latest_model_year": 2026,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "MCEXL050.AAD",
-      "NCEXL050.AAD",
-      "PCEXL050.AAD",
-      "RCEXL050.AAD",
-      "SCEXL050.AAD",
-      "TCEXL050.AAD"
-    ],
-    "engine_codes": [
-      "5776:FR60703",
-      "OK71"
-    ],
-    "certificates": [
-      "MCEXL050.AAD-007",
-      "NCEXL050.AAD-004",
-      "PCEXL050.AAD-033",
-      "RCEXL050.AAD-016",
-      "SCEXL050.AAD-039",
-      "TCEXL050.AAD-040"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 1399,
-    "rated_power_kw_max": 1399,
-    "displacements_l": [
-      37.885000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Cummins",
-        "model": "QSK38-G1",
-        "slug": "cummins-qsk38-g1",
-        "similarity": 0.933
-      },
-      {
-        "brand": "Cummins",
-        "model": "QSK38-G7",
-        "slug": "cummins-qsk38-g7",
-        "similarity": 0.933
-      }
-    ]
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
-    "epa_model": "QSK38-G18",
-    "normalized_model": "QSK38G18",
-    "first_model_year": 2021,
-    "latest_model_year": 2026,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "MCEXL050.AAD",
-      "NCEXL050.AAD",
-      "PCEXL050.AAD",
-      "RCEXL050.AAD",
-      "SCEXL050.AAD",
-      "TCEXL050.AAD"
-    ],
-    "engine_codes": [
-      "5776:FR60666",
-      "OK72"
-    ],
-    "certificates": [
-      "MCEXL050.AAD-007",
-      "NCEXL050.AAD-004",
-      "PCEXL050.AAD-033",
-      "RCEXL050.AAD-016",
-      "SCEXL050.AAD-039",
-      "TCEXL050.AAD-040"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 1659,
-    "rated_power_kw_max": 1659,
-    "displacements_l": [
-      37.885000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Cummins",
-        "model": "QSK38-G1",
-        "slug": "cummins-qsk38-g1",
-        "similarity": 0.933
-      },
-      {
-        "brand": "Cummins",
-        "model": "QSK38-G8",
-        "slug": "cummins-qsk38-g8",
-        "similarity": 0.933
-      }
-    ]
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
     "epa_model": "QSK50-G22",
     "normalized_model": "QSK50G22",
     "first_model_year": 2021,
@@ -19334,175 +19888,6 @@
     "mapped_database_brands": [
       "Cummins"
     ],
-    "epa_model": "QSK50-G24",
-    "normalized_model": "QSK50G24",
-    "first_model_year": 2021,
-    "latest_model_year": 2026,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "MCEXL050.AAD",
-      "NCEXL050.AAD",
-      "PCEXL050.AAD",
-      "RCEXL050.AAD",
-      "SCEXL050.AAD",
-      "TCEXL050.AAD"
-    ],
-    "engine_codes": [
-      "5775:FR60524",
-      "OK79"
-    ],
-    "certificates": [
-      "MCEXL050.AAD-007",
-      "NCEXL050.AAD-004",
-      "PCEXL050.AAD-033",
-      "RCEXL050.AAD-016",
-      "SCEXL050.AAD-039",
-      "TCEXL050.AAD-040"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 2204,
-    "rated_power_kw_max": 2204,
-    "displacements_l": [
-      50.513000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Cummins",
-        "model": "QSK50-G2",
-        "slug": "cummins-qsk50-g2",
-        "similarity": 0.933
-      },
-      {
-        "brand": "Cummins",
-        "model": "QSK50-G4",
-        "slug": "cummins-qsk50-g4",
-        "similarity": 0.933
-      }
-    ]
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
-    "epa_model": "QSK78",
-    "normalized_model": "QSK78",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DCEXL78.0AAA",
-      "ECEXL78.0AAA",
-      "ECEXL78.0AAB",
-      "FCEXL78.0AAA",
-      "GCEXL78.0AAA",
-      "JCEXL78.0AAA",
-      "KCEXL78.0AAA",
-      "LCEXL78.0AAA",
-      "MCEXL78.0AAA",
-      "NCEXL78.0AAA",
-      "PCEXL78.0AAA",
-      "PCEXL95.0AAA",
-      "RCEXL78.0AAA",
-      "RCEXL95.0AAA",
-      "SCEXL95.0AAA",
-      "TCEXL95.0AAA"
-    ],
-    "engine_codes": [
-      "3924:FR6967",
-      "3925:FR6968",
-      "3926:FR6969",
-      "4456:FR60130",
-      "4457:FR60131",
-      "OK10",
-      "OK11",
-      "OK24",
-      "OK25",
-      "OK7",
-      "OK8",
-      "OK9"
-    ],
-    "certificates": [
-      "DCEXL78.0AAA-033-R01",
-      "ECEXL78.0AAA-024",
-      "ECEXL78.0AAB-022",
-      "FCEXL78.0AAA-002",
-      "GCEXL78.0AAA-025",
-      "JCEXL78.0AAA-001",
-      "KCEXL78.0AAA-009",
-      "LCEXL78.0AAA-046",
-      "MCEXL78.0AAA-036",
-      "NCEXL78.0AAA-040",
-      "PCEXL78.0AAA-003",
-      "PCEXL95.0AAA-004",
-      "RCEXL78.0AAA-003",
-      "RCEXL95.0AAA-004",
-      "SCEXL95.0AAA-020",
-      "TCEXL95.0AAA-029"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 2",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2764,
-    "rated_power_kw_max": 3312,
-    "displacements_l": [
-      77.62700000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
     "epa_model": "QSK78-G",
     "normalized_model": "QSK78G",
     "first_model_year": 2012,
@@ -19605,7 +19990,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSK78",
+        "slug": "cummins-qsk78",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Cummins Inc.",
@@ -19690,212 +20082,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
-    "epa_model": "QSK95",
-    "normalized_model": "QSK95",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FCEXL95.0AAA",
-      "GCEXL95.0AAA",
-      "HCEXL95.0AAA",
-      "JCEXL95.0AAA",
-      "KCEXL95.0AAA",
-      "LCEXL95.0AAA",
-      "MCEXL95.0AAA",
-      "NCEXL95.0AAA",
-      "PCEXL95.0AAA",
-      "RCEXL95.0AAA",
-      "SCEXL95.0AAA",
-      "TCEXL95.0AAA"
-    ],
-    "engine_codes": [
-      "3917:FR7372",
-      "3917:FR7439",
-      "3917:FR7511",
-      "3917:FR7525",
-      "3917:FR7556",
-      "3917:FR7557",
-      "3917:FR7585",
-      "5487:FR7531",
-      "5487:FR7533",
-      "5487:FR7534",
-      "5487:FR7586",
-      "5707:FR7551",
-      "OK1",
-      "OK12",
-      "OK13",
-      "OK14",
-      "OK16",
-      "OK19",
-      "OK2",
-      "OK20",
-      "OK22",
-      "OK23",
-      "OK5",
-      "OK6"
-    ],
-    "certificates": [
-      "FCEXL95.0AAA-039",
-      "GCEXL95.0AAA-007",
-      "HCEXL95.0AAA-028",
-      "JCEXL95.0AAA-006",
-      "KCEXL95.0AAA-015",
-      "LCEXL95.0AAA-039",
-      "MCEXL95.0AAA-034",
-      "NCEXL95.0AAA-044",
-      "PCEXL95.0AAA-004",
-      "RCEXL95.0AAA-004",
-      "SCEXL95.0AAA-020",
-      "TCEXL95.0AAA-029"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3506,
-    "rated_power_kw_max": 3922,
-    "displacements_l": [
-      95.266
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
-    "epa_model": "QST30",
-    "normalized_model": "QST30",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DCEXL60.0AAA",
-      "DCEXL78.0AAA",
-      "ECEXL78.0AAA",
-      "ECEXL78.0AAB",
-      "FCEXL78.0AAA",
-      "GCEXL78.0AAA",
-      "JCEXL30.0AAE",
-      "JCEXL78.0AAA",
-      "KCEXL30.0AAE",
-      "KCEXL78.0AAA",
-      "LCEXL30.0AAE",
-      "LCEXL78.0AAA",
-      "MCEXL30.0AAE",
-      "MCEXL78.0AAA",
-      "NCEXL30.0AAE",
-      "NCEXL78.0AAA",
-      "PCEXL30.0AAE",
-      "PCEXL78.0AAA",
-      "RCEXL30.0AAE",
-      "RCEXL78.0AAA",
-      "SCEXL30.0AAE",
-      "TCEXL30.0AAE"
-    ],
-    "engine_codes": [
-      "3927:FR5306",
-      "3928:FR5307",
-      "4811:FR5392",
-      "5249:FR5390",
-      "5250:FR5391",
-      "OK1",
-      "OK12",
-      "OK13",
-      "OK6",
-      "OT5"
-    ],
-    "certificates": [
-      "DCEXL60.0AAA-032",
-      "DCEXL78.0AAA-033-R01",
-      "ECEXL78.0AAA-024",
-      "ECEXL78.0AAB-022",
-      "FCEXL78.0AAA-002",
-      "GCEXL78.0AAA-025",
-      "JCEXL30.0AAE-017",
-      "JCEXL78.0AAA-001",
-      "KCEXL30.0AAE-011",
-      "KCEXL78.0AAA-009",
-      "LCEXL30.0AAE-004",
-      "LCEXL78.0AAA-046",
-      "MCEXL30.0AAE-043",
-      "MCEXL78.0AAA-036",
-      "NCEXL30.0AAE-053",
-      "NCEXL78.0AAA-040",
-      "PCEXL30.0AAE-036",
-      "PCEXL78.0AAA-003",
-      "RCEXL30.0AAE-023",
-      "RCEXL78.0AAA-003",
-      "SCEXL30.0AAE-030",
-      "TCEXL30.0AAE-032"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 746,
-    "rated_power_kw_max": 1111,
-    "displacements_l": [
-      30.48
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSK78",
+        "slug": "cummins-qsk78",
+        "similarity": 0.769
+      }
+    ]
   },
   {
     "manufacturer": "Cummins Inc.",
@@ -19988,129 +20182,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
-    "epa_model": "QSX15",
-    "normalized_model": "QSX15",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "ECEXL15.0AAL",
-      "FCEXL15.0AAL",
-      "GCEXL15.0AAL",
-      "HCEXL15.0AAL",
-      "JCEXL15.0AAL",
-      "KCEXL15.0AAL",
-      "LCEXL15.0AAL",
-      "MCEXL15.0AAL",
-      "MCEXL15.0AAN",
-      "MCEXL15.0AAS",
-      "NCEXL15.0AAL",
-      "NCEXL15.0AAS",
-      "PCEXL15.0AAL",
-      "PCEXL15.0AAS",
-      "RCEXL15.0AAL",
-      "RCEXL15.0AAS",
-      "SCEXL15.0AAL",
-      "SCEXL15.0AAS",
-      "TCEXL15.0AAL",
-      "TCEXL15.0AAS"
-    ],
-    "engine_codes": [
-      "43869;FR11115",
-      "43869;FR11116",
-      "43869;FR11117",
-      "43869;FR11118",
-      "43869;FR11119",
-      "43869;FR11120",
-      "43869;FR11809",
-      "43869;FR11810",
-      "43869;FR11811",
-      "43869;FR11812",
-      "43869;FR11813",
-      "43869;FR11814",
-      "5429:FR11847",
-      "5429:FR11848",
-      "5429:FR11849",
-      "5429:FR11863",
-      "5429:FR11864",
-      "LX1",
-      "LX2",
-      "LX3",
-      "LX30",
-      "LX31",
-      "LX32",
-      "LX33",
-      "LX34",
-      "LX35",
-      "LX4",
-      "LX5",
-      "LX6"
-    ],
-    "certificates": [
-      "ECEXL15.0AAL-036",
-      "FCEXL15.0AAL-025",
-      "GCEXL15.0AAL-034",
-      "HCEXL15.0AAL-004",
-      "JCEXL15.0AAL-002",
-      "KCEXL15.0AAL-036",
-      "LCEXL15.0AAL-015",
-      "MCEXL15.0AAL-057",
-      "MCEXL15.0AAN-001",
-      "MCEXL15.0AAS-033",
-      "NCEXL15.0AAL-055",
-      "NCEXL15.0AAS-048",
-      "PCEXL15.0AAL-052",
-      "PCEXL15.0AAS-054",
-      "RCEXL15.0AAL-043",
-      "RCEXL15.0AAS-047",
-      "SCEXL15.0AAL-006",
-      "SCEXL15.0AAS-015",
-      "TCEXL15.0AAL-012",
-      "TCEXL15.0AAS-022"
-    ],
-    "applicable_tiers": [
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 373,
-    "rated_power_kw_max": 563,
-    "displacements_l": [
-      14.948
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QST30",
+        "slug": "cummins-qst30",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Cummins Inc.",
@@ -20217,7 +20296,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSX15",
+        "slug": "cummins-qsx15",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Cummins Inc.",
@@ -20347,7 +20433,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSX15",
+        "slug": "cummins-qsx15",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Cummins Inc.",
@@ -40169,7 +40262,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSK23",
+        "slug": "cummins-qsk23",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Cummins Inc.",
@@ -43279,7 +43379,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSK23",
+        "slug": "cummins-qsk23",
+        "similarity": 0.833
+      }
+    ]
   },
   {
     "manufacturer": "Cummins Inc.",
@@ -43516,7 +43623,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QST30",
+        "slug": "cummins-qst30",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Daedong Corporation",

@@ -19,21 +19,21 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **83**
+- Exact manufacturer/brand matches: **92**
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
 - Reviewed certification aliases: **4**
 - Verified commercial family matches: **34**
-- Exact matches whose database page uses 1800 as its primary RPM: **25**
+- Exact matches whose database page uses 1800 as its primary RPM: **34**
 - Exact model under another database brand: **9**
-- Not represented after reviewed matching rules: **755**
+- Not represented after reviewed matching rules: **746**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **24.7%**
-- Unmatched models with a 2024+ certification: **361**
+- Represented coverage within mapped manufacturers: **25.8%**
+- Unmatched models with a 2024+ certification: **352**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **231**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **222**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -48,8 +48,8 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 
 | Database brand | 2024+ constant-speed models without represented match |
 |---|---:|
-| Cummins | 33 |
 | MTU | 29 |
+| Cummins | 24 |
 | FPT | 24 |
 | Perkins | 22 |
 | Kubota | 19 |
@@ -72,7 +72,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | EPA manufacturer | Database brand | EPA models | Exact | Brand prefix | Base trims | Cert. trims | Cert. aliases | Families | Other-brand exact | Not found | Probable |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Rolls-Royce Solutions America Inc | MTU | 155 | 10 | 27 | 0 | 0 | 0 | 0 | 0 | 118 | 17 |
-| Cummins Inc. | Cummins | 80 | 14 | 0 | 0 | 0 | 0 | 13 | 0 | 53 | 6 |
+| Cummins Inc. | Cummins | 80 | 23 | 0 | 0 | 0 | 0 | 13 | 0 | 44 | 11 |
 | Perkins Engines Co Ltd | Perkins | 79 | 6 | 0 | 0 | 0 | 0 | 6 | 6 | 61 | 2 |
 | FPT Industrial S.p.A. | FPT | 68 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 68 | 0 |
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 55 | 0 |
@@ -138,25 +138,16 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Cummins Inc. | KD05L04T-6DDS | Tier 3 | 154 |  |
 | 2026 | Cummins Inc. | KD07L06T-6DDS | Tier 3 | 242 |  |
 | 2026 | Cummins Inc. | KD09L06T-6DDS | Tier 3 | 346 |  |
-| 2026 | Cummins Inc. | QSB4.5 | Tier 3, Tier 4 (Final or Phase In) | 155 |  |
 | 2026 | Cummins Inc. | QSB7-G4 | Tier 3 | 214 |  |
 | 2026 | Cummins Inc. | QSK19-C | Tier 2, Tier 3, Tier 4 (Final or Phase In) | 567 |  |
-| 2026 | Cummins Inc. | QSK23 | Tier 2, Tier 4 (Final or Phase In) | 962 |  |
 | 2026 | Cummins Inc. | QSK23-G7 NR2 | Tier 2 | 910 |  |
 | 2026 | Cummins Inc. | QSK38-G16 | Tier 2 | 1129 | Cummins QSK38-G1 (0.933) |
-| 2026 | Cummins Inc. | QSK38-G17 | Tier 2 | 1399 | Cummins QSK38-G1 (0.933) |
-| 2026 | Cummins Inc. | QSK38-G18 | Tier 2 | 1659 | Cummins QSK38-G1 (0.933) |
 | 2026 | Cummins Inc. | QSK50-G22 | Tier 2 | 1682 | Cummins QSK50-G2 (0.933) |
 | 2026 | Cummins Inc. | QSK50-G23 | Tier 2 | 1947 | Cummins QSK50-G2 (0.933) |
-| 2026 | Cummins Inc. | QSK50-G24 | Tier 2 | 2204 | Cummins QSK50-G2 (0.933) |
-| 2026 | Cummins Inc. | QSK78 | Interim Tier 4, Tier 2, Tier 4 (Final or Phase In) | 3312 |  |
-| 2026 | Cummins Inc. | QSK78-G | Tier 2 | 3029 |  |
-| 2026 | Cummins Inc. | QSK78-G10 | Tier 2 | 2760 |  |
-| 2026 | Cummins Inc. | QSK95 | Tier 2 | 3922 |  |
-| 2026 | Cummins Inc. | QST30 | Interim Tier 4, Tier 4 (Final or Phase In) | 1111 |  |
-| 2026 | Cummins Inc. | QST30-G | Tier 2 | 1111 |  |
-| 2026 | Cummins Inc. | QSX15 | Tier 3, Tier 4 (Final or Phase In) | 563 |  |
-| 2026 | Cummins Inc. | QSX15-G | Interim Tier 4, Tier 2, Tier 3 | 563 |  |
+| 2026 | Cummins Inc. | QSK78-G | Tier 2 | 3029 | Cummins QSK78 (0.909) |
+| 2026 | Cummins Inc. | QSK78-G10 | Tier 2 | 2760 | Cummins QSK78 (0.769) |
+| 2026 | Cummins Inc. | QST30-G | Tier 2 | 1111 | Cummins QST30 (0.909) |
+| 2026 | Cummins Inc. | QSX15-G | Interim Tier 4, Tier 2, Tier 3 | 563 | Cummins QSX15 (0.909) |
 | 2026 | Cummins Inc. | S17 | Tier 2 | 1099 |  |
 | 2026 | Deere & Company | 3029 | Tier 3, Tier 4 (Final or Phase In) | 55 |  |
 | 2026 | Deere & Company | 4039 | Tier 4 (Final or Phase In) | 126 |  |
@@ -271,6 +262,15 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Perkins Engines Co Ltd | 404J-E22TA(C2.2) | Tier 4 (Final or Phase In) | 50 |  |
 | 2026 | Perkins Engines Co Ltd | C1.5 | Tier 4 (Final or Phase In) | 18 |  |
 | 2026 | Perkins Engines Co Ltd | C2.2 | Interim Tier 4, Tier 4 (Final or Phase In) | 36 |  |
+| 2026 | Perkins Engines Co Ltd | C7.1 | Interim Tier 4, Tier 4 (Final or Phase In) | 180 |  |
+| 2026 | Rolls-Royce Solutions America Inc | 12V1600G10S | Tier 2 | 561 | MTU 12V1600G10 (0.952) |
+| 2026 | Rolls-Royce Solutions America Inc | 12V1600G20S | Tier 2 | 608 | MTU 12V1600G20 (0.952) |
+| 2026 | Rolls-Royce Solutions America Inc | 12V1600G70S | Tier 2 | 613 | MTU 12V1600 G01S (0.909) |
+| 2026 | Rolls-Royce Solutions America Inc | 12V1600G80S | Tier 2 | 668 | MTU 12V1600 G01S (0.909) |
+| 2026 | Rolls-Royce Solutions America Inc | 12V2000G26S | Tier 2 | 810 |  |
+| 2026 | Rolls-Royce Solutions America Inc | 12V2000G76S | Tier 2 | 890 |  |
+| 2026 | Rolls-Royce Solutions America Inc | 12V2000G86S | Tier 2 | 987 |  |
+| 2026 | Rolls-Royce Solutions America Inc | 12V4000G74S | Tier 2 | 1736 | MTU 12V4000 GS (0.900) |
 
 ## Interpretation
 
