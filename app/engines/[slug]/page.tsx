@@ -66,7 +66,7 @@ function kweIsEstimated(engine: Engine): boolean {
   const b = engine.brand ?? ''
   const m = engine.model ?? ''
   if (b === 'Isuzu' || b === 'Hatz' || b === 'JCB' || b === 'Kirloskar' || b === 'MAN' || b === 'Liebherr') return true
-  if (b === 'Mitsubishi') return true
+  if (b === 'Mitsubishi') return !/gas/i.test(engine.fuel_type ?? '')
   if (b === 'FPT' && (m.includes('TEVP') || m.includes('ETVP'))) return true
   return false
 }
