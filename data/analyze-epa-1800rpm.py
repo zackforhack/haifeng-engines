@@ -1,0 +1,476 @@
+#!/usr/bin/env python3
+"""Compare EPA-certified 1800 RPM nonroad CI engines with the live catalog.
+
+Usage:
+  python3 data/analyze-epa-1800rpm.py \
+    --epa-xlsx "/path/to/nonroad-compression-ignition-2011-present.xlsx" \
+    --engines-json /tmp/haifeng-engines.json \
+    --output-dir reports/epa-certification
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import unicodedata
+from collections import defaultdict
+from difflib import SequenceMatcher
+from pathlib import Path
+
+import openpyxl
+
+
+MANUFACTURER_BRANDS = {
+    "AB Volvo Penta": {"Volvo Penta"},
+    "Caterpillar Inc.": {"Caterpillar"},
+    "Cummins Inc.": {"Cummins"},
+    "Deere & Company": {"John Deere"},
+    "Detroit Diesel Corporation": {"Detroit Diesel"},
+    "Deutz AG": {"Deutz"},
+    "Discovery Energy, LLC.": {"Kohler"},
+    "FAW JIEFANG AUTOMOTIVE CO.,LTD,WUXI DIESEL ENGINE WORKS": {"FAWDE"},
+    "FPT Industrial S.p.A.": {"FPT"},
+    "HD Construction Equipment Co., Ltd.": {"Hyundai"},
+    "Isuzu Motors Limited": {"Isuzu"},
+    "Kirloskar Americas Corporation": {"Kirloskar"},
+    "Komatsu Ltd.": {"Komatsu"},
+    "Kubota Corporation": {"Kubota"},
+    "Liebherr Machines Bulle SA": {"Liebherr"},
+    "Lister Petter Limited": {"Lister Petter"},
+    "MAN Truck & Bus AG": {"MAN"},
+    "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.": {"Mitsubishi"},
+    "Motorenfabrik Hatz GmbH & Co. KG": {"Hatz"},
+    "Perkins Engines Co Ltd": {"Perkins"},
+    "Rolls-Royce Solutions America Inc": {"MTU"},
+    "Scania CV AB": {"Scania"},
+    "Societe Internationale des Moteurs-Baudouin": {"Baudouin"},
+    "Tianjin Lovol Engines Co., Ltd.": {"Lovol"},
+    "Weichai Power Co.,Ltd.": {"Weichai"},
+    "Yanmar Power Technology Co., Ltd.": {"Yanmar"},
+    "Zhejiang Xinchai Co., Ltd.": {"Xinchai"},
+}
+
+
+def normalize_model(value: object) -> str:
+    text = unicodedata.normalize("NFKD", str(value or "")).upper()
+    # Decimal displacement designations are significant: C1.5 is not C15.
+    text = re.sub(r"(?<=\d)\.(?=\d)", "P", text)
+    return re.sub(r"[^A-Z0-9]+", "", text)
+
+
+def sorted_values(values: set[object]) -> list[object]:
+    return sorted(value for value in values if value not in (None, ""))
+
+
+def read_family_info(workbook: openpyxl.Workbook) -> dict[tuple[int, str], dict]:
+    sheet = workbook["Family Info"]
+    headers = [cell.value for cell in sheet[2]]
+    index = {header: position for position, header in enumerate(headers)}
+    families = {}
+
+    for row in sheet.iter_rows(min_row=3, values_only=True):
+        year = row[index["Model Year"]]
+        family = row[index["Engine Family"]]
+        if year is None or family is None:
+            continue
+        families[(int(year), str(family))] = {
+            "manufacturer": row[index["Manufacturer"]],
+            "certificate": row[index["Certificate #"]],
+            "applicable_tier": row[index["Applicable Tier"]],
+            "compliance_standard": row[index["Applicable Compliance Standard"]],
+            "fuel": row[index["Fuel"]],
+            "engine_operation": row[index["Engine Operation"]],
+        }
+    return families
+
+
+def read_1800_rpm_models(
+    workbook: openpyxl.Workbook, families: dict[tuple[int, str], dict]
+) -> tuple[dict[tuple[str, str], dict], int]:
+    sheet = workbook["Model Info"]
+    headers = [cell.value for cell in sheet[2]]
+    index = {header: position for position, header in enumerate(headers)}
+    models: dict[tuple[str, str], dict] = {}
+    source_rows = 0
+
+    for row in sheet.iter_rows(min_row=3, values_only=True):
+        rated_speed = row[index["Rated Speed (RPM)"]]
+        if not isinstance(rated_speed, (int, float)) or abs(rated_speed - 1800) > 0.01:
+            continue
+
+        source_rows += 1
+        year = int(row[index["Model Year"]])
+        family = str(row[index["Engine Family"]])
+        family_info = families[(year, family)]
+        manufacturer = str(family_info["manufacturer"])
+        display_model = str(row[index["Engine Model"]]).strip()
+        normalized_model = normalize_model(display_model)
+        key = (manufacturer, normalized_model)
+
+        if key not in models:
+            models[key] = {
+                "manufacturer": manufacturer,
+                "epa_model": display_model,
+                "normalized_model": normalized_model,
+                "model_years": set(),
+                "engine_families": set(),
+                "engine_codes": set(),
+                "certificates": set(),
+                "applicable_tiers": set(),
+                "compliance_standards": set(),
+                "fuels": set(),
+                "engine_operations": set(),
+                "rated_powers_kw": set(),
+                "displacements_l": set(),
+            }
+
+        record = models[key]
+        record["model_years"].add(year)
+        record["engine_families"].add(family)
+        record["engine_codes"].add(row[index["Engine Code"]])
+        record["certificates"].add(family_info["certificate"])
+        record["applicable_tiers"].add(family_info["applicable_tier"])
+        record["compliance_standards"].add(family_info["compliance_standard"])
+        record["fuels"].add(family_info["fuel"])
+        record["engine_operations"].add(family_info["engine_operation"])
+        record["rated_powers_kw"].add(row[index["Rated Power (KW)"]])
+        record["displacements_l"].add(row[index["Total Displacement"]])
+
+    return models, source_rows
+
+
+def build_database_indexes(engines: list[dict]) -> tuple[dict, dict]:
+    by_model: dict[str, list[dict]] = defaultdict(list)
+    by_brand: dict[str, list[dict]] = defaultdict(list)
+    for engine in engines:
+        normalized = normalize_model(engine["model"])
+        engine = {**engine, "normalized_model": normalized}
+        by_model[normalized].append(engine)
+        by_brand[engine["brand"]].append(engine)
+    return by_model, by_brand
+
+
+def probable_brand_matches(
+    normalized_model: str, brands: set[str], by_brand: dict[str, list[dict]]
+) -> list[dict]:
+    candidates = []
+    for brand in brands:
+        for engine in by_brand.get(brand, []):
+            database_model = engine["normalized_model"]
+            if min(len(normalized_model), len(database_model)) < 5:
+                continue
+            ratio = SequenceMatcher(None, normalized_model, database_model).ratio()
+            prefix_match = (
+                normalized_model.startswith(database_model)
+                or database_model.startswith(normalized_model)
+            ) and abs(len(normalized_model) - len(database_model)) <= 4
+            if ratio >= 0.88 or prefix_match:
+                candidates.append(
+                    {
+                        "brand": engine["brand"],
+                        "model": engine["model"],
+                        "slug": engine["slug"],
+                        "similarity": round(ratio, 3),
+                    }
+                )
+    return sorted(
+        candidates,
+        key=lambda candidate: (-candidate["similarity"], candidate["slug"]),
+    )[:5]
+
+
+def match_models(models: dict, engines: list[dict]) -> list[dict]:
+    by_model, by_brand = build_database_indexes(engines)
+    results = []
+
+    for record in models.values():
+        manufacturer = record["manufacturer"]
+        normalized_model = record["normalized_model"]
+        expected_brands = MANUFACTURER_BRANDS.get(manufacturer, set())
+        exact_candidates = by_model.get(normalized_model, [])
+        exact_brand_candidates = [
+            engine
+            for engine in exact_candidates
+            if engine["brand"] in expected_brands
+        ]
+
+        if exact_brand_candidates:
+            status = "exact_brand_match"
+            matches = exact_brand_candidates
+            probable = []
+        elif exact_candidates:
+            status = "exact_model_other_brand"
+            matches = exact_candidates
+            probable = []
+        else:
+            status = "not_found"
+            matches = []
+            probable = probable_brand_matches(
+                normalized_model, expected_brands, by_brand
+            )
+
+        years = sorted_values(record["model_years"])
+        powers = sorted_values(record["rated_powers_kw"])
+        displacements = sorted_values(record["displacements_l"])
+        results.append(
+            {
+                "manufacturer": manufacturer,
+                "mapped_database_brands": sorted(expected_brands),
+                "epa_model": record["epa_model"],
+                "normalized_model": normalized_model,
+                "first_model_year": years[0],
+                "latest_model_year": years[-1],
+                "model_years": years,
+                "engine_families": sorted_values(record["engine_families"]),
+                "engine_codes": sorted_values(record["engine_codes"]),
+                "certificates": sorted_values(record["certificates"]),
+                "applicable_tiers": sorted_values(record["applicable_tiers"]),
+                "compliance_standards": sorted_values(
+                    record["compliance_standards"]
+                ),
+                "fuels": sorted_values(record["fuels"]),
+                "engine_operations": sorted_values(record["engine_operations"]),
+                "rated_power_kw_min": powers[0] if powers else None,
+                "rated_power_kw_max": powers[-1] if powers else None,
+                "displacements_l": displacements,
+                "match_status": status,
+                "database_matches": [
+                    {
+                        "brand": engine["brand"],
+                        "model": engine["model"],
+                        "slug": engine["slug"],
+                        "rpm_rated": engine["rpm_rated"],
+                        "emissions_standard": engine["emissions_standard"],
+                        "fuel_type": engine["fuel_type"],
+                    }
+                    for engine in matches
+                ],
+                "probable_database_matches": probable,
+            }
+        )
+
+    return sorted(
+        results,
+        key=lambda result: (
+            result["match_status"] != "exact_brand_match",
+            -result["latest_model_year"],
+            result["manufacturer"],
+            result["epa_model"],
+        ),
+    )
+
+
+def markdown_report(results: list[dict], source_rows: int, source_path: Path) -> str:
+    statuses = defaultdict(int)
+    manufacturers = defaultdict(lambda: defaultdict(int))
+    for result in results:
+        statuses[result["match_status"]] += 1
+        manufacturers[result["manufacturer"]]["total"] += 1
+        manufacturers[result["manufacturer"]][result["match_status"]] += 1
+        if result["probable_database_matches"]:
+            manufacturers[result["manufacturer"]]["probable"] += 1
+
+    mapped_total = sum(
+        1 for result in results if result["mapped_database_brands"]
+    )
+    mapped_matches = sum(
+        1
+        for result in results
+        if result["mapped_database_brands"]
+        and result["match_status"] == "exact_brand_match"
+    )
+    recent_unmatched = [
+        result
+        for result in results
+        if result["match_status"] != "exact_brand_match"
+        and result["latest_model_year"] >= 2024
+    ]
+    constant_speed_models = [
+        result
+        for result in results
+        if "Constant Speed" in result["engine_operations"]
+    ]
+    variable_speed_only_models = [
+        result
+        for result in results
+        if "Constant Speed" not in result["engine_operations"]
+        and "Variable Speed" in result["engine_operations"]
+    ]
+    generator_priority = [
+        result
+        for result in recent_unmatched
+        if result["mapped_database_brands"]
+        and "Constant Speed" in result["engine_operations"]
+    ]
+    generator_priority_brands = defaultdict(int)
+    for result in generator_priority:
+        for brand in result["mapped_database_brands"]:
+            generator_priority_brands[brand] += 1
+    exact_primary_1800 = sum(
+        1
+        for result in results
+        if result["match_status"] == "exact_brand_match"
+        and any(
+            match["rpm_rated"] == 1800
+            for match in result["database_matches"]
+        )
+    )
+
+    lines = [
+        "# EPA Nonroad CI 1800 RPM Engine Coverage",
+        "",
+        f"Source workbook: `{source_path.name}`",
+        "",
+        "## Method",
+        "",
+        "- Kept only `Model Info` rows where `Rated Speed (RPM)` is exactly 1800.",
+        "- Joined manufacturer, certificate, tier, compliance standard and fuel from `Family Info` using model year and engine family.",
+        "- Deduplicated recurring annual certifications by EPA manufacturer plus normalized engine model.",
+        "- Counted a database model as present only when its normalized model and verified manufacturer-to-brand mapping both matched.",
+        "- Exact model matches under another brand and similar suffix variants remain review items.",
+        "",
+        "## Summary",
+        "",
+        f"- 1800 RPM source rows: **{source_rows:,}**",
+        f"- Distinct EPA manufacturer/model combinations: **{len(results):,}**",
+        f"- Exact manufacturer/brand matches: **{statuses['exact_brand_match']:,}**",
+        f"- Exact matches whose database page uses 1800 as its primary RPM: **{exact_primary_1800:,}**",
+        f"- Exact model under another database brand: **{statuses['exact_model_other_brand']:,}**",
+        f"- Not found by exact model: **{statuses['not_found']:,}**",
+        f"- Models from mapped manufacturers: **{mapped_total:,}**",
+        f"- Exact coverage within mapped manufacturers: **{mapped_matches / mapped_total:.1%}**",
+        f"- Unmatched models with a 2024+ certification: **{len(recent_unmatched):,}**",
+        f"- Models with at least one constant-speed certification: **{len(constant_speed_models):,}**",
+        f"- Variable-speed-only models retained for reference: **{len(variable_speed_only_models):,}**",
+        f"- Generator-priority review queue (2024+, mapped brand, constant speed): **{len(generator_priority):,}**",
+        "",
+        "The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use "
+        "1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second "
+        "rating-level comparison before any RPM correction.",
+        "",
+        "## Manufacturer Mapping Notes",
+        "",
+        "- `Discovery Energy, LLC.` is compared with the existing `Kohler` brand. Rehlko's official "
+        "[engine warranty page](https://www.engines.rehlko.com/warranty) identifies Discovery Energy "
+        "as the responsible company and states that Kohler Engines is now Rehlko.",
+        "- `HD Construction Equipment Co., Ltd.` is compared with the existing `Hyundai` brand. Its "
+        "[official network page](https://www.hd-ce.com/en/network) lists the current company and its "
+        "engine production and R&D operations.",
+        "",
+        "## Generator-Priority Gaps by Brand",
+        "",
+        "| Database brand | 2024+ constant-speed models without exact match |",
+        "|---|---:|",
+    ]
+
+    for brand, count in sorted(
+        generator_priority_brands.items(), key=lambda item: (-item[1], item[0])
+    ):
+        lines.append(f"| {brand} | {count} |")
+
+    lines.extend(
+        [
+        "",
+        "## Manufacturer Coverage",
+        "",
+        "| EPA manufacturer | Database brand | EPA models | Exact matches | Other-brand exact | Not found | Probable aliases |",
+        "|---|---|---:|---:|---:|---:|---:|",
+        ]
+    )
+
+    for manufacturer, counts in sorted(
+        manufacturers.items(), key=lambda item: (-item[1]["total"], item[0])
+    ):
+        brands = ", ".join(sorted(MANUFACTURER_BRANDS.get(manufacturer, set()))) or "Unmapped"
+        lines.append(
+            f"| {manufacturer} | {brands} | {counts['total']} | "
+            f"{counts['exact_brand_match']} | {counts['exact_model_other_brand']} | "
+            f"{counts['not_found']} | {counts['probable']} |"
+        )
+
+    lines.extend(
+        [
+            "",
+            "## Priority Review",
+            "",
+            "These are recent constant-speed EPA-certified models from mapped manufacturers that "
+            "were not found as exact manufacturer/brand matches. The full records, including "
+            "variable-speed-only models and candidate aliases, are in "
+            "`epa-1800rpm-model-match.json`.",
+            "",
+            "| Latest year | Manufacturer | EPA model | Tier | Power kW | Probable database model |",
+            "|---:|---|---|---|---:|---|",
+        ]
+    )
+
+    for result in sorted(
+        generator_priority,
+        key=lambda item: (
+            -item["latest_model_year"],
+            item["manufacturer"],
+            item["epa_model"],
+        ),
+    )[:150]:
+        tier = ", ".join(str(value) for value in result["applicable_tiers"])
+        power = (
+            str(result["rated_power_kw_max"])
+            if result["rated_power_kw_max"] is not None
+            else ""
+        )
+        probable = ""
+        if result["probable_database_matches"]:
+            candidate = result["probable_database_matches"][0]
+            probable = f"{candidate['brand']} {candidate['model']} ({candidate['similarity']:.3f})"
+        lines.append(
+            f"| {result['latest_model_year']} | {result['manufacturer']} | "
+            f"{result['epa_model']} | {tier} | {power} | {probable} |"
+        )
+
+    lines.extend(
+        [
+            "",
+            "## Interpretation",
+            "",
+            "- EPA certification records identify certified engine configurations, not generator-set electrical ratings.",
+            "- A shared base model can have different certification families, power ratings, aftertreatment and model years.",
+            "- Candidate additions should be validated against the EPA certificate and a manufacturer datasheet before database insertion.",
+            "",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--epa-xlsx", required=True, type=Path)
+    parser.add_argument("--engines-json", required=True, type=Path)
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path("reports/epa-certification"),
+    )
+    args = parser.parse_args()
+
+    workbook = openpyxl.load_workbook(
+        args.epa_xlsx, read_only=True, data_only=True
+    )
+    families = read_family_info(workbook)
+    models, source_rows = read_1800_rpm_models(workbook, families)
+    engines = json.loads(args.engines_json.read_text())
+    results = match_models(models, engines)
+
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    json_path = args.output_dir / "epa-1800rpm-model-match.json"
+    report_path = args.output_dir / "epa-1800rpm-summary.md"
+    json_path.write_text(json.dumps(results, indent=2, ensure_ascii=False) + "\n")
+    report_path.write_text(
+        markdown_report(results, source_rows, args.epa_xlsx) + "\n"
+    )
+
+    print(f"Wrote {report_path}")
+    print(f"Wrote {json_path}")
+
+
+if __name__ == "__main__":
+    main()
