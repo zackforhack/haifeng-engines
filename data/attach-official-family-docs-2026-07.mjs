@@ -334,6 +334,60 @@ const documents = [
     type: 'manual',
     slugs: ['hatz-2m41', 'hatz-3m41', 'hatz-4m41'],
   },
+  {
+    source:
+      'https://www.china-power-contractor.cn/ExUpload/UCUpFiles/Equipment/3/A47E47DA-F5B7-497B-B1A9-852E6F2665F9.pdf',
+    storagePath: 'jichai/brochures/cnpc-jichai-gas-engine-products.pdf',
+    label: 'CNPC Jichai Gas Engine Product Catalog (supplier-hosted copy)',
+    type: 'brochure',
+    slugs: [
+      'jichai-12v190zdt-2',
+      'jichai-h16v190zlt-2',
+      'jichai-l20v190zlt-2',
+      'jichai-12v26-32',
+      'jichai-16v26-32',
+      'jichai-h16v190zlz-2',
+      'jichai-l20v190zlz-2',
+      'jichai-h16v190zlw-2',
+    ],
+  },
+  {
+    source:
+      'https://www.fptindustrial.com/-/media/FPT/Brochures/Engines/ON-ROAD/OnRoad_brochure_EN_12_2020_web.pdf?rev=-1',
+    storagePath: 'fpt/brochures/on-road-engine-range-2020.pdf',
+    label: 'FPT On-Road Engine Range Brochure (N67 NG and Cursor 9 NG)',
+    type: 'brochure',
+    slugs: ['fpt-n67-ng', 'fpt-cursor-9-ng'],
+  },
+  {
+    source:
+      'https://www.dieselpartsdirect.com/documents/perkins/generatorengineselector.pdf',
+    storagePath:
+      'perkins/guides/generator-engine-selector-publication-1542-03-05.pdf',
+    label:
+      'Perkins Generator Engine Selector, Publication 1542/03/05 (distributor-hosted copy)',
+    type: 'datasheet',
+    slugs: ['perkins-4008tesi'],
+  },
+  {
+    source:
+      'https://istk-deutz.ru/upload/iblock/0a4/0a4c7706539fa7544873dccfd0d9c549.pdf',
+    storagePath: 'deutz/datasheets/tcg-2015-stationary-applications.pdf',
+    label:
+      'Deutz TCG 2015 V6/V8 Stationary Engine Datasheet (dealer-hosted copy)',
+    type: 'datasheet',
+    slugs: ['deutz-tcg-2015-v6', 'deutz-tcg-2015-v8'],
+  },
+  {
+    source:
+      'https://www.mhi.com/technology/review/sites/g/files/jwhtju2326/files/media/pdf/e582130.pdf',
+    storagePath:
+      'mitsubishi/technical-reviews/gsr-series-hydrogen-engine-development.pdf',
+    label:
+      'MHI Technical Review: GSR Series Hydrogen Engine Development',
+    type: 'other',
+    slugs: ['mitsubishi-gs16r2-ptk-c'],
+  },
 ]
 
 async function loadPdf(document) {
