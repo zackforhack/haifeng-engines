@@ -140,6 +140,26 @@ function ratingPhrase(row) {
   return parts.join('; ')
 }
 
+const FAMILY_SPECS = new Map([
+  ['SA315', [1.5, 3, 'L3']], ['SA423', [2.3, 4, 'L4']], ['SA427', [2.7, 4, 'L4']],
+  ['SA430', [3.0, 4, 'L4']], ['SA432', [3.2, 4, 'L4']], ['SA435', [3.5, 4, 'L4']],
+  ['SA441', [4.1, 4, 'L4']], ['LP311', [1.1, 3, 'L3']], ['LP322', [2.2, 3, 'L3']],
+  ['LP429', [2.9, 4, 'L4']], ['LP430', [3.0, 4, 'L4']], ['LP432', [3.2, 4, 'L4']],
+  ['LP435', [3.5, 4, 'L4']], ['LP441', [4.1, 4, 'L4']], ['LP443', [4.3, 4, 'L4']],
+  ['LP665', [6.5, 6, 'L6']], ['LP689', [8.9, 6, 'L6']], ['LP612', [11.8, 6, 'L6']],
+  ['LP613', [12.8, 6, 'L6']], ['LP617', [16.7, 6, 'L6']], ['LP625', [25.18, 6, 'L6']],
+  ['LP2041', [40.7, 20, 'V20']], ['LP1054', [53.8, 10, 'V10']],
+  ['LP1265', [64.5, 12, 'V12']], ['LP1686', [86.02, 16, 'V16']],
+])
+
+function familySpecs(model) {
+  const key = [...FAMILY_SPECS.keys()].sort((a, b) => b.length - a.length)
+    .find((prefix) => model.startsWith(prefix))
+  if (!key) throw new Error(`No family specifications for ${model}`)
+  const [displacement_l, cylinders, configuration] = FAMILY_SPECS.get(key)
+  return { displacement_l, cylinders, configuration, cooling_method: 'Liquid-Cooled' }
+}
+
 const rows = RAW.trim().split('\n').map((line) => line.split('\t'))
 
 const records = rows.map(([series, model, stage, grossPrime50, grossStandby50, netPrime50, netStandby50, primeKwe50, primeKva50, standbyKwe50, standbyKva50, grossPrime60, grossStandby60, netPrime60, netStandby60, primeKwe60, primeKva60, standbyKwe60, standbyKva60, note]) => {
@@ -152,6 +172,7 @@ const records = rows.map(([series, model, stage, grossPrime50, grossStandby50, n
     origin: 'United Kingdom',
     fuel_type: 'Diesel',
     ignition_type: 'Compression Ignition',
+    ...familySpecs(model),
     emissions_standard: emissions(stage),
     rpm_rated: num(primeKwe50) != null || num(standbyKwe50) != null ? 1500 : 1800,
     power_kw: num(netStandby50) ?? num(netStandby60) ?? num(grossStandby50) ?? num(grossStandby60),
