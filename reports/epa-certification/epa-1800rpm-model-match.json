@@ -81,6 +81,77 @@
     "mapped_database_brands": [
       "Hatz"
     ],
+    "epa_model": "3H50TICD",
+    "normalized_model": "3H50TICD",
+    "first_model_year": 2020,
+    "latest_model_year": 2027,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2027
+    ],
+    "engine_families": [
+      "LHZXL1.95C51",
+      "MHZXL1.95C51",
+      "NHZXL1.95C51",
+      "PHZXL1.95C51",
+      "RHZXL02.0C51",
+      "SHZXL02.0C51",
+      "VHZXL02.0M51"
+    ],
+    "engine_codes": [
+      "3H50TICD-cs-18-ICFN",
+      "3H50TICD-cs-18-ICXN",
+      "3H50TICD-cs-18-IFN"
+    ],
+    "certificates": [
+      "LHZXL1.95C51-001",
+      "MHZXL1.95C51-008",
+      "NHZXL1.95C51-004",
+      "PHZXL1.95C51-006",
+      "RHZXL02.0C51-008",
+      "SHZXL02.0C51-009",
+      "VHZXL02.0M51-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 29,
+    "rated_power_kw_max": 31,
+    "displacements_l": [
+      1.463
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hatz",
+        "model": "3H50TICD",
+        "slug": "hatz-3h50ticd",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
+    "mapped_database_brands": [
+      "Hatz"
+    ],
     "epa_model": "4H50TIC",
     "normalized_model": "4H50TIC",
     "first_model_year": 2015,
@@ -158,6 +229,77 @@
         "slug": "hatz-4h50tic",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
+    "mapped_database_brands": [
+      "Hatz"
+    ],
+    "epa_model": "4H50TICD",
+    "normalized_model": "4H50TICD",
+    "first_model_year": 2020,
+    "latest_model_year": 2027,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2027
+    ],
+    "engine_families": [
+      "LHZXL1.95C51",
+      "MHZXL1.95C51",
+      "NHZXL1.95C51",
+      "PHZXL1.95C51",
+      "RHZXL02.0C51",
+      "SHZXL02.0C51",
+      "VHZXL02.0M51"
+    ],
+    "engine_codes": [
+      "4H50TICD-cs-18-ICFN",
+      "4H50TICD-cs-18-IFN",
+      "4H50TICD-cs-18-IXCN"
+    ],
+    "certificates": [
+      "LHZXL1.95C51-001",
+      "MHZXL1.95C51-008",
+      "NHZXL1.95C51-004",
+      "PHZXL1.95C51-006",
+      "RHZXL02.0C51-008",
+      "SHZXL02.0C51-009",
+      "VHZXL02.0M51-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 41,
+    "displacements_l": [
+      1.951
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hatz",
+        "model": "4H50TICD",
+        "slug": "hatz-4h50ticd",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -1245,6 +1387,99 @@
     "mapped_database_brands": [
       "Volvo Penta"
     ],
+    "epa_model": "TWD1643GE",
+    "normalized_model": "TWD1643GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CVPXL16.1ACW",
+      "DVPXL16.1ACW",
+      "EVPXL16.1ACW",
+      "FVPXL16.1ACW",
+      "GVPXL16.1ACW",
+      "HVPXL16.1ACW",
+      "JVPXL16.1ACW",
+      "KVPXL16.1ACW",
+      "LVPXL16.1ACW",
+      "MVPXL16.1ACW",
+      "NVPXL16.1ACW",
+      "PVPXL16.1ACW",
+      "RVPXL16.1ACW",
+      "SVPXL16.1ACW",
+      "TVPXL16.1ACW"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CVPXL16.1ACW-008",
+      "DVPXL16.1ACW-004",
+      "EVPXL16.1ACW-002",
+      "FVPXL16.1ACW-004",
+      "GVPXL16.1ACW-011",
+      "HVPXL16.1ACW-003",
+      "JVPXL16.1ACW-012",
+      "KVPXL16.1ACW-012",
+      "LVPXL16.1ACW-013",
+      "MVPXL16.1ACW-009",
+      "NVPXL16.1ACW-021",
+      "PVPXL16.1ACW-011",
+      "RVPXL16.1ACW-002",
+      "SVPXL16.1ACW-005",
+      "TVPXL16.1ACW-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 674,
+    "rated_power_kw_max": 674,
+    "displacements_l": [
+      16.123
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Volvo Penta",
+        "model": "TWD1643GE",
+        "slug": "volvo-penta-twd1643ge",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2 / Euro Stage II",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "AB Volvo Penta",
+    "mapped_database_brands": [
+      "Volvo Penta"
+    ],
     "epa_model": "TWD1644GE",
     "normalized_model": "TWD1644GE",
     "first_model_year": 2019,
@@ -1971,6 +2206,77 @@
         "slug": "caterpillar-c13",
         "rpm_rated": 1500,
         "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Caterpillar Inc.",
+    "mapped_database_brands": [
+      "Caterpillar"
+    ],
+    "epa_model": "C13B",
+    "normalized_model": "C13B",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LCPXL12.5NTF",
+      "MCPXL12.5NTF",
+      "NCPXL12.5NTF",
+      "PCPXL12.5NTF",
+      "RCPXL12.5NTF",
+      "SCPXL12.5NTF",
+      "TCPXL12.5NTF"
+    ],
+    "engine_codes": [
+      "06",
+      "6"
+    ],
+    "certificates": [
+      "LCPXL12.5NTF-003",
+      "MCPXL12.5NTF-014",
+      "NCPXL12.5NTF-030",
+      "PCPXL12.5NTF-026",
+      "RCPXL12.5NTF-003",
+      "SCPXL12.5NTF-004-R01",
+      "TCPXL12.5NTF-023"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 429,
+    "rated_power_kw_max": 429,
+    "displacements_l": [
+      12.503
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Caterpillar",
+        "model": "C13B",
+        "slug": "caterpillar-c13b",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -3190,6 +3496,86 @@
         "slug": "caterpillar-c9-3",
         "rpm_rated": 1500,
         "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Caterpillar Inc.",
+    "mapped_database_brands": [
+      "Caterpillar"
+    ],
+    "epa_model": "C9.3B",
+    "normalized_model": "C9P3B",
+    "first_model_year": 2019,
+    "latest_model_year": 2026,
+    "model_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "KCPXL09.3NTF",
+      "LCPXL09.3NTF",
+      "MCPXL09.3NTF",
+      "NCPXL09.3NTF",
+      "PCPXL09.3NTF",
+      "RCPXL09.3NTF",
+      "SCPXL09.3NTF",
+      "TCPXL09.3NTF"
+    ],
+    "engine_codes": [
+      "05",
+      "08",
+      "10",
+      "12",
+      "20",
+      "21",
+      "5",
+      "8"
+    ],
+    "certificates": [
+      "KCPXL09.3NTF-001",
+      "LCPXL09.3NTF-026",
+      "MCPXL09.3NTF-012",
+      "NCPXL09.3NTF-032",
+      "PCPXL09.3NTF-033",
+      "RCPXL09.3NTF-001",
+      "SCPXL09.3NTF-002-R01",
+      "TCPXL09.3NTF-021"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 234,
+    "rated_power_kw_max": 340,
+    "displacements_l": [
+      9.286
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Caterpillar",
+        "model": "C9.3B",
+        "slug": "caterpillar-c9-3b",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -5579,259 +5965,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
-    "mapped_database_brands": [
-      "Hatz"
-    ],
-    "epa_model": "3H50TICD",
-    "normalized_model": "3H50TICD",
-    "first_model_year": 2020,
-    "latest_model_year": 2027,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2027
-    ],
-    "engine_families": [
-      "LHZXL1.95C51",
-      "MHZXL1.95C51",
-      "NHZXL1.95C51",
-      "PHZXL1.95C51",
-      "RHZXL02.0C51",
-      "SHZXL02.0C51",
-      "VHZXL02.0M51"
-    ],
-    "engine_codes": [
-      "3H50TICD-cs-18-ICFN",
-      "3H50TICD-cs-18-ICXN",
-      "3H50TICD-cs-18-IFN"
-    ],
-    "certificates": [
-      "LHZXL1.95C51-001",
-      "MHZXL1.95C51-008",
-      "NHZXL1.95C51-004",
-      "PHZXL1.95C51-006",
-      "RHZXL02.0C51-008",
-      "SHZXL02.0C51-009",
-      "VHZXL02.0M51-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 29,
-    "rated_power_kw_max": 31,
-    "displacements_l": [
-      1.463
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Hatz",
-        "model": "3H50TIC",
-        "slug": "hatz-3h50tic",
-        "similarity": 0.933
-      }
-    ]
-  },
-  {
-    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
-    "mapped_database_brands": [
-      "Hatz"
-    ],
-    "epa_model": "4H50TICD",
-    "normalized_model": "4H50TICD",
-    "first_model_year": 2020,
-    "latest_model_year": 2027,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2027
-    ],
-    "engine_families": [
-      "LHZXL1.95C51",
-      "MHZXL1.95C51",
-      "NHZXL1.95C51",
-      "PHZXL1.95C51",
-      "RHZXL02.0C51",
-      "SHZXL02.0C51",
-      "VHZXL02.0M51"
-    ],
-    "engine_codes": [
-      "4H50TICD-cs-18-ICFN",
-      "4H50TICD-cs-18-IFN",
-      "4H50TICD-cs-18-IXCN"
-    ],
-    "certificates": [
-      "LHZXL1.95C51-001",
-      "MHZXL1.95C51-008",
-      "NHZXL1.95C51-004",
-      "PHZXL1.95C51-006",
-      "RHZXL02.0C51-008",
-      "SHZXL02.0C51-009",
-      "VHZXL02.0M51-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 41,
-    "displacements_l": [
-      1.951
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Hatz",
-        "model": "4H50TIC",
-        "slug": "hatz-4h50tic",
-        "similarity": 0.933
-      }
-    ]
-  },
-  {
-    "manufacturer": "AB Volvo Penta",
-    "mapped_database_brands": [
-      "Volvo Penta"
-    ],
-    "epa_model": "TWD1643GE",
-    "normalized_model": "TWD1643GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CVPXL16.1ACW",
-      "DVPXL16.1ACW",
-      "EVPXL16.1ACW",
-      "FVPXL16.1ACW",
-      "GVPXL16.1ACW",
-      "HVPXL16.1ACW",
-      "JVPXL16.1ACW",
-      "KVPXL16.1ACW",
-      "LVPXL16.1ACW",
-      "MVPXL16.1ACW",
-      "NVPXL16.1ACW",
-      "PVPXL16.1ACW",
-      "RVPXL16.1ACW",
-      "SVPXL16.1ACW",
-      "TVPXL16.1ACW"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CVPXL16.1ACW-008",
-      "DVPXL16.1ACW-004",
-      "EVPXL16.1ACW-002",
-      "FVPXL16.1ACW-004",
-      "GVPXL16.1ACW-011",
-      "HVPXL16.1ACW-003",
-      "JVPXL16.1ACW-012",
-      "KVPXL16.1ACW-012",
-      "LVPXL16.1ACW-013",
-      "MVPXL16.1ACW-009",
-      "NVPXL16.1ACW-021",
-      "PVPXL16.1ACW-011",
-      "RVPXL16.1ACW-002",
-      "SVPXL16.1ACW-005",
-      "TVPXL16.1ACW-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 674,
-    "rated_power_kw_max": 674,
-    "displacements_l": [
-      16.123
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Volvo Penta",
-        "model": "TWD1644GE",
-        "slug": "volvo-penta-twd1644ge",
-        "similarity": 0.889
-      },
-      {
-        "brand": "Volvo Penta",
-        "model": "TWD1645GE",
-        "slug": "volvo-penta-twd1645ge",
-        "similarity": 0.889
-      },
-      {
-        "brand": "Volvo Penta",
-        "model": "TWD1653GE",
-        "slug": "volvo-penta-twd1653ge",
-        "similarity": 0.889
-      },
-      {
-        "brand": "Volvo Penta",
-        "model": "TWD1673GE",
-        "slug": "volvo-penta-twd1673ge",
-        "similarity": 0.889
-      },
-      {
-        "brand": "Volvo Penta",
-        "model": "TWD1683GE",
-        "slug": "volvo-penta-twd1683ge",
-        "similarity": 0.889
-      }
-    ]
-  },
-  {
     "manufacturer": "AB Volvo Penta",
     "mapped_database_brands": [
       "Volvo Penta"
@@ -7084,68 +7217,6 @@
     "mapped_database_brands": [
       "Caterpillar"
     ],
-    "epa_model": "C13B",
-    "normalized_model": "C13B",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LCPXL12.5NTF",
-      "MCPXL12.5NTF",
-      "NCPXL12.5NTF",
-      "PCPXL12.5NTF",
-      "RCPXL12.5NTF",
-      "SCPXL12.5NTF",
-      "TCPXL12.5NTF"
-    ],
-    "engine_codes": [
-      "06",
-      "6"
-    ],
-    "certificates": [
-      "LCPXL12.5NTF-003",
-      "MCPXL12.5NTF-014",
-      "NCPXL12.5NTF-030",
-      "PCPXL12.5NTF-026",
-      "RCPXL12.5NTF-003",
-      "SCPXL12.5NTF-004-R01",
-      "TCPXL12.5NTF-023"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 429,
-    "rated_power_kw_max": 429,
-    "displacements_l": [
-      12.503
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Caterpillar Inc.",
-    "mapped_database_brands": [
-      "Caterpillar"
-    ],
     "epa_model": "C32B",
     "normalized_model": "C32B",
     "first_model_year": 2023,
@@ -7196,77 +7267,6 @@
     "rated_power_kw_max": 1769,
     "displacements_l": [
       32.101
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Caterpillar Inc.",
-    "mapped_database_brands": [
-      "Caterpillar"
-    ],
-    "epa_model": "C9.3B",
-    "normalized_model": "C9P3B",
-    "first_model_year": 2019,
-    "latest_model_year": 2026,
-    "model_years": [
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "KCPXL09.3NTF",
-      "LCPXL09.3NTF",
-      "MCPXL09.3NTF",
-      "NCPXL09.3NTF",
-      "PCPXL09.3NTF",
-      "RCPXL09.3NTF",
-      "SCPXL09.3NTF",
-      "TCPXL09.3NTF"
-    ],
-    "engine_codes": [
-      "05",
-      "08",
-      "10",
-      "12",
-      "20",
-      "21",
-      "5",
-      "8"
-    ],
-    "certificates": [
-      "KCPXL09.3NTF-001",
-      "LCPXL09.3NTF-026",
-      "MCPXL09.3NTF-012",
-      "NCPXL09.3NTF-032",
-      "PCPXL09.3NTF-033",
-      "RCPXL09.3NTF-001",
-      "SCPXL09.3NTF-002-R01",
-      "TCPXL09.3NTF-021"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 234,
-    "rated_power_kw_max": 340,
-    "displacements_l": [
-      9.286
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -25918,6 +25918,12 @@
         "model": "3H50TIC",
         "slug": "hatz-3h50tic",
         "similarity": 0.833
+      },
+      {
+        "brand": "Hatz",
+        "model": "3H50TICD",
+        "slug": "hatz-3h50ticd",
+        "similarity": 0.769
       }
     ]
   },
@@ -54767,6 +54773,12 @@
     "match_status": "not_found",
     "database_matches": [],
     "probable_database_matches": [
+      {
+        "brand": "Volvo Penta",
+        "model": "TWD1643GE",
+        "slug": "volvo-penta-twd1643ge",
+        "similarity": 0.889
+      },
       {
         "brand": "Volvo Penta",
         "model": "TWD1653GE",

@@ -14,16 +14,16 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **63**
-- Exact matches whose database page uses 1800 as its primary RPM: **6**
+- Exact manufacturer/brand matches: **68**
+- Exact matches whose database page uses 1800 as its primary RPM: **10**
 - Exact model under another database brand: **9**
-- Not found by exact model: **898**
+- Not found by exact model: **893**
 - Models from mapped manufacturers: **834**
-- Exact coverage within mapped manufacturers: **7.6%**
-- Unmatched models with a 2024+ certification: **479**
+- Exact coverage within mapped manufacturers: **8.2%**
+- Unmatched models with a 2024+ certification: **474**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **340**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **335**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -42,8 +42,8 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Perkins | 27 |
 | FPT | 24 |
 | Yanmar | 20 |
-| Caterpillar | 19 |
 | Kubota | 19 |
+| Caterpillar | 17 |
 | Mitsubishi | 16 |
 | Isuzu | 11 |
 | Deutz | 10 |
@@ -53,8 +53,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | John Deere | 8 |
 | Kirloskar | 6 |
 | Weichai | 3 |
-| Hatz | 2 |
-| Volvo Penta | 2 |
+| Volvo Penta | 1 |
 
 ## Manufacturer Coverage
 
@@ -69,9 +68,9 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Discovery Energy, LLC. | Kohler | 48 | 0 | 0 | 48 | 10 |
 | Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 0 | 0 | 42 | 4 |
 | Kubota Corporation | Kubota | 37 | 0 | 0 | 37 | 0 |
-| Caterpillar Inc. | Caterpillar | 35 | 12 | 0 | 23 | 1 |
-| Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 9 | 0 | 20 | 3 |
-| AB Volvo Penta | Volvo Penta | 28 | 20 | 0 | 8 | 8 |
+| Caterpillar Inc. | Caterpillar | 35 | 14 | 0 | 21 | 1 |
+| Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 11 | 0 | 18 | 1 |
+| AB Volvo Penta | Volvo Penta | 28 | 21 | 0 | 7 | 7 |
 | Deutz AG | Deutz | 28 | 0 | 0 | 28 | 0 |
 | HD Construction Equipment Co., Ltd. | Hyundai | 26 | 0 | 0 | 26 | 0 |
 | Isuzu Motors Limited | Isuzu | 24 | 0 | 0 | 24 | 0 |
@@ -111,9 +110,6 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | Latest year | Manufacturer | EPA model | Tier | Power kW | Probable database model |
 |---:|---|---|---|---:|---|
 | 2027 | HD Construction Equipment Co., Ltd. | DM02AP | Tier 3 | 55 |  |
-| 2027 | Motorenfabrik Hatz GmbH & Co. KG | 3H50TICD | Tier 4 (Final or Phase In) | 31 | Hatz 3H50TIC (0.933) |
-| 2027 | Motorenfabrik Hatz GmbH & Co. KG | 4H50TICD | Tier 4 (Final or Phase In) | 41 | Hatz 4H50TIC (0.933) |
-| 2026 | AB Volvo Penta | TWD1643GE | Tier 2 | 674 | Volvo Penta TWD1644GE (0.889) |
 | 2026 | AB Volvo Penta | TWD1683GE-B | Tier 2 | 685 | Volvo Penta TWD1683GE (0.947) |
 | 2026 | Caterpillar Inc. | 1506 | Tier 3 | 358 |  |
 | 2026 | Caterpillar Inc. | 1706D | Tier 3 | 357 |  |
@@ -131,9 +127,7 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Caterpillar Inc. | 5008C | Tier 2 | 1107 |  |
 | 2026 | Caterpillar Inc. | 5012C | Tier 2 | 1677 |  |
 | 2026 | Caterpillar Inc. | 5016C | Tier 2 | 2283 |  |
-| 2026 | Caterpillar Inc. | C13B | Tier 4 (Final or Phase In) | 429 |  |
 | 2026 | Caterpillar Inc. | C32B | Tier 2, Tier 4 (Final or Phase In) | 1769 |  |
-| 2026 | Caterpillar Inc. | C9.3B | Tier 4 (Final or Phase In) | 340 |  |
 | 2026 | Cummins Inc. | 4BT3.3G4 | Interim Tier 4, Tier 3 | 46 |  |
 | 2026 | Cummins Inc. | 4BT3.3G5 | Interim Tier 4, Tier 3 | 51 |  |
 | 2026 | Cummins Inc. | 4BTAA3.3G12 | Tier 3 | 74 |  |
@@ -260,6 +254,11 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Liebherr Machines Bulle SA | D9812G | Tier 2, Tier 4 (Final or Phase In) | 2700 |  |
 | 2026 | Liebherr Machines Bulle SA | D9816G | Tier 2, Tier 4 (Final or Phase In) | 3490 |  |
 | 2026 | Liebherr Machines Bulle SA | D9820G | Tier 2 | 4290 |  |
+| 2026 | Liebherr Machines Bulle SA | D9912G | Tier 2 | 2700 |  |
+| 2026 | Liebherr Machines Bulle SA | D9916G | Tier 2 | 3490 |  |
+| 2026 | Liebherr Machines Bulle SA | KD103V20-6AES | Tier 2 | 3758 |  |
+| 2026 | Liebherr Machines Bulle SA | KD103V20-6CES | Tier 2 | 4290 |  |
+| 2026 | Liebherr Machines Bulle SA | KD18L06-6AES | Tier 2 | 670 |  |
 
 ## Interpretation
 
