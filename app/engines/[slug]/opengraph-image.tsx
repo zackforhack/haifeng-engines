@@ -4,7 +4,7 @@ import { headlinePower, displayKva, displayOutput, ratedSpeeds, compactConfig, i
 
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
-export const alt = 'Diesel engine specifications'
+export const alt = 'Generator engine specifications'
 
 interface Props {
   params: Promise<{ slug: string }>

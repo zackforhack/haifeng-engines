@@ -84,8 +84,8 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
   'jenbacher': {
     title: 'Jenbacher Generators & Gas Engine Specs',
     h1: 'Jenbacher Gas Generator Engines',
-    description: 'Browse Jenbacher gas generator engine specs for CHP, prime power and industrial generators, including J420, J612, J616, J620 and J624 model ratings and datasheets.',
-    overview: 'Jenbacher is primarily a gas-engine generator brand in this database, with large natural-gas models for CHP, prime power, industrial power and utility-scale projects. Use this hub to compare J-series output, displacement, configuration and datasheet coverage before sizing the full generator package.',
+    description: 'Browse Jenbacher gas generator engine specs for CHP, prime power and industrial generators, from the J208 through the 10.6 MW J920 FleXtra, with 50 Hz and 60 Hz ratings and datasheets.',
+    overview: 'Jenbacher is a gas-engine generator brand in this database, with current Type 2, 3, 4, 6 and 9 natural-gas models for CHP, prime power, industrial power and utility-scale projects. Use this hub to compare J-series 50 Hz and 60 Hz output, displacement, configuration and official datasheet coverage before sizing the full generator package.',
     applications: [
       'Natural-gas CHP and cogeneration plants',
       'Industrial prime-power generator systems',
@@ -97,7 +97,7 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
       'Confirm heat-recovery, CHP and emissions requirements before comparing gas engines to diesel alternatives.',
       'Check alternator voltage, grid interconnection and controls with the engine rating.',
     ],
-    featuredModels: ['jenbacher-j624', 'jenbacher-j620', 'jenbacher-j616', 'jenbacher-j612', 'jenbacher-j420'],
+    featuredModels: ['jenbacher-j920-flextra', 'jenbacher-j624', 'jenbacher-j620', 'jenbacher-j616', 'jenbacher-j420'],
     commonSearches: ['jenbacher generators', 'jenbacher gas engines', 'jenbacher industrial generators', 'jenbacher generator specs'],
     links: [
       { label: 'CNG and LPG gas generator systems', href: GAS_PACKAGE_URL },

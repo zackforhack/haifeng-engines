@@ -14,6 +14,11 @@ export interface RatedSpeeds {
 export function ratedSpeeds(engine: Engine): RatedSpeeds {
   const rated = engine.rpm_rated ?? 1500
   const ratedIs60 = rated === 1800 || rated === 3600
+  // Jenbacher Type 6 keeps the engine at 1,500 rpm for both frequencies and
+  // uses a gearbox in the 60 Hz package.
+  if (engine.brand === 'Jenbacher' && engine.series === 'Type 6') {
+    return { rpm50: 1500, rpm60: 1500, ratedIs60: false }
+  }
   const rpm50 = ratedIs60 ? Math.round((rated * 5) / 6) : rated
   const rpm60 = ratedIs60 ? rated : Math.round((rated * 6) / 5)
   return { rpm50, rpm60, ratedIs60 }

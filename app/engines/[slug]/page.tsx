@@ -6,7 +6,7 @@ import { getAllEngines, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
-import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, buildIntro, compactConfig, ratedFrequencies, isVariableSpeedMechanical } from '@/lib/engine-display'
+import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, ratedSpeeds, buildIntro, compactConfig, ratedFrequencies, isVariableSpeedMechanical } from '@/lib/engine-display'
 import { competitorsFor, pairSlug } from '@/lib/compare'
 import { buildEngineFaqs } from '@/lib/engine-faq'
 import { brandSlug } from '@/lib/seo'
@@ -28,6 +28,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = engineMetadataDescription(engine, quickWin?.description ?? engine.description ?? buildIntro(engine))
   const aliases = uniqueAliases([...(quickWin?.aliases ?? []), ...modelAliases(engine)])
   const variableSpeed = isVariableSpeedMechanical(engine)
+  const fuel = (engine.fuel_type ?? 'Diesel').trim()
+  const fuelKeyword = fuel.toLowerCase()
 
   return {
     title: { absolute: title },
@@ -37,9 +39,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `${engine.model} specs`,
       `${engine.model} datasheet`,
       ...aliases,
-      `${engine.brand} diesel engine`,
+      `${engine.brand} ${fuelKeyword} engine`,
       engine.series ?? '',
-      variableSpeed ? 'high-speed industrial diesel engine' : 'diesel generator engine',
+      variableSpeed ? `high-speed industrial ${fuelKeyword} engine` : `${fuelKeyword} generator engine`,
     ].filter(Boolean),
     alternates: { canonical: `/engines/${slug}` },
     openGraph: { title, description, type: 'website', url: `/engines/${slug}` },
@@ -78,13 +80,7 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
     || engine.prime_power_kwe_60hz || engine.standby_power_kwe_60hz
   if (!has50hz && !has60hz) return null
 
-  // rpm_rated may hold a 50Hz (1500/3000) or 60Hz (1800/3600) rated speed. Derive each
-  // frequency's true speed instead of blindly ×6/5, which turned 60Hz-rated engines into
-  // impossible figures (e.g. 1800 → 2160).
-  const rated = engine.rpm_rated ?? 1500
-  const ratedIs60 = rated === 1800 || rated === 3600
-  const rpm50 = ratedIs60 ? Math.round(rated * 5 / 6) : rated
-  const rpm60 = ratedIs60 ? rated : Math.round(rated * 6 / 5)
+  const { rpm50, rpm60 } = ratedSpeeds(engine)
   const estimated = kweIsEstimated(engine)
 
   return (
@@ -454,6 +450,7 @@ export default async function EngineDetailPage({ params }: Props) {
   const kva = displayKva(hp)
   const out = displayOutput(hp)
   const variableSpeed = isVariableSpeedMechanical(engine)
+  const fuelCategory = engine.fuel_type?.trim() || 'Diesel'
 
   // Descriptive alt/caption for the spec-card image (Google Images + accessibility).
   const imageAlt =
@@ -498,7 +495,7 @@ export default async function EngineDetailPage({ params }: Props) {
     sku: engine.model,
     mpn: engine.model,
     ...(engine.series && { model: engine.series }),
-    category: variableSpeed ? 'Industrial Off-Road Engine' : 'Diesel Generator Engine',
+    category: variableSpeed ? `Industrial ${fuelCategory} Engine` : `${fuelCategory} Generator Engine`,
     image: {
       '@type': 'ImageObject',
       url: `${base}/engines/${slug}/opengraph-image`,
