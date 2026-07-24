@@ -1,0 +1,2193 @@
+{
+  "12GTAA27-G31": {
+    "sources": [
+      "国三!59"
+    ],
+    "50": {
+      "prime_kwm": 622.0,
+      "standby_kwm": 684.0
+    }
+  },
+  "12GTAA27-G32": {
+    "sources": [
+      "国三!58"
+    ],
+    "50": {
+      "prime_kwm": 565.0,
+      "standby_kwm": 622.0
+    }
+  },
+  "12GTAA27-G33": {
+    "sources": [
+      "国三!57"
+    ],
+    "50": {
+      "prime_kwm": 505.0,
+      "standby_kwm": 555.0
+    }
+  },
+  "12GTAA27-G34": {
+    "sources": [
+      "国三!56"
+    ],
+    "50": {
+      "prime_kwm": 459.0,
+      "standby_kwm": 505.0
+    }
+  },
+  "12KTA58-G31": {
+    "sources": [
+      "国三!76"
+    ],
+    "50": {
+      "prime_kwm": 2010.0,
+      "standby_kwm": 2210.0
+    }
+  },
+  "12KTA58-G32": {
+    "sources": [
+      "国三!75"
+    ],
+    "50": {
+      "prime_kwm": 1850.0,
+      "standby_kwm": 2035.0
+    }
+  },
+  "12KTA58-G33": {
+    "sources": [
+      "国三!74"
+    ],
+    "50": {
+      "prime_kwm": 1720.0,
+      "standby_kwm": 1890.0
+    }
+  },
+  "12KTA58-G34": {
+    "sources": [
+      "国三!73"
+    ],
+    "50": {
+      "prime_kwm": 1560.0,
+      "standby_kwm": 1720.0
+    }
+  },
+  "12KTA58-G35": {
+    "sources": [
+      "国三!72"
+    ],
+    "50": {
+      "prime_kwm": 1420.0,
+      "standby_kwm": 1560.0
+    }
+  },
+  "12KTA58-G36": {
+    "sources": [
+      "国三!71"
+    ],
+    "50": {
+      "prime_kwm": 1280.0,
+      "standby_kwm": 1410.0
+    }
+  },
+  "16KTA76-G31": {
+    "sources": [
+      "国三!80"
+    ],
+    "50": {
+      "prime_kwm": 2680.0,
+      "standby_kwm": 2950.0
+    }
+  },
+  "16KTA76-G32": {
+    "sources": [
+      "国三!79"
+    ],
+    "50": {
+      "prime_kwm": 2510.0,
+      "standby_kwm": 2780.0
+    }
+  },
+  "16KTA76-G33": {
+    "sources": [
+      "国三!78"
+    ],
+    "50": {
+      "prime_kwm": 2250.0,
+      "standby_kwm": 2500.0
+    }
+  },
+  "16KTA76-G34": {
+    "sources": [
+      "国三!77"
+    ],
+    "50": {
+      "prime_kwm": 2010.0,
+      "standby_kwm": 2210.0
+    }
+  },
+  "16XTAA38-G31": {
+    "sources": [
+      "国三!70"
+    ],
+    "50": {
+      "prime_kwm": 1350.0,
+      "standby_kwm": 1480.0
+    }
+  },
+  "16XTAA38-G32": {
+    "sources": [
+      "国三!69"
+    ],
+    "50": {
+      "prime_kwm": 1225.0,
+      "standby_kwm": 1350.0
+    }
+  },
+  "16XTAA38-G33": {
+    "sources": [
+      "国三!68"
+    ],
+    "50": {
+      "prime_kwm": 1130.0,
+      "standby_kwm": 1240.0
+    }
+  },
+  "16XTAA38-G34": {
+    "sources": [
+      "国三!67"
+    ],
+    "50": {
+      "prime_kwm": 1018.0,
+      "standby_kwm": 1120.0
+    }
+  },
+  "3Z1.1-G41": {
+    "sources": [
+      "国三!2",
+      "国四!2"
+    ],
+    "50": {
+      "prime_kwm": 16.8,
+      "standby_kwm": 18.5
+    }
+  },
+  "3Z1.1-G42": {
+    "sources": [
+      "国三!3",
+      "国四!3"
+    ],
+    "50": {
+      "prime_kwm": 10.0,
+      "standby_kwm": 11.0
+    }
+  },
+  "3ZT1.1-G41": {
+    "sources": [
+      "国三!4",
+      "国四!4"
+    ],
+    "50": {
+      "prime_kwm": 25.0,
+      "standby_kwm": 27.0
+    }
+  },
+  "3ZT1.1-G42": {
+    "sources": [
+      "国三!5",
+      "国四!5"
+    ],
+    "50": {
+      "prime_kwm": 12.8,
+      "standby_kwm": 14.1
+    }
+  },
+  "4HT4.3-G21": {
+    "sources": [
+      "双频!12",
+      "双频!12"
+    ],
+    "50": {
+      "prime_kwm": 51.0,
+      "standby_kwm": 56.0
+    },
+    "60": {
+      "prime_kwm": 62.0,
+      "standby_kwm": 68.0
+    }
+  },
+  "4HT4.3-G22": {
+    "sources": [
+      "双频!13",
+      "双频!13"
+    ],
+    "50": {
+      "prime_kwm": 62.0,
+      "standby_kwm": 68.0
+    },
+    "60": {
+      "prime_kwm": 67.0,
+      "standby_kwm": 74.0
+    }
+  },
+  "4HT4.3-G23": {
+    "sources": [
+      "双频!14",
+      "双频!14"
+    ],
+    "50": {
+      "prime_kwm": 78.0,
+      "standby_kwm": 86.0
+    },
+    "60": {
+      "prime_kwm": 86.0,
+      "standby_kwm": 95.0
+    }
+  },
+  "4HTAA4.3-G21": {
+    "sources": [
+      "双频!15",
+      "双频!15"
+    ],
+    "50": {
+      "prime_kwm": 95.0,
+      "standby_kwm": 105.0
+    },
+    "60": {
+      "prime_kwm": 105.0,
+      "standby_kwm": 116.0
+    }
+  },
+  "4HTAA4.3-G22": {
+    "sources": [
+      "双频!17",
+      "双频!17"
+    ],
+    "50": {
+      "prime_kwm": 120.0,
+      "standby_kwm": 132.0
+    },
+    "60": {
+      "prime_kwm": 120.0,
+      "standby_kwm": 132.0
+    }
+  },
+  "4HTAA4.3-G23": {
+    "sources": [
+      "双频!16",
+      "双频!16"
+    ],
+    "50": {
+      "prime_kwm": 105.0,
+      "standby_kwm": 116.0
+    },
+    "60": {
+      "prime_kwm": 120.0,
+      "standby_kwm": 132.0
+    }
+  },
+  "4HTAA4.3-G31": {
+    "sources": [
+      "国三!19"
+    ],
+    "50": {
+      "prime_kwm": 51.0,
+      "standby_kwm": 56.0
+    }
+  },
+  "4HTAA4.3-G32": {
+    "sources": [
+      "国三!20"
+    ],
+    "50": {
+      "prime_kwm": 62.0,
+      "standby_kwm": 68.0
+    }
+  },
+  "4HTAA4.3-G33": {
+    "sources": [
+      "国三!21"
+    ],
+    "50": {
+      "prime_kwm": 78.0,
+      "standby_kwm": 86.0
+    }
+  },
+  "4HTAA4.3-G34": {
+    "sources": [
+      "国三!22"
+    ],
+    "50": {
+      "prime_kwm": 95.0,
+      "standby_kwm": 105.0
+    }
+  },
+  "4HTAA4.3-G35": {
+    "sources": [
+      "国三!23"
+    ],
+    "50": {
+      "prime_kwm": 106.0,
+      "standby_kwm": 117.0
+    }
+  },
+  "4HTAA4.3-G36": {
+    "sources": [
+      "国三!24"
+    ],
+    "50": {
+      "prime_kwm": 125.0,
+      "standby_kwm": 140.0
+    }
+  },
+  "4HTAA4.5-G41": {
+    "sources": [
+      "国四!20"
+    ],
+    "50": {
+      "prime_kwm": 120.0,
+      "standby_kwm": 132.0
+    }
+  },
+  "4HTAA4.5-G42": {
+    "sources": [
+      "国四!19"
+    ],
+    "50": {
+      "prime_kwm": 106.0,
+      "standby_kwm": 117.0
+    }
+  },
+  "4HTAA4.5-G43": {
+    "sources": [
+      "国四!18"
+    ],
+    "50": {
+      "prime_kwm": 95.0,
+      "standby_kwm": 105.0
+    }
+  },
+  "4HTAA4.5-G44": {
+    "sources": [
+      "国四!17"
+    ],
+    "50": {
+      "prime_kwm": 78.0,
+      "standby_kwm": 86.0
+    }
+  },
+  "4HTAA4.5-G45": {
+    "sources": [
+      "国四!16"
+    ],
+    "50": {
+      "prime_kwm": 62.0,
+      "standby_kwm": 68.0
+    }
+  },
+  "4HTAA4.5-G46": {
+    "sources": [
+      "国四!15"
+    ],
+    "50": {
+      "prime_kwm": 51.0,
+      "standby_kwm": 56.0
+    }
+  },
+  "4HTAA4.5-G5E1": {
+    "sources": [
+      "欧五!3"
+    ],
+    "50": {
+      "prime_kwm": 51.0,
+      "standby_kwm": 56.0,
+      "prime_kwe": 40.0,
+      "standby_kwe": 44.0
+    }
+  },
+  "4HTAA4.5-G5E1.1": {
+    "sources": [
+      "欧五!14"
+    ],
+    "60": {
+      "prime_kwm": 51.0,
+      "standby_kwm": 56.0,
+      "prime_kwe": 40.0,
+      "standby_kwe": 44.0
+    }
+  },
+  "4HTAA4.5-G5E2": {
+    "sources": [
+      "欧五!4"
+    ],
+    "50": {
+      "prime_kwm": 62.0,
+      "standby_kwm": 68.0,
+      "prime_kwe": 50.0,
+      "standby_kwe": 55.0
+    }
+  },
+  "4HTAA4.5-G5E2.1": {
+    "sources": [
+      "欧五!15"
+    ],
+    "60": {
+      "prime_kwm": 62.0,
+      "standby_kwm": 68.0,
+      "prime_kwe": 50.0,
+      "standby_kwe": 55.0
+    }
+  },
+  "4HTAA4.5-G5E3": {
+    "sources": [
+      "欧五!5"
+    ],
+    "50": {
+      "prime_kwm": 78.0,
+      "standby_kwm": 86.0,
+      "prime_kwe": 64.0,
+      "standby_kwe": 70.0
+    }
+  },
+  "4HTAA4.5-G5E3.1": {
+    "sources": [
+      "欧五!16"
+    ],
+    "60": {
+      "prime_kwm": 78.0,
+      "standby_kwm": 86.0,
+      "prime_kwe": 64.0,
+      "standby_kwe": 70.0
+    }
+  },
+  "4HTAA4.5-G5E4": {
+    "sources": [
+      "欧五!6"
+    ],
+    "50": {
+      "prime_kwm": 95.0,
+      "standby_kwm": 105.0,
+      "prime_kwe": 84.0,
+      "standby_kwe": 90.0
+    }
+  },
+  "4HTAA4.5-G5E4.1": {
+    "sources": [
+      "欧五!17"
+    ],
+    "60": {
+      "prime_kwm": 95.0,
+      "standby_kwm": 105.0,
+      "prime_kwe": 84.0,
+      "standby_kwe": 90.0
+    }
+  },
+  "4HTAA4.5-G5E5": {
+    "sources": [
+      "欧五!7"
+    ],
+    "50": {
+      "prime_kwm": 120.0,
+      "standby_kwm": 132.0,
+      "prime_kwe": 100.0,
+      "standby_kwe": 110.0
+    }
+  },
+  "4HTAA4.5-G5E5.1": {
+    "sources": [
+      "欧五!18"
+    ],
+    "60": {
+      "prime_kwm": 120.0,
+      "standby_kwm": 132.0,
+      "prime_kwe": 100.0,
+      "standby_kwe": 110.0
+    }
+  },
+  "4HTAA4.5-G5E6": {
+    "sources": [
+      "欧五!8"
+    ],
+    "50": {
+      "prime_kwm": 125.0,
+      "standby_kwm": 140.0,
+      "prime_kwe": 110.0,
+      "standby_kwe": 120.0
+    }
+  },
+  "4HTAA4.5-G5E6.1": {
+    "sources": [
+      "欧五!19"
+    ],
+    "60": {
+      "prime_kwm": 125.0,
+      "standby_kwm": 140.0,
+      "prime_kwe": 110.0,
+      "standby_kwe": 120.0
+    }
+  },
+  "4HTAA4.5-G5E7.1": {
+    "sources": [
+      "欧五!20"
+    ],
+    "60": {
+      "prime_kwm": 140.0,
+      "standby_kwm": 155.0,
+      "prime_kwe": 120.0,
+      "standby_kwe": 132.0
+    }
+  },
+  "4Z2.3-G11": {
+    "sources": [
+      "国二!2",
+      "国二!22"
+    ],
+    "50": {
+      "prime_kwm": 16.0,
+      "standby_kwm": 18.0
+    }
+  },
+  "4Z2.3-G12": {
+    "sources": [
+      "国二!3",
+      "国二!23"
+    ],
+    "60": {
+      "prime_kwm": 21.0,
+      "standby_kwm": 23.0
+    }
+  },
+  "4Z2.3-G21": {
+    "sources": [
+      "国二!4",
+      "国二!24",
+      "双频!2",
+      "双频!2"
+    ],
+    "50": {
+      "prime_kwm": 16.0,
+      "standby_kwm": 18.0
+    },
+    "60": {
+      "prime_kwm": 21.0,
+      "standby_kwm": 23.0
+    }
+  },
+  "4Z2.7-G11": {
+    "sources": [
+      "国二!5",
+      "国二!25"
+    ],
+    "50": {
+      "prime_kwm": 22.0,
+      "standby_kwm": 24.0
+    }
+  },
+  "4Z2.7-G12": {
+    "sources": [
+      "国二!6",
+      "国二!26"
+    ],
+    "60": {
+      "prime_kwm": 26.0,
+      "standby_kwm": 29.0
+    }
+  },
+  "4Z2.7-G21": {
+    "sources": [
+      "国二!7",
+      "国二!27",
+      "双频!3",
+      "双频!3"
+    ],
+    "50": {
+      "prime_kwm": 22.0,
+      "standby_kwm": 24.0
+    },
+    "60": {
+      "prime_kwm": 26.0,
+      "standby_kwm": 29.0
+    }
+  },
+  "4Z2.9-G41": {
+    "sources": [
+      "国三!8",
+      "国四!8"
+    ],
+    "50": {
+      "prime_kwm": 27.0,
+      "standby_kwm": 30.0
+    }
+  },
+  "4Z2.9-G410": {
+    "sources": [
+      "国三!11",
+      "国四!11"
+    ],
+    "50": {
+      "prime_kwm": 27.0,
+      "standby_kwm": 30.0
+    }
+  },
+  "4Z2.9-G42": {
+    "sources": [
+      "国三!7",
+      "国四!7"
+    ],
+    "50": {
+      "prime_kwm": 22.0,
+      "standby_kwm": 24.0
+    }
+  },
+  "4Z2.9-G420": {
+    "sources": [
+      "国三!10",
+      "国四!10"
+    ],
+    "50": {
+      "prime_kwm": 22.0,
+      "standby_kwm": 24.0
+    }
+  },
+  "4Z2.9-G43": {
+    "sources": [
+      "国三!6",
+      "国四!6"
+    ],
+    "50": {
+      "prime_kwm": 16.0,
+      "standby_kwm": 18.0
+    }
+  },
+  "4Z2.9-G430": {
+    "sources": [
+      "国三!9",
+      "国四!9"
+    ],
+    "50": {
+      "prime_kwm": 16.0,
+      "standby_kwm": 18.0
+    }
+  },
+  "4Z3.0-G11": {
+    "sources": [
+      "国二!8",
+      "国二!28"
+    ],
+    "50": {
+      "prime_kwm": 27.0,
+      "standby_kwm": 30.0
+    }
+  },
+  "4Z3.0-G12": {
+    "sources": [
+      "国二!9",
+      "国二!29"
+    ],
+    "60": {
+      "prime_kwm": 30.0,
+      "standby_kwm": 33.0
+    }
+  },
+  "4Z3.0-G21": {
+    "sources": [
+      "国二!10",
+      "国二!30",
+      "双频!4",
+      "双频!4"
+    ],
+    "50": {
+      "prime_kwm": 27.0,
+      "standby_kwm": 30.0
+    },
+    "60": {
+      "prime_kwm": 30.0,
+      "standby_kwm": 33.0
+    }
+  },
+  "4Z3.2-G11": {
+    "sources": [
+      "国二!11",
+      "国二!31"
+    ],
+    "50": {
+      "prime_kwm": 32.0,
+      "standby_kwm": 35.0
+    }
+  },
+  "4Z3.2-G12": {
+    "sources": [
+      "国二!12",
+      "国二!32"
+    ],
+    "60": {
+      "prime_kwm": 38.0,
+      "standby_kwm": 42.0
+    }
+  },
+  "4Z3.2-G21": {
+    "sources": [
+      "国二!13",
+      "国二!33",
+      "双频!5",
+      "双频!5"
+    ],
+    "50": {
+      "prime_kwm": 32.0,
+      "standby_kwm": 35.0
+    },
+    "60": {
+      "prime_kwm": 38.0,
+      "standby_kwm": 42.0
+    }
+  },
+  "4Z3.2-G41": {
+    "sources": [
+      "国三!13",
+      "国四!13"
+    ],
+    "50": {
+      "prime_kwm": 36.0,
+      "standby_kwm": 40.0
+    }
+  },
+  "4Z3.2-G42": {
+    "sources": [
+      "国三!12",
+      "国四!12"
+    ],
+    "50": {
+      "prime_kwm": 32.0,
+      "standby_kwm": 35.0
+    }
+  },
+  "4ZT3.2-G11": {
+    "sources": [
+      "国二!14",
+      "国二!34"
+    ],
+    "50": {
+      "prime_kwm": 39.0,
+      "standby_kwm": 44.0
+    }
+  },
+  "4ZT3.2-G12": {
+    "sources": [
+      "国二!15",
+      "国二!35"
+    ],
+    "60": {
+      "prime_kwm": 42.0,
+      "standby_kwm": 46.0
+    }
+  },
+  "4ZT3.2-G21": {
+    "sources": [
+      "国二!16",
+      "国二!36",
+      "双频!6",
+      "双频!6"
+    ],
+    "50": {
+      "prime_kwm": 39.0,
+      "standby_kwm": 44.0
+    },
+    "60": {
+      "prime_kwm": 42.0,
+      "standby_kwm": 46.0
+    }
+  },
+  "4ZT3.5-G21": {
+    "sources": [
+      "国二!17",
+      "国二!37",
+      "双频!7",
+      "双频!7"
+    ],
+    "50": {
+      "prime_kwm": 49.0,
+      "standby_kwm": 54.0
+    },
+    "60": {
+      "prime_kwm": 60.0,
+      "standby_kwm": 66.0
+    }
+  },
+  "4ZT4.1-G21": {
+    "sources": [
+      "国二!18",
+      "国二!38",
+      "双频!8",
+      "双频!8"
+    ],
+    "50": {
+      "prime_kwm": 60.0,
+      "standby_kwm": 66.0
+    },
+    "60": {
+      "prime_kwm": 70.0,
+      "standby_kwm": 77.0
+    }
+  },
+  "4ZTAA3.2-G31": {
+    "sources": [
+      "国三!17"
+    ],
+    "50": {
+      "prime_kwm": 64.0,
+      "standby_kwm": 70.0
+    }
+  },
+  "4ZTAA3.2-G32": {
+    "sources": [
+      "国三!15"
+    ],
+    "50": {
+      "prime_kwm": 49.0,
+      "standby_kwm": 54.0
+    }
+  },
+  "4ZTAA3.2-G33": {
+    "sources": [
+      "国三!14"
+    ],
+    "50": {
+      "prime_kwm": 39.0,
+      "standby_kwm": 44.0
+    }
+  },
+  "4ZTAA3.2-G34": {
+    "sources": [
+      "国三!16"
+    ],
+    "50": {
+      "prime_kwm": 58.0,
+      "standby_kwm": 63.5
+    }
+  },
+  "4ZTAA3.5-G31": {
+    "sources": [
+      "国三!18"
+    ],
+    "50": {
+      "prime_kwm": 74.0,
+      "standby_kwm": 81.0
+    }
+  },
+  "4ZTAA4.1-G21": {
+    "sources": [
+      "国二!19",
+      "国二!39",
+      "双频!9",
+      "双频!9"
+    ],
+    "50": {
+      "prime_kwm": 64.0,
+      "standby_kwm": 70.0
+    },
+    "60": {
+      "prime_kwm": 76.0,
+      "standby_kwm": 83.0
+    }
+  },
+  "4ZTAA4.1-G22": {
+    "sources": [
+      "国二!20",
+      "国二!40",
+      "双频!10",
+      "双频!10"
+    ],
+    "50": {
+      "prime_kwm": 74.0,
+      "standby_kwm": 81.0
+    },
+    "60": {
+      "prime_kwm": 80.0,
+      "standby_kwm": 88.0
+    }
+  },
+  "4ZTAA4.1-G32": {
+    "sources": [
+      "国二!21",
+      "国二!41",
+      "双频!11",
+      "双频!11"
+    ],
+    "50": {
+      "prime_kwm": 95.0,
+      "standby_kwm": 105.0
+    },
+    "60": {
+      "prime_kwm": 105.0,
+      "standby_kwm": 116.0
+    }
+  },
+  "6DTAA8.9-G21": {
+    "sources": [
+      "双频!21",
+      "双频!21"
+    ],
+    "50": {
+      "prime_kwm": 185.0,
+      "standby_kwm": 204.0
+    },
+    "60": {
+      "prime_kwm": 205.0,
+      "standby_kwm": 226.0
+    }
+  },
+  "6DTAA8.9-G23": {
+    "sources": [
+      "双频!23",
+      "双频!23"
+    ],
+    "50": {
+      "prime_kwm": 230.0,
+      "standby_kwm": 253.0
+    },
+    "60": {
+      "prime_kwm": 255.0,
+      "standby_kwm": 282.0
+    }
+  },
+  "6DTAA8.9-G24": {
+    "sources": [
+      "双频!22",
+      "双频!22"
+    ],
+    "50": {
+      "prime_kwm": 208.0,
+      "standby_kwm": 228.0
+    },
+    "60": {
+      "prime_kwm": 228.0,
+      "standby_kwm": 250.0
+    }
+  },
+  "6DTAA8.9-G31": {
+    "sources": [
+      "国三!30"
+    ],
+    "50": {
+      "prime_kwm": 185.0,
+      "standby_kwm": 204.0
+    }
+  },
+  "6DTAA8.9-G32": {
+    "sources": [
+      "国三!31"
+    ],
+    "50": {
+      "prime_kwm": 208.0,
+      "standby_kwm": 228.0
+    }
+  },
+  "6DTAA8.9-G33": {
+    "sources": [
+      "国三!32"
+    ],
+    "50": {
+      "prime_kwm": 230.0,
+      "standby_kwm": 253.0
+    }
+  },
+  "6DTAA8.9-G34": {
+    "sources": [
+      "国三!33"
+    ],
+    "50": {
+      "prime_kwm": 255.0,
+      "standby_kwm": 280.0
+    }
+  },
+  "6DTAA8.9-G41": {
+    "sources": [
+      "国四!29"
+    ],
+    "50": {
+      "prime_kwm": 185.0,
+      "standby_kwm": 204.0
+    }
+  },
+  "6DTAA8.9-G42": {
+    "sources": [
+      "国四!30"
+    ],
+    "50": {
+      "prime_kwm": 208.0,
+      "standby_kwm": 228.0
+    }
+  },
+  "6DTAA8.9-G43": {
+    "sources": [
+      "国四!31"
+    ],
+    "50": {
+      "prime_kwm": 230.0,
+      "standby_kwm": 253.0
+    }
+  },
+  "6DTAA8.9-G44": {
+    "sources": [
+      "国四!32"
+    ],
+    "50": {
+      "prime_kwm": 255.0,
+      "standby_kwm": 280.0
+    }
+  },
+  "6DTAA8.9-G45": {
+    "sources": [
+      "国四!33"
+    ],
+    "50": {
+      "prime_kwm": 280.0,
+      "standby_kwm": 308.0
+    }
+  },
+  "6DTAA8.9-G5E1": {
+    "sources": [
+      "欧五!26"
+    ],
+    "50": {
+      "prime_kwm": 208.0,
+      "standby_kwm": 228.0,
+      "prime_kwe": 180.0,
+      "standby_kwe": 200.0
+    }
+  },
+  "6DTAA8.9-G5E1.1": {
+    "sources": [
+      "欧五!30"
+    ],
+    "60": {
+      "prime_kwm": 208.0,
+      "standby_kwm": 228.0,
+      "prime_kwe": 180.0,
+      "standby_kwe": 200.0
+    }
+  },
+  "6DTAA8.9-G5E2": {
+    "sources": [
+      "欧五!27"
+    ],
+    "50": {
+      "prime_kwm": 230.0,
+      "standby_kwm": 253.0,
+      "prime_kwe": 200.0,
+      "standby_kwe": 220.0
+    }
+  },
+  "6DTAA8.9-G5E2.1": {
+    "sources": [
+      "欧五!31"
+    ],
+    "60": {
+      "prime_kwm": 230.0,
+      "standby_kwm": 253.0,
+      "prime_kwe": 200.0,
+      "standby_kwe": 220.0
+    }
+  },
+  "6DTAA8.9-G5E3": {
+    "sources": [
+      "欧五!28"
+    ],
+    "50": {
+      "prime_kwm": 255.0,
+      "standby_kwm": 280.0,
+      "prime_kwe": 220.0,
+      "standby_kwe": 250.0
+    }
+  },
+  "6DTAA8.9-G5E3.1": {
+    "sources": [
+      "欧五!32"
+    ],
+    "60": {
+      "prime_kwm": 255.0,
+      "standby_kwm": 280.0,
+      "prime_kwe": 220.0,
+      "standby_kwe": 250.0
+    }
+  },
+  "6DTAA8.9-G5E4": {
+    "sources": [
+      "欧五!29"
+    ],
+    "50": {
+      "prime_kwm": 280.0,
+      "standby_kwm": 308.0,
+      "prime_kwe": 250.0,
+      "standby_kwe": 280.0
+    }
+  },
+  "6DTAA8.9-G5E4.1": {
+    "sources": [
+      "欧五!33"
+    ],
+    "60": {
+      "prime_kwm": 280.0,
+      "standby_kwm": 308.0,
+      "prime_kwe": 250.0,
+      "standby_kwe": 280.0
+    }
+  },
+  "6ETAA11.8-G21": {
+    "sources": [
+      "双频!25",
+      "双频!25"
+    ],
+    "50": {
+      "prime_kwm": 307.0,
+      "standby_kwm": 338.0
+    },
+    "60": {
+      "prime_kwm": 307.0,
+      "standby_kwm": 338.0
+    }
+  },
+  "6ETAA11.8-G22": {
+    "sources": [
+      "双频!24",
+      "双频!24"
+    ],
+    "50": {
+      "prime_kwm": 280.0,
+      "standby_kwm": 308.0
+    },
+    "60": {
+      "prime_kwm": 307.0,
+      "standby_kwm": 338.0
+    }
+  },
+  "6ETAA11.8-G31": {
+    "sources": [
+      "国三!36"
+    ],
+    "50": {
+      "prime_kwm": 340.0,
+      "standby_kwm": 380.0
+    }
+  },
+  "6ETAA11.8-G32": {
+    "sources": [
+      "国三!34"
+    ],
+    "50": {
+      "prime_kwm": 280.0,
+      "standby_kwm": 308.0
+    }
+  },
+  "6ETAA11.8-G33": {
+    "sources": [
+      "国三!35"
+    ],
+    "50": {
+      "prime_kwm": 307.0,
+      "standby_kwm": 338.0
+    }
+  },
+  "6ETAA12.8-G21": {
+    "sources": [
+      "双频!27",
+      "双频!27"
+    ],
+    "50": {
+      "prime_kwm": 368.0,
+      "standby_kwm": 405.0
+    },
+    "60": {
+      "prime_kwm": 368.0,
+      "standby_kwm": 405.0
+    }
+  },
+  "6ETAA12.8-G22": {
+    "sources": [
+      "双频!26",
+      "双频!26"
+    ],
+    "50": {
+      "prime_kwm": 339.0,
+      "standby_kwm": 373.0
+    },
+    "60": {
+      "prime_kwm": 368.0,
+      "standby_kwm": 405.0
+    }
+  },
+  "6ETAA12.8-G31": {
+    "sources": [
+      "国三!38",
+      "双频!29"
+    ],
+    "50": {
+      "prime_kwm": 401.0,
+      "standby_kwm": 441.0
+    }
+  },
+  "6ETAA12.8-G310": {
+    "sources": [
+      "国三!39",
+      "双频!30"
+    ],
+    "50": {
+      "prime_kwm": 450.0,
+      "standby_kwm": 495.0
+    }
+  },
+  "6ETAA12.8-G310.1": {
+    "sources": [
+      "双频!31"
+    ],
+    "60": {
+      "prime_kwm": 450.0,
+      "standby_kwm": 495.0
+    }
+  },
+  "6ETAA12.8-G32": {
+    "sources": [
+      "国三!37",
+      "双频!28",
+      "双频!28"
+    ],
+    "50": {
+      "prime_kwm": 360.0,
+      "standby_kwm": 400.0
+    },
+    "60": {
+      "prime_kwm": 401.0,
+      "standby_kwm": 441.0
+    }
+  },
+  "6ETAA12.8-G41": {
+    "sources": [
+      "国四!42"
+    ],
+    "50": {
+      "prime_kwm": 450.0,
+      "standby_kwm": 495.0
+    }
+  },
+  "6ETAA12.8-G42": {
+    "sources": [
+      "国四!41"
+    ],
+    "50": {
+      "prime_kwm": 401.0,
+      "standby_kwm": 441.0
+    }
+  },
+  "6ETAA12.8-G43": {
+    "sources": [
+      "国四!40"
+    ],
+    "50": {
+      "prime_kwm": 360.0,
+      "standby_kwm": 400.0
+    }
+  },
+  "6ETAA12.8-G44": {
+    "sources": [
+      "国四!39"
+    ],
+    "50": {
+      "prime_kwm": 340.0,
+      "standby_kwm": 380.0
+    }
+  },
+  "6ETAA12.8-G45": {
+    "sources": [
+      "国四!38"
+    ],
+    "50": {
+      "prime_kwm": 320.0,
+      "standby_kwm": 352.0
+    }
+  },
+  "6ETAA12.8-G46": {
+    "sources": [
+      "国四!37"
+    ],
+    "50": {
+      "prime_kwm": 307.0,
+      "standby_kwm": 338.0
+    }
+  },
+  "6ETAA12.8-G47": {
+    "sources": [
+      "国四!36"
+    ],
+    "50": {
+      "prime_kwm": 280.0,
+      "standby_kwm": 308.0
+    }
+  },
+  "6ETAA12.8-G48": {
+    "sources": [
+      "国四!35"
+    ],
+    "50": {
+      "prime_kwm": 250.0,
+      "standby_kwm": 275.0
+    }
+  },
+  "6HTAA6.5-G21": {
+    "sources": [
+      "双频!18",
+      "双频!18"
+    ],
+    "50": {
+      "prime_kwm": 128.0,
+      "standby_kwm": 141.0
+    },
+    "60": {
+      "prime_kwm": 136.0,
+      "standby_kwm": 150.0
+    }
+  },
+  "6HTAA6.5-G22": {
+    "sources": [
+      "双频!19",
+      "双频!19"
+    ],
+    "50": {
+      "prime_kwm": 140.0,
+      "standby_kwm": 155.0
+    },
+    "60": {
+      "prime_kwm": 150.0,
+      "standby_kwm": 165.0
+    }
+  },
+  "6HTAA6.5-G23": {
+    "sources": [
+      "双频!20",
+      "双频!20"
+    ],
+    "50": {
+      "prime_kwm": 168.0,
+      "standby_kwm": 185.0
+    },
+    "60": {
+      "prime_kwm": 168.0,
+      "standby_kwm": 185.0
+    }
+  },
+  "6HTAA6.5-G31": {
+    "sources": [
+      "国三!25"
+    ],
+    "50": {
+      "prime_kwm": 128.0,
+      "standby_kwm": 141.0
+    }
+  },
+  "6HTAA6.5-G32": {
+    "sources": [
+      "国三!26"
+    ],
+    "50": {
+      "prime_kwm": 140.0,
+      "standby_kwm": 155.0
+    }
+  },
+  "6HTAA6.5-G33": {
+    "sources": [
+      "国三!28"
+    ],
+    "50": {
+      "prime_kwm": 168.0,
+      "standby_kwm": 185.0
+    }
+  },
+  "6HTAA6.5-G34": {
+    "sources": [
+      "国三!29"
+    ],
+    "50": {
+      "prime_kwm": 186.0,
+      "standby_kwm": 205.0
+    }
+  },
+  "6HTAA6.5-G35": {
+    "sources": [
+      "国三!27"
+    ],
+    "50": {
+      "prime_kwm": 155.0,
+      "standby_kwm": 170.0
+    }
+  },
+  "6HTAA7.2-G41": {
+    "sources": [
+      "国四!27"
+    ],
+    "50": {
+      "prime_kwm": 210.0,
+      "standby_kwm": 231.0
+    }
+  },
+  "6HTAA7.2-G42": {
+    "sources": [
+      "国四!26"
+    ],
+    "50": {
+      "prime_kwm": 190.0,
+      "standby_kwm": 210.0
+    }
+  },
+  "6HTAA7.2-G43": {
+    "sources": [
+      "国四!25"
+    ],
+    "50": {
+      "prime_kwm": 185.0,
+      "standby_kwm": 203.0
+    }
+  },
+  "6HTAA7.2-G44": {
+    "sources": [
+      "国四!24"
+    ],
+    "50": {
+      "prime_kwm": 168.0,
+      "standby_kwm": 185.0
+    }
+  },
+  "6HTAA7.2-G45": {
+    "sources": [
+      "国四!23"
+    ],
+    "50": {
+      "prime_kwm": 155.0,
+      "standby_kwm": 171.0
+    }
+  },
+  "6HTAA7.2-G46": {
+    "sources": [
+      "国四!22"
+    ],
+    "50": {
+      "prime_kwm": 140.0,
+      "standby_kwm": 155.0
+    }
+  },
+  "6HTAA7.2-G5E1": {
+    "sources": [
+      "欧五!9"
+    ],
+    "50": {
+      "prime_kwm": 140.0,
+      "standby_kwm": 155.0,
+      "prime_kwe": 120.0,
+      "standby_kwe": 132.0
+    }
+  },
+  "6HTAA7.2-G5E1.1": {
+    "sources": [
+      "欧五!21"
+    ],
+    "60": {
+      "prime_kwm": 140.0,
+      "standby_kwm": 155.0,
+      "prime_kwe": 120.0,
+      "standby_kwe": 132.0
+    }
+  },
+  "6HTAA7.2-G5E2": {
+    "sources": [
+      "欧五!10"
+    ],
+    "50": {
+      "prime_kwm": 155.0,
+      "standby_kwm": 170.0,
+      "prime_kwe": 135.0,
+      "standby_kwe": 150.0
+    }
+  },
+  "6HTAA7.2-G5E2.1": {
+    "sources": [
+      "欧五!22"
+    ],
+    "60": {
+      "prime_kwm": 155.0,
+      "standby_kwm": 170.0,
+      "prime_kwe": 135.0,
+      "standby_kwe": 150.0
+    }
+  },
+  "6HTAA7.2-G5E3": {
+    "sources": [
+      "欧五!11"
+    ],
+    "50": {
+      "prime_kwm": 168.0,
+      "standby_kwm": 185.0,
+      "prime_kwe": 150.0,
+      "standby_kwe": 165.0
+    }
+  },
+  "6HTAA7.2-G5E3.1": {
+    "sources": [
+      "欧五!23"
+    ],
+    "60": {
+      "prime_kwm": 168.0,
+      "standby_kwm": 185.0,
+      "prime_kwe": 150.0,
+      "standby_kwe": 165.0
+    }
+  },
+  "6HTAA7.2-G5E4": {
+    "sources": [
+      "欧五!12"
+    ],
+    "50": {
+      "prime_kwm": 186.0,
+      "standby_kwm": 205.0,
+      "prime_kwe": 160.0,
+      "standby_kwe": 180.0
+    }
+  },
+  "6HTAA7.2-G5E4.1": {
+    "sources": [
+      "欧五!24"
+    ],
+    "60": {
+      "prime_kwm": 186.0,
+      "standby_kwm": 205.0,
+      "prime_kwe": 160.0,
+      "standby_kwe": 180.0
+    }
+  },
+  "6HTAA7.2-G5E5": {
+    "sources": [
+      "欧五!13"
+    ],
+    "50": {
+      "prime_kwm": 208.0,
+      "standby_kwm": 228.0,
+      "prime_kwe": 180.0,
+      "standby_kwe": 200.0
+    }
+  },
+  "6HTAA7.2-G5E5.1": {
+    "sources": [
+      "欧五!25"
+    ],
+    "60": {
+      "prime_kwm": 208.0,
+      "standby_kwm": 228.0,
+      "prime_kwe": 180.0,
+      "standby_kwe": 200.0
+    }
+  },
+  "6JTAA17-G31": {
+    "sources": [
+      "国三!42"
+    ],
+    "50": {
+      "prime_kwm": 565.0,
+      "standby_kwm": 622.0
+    }
+  },
+  "6JTAA17-G310": {
+    "sources": [
+      "国三!43"
+    ],
+    "50": {
+      "prime_kwm": 585.0,
+      "standby_kwm": 645.0
+    }
+  },
+  "6JTAA17-G311": {
+    "sources": [
+      "国三!44"
+    ],
+    "50": {
+      "prime_kwm": 622.0,
+      "standby_kwm": 685.0
+    }
+  },
+  "6JTAA17-G32": {
+    "sources": [
+      "国三!41"
+    ],
+    "50": {
+      "prime_kwm": 520.0,
+      "standby_kwm": 572.0
+    }
+  },
+  "6JTAA17-G33": {
+    "sources": [
+      "国三!40"
+    ],
+    "50": {
+      "prime_kwm": 460.0,
+      "standby_kwm": 506.0
+    }
+  },
+  "6KTAA25-G31": {
+    "sources": [
+      "国三!50"
+    ],
+    "50": {
+      "prime_kwm": 728.0,
+      "standby_kwm": 800.0
+    }
+  },
+  "6KTAA25-G31.1": {
+    "sources": [
+      "双频!37"
+    ],
+    "60": {
+      "prime_kwm": 728.0,
+      "standby_kwm": 800.0
+    }
+  },
+  "6KTAA25-G310": {
+    "sources": [
+      "国三!52",
+      "双频!33",
+      "双频!33"
+    ],
+    "50": {
+      "prime_kwm": 520.0,
+      "standby_kwm": 572.0
+    },
+    "60": {
+      "prime_kwm": 572.0,
+      "standby_kwm": 629.0
+    }
+  },
+  "6KTAA25-G311": {
+    "sources": [
+      "国三!51",
+      "双频!32",
+      "双频!32"
+    ],
+    "50": {
+      "prime_kwm": 460.0,
+      "standby_kwm": 506.0
+    },
+    "60": {
+      "prime_kwm": 520.0,
+      "standby_kwm": 572.0
+    }
+  },
+  "6KTAA25-G32": {
+    "sources": [
+      "国三!49"
+    ],
+    "50": {
+      "prime_kwm": 685.0,
+      "standby_kwm": 754.0
+    }
+  },
+  "6KTAA25-G32.1": {
+    "sources": [
+      "双频!36"
+    ],
+    "60": {
+      "prime_kwm": 685.0,
+      "standby_kwm": 754.0
+    }
+  },
+  "6KTAA25-G320": {
+    "sources": [
+      "国三!60"
+    ],
+    "50": {
+      "prime_kwm": 820.0,
+      "standby_kwm": 902.0
+    }
+  },
+  "6KTAA25-G320.1": {
+    "sources": [
+      "双频!38"
+    ],
+    "60": {
+      "prime_kwm": 820.0,
+      "standby_kwm": 902.0
+    }
+  },
+  "6KTAA25-G321": {
+    "sources": [
+      "国三!61"
+    ],
+    "50": {
+      "prime_kwm": 880.0,
+      "standby_kwm": 970.0
+    }
+  },
+  "6KTAA25-G321.1": {
+    "sources": [
+      "双频!39"
+    ],
+    "60": {
+      "prime_kwm": 880.0,
+      "standby_kwm": 970.0
+    }
+  },
+  "6KTAA25-G33": {
+    "sources": [
+      "国三!48"
+    ],
+    "50": {
+      "prime_kwm": 622.0,
+      "standby_kwm": 684.0
+    }
+  },
+  "6KTAA25-G34": {
+    "sources": [
+      "国三!47"
+    ],
+    "50": {
+      "prime_kwm": 572.0,
+      "standby_kwm": 629.0
+    }
+  },
+  "6KTAA25-G35": {
+    "sources": [
+      "国三!46"
+    ],
+    "50": {
+      "prime_kwm": 520.0,
+      "standby_kwm": 572.0
+    }
+  },
+  "6KTAA25-G36": {
+    "sources": [
+      "国三!45"
+    ],
+    "50": {
+      "prime_kwm": 460.0,
+      "standby_kwm": 506.0
+    }
+  },
+  "6KTAA25-G38": {
+    "sources": [
+      "国三!54",
+      "双频!35",
+      "双频!35"
+    ],
+    "50": {
+      "prime_kwm": 622.0,
+      "standby_kwm": 684.0
+    },
+    "60": {
+      "prime_kwm": 622.0,
+      "standby_kwm": 684.0
+    }
+  },
+  "6KTAA25-G39": {
+    "sources": [
+      "国三!53",
+      "双频!34",
+      "双频!34"
+    ],
+    "50": {
+      "prime_kwm": 572.0,
+      "standby_kwm": 629.0
+    },
+    "60": {
+      "prime_kwm": 622.0,
+      "standby_kwm": 684.0
+    }
+  },
+  "6WTAA35-G31": {
+    "sources": [
+      "国三!63"
+    ],
+    "50": {
+      "prime_kwm": 882.0,
+      "standby_kwm": 970.0
+    }
+  },
+  "6WTAA35-G310": {
+    "sources": [
+      "国三!64"
+    ],
+    "50": {
+      "prime_kwm": 1018.0,
+      "standby_kwm": 1120.0
+    }
+  },
+  "6WTAA35-G311": {
+    "sources": [
+      "国三!65"
+    ],
+    "50": {
+      "prime_kwm": 1118.0,
+      "standby_kwm": 1230.0
+    }
+  },
+  "6WTAA35-G32": {
+    "sources": [
+      "国三!62"
+    ],
+    "50": {
+      "prime_kwm": 818.0,
+      "standby_kwm": 900.0
+    }
+  },
+  "C11TE3": {
+    "sources": [
+      "上菲红!7",
+      "上菲红!7"
+    ],
+    "50": {
+      "prime_kwm": 347.0,
+      "standby_kwm": 378.0
+    },
+    "60": {
+      "prime_kwm": 370.0,
+      "standby_kwm": 405.0
+    }
+  },
+  "C13TE5": {
+    "sources": [
+      "上菲红!8",
+      "上菲红!8"
+    ],
+    "50": {
+      "prime_kwm": 391.0,
+      "standby_kwm": 435.0
+    },
+    "60": {
+      "prime_kwm": 425.0,
+      "standby_kwm": 460.0
+    }
+  },
+  "C13TE6": {
+    "sources": [
+      "上菲红!9",
+      "上菲红!9"
+    ],
+    "50": {
+      "prime_kwm": 435.0,
+      "standby_kwm": 445.0
+    },
+    "60": {
+      "prime_kwm": 440.0,
+      "standby_kwm": 462.0
+    }
+  },
+  "C9TE1": {
+    "sources": [
+      "上菲红!3",
+      "上菲红!3"
+    ],
+    "50": {
+      "prime_kwm": 200.0,
+      "standby_kwm": 220.0
+    },
+    "60": {
+      "prime_kwm": 240.0,
+      "standby_kwm": 260.0
+    }
+  },
+  "C9TE2": {
+    "sources": [
+      "上菲红!4",
+      "上菲红!4"
+    ],
+    "50": {
+      "prime_kwm": 235.0,
+      "standby_kwm": 255.0
+    },
+    "60": {
+      "prime_kwm": 259.0,
+      "standby_kwm": 280.0
+    }
+  },
+  "C9TE8": {
+    "sources": [
+      "上菲红!5",
+      "上菲红!5"
+    ],
+    "50": {
+      "prime_kwm": 281.0,
+      "standby_kwm": 305.0
+    },
+    "60": {
+      "prime_kwm": 315.0,
+      "standby_kwm": 342.0
+    }
+  },
+  "C9TE9": {
+    "sources": [
+      "上菲红!6",
+      "上菲红!6"
+    ],
+    "50": {
+      "prime_kwm": 320.0,
+      "standby_kwm": 330.0
+    },
+    "60": {
+      "prime_kwm": 340.0,
+      "standby_kwm": 356.0
+    }
+  },
+  "SC10E380D2": {
+    "sources": [
+      "国二!55"
+    ],
+    "50": {
+      "prime_kwm": 255.0,
+      "standby_kwm": 280.0
+    }
+  },
+  "SC10E420D2": {
+    "sources": [
+      "国二!56"
+    ],
+    "50": {
+      "prime_kwm": 280.0,
+      "standby_kwm": 308.0
+    }
+  },
+  "SC10E460D2": {
+    "sources": [
+      "国二!57"
+    ],
+    "50": {
+      "prime_kwm": 307.0,
+      "standby_kwm": 338.0
+    }
+  },
+  "SC10E480D2": {
+    "sources": [
+      "国二!58"
+    ],
+    "50": {
+      "prime_kwm": 323.0,
+      "standby_kwm": 355.0
+    }
+  },
+  "SC12E420D2": {
+    "sources": [
+      "国二!59"
+    ],
+    "50": {
+      "prime_kwm": 280.0,
+      "standby_kwm": 308.0
+    }
+  },
+  "SC12E460D2": {
+    "sources": [
+      "国二!61"
+    ],
+    "50": {
+      "prime_kwm": 307.0,
+      "standby_kwm": 338.0
+    }
+  },
+  "SC12E480D2": {
+    "sources": [
+      "国二!62"
+    ],
+    "50": {
+      "prime_kwm": 323.0,
+      "standby_kwm": 355.0
+    }
+  },
+  "SC13E500D2": {
+    "sources": [
+      "国二!64"
+    ],
+    "50": {
+      "prime_kwm": 339.0,
+      "standby_kwm": 373.0
+    }
+  },
+  "SC13E550D2": {
+    "sources": [
+      "国二!65"
+    ],
+    "50": {
+      "prime_kwm": 368.0,
+      "standby_kwm": 405.0
+    }
+  },
+  "SC13G420D2": {
+    "sources": [
+      "国二!60"
+    ],
+    "50": {
+      "prime_kwm": 280.0,
+      "standby_kwm": 308.0
+    }
+  },
+  "SC15G500D2": {
+    "sources": [
+      "国二!63"
+    ],
+    "50": {
+      "prime_kwm": 339.0,
+      "standby_kwm": 373.0
+    }
+  },
+  "SC25K930D2": {
+    "sources": [
+      "国二!69"
+    ],
+    "50": {
+      "prime_kwm": 622.0,
+      "standby_kwm": 684.0
+    }
+  },
+  "SC25K990D2": {
+    "sources": [
+      "国二!70"
+    ],
+    "50": {
+      "prime_kwm": 660.0,
+      "standby_kwm": 726.0
+    }
+  },
+  "SC27G755D2": {
+    "sources": [
+      "国二!66"
+    ],
+    "50": {
+      "prime_kwm": 505.0,
+      "standby_kwm": 560.0
+    }
+  },
+  "SC27G830D2": {
+    "sources": [
+      "国二!67"
+    ],
+    "50": {
+      "prime_kwm": 561.0,
+      "standby_kwm": 610.0
+    }
+  },
+  "SC27G900D2": {
+    "sources": [
+      "国二!68"
+    ],
+    "50": {
+      "prime_kwm": 602.0,
+      "standby_kwm": 662.0
+    }
+  },
+  "SC4H115D2": {
+    "sources": [
+      "国二!43"
+    ],
+    "50": {
+      "prime_kwm": 78.0,
+      "standby_kwm": 86.0
+    }
+  },
+  "SC4H140D2": {
+    "sources": [
+      "国二!44"
+    ],
+    "50": {
+      "prime_kwm": 95.0,
+      "standby_kwm": 105.0
+    }
+  },
+  "SC4H160D2": {
+    "sources": [
+      "国二!45"
+    ],
+    "50": {
+      "prime_kwm": 105.0,
+      "standby_kwm": 116.0
+    }
+  },
+  "SC4H180D2": {
+    "sources": [
+      "国二!46"
+    ],
+    "50": {
+      "prime_kwm": 120.0,
+      "standby_kwm": 132.0
+    }
+  },
+  "SC4H95D2": {
+    "sources": [
+      "国二!42"
+    ],
+    "50": {
+      "prime_kwm": 62.0,
+      "standby_kwm": 68.0
+    }
+  },
+  "SC7H180D2": {
+    "sources": [
+      "国二!47"
+    ],
+    "50": {
+      "prime_kwm": 120.0,
+      "standby_kwm": 132.0
+    }
+  },
+  "SC7H205D2": {
+    "sources": [
+      "国二!48"
+    ],
+    "50": {
+      "prime_kwm": 138.0,
+      "standby_kwm": 152.0
+    }
+  },
+  "SC7H220D2": {
+    "sources": [
+      "国二!49"
+    ],
+    "50": {
+      "prime_kwm": 150.0,
+      "standby_kwm": 165.0
+    }
+  },
+  "SC7H230D2": {
+    "sources": [
+      "国二!50"
+    ],
+    "50": {
+      "prime_kwm": 154.0,
+      "standby_kwm": 170.0
+    }
+  },
+  "SC7H250D2": {
+    "sources": [
+      "国二!51"
+    ],
+    "50": {
+      "prime_kwm": 168.0,
+      "standby_kwm": 185.0
+    }
+  },
+  "SC8D280D2": {
+    "sources": [
+      "国二!52"
+    ],
+    "50": {
+      "prime_kwm": 185.0,
+      "standby_kwm": 204.0
+    }
+  },
+  "SC9D310D2": {
+    "sources": [
+      "国二!53"
+    ],
+    "50": {
+      "prime_kwm": 208.0,
+      "standby_kwm": 228.0
+    }
+  },
+  "SC9D340D2": {
+    "sources": [
+      "国二!54"
+    ],
+    "50": {
+      "prime_kwm": 228.0,
+      "standby_kwm": 255.0
+    }
+  }
+}
