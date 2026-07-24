@@ -36,7 +36,7 @@ MANUFACTURER_BRANDS = {
     "Kirloskar Americas Corporation": {"Kirloskar"},
     "Komatsu Ltd.": {"Komatsu"},
     "Kubota Corporation": {"Kubota"},
-    "Liebherr Machines Bulle SA": {"Liebherr"},
+    "Liebherr Machines Bulle SA": {"Kohler", "Liebherr"},
     "Lister Petter Limited": {"Lister Petter"},
     "MAN Truck & Bus AG": {"MAN"},
     "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.": {"Mitsubishi"},
@@ -63,12 +63,16 @@ CERTIFICATION_ALIASES = {
         "Discovery Energy, LLC.",
         "KSDNATG140318",
     ): ("Kohler", "KSD1403NA"),
+    ("Liebherr Machines Bulle SA", "D9812G"): ("Liebherr", "D9812"),
+    ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
+    ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
 }
 
 REPRESENTED_STATUSES = {
     "exact_brand_match",
     "brand_prefix_match",
     "base_brand_match",
+    "certification_trim_match",
     "certification_alias_match",
     "family_brand_match",
 }
@@ -210,6 +214,29 @@ def probable_brand_matches(
     )[:5]
 
 
+def certification_trim_candidates(
+    manufacturer: str,
+    normalized_model: str,
+    by_brand: dict[str, list[dict]],
+) -> list[dict]:
+    candidates = []
+    for brand, suffix_pattern in (
+        ("Kohler", r"A?6(?:[A-D]ES|[A-C]N[CPS])"),
+        ("Liebherr", r"A70[24]"),
+    ):
+        if manufacturer != "Liebherr Machines Bulle SA":
+            continue
+        for engine in by_brand.get(brand, []):
+            base = engine["normalized_model"]
+            if (
+                len(base) >= 5
+                and normalized_model.startswith(base)
+                and re.fullmatch(suffix_pattern, normalized_model[len(base):])
+            ):
+                candidates.append(engine)
+    return sorted(candidates, key=lambda engine: engine["slug"])
+
+
 def match_models(models: dict, engines: list[dict]) -> list[dict]:
     by_model, by_model_without_brand_prefix, by_brand = build_database_indexes(engines)
     results = []
@@ -235,6 +262,11 @@ def match_models(models: dict, engines: list[dict]) -> list[dict]:
             for engine in by_model.get(base_model, [])
             if engine["brand"] in expected_brands
         ] if "/" in record["epa_model"] and len(base_model) >= 5 else []
+        trim_candidates = certification_trim_candidates(
+            manufacturer,
+            normalized_model,
+            by_brand,
+        )
         alias_target = CERTIFICATION_ALIASES.get(
             (manufacturer, normalized_model)
         )
@@ -271,6 +303,10 @@ def match_models(models: dict, engines: list[dict]) -> list[dict]:
         elif base_brand_candidates:
             status = "base_brand_match"
             matches = base_brand_candidates
+            probable = []
+        elif trim_candidates:
+            status = "certification_trim_match"
+            matches = trim_candidates
             probable = []
         elif certification_alias_candidates:
             status = "certification_alias_match"
@@ -411,6 +447,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "- Counted a database model as present only when its normalized model and verified manufacturer-to-brand mapping both matched.",
         "- Counted a redundant leading database brand as represented only when the remaining normalized model had at least five characters.",
         "- Counted slash-suffixed certification trims as represented only when the explicit base model before `/` matched the verified database brand.",
+        "- Counted non-slash certification trims only through reviewed manufacturer, brand and suffix-pattern rules.",
         "- Counted commercial family variants only for explicit EPA-manufacturer/database-brand mappings and a normalized family prefix of at least five characters.",
         "- Counted non-literal certification aliases only from the reviewed `CERTIFICATION_ALIASES` map.",
         "- Exact model matches under another brand and other similar suffix variants remain review items.",
@@ -422,6 +459,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Exact manufacturer/brand matches: **{statuses['exact_brand_match']:,}**",
         f"- Matches after removing a redundant database brand prefix: **{statuses['brand_prefix_match']:,}**",
         f"- Slash-suffixed certification trims represented by a verified base model: **{statuses['base_brand_match']:,}**",
+        f"- Reviewed manufacturer certification trims: **{statuses['certification_trim_match']:,}**",
         f"- Reviewed certification aliases: **{statuses['certification_alias_match']:,}**",
         f"- Verified commercial family matches: **{statuses['family_brand_match']:,}**",
         f"- Exact matches whose database page uses 1800 as its primary RPM: **{exact_primary_1800:,}**",
@@ -449,6 +487,9 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "- `Caterpillar Inc.` is also compared with `Perkins` for reviewed family-prefix matches. "
         "Official Perkins product documentation identifies commercial models such as "
         "`1706J-E93TA` and `2406J-E13TA` behind the shorter EPA family names.",
+        "- `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's "
+        "official co-development announcement identifies the six KD commercial engine families "
+        "manufactured for Kohler generator sets.",
         "",
         "## Generator-Priority Gaps by Brand",
         "",
@@ -466,8 +507,8 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "",
         "## Manufacturer Coverage",
         "",
-        "| EPA manufacturer | Database brand | EPA models | Exact | Brand prefix | Base trims | Cert. aliases | Families | Other-brand exact | Not found | Probable |",
-        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
+        "| EPA manufacturer | Database brand | EPA models | Exact | Brand prefix | Base trims | Cert. trims | Cert. aliases | Families | Other-brand exact | Not found | Probable |",
+        "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|",
         ]
     )
 
@@ -479,6 +520,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
             f"| {manufacturer} | {brands} | {counts['total']} | "
             f"{counts['exact_brand_match']} | {counts['brand_prefix_match']} | "
             f"{counts['base_brand_match']} | "
+            f"{counts['certification_trim_match']} | "
             f"{counts['certification_alias_match']} | "
             f"{counts['family_brand_match']} | "
             f"{counts['exact_model_other_brand']} | "
@@ -491,7 +533,8 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
             "## Priority Review",
             "",
             "These are recent constant-speed EPA-certified models from mapped manufacturers that "
-            "were not found as exact, brand-prefix, base-trim, reviewed certification-alias or "
+            "were not found as exact, brand-prefix, base-trim, reviewed certification-trim, "
+            "reviewed certification-alias or "
             "verified commercial-family matches. "
             "The full records, including "
             "variable-speed-only models and candidate aliases, are in "

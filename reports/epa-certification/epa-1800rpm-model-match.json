@@ -7532,6 +7532,2258 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9612 A7-02",
+    "normalized_model": "D9612A702",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V12G71001",
+      "V12G71002",
+      "V12G71003"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 891,
+    "rated_power_kw_max": 1114,
+    "displacements_l": [
+      26.967000000000002
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9612",
+        "slug": "liebherr-d9612",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9616 A7-02",
+    "normalized_model": "D9616A702",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V16G71001",
+      "V16G71002"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1391,
+    "rated_power_kw_max": 1450,
+    "displacements_l": [
+      35.956
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9616",
+        "slug": "liebherr-d9616",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9620 A7-02",
+    "normalized_model": "D9620A702",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V20G71001",
+      "V20G71002",
+      "V20G71003",
+      "V20G71004"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1391,
+    "rated_power_kw_max": 1910,
+    "displacements_l": [
+      44.946000000000005
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9620",
+        "slug": "liebherr-d9620",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9812G",
+    "normalized_model": "D9812G",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HLHAL103.ESP",
+      "JLHAL103.ESP",
+      "KLHAL103.ESP",
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "MLHAL103.VQC",
+      "NLHAL103.ESP",
+      "NLHAL103.VQC",
+      "PLHAL103.ESP",
+      "PLHAL103.VQC",
+      "RLHAL103.ESP",
+      "RLHAL103.VQC",
+      "SLHAL103.ESP",
+      "SLHAL103.VQC",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C12GA1100",
+      "C12GA1101",
+      "C12GA1102",
+      "C12GA1103",
+      "C12GA1104",
+      "C12GA1105",
+      "C12GB1100",
+      "C12GB1101",
+      "C12GB1102"
+    ],
+    "certificates": [
+      "HLHAL103.ESP-008",
+      "JLHAL103.ESP-013",
+      "KLHAL103.ESP-001",
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "MLHAL103.VQC-012",
+      "NLHAL103.ESP-001",
+      "NLHAL103.VQC-002",
+      "PLHAL103.ESP-002",
+      "PLHAL103.VQC-004",
+      "RLHAL103.ESP-018",
+      "RLHAL103.VQC-020",
+      "SLHAL103.ESP-019",
+      "SLHAL103.VQC-021",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2045,
+    "rated_power_kw_max": 2700,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9812",
+        "slug": "liebherr-d9812",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9816G",
+    "normalized_model": "D9816G",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JLHAL103.ESP",
+      "KLHAL103.ESP",
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "MLHAL103.VQC",
+      "NLHAL103.ESP",
+      "NLHAL103.VQC",
+      "PLHAL103.ESP",
+      "PLHAL103.VQC",
+      "RLHAL103.ESP",
+      "RLHAL103.VQC",
+      "SLHAL103.ESP",
+      "SLHAL103.VQC",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C16GA1100",
+      "C16GA1101",
+      "C16GA1102",
+      "C16GA1103",
+      "C16GA1104",
+      "C16GA1105",
+      "C16GA1106",
+      "C16GA1107",
+      "C16GB1100",
+      "C16GB1101",
+      "C16GB1102"
+    ],
+    "certificates": [
+      "JLHAL103.ESP-013",
+      "KLHAL103.ESP-001",
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "MLHAL103.VQC-012",
+      "NLHAL103.ESP-001",
+      "NLHAL103.VQC-002",
+      "PLHAL103.ESP-002",
+      "PLHAL103.VQC-004",
+      "RLHAL103.ESP-018",
+      "RLHAL103.VQC-020",
+      "SLHAL103.ESP-019",
+      "SLHAL103.VQC-021",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2644,
+    "rated_power_kw_max": 3490,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9816",
+        "slug": "liebherr-d9816",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9820G",
+    "normalized_model": "D9820G",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "NLHAL103.ESP",
+      "PLHAL103.ESP",
+      "RLHAL103.ESP",
+      "SLHAL103.ESP",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C20GA1102",
+      "C20GA1103",
+      "C20GA1105"
+    ],
+    "certificates": [
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "NLHAL103.ESP-001",
+      "PLHAL103.ESP-002",
+      "RLHAL103.ESP-018",
+      "SLHAL103.ESP-019",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3758,
+    "rated_power_kw_max": 4290,
+    "displacements_l": [
+      103.427
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9820",
+        "slug": "liebherr-d9820",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD103V20-6AES",
+    "normalized_model": "KD103V206AES",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "NLHAL103.ESP",
+      "PLHAL103.ESP",
+      "RLHAL103.ESP",
+      "SLHAL103.ESP",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C20GA1103"
+    ],
+    "certificates": [
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "NLHAL103.ESP-001",
+      "PLHAL103.ESP-002",
+      "RLHAL103.ESP-018",
+      "SLHAL103.ESP-019",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3758,
+    "rated_power_kw_max": 3758,
+    "displacements_l": [
+      103.427
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD103V20",
+        "slug": "kohler-kd103v20",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD103V20-6CES",
+    "normalized_model": "KD103V206CES",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "NLHAL103.ESP",
+      "PLHAL103.ESP",
+      "RLHAL103.ESP",
+      "SLHAL103.ESP",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C20GA1102",
+      "C20GA1105"
+    ],
+    "certificates": [
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "NLHAL103.ESP-001",
+      "PLHAL103.ESP-002",
+      "RLHAL103.ESP-018",
+      "SLHAL103.ESP-019",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 4290,
+    "rated_power_kw_max": 4290,
+    "displacements_l": [
+      103.427
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD103V20",
+        "slug": "kohler-kd103v20",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD27V12-6AES",
+    "normalized_model": "KD27V126AES",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V12G71001"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 891,
+    "rated_power_kw_max": 891,
+    "displacements_l": [
+      26.967000000000002
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD27V12",
+        "slug": "kohler-kd27v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD27V12-6BES",
+    "normalized_model": "KD27V126BES",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V12G71002"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1019,
+    "rated_power_kw_max": 1019,
+    "displacements_l": [
+      26.967000000000002
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD27V12",
+        "slug": "kohler-kd27v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD27V12-6CES",
+    "normalized_model": "KD27V126CES",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V12G71003"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1114,
+    "rated_power_kw_max": 1114,
+    "displacements_l": [
+      26.967000000000002
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD27V12",
+        "slug": "kohler-kd27v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD36V16-6AES",
+    "normalized_model": "KD36V166AES",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V16G71001"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1391,
+    "rated_power_kw_max": 1391,
+    "displacements_l": [
+      35.956
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD36V16",
+        "slug": "kohler-kd36v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD36V16-6BES",
+    "normalized_model": "KD36V166BES",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V16G71002"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1450,
+    "rated_power_kw_max": 1450,
+    "displacements_l": [
+      35.956
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD36V16",
+        "slug": "kohler-kd36v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD45V20-6AES",
+    "normalized_model": "KD45V206AES",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V20G71001"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1391,
+    "rated_power_kw_max": 1391,
+    "displacements_l": [
+      44.946000000000005
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD45V20",
+        "slug": "kohler-kd45v20",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD45V20-6BES",
+    "normalized_model": "KD45V206BES",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V20G71002"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1654,
+    "rated_power_kw_max": 1654,
+    "displacements_l": [
+      44.946000000000005
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD45V20",
+        "slug": "kohler-kd45v20",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD45V20-6CES",
+    "normalized_model": "KD45V206CES",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V20G71003"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1755,
+    "rated_power_kw_max": 1755,
+    "displacements_l": [
+      44.946000000000005
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD45V20",
+        "slug": "kohler-kd45v20",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD45V20-6DES",
+    "normalized_model": "KD45V206DES",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GLHAL45.0ESP",
+      "HLHAL45.0ESP",
+      "JLHAL45.0ESP",
+      "KLHAL45.0ESP",
+      "LLHAL45.0ESP",
+      "MLHAL45.0ESP",
+      "NLHAL45.0ESP",
+      "PLHAL45.0ESP",
+      "RLHAL45.0ESP",
+      "SLHAL45.0ESP",
+      "TLHAL45.0ESP"
+    ],
+    "engine_codes": [
+      "V20G71004"
+    ],
+    "certificates": [
+      "GLHAL45.0ESP-008",
+      "HLHAL45.0ESP-001",
+      "JLHAL45.0ESP-005",
+      "KLHAL45.0ESP-007",
+      "LLHAL45.0ESP-002",
+      "MLHAL45.0ESP-002",
+      "NLHAL45.0ESP-006",
+      "PLHAL45.0ESP-018",
+      "RLHAL45.0ESP-011",
+      "SLHAL45.0ESP-002",
+      "TLHAL45.0ESP-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1910,
+    "rated_power_kw_max": 1910,
+    "displacements_l": [
+      44.946000000000005
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD45V20",
+        "slug": "kohler-kd45v20",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD62V12-6AES",
+    "normalized_model": "KD62V126AES",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HLHAL103.ESP",
+      "JLHAL103.ESP",
+      "KLHAL103.ESP",
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "NLHAL103.ESP",
+      "PLHAL103.ESP",
+      "RLHAL103.ESP",
+      "SLHAL103.ESP",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C12GA1100",
+      "C12GA1103"
+    ],
+    "certificates": [
+      "HLHAL103.ESP-008",
+      "JLHAL103.ESP-013",
+      "KLHAL103.ESP-001",
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "NLHAL103.ESP-001",
+      "PLHAL103.ESP-002",
+      "RLHAL103.ESP-018",
+      "SLHAL103.ESP-019",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2180,
+    "rated_power_kw_max": 2180,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD62V12",
+        "slug": "kohler-kd62v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD62V12-6BES",
+    "normalized_model": "KD62V126BES",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HLHAL103.ESP",
+      "JLHAL103.ESP",
+      "KLHAL103.ESP",
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "NLHAL103.ESP",
+      "PLHAL103.ESP",
+      "RLHAL103.ESP",
+      "SLHAL103.ESP",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C12GA1101",
+      "C12GA1104"
+    ],
+    "certificates": [
+      "HLHAL103.ESP-008",
+      "JLHAL103.ESP-013",
+      "KLHAL103.ESP-001",
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "NLHAL103.ESP-001",
+      "PLHAL103.ESP-002",
+      "RLHAL103.ESP-018",
+      "SLHAL103.ESP-019",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2500,
+    "rated_power_kw_max": 2500,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD62V12",
+        "slug": "kohler-kd62v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD62V12-6CES",
+    "normalized_model": "KD62V126CES",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HLHAL103.ESP",
+      "JLHAL103.ESP",
+      "KLHAL103.ESP",
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "NLHAL103.ESP",
+      "PLHAL103.ESP",
+      "RLHAL103.ESP",
+      "SLHAL103.ESP",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C12GA1102",
+      "C12GA1105"
+    ],
+    "certificates": [
+      "HLHAL103.ESP-008",
+      "JLHAL103.ESP-013",
+      "KLHAL103.ESP-001",
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "NLHAL103.ESP-001",
+      "PLHAL103.ESP-002",
+      "RLHAL103.ESP-018",
+      "SLHAL103.ESP-019",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2700,
+    "rated_power_kw_max": 2700,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD62V12",
+        "slug": "kohler-kd62v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD62V12A-6AES",
+    "normalized_model": "KD62V12A6AES",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NLHAL103.E9P",
+      "PLHAL103.E9P",
+      "RLHAL103.E9P",
+      "SLHAL103.E9P",
+      "TLHAL103.E9P"
+    ],
+    "engine_codes": [
+      "C12GA1150",
+      "C12GA1153"
+    ],
+    "certificates": [
+      "NLHAL103.E9P-021",
+      "PLHAL103.E9P-020",
+      "RLHAL103.E9P-019",
+      "SLHAL103.E9P-020",
+      "TLHAL103.E9P-013"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2180,
+    "rated_power_kw_max": 2180,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD62V12",
+        "slug": "kohler-kd62v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD62V12A-6BES",
+    "normalized_model": "KD62V12A6BES",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NLHAL103.E9P",
+      "PLHAL103.E9P",
+      "RLHAL103.E9P",
+      "SLHAL103.E9P",
+      "TLHAL103.E9P"
+    ],
+    "engine_codes": [
+      "C12GA1151",
+      "C12GA1154"
+    ],
+    "certificates": [
+      "NLHAL103.E9P-021",
+      "PLHAL103.E9P-020",
+      "RLHAL103.E9P-019",
+      "SLHAL103.E9P-020",
+      "TLHAL103.E9P-013"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2500,
+    "rated_power_kw_max": 2500,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD62V12",
+        "slug": "kohler-kd62v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD62V12A-6CES",
+    "normalized_model": "KD62V12A6CES",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NLHAL103.E9P",
+      "PLHAL103.E9P",
+      "RLHAL103.E9P",
+      "SLHAL103.E9P",
+      "TLHAL103.E9P"
+    ],
+    "engine_codes": [
+      "C12GA1152",
+      "C12GA1155"
+    ],
+    "certificates": [
+      "NLHAL103.E9P-021",
+      "PLHAL103.E9P-020",
+      "RLHAL103.E9P-019",
+      "SLHAL103.E9P-020",
+      "TLHAL103.E9P-013"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2700,
+    "rated_power_kw_max": 2700,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD62V12",
+        "slug": "kohler-kd62v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD83V16-6AES",
+    "normalized_model": "KD83V166AES",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JLHAL103.ESP",
+      "KLHAL103.ESP",
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "NLHAL103.ESP",
+      "PLHAL103.ESP",
+      "RLHAL103.ESP",
+      "SLHAL103.ESP",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C16GA1100",
+      "C16GA1103"
+    ],
+    "certificates": [
+      "JLHAL103.ESP-013",
+      "KLHAL103.ESP-001",
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "NLHAL103.ESP-001",
+      "PLHAL103.ESP-002",
+      "RLHAL103.ESP-018",
+      "SLHAL103.ESP-019",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3010,
+    "rated_power_kw_max": 3010,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD83V16",
+        "slug": "kohler-kd83v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD83V16-6BES",
+    "normalized_model": "KD83V166BES",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JLHAL103.ESP",
+      "KLHAL103.ESP",
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "NLHAL103.ESP",
+      "PLHAL103.ESP",
+      "RLHAL103.ESP",
+      "SLHAL103.ESP",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C16GA1101",
+      "C16GA1104"
+    ],
+    "certificates": [
+      "JLHAL103.ESP-013",
+      "KLHAL103.ESP-001",
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "NLHAL103.ESP-001",
+      "PLHAL103.ESP-002",
+      "RLHAL103.ESP-018",
+      "SLHAL103.ESP-019",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3230,
+    "rated_power_kw_max": 3230,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD83V16",
+        "slug": "kohler-kd83v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD83V16-6CES",
+    "normalized_model": "KD83V166CES",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JLHAL103.ESP",
+      "KLHAL103.ESP",
+      "LLHAL103.ESP",
+      "MLHAL103.ESP",
+      "NLHAL103.ESP",
+      "PLHAL103.ESP",
+      "RLHAL103.ESP",
+      "SLHAL103.ESP",
+      "TLHAL103.ESP"
+    ],
+    "engine_codes": [
+      "C16GA1102",
+      "C16GA1105",
+      "C16GA1106",
+      "C16GA1107"
+    ],
+    "certificates": [
+      "JLHAL103.ESP-013",
+      "KLHAL103.ESP-001",
+      "LLHAL103.ESP-005-R01",
+      "MLHAL103.ESP-001",
+      "NLHAL103.ESP-001",
+      "PLHAL103.ESP-002",
+      "RLHAL103.ESP-018",
+      "SLHAL103.ESP-019",
+      "TLHAL103.ESP-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3490,
+    "rated_power_kw_max": 3490,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD83V16",
+        "slug": "kohler-kd83v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD83V16A-6AES",
+    "normalized_model": "KD83V16A6AES",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PLHAL103.E9P",
+      "RLHAL103.E9P",
+      "SLHAL103.E9P",
+      "TLHAL103.E9P"
+    ],
+    "engine_codes": [
+      "C16GA1150",
+      "C16GA1153"
+    ],
+    "certificates": [
+      "PLHAL103.E9P-020",
+      "RLHAL103.E9P-019",
+      "SLHAL103.E9P-020",
+      "TLHAL103.E9P-013"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3010,
+    "rated_power_kw_max": 3010,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD83V16",
+        "slug": "kohler-kd83v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD83V16A-6BES",
+    "normalized_model": "KD83V16A6BES",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PLHAL103.E9P",
+      "RLHAL103.E9P",
+      "SLHAL103.E9P",
+      "TLHAL103.E9P"
+    ],
+    "engine_codes": [
+      "C16GA1151",
+      "C16GA1154"
+    ],
+    "certificates": [
+      "PLHAL103.E9P-020",
+      "RLHAL103.E9P-019",
+      "SLHAL103.E9P-020",
+      "TLHAL103.E9P-013"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3230,
+    "rated_power_kw_max": 3230,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD83V16",
+        "slug": "kohler-kd83v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD83V16A-6CES",
+    "normalized_model": "KD83V16A6CES",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PLHAL103.E9P",
+      "RLHAL103.E9P",
+      "SLHAL103.E9P",
+      "TLHAL103.E9P"
+    ],
+    "engine_codes": [
+      "C16GA1152",
+      "C16GA1155"
+    ],
+    "certificates": [
+      "PLHAL103.E9P-020",
+      "RLHAL103.E9P-019",
+      "SLHAL103.E9P-020",
+      "TLHAL103.E9P-013"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3490,
+    "rated_power_kw_max": 3490,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD83V16",
+        "slug": "kohler-kd83v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "MAN Truck & Bus AG",
     "mapped_database_brands": [
       "MAN"
@@ -9684,6 +11936,1318 @@
         "model": "3TNV76-GGE",
         "slug": "yanmar-3tnv76-gge",
         "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9612 A7-04",
+    "normalized_model": "D9612A704",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V12GQ7102",
+      "V12GQ7104",
+      "V12GQ7105"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 844,
+    "rated_power_kw_max": 1114,
+    "displacements_l": [
+      26.967000000000002
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9612",
+        "slug": "liebherr-d9612",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9616 A7-04",
+    "normalized_model": "D9616A704",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V16GQ7101",
+      "V16GQ7102",
+      "V16GQ7105"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1054,
+    "rated_power_kw_max": 1391,
+    "displacements_l": [
+      35.956
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9616",
+        "slug": "liebherr-d9616",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9620 A7-04",
+    "normalized_model": "D9620A704",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V20GQ7101",
+      "V20GQ7102",
+      "V20GQ7103"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1253,
+    "rated_power_kw_max": 1654,
+    "displacements_l": [
+      44.946000000000005
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9620",
+        "slug": "liebherr-d9620",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9812",
+    "normalized_model": "D9812",
+    "first_model_year": 2023,
+    "latest_model_year": 2025,
+    "model_years": [
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "PLHAL103.VQS",
+      "RLHAL103.VQS",
+      "SLHAL103.VQS"
+    ],
+    "engine_codes": [
+      "C12VB1100",
+      "C12VB1101"
+    ],
+    "certificates": [
+      "PLHAL103.VQS-019",
+      "RLHAL103.VQS-021",
+      "SLHAL103.VQS-022"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 2016,
+    "rated_power_kw_max": 2250,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9812",
+        "slug": "liebherr-d9812",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9816",
+    "normalized_model": "D9816",
+    "first_model_year": 2023,
+    "latest_model_year": 2025,
+    "model_years": [
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "PLHAL103.VQS",
+      "RLHAL103.VQS",
+      "SLHAL103.VQS"
+    ],
+    "engine_codes": [
+      "C16VB1100",
+      "C16VB1101"
+    ],
+    "certificates": [
+      "PLHAL103.VQS-019",
+      "RLHAL103.VQS-021",
+      "SLHAL103.VQS-022"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 2700,
+    "rated_power_kw_max": 3000,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9816",
+        "slug": "liebherr-d9816",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD27V12-6CNC",
+    "normalized_model": "KD27V126CNC",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V12GQ7104"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 844,
+    "rated_power_kw_max": 844,
+    "displacements_l": [
+      26.967000000000002
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD27V12",
+        "slug": "kohler-kd27v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD27V12-6CNP",
+    "normalized_model": "KD27V126CNP",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V12GQ7102"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1114,
+    "rated_power_kw_max": 1114,
+    "displacements_l": [
+      26.967000000000002
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD27V12",
+        "slug": "kohler-kd27v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD27V12-6CNS",
+    "normalized_model": "KD27V126CNS",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V12GQ7105"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1114,
+    "rated_power_kw_max": 1114,
+    "displacements_l": [
+      26.967000000000002
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD27V12",
+        "slug": "kohler-kd27v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD36V16-6ANC",
+    "normalized_model": "KD36V166ANC",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V16GQ7102"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1054,
+    "rated_power_kw_max": 1054,
+    "displacements_l": [
+      35.956
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD36V16",
+        "slug": "kohler-kd36v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD36V16-6ANP",
+    "normalized_model": "KD36V166ANP",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V16GQ7101"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1391,
+    "rated_power_kw_max": 1391,
+    "displacements_l": [
+      35.956
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD36V16",
+        "slug": "kohler-kd36v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD36V16-6ANS",
+    "normalized_model": "KD36V166ANS",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V16GQ7105"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1391,
+    "rated_power_kw_max": 1391,
+    "displacements_l": [
+      35.956
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD36V16",
+        "slug": "kohler-kd36v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD45V20-6BNC",
+    "normalized_model": "KD45V206BNC",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V20GQ7102"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1253,
+    "rated_power_kw_max": 1253,
+    "displacements_l": [
+      44.946000000000005
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD45V20",
+        "slug": "kohler-kd45v20",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD45V20-6BNP",
+    "normalized_model": "KD45V206BNP",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V20GQ7101"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1654,
+    "rated_power_kw_max": 1654,
+    "displacements_l": [
+      44.946000000000005
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD45V20",
+        "slug": "kohler-kd45v20",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD45V20-6BNS",
+    "normalized_model": "KD45V206BNS",
+    "first_model_year": 2020,
+    "latest_model_year": 2025,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "LLHAL45.0VQC",
+      "MLHAL45.0VQC",
+      "NLHAL45.0VQC",
+      "PLHAL45.0VQC",
+      "RLHAL45.0VQC",
+      "SLHAL45.0VQC"
+    ],
+    "engine_codes": [
+      "V20GQ7103"
+    ],
+    "certificates": [
+      "LLHAL45.0VQC-001",
+      "MLHAL45.0VQC-011",
+      "NLHAL45.0VQC-009",
+      "PLHAL45.0VQC-021",
+      "RLHAL45.0VQC-022",
+      "SLHAL45.0VQC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1654,
+    "rated_power_kw_max": 1654,
+    "displacements_l": [
+      44.946000000000005
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD45V20",
+        "slug": "kohler-kd45v20",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD62V12-6CNC",
+    "normalized_model": "KD62V126CNC",
+    "first_model_year": 2021,
+    "latest_model_year": 2025,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "MLHAL103.VQC",
+      "NLHAL103.VQC",
+      "PLHAL103.VQC",
+      "RLHAL103.VQC",
+      "SLHAL103.VQC"
+    ],
+    "engine_codes": [
+      "C12GB1101"
+    ],
+    "certificates": [
+      "MLHAL103.VQC-012",
+      "NLHAL103.VQC-002",
+      "PLHAL103.VQC-004",
+      "RLHAL103.VQC-020",
+      "SLHAL103.VQC-021"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2045,
+    "rated_power_kw_max": 2045,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD62V12",
+        "slug": "kohler-kd62v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD62V12-6CNP",
+    "normalized_model": "KD62V126CNP",
+    "first_model_year": 2021,
+    "latest_model_year": 2025,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "MLHAL103.VQC",
+      "NLHAL103.VQC",
+      "PLHAL103.VQC",
+      "RLHAL103.VQC",
+      "SLHAL103.VQC"
+    ],
+    "engine_codes": [
+      "C12GB1100"
+    ],
+    "certificates": [
+      "MLHAL103.VQC-012",
+      "NLHAL103.VQC-002",
+      "PLHAL103.VQC-004",
+      "RLHAL103.VQC-020",
+      "SLHAL103.VQC-021"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2700,
+    "rated_power_kw_max": 2700,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD62V12",
+        "slug": "kohler-kd62v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD62V12-6CNS",
+    "normalized_model": "KD62V126CNS",
+    "first_model_year": 2021,
+    "latest_model_year": 2025,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "MLHAL103.VQC",
+      "NLHAL103.VQC",
+      "PLHAL103.VQC",
+      "RLHAL103.VQC",
+      "SLHAL103.VQC"
+    ],
+    "engine_codes": [
+      "C12GB1102"
+    ],
+    "certificates": [
+      "MLHAL103.VQC-012",
+      "NLHAL103.VQC-002",
+      "PLHAL103.VQC-004",
+      "RLHAL103.VQC-020",
+      "SLHAL103.VQC-021"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2700,
+    "rated_power_kw_max": 2700,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD62V12",
+        "slug": "kohler-kd62v12",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD83V16-6CNC",
+    "normalized_model": "KD83V166CNC",
+    "first_model_year": 2021,
+    "latest_model_year": 2025,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "MLHAL103.VQC",
+      "NLHAL103.VQC",
+      "PLHAL103.VQC",
+      "RLHAL103.VQC",
+      "SLHAL103.VQC"
+    ],
+    "engine_codes": [
+      "C16GB1101"
+    ],
+    "certificates": [
+      "MLHAL103.VQC-012",
+      "NLHAL103.VQC-002",
+      "PLHAL103.VQC-004",
+      "RLHAL103.VQC-020",
+      "SLHAL103.VQC-021"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2644,
+    "rated_power_kw_max": 2644,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD83V16",
+        "slug": "kohler-kd83v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD83V16-6CNP",
+    "normalized_model": "KD83V166CNP",
+    "first_model_year": 2021,
+    "latest_model_year": 2025,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "MLHAL103.VQC",
+      "NLHAL103.VQC",
+      "PLHAL103.VQC",
+      "RLHAL103.VQC",
+      "SLHAL103.VQC"
+    ],
+    "engine_codes": [
+      "C16GB1100"
+    ],
+    "certificates": [
+      "MLHAL103.VQC-012",
+      "NLHAL103.VQC-002",
+      "PLHAL103.VQC-004",
+      "RLHAL103.VQC-020",
+      "SLHAL103.VQC-021"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3173,
+    "rated_power_kw_max": 3490,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD83V16",
+        "slug": "kohler-kd83v16",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD83V16-6CNS",
+    "normalized_model": "KD83V166CNS",
+    "first_model_year": 2021,
+    "latest_model_year": 2025,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "MLHAL103.VQC",
+      "NLHAL103.VQC",
+      "PLHAL103.VQC",
+      "RLHAL103.VQC",
+      "SLHAL103.VQC"
+    ],
+    "engine_codes": [
+      "C16GB1102"
+    ],
+    "certificates": [
+      "MLHAL103.VQC-012",
+      "NLHAL103.VQC-002",
+      "PLHAL103.VQC-004",
+      "RLHAL103.VQC-020",
+      "SLHAL103.VQC-021"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3490,
+    "rated_power_kw_max": 3490,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "certification_trim_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD83V16",
+        "slug": "kohler-kd83v16",
+        "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
@@ -26874,235 +30438,7 @@
   {
     "manufacturer": "Liebherr Machines Bulle SA",
     "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9612 A7-02",
-    "normalized_model": "D9612A702",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V12G71001",
-      "V12G71002",
-      "V12G71003"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 891,
-    "rated_power_kw_max": 1114,
-    "displacements_l": [
-      26.967000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Liebherr",
-        "model": "D9612",
-        "slug": "liebherr-d9612",
-        "similarity": 0.714
-      }
-    ]
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9616 A7-02",
-    "normalized_model": "D9616A702",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V16G71001",
-      "V16G71002"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1391,
-    "rated_power_kw_max": 1450,
-    "displacements_l": [
-      35.956
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9620 A7-02",
-    "normalized_model": "D9620A702",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V20G71001",
-      "V20G71002",
-      "V20G71003",
-      "V20G71004"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1391,
-    "rated_power_kw_max": 1910,
-    "displacements_l": [
-      44.946000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
+      "Kohler",
       "Liebherr"
     ],
     "epa_model": "D976 A7-02",
@@ -27159,243 +30495,7 @@
   {
     "manufacturer": "Liebherr Machines Bulle SA",
     "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9812G",
-    "normalized_model": "D9812G",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HLHAL103.ESP",
-      "JLHAL103.ESP",
-      "KLHAL103.ESP",
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "MLHAL103.VQC",
-      "NLHAL103.ESP",
-      "NLHAL103.VQC",
-      "PLHAL103.ESP",
-      "PLHAL103.VQC",
-      "RLHAL103.ESP",
-      "RLHAL103.VQC",
-      "SLHAL103.ESP",
-      "SLHAL103.VQC",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C12GA1100",
-      "C12GA1101",
-      "C12GA1102",
-      "C12GA1103",
-      "C12GA1104",
-      "C12GA1105",
-      "C12GB1100",
-      "C12GB1101",
-      "C12GB1102"
-    ],
-    "certificates": [
-      "HLHAL103.ESP-008",
-      "JLHAL103.ESP-013",
-      "KLHAL103.ESP-001",
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "MLHAL103.VQC-012",
-      "NLHAL103.ESP-001",
-      "NLHAL103.VQC-002",
-      "PLHAL103.ESP-002",
-      "PLHAL103.VQC-004",
-      "RLHAL103.ESP-018",
-      "RLHAL103.VQC-020",
-      "SLHAL103.ESP-019",
-      "SLHAL103.VQC-021",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2045,
-    "rated_power_kw_max": 2700,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9816G",
-    "normalized_model": "D9816G",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JLHAL103.ESP",
-      "KLHAL103.ESP",
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "MLHAL103.VQC",
-      "NLHAL103.ESP",
-      "NLHAL103.VQC",
-      "PLHAL103.ESP",
-      "PLHAL103.VQC",
-      "RLHAL103.ESP",
-      "RLHAL103.VQC",
-      "SLHAL103.ESP",
-      "SLHAL103.VQC",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C16GA1100",
-      "C16GA1101",
-      "C16GA1102",
-      "C16GA1103",
-      "C16GA1104",
-      "C16GA1105",
-      "C16GA1106",
-      "C16GA1107",
-      "C16GB1100",
-      "C16GB1101",
-      "C16GB1102"
-    ],
-    "certificates": [
-      "JLHAL103.ESP-013",
-      "KLHAL103.ESP-001",
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "MLHAL103.VQC-012",
-      "NLHAL103.ESP-001",
-      "NLHAL103.VQC-002",
-      "PLHAL103.ESP-002",
-      "PLHAL103.VQC-004",
-      "RLHAL103.ESP-018",
-      "RLHAL103.VQC-020",
-      "SLHAL103.ESP-019",
-      "SLHAL103.VQC-021",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2644,
-    "rated_power_kw_max": 3490,
-    "displacements_l": [
-      82.742
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9820G",
-    "normalized_model": "D9820G",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "NLHAL103.ESP",
-      "PLHAL103.ESP",
-      "RLHAL103.ESP",
-      "SLHAL103.ESP",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C20GA1102",
-      "C20GA1103",
-      "C20GA1105"
-    ],
-    "certificates": [
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "NLHAL103.ESP-001",
-      "PLHAL103.ESP-002",
-      "RLHAL103.ESP-018",
-      "SLHAL103.ESP-019",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3758,
-    "rated_power_kw_max": 4290,
-    "displacements_l": [
-      103.427
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
+      "Kohler",
       "Liebherr"
     ],
     "epa_model": "D9912G",
@@ -27455,6 +30555,7 @@
   {
     "manufacturer": "Liebherr Machines Bulle SA",
     "mapped_database_brands": [
+      "Kohler",
       "Liebherr"
     ],
     "epa_model": "D9916G",
@@ -27511,127 +30612,7 @@
   {
     "manufacturer": "Liebherr Machines Bulle SA",
     "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD103V20-6AES",
-    "normalized_model": "KD103V206AES",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "NLHAL103.ESP",
-      "PLHAL103.ESP",
-      "RLHAL103.ESP",
-      "SLHAL103.ESP",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C20GA1103"
-    ],
-    "certificates": [
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "NLHAL103.ESP-001",
-      "PLHAL103.ESP-002",
-      "RLHAL103.ESP-018",
-      "SLHAL103.ESP-019",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3758,
-    "rated_power_kw_max": 3758,
-    "displacements_l": [
-      103.427
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD103V20-6CES",
-    "normalized_model": "KD103V206CES",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "NLHAL103.ESP",
-      "PLHAL103.ESP",
-      "RLHAL103.ESP",
-      "SLHAL103.ESP",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C20GA1102",
-      "C20GA1105"
-    ],
-    "certificates": [
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "NLHAL103.ESP-001",
-      "PLHAL103.ESP-002",
-      "RLHAL103.ESP-018",
-      "SLHAL103.ESP-019",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 4290,
-    "rated_power_kw_max": 4290,
-    "displacements_l": [
-      103.427
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
+      "Kohler",
       "Liebherr"
     ],
     "epa_model": "KD18L06-6AES",
@@ -27686,6 +30667,7 @@
   {
     "manufacturer": "Liebherr Machines Bulle SA",
     "mapped_database_brands": [
+      "Kohler",
       "Liebherr"
     ],
     "epa_model": "KD18L06-6BES",
@@ -27740,6 +30722,7 @@
   {
     "manufacturer": "Liebherr Machines Bulle SA",
     "mapped_database_brands": [
+      "Kohler",
       "Liebherr"
     ],
     "epa_model": "KD18L06-6CES",
@@ -27786,1388 +30769,6 @@
     "rated_power_kw_max": 820,
     "displacements_l": [
       17.96
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD27V12-6AES",
-    "normalized_model": "KD27V126AES",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V12G71001"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 891,
-    "rated_power_kw_max": 891,
-    "displacements_l": [
-      26.967000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD27V12-6BES",
-    "normalized_model": "KD27V126BES",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V12G71002"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1019,
-    "rated_power_kw_max": 1019,
-    "displacements_l": [
-      26.967000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD27V12-6CES",
-    "normalized_model": "KD27V126CES",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V12G71003"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1114,
-    "rated_power_kw_max": 1114,
-    "displacements_l": [
-      26.967000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD36V16-6AES",
-    "normalized_model": "KD36V166AES",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V16G71001"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1391,
-    "rated_power_kw_max": 1391,
-    "displacements_l": [
-      35.956
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD36V16-6BES",
-    "normalized_model": "KD36V166BES",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V16G71002"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1450,
-    "rated_power_kw_max": 1450,
-    "displacements_l": [
-      35.956
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD45V20-6AES",
-    "normalized_model": "KD45V206AES",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V20G71001"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1391,
-    "rated_power_kw_max": 1391,
-    "displacements_l": [
-      44.946000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD45V20-6BES",
-    "normalized_model": "KD45V206BES",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V20G71002"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1654,
-    "rated_power_kw_max": 1654,
-    "displacements_l": [
-      44.946000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD45V20-6CES",
-    "normalized_model": "KD45V206CES",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V20G71003"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1755,
-    "rated_power_kw_max": 1755,
-    "displacements_l": [
-      44.946000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD45V20-6DES",
-    "normalized_model": "KD45V206DES",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GLHAL45.0ESP",
-      "HLHAL45.0ESP",
-      "JLHAL45.0ESP",
-      "KLHAL45.0ESP",
-      "LLHAL45.0ESP",
-      "MLHAL45.0ESP",
-      "NLHAL45.0ESP",
-      "PLHAL45.0ESP",
-      "RLHAL45.0ESP",
-      "SLHAL45.0ESP",
-      "TLHAL45.0ESP"
-    ],
-    "engine_codes": [
-      "V20G71004"
-    ],
-    "certificates": [
-      "GLHAL45.0ESP-008",
-      "HLHAL45.0ESP-001",
-      "JLHAL45.0ESP-005",
-      "KLHAL45.0ESP-007",
-      "LLHAL45.0ESP-002",
-      "MLHAL45.0ESP-002",
-      "NLHAL45.0ESP-006",
-      "PLHAL45.0ESP-018",
-      "RLHAL45.0ESP-011",
-      "SLHAL45.0ESP-002",
-      "TLHAL45.0ESP-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1910,
-    "rated_power_kw_max": 1910,
-    "displacements_l": [
-      44.946000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD62V12-6AES",
-    "normalized_model": "KD62V126AES",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HLHAL103.ESP",
-      "JLHAL103.ESP",
-      "KLHAL103.ESP",
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "NLHAL103.ESP",
-      "PLHAL103.ESP",
-      "RLHAL103.ESP",
-      "SLHAL103.ESP",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C12GA1100",
-      "C12GA1103"
-    ],
-    "certificates": [
-      "HLHAL103.ESP-008",
-      "JLHAL103.ESP-013",
-      "KLHAL103.ESP-001",
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "NLHAL103.ESP-001",
-      "PLHAL103.ESP-002",
-      "RLHAL103.ESP-018",
-      "SLHAL103.ESP-019",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2180,
-    "rated_power_kw_max": 2180,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD62V12-6BES",
-    "normalized_model": "KD62V126BES",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HLHAL103.ESP",
-      "JLHAL103.ESP",
-      "KLHAL103.ESP",
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "NLHAL103.ESP",
-      "PLHAL103.ESP",
-      "RLHAL103.ESP",
-      "SLHAL103.ESP",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C12GA1101",
-      "C12GA1104"
-    ],
-    "certificates": [
-      "HLHAL103.ESP-008",
-      "JLHAL103.ESP-013",
-      "KLHAL103.ESP-001",
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "NLHAL103.ESP-001",
-      "PLHAL103.ESP-002",
-      "RLHAL103.ESP-018",
-      "SLHAL103.ESP-019",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2500,
-    "rated_power_kw_max": 2500,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD62V12-6CES",
-    "normalized_model": "KD62V126CES",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HLHAL103.ESP",
-      "JLHAL103.ESP",
-      "KLHAL103.ESP",
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "NLHAL103.ESP",
-      "PLHAL103.ESP",
-      "RLHAL103.ESP",
-      "SLHAL103.ESP",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C12GA1102",
-      "C12GA1105"
-    ],
-    "certificates": [
-      "HLHAL103.ESP-008",
-      "JLHAL103.ESP-013",
-      "KLHAL103.ESP-001",
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "NLHAL103.ESP-001",
-      "PLHAL103.ESP-002",
-      "RLHAL103.ESP-018",
-      "SLHAL103.ESP-019",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2700,
-    "rated_power_kw_max": 2700,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD62V12A-6AES",
-    "normalized_model": "KD62V12A6AES",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NLHAL103.E9P",
-      "PLHAL103.E9P",
-      "RLHAL103.E9P",
-      "SLHAL103.E9P",
-      "TLHAL103.E9P"
-    ],
-    "engine_codes": [
-      "C12GA1150",
-      "C12GA1153"
-    ],
-    "certificates": [
-      "NLHAL103.E9P-021",
-      "PLHAL103.E9P-020",
-      "RLHAL103.E9P-019",
-      "SLHAL103.E9P-020",
-      "TLHAL103.E9P-013"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2180,
-    "rated_power_kw_max": 2180,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD62V12A-6BES",
-    "normalized_model": "KD62V12A6BES",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NLHAL103.E9P",
-      "PLHAL103.E9P",
-      "RLHAL103.E9P",
-      "SLHAL103.E9P",
-      "TLHAL103.E9P"
-    ],
-    "engine_codes": [
-      "C12GA1151",
-      "C12GA1154"
-    ],
-    "certificates": [
-      "NLHAL103.E9P-021",
-      "PLHAL103.E9P-020",
-      "RLHAL103.E9P-019",
-      "SLHAL103.E9P-020",
-      "TLHAL103.E9P-013"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2500,
-    "rated_power_kw_max": 2500,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD62V12A-6CES",
-    "normalized_model": "KD62V12A6CES",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NLHAL103.E9P",
-      "PLHAL103.E9P",
-      "RLHAL103.E9P",
-      "SLHAL103.E9P",
-      "TLHAL103.E9P"
-    ],
-    "engine_codes": [
-      "C12GA1152",
-      "C12GA1155"
-    ],
-    "certificates": [
-      "NLHAL103.E9P-021",
-      "PLHAL103.E9P-020",
-      "RLHAL103.E9P-019",
-      "SLHAL103.E9P-020",
-      "TLHAL103.E9P-013"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2700,
-    "rated_power_kw_max": 2700,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD83V16-6AES",
-    "normalized_model": "KD83V166AES",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JLHAL103.ESP",
-      "KLHAL103.ESP",
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "NLHAL103.ESP",
-      "PLHAL103.ESP",
-      "RLHAL103.ESP",
-      "SLHAL103.ESP",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C16GA1100",
-      "C16GA1103"
-    ],
-    "certificates": [
-      "JLHAL103.ESP-013",
-      "KLHAL103.ESP-001",
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "NLHAL103.ESP-001",
-      "PLHAL103.ESP-002",
-      "RLHAL103.ESP-018",
-      "SLHAL103.ESP-019",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3010,
-    "rated_power_kw_max": 3010,
-    "displacements_l": [
-      82.742
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD83V16-6BES",
-    "normalized_model": "KD83V166BES",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JLHAL103.ESP",
-      "KLHAL103.ESP",
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "NLHAL103.ESP",
-      "PLHAL103.ESP",
-      "RLHAL103.ESP",
-      "SLHAL103.ESP",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C16GA1101",
-      "C16GA1104"
-    ],
-    "certificates": [
-      "JLHAL103.ESP-013",
-      "KLHAL103.ESP-001",
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "NLHAL103.ESP-001",
-      "PLHAL103.ESP-002",
-      "RLHAL103.ESP-018",
-      "SLHAL103.ESP-019",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3230,
-    "rated_power_kw_max": 3230,
-    "displacements_l": [
-      82.742
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD83V16-6CES",
-    "normalized_model": "KD83V166CES",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JLHAL103.ESP",
-      "KLHAL103.ESP",
-      "LLHAL103.ESP",
-      "MLHAL103.ESP",
-      "NLHAL103.ESP",
-      "PLHAL103.ESP",
-      "RLHAL103.ESP",
-      "SLHAL103.ESP",
-      "TLHAL103.ESP"
-    ],
-    "engine_codes": [
-      "C16GA1102",
-      "C16GA1105",
-      "C16GA1106",
-      "C16GA1107"
-    ],
-    "certificates": [
-      "JLHAL103.ESP-013",
-      "KLHAL103.ESP-001",
-      "LLHAL103.ESP-005-R01",
-      "MLHAL103.ESP-001",
-      "NLHAL103.ESP-001",
-      "PLHAL103.ESP-002",
-      "RLHAL103.ESP-018",
-      "SLHAL103.ESP-019",
-      "TLHAL103.ESP-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3490,
-    "rated_power_kw_max": 3490,
-    "displacements_l": [
-      82.742
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD83V16A-6AES",
-    "normalized_model": "KD83V16A6AES",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PLHAL103.E9P",
-      "RLHAL103.E9P",
-      "SLHAL103.E9P",
-      "TLHAL103.E9P"
-    ],
-    "engine_codes": [
-      "C16GA1150",
-      "C16GA1153"
-    ],
-    "certificates": [
-      "PLHAL103.E9P-020",
-      "RLHAL103.E9P-019",
-      "SLHAL103.E9P-020",
-      "TLHAL103.E9P-013"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3010,
-    "rated_power_kw_max": 3010,
-    "displacements_l": [
-      82.742
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD83V16A-6BES",
-    "normalized_model": "KD83V16A6BES",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PLHAL103.E9P",
-      "RLHAL103.E9P",
-      "SLHAL103.E9P",
-      "TLHAL103.E9P"
-    ],
-    "engine_codes": [
-      "C16GA1151",
-      "C16GA1154"
-    ],
-    "certificates": [
-      "PLHAL103.E9P-020",
-      "RLHAL103.E9P-019",
-      "SLHAL103.E9P-020",
-      "TLHAL103.E9P-013"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3230,
-    "rated_power_kw_max": 3230,
-    "displacements_l": [
-      82.742
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD83V16A-6CES",
-    "normalized_model": "KD83V16A6CES",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PLHAL103.E9P",
-      "RLHAL103.E9P",
-      "SLHAL103.E9P",
-      "TLHAL103.E9P"
-    ],
-    "engine_codes": [
-      "C16GA1152",
-      "C16GA1155"
-    ],
-    "certificates": [
-      "PLHAL103.E9P-020",
-      "RLHAL103.E9P-019",
-      "SLHAL103.E9P-020",
-      "TLHAL103.E9P-013"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3490,
-    "rated_power_kw_max": 3490,
-    "displacements_l": [
-      82.742
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -37292,1125 +38893,6 @@
     "rated_power_kw_max": 15,
     "displacements_l": [
       1.2610000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9612 A7-04",
-    "normalized_model": "D9612A704",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V12GQ7102",
-      "V12GQ7104",
-      "V12GQ7105"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 844,
-    "rated_power_kw_max": 1114,
-    "displacements_l": [
-      26.967000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Liebherr",
-        "model": "D9612",
-        "slug": "liebherr-d9612",
-        "similarity": 0.714
-      }
-    ]
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9616 A7-04",
-    "normalized_model": "D9616A704",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V16GQ7101",
-      "V16GQ7102",
-      "V16GQ7105"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1054,
-    "rated_power_kw_max": 1391,
-    "displacements_l": [
-      35.956
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9620 A7-04",
-    "normalized_model": "D9620A704",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V20GQ7101",
-      "V20GQ7102",
-      "V20GQ7103"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1253,
-    "rated_power_kw_max": 1654,
-    "displacements_l": [
-      44.946000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9812",
-    "normalized_model": "D9812",
-    "first_model_year": 2023,
-    "latest_model_year": 2025,
-    "model_years": [
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "PLHAL103.VQS",
-      "RLHAL103.VQS",
-      "SLHAL103.VQS"
-    ],
-    "engine_codes": [
-      "C12VB1100",
-      "C12VB1101"
-    ],
-    "certificates": [
-      "PLHAL103.VQS-019",
-      "RLHAL103.VQS-021",
-      "SLHAL103.VQS-022"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 2016,
-    "rated_power_kw_max": 2250,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "D9816",
-    "normalized_model": "D9816",
-    "first_model_year": 2023,
-    "latest_model_year": 2025,
-    "model_years": [
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "PLHAL103.VQS",
-      "RLHAL103.VQS",
-      "SLHAL103.VQS"
-    ],
-    "engine_codes": [
-      "C16VB1100",
-      "C16VB1101"
-    ],
-    "certificates": [
-      "PLHAL103.VQS-019",
-      "RLHAL103.VQS-021",
-      "SLHAL103.VQS-022"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 2700,
-    "rated_power_kw_max": 3000,
-    "displacements_l": [
-      82.742
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD27V12-6CNC",
-    "normalized_model": "KD27V126CNC",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V12GQ7104"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 844,
-    "rated_power_kw_max": 844,
-    "displacements_l": [
-      26.967000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD27V12-6CNP",
-    "normalized_model": "KD27V126CNP",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V12GQ7102"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1114,
-    "rated_power_kw_max": 1114,
-    "displacements_l": [
-      26.967000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD27V12-6CNS",
-    "normalized_model": "KD27V126CNS",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V12GQ7105"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1114,
-    "rated_power_kw_max": 1114,
-    "displacements_l": [
-      26.967000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD36V16-6ANC",
-    "normalized_model": "KD36V166ANC",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V16GQ7102"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1054,
-    "rated_power_kw_max": 1054,
-    "displacements_l": [
-      35.956
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD36V16-6ANP",
-    "normalized_model": "KD36V166ANP",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V16GQ7101"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1391,
-    "rated_power_kw_max": 1391,
-    "displacements_l": [
-      35.956
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD36V16-6ANS",
-    "normalized_model": "KD36V166ANS",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V16GQ7105"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1391,
-    "rated_power_kw_max": 1391,
-    "displacements_l": [
-      35.956
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD45V20-6BNC",
-    "normalized_model": "KD45V206BNC",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V20GQ7102"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1253,
-    "rated_power_kw_max": 1253,
-    "displacements_l": [
-      44.946000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD45V20-6BNP",
-    "normalized_model": "KD45V206BNP",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V20GQ7101"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1654,
-    "rated_power_kw_max": 1654,
-    "displacements_l": [
-      44.946000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD45V20-6BNS",
-    "normalized_model": "KD45V206BNS",
-    "first_model_year": 2020,
-    "latest_model_year": 2025,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "LLHAL45.0VQC",
-      "MLHAL45.0VQC",
-      "NLHAL45.0VQC",
-      "PLHAL45.0VQC",
-      "RLHAL45.0VQC",
-      "SLHAL45.0VQC"
-    ],
-    "engine_codes": [
-      "V20GQ7103"
-    ],
-    "certificates": [
-      "LLHAL45.0VQC-001",
-      "MLHAL45.0VQC-011",
-      "NLHAL45.0VQC-009",
-      "PLHAL45.0VQC-021",
-      "RLHAL45.0VQC-022",
-      "SLHAL45.0VQC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1654,
-    "rated_power_kw_max": 1654,
-    "displacements_l": [
-      44.946000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD62V12-6CNC",
-    "normalized_model": "KD62V126CNC",
-    "first_model_year": 2021,
-    "latest_model_year": 2025,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "MLHAL103.VQC",
-      "NLHAL103.VQC",
-      "PLHAL103.VQC",
-      "RLHAL103.VQC",
-      "SLHAL103.VQC"
-    ],
-    "engine_codes": [
-      "C12GB1101"
-    ],
-    "certificates": [
-      "MLHAL103.VQC-012",
-      "NLHAL103.VQC-002",
-      "PLHAL103.VQC-004",
-      "RLHAL103.VQC-020",
-      "SLHAL103.VQC-021"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2045,
-    "rated_power_kw_max": 2045,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD62V12-6CNP",
-    "normalized_model": "KD62V126CNP",
-    "first_model_year": 2021,
-    "latest_model_year": 2025,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "MLHAL103.VQC",
-      "NLHAL103.VQC",
-      "PLHAL103.VQC",
-      "RLHAL103.VQC",
-      "SLHAL103.VQC"
-    ],
-    "engine_codes": [
-      "C12GB1100"
-    ],
-    "certificates": [
-      "MLHAL103.VQC-012",
-      "NLHAL103.VQC-002",
-      "PLHAL103.VQC-004",
-      "RLHAL103.VQC-020",
-      "SLHAL103.VQC-021"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2700,
-    "rated_power_kw_max": 2700,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD62V12-6CNS",
-    "normalized_model": "KD62V126CNS",
-    "first_model_year": 2021,
-    "latest_model_year": 2025,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "MLHAL103.VQC",
-      "NLHAL103.VQC",
-      "PLHAL103.VQC",
-      "RLHAL103.VQC",
-      "SLHAL103.VQC"
-    ],
-    "engine_codes": [
-      "C12GB1102"
-    ],
-    "certificates": [
-      "MLHAL103.VQC-012",
-      "NLHAL103.VQC-002",
-      "PLHAL103.VQC-004",
-      "RLHAL103.VQC-020",
-      "SLHAL103.VQC-021"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2700,
-    "rated_power_kw_max": 2700,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD83V16-6CNC",
-    "normalized_model": "KD83V166CNC",
-    "first_model_year": 2021,
-    "latest_model_year": 2025,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "MLHAL103.VQC",
-      "NLHAL103.VQC",
-      "PLHAL103.VQC",
-      "RLHAL103.VQC",
-      "SLHAL103.VQC"
-    ],
-    "engine_codes": [
-      "C16GB1101"
-    ],
-    "certificates": [
-      "MLHAL103.VQC-012",
-      "NLHAL103.VQC-002",
-      "PLHAL103.VQC-004",
-      "RLHAL103.VQC-020",
-      "SLHAL103.VQC-021"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2644,
-    "rated_power_kw_max": 2644,
-    "displacements_l": [
-      82.742
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD83V16-6CNP",
-    "normalized_model": "KD83V166CNP",
-    "first_model_year": 2021,
-    "latest_model_year": 2025,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "MLHAL103.VQC",
-      "NLHAL103.VQC",
-      "PLHAL103.VQC",
-      "RLHAL103.VQC",
-      "SLHAL103.VQC"
-    ],
-    "engine_codes": [
-      "C16GB1100"
-    ],
-    "certificates": [
-      "MLHAL103.VQC-012",
-      "NLHAL103.VQC-002",
-      "PLHAL103.VQC-004",
-      "RLHAL103.VQC-020",
-      "SLHAL103.VQC-021"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3173,
-    "rated_power_kw_max": 3490,
-    "displacements_l": [
-      82.742
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Liebherr"
-    ],
-    "epa_model": "KD83V16-6CNS",
-    "normalized_model": "KD83V166CNS",
-    "first_model_year": 2021,
-    "latest_model_year": 2025,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "MLHAL103.VQC",
-      "NLHAL103.VQC",
-      "PLHAL103.VQC",
-      "RLHAL103.VQC",
-      "SLHAL103.VQC"
-    ],
-    "engine_codes": [
-      "C16GB1102"
-    ],
-    "certificates": [
-      "MLHAL103.VQC-012",
-      "NLHAL103.VQC-002",
-      "PLHAL103.VQC-004",
-      "RLHAL103.VQC-020",
-      "SLHAL103.VQC-021"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3490,
-    "rated_power_kw_max": 3490,
-    "displacements_l": [
-      82.742
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -56893,6 +57375,7 @@
   {
     "manufacturer": "Liebherr Machines Bulle SA",
     "mapped_database_brands": [
+      "Kohler",
       "Liebherr"
     ],
     "epa_model": "D934 A7 SCR",
