@@ -20,24 +20,29 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **353**
+- Exact manufacturer/brand matches: **364**
 - Matches after removing a redundant database brand prefix: **34**
 - Slash-suffixed certification trims represented by a verified base model: **20**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **219**
+- Reviewed certification aliases: **223**
 - Fully represented certification groups: **8**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **295**
+- Exact matches whose database page uses 1800 as its primary RPM: **306**
 - Exact model under another database brand: **2**
-- Not represented after reviewed matching rules: **235**
+- Not represented after reviewed matching rules: **220**
 - Models from mapped manufacturers: **964**
-- Represented coverage within mapped manufacturers: **76.0%**
-- Unmatched models with a 2024+ certification: **124**
+- Represented coverage within mapped manufacturers: **77.6%**
+- Unmatched models with a 2024+ certification: **113**
 - Models with at least one constant-speed certification: **716**
 - Represented constant-speed certification coverage: **716 of 716 (100.0%)**
 - Unrepresented constant-speed models: **0**
 - Constant-speed models under an unmapped manufacturer: **0**
 - Variable-speed-only models retained for reference: **230**
+- Models with a blank EPA operation field: **22**
+- Blank-operation models limited to 1500/1800 RPM: **14**
+- Represented blank-operation fixed-speed models: **14**
+- Unrepresented blank-operation fixed-speed candidates (only 1500/1800 RPM): **0**
+- Other blank-operation models with mixed speeds or no mapped brand: **8**
 - Generator-priority review queue (2024+, mapped brand, constant speed): **0**
 - Next-tier review queue (2020–2023, mapped brand, constant speed): **0**
 - Legacy 2019 review queue (mapped brand, constant speed): **0**
@@ -64,7 +69,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 - `Kubota Corporation` EPA model names use certification suffixes such as `-EF` and `-ET`, while Kubota's public generator catalog uses commercial `E4-BG` and `E3-BG` names. Sixteen reviewed aliases require matching displacement, aspiration, emissions tier and Kubota-published 1800 RPM output.
 - `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append the shared Caterpillar base-engine name in parentheses. Seventeen reviewed aliases map those records only to Perkins commercial pages with matching family, displacement, emissions tier and manufacturer-published 1800 RPM power node.
 - `Rolls-Royce Solutions America Inc` is represented under the `MTU` database brand. Exact 60 Hz commercial model pages retain MTU's `S`, `3B` and `3D` application suffixes and use the latest 1800 RPM power node in the EPA workbook. Fifteen reviewed aliases cover EPA certification names whose only difference is the presence or absence of the verified `3B` or `3D` suffix, supplemented by public MTU gendrive specifications and operating instructions where available.
-- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration names that differ from its TNV generator product names. Seventeen reviewed aliases map only where displacement, aspiration, emissions tier and the certified power node agree with Yanmar's official generator and industrial-engine documentation.
+- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration names that differ from its TNV generator product names. Twenty reviewed aliases map only where displacement, aspiration, emissions tier and the certified power node agree with Yanmar's official generator and industrial-engine documentation.
 
 ## Generator-Priority Gaps by Brand
 
@@ -79,19 +84,19 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Rolls-Royce Solutions America Inc | MTU | 155 | 42 | 34 | 0 | 0 | 70 | 0 | 0 | 9 | 0 |
 | Cummins Inc. | Cummins | 80 | 48 | 0 | 0 | 0 | 6 | 14 | 0 | 12 | 1 |
 | Perkins Engines Co Ltd | Perkins | 79 | 31 | 0 | 0 | 0 | 21 | 10 | 2 | 15 | 2 |
-| FPT Industrial S.p.A. | FPT | 68 | 12 | 0 | 0 | 0 | 12 | 0 | 0 | 44 | 1 |
+| FPT Industrial S.p.A. | FPT | 68 | 18 | 0 | 0 | 0 | 12 | 0 | 0 | 38 | 0 |
 | IHI Agri-Tech Corporation | Perkins, Shibaura | 58 | 4 | 0 | 0 | 0 | 40 | 0 | 0 | 13 | 2 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 7 | 0 | 0 | 44 | 4 | 0 | 0 | 1 | 0 |
 | Discovery Energy, LLC. | Kohler | 48 | 5 | 0 | 14 | 0 | 4 | 0 | 0 | 25 | 0 |
-| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 8 | 0 | 0 | 0 | 26 | 5 | 0 | 3 | 0 |
-| Kubota Corporation | Kubota | 37 | 11 | 0 | 0 | 0 | 21 | 0 | 0 | 5 | 1 |
+| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 8 | 0 | 0 | 0 | 29 | 5 | 0 | 0 | 0 |
+| Kubota Corporation | Kubota | 37 | 12 | 0 | 0 | 0 | 22 | 0 | 0 | 3 | 2 |
 | Caterpillar Inc. | Caterpillar | 35 | 22 | 0 | 0 | 0 | 0 | 11 | 0 | 2 | 0 |
 | Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 22 | 0 | 0 | 0 | 1 | 0 | 0 | 6 | 1 |
 | AB Volvo Penta | Volvo Penta | 28 | 23 | 0 | 0 | 0 | 2 | 0 | 0 | 3 | 3 |
 | Deutz AG | Deutz | 28 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 17 | 0 |
 | HD Construction Equipment Co., Ltd. | Hyundai | 26 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 16 | 2 |
 | Isuzu Motors Limited | Isuzu | 24 | 14 | 0 | 0 | 0 | 3 | 0 | 0 | 7 | 0 |
-| Daedong Corporation | Daedong | 19 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | 0 |
+| Daedong Corporation | Daedong | 19 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 2 |
 | Deere & Company | John Deere | 19 | 10 | 0 | 0 | 0 | 1 | 5 | 0 | 3 | 0 |
 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | Mitsubishi | 19 | 10 | 0 | 0 | 0 | 6 | 0 | 0 | 3 | 0 |
 | Scania CV AB | Scania | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | 0 |
@@ -126,6 +131,14 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 
 | Latest year | Manufacturer | EPA model | Tier | Power kW | Probable database model |
 |---:|---|---|---|---:|---|
+| - | None | None | - | - | - |
+
+## Blank-Operation Fixed-Speed Review
+
+EPA leaves `Engine Operation` blank for these unmatched identities, but every listed speed for the exact model is 1500 or 1800 RPM. They remain generator-drive candidates until an EPA certificate or manufacturer document confirms the application and the correct commercial model mapping.
+
+| Latest year | Manufacturer | EPA model | Speeds RPM | Tier | Power kW |
+|---:|---|---|---|---|---:|
 | - | None | None | - | - | - |
 
 ## Interpretation

@@ -400,6 +400,7 @@ CERTIFICATION_ALIASES = {
     ("Kubota Corporation", "D1305BGET"): ("Kubota", "D1305-E4BG1-CHN-1"),
     ("Kubota Corporation", "D1503MBGET"): ("Kubota", "D1503-M-E4-BG"),
     ("Kubota Corporation", "V1505BGET"): ("Kubota", "V1505-E4BG1-SAE-2X"),
+    ("Kubota Corporation", "V2203LBDIEF"): ("Kubota", "V2203L-DI-EF"),
     ("Perkins Engines Co Ltd", "C1P1"): ("Perkins", "S773L-F"),
     ("Perkins Engines Co Ltd", "C1P5"): ("Perkins", "403F-15"),
     ("Perkins Engines Co Ltd", "C0P5"): ("Perkins", "402F-05(C0.5)"),
@@ -425,9 +426,15 @@ CERTIFICATION_ALIASES = {
     ("Yanmar Power Technology Co., Ltd.", "3TNGA"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TNGP"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TNV88CL"): ("Yanmar", "3TNV88F-UG6GE"),
+    ("Yanmar Power Technology Co., Ltd.", "3GNGAG"): ("Yanmar", "3TNV82A-CL"),
     ("Yanmar Power Technology Co., Ltd.", "3CB1G"): ("Yanmar", "3TNV76-CL"),
+    ("Yanmar Power Technology Co., Ltd.", "3JTGAG"): ("Yanmar", "3JTGP1"),
     ("Yanmar Power Technology Co., Ltd.", "3JTGA"): ("Yanmar", "3JTGP1"),
     ("Yanmar Power Technology Co., Ltd.", "3JTGAK"): ("Yanmar", "3JTGP1"),
+    ("Yanmar Power Technology Co., Ltd.", "3KNGAG"): (
+        "Yanmar",
+        "3TNV88F-UG6GE",
+    ),
     ("Yanmar Power Technology Co., Ltd.", "3KNGA"): (
         "Yanmar",
         "3TNV88F-UG6GE",
@@ -571,14 +578,11 @@ def read_1800_rpm_models(
     headers = [cell.value for cell in sheet[2]]
     index = {header: position for position, header in enumerate(headers)}
     models: dict[tuple[str, str], dict] = {}
+    model_speeds: dict[tuple[str, str], set[float]] = defaultdict(set)
     source_rows = 0
 
     for row in sheet.iter_rows(min_row=3, values_only=True):
         rated_speed = row[index["Rated Speed (RPM)"]]
-        if not isinstance(rated_speed, (int, float)) or abs(rated_speed - 1800) > 0.01:
-            continue
-
-        source_rows += 1
         year = int(row[index["Model Year"]])
         family = str(row[index["Engine Family"]])
         family_info = families[(year, family)]
@@ -586,6 +590,13 @@ def read_1800_rpm_models(
         display_model = str(row[index["Engine Model"]]).strip()
         normalized_model = normalize_model(display_model)
         key = (manufacturer, normalized_model)
+        if isinstance(rated_speed, (int, float)):
+            model_speeds[key].add(rated_speed)
+
+        if not isinstance(rated_speed, (int, float)) or abs(rated_speed - 1800) > 0.01:
+            continue
+
+        source_rows += 1
 
         if key not in models:
             models[key] = {
@@ -615,6 +626,9 @@ def read_1800_rpm_models(
         record["engine_operations"].add(family_info["engine_operation"])
         record["rated_powers_kw"].add(row[index["Rated Power (KW)"]])
         record["displacements_l"].add(row[index["Total Displacement"]])
+
+    for key, record in models.items():
+        record["all_rated_speeds_rpm"] = model_speeds[key]
 
     return models, source_rows
 
@@ -843,6 +857,9 @@ def match_models(models: dict, engines: list[dict]) -> list[dict]:
                 ),
                 "fuels": sorted_values(record["fuels"]),
                 "engine_operations": sorted_values(record["engine_operations"]),
+                "all_rated_speeds_rpm": sorted_values(
+                    record["all_rated_speeds_rpm"]
+                ),
                 "rated_power_kw_min": powers[0] if powers else None,
                 "rated_power_kw_max": powers[-1] if powers else None,
                 "displacements_l": displacements,
@@ -923,6 +940,33 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         for result in results
         if "Constant Speed" not in result["engine_operations"]
         and "Variable Speed" in result["engine_operations"]
+    ]
+    blank_operation_models = [
+        result
+        for result in results
+        if not result["engine_operations"]
+    ]
+    blank_operation_fixed_speed_models = [
+        result
+        for result in blank_operation_models
+        if result["mapped_database_brands"]
+        and result["all_rated_speeds_rpm"]
+        and set(result["all_rated_speeds_rpm"]).issubset({1500, 1800})
+    ]
+    represented_blank_operation_fixed_speed_models = [
+        result
+        for result in blank_operation_fixed_speed_models
+        if result["match_status"] in REPRESENTED_STATUSES
+    ]
+    blank_operation_fixed_speed_candidates = [
+        result
+        for result in blank_operation_fixed_speed_models
+        if result["match_status"] not in REPRESENTED_STATUSES
+    ]
+    blank_operation_mixed_speed_models = [
+        result
+        for result in blank_operation_models
+        if result not in blank_operation_fixed_speed_models
     ]
     generator_priority = [
         result
@@ -1068,6 +1112,15 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Constant-speed models under an unmapped manufacturer: "
         f"**{len(unmapped_constant_speed_models):,}**",
         f"- Variable-speed-only models retained for reference: **{len(variable_speed_only_models):,}**",
+        f"- Models with a blank EPA operation field: **{len(blank_operation_models):,}**",
+        f"- Blank-operation models limited to 1500/1800 RPM: "
+        f"**{len(blank_operation_fixed_speed_models):,}**",
+        f"- Represented blank-operation fixed-speed models: "
+        f"**{len(represented_blank_operation_fixed_speed_models):,}**",
+        f"- Unrepresented blank-operation fixed-speed candidates "
+        f"(only 1500/1800 RPM): **{len(blank_operation_fixed_speed_candidates):,}**",
+        f"- Other blank-operation models with mixed speeds or no mapped brand: "
+        f"**{len(blank_operation_mixed_speed_models):,}**",
         f"- Generator-priority review queue (2024+, mapped brand, constant speed): **{len(generator_priority):,}**",
         f"- Next-tier review queue (2020–2023, mapped brand, constant speed): **{len(next_tier_priority):,}**",
         f"- Legacy 2019 review queue (mapped brand, constant speed): **{len(legacy_2019_priority):,}**",
@@ -1125,7 +1178,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "`3B` or `3D` suffix, supplemented by public MTU gendrive specifications and operating "
         "instructions where available.",
         "- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration "
-        "names that differ from its TNV generator product names. Seventeen reviewed aliases map only "
+        "names that differ from its TNV generator product names. Twenty reviewed aliases map only "
         "where displacement, aspiration, emissions tier and the certified power node agree with "
         "Yanmar's official generator and industrial-engine documentation.",
         "",
@@ -1208,6 +1261,42 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
             f"{result['epa_model']} | {tier} | {power} | {probable} |"
         )
     if not generator_priority:
+        lines.append("| - | None | None | - | - | - |")
+
+    lines.extend(
+        [
+            "",
+            "## Blank-Operation Fixed-Speed Review",
+            "",
+            "EPA leaves `Engine Operation` blank for these unmatched identities, but every listed "
+            "speed for the exact model is 1500 or 1800 RPM. They remain generator-drive candidates "
+            "until an EPA certificate or manufacturer document confirms the application and the "
+            "correct commercial model mapping.",
+            "",
+            "| Latest year | Manufacturer | EPA model | Speeds RPM | Tier | Power kW |",
+            "|---:|---|---|---|---|---:|",
+        ]
+    )
+    for result in sorted(
+        blank_operation_fixed_speed_candidates,
+        key=lambda item: (
+            -item["latest_model_year"],
+            item["manufacturer"],
+            item["epa_model"],
+        ),
+    ):
+        speeds = ", ".join(str(value) for value in result["all_rated_speeds_rpm"])
+        tier = ", ".join(str(value) for value in result["applicable_tiers"])
+        power = (
+            str(result["rated_power_kw_max"])
+            if result["rated_power_kw_max"] is not None
+            else ""
+        )
+        lines.append(
+            f"| {result['latest_model_year']} | {result['manufacturer']} | "
+            f"{result['epa_model']} | {speeds} | {tier} | {power} |"
+        )
+    if not blank_operation_fixed_speed_candidates:
         lines.append("| - | None | None | - | - | - |")
 
     lines.extend(
