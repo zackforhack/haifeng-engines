@@ -32096,6 +32096,131 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Daimler Truck AG",
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
+    "epa_model": "OM 924 LA",
+    "normalized_model": "OM924LA",
+    "first_model_year": 2022,
+    "latest_model_year": 2024,
+    "model_years": [
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "NDTAL04.8RJC",
+      "NDTAL07.2RJC",
+      "PDTAL04.8RJC",
+      "PDTAL07.2RJC",
+      "RDTAL04.8RJC",
+      "RDTAL07.2RJC"
+    ],
+    "engine_codes": [
+      "OM924LA.E3A/2",
+      "OM924LA.E3A/3",
+      "OM924LA.E3A/4"
+    ],
+    "certificates": [
+      "NDTAL04.8RJC-011",
+      "NDTAL07.2RJC-009",
+      "PDTAL04.8RJC-001",
+      "PDTAL07.2RJC-002",
+      "RDTAL04.8RJC-001",
+      "RDTAL07.2RJC-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 97,
+    "rated_power_kw_max": 134,
+    "displacements_l": [
+      4.801
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mercedes-Benz",
+        "model": "OM 924 LA",
+        "slug": "mercedes-benz-om924la",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Daimler Truck AG",
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
+    "epa_model": "OM 926 LA",
+    "normalized_model": "OM926LA",
+    "first_model_year": 2022,
+    "latest_model_year": 2024,
+    "model_years": [
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "NDTAL07.2RJC",
+      "PDTAL07.2RJC",
+      "RDTAL07.2RJC"
+    ],
+    "engine_codes": [
+      "OM926LA.E3A/3",
+      "OM926LA.E3A/4",
+      "OM926LA.E3A/5",
+      "OM926LA.E3A/6"
+    ],
+    "certificates": [
+      "NDTAL07.2RJC-009",
+      "PDTAL07.2RJC-002",
+      "RDTAL07.2RJC-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 162,
+    "rated_power_kw_max": 224,
+    "displacements_l": [
+      7.2010000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mercedes-Benz",
+        "model": "OM 926 LA",
+        "slug": "mercedes-benz-om926la",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Deutz AG",
     "mapped_database_brands": [
       "Deutz"
@@ -36816,6 +36941,171 @@
         "brand": "Kukje",
         "model": "D3400T-Gen1",
         "slug": "kukje-d3400t-gen1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mercedes Benz",
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
+    "epa_model": "OM924LA",
+    "normalized_model": "OM924LA",
+    "first_model_year": 2015,
+    "latest_model_year": 2022,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "FMBXL04.8RJC",
+      "FMBXL07.2RJC",
+      "GMBXL04.8RJC",
+      "GMBXL07.2RJC",
+      "HMBXL04.8RJC",
+      "HMBXL07.2RJC",
+      "JMBXL04.8RJC",
+      "JMBXL07.2RJC",
+      "KMBXL04.8RJC",
+      "KMBXL07.2RJC",
+      "LMBXL04.8RJC",
+      "LMBXL07.2RJC",
+      "MMBXL04.8RJC",
+      "MMBXL07.2RJC",
+      "NMBXL04.8RJC",
+      "NMBXL07.2RJC"
+    ],
+    "engine_codes": [
+      "OM924LA.E3A/2",
+      "OM924LA.E3A/3",
+      "OM924LA.E3A/4"
+    ],
+    "certificates": [
+      "FMBXL04.8RJC-005",
+      "FMBXL07.2RJC-006",
+      "GMBXL04.8RJC-001",
+      "GMBXL07.2RJC-002",
+      "HMBXL04.8RJC-003",
+      "HMBXL07.2RJC-004",
+      "JMBXL04.8RJC-002",
+      "JMBXL07.2RJC-003",
+      "KMBXL04.8RJC-009",
+      "KMBXL07.2RJC-010",
+      "LMBXL04.8RJC-001",
+      "LMBXL07.2RJC-006",
+      "MMBXL04.8RJC-005",
+      "MMBXL07.2RJC-006",
+      "NMBXL04.8RJC-004",
+      "NMBXL07.2RJC-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 88,
+    "rated_power_kw_max": 147,
+    "displacements_l": [
+      4.801
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mercedes-Benz",
+        "model": "OM 924 LA",
+        "slug": "mercedes-benz-om924la",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mercedes Benz",
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
+    "epa_model": "OM926LA",
+    "normalized_model": "OM926LA",
+    "first_model_year": 2015,
+    "latest_model_year": 2022,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "FMBXL07.2RJC",
+      "GMBXL07.2RJC",
+      "HMBXL07.2RJC",
+      "JMBXL07.2RJC",
+      "KMBXL07.2RJC",
+      "LMBXL07.2RJC",
+      "MMBXL07.2RJC",
+      "NMBXL07.2RJC"
+    ],
+    "engine_codes": [
+      "OM926LA.E3A/3",
+      "OM926LA.E3A/4",
+      "OM926LA.E3A/5",
+      "OM926LA.E3A/6"
+    ],
+    "certificates": [
+      "FMBXL07.2RJC-006",
+      "GMBXL07.2RJC-002",
+      "HMBXL07.2RJC-004",
+      "JMBXL07.2RJC-003",
+      "KMBXL07.2RJC-010",
+      "LMBXL07.2RJC-006",
+      "MMBXL07.2RJC-006",
+      "NMBXL07.2RJC-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 162,
+    "rated_power_kw_max": 247,
+    "displacements_l": [
+      7.2010000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mercedes-Benz",
+        "model": "OM 926 LA",
+        "slug": "mercedes-benz-om926la",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 3",
         "fuel_type": "Diesel"
@@ -55426,7 +55716,9 @@
   },
   {
     "manufacturer": "Daimler Truck AG",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
     "epa_model": "OM 934 LA",
     "normalized_model": "OM934LA",
     "first_model_year": 2022,
@@ -55481,7 +55773,9 @@
   },
   {
     "manufacturer": "Daimler Truck AG",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
     "epa_model": "OM 936 LA",
     "normalized_model": "OM936LA",
     "first_model_year": 2022,
@@ -61966,109 +62260,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Daimler Truck AG",
-    "mapped_database_brands": [],
-    "epa_model": "OM 924 LA",
-    "normalized_model": "OM924LA",
-    "first_model_year": 2022,
-    "latest_model_year": 2024,
-    "model_years": [
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "NDTAL04.8RJC",
-      "NDTAL07.2RJC",
-      "PDTAL04.8RJC",
-      "PDTAL07.2RJC",
-      "RDTAL04.8RJC",
-      "RDTAL07.2RJC"
-    ],
-    "engine_codes": [
-      "OM924LA.E3A/2",
-      "OM924LA.E3A/3",
-      "OM924LA.E3A/4"
-    ],
-    "certificates": [
-      "NDTAL04.8RJC-011",
-      "NDTAL07.2RJC-009",
-      "PDTAL04.8RJC-001",
-      "PDTAL07.2RJC-002",
-      "RDTAL04.8RJC-001",
-      "RDTAL07.2RJC-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 97,
-    "rated_power_kw_max": 134,
-    "displacements_l": [
-      4.801
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Daimler Truck AG",
-    "mapped_database_brands": [],
-    "epa_model": "OM 926 LA",
-    "normalized_model": "OM926LA",
-    "first_model_year": 2022,
-    "latest_model_year": 2024,
-    "model_years": [
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "NDTAL07.2RJC",
-      "PDTAL07.2RJC",
-      "RDTAL07.2RJC"
-    ],
-    "engine_codes": [
-      "OM926LA.E3A/3",
-      "OM926LA.E3A/4",
-      "OM926LA.E3A/5",
-      "OM926LA.E3A/6"
-    ],
-    "certificates": [
-      "NDTAL07.2RJC-009",
-      "PDTAL07.2RJC-002",
-      "RDTAL07.2RJC-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 162,
-    "rated_power_kw_max": 224,
-    "displacements_l": [
-      7.2010000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "FPT Industrial S.p.A.",
     "mapped_database_brands": [
       "FPT"
@@ -63304,149 +63495,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Mercedes Benz",
-    "mapped_database_brands": [],
-    "epa_model": "OM924LA",
-    "normalized_model": "OM924LA",
-    "first_model_year": 2015,
-    "latest_model_year": 2022,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "FMBXL04.8RJC",
-      "FMBXL07.2RJC",
-      "GMBXL04.8RJC",
-      "GMBXL07.2RJC",
-      "HMBXL04.8RJC",
-      "HMBXL07.2RJC",
-      "JMBXL04.8RJC",
-      "JMBXL07.2RJC",
-      "KMBXL04.8RJC",
-      "KMBXL07.2RJC",
-      "LMBXL04.8RJC",
-      "LMBXL07.2RJC",
-      "MMBXL04.8RJC",
-      "MMBXL07.2RJC",
-      "NMBXL04.8RJC",
-      "NMBXL07.2RJC"
-    ],
-    "engine_codes": [
-      "OM924LA.E3A/2",
-      "OM924LA.E3A/3",
-      "OM924LA.E3A/4"
-    ],
-    "certificates": [
-      "FMBXL04.8RJC-005",
-      "FMBXL07.2RJC-006",
-      "GMBXL04.8RJC-001",
-      "GMBXL07.2RJC-002",
-      "HMBXL04.8RJC-003",
-      "HMBXL07.2RJC-004",
-      "JMBXL04.8RJC-002",
-      "JMBXL07.2RJC-003",
-      "KMBXL04.8RJC-009",
-      "KMBXL07.2RJC-010",
-      "LMBXL04.8RJC-001",
-      "LMBXL07.2RJC-006",
-      "MMBXL04.8RJC-005",
-      "MMBXL07.2RJC-006",
-      "NMBXL04.8RJC-004",
-      "NMBXL07.2RJC-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 88,
-    "rated_power_kw_max": 147,
-    "displacements_l": [
-      4.801
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mercedes Benz",
-    "mapped_database_brands": [],
-    "epa_model": "OM926LA",
-    "normalized_model": "OM926LA",
-    "first_model_year": 2015,
-    "latest_model_year": 2022,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "FMBXL07.2RJC",
-      "GMBXL07.2RJC",
-      "HMBXL07.2RJC",
-      "JMBXL07.2RJC",
-      "KMBXL07.2RJC",
-      "LMBXL07.2RJC",
-      "MMBXL07.2RJC",
-      "NMBXL07.2RJC"
-    ],
-    "engine_codes": [
-      "OM926LA.E3A/3",
-      "OM926LA.E3A/4",
-      "OM926LA.E3A/5",
-      "OM926LA.E3A/6"
-    ],
-    "certificates": [
-      "FMBXL07.2RJC-006",
-      "GMBXL07.2RJC-002",
-      "HMBXL07.2RJC-004",
-      "JMBXL07.2RJC-003",
-      "KMBXL07.2RJC-010",
-      "LMBXL07.2RJC-006",
-      "MMBXL07.2RJC-006",
-      "NMBXL07.2RJC-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 162,
-    "rated_power_kw_max": 247,
-    "displacements_l": [
-      7.2010000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "Cummins Inc.",
     "mapped_database_brands": [
       "Cummins"
@@ -63646,7 +63694,9 @@
   },
   {
     "manufacturer": "Mercedes Benz",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
     "epa_model": "OM 934 LA",
     "normalized_model": "OM934LA",
     "first_model_year": 2019,
@@ -63695,7 +63745,9 @@
   },
   {
     "manufacturer": "Mercedes Benz",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
     "epa_model": "OM 936 LA",
     "normalized_model": "OM936LA",
     "first_model_year": 2019,
@@ -67015,7 +67067,9 @@
   },
   {
     "manufacturer": "Mercedes Benz",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
     "epa_model": "DMBXL11.9RJB",
     "normalized_model": "DMBXL11P9RJB",
     "first_model_year": 2013,
@@ -67058,7 +67112,9 @@
   },
   {
     "manufacturer": "Mercedes Benz",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
     "epa_model": "DMBXL12.8RJB",
     "normalized_model": "DMBXL12P8RJB",
     "first_model_year": 2013,
@@ -67108,7 +67164,9 @@
   },
   {
     "manufacturer": "Mercedes Benz",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
     "epa_model": "DMBXL15.9RJB",
     "normalized_model": "DMBXL15P9RJB",
     "first_model_year": 2013,
@@ -68256,7 +68314,9 @@
   },
   {
     "manufacturer": "Mercedes Benz",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
     "epa_model": "CMBXL11.9RJB",
     "normalized_model": "CMBXL11P9RJB",
     "first_model_year": 2012,
@@ -68299,7 +68359,9 @@
   },
   {
     "manufacturer": "Mercedes Benz",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
     "epa_model": "CMBXL12.8RJB",
     "normalized_model": "CMBXL12P8RJB",
     "first_model_year": 2012,
@@ -68348,7 +68410,9 @@
   },
   {
     "manufacturer": "Mercedes Benz",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Mercedes-Benz"
+    ],
     "epa_model": "CMBXL15.9RJB",
     "normalized_model": "CMBXL15P9RJB",
     "first_model_year": 2012,

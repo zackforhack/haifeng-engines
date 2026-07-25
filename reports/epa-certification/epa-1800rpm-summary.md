@@ -20,19 +20,19 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **346**
+- Exact manufacturer/brand matches: **350**
 - Matches after removing a redundant database brand prefix: **34**
 - Slash-suffixed certification trims represented by a verified base model: **20**
 - Reviewed manufacturer certification trims: **44**
 - Reviewed certification aliases: **219**
 - Fully represented certification groups: **8**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **288**
+- Exact matches whose database page uses 1800 as its primary RPM: **292**
 - Exact model under another database brand: **2**
-- Not represented after reviewed matching rules: **242**
-- Models from mapped manufacturers: **947**
-- Represented coverage within mapped manufacturers: **76.7%**
-- Unmatched models with a 2024+ certification: **126**
+- Not represented after reviewed matching rules: **238**
+- Models from mapped manufacturers: **961**
+- Represented coverage within mapped manufacturers: **76.0%**
+- Unmatched models with a 2024+ certification: **124**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
 - Generator-priority review queue (2024+, mapped brand, constant speed): **0**
@@ -93,7 +93,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | Mitsubishi | 19 | 10 | 0 | 0 | 0 | 6 | 0 | 0 | 3 | 0 |
 | Scania CV AB | Scania | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | 0 |
 | Komatsu Ltd. | Komatsu | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 9 | 1 |
-| Mercedes Benz | Unmapped | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | 0 |
+| Mercedes Benz | Mercedes-Benz | 10 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 8 | 0 |
 | KUKJE MACHINERY CO., LTD | Kukje | 9 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 3 |
 | Societe Internationale des Moteurs-Baudouin | Baudouin | 9 | 2 | 0 | 0 | 0 | 0 | 7 | 0 | 0 | 0 |
 | Lister Petter Limited | Lister Petter | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -102,7 +102,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Tianjin Lovol Engines Co., Ltd. | Lovol | 6 | 0 | 0 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
 | International Motors, LLC | International | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | TYM Corporation | TYM | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Daimler Truck AG | Unmapped | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 |
+| Daimler Truck AG | Mercedes-Benz | 4 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
 | Lion (China) Engine Science and Technology Co.,Ltd. | Lion | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Yangdong Co., Ltd. | Yangdong | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | MAN Truck & Bus AG | MAN | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
