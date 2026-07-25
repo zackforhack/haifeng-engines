@@ -36170,6 +36170,402 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "KUKJE MACHINERY CO., LTD",
+    "mapped_database_brands": [
+      "Kukje"
+    ],
+    "epa_model": "A1700-Gen",
+    "normalized_model": "A1700GEN",
+    "first_model_year": 2013,
+    "latest_model_year": 2022,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "DKMCL1.71A39",
+      "EKMCL1.71A39",
+      "FKMCL1.71A39",
+      "GKMCL1.71A39",
+      "HKMCL1.71A39",
+      "JKMCL1.71A39",
+      "KKMCL2.28A46",
+      "LKMCL2.28A46",
+      "MKMCL2.28A46",
+      "NKMCL2.28A46"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "DKMCL1.71A39-004",
+      "EKMCL1.71A39-001",
+      "FKMCL1.71A39-001",
+      "GKMCL1.71A39-001",
+      "HKMCL1.71A39-006",
+      "JKMCL1.71A39-001",
+      "KKMCL2.28A46-005",
+      "LKMCL2.28A46-004",
+      "MKMCL2.28A46-001",
+      "NKMCL2.28A46-002"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 19,
+    "rated_power_kw_max": 19,
+    "displacements_l": [
+      1.715
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kukje",
+        "model": "A1700-Gen",
+        "slug": "kukje-a1700-gen",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "KUKJE MACHINERY CO., LTD",
+    "mapped_database_brands": [
+      "Kukje"
+    ],
+    "epa_model": "A2300-Gen",
+    "normalized_model": "A2300GEN",
+    "first_model_year": 2013,
+    "latest_model_year": 2022,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "DKMCL2.28A46",
+      "EKMCL2.28A46",
+      "FKMCL2.28A46",
+      "GKMCL2.28A46",
+      "HKMCL2.28A46",
+      "JKMCL2.28A46",
+      "KKMCL2.28A46",
+      "LKMCL2.28A46",
+      "MKMCL2.28A46",
+      "NKMCL2.28A46"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "DKMCL2.28A46-002",
+      "EKMCL2.28A46-005",
+      "FKMCL2.28A46-002",
+      "GKMCL2.28A46-002",
+      "HKMCL2.28A46-007",
+      "JKMCL2.28A46-002",
+      "KKMCL2.28A46-005",
+      "LKMCL2.28A46-004",
+      "MKMCL2.28A46-001",
+      "NKMCL2.28A46-002"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 25,
+    "rated_power_kw_max": 25,
+    "displacements_l": [
+      2.287
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kukje",
+        "model": "A2300-Gen",
+        "slug": "kukje-a2300-gen",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "KUKJE MACHINERY CO., LTD",
+    "mapped_database_brands": [
+      "Kukje"
+    ],
+    "epa_model": "A2300T-Gen",
+    "normalized_model": "A2300TGEN",
+    "first_model_year": 2013,
+    "latest_model_year": 2022,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "DKMCL2.28A47",
+      "EKMCL2.28A47",
+      "FKMCL2.28A47",
+      "HKMCL2.28A47",
+      "JKMCL2.28A47",
+      "KKMCL2.39A45",
+      "LKMCL2.39A45",
+      "MKMCL2.39A45",
+      "NKMCL2.39A45"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "DKMCL2.28A47-005",
+      "EKMCL2.28A47-002",
+      "FKMCL2.28A47-003",
+      "HKMCL2.28A47-008",
+      "JKMCL2.28A47-006",
+      "KKMCL2.39A45-006",
+      "LKMCL2.39A45-005",
+      "MKMCL2.39A45-002",
+      "NKMCL2.39A45-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.287
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kukje",
+        "model": "A2300T-Gen",
+        "slug": "kukje-a2300t-gen",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "KUKJE MACHINERY CO., LTD",
+    "mapped_database_brands": [
+      "Kukje"
+    ],
+    "epa_model": "A2400T-Gen1",
+    "normalized_model": "A2400TGEN1",
+    "first_model_year": 2011,
+    "latest_model_year": 2022,
+    "model_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "BKMCL2.39A45",
+      "CKMCL2.39A45",
+      "DKMCL2.39A45",
+      "EKMCL2.39A45",
+      "FKMCL2.39A45",
+      "GKMCL2.39A45",
+      "HKMCL2.39A45",
+      "JKMCL2.39A45",
+      "KKMCL2.39A45",
+      "LKMCL2.39A45",
+      "MKMCL2.39A45",
+      "NKMCL2.39A45"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BKMCL2.39A45-001",
+      "CKMCL2.39A45-009",
+      "DKMCL2.39A45-003",
+      "EKMCL2.39A45-003",
+      "FKMCL2.39A45-004",
+      "GKMCL2.39A45-003",
+      "HKMCL2.39A45-010",
+      "JKMCL2.39A45-007",
+      "KKMCL2.39A45-006",
+      "LKMCL2.39A45-005",
+      "MKMCL2.39A45-002",
+      "NKMCL2.39A45-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.392
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kukje",
+        "model": "A2400T-Gen1",
+        "slug": "kukje-a2400t-gen1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "KUKJE MACHINERY CO., LTD",
+    "mapped_database_brands": [
+      "Kukje"
+    ],
+    "epa_model": "D3400T-Gen1",
+    "normalized_model": "D3400TGEN1",
+    "first_model_year": 2012,
+    "latest_model_year": 2022,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "engine_families": [
+      "CKMCL3.41D43",
+      "DKMCL3.41D43",
+      "EKMCL3.41D43",
+      "FKMCL3.41D43",
+      "GKMCL3.41D43",
+      "HKMCL3.41D43",
+      "JKMCL3.41D43",
+      "KKMCL3.41D43",
+      "LKMCL3.41D43",
+      "MKMCL3.41D43",
+      "NKMCL3.41D43"
+    ],
+    "engine_codes": [
+      "D3400T-Gen1"
+    ],
+    "certificates": [
+      "CKMCL3.41D43-001",
+      "DKMCL3.41D43-001",
+      "EKMCL3.41D43-004",
+      "FKMCL3.41D43-005",
+      "GKMCL3.41D43-004",
+      "HKMCL3.41D43-001",
+      "JKMCL3.41D43-008",
+      "KKMCL3.41D43-007",
+      "LKMCL3.41D43-006",
+      "MKMCL3.41D43-006",
+      "NKMCL3.41D43-001"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 64,
+    "rated_power_kw_max": 64,
+    "displacements_l": [
+      3.4090000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kukje",
+        "model": "D3400T-Gen1",
+        "slug": "kukje-d3400t-gen1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Yanmar Power Technology Co., Ltd.",
     "mapped_database_brands": [
       "Yanmar"
@@ -39308,6 +39704,76 @@
         "slug": "perkins-404f-e22ta",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Final Tier 4 / Euro Stage IIIB",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "KUKJE MACHINERY CO., LTD",
+    "mapped_database_brands": [
+      "Kukje"
+    ],
+    "epa_model": "A1100-Gen",
+    "normalized_model": "A1100GEN",
+    "first_model_year": 2013,
+    "latest_model_year": 2019,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "DKMCL1.17A33",
+      "EKMCL1.17A33",
+      "FKMCL1.17A33",
+      "GKMCL1.17A33",
+      "HKMCL1.17A33",
+      "JKMCL1.17A33",
+      "KKMCL1.17A33"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "DKMCL1.17A33-006",
+      "EKMCL1.17A33-006",
+      "FKMCL1.17A33-006",
+      "GKMCL1.17A33-005",
+      "HKMCL1.17A33-005",
+      "JKMCL1.17A33-009",
+      "KKMCL1.17A33-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 13,
+    "rated_power_kw_max": 13,
+    "displacements_l": [
+      1.175
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kukje",
+        "model": "A1100-Gen",
+        "slug": "kukje-a1100-gen",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -61383,347 +61849,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "KUKJE MACHINERY CO., LTD",
-    "mapped_database_brands": [],
-    "epa_model": "A1700-Gen",
-    "normalized_model": "A1700GEN",
-    "first_model_year": 2013,
-    "latest_model_year": 2022,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "DKMCL1.71A39",
-      "EKMCL1.71A39",
-      "FKMCL1.71A39",
-      "GKMCL1.71A39",
-      "HKMCL1.71A39",
-      "JKMCL1.71A39",
-      "KKMCL2.28A46",
-      "LKMCL2.28A46",
-      "MKMCL2.28A46",
-      "NKMCL2.28A46"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "DKMCL1.71A39-004",
-      "EKMCL1.71A39-001",
-      "FKMCL1.71A39-001",
-      "GKMCL1.71A39-001",
-      "HKMCL1.71A39-006",
-      "JKMCL1.71A39-001",
-      "KKMCL2.28A46-005",
-      "LKMCL2.28A46-004",
-      "MKMCL2.28A46-001",
-      "NKMCL2.28A46-002"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 19,
-    "rated_power_kw_max": 19,
-    "displacements_l": [
-      1.715
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "KUKJE MACHINERY CO., LTD",
-    "mapped_database_brands": [],
-    "epa_model": "A2300-Gen",
-    "normalized_model": "A2300GEN",
-    "first_model_year": 2013,
-    "latest_model_year": 2022,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "DKMCL2.28A46",
-      "EKMCL2.28A46",
-      "FKMCL2.28A46",
-      "GKMCL2.28A46",
-      "HKMCL2.28A46",
-      "JKMCL2.28A46",
-      "KKMCL2.28A46",
-      "LKMCL2.28A46",
-      "MKMCL2.28A46",
-      "NKMCL2.28A46"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "DKMCL2.28A46-002",
-      "EKMCL2.28A46-005",
-      "FKMCL2.28A46-002",
-      "GKMCL2.28A46-002",
-      "HKMCL2.28A46-007",
-      "JKMCL2.28A46-002",
-      "KKMCL2.28A46-005",
-      "LKMCL2.28A46-004",
-      "MKMCL2.28A46-001",
-      "NKMCL2.28A46-002"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 25,
-    "rated_power_kw_max": 25,
-    "displacements_l": [
-      2.287
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "KUKJE MACHINERY CO., LTD",
-    "mapped_database_brands": [],
-    "epa_model": "A2300T-Gen",
-    "normalized_model": "A2300TGEN",
-    "first_model_year": 2013,
-    "latest_model_year": 2022,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "DKMCL2.28A47",
-      "EKMCL2.28A47",
-      "FKMCL2.28A47",
-      "HKMCL2.28A47",
-      "JKMCL2.28A47",
-      "KKMCL2.39A45",
-      "LKMCL2.39A45",
-      "MKMCL2.39A45",
-      "NKMCL2.39A45"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "DKMCL2.28A47-005",
-      "EKMCL2.28A47-002",
-      "FKMCL2.28A47-003",
-      "HKMCL2.28A47-008",
-      "JKMCL2.28A47-006",
-      "KKMCL2.39A45-006",
-      "LKMCL2.39A45-005",
-      "MKMCL2.39A45-002",
-      "NKMCL2.39A45-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.287
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "KUKJE MACHINERY CO., LTD",
-    "mapped_database_brands": [],
-    "epa_model": "A2400T-Gen1",
-    "normalized_model": "A2400TGEN1",
-    "first_model_year": 2011,
-    "latest_model_year": 2022,
-    "model_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "BKMCL2.39A45",
-      "CKMCL2.39A45",
-      "DKMCL2.39A45",
-      "EKMCL2.39A45",
-      "FKMCL2.39A45",
-      "GKMCL2.39A45",
-      "HKMCL2.39A45",
-      "JKMCL2.39A45",
-      "KKMCL2.39A45",
-      "LKMCL2.39A45",
-      "MKMCL2.39A45",
-      "NKMCL2.39A45"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BKMCL2.39A45-001",
-      "CKMCL2.39A45-009",
-      "DKMCL2.39A45-003",
-      "EKMCL2.39A45-003",
-      "FKMCL2.39A45-004",
-      "GKMCL2.39A45-003",
-      "HKMCL2.39A45-010",
-      "JKMCL2.39A45-007",
-      "KKMCL2.39A45-006",
-      "LKMCL2.39A45-005",
-      "MKMCL2.39A45-002",
-      "NKMCL2.39A45-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.392
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "KUKJE MACHINERY CO., LTD",
-    "mapped_database_brands": [],
-    "epa_model": "D3400T-Gen1",
-    "normalized_model": "D3400TGEN1",
-    "first_model_year": 2012,
-    "latest_model_year": 2022,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022
-    ],
-    "engine_families": [
-      "CKMCL3.41D43",
-      "DKMCL3.41D43",
-      "EKMCL3.41D43",
-      "FKMCL3.41D43",
-      "GKMCL3.41D43",
-      "HKMCL3.41D43",
-      "JKMCL3.41D43",
-      "KKMCL3.41D43",
-      "LKMCL3.41D43",
-      "MKMCL3.41D43",
-      "NKMCL3.41D43"
-    ],
-    "engine_codes": [
-      "D3400T-Gen1"
-    ],
-    "certificates": [
-      "CKMCL3.41D43-001",
-      "DKMCL3.41D43-001",
-      "EKMCL3.41D43-004",
-      "FKMCL3.41D43-005",
-      "GKMCL3.41D43-004",
-      "HKMCL3.41D43-001",
-      "JKMCL3.41D43-008",
-      "KKMCL3.41D43-007",
-      "LKMCL3.41D43-006",
-      "MKMCL3.41D43-006",
-      "NKMCL3.41D43-001"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 64,
-    "rated_power_kw_max": 64,
-    "displacements_l": [
-      3.4090000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "Komatsu Ltd.",
     "mapped_database_brands": [
       "Komatsu"
@@ -62926,65 +63051,6 @@
     "rated_power_kw_max": 33,
     "displacements_l": [
       2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "KUKJE MACHINERY CO., LTD",
-    "mapped_database_brands": [],
-    "epa_model": "A1100-Gen",
-    "normalized_model": "A1100GEN",
-    "first_model_year": 2013,
-    "latest_model_year": 2019,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "DKMCL1.17A33",
-      "EKMCL1.17A33",
-      "FKMCL1.17A33",
-      "GKMCL1.17A33",
-      "HKMCL1.17A33",
-      "JKMCL1.17A33",
-      "KKMCL1.17A33"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "DKMCL1.17A33-006",
-      "EKMCL1.17A33-006",
-      "FKMCL1.17A33-006",
-      "GKMCL1.17A33-005",
-      "HKMCL1.17A33-005",
-      "JKMCL1.17A33-009",
-      "KKMCL1.17A33-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 13,
-    "rated_power_kw_max": 13,
-    "displacements_l": [
-      1.175
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -66913,7 +66979,9 @@
   },
   {
     "manufacturer": "KUKJE MACHINERY CO., LTD",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Kukje"
+    ],
     "epa_model": "A1700-Gen1",
     "normalized_model": "A1700GEN1",
     "first_model_year": 2012,
@@ -66949,11 +67017,20 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Kukje",
+        "model": "A1700-Gen",
+        "slug": "kukje-a1700-gen",
+        "similarity": 0.941
+      }
+    ]
   },
   {
     "manufacturer": "KUKJE MACHINERY CO., LTD",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Kukje"
+    ],
     "epa_model": "A2300-Gen1",
     "normalized_model": "A2300GEN1",
     "first_model_year": 2012,
@@ -66989,11 +67066,26 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Kukje",
+        "model": "A2300-Gen",
+        "slug": "kukje-a2300-gen",
+        "similarity": 0.941
+      },
+      {
+        "brand": "Kukje",
+        "model": "A2300T-Gen",
+        "slug": "kukje-a2300t-gen",
+        "similarity": 0.889
+      }
+    ]
   },
   {
     "manufacturer": "KUKJE MACHINERY CO., LTD",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Kukje"
+    ],
     "epa_model": "A2300T-Gen1",
     "normalized_model": "A2300TGEN1",
     "first_model_year": 2012,
@@ -67029,7 +67121,26 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Kukje",
+        "model": "A2300T-Gen",
+        "slug": "kukje-a2300t-gen",
+        "similarity": 0.947
+      },
+      {
+        "brand": "Kukje",
+        "model": "A2400T-Gen1",
+        "slug": "kukje-a2400t-gen1",
+        "similarity": 0.9
+      },
+      {
+        "brand": "Kukje",
+        "model": "A2300-Gen",
+        "slug": "kukje-a2300-gen",
+        "similarity": 0.889
+      }
+    ]
   },
   {
     "manufacturer": "Kubota Corporation",

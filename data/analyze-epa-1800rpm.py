@@ -36,6 +36,7 @@ MANUFACTURER_BRANDS = {
     "IHI Agri-Tech Corporation": {"Perkins", "Shibaura"},
     "Isuzu Motors Limited": {"Isuzu"},
     "Kirloskar Americas Corporation": {"Kirloskar"},
+    "KUKJE MACHINERY CO., LTD": {"Kukje"},
     "Komatsu Ltd.": {"Komatsu"},
     "Kubota Corporation": {"Kubota"},
     "Liebherr Machines Bulle SA": {"Kohler", "Liebherr"},
