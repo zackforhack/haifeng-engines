@@ -26697,6 +26697,87 @@
     "mapped_database_brands": [
       "Yanmar"
     ],
+    "epa_model": "3NNGAG",
+    "normalized_model": "3NNGAG",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GYDXL2.19S4N",
+      "HYDXL2.19S4N",
+      "JYDXL2.19S4N",
+      "KYDXL2.19S4N",
+      "LYDXL2.19S4N",
+      "MYDXL02.2S4N",
+      "NYDXL02.2S4N",
+      "PYDXL02.2S4N",
+      "RYDXL02.2S4N",
+      "SYDXL02.2S4N",
+      "TYDXL02.2S4N"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "GYDXL2.19S4N-010",
+      "HYDXL2.19S4N-041",
+      "JYDXL2.19S4N-045",
+      "KYDXL2.19S4N-027",
+      "LYDXL2.19S4N-034",
+      "MYDXL02.2S4N-052",
+      "NYDXL02.2S4N-018",
+      "PYDXL02.2S4N-039",
+      "RYDXL02.2S4N-048",
+      "SYDXL02.2S4N-039",
+      "TYDXL02.2S4N-047"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 22,
+    "rated_power_kw_max": 22,
+    "displacements_l": [
+      2.19
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "4TNV88-CL",
+        "slug": "yanmar-4tnv88-cl",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4 / U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
     "epa_model": "3TNGAG",
     "normalized_model": "3TNGAG",
     "first_model_year": 2016,
@@ -27270,6 +27351,183 @@
     "mapped_database_brands": [
       "Yanmar"
     ],
+    "epa_model": "4HNGFM",
+    "normalized_model": "4HNGFM",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "EYDXL1.64NGA",
+      "FYDXL1.64NGA",
+      "GYDXL1.64NGA",
+      "HYDXL1.64NGA",
+      "JYDXL1.64NGA",
+      "KYDXL1.64NGA",
+      "LYDXL1.64NGA",
+      "MYDXL01.6NGA",
+      "NYDXL01.6NGA",
+      "PYDXL01.6NGA",
+      "RYDXL01.6NGA",
+      "SYDXL01.6NGA",
+      "TYDXL01.6NGA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "EYDXL1.64NGA-035",
+      "FYDXL1.64NGA-019",
+      "GYDXL1.64NGA-022",
+      "HYDXL1.64NGA-030",
+      "JYDXL1.64NGA-029",
+      "KYDXL1.64NGA-024",
+      "LYDXL1.64NGA-026",
+      "MYDXL01.6NGA-030",
+      "NYDXL01.6NGA-005",
+      "PYDXL01.6NGA-035",
+      "RYDXL01.6NGA-047",
+      "SYDXL01.6NGA-046",
+      "TYDXL01.6NGA-039"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 16,
+    "rated_power_kw_max": 16,
+    "displacements_l": [
+      1.6420000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNV88F-UG6GE",
+        "slug": "yanmar-3tnv88f-ug6ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "4HNGPM",
+    "normalized_model": "4HNGPM",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DYDXL1.64NGA",
+      "EYDXL1.64NGA",
+      "FYDXL1.64NGA",
+      "GYDXL1.64NGA",
+      "HYDXL1.64NGA",
+      "JYDXL1.64NGA",
+      "KYDXL1.64NGA",
+      "LYDXL1.64NGA",
+      "MYDXL01.6NGA",
+      "NYDXL01.6NGA",
+      "PYDXL01.6NGA",
+      "RYDXL01.6NGA",
+      "SYDXL01.6NGA",
+      "TYDXL01.6NGA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "DYDXL1.64NGA-030",
+      "EYDXL1.64NGA-035",
+      "FYDXL1.64NGA-019",
+      "GYDXL1.64NGA-022",
+      "HYDXL1.64NGA-030",
+      "JYDXL1.64NGA-029",
+      "KYDXL1.64NGA-024",
+      "LYDXL1.64NGA-026",
+      "MYDXL01.6NGA-030",
+      "NYDXL01.6NGA-005",
+      "PYDXL01.6NGA-035",
+      "RYDXL01.6NGA-047",
+      "SYDXL01.6NGA-046",
+      "TYDXL01.6NGA-039"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 16,
+    "rated_power_kw_max": 16,
+    "displacements_l": [
+      1.6420000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNV88F-UG6GE",
+        "slug": "yanmar-3tnv88f-ug6ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
     "epa_model": "4TNGAC",
     "normalized_model": "4TNGAC",
     "first_model_year": 2017,
@@ -27659,6 +27917,276 @@
         "slug": "yanmar-4tnv98ct-gge",
         "rpm_rated": 1800,
         "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "4WNGAA",
+    "normalized_model": "4WNGAA",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DYDXL1.27NUA",
+      "EYDXL1.27NUA",
+      "FYDXL1.27NUA",
+      "GYDXL1.27NUA",
+      "HYDXL1.27NUA",
+      "JYDXL1.27NUA",
+      "KYDXL1.27NUA",
+      "LYDXL1.27NUA",
+      "MYDXL01.3NUA",
+      "NYDXL01.3NUA",
+      "PYDXL01.3NUA",
+      "RYDXL01.3NUA",
+      "SYDXL01.3NUA",
+      "TYDXL01.3NUA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "DYDXL1.27NUA-029",
+      "EYDXL1.27NUA-034",
+      "FYDXL1.27NUA-018",
+      "GYDXL1.27NUA-021",
+      "HYDXL1.27NUA-026",
+      "JYDXL1.27NUA-026",
+      "KYDXL1.27NUA-023",
+      "LYDXL1.27NUA-019",
+      "MYDXL01.3NUA-026",
+      "NYDXL01.3NUA-033",
+      "PYDXL01.3NUA-017",
+      "RYDXL01.3NUA-046",
+      "SYDXL01.3NUA-005",
+      "TYDXL01.3NUA-035"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 11,
+    "rated_power_kw_max": 11,
+    "displacements_l": [
+      1.2670000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNV80F-NG6GE",
+        "slug": "yanmar-3tnv80f-ng6ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "4WNGPA",
+    "normalized_model": "4WNGPA",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DYDXL1.27NUA",
+      "EYDXL1.27NUA",
+      "FYDXL1.27NUA",
+      "GYDXL1.27NUA",
+      "HYDXL1.27NUA",
+      "JYDXL1.27NUA",
+      "KYDXL1.27NUA",
+      "LYDXL1.27NUA",
+      "MYDXL01.3NUA",
+      "NYDXL01.3NUA",
+      "PYDXL01.3NUA",
+      "RYDXL01.3NUA",
+      "SYDXL01.3NUA",
+      "TYDXL01.3NUA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "DYDXL1.27NUA-029",
+      "EYDXL1.27NUA-034",
+      "FYDXL1.27NUA-018",
+      "GYDXL1.27NUA-021",
+      "HYDXL1.27NUA-026",
+      "JYDXL1.27NUA-026",
+      "KYDXL1.27NUA-023",
+      "LYDXL1.27NUA-019",
+      "MYDXL01.3NUA-026",
+      "NYDXL01.3NUA-033",
+      "PYDXL01.3NUA-017",
+      "RYDXL01.3NUA-046",
+      "SYDXL01.3NUA-005",
+      "TYDXL01.3NUA-035"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 11,
+    "rated_power_kw_max": 11,
+    "displacements_l": [
+      1.2670000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNV80F-NG6GE",
+        "slug": "yanmar-3tnv80f-ng6ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "5ENGAA",
+    "normalized_model": "5ENGAA",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DYDXL0.99NUA",
+      "EYDXL0.99NUA",
+      "FYDXL0.99NUA",
+      "GYDXL0.99NUA",
+      "HYDXL0.99NUA",
+      "JYDXL0.99NUA",
+      "KYDXL0.99NUA",
+      "LYDXL0.99NUA",
+      "MYDXL.993NUA",
+      "NYDXL.993NUA",
+      "PYDXL.993NUA",
+      "RYDXL.993NUA",
+      "SYDXL.993NUA",
+      "TYDXL.993NUA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "DYDXL0.99NUA-028",
+      "EYDXL0.99NUA-033",
+      "FYDXL0.99NUA-012",
+      "GYDXL0.99NUA-018",
+      "HYDXL0.99NUA-020",
+      "JYDXL0.99NUA-015",
+      "KYDXL0.99NUA-007",
+      "LYDXL0.99NUA-014",
+      "MYDXL.993NUA-013",
+      "NYDXL.993NUA-012",
+      "PYDXL.993NUA-011",
+      "RYDXL.993NUA-045",
+      "SYDXL.993NUA-009",
+      "TYDXL.993NUA-034"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 9,
+    "rated_power_kw_max": 9,
+    "displacements_l": [
+      0.993
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNM74F-NG6GE",
+        "slug": "yanmar-3tnm74f-ng6ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -42292,480 +42820,6 @@
     "rated_power_kw_max": 28,
     "displacements_l": [
       1.995
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3NNGAG",
-    "normalized_model": "3NNGAG",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GYDXL2.19S4N",
-      "HYDXL2.19S4N",
-      "JYDXL2.19S4N",
-      "KYDXL2.19S4N",
-      "LYDXL2.19S4N",
-      "MYDXL02.2S4N",
-      "NYDXL02.2S4N",
-      "PYDXL02.2S4N",
-      "RYDXL02.2S4N",
-      "SYDXL02.2S4N",
-      "TYDXL02.2S4N"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "GYDXL2.19S4N-010",
-      "HYDXL2.19S4N-041",
-      "JYDXL2.19S4N-045",
-      "KYDXL2.19S4N-027",
-      "LYDXL2.19S4N-034",
-      "MYDXL02.2S4N-052",
-      "NYDXL02.2S4N-018",
-      "PYDXL02.2S4N-039",
-      "RYDXL02.2S4N-048",
-      "SYDXL02.2S4N-039",
-      "TYDXL02.2S4N-047"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 22,
-    "rated_power_kw_max": 22,
-    "displacements_l": [
-      2.19
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "4HNGFM",
-    "normalized_model": "4HNGFM",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "EYDXL1.64NGA",
-      "FYDXL1.64NGA",
-      "GYDXL1.64NGA",
-      "HYDXL1.64NGA",
-      "JYDXL1.64NGA",
-      "KYDXL1.64NGA",
-      "LYDXL1.64NGA",
-      "MYDXL01.6NGA",
-      "NYDXL01.6NGA",
-      "PYDXL01.6NGA",
-      "RYDXL01.6NGA",
-      "SYDXL01.6NGA",
-      "TYDXL01.6NGA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "EYDXL1.64NGA-035",
-      "FYDXL1.64NGA-019",
-      "GYDXL1.64NGA-022",
-      "HYDXL1.64NGA-030",
-      "JYDXL1.64NGA-029",
-      "KYDXL1.64NGA-024",
-      "LYDXL1.64NGA-026",
-      "MYDXL01.6NGA-030",
-      "NYDXL01.6NGA-005",
-      "PYDXL01.6NGA-035",
-      "RYDXL01.6NGA-047",
-      "SYDXL01.6NGA-046",
-      "TYDXL01.6NGA-039"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 16,
-    "rated_power_kw_max": 16,
-    "displacements_l": [
-      1.6420000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "4HNGPM",
-    "normalized_model": "4HNGPM",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DYDXL1.64NGA",
-      "EYDXL1.64NGA",
-      "FYDXL1.64NGA",
-      "GYDXL1.64NGA",
-      "HYDXL1.64NGA",
-      "JYDXL1.64NGA",
-      "KYDXL1.64NGA",
-      "LYDXL1.64NGA",
-      "MYDXL01.6NGA",
-      "NYDXL01.6NGA",
-      "PYDXL01.6NGA",
-      "RYDXL01.6NGA",
-      "SYDXL01.6NGA",
-      "TYDXL01.6NGA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "DYDXL1.64NGA-030",
-      "EYDXL1.64NGA-035",
-      "FYDXL1.64NGA-019",
-      "GYDXL1.64NGA-022",
-      "HYDXL1.64NGA-030",
-      "JYDXL1.64NGA-029",
-      "KYDXL1.64NGA-024",
-      "LYDXL1.64NGA-026",
-      "MYDXL01.6NGA-030",
-      "NYDXL01.6NGA-005",
-      "PYDXL01.6NGA-035",
-      "RYDXL01.6NGA-047",
-      "SYDXL01.6NGA-046",
-      "TYDXL01.6NGA-039"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 16,
-    "rated_power_kw_max": 16,
-    "displacements_l": [
-      1.6420000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "4WNGAA",
-    "normalized_model": "4WNGAA",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DYDXL1.27NUA",
-      "EYDXL1.27NUA",
-      "FYDXL1.27NUA",
-      "GYDXL1.27NUA",
-      "HYDXL1.27NUA",
-      "JYDXL1.27NUA",
-      "KYDXL1.27NUA",
-      "LYDXL1.27NUA",
-      "MYDXL01.3NUA",
-      "NYDXL01.3NUA",
-      "PYDXL01.3NUA",
-      "RYDXL01.3NUA",
-      "SYDXL01.3NUA",
-      "TYDXL01.3NUA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "DYDXL1.27NUA-029",
-      "EYDXL1.27NUA-034",
-      "FYDXL1.27NUA-018",
-      "GYDXL1.27NUA-021",
-      "HYDXL1.27NUA-026",
-      "JYDXL1.27NUA-026",
-      "KYDXL1.27NUA-023",
-      "LYDXL1.27NUA-019",
-      "MYDXL01.3NUA-026",
-      "NYDXL01.3NUA-033",
-      "PYDXL01.3NUA-017",
-      "RYDXL01.3NUA-046",
-      "SYDXL01.3NUA-005",
-      "TYDXL01.3NUA-035"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 11,
-    "rated_power_kw_max": 11,
-    "displacements_l": [
-      1.2670000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "4WNGPA",
-    "normalized_model": "4WNGPA",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DYDXL1.27NUA",
-      "EYDXL1.27NUA",
-      "FYDXL1.27NUA",
-      "GYDXL1.27NUA",
-      "HYDXL1.27NUA",
-      "JYDXL1.27NUA",
-      "KYDXL1.27NUA",
-      "LYDXL1.27NUA",
-      "MYDXL01.3NUA",
-      "NYDXL01.3NUA",
-      "PYDXL01.3NUA",
-      "RYDXL01.3NUA",
-      "SYDXL01.3NUA",
-      "TYDXL01.3NUA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "DYDXL1.27NUA-029",
-      "EYDXL1.27NUA-034",
-      "FYDXL1.27NUA-018",
-      "GYDXL1.27NUA-021",
-      "HYDXL1.27NUA-026",
-      "JYDXL1.27NUA-026",
-      "KYDXL1.27NUA-023",
-      "LYDXL1.27NUA-019",
-      "MYDXL01.3NUA-026",
-      "NYDXL01.3NUA-033",
-      "PYDXL01.3NUA-017",
-      "RYDXL01.3NUA-046",
-      "SYDXL01.3NUA-005",
-      "TYDXL01.3NUA-035"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 11,
-    "rated_power_kw_max": 11,
-    "displacements_l": [
-      1.2670000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "5ENGAA",
-    "normalized_model": "5ENGAA",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DYDXL0.99NUA",
-      "EYDXL0.99NUA",
-      "FYDXL0.99NUA",
-      "GYDXL0.99NUA",
-      "HYDXL0.99NUA",
-      "JYDXL0.99NUA",
-      "KYDXL0.99NUA",
-      "LYDXL0.99NUA",
-      "MYDXL.993NUA",
-      "NYDXL.993NUA",
-      "PYDXL.993NUA",
-      "RYDXL.993NUA",
-      "SYDXL.993NUA",
-      "TYDXL.993NUA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "DYDXL0.99NUA-028",
-      "EYDXL0.99NUA-033",
-      "FYDXL0.99NUA-012",
-      "GYDXL0.99NUA-018",
-      "HYDXL0.99NUA-020",
-      "JYDXL0.99NUA-015",
-      "KYDXL0.99NUA-007",
-      "LYDXL0.99NUA-014",
-      "MYDXL.993NUA-013",
-      "NYDXL.993NUA-012",
-      "PYDXL.993NUA-011",
-      "RYDXL.993NUA-045",
-      "SYDXL.993NUA-009",
-      "TYDXL.993NUA-034"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 9,
-    "rated_power_kw_max": 9,
-    "displacements_l": [
-      0.993
     ],
     "match_status": "not_found",
     "database_matches": [],

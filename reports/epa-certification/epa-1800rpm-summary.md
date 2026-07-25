@@ -23,17 +23,17 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **64**
+- Reviewed certification aliases: **70**
 - Verified commercial family matches: **54**
 - Exact matches whose database page uses 1800 as its primary RPM: **169**
 - Exact model under another database brand: **7**
-- Not represented after reviewed matching rules: **533**
+- Not represented after reviewed matching rules: **527**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **51.6%**
-- Unmatched models with a 2024+ certification: **139**
+- Represented coverage within mapped manufacturers: **52.3%**
+- Unmatched models with a 2024+ certification: **133**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **9**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **3**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -46,16 +46,16 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 - `Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.` EPA records shorten six Tier 2 generator models by omitting their `Y2` application codes. Reviewed aliases map only to existing Y2PTAW 60 Hz pages whose EPA engine code, displacement and certified 1800 RPM power node agree.
 - `FPT Industrial S.p.A.` uses internal EPA certification codes for its Tier 3 engines. Twelve reviewed aliases are mapped to N45, N67 and Cursor 9 commercial pages only where displacement, certification family and published power node agree with FPT's official power-generation brochure.
 - `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's official co-development announcement identifies the six KD commercial engine families manufactured for Kohler generator sets.
-- `Kubota Corporation` EPA model names use certification suffixes such as `-EF` and `-ET`, while Kubota's public generator catalog uses commercial `E4-BG` and `E3-BG` names. Fifteen reviewed aliases require matching displacement, aspiration, emissions tier and Kubota-published 1800 RPM output.
-- `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append the shared Caterpillar base-engine name in parentheses. Eleven reviewed aliases map those records only to Perkins ElectropaK pages with matching family, displacement, emissions tier and manufacturer-published 1800 RPM power node.
+- `Kubota Corporation` EPA model names use certification suffixes such as `-EF` and `-ET`, while Kubota's public generator catalog uses commercial `E4-BG` and `E3-BG` names. Sixteen reviewed aliases require matching displacement, aspiration, emissions tier and Kubota-published 1800 RPM output.
+- `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append the shared Caterpillar base-engine name in parentheses. Thirteen reviewed aliases map those records only to Perkins ElectropaK pages with matching family, displacement, emissions tier and manufacturer-published 1800 RPM power node.
 - `Rolls-Royce Solutions America Inc` is represented under the `MTU` database brand. Exact 60 Hz commercial model pages retain MTU's `S`, `3B` and `3D` application suffixes and use the latest 1800 RPM power node in the EPA workbook, supplemented by public MTU gendrive specifications and operating instructions where available.
-- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration names that differ from its TNV generator product names. Nine reviewed aliases map only where displacement, aspiration, emissions tier and the certified power node agree with Yanmar's official generator and industrial-engine documentation.
+- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration names that differ from its TNV generator product names. Fifteen reviewed aliases map only where displacement, aspiration, emissions tier and the certified power node agree with Yanmar's official generator and industrial-engine documentation.
 
 ## Generator-Priority Gaps by Brand
 
 | Database brand | 2024+ constant-speed models without represented match |
 |---|---:|
-| Yanmar | 8 |
+| Yanmar | 2 |
 | FPT | 1 |
 
 ## Manufacturer Coverage
@@ -69,7 +69,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 53 | 0 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 7 | 0 | 0 | 44 | 4 | 0 | 0 | 1 | 0 |
 | Discovery Energy, LLC. | Kohler | 48 | 3 | 0 | 14 | 0 | 1 | 0 | 0 | 30 | 1 |
-| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 2 | 0 | 0 | 0 | 9 | 4 | 0 | 27 | 0 |
+| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 2 | 0 | 0 | 0 | 15 | 4 | 0 | 21 | 0 |
 | Kubota Corporation | Kubota | 37 | 3 | 0 | 0 | 0 | 16 | 0 | 0 | 18 | 3 |
 | Caterpillar Inc. | Caterpillar | 35 | 21 | 0 | 0 | 0 | 0 | 11 | 0 | 3 | 1 |
 | Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 1 |
@@ -115,12 +115,6 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | FPT Industrial S.p.A. | F4HE9685B*J | Tier 3 | 172 | FPT F4HE9685A*J (0.900) |
 | 2026 | Yanmar Power Technology Co., Ltd. | 3MTGAG | Interim Tier 4, Tier 4 (Final or Phase In) | 28 |  |
 | 2026 | Yanmar Power Technology Co., Ltd. | 3MTGP | Interim Tier 4, Tier 4 (Final or Phase In) | 28 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 3NNGAG | Tier 4 (Final or Phase In) | 22 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 4HNGFM | Tier 4 (Final or Phase In) | 16 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 4HNGPM | Tier 4 (Final or Phase In) | 16 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 4WNGAA | Tier 4 (Final or Phase In) | 11 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 4WNGPA | Tier 4 (Final or Phase In) | 11 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 5ENGAA | Tier 4 (Final or Phase In) | 9 |  |
 
 ## Interpretation
 

@@ -204,6 +204,27 @@ CERTIFICATION_ALIASES = {
     ("Yanmar Power Technology Co., Ltd.", "4TNGPC"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "4TTGAC"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "4TTGPC"): ("Yanmar", "4TNV98CT-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "3NNGAG"): ("Yanmar", "4TNV88-CL"),
+    (
+        "Yanmar Power Technology Co., Ltd.",
+        "4HNGFM",
+    ): ("Yanmar", "3TNV88F-UG6GE"),
+    (
+        "Yanmar Power Technology Co., Ltd.",
+        "4HNGPM",
+    ): ("Yanmar", "3TNV88F-UG6GE"),
+    (
+        "Yanmar Power Technology Co., Ltd.",
+        "4WNGAA",
+    ): ("Yanmar", "3TNV80F-NG6GE"),
+    (
+        "Yanmar Power Technology Co., Ltd.",
+        "4WNGPA",
+    ): ("Yanmar", "3TNV80F-NG6GE"),
+    (
+        "Yanmar Power Technology Co., Ltd.",
+        "5ENGAA",
+    ): ("Yanmar", "3TNM74F-NG6GE"),
 }
 
 REPRESENTED_STATUSES = {
@@ -660,10 +681,10 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "manufactured for Kohler generator sets.",
         "- `Kubota Corporation` EPA model names use certification suffixes such as `-EF` and "
         "`-ET`, while Kubota's public generator catalog uses commercial `E4-BG` and `E3-BG` "
-        "names. Fifteen reviewed aliases require matching displacement, aspiration, emissions "
+        "names. Sixteen reviewed aliases require matching displacement, aspiration, emissions "
         "tier and Kubota-published 1800 RPM output.",
         "- `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append "
-        "the shared Caterpillar base-engine name in parentheses. Eleven reviewed aliases map those "
+        "the shared Caterpillar base-engine name in parentheses. Thirteen reviewed aliases map those "
         "records only to Perkins ElectropaK pages with matching family, displacement, emissions "
         "tier and manufacturer-published 1800 RPM power node.",
         "- `Rolls-Royce Solutions America Inc` is represented under the `MTU` database brand. "
@@ -671,7 +692,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "and use the latest 1800 RPM power node in the EPA workbook, supplemented by public MTU "
         "gendrive specifications and operating instructions where available.",
         "- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration "
-        "names that differ from its TNV generator product names. Nine reviewed aliases map only "
+        "names that differ from its TNV generator product names. Fifteen reviewed aliases map only "
         "where displacement, aspiration, emissions tier and the certified power node agree with "
         "Yanmar's official generator and industrial-engine documentation.",
         "",
