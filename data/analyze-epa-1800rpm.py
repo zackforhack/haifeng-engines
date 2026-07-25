@@ -78,6 +78,30 @@ CERTIFICATION_ALIASES = {
     ("Cummins Inc.", "QSK78G"): ("Cummins", "QSK78"),
     ("Cummins Inc.", "QST30G"): ("Cummins", "QST30"),
     ("Cummins Inc.", "QSX15G"): ("Cummins", "QSX15"),
+    (
+        "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+        "S12A2PTAW",
+    ): ("Mitsubishi", "S12A2-Y2PTAW-2"),
+    (
+        "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+        "S12HPTAW",
+    ): ("Mitsubishi", "S12H-Y2PTAW-1"),
+    (
+        "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+        "S12RPTAW",
+    ): ("Mitsubishi", "S12R-Y2PTAW-1"),
+    (
+        "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+        "S16RPTAW",
+    ): ("Mitsubishi", "S16R-Y2PTAW-1"),
+    (
+        "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+        "S16RPTAW2",
+    ): ("Mitsubishi", "S16R-Y2PTAW2"),
+    (
+        "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+        "S6RPTAW",
+    ): ("Mitsubishi", "S6R-Y2PTAW"),
     ("Liebherr Machines Bulle SA", "D9812G"): ("Liebherr", "D9812"),
     ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
     ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
@@ -540,6 +564,10 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "Three reviewed aliases map generic `-G` certification names to existing QSK78, QST30 "
         "and QSX15 family pages where displacement, certification tiers and 1800 RPM operation "
         "already agree.",
+        "- `Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.` EPA records shorten six "
+        "Tier 2 generator models by omitting their `Y2` application codes. Reviewed aliases map "
+        "only to existing Y2PTAW 60 Hz pages whose EPA engine code, displacement and certified "
+        "1800 RPM power node agree.",
         "- `FPT Industrial S.p.A.` uses internal EPA certification codes for its Tier 3 engines. "
         "Twelve reviewed aliases are mapped to N45, N67 and Cursor 9 commercial pages only where "
         "displacement, certification family and published power node agree with FPT's official "

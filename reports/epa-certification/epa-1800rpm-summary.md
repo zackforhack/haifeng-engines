@@ -19,21 +19,21 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **137**
+- Exact manufacturer/brand matches: **147**
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **53**
+- Reviewed certification aliases: **59**
 - Verified commercial family matches: **34**
-- Exact matches whose database page uses 1800 as its primary RPM: **79**
+- Exact matches whose database page uses 1800 as its primary RPM: **89**
 - Exact model under another database brand: **9**
-- Not represented after reviewed matching rules: **652**
+- Not represented after reviewed matching rules: **636**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **37.1%**
-- Unmatched models with a 2024+ certification: **258**
+- Represented coverage within mapped manufacturers: **39.0%**
+- Unmatched models with a 2024+ certification: **242**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **128**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **112**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -43,6 +43,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 - `HD Construction Equipment Co., Ltd.` is compared with the existing `Hyundai` brand. Its [official network page](https://www.hd-ce.com/en/network) lists the current company and its engine production and R&D operations.
 - `Caterpillar Inc.` is also compared with `Perkins` for reviewed family-prefix matches. Official Perkins product documentation identifies commercial models such as `1706J-E93TA` and `2406J-E13TA` behind the shorter EPA family names.
 - `Cummins Inc.` exact generator-drive pages retain commercial `G` and `NR2` suffixes. Three reviewed aliases map generic `-G` certification names to existing QSK78, QST30 and QSX15 family pages where displacement, certification tiers and 1800 RPM operation already agree.
+- `Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.` EPA records shorten six Tier 2 generator models by omitting their `Y2` application codes. Reviewed aliases map only to existing Y2PTAW 60 Hz pages whose EPA engine code, displacement and certified 1800 RPM power node agree.
 - `FPT Industrial S.p.A.` uses internal EPA certification codes for its Tier 3 engines. Twelve reviewed aliases are mapped to N45, N67 and Cursor 9 commercial pages only where displacement, certification family and published power node agree with FPT's official power-generation brochure.
 - `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's official co-development announcement identifies the six KD commercial engine families manufactured for Kohler generator sets.
 - `Kubota Corporation` EPA model names use certification suffixes such as `-EF` and `-ET`, while Kubota's public generator catalog uses commercial `E4-BG` and `E3-BG` names. Fifteen reviewed aliases require matching displacement, aspiration, emissions tier and Kubota-published 1800 RPM output.
@@ -54,7 +55,6 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 
 | Database brand | 2024+ constant-speed models without represented match |
 |---|---:|
-| Mitsubishi | 16 |
 | FPT | 12 |
 | Perkins | 12 |
 | Isuzu | 11 |
@@ -93,7 +93,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Isuzu Motors Limited | Isuzu | 24 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 24 | 0 |
 | Daedong Corporation | Unmapped | 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 19 | 0 |
 | Deere & Company | John Deere | 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 19 | 5 |
-| Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | Mitsubishi | 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 19 | 6 |
+| Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | Mitsubishi | 19 | 10 | 0 | 0 | 0 | 6 | 0 | 0 | 3 | 0 |
 | Scania CV AB | Scania | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | 0 |
 | Komatsu Ltd. | Komatsu | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | 1 |
 | Mercedes Benz | Unmapped | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | 0 |
@@ -193,20 +193,6 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Liebherr Machines Bulle SA | KD18L06-6AES | Tier 2 | 670 |  |
 | 2026 | Liebherr Machines Bulle SA | KD18L06-6BES | Tier 2 | 785 |  |
 | 2026 | Liebherr Machines Bulle SA | KD18L06-6CES | Tier 2 | 820 |  |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | D04EG-MECH-TAA | Tier 3 | 68 |  |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | D04EG-T | Tier 4 (Final or Phase In) | 54 |  |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | L2E | Tier 4 (Final or Phase In) | 6 |  |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | L3E | Tier 4 (Final or Phase In) | 9 |  |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S12A2-PTAW | Tier 2 | 900 | Mitsubishi S12R-A2PTAW (0.947) |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S12H-PTAW | Tier 2 | 1140 | Mitsubishi S12H-PTA (0.933) |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S12R-PTAW | Tier 2 | 1403 | Mitsubishi S12R-PTA (0.933) |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S16R-PTAW | Tier 2 | 1750 | Mitsubishi S16R2-PTAW (0.941) |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S16R-PTAW2 | Tier 2 | 2180 | Mitsubishi S16R-PTA2 (0.941) |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S3L2 | Tier 4 (Final or Phase In) | 14 |  |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S4L2 | Tier 4 (Final or Phase In) | 18 |  |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S4S | Interim Tier 4, Tier 3 | 35 |  |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S4S-DTB | Interim Tier 4, Tier 3 | 45 |  |
-| 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S6R-PTAW | Tier 2 | 685 | Mitsubishi S6R-PTA (0.923) |
 | 2026 | Perkins Engines Co Ltd | 1206F-E70TA(C7.1) | Tier 4 (Final or Phase In) | 122 |  |
 | 2026 | Perkins Engines Co Ltd | 1206F-E70TTA(C7.1) | Tier 4 (Final or Phase In) | 239 |  |
 | 2026 | Perkins Engines Co Ltd | 402F-05(C0.5) | Tier 4 (Final or Phase In) | 4 |  |
@@ -235,8 +221,6 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Yanmar Power Technology Co., Ltd. | 4WNGPA | Tier 4 (Final or Phase In) | 11 |  |
 | 2026 | Yanmar Power Technology Co., Ltd. | 5ENGAA | Tier 4 (Final or Phase In) | 9 |  |
 | 2025 | Deere & Company | 6135 | Interim Tier 4, Tier 3, Tier 4 (Final or Phase In) | 563 |  |
-| 2025 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | D03CJ-TAA | Tier 4 (Final or Phase In) | 35 |  |
-| 2025 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | D04CJ-TAA | Tier 4 (Final or Phase In) | 55 |  |
 | 2025 | Perkins Engines Co Ltd | 1204F-E44TTAN(C4.4) | Tier 4 (Final or Phase In) | 129 |  |
 | 2025 | Weichai Power Co.,Ltd. | 12M33 | Tier 2 | 1375 |  |
 | 2025 | Weichai Power Co.,Ltd. | 16M33 | Tier 2 | 1850 |  |

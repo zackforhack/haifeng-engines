@@ -14499,6 +14499,1367 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "D04EG-MECH-TAA",
+    "normalized_model": "D04EGMECHTAA",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GMVXL03.3CBA",
+      "HMVXL03.3CBA",
+      "JMVXL03.3CBA",
+      "KMVXL03.3CBB",
+      "LMVXL03.3CBB",
+      "MMVXL03.3CBB",
+      "NMVXL03.3CBB",
+      "PMVXL03.3CBB",
+      "RMVXL03.3CBB",
+      "SMVXL03.3CBB",
+      "TMVXL03.3CBB"
+    ],
+    "engine_codes": [
+      "D04EG-MECH-P60-1",
+      "D04EG-MECH-P66-1",
+      "D04EG-MECH-P66-2",
+      "D04EG-MECH-P68-1"
+    ],
+    "certificates": [
+      "GMVXL03.3CBA-005",
+      "HMVXL03.3CBA-017",
+      "JMVXL03.3CBA-005",
+      "KMVXL03.3CBB-002",
+      "LMVXL03.3CBB-014",
+      "MMVXL03.3CBB-012",
+      "NMVXL03.3CBB-012",
+      "PMVXL03.3CBB-014",
+      "RMVXL03.3CBB-019",
+      "SMVXL03.3CBB-013",
+      "TMVXL03.3CBB-014"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 60,
+    "rated_power_kw_max": 68,
+    "displacements_l": [
+      3.331
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "D04EG-MECH-TAA",
+        "slug": "mitsubishi-d04eg-mech-taa",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "D04EG-T",
+    "normalized_model": "D04EGT",
+    "first_model_year": 2026,
+    "latest_model_year": 2026,
+    "model_years": [
+      2026
+    ],
+    "engine_families": [
+      "TMVXL03.3EBA"
+    ],
+    "engine_codes": [
+      "D04EG-P54-1A",
+      "D04EG-P54-2A"
+    ],
+    "certificates": [
+      "TMVXL03.3EBA-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 54,
+    "rated_power_kw_max": 54,
+    "displacements_l": [
+      3.331
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "D04EG-T",
+        "slug": "mitsubishi-d04eg-t",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "L2E",
+    "normalized_model": "L2E",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL01.0DDD",
+      "LMVXL0.64EBA",
+      "MMVXL0.64EBA",
+      "NMVXL0.64EBA",
+      "PMVXL0.64EBA",
+      "RMVXL0.64EBA",
+      "SMVXL0.64EBA",
+      "SMVXL0.64EBB",
+      "TMVXL0.64EBB"
+    ],
+    "engine_codes": [
+      "L2E-P5-1",
+      "L2E-P5-1A",
+      "L2E-W461DG"
+    ],
+    "certificates": [
+      "CMVXL01.0DDD-016",
+      "LMVXL0.64EBA-001",
+      "MMVXL0.64EBA-004",
+      "NMVXL0.64EBA-006",
+      "PMVXL0.64EBA-009",
+      "RMVXL0.64EBA-007",
+      "SMVXL0.64EBA-006",
+      "SMVXL0.64EBB-004",
+      "TMVXL0.64EBB-010"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 5,
+    "rated_power_kw_max": 6,
+    "displacements_l": [
+      0.635
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "L2E",
+        "slug": "mitsubishi-l2e",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "L3E",
+    "normalized_model": "L3E",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL01.0DDD",
+      "DMVXL01.0EEE",
+      "EMVXL01.0EBA",
+      "EMVXL01.0EEE",
+      "FMVXL01.0EBA",
+      "FMVXL01.0EDA",
+      "GMVXL01.0EBA",
+      "GMVXL01.0EDB",
+      "HMVXL01.0EBA",
+      "HMVXL01.0EDB",
+      "JMVXL01.0EBA",
+      "JMVXL01.0EDB",
+      "KMVXL01.0EDB",
+      "LMVXL01.0EDB",
+      "MMVXL01.0EDB",
+      "NMVXL01.0EDB",
+      "PMVXL01.0EDB",
+      "RMVXL01.0EDB",
+      "SMVXL01.0EBB",
+      "SMVXL01.0EDB",
+      "TMVXL01.0EBB"
+    ],
+    "engine_codes": [
+      "L3E-1800",
+      "L3E-GENE",
+      "L3E-P8-1",
+      "L3E-P9-1",
+      "L3E-P9-2",
+      "L3E-P9-2A",
+      "L3E-P9-3",
+      "L3E-P9-3A",
+      "L3E-P9-4",
+      "L3E-W461AL",
+      "L3E-W461CG",
+      "L3E-W461DG",
+      "L3E-W461DG-NP2",
+      "L3E-W461DPP",
+      "L3E-W461DPP-NP2",
+      "L3E-W461ML",
+      "L3E-W461ML-NP2",
+      "L3E-W461WM",
+      "L3E-W461WM-NP2",
+      "L3E-W462SD"
+    ],
+    "certificates": [
+      "CMVXL01.0DDD-016",
+      "DMVXL01.0EEE-011",
+      "EMVXL01.0EBA-008",
+      "EMVXL01.0EEE-007",
+      "FMVXL01.0EBA-002",
+      "FMVXL01.0EDA-014",
+      "GMVXL01.0EBA-008",
+      "GMVXL01.0EDB-004",
+      "HMVXL01.0EBA-013",
+      "HMVXL01.0EDB-019",
+      "JMVXL01.0EBA-018",
+      "JMVXL01.0EDB-007",
+      "KMVXL01.0EDB-004",
+      "LMVXL01.0EDB-002",
+      "MMVXL01.0EDB-002",
+      "NMVXL01.0EDB-007",
+      "PMVXL01.0EDB-001",
+      "RMVXL01.0EDB-020",
+      "SMVXL01.0EBB-001",
+      "SMVXL01.0EDB-015",
+      "TMVXL01.0EBB-011"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 8,
+    "rated_power_kw_max": 9,
+    "displacements_l": [
+      0.9530000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "L3E",
+        "slug": "mitsubishi-l3e",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S12A2-PTAW",
+    "normalized_model": "S12A2PTAW",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL33.9BBA",
+      "DMVXL33.9BBA",
+      "EMVXL33.9BBA",
+      "FMVXL33.9BBA",
+      "GMVXL33.9BBA",
+      "HMVXL33.9BBA",
+      "JMVXL33.9BBA",
+      "KMVXL33.9BBA",
+      "LMVXL33.9BBA",
+      "MMVXL33.9BBA",
+      "NMVXL33.9BBA",
+      "PMVXL33.9BBA",
+      "RMVXL33.9BBA",
+      "SMVXL33.9BBA",
+      "TMVXL33.9BBA"
+    ],
+    "engine_codes": [
+      "S12A2-Y2PTAW-2"
+    ],
+    "certificates": [
+      "CMVXL33.9BBA-014",
+      "DMVXL33.9BBA-001",
+      "EMVXL33.9BBA-005",
+      "FMVXL33.9BBA-008",
+      "GMVXL33.9BBA-010",
+      "HMVXL33.9BBA-007",
+      "JMVXL33.9BBA-012",
+      "KMVXL33.9BBA-009",
+      "LMVXL33.9BBA-006",
+      "MMVXL33.9BBA-015",
+      "NMVXL33.9BBA-002",
+      "PMVXL33.9BBA-005",
+      "RMVXL33.9BBA-003",
+      "SMVXL33.9BBA-019",
+      "TMVXL33.9BBA-004"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 900,
+    "rated_power_kw_max": 900,
+    "displacements_l": [
+      33.929
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S12A2-Y2PTAW-2",
+        "slug": "mitsubishi-s12a2-y2ptaw-2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S12H-PTAW",
+    "normalized_model": "S12HPTAW",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL37.1BBA",
+      "DMVXL37.1BBA",
+      "EMVXL37.1BBA",
+      "FMVXL37.1BBA",
+      "GMVXL37.1BBA",
+      "HMVXL37.1BBA",
+      "JMVXL37.1BBA",
+      "KMVXL37.1BBA",
+      "LMVXL37.1BBA",
+      "MMVXL37.1BBA",
+      "NMVXL37.1BBA",
+      "PMVXL37.1BBA",
+      "RMVXL37.1BBA",
+      "SMVXL37.1BBA",
+      "TMVXL37.1BBA"
+    ],
+    "engine_codes": [
+      "S12H-Y2PTAW-1"
+    ],
+    "certificates": [
+      "CMVXL37.1BBA-013",
+      "DMVXL37.1BBA-002",
+      "EMVXL37.1BBA-004",
+      "FMVXL37.1BBA-010",
+      "GMVXL37.1BBA-011",
+      "HMVXL37.1BBA-008",
+      "JMVXL37.1BBA-013",
+      "KMVXL37.1BBA-014",
+      "LMVXL37.1BBA-008",
+      "MMVXL37.1BBA-016",
+      "NMVXL37.1BBA-005",
+      "PMVXL37.1BBA-006",
+      "RMVXL37.1BBA-004",
+      "SMVXL37.1BBA-020",
+      "TMVXL37.1BBA-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1140,
+    "rated_power_kw_max": 1140,
+    "displacements_l": [
+      37.11
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S12H-Y2PTAW-1",
+        "slug": "mitsubishi-s12h-y2ptaw-1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S12R-PTAW",
+    "normalized_model": "S12RPTAW",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL49.0BBA",
+      "DMVXL49.0BBA",
+      "EMVXL49.0BBA",
+      "FMVXL49.0BBA",
+      "GMVXL49.0BBA",
+      "HMVXL49.0BBA",
+      "JMVXL49.0BBA",
+      "KMVXL49.0BBA",
+      "LMVXL49.0BBA",
+      "MMVXL49.0BBA",
+      "NMVXL49.0BBA",
+      "PMVXL49.0BBA",
+      "RMVXL49.0BBA",
+      "SMVXL49.0BBA",
+      "TMVXL49.0BBA"
+    ],
+    "engine_codes": [
+      "S12R-Y2PTAW-1",
+      "S12R-Y2PTAW-A"
+    ],
+    "certificates": [
+      "CMVXL49.0BBA-018",
+      "DMVXL49.0BBA-003",
+      "EMVXL49.0BBA-003",
+      "FMVXL49.0BBA-009",
+      "GMVXL49.0BBA-013",
+      "HMVXL49.0BBA-009",
+      "JMVXL49.0BBA-014",
+      "KMVXL49.0BBA-015",
+      "LMVXL49.0BBA-007",
+      "MMVXL49.0BBA-017",
+      "NMVXL49.0BBA-003",
+      "PMVXL49.0BBA-007",
+      "RMVXL49.0BBA-005",
+      "SMVXL49.0BBA-021",
+      "TMVXL49.0BBA-006"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1403,
+    "rated_power_kw_max": 1403,
+    "displacements_l": [
+      49.028000000000006
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S12R-Y2PTAW-1",
+        "slug": "mitsubishi-s12r-y2ptaw-1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S16R-PTAW",
+    "normalized_model": "S16RPTAW",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL65.4BBA",
+      "DMVXL65.4BBA",
+      "EMVXL65.4BBA",
+      "FMVXL65.4BBA",
+      "GMVXL65.4BBA",
+      "HMVXL65.4BBA",
+      "JMVXL65.4BBA",
+      "KMVXL65.4BBA",
+      "LMVXL65.4BBA",
+      "MMVXL65.4BBA",
+      "NMVXL65.4BBA",
+      "PMVXL65.4BBA",
+      "RMVXL65.4BBA",
+      "SMVXL65.4BBA",
+      "TMVXL65.4BBA"
+    ],
+    "engine_codes": [
+      "S16R-Y2PTAW-1"
+    ],
+    "certificates": [
+      "CMVXL65.4BBA-017",
+      "DMVXL65.4BBA-004",
+      "EMVXL65.4BBA-011",
+      "FMVXL65.4BBA-011",
+      "GMVXL65.4BBA-012",
+      "HMVXL65.4BBA-011",
+      "JMVXL65.4BBA-015",
+      "KMVXL65.4BBA-016",
+      "LMVXL65.4BBA-009",
+      "MMVXL65.4BBA-018",
+      "NMVXL65.4BBA-004",
+      "PMVXL65.4BBA-008",
+      "RMVXL65.4BBA-006",
+      "SMVXL65.4BBA-022",
+      "TMVXL65.4BBA-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1750,
+    "rated_power_kw_max": 1750,
+    "displacements_l": [
+      65.37
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S16R-Y2PTAW-1",
+        "slug": "mitsubishi-s16r-y2ptaw-1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S16R-PTAW2",
+    "normalized_model": "S16RPTAW2",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL65.4BBA",
+      "CMVXL65.4BBB",
+      "DMVXL65.4BBA",
+      "DMVXL65.4BBB",
+      "EMVXL65.4BBA",
+      "EMVXL65.4BBB",
+      "FMVXL65.4BBA",
+      "GMVXL65.4BBA",
+      "HMVXL65.4BBA",
+      "JMVXL65.4BBA",
+      "KMVXL65.4BBA",
+      "LMVXL65.4BBA",
+      "MMVXL65.4BBA",
+      "NMVXL65.4BBA",
+      "PMVXL65.4BBA",
+      "RMVXL65.4BBA",
+      "SMVXL65.4BBA",
+      "TMVXL65.4BBA"
+    ],
+    "engine_codes": [
+      "S16R-Y2PTAW2-1",
+      "S16R-Y2PTAW2-A"
+    ],
+    "certificates": [
+      "CMVXL65.4BBA-017",
+      "CMVXL65.4BBB-019",
+      "DMVXL65.4BBA-004",
+      "DMVXL65.4BBB-005",
+      "EMVXL65.4BBA-011",
+      "EMVXL65.4BBB-012",
+      "FMVXL65.4BBA-011",
+      "GMVXL65.4BBA-012",
+      "HMVXL65.4BBA-011",
+      "JMVXL65.4BBA-015",
+      "KMVXL65.4BBA-016",
+      "LMVXL65.4BBA-009",
+      "MMVXL65.4BBA-018",
+      "NMVXL65.4BBA-004",
+      "PMVXL65.4BBA-008",
+      "RMVXL65.4BBA-006",
+      "SMVXL65.4BBA-022",
+      "TMVXL65.4BBA-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2150,
+    "rated_power_kw_max": 2180,
+    "displacements_l": [
+      65.37
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S16R-Y2PTAW2",
+        "slug": "mitsubishi-s16r-y2ptaw2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S3L2",
+    "normalized_model": "S3L2",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL01.3DDD",
+      "EMVXL01.3FFF",
+      "EMVXL01.3GGG",
+      "FMVXL01.3FFF",
+      "GMVXL01.3EBA",
+      "GMVXL01.3FFF",
+      "HMVXL01.3EBA",
+      "HMVXL01.3FFF",
+      "JMVXL01.3EBA",
+      "JMVXL01.3FFF",
+      "KMVXL01.8EBA",
+      "LMVXL01.8EBA",
+      "MMVXL01.8EBA",
+      "NMVXL01.8EBA",
+      "PMVXL01.8EBA",
+      "RMVXL01.8EBA",
+      "SMVXL01.8EBA",
+      "SMVXL01.8EBB",
+      "TMVXL01.8EBB"
+    ],
+    "engine_codes": [
+      "S3L2-G1800",
+      "S3L2-G1800-01",
+      "S3L2-P14-1",
+      "S3L2-P14-1A",
+      "S3L2-W461CG",
+      "S3L2-W461DG",
+      "S3L2-W461DG-NP2",
+      "S3L2-W461IR",
+      "S3L2-W461ML",
+      "S3L2-W461ML-NP2",
+      "S3L2-W461WM",
+      "S3L2-W461WM-NP2",
+      "S3L2-W462SD"
+    ],
+    "certificates": [
+      "CMVXL01.3DDD-012",
+      "EMVXL01.3FFF-001",
+      "EMVXL01.3GGG-016",
+      "FMVXL01.3FFF-001",
+      "GMVXL01.3EBA-002",
+      "GMVXL01.3FFF-006",
+      "HMVXL01.3EBA-002",
+      "HMVXL01.3FFF-014",
+      "JMVXL01.3EBA-008",
+      "JMVXL01.3FFF-019-R01",
+      "KMVXL01.8EBA-003",
+      "LMVXL01.8EBA-003",
+      "MMVXL01.8EBA-003",
+      "NMVXL01.8EBA-008",
+      "PMVXL01.8EBA-002",
+      "RMVXL01.8EBA-008",
+      "SMVXL01.8EBA-007",
+      "SMVXL01.8EBB-003",
+      "TMVXL01.8EBB-013"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 14,
+    "rated_power_kw_max": 14,
+    "displacements_l": [
+      1.3190000000000002
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S3L2",
+        "slug": "mitsubishi-s3l2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S4L2",
+    "normalized_model": "S4L2",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL01.3DDD",
+      "EMVXL01.3FFF",
+      "EMVXL01.3GGG",
+      "FMVXL01.3EDA",
+      "FMVXL01.3FFF",
+      "GMVXL01.3EBA",
+      "GMVXL01.3EDB",
+      "GMVXL01.3FFF",
+      "HMVXL01.3EBA",
+      "HMVXL01.3EDB",
+      "HMVXL01.3FFF",
+      "JMVXL01.3EBA",
+      "JMVXL01.3EDB",
+      "JMVXL01.3FFF",
+      "KMVXL01.8EBA",
+      "KMVXL01.8EDB",
+      "LMVXL01.8EBA",
+      "LMVXL01.8EDB",
+      "MMVXL01.8EBA",
+      "MMVXL01.8EDB",
+      "NMVXL01.8EBA",
+      "NMVXL01.8EDB",
+      "PMVXL01.8EBA",
+      "PMVXL01.8EDB",
+      "PMVXL01.8EDC",
+      "RMVXL01.8EBA",
+      "RMVXL01.8EDB",
+      "RMVXL01.8EDC",
+      "SMVXL01.8EBA",
+      "SMVXL01.8EBB",
+      "SMVXL01.8EDB",
+      "SMVXL01.8EDC",
+      "TMVXL01.8EBB",
+      "TMVXL01.8EDC"
+    ],
+    "engine_codes": [
+      "S4L-W361CG",
+      "S4L-W361DG",
+      "S4L-W361ML",
+      "S4L-W361WM",
+      "S4L-W362SD",
+      "S4L-W461CG",
+      "S4L-W461DG",
+      "S4L-W461DG-NP2",
+      "S4L-W461ML",
+      "S4L-W461ML-NP2",
+      "S4L-W461WM",
+      "S4L-W461WM-NP2",
+      "S4L-W462SD",
+      "S4L2-G1800",
+      "S4L2-G1800-01",
+      "S4L2-P18-1",
+      "S4L2-P18-2",
+      "S4L2-P18-2A",
+      "S4L2-P18-3",
+      "S4L2-P18-3A"
+    ],
+    "certificates": [
+      "CMVXL01.3DDD-012",
+      "EMVXL01.3FFF-001",
+      "EMVXL01.3GGG-016",
+      "FMVXL01.3EDA-015",
+      "FMVXL01.3FFF-001",
+      "GMVXL01.3EBA-002",
+      "GMVXL01.3EDB-001",
+      "GMVXL01.3FFF-006",
+      "HMVXL01.3EBA-002",
+      "HMVXL01.3EDB-015",
+      "HMVXL01.3FFF-014",
+      "JMVXL01.3EBA-008",
+      "JMVXL01.3EDB-009",
+      "JMVXL01.3FFF-019-R01",
+      "KMVXL01.8EBA-003",
+      "KMVXL01.8EDB-005",
+      "LMVXL01.8EBA-003",
+      "LMVXL01.8EDB-004",
+      "MMVXL01.8EBA-003",
+      "MMVXL01.8EDB-005",
+      "NMVXL01.8EBA-008",
+      "NMVXL01.8EDB-009",
+      "PMVXL01.8EBA-002",
+      "PMVXL01.8EDB-003",
+      "PMVXL01.8EDC-019",
+      "RMVXL01.8EBA-008",
+      "RMVXL01.8EDB-009",
+      "RMVXL01.8EDC-010",
+      "SMVXL01.8EBA-007",
+      "SMVXL01.8EBB-003",
+      "SMVXL01.8EDB-008",
+      "SMVXL01.8EDC-023",
+      "TMVXL01.8EBB-013",
+      "TMVXL01.8EDC-007"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.3190000000000002,
+      1.758
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S4L2",
+        "slug": "mitsubishi-s4l2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S4S",
+    "normalized_model": "S4S",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL03.3AAF",
+      "DMVXL03.3AAK",
+      "EMVXL03.3AAK",
+      "FMVXL03.3AAK",
+      "GMVXL03.3AAK",
+      "HMVXL03.3AAK",
+      "JMVXL03.3AAK",
+      "KMVXL03.3AAK",
+      "LMVXL03.3AAK",
+      "MMVXL03.3AAK",
+      "NMVXL03.3AAK",
+      "PMVXL03.3AAK",
+      "RMVXL03.3AAK",
+      "SMVXL03.3AAK",
+      "TMVXL03.3AAK"
+    ],
+    "engine_codes": [
+      "S4S-P35-1-C",
+      "S4S-Y365ADDG",
+      "S4S-Y36BDG"
+    ],
+    "certificates": [
+      "CMVXL03.3AAF-003",
+      "DMVXL03.3AAK-008",
+      "EMVXL03.3AAK-009",
+      "FMVXL03.3AAK-005",
+      "GMVXL03.3AAK-015",
+      "HMVXL03.3AAK-005",
+      "JMVXL03.3AAK-004",
+      "KMVXL03.3AAK-007",
+      "LMVXL03.3AAK-013",
+      "MMVXL03.3AAK-011",
+      "NMVXL03.3AAK-016",
+      "PMVXL03.3AAK-013",
+      "RMVXL03.3AAK-016",
+      "SMVXL03.3AAK-012",
+      "TMVXL03.3AAK-008"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 35,
+    "rated_power_kw_max": 35,
+    "displacements_l": [
+      3.331
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S4S",
+        "slug": "mitsubishi-s4s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S4S-DTB",
+    "normalized_model": "S4SDTB",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL03.3AAC",
+      "DMVXL03.3AAJ",
+      "EMVXL03.3AAJ",
+      "FMVXL03.3AAJ",
+      "GMVXL03.3AAJ",
+      "HMVXL03.3AAJ",
+      "JMVXL03.3AAJ",
+      "KMVXL03.3AAJ",
+      "LMVXL03.3AAJ",
+      "MMVXL03.3AAJ",
+      "NMVXL03.3AAJ",
+      "PMVXL03.3AAJ",
+      "RMVXL03.3AAJ",
+      "SMVXL03.3AAJ",
+      "TMVXL03.3AAJ"
+    ],
+    "engine_codes": [
+      "S4S-Y3DT61SD",
+      "S4S-Y3DT65DG"
+    ],
+    "certificates": [
+      "CMVXL03.3AAC-002",
+      "DMVXL03.3AAJ-009",
+      "EMVXL03.3AAJ-013",
+      "FMVXL03.3AAJ-013",
+      "GMVXL03.3AAJ-018",
+      "HMVXL03.3AAJ-003",
+      "JMVXL03.3AAJ-003",
+      "KMVXL03.3AAJ-006",
+      "LMVXL03.3AAJ-012",
+      "MMVXL03.3AAJ-010",
+      "NMVXL03.3AAJ-015",
+      "PMVXL03.3AAJ-012",
+      "RMVXL03.3AAJ-015",
+      "SMVXL03.3AAJ-011",
+      "TMVXL03.3AAJ-015"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable",
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 45,
+    "rated_power_kw_max": 45,
+    "displacements_l": [
+      3.331
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S4S-DTB",
+        "slug": "mitsubishi-s4s-dtb",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S6R-PTAW",
+    "normalized_model": "S6RPTAW",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CMVXL24.5BBA",
+      "DMVXL24.5BBA",
+      "EMVXL24.5BBA",
+      "FMVXL24.5BBA",
+      "GMVXL24.5BBA",
+      "HMVXL24.5BBA",
+      "JMVXL24.5BBA",
+      "KMVXL24.5BBA",
+      "LMVXL24.5BBA",
+      "MMVXL24.5BBA",
+      "NMVXL24.5BBA",
+      "PMVXL24.5BBA",
+      "RMVXL24.5BBA",
+      "SMVXL24.5BBA",
+      "TMVXL24.5BBA"
+    ],
+    "engine_codes": [
+      "S6R-Y2PTAW-1"
+    ],
+    "certificates": [
+      "CMVXL24.5BBA-015",
+      "DMVXL24.5BBA-012",
+      "EMVXL24.5BBA-006",
+      "FMVXL24.5BBA-007",
+      "GMVXL24.5BBA-009",
+      "HMVXL24.5BBA-006",
+      "JMVXL24.5BBA-011",
+      "KMVXL24.5BBA-008",
+      "LMVXL24.5BBA-005",
+      "MMVXL24.5BBA-014",
+      "NMVXL24.5BBA-001",
+      "PMVXL24.5BBA-004",
+      "RMVXL24.5BBA-002",
+      "SMVXL24.5BBA-018",
+      "TMVXL24.5BBA-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 685,
+    "rated_power_kw_max": 685,
+    "displacements_l": [
+      24.514000000000003
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S6R-Y2PTAW",
+        "slug": "mitsubishi-s6r-y2ptaw",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Perkins Engines Co Ltd",
     "mapped_database_brands": [
       "Perkins"
@@ -20416,6 +21777,158 @@
         "slug": "kohler-kd83v16",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "D03CJ-TAA",
+    "normalized_model": "D03CJTAA",
+    "first_model_year": 2017,
+    "latest_model_year": 2025,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "HMVXL02.2EBA",
+      "JMVXL02.2EBA",
+      "KMVXL02.2EBA",
+      "LMVXL02.2EBA",
+      "MMVXL02.2EBA",
+      "NMVXL02.2EBA",
+      "PMVXL02.2EBA",
+      "RMVXL02.2EBA",
+      "SMVXL02.2EBA"
+    ],
+    "engine_codes": [
+      "3CJ-P35-1",
+      "3CJ-P35-2"
+    ],
+    "certificates": [
+      "HMVXL02.2EBA-001",
+      "JMVXL02.2EBA-010",
+      "KMVXL02.2EBA-012",
+      "LMVXL02.2EBA-016",
+      "MMVXL02.2EBA-007",
+      "NMVXL02.2EBA-017",
+      "PMVXL02.2EBA-016",
+      "RMVXL02.2EBA-012",
+      "SMVXL02.2EBA-005"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 35,
+    "rated_power_kw_max": 35,
+    "displacements_l": [
+      1.6560000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "D03CJ-TAA",
+        "slug": "mitsubishi-d03cj-taa",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "D04CJ-TAA",
+    "normalized_model": "D04CJTAA",
+    "first_model_year": 2017,
+    "latest_model_year": 2025,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "HMVXL02.2EBA",
+      "JMVXL02.2EBA",
+      "KMVXL02.2EBA",
+      "LMVXL02.2EBA",
+      "MMVXL02.2EBA",
+      "NMVXL02.2EBA",
+      "PMVXL02.2EBA",
+      "RMVXL02.2EBA",
+      "SMVXL02.2EBA"
+    ],
+    "engine_codes": [
+      "4CJ-P55-1",
+      "4CJ-P55-2"
+    ],
+    "certificates": [
+      "HMVXL02.2EBA-001",
+      "JMVXL02.2EBA-010",
+      "KMVXL02.2EBA-012",
+      "LMVXL02.2EBA-016",
+      "MMVXL02.2EBA-007",
+      "NMVXL02.2EBA-017",
+      "PMVXL02.2EBA-016",
+      "RMVXL02.2EBA-012",
+      "SMVXL02.2EBA-005"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 55,
+    "rated_power_kw_max": 55,
+    "displacements_l": [
+      2.2070000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "D04CJ-TAA",
+        "slug": "mitsubishi-d04cj-taa",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -35291,1361 +36804,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "D04EG-MECH-TAA",
-    "normalized_model": "D04EGMECHTAA",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GMVXL03.3CBA",
-      "HMVXL03.3CBA",
-      "JMVXL03.3CBA",
-      "KMVXL03.3CBB",
-      "LMVXL03.3CBB",
-      "MMVXL03.3CBB",
-      "NMVXL03.3CBB",
-      "PMVXL03.3CBB",
-      "RMVXL03.3CBB",
-      "SMVXL03.3CBB",
-      "TMVXL03.3CBB"
-    ],
-    "engine_codes": [
-      "D04EG-MECH-P60-1",
-      "D04EG-MECH-P66-1",
-      "D04EG-MECH-P66-2",
-      "D04EG-MECH-P68-1"
-    ],
-    "certificates": [
-      "GMVXL03.3CBA-005",
-      "HMVXL03.3CBA-017",
-      "JMVXL03.3CBA-005",
-      "KMVXL03.3CBB-002",
-      "LMVXL03.3CBB-014",
-      "MMVXL03.3CBB-012",
-      "NMVXL03.3CBB-012",
-      "PMVXL03.3CBB-014",
-      "RMVXL03.3CBB-019",
-      "SMVXL03.3CBB-013",
-      "TMVXL03.3CBB-014"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 60,
-    "rated_power_kw_max": 68,
-    "displacements_l": [
-      3.331
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "D04EG-T",
-    "normalized_model": "D04EGT",
-    "first_model_year": 2026,
-    "latest_model_year": 2026,
-    "model_years": [
-      2026
-    ],
-    "engine_families": [
-      "TMVXL03.3EBA"
-    ],
-    "engine_codes": [
-      "D04EG-P54-1A",
-      "D04EG-P54-2A"
-    ],
-    "certificates": [
-      "TMVXL03.3EBA-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 54,
-    "rated_power_kw_max": 54,
-    "displacements_l": [
-      3.331
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "L2E",
-    "normalized_model": "L2E",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL01.0DDD",
-      "LMVXL0.64EBA",
-      "MMVXL0.64EBA",
-      "NMVXL0.64EBA",
-      "PMVXL0.64EBA",
-      "RMVXL0.64EBA",
-      "SMVXL0.64EBA",
-      "SMVXL0.64EBB",
-      "TMVXL0.64EBB"
-    ],
-    "engine_codes": [
-      "L2E-P5-1",
-      "L2E-P5-1A",
-      "L2E-W461DG"
-    ],
-    "certificates": [
-      "CMVXL01.0DDD-016",
-      "LMVXL0.64EBA-001",
-      "MMVXL0.64EBA-004",
-      "NMVXL0.64EBA-006",
-      "PMVXL0.64EBA-009",
-      "RMVXL0.64EBA-007",
-      "SMVXL0.64EBA-006",
-      "SMVXL0.64EBB-004",
-      "TMVXL0.64EBB-010"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 5,
-    "rated_power_kw_max": 6,
-    "displacements_l": [
-      0.635
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "L3E",
-    "normalized_model": "L3E",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL01.0DDD",
-      "DMVXL01.0EEE",
-      "EMVXL01.0EBA",
-      "EMVXL01.0EEE",
-      "FMVXL01.0EBA",
-      "FMVXL01.0EDA",
-      "GMVXL01.0EBA",
-      "GMVXL01.0EDB",
-      "HMVXL01.0EBA",
-      "HMVXL01.0EDB",
-      "JMVXL01.0EBA",
-      "JMVXL01.0EDB",
-      "KMVXL01.0EDB",
-      "LMVXL01.0EDB",
-      "MMVXL01.0EDB",
-      "NMVXL01.0EDB",
-      "PMVXL01.0EDB",
-      "RMVXL01.0EDB",
-      "SMVXL01.0EBB",
-      "SMVXL01.0EDB",
-      "TMVXL01.0EBB"
-    ],
-    "engine_codes": [
-      "L3E-1800",
-      "L3E-GENE",
-      "L3E-P8-1",
-      "L3E-P9-1",
-      "L3E-P9-2",
-      "L3E-P9-2A",
-      "L3E-P9-3",
-      "L3E-P9-3A",
-      "L3E-P9-4",
-      "L3E-W461AL",
-      "L3E-W461CG",
-      "L3E-W461DG",
-      "L3E-W461DG-NP2",
-      "L3E-W461DPP",
-      "L3E-W461DPP-NP2",
-      "L3E-W461ML",
-      "L3E-W461ML-NP2",
-      "L3E-W461WM",
-      "L3E-W461WM-NP2",
-      "L3E-W462SD"
-    ],
-    "certificates": [
-      "CMVXL01.0DDD-016",
-      "DMVXL01.0EEE-011",
-      "EMVXL01.0EBA-008",
-      "EMVXL01.0EEE-007",
-      "FMVXL01.0EBA-002",
-      "FMVXL01.0EDA-014",
-      "GMVXL01.0EBA-008",
-      "GMVXL01.0EDB-004",
-      "HMVXL01.0EBA-013",
-      "HMVXL01.0EDB-019",
-      "JMVXL01.0EBA-018",
-      "JMVXL01.0EDB-007",
-      "KMVXL01.0EDB-004",
-      "LMVXL01.0EDB-002",
-      "MMVXL01.0EDB-002",
-      "NMVXL01.0EDB-007",
-      "PMVXL01.0EDB-001",
-      "RMVXL01.0EDB-020",
-      "SMVXL01.0EBB-001",
-      "SMVXL01.0EDB-015",
-      "TMVXL01.0EBB-011"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 8,
-    "rated_power_kw_max": 9,
-    "displacements_l": [
-      0.9530000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "S12A2-PTAW",
-    "normalized_model": "S12A2PTAW",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL33.9BBA",
-      "DMVXL33.9BBA",
-      "EMVXL33.9BBA",
-      "FMVXL33.9BBA",
-      "GMVXL33.9BBA",
-      "HMVXL33.9BBA",
-      "JMVXL33.9BBA",
-      "KMVXL33.9BBA",
-      "LMVXL33.9BBA",
-      "MMVXL33.9BBA",
-      "NMVXL33.9BBA",
-      "PMVXL33.9BBA",
-      "RMVXL33.9BBA",
-      "SMVXL33.9BBA",
-      "TMVXL33.9BBA"
-    ],
-    "engine_codes": [
-      "S12A2-Y2PTAW-2"
-    ],
-    "certificates": [
-      "CMVXL33.9BBA-014",
-      "DMVXL33.9BBA-001",
-      "EMVXL33.9BBA-005",
-      "FMVXL33.9BBA-008",
-      "GMVXL33.9BBA-010",
-      "HMVXL33.9BBA-007",
-      "JMVXL33.9BBA-012",
-      "KMVXL33.9BBA-009",
-      "LMVXL33.9BBA-006",
-      "MMVXL33.9BBA-015",
-      "NMVXL33.9BBA-002",
-      "PMVXL33.9BBA-005",
-      "RMVXL33.9BBA-003",
-      "SMVXL33.9BBA-019",
-      "TMVXL33.9BBA-004"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 900,
-    "rated_power_kw_max": 900,
-    "displacements_l": [
-      33.929
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Mitsubishi",
-        "model": "S12R-A2PTAW",
-        "slug": "mitsubishi-s12r-a2ptaw",
-        "similarity": 0.947
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S12A2-PTA",
-        "slug": "mitsubishi-s12a2-pta",
-        "similarity": 0.941
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S12R-A2PTAW2",
-        "slug": "mitsubishi-s12r-a2ptaw2",
-        "similarity": 0.9
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R2-A2PTAW",
-        "slug": "mitsubishi-s16r2-a2ptaw",
-        "similarity": 0.9
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S12A2-PTA2",
-        "slug": "mitsubishi-s12a2-pta2",
-        "similarity": 0.889
-      }
-    ]
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "S12H-PTAW",
-    "normalized_model": "S12HPTAW",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL37.1BBA",
-      "DMVXL37.1BBA",
-      "EMVXL37.1BBA",
-      "FMVXL37.1BBA",
-      "GMVXL37.1BBA",
-      "HMVXL37.1BBA",
-      "JMVXL37.1BBA",
-      "KMVXL37.1BBA",
-      "LMVXL37.1BBA",
-      "MMVXL37.1BBA",
-      "NMVXL37.1BBA",
-      "PMVXL37.1BBA",
-      "RMVXL37.1BBA",
-      "SMVXL37.1BBA",
-      "TMVXL37.1BBA"
-    ],
-    "engine_codes": [
-      "S12H-Y2PTAW-1"
-    ],
-    "certificates": [
-      "CMVXL37.1BBA-013",
-      "DMVXL37.1BBA-002",
-      "EMVXL37.1BBA-004",
-      "FMVXL37.1BBA-010",
-      "GMVXL37.1BBA-011",
-      "HMVXL37.1BBA-008",
-      "JMVXL37.1BBA-013",
-      "KMVXL37.1BBA-014",
-      "LMVXL37.1BBA-008",
-      "MMVXL37.1BBA-016",
-      "NMVXL37.1BBA-005",
-      "PMVXL37.1BBA-006",
-      "RMVXL37.1BBA-004",
-      "SMVXL37.1BBA-020",
-      "TMVXL37.1BBA-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1140,
-    "rated_power_kw_max": 1140,
-    "displacements_l": [
-      37.11
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Mitsubishi",
-        "model": "S12H-PTA",
-        "slug": "mitsubishi-s12h-pta",
-        "similarity": 0.933
-      }
-    ]
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "S12R-PTAW",
-    "normalized_model": "S12RPTAW",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL49.0BBA",
-      "DMVXL49.0BBA",
-      "EMVXL49.0BBA",
-      "FMVXL49.0BBA",
-      "GMVXL49.0BBA",
-      "HMVXL49.0BBA",
-      "JMVXL49.0BBA",
-      "KMVXL49.0BBA",
-      "LMVXL49.0BBA",
-      "MMVXL49.0BBA",
-      "NMVXL49.0BBA",
-      "PMVXL49.0BBA",
-      "RMVXL49.0BBA",
-      "SMVXL49.0BBA",
-      "TMVXL49.0BBA"
-    ],
-    "engine_codes": [
-      "S12R-Y2PTAW-1",
-      "S12R-Y2PTAW-A"
-    ],
-    "certificates": [
-      "CMVXL49.0BBA-018",
-      "DMVXL49.0BBA-003",
-      "EMVXL49.0BBA-003",
-      "FMVXL49.0BBA-009",
-      "GMVXL49.0BBA-013",
-      "HMVXL49.0BBA-009",
-      "JMVXL49.0BBA-014",
-      "KMVXL49.0BBA-015",
-      "LMVXL49.0BBA-007",
-      "MMVXL49.0BBA-017",
-      "NMVXL49.0BBA-003",
-      "PMVXL49.0BBA-007",
-      "RMVXL49.0BBA-005",
-      "SMVXL49.0BBA-021",
-      "TMVXL49.0BBA-006"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1403,
-    "rated_power_kw_max": 1403,
-    "displacements_l": [
-      49.028000000000006
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Mitsubishi",
-        "model": "S12R-PTA",
-        "slug": "mitsubishi-s12r-pta",
-        "similarity": 0.933
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S12R-A2PTAW",
-        "slug": "mitsubishi-s12r-a2ptaw",
-        "similarity": 0.889
-      }
-    ]
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "S16R-PTAW",
-    "normalized_model": "S16RPTAW",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL65.4BBA",
-      "DMVXL65.4BBA",
-      "EMVXL65.4BBA",
-      "FMVXL65.4BBA",
-      "GMVXL65.4BBA",
-      "HMVXL65.4BBA",
-      "JMVXL65.4BBA",
-      "KMVXL65.4BBA",
-      "LMVXL65.4BBA",
-      "MMVXL65.4BBA",
-      "NMVXL65.4BBA",
-      "PMVXL65.4BBA",
-      "RMVXL65.4BBA",
-      "SMVXL65.4BBA",
-      "TMVXL65.4BBA"
-    ],
-    "engine_codes": [
-      "S16R-Y2PTAW-1"
-    ],
-    "certificates": [
-      "CMVXL65.4BBA-017",
-      "DMVXL65.4BBA-004",
-      "EMVXL65.4BBA-011",
-      "FMVXL65.4BBA-011",
-      "GMVXL65.4BBA-012",
-      "HMVXL65.4BBA-011",
-      "JMVXL65.4BBA-015",
-      "KMVXL65.4BBA-016",
-      "LMVXL65.4BBA-009",
-      "MMVXL65.4BBA-018",
-      "NMVXL65.4BBA-004",
-      "PMVXL65.4BBA-008",
-      "RMVXL65.4BBA-006",
-      "SMVXL65.4BBA-022",
-      "TMVXL65.4BBA-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1750,
-    "rated_power_kw_max": 1750,
-    "displacements_l": [
-      65.37
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R2-PTAW",
-        "slug": "mitsubishi-s16r2-ptaw",
-        "similarity": 0.941
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R-PTA",
-        "slug": "mitsubishi-s16r-pta",
-        "similarity": 0.933
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R-A2PTAW",
-        "slug": "mitsubishi-s16r-a2ptaw",
-        "similarity": 0.889
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R2-PTAW-C",
-        "slug": "mitsubishi-s16r2-ptaw-c",
-        "similarity": 0.889
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R2-PTAW-E",
-        "slug": "mitsubishi-s16r2-ptaw-e",
-        "similarity": 0.889
-      }
-    ]
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "S16R-PTAW2",
-    "normalized_model": "S16RPTAW2",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL65.4BBA",
-      "CMVXL65.4BBB",
-      "DMVXL65.4BBA",
-      "DMVXL65.4BBB",
-      "EMVXL65.4BBA",
-      "EMVXL65.4BBB",
-      "FMVXL65.4BBA",
-      "GMVXL65.4BBA",
-      "HMVXL65.4BBA",
-      "JMVXL65.4BBA",
-      "KMVXL65.4BBA",
-      "LMVXL65.4BBA",
-      "MMVXL65.4BBA",
-      "NMVXL65.4BBA",
-      "PMVXL65.4BBA",
-      "RMVXL65.4BBA",
-      "SMVXL65.4BBA",
-      "TMVXL65.4BBA"
-    ],
-    "engine_codes": [
-      "S16R-Y2PTAW2-1",
-      "S16R-Y2PTAW2-A"
-    ],
-    "certificates": [
-      "CMVXL65.4BBA-017",
-      "CMVXL65.4BBB-019",
-      "DMVXL65.4BBA-004",
-      "DMVXL65.4BBB-005",
-      "EMVXL65.4BBA-011",
-      "EMVXL65.4BBB-012",
-      "FMVXL65.4BBA-011",
-      "GMVXL65.4BBA-012",
-      "HMVXL65.4BBA-011",
-      "JMVXL65.4BBA-015",
-      "KMVXL65.4BBA-016",
-      "LMVXL65.4BBA-009",
-      "MMVXL65.4BBA-018",
-      "NMVXL65.4BBA-004",
-      "PMVXL65.4BBA-008",
-      "RMVXL65.4BBA-006",
-      "SMVXL65.4BBA-022",
-      "TMVXL65.4BBA-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2150,
-    "rated_power_kw_max": 2180,
-    "displacements_l": [
-      65.37
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R-PTA2",
-        "slug": "mitsubishi-s16r-pta2",
-        "similarity": 0.941
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R-A2PTAW2",
-        "slug": "mitsubishi-s16r-a2ptaw2",
-        "similarity": 0.9
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R-F1PTAW2",
-        "slug": "mitsubishi-s16r-f1ptaw2",
-        "similarity": 0.9
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R-Y2PTAW2",
-        "slug": "mitsubishi-s16r-y2ptaw2",
-        "similarity": 0.9
-      },
-      {
-        "brand": "Mitsubishi",
-        "model": "S16R2-PTAW2-E",
-        "slug": "mitsubishi-s16r2-ptaw2-e",
-        "similarity": 0.9
-      }
-    ]
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "S3L2",
-    "normalized_model": "S3L2",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL01.3DDD",
-      "EMVXL01.3FFF",
-      "EMVXL01.3GGG",
-      "FMVXL01.3FFF",
-      "GMVXL01.3EBA",
-      "GMVXL01.3FFF",
-      "HMVXL01.3EBA",
-      "HMVXL01.3FFF",
-      "JMVXL01.3EBA",
-      "JMVXL01.3FFF",
-      "KMVXL01.8EBA",
-      "LMVXL01.8EBA",
-      "MMVXL01.8EBA",
-      "NMVXL01.8EBA",
-      "PMVXL01.8EBA",
-      "RMVXL01.8EBA",
-      "SMVXL01.8EBA",
-      "SMVXL01.8EBB",
-      "TMVXL01.8EBB"
-    ],
-    "engine_codes": [
-      "S3L2-G1800",
-      "S3L2-G1800-01",
-      "S3L2-P14-1",
-      "S3L2-P14-1A",
-      "S3L2-W461CG",
-      "S3L2-W461DG",
-      "S3L2-W461DG-NP2",
-      "S3L2-W461IR",
-      "S3L2-W461ML",
-      "S3L2-W461ML-NP2",
-      "S3L2-W461WM",
-      "S3L2-W461WM-NP2",
-      "S3L2-W462SD"
-    ],
-    "certificates": [
-      "CMVXL01.3DDD-012",
-      "EMVXL01.3FFF-001",
-      "EMVXL01.3GGG-016",
-      "FMVXL01.3FFF-001",
-      "GMVXL01.3EBA-002",
-      "GMVXL01.3FFF-006",
-      "HMVXL01.3EBA-002",
-      "HMVXL01.3FFF-014",
-      "JMVXL01.3EBA-008",
-      "JMVXL01.3FFF-019-R01",
-      "KMVXL01.8EBA-003",
-      "LMVXL01.8EBA-003",
-      "MMVXL01.8EBA-003",
-      "NMVXL01.8EBA-008",
-      "PMVXL01.8EBA-002",
-      "RMVXL01.8EBA-008",
-      "SMVXL01.8EBA-007",
-      "SMVXL01.8EBB-003",
-      "TMVXL01.8EBB-013"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 14,
-    "rated_power_kw_max": 14,
-    "displacements_l": [
-      1.3190000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "S4L2",
-    "normalized_model": "S4L2",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL01.3DDD",
-      "EMVXL01.3FFF",
-      "EMVXL01.3GGG",
-      "FMVXL01.3EDA",
-      "FMVXL01.3FFF",
-      "GMVXL01.3EBA",
-      "GMVXL01.3EDB",
-      "GMVXL01.3FFF",
-      "HMVXL01.3EBA",
-      "HMVXL01.3EDB",
-      "HMVXL01.3FFF",
-      "JMVXL01.3EBA",
-      "JMVXL01.3EDB",
-      "JMVXL01.3FFF",
-      "KMVXL01.8EBA",
-      "KMVXL01.8EDB",
-      "LMVXL01.8EBA",
-      "LMVXL01.8EDB",
-      "MMVXL01.8EBA",
-      "MMVXL01.8EDB",
-      "NMVXL01.8EBA",
-      "NMVXL01.8EDB",
-      "PMVXL01.8EBA",
-      "PMVXL01.8EDB",
-      "PMVXL01.8EDC",
-      "RMVXL01.8EBA",
-      "RMVXL01.8EDB",
-      "RMVXL01.8EDC",
-      "SMVXL01.8EBA",
-      "SMVXL01.8EBB",
-      "SMVXL01.8EDB",
-      "SMVXL01.8EDC",
-      "TMVXL01.8EBB",
-      "TMVXL01.8EDC"
-    ],
-    "engine_codes": [
-      "S4L-W361CG",
-      "S4L-W361DG",
-      "S4L-W361ML",
-      "S4L-W361WM",
-      "S4L-W362SD",
-      "S4L-W461CG",
-      "S4L-W461DG",
-      "S4L-W461DG-NP2",
-      "S4L-W461ML",
-      "S4L-W461ML-NP2",
-      "S4L-W461WM",
-      "S4L-W461WM-NP2",
-      "S4L-W462SD",
-      "S4L2-G1800",
-      "S4L2-G1800-01",
-      "S4L2-P18-1",
-      "S4L2-P18-2",
-      "S4L2-P18-2A",
-      "S4L2-P18-3",
-      "S4L2-P18-3A"
-    ],
-    "certificates": [
-      "CMVXL01.3DDD-012",
-      "EMVXL01.3FFF-001",
-      "EMVXL01.3GGG-016",
-      "FMVXL01.3EDA-015",
-      "FMVXL01.3FFF-001",
-      "GMVXL01.3EBA-002",
-      "GMVXL01.3EDB-001",
-      "GMVXL01.3FFF-006",
-      "HMVXL01.3EBA-002",
-      "HMVXL01.3EDB-015",
-      "HMVXL01.3FFF-014",
-      "JMVXL01.3EBA-008",
-      "JMVXL01.3EDB-009",
-      "JMVXL01.3FFF-019-R01",
-      "KMVXL01.8EBA-003",
-      "KMVXL01.8EDB-005",
-      "LMVXL01.8EBA-003",
-      "LMVXL01.8EDB-004",
-      "MMVXL01.8EBA-003",
-      "MMVXL01.8EDB-005",
-      "NMVXL01.8EBA-008",
-      "NMVXL01.8EDB-009",
-      "PMVXL01.8EBA-002",
-      "PMVXL01.8EDB-003",
-      "PMVXL01.8EDC-019",
-      "RMVXL01.8EBA-008",
-      "RMVXL01.8EDB-009",
-      "RMVXL01.8EDC-010",
-      "SMVXL01.8EBA-007",
-      "SMVXL01.8EBB-003",
-      "SMVXL01.8EDB-008",
-      "SMVXL01.8EDC-023",
-      "TMVXL01.8EBB-013",
-      "TMVXL01.8EDC-007"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.3190000000000002,
-      1.758
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "S4S",
-    "normalized_model": "S4S",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL03.3AAF",
-      "DMVXL03.3AAK",
-      "EMVXL03.3AAK",
-      "FMVXL03.3AAK",
-      "GMVXL03.3AAK",
-      "HMVXL03.3AAK",
-      "JMVXL03.3AAK",
-      "KMVXL03.3AAK",
-      "LMVXL03.3AAK",
-      "MMVXL03.3AAK",
-      "NMVXL03.3AAK",
-      "PMVXL03.3AAK",
-      "RMVXL03.3AAK",
-      "SMVXL03.3AAK",
-      "TMVXL03.3AAK"
-    ],
-    "engine_codes": [
-      "S4S-P35-1-C",
-      "S4S-Y365ADDG",
-      "S4S-Y36BDG"
-    ],
-    "certificates": [
-      "CMVXL03.3AAF-003",
-      "DMVXL03.3AAK-008",
-      "EMVXL03.3AAK-009",
-      "FMVXL03.3AAK-005",
-      "GMVXL03.3AAK-015",
-      "HMVXL03.3AAK-005",
-      "JMVXL03.3AAK-004",
-      "KMVXL03.3AAK-007",
-      "LMVXL03.3AAK-013",
-      "MMVXL03.3AAK-011",
-      "NMVXL03.3AAK-016",
-      "PMVXL03.3AAK-013",
-      "RMVXL03.3AAK-016",
-      "SMVXL03.3AAK-012",
-      "TMVXL03.3AAK-008"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 35,
-    "rated_power_kw_max": 35,
-    "displacements_l": [
-      3.331
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "S4S-DTB",
-    "normalized_model": "S4SDTB",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL03.3AAC",
-      "DMVXL03.3AAJ",
-      "EMVXL03.3AAJ",
-      "FMVXL03.3AAJ",
-      "GMVXL03.3AAJ",
-      "HMVXL03.3AAJ",
-      "JMVXL03.3AAJ",
-      "KMVXL03.3AAJ",
-      "LMVXL03.3AAJ",
-      "MMVXL03.3AAJ",
-      "NMVXL03.3AAJ",
-      "PMVXL03.3AAJ",
-      "RMVXL03.3AAJ",
-      "SMVXL03.3AAJ",
-      "TMVXL03.3AAJ"
-    ],
-    "engine_codes": [
-      "S4S-Y3DT61SD",
-      "S4S-Y3DT65DG"
-    ],
-    "certificates": [
-      "CMVXL03.3AAC-002",
-      "DMVXL03.3AAJ-009",
-      "EMVXL03.3AAJ-013",
-      "FMVXL03.3AAJ-013",
-      "GMVXL03.3AAJ-018",
-      "HMVXL03.3AAJ-003",
-      "JMVXL03.3AAJ-003",
-      "KMVXL03.3AAJ-006",
-      "LMVXL03.3AAJ-012",
-      "MMVXL03.3AAJ-010",
-      "NMVXL03.3AAJ-015",
-      "PMVXL03.3AAJ-012",
-      "RMVXL03.3AAJ-015",
-      "SMVXL03.3AAJ-011",
-      "TMVXL03.3AAJ-015"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable",
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 45,
-    "rated_power_kw_max": 45,
-    "displacements_l": [
-      3.331
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "S6R-PTAW",
-    "normalized_model": "S6RPTAW",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CMVXL24.5BBA",
-      "DMVXL24.5BBA",
-      "EMVXL24.5BBA",
-      "FMVXL24.5BBA",
-      "GMVXL24.5BBA",
-      "HMVXL24.5BBA",
-      "JMVXL24.5BBA",
-      "KMVXL24.5BBA",
-      "LMVXL24.5BBA",
-      "MMVXL24.5BBA",
-      "NMVXL24.5BBA",
-      "PMVXL24.5BBA",
-      "RMVXL24.5BBA",
-      "SMVXL24.5BBA",
-      "TMVXL24.5BBA"
-    ],
-    "engine_codes": [
-      "S6R-Y2PTAW-1"
-    ],
-    "certificates": [
-      "CMVXL24.5BBA-015",
-      "DMVXL24.5BBA-012",
-      "EMVXL24.5BBA-006",
-      "FMVXL24.5BBA-007",
-      "GMVXL24.5BBA-009",
-      "HMVXL24.5BBA-006",
-      "JMVXL24.5BBA-011",
-      "KMVXL24.5BBA-008",
-      "LMVXL24.5BBA-005",
-      "MMVXL24.5BBA-014",
-      "NMVXL24.5BBA-001",
-      "PMVXL24.5BBA-004",
-      "RMVXL24.5BBA-002",
-      "SMVXL24.5BBA-018",
-      "TMVXL24.5BBA-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 685,
-    "rated_power_kw_max": 685,
-    "displacements_l": [
-      24.514000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Mitsubishi",
-        "model": "S6R-PTA",
-        "slug": "mitsubishi-s6r-pta",
-        "similarity": 0.923
-      }
-    ]
-  },
-  {
     "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
     "mapped_database_brands": [
       "Hatz"
@@ -40976,140 +41134,6 @@
     "rated_power_kw_max": 40,
     "displacements_l": [
       3.387
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "D03CJ-TAA",
-    "normalized_model": "D03CJTAA",
-    "first_model_year": 2017,
-    "latest_model_year": 2025,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "HMVXL02.2EBA",
-      "JMVXL02.2EBA",
-      "KMVXL02.2EBA",
-      "LMVXL02.2EBA",
-      "MMVXL02.2EBA",
-      "NMVXL02.2EBA",
-      "PMVXL02.2EBA",
-      "RMVXL02.2EBA",
-      "SMVXL02.2EBA"
-    ],
-    "engine_codes": [
-      "3CJ-P35-1",
-      "3CJ-P35-2"
-    ],
-    "certificates": [
-      "HMVXL02.2EBA-001",
-      "JMVXL02.2EBA-010",
-      "KMVXL02.2EBA-012",
-      "LMVXL02.2EBA-016",
-      "MMVXL02.2EBA-007",
-      "NMVXL02.2EBA-017",
-      "PMVXL02.2EBA-016",
-      "RMVXL02.2EBA-012",
-      "SMVXL02.2EBA-005"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 35,
-    "rated_power_kw_max": 35,
-    "displacements_l": [
-      1.6560000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
-    "mapped_database_brands": [
-      "Mitsubishi"
-    ],
-    "epa_model": "D04CJ-TAA",
-    "normalized_model": "D04CJTAA",
-    "first_model_year": 2017,
-    "latest_model_year": 2025,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "HMVXL02.2EBA",
-      "JMVXL02.2EBA",
-      "KMVXL02.2EBA",
-      "LMVXL02.2EBA",
-      "MMVXL02.2EBA",
-      "NMVXL02.2EBA",
-      "PMVXL02.2EBA",
-      "RMVXL02.2EBA",
-      "SMVXL02.2EBA"
-    ],
-    "engine_codes": [
-      "4CJ-P55-1",
-      "4CJ-P55-2"
-    ],
-    "certificates": [
-      "HMVXL02.2EBA-001",
-      "JMVXL02.2EBA-010",
-      "KMVXL02.2EBA-012",
-      "LMVXL02.2EBA-016",
-      "MMVXL02.2EBA-007",
-      "NMVXL02.2EBA-017",
-      "PMVXL02.2EBA-016",
-      "RMVXL02.2EBA-012",
-      "SMVXL02.2EBA-005"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 55,
-    "rated_power_kw_max": 55,
-    "displacements_l": [
-      2.2070000000000003
     ],
     "match_status": "not_found",
     "database_matches": [],
