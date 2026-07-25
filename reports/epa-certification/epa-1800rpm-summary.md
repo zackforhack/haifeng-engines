@@ -19,21 +19,21 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **92**
+- Exact manufacturer/brand matches: **121**
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
 - Reviewed certification aliases: **50**
 - Verified commercial family matches: **34**
-- Exact matches whose database page uses 1800 as its primary RPM: **34**
+- Exact matches whose database page uses 1800 as its primary RPM: **63**
 - Exact model under another database brand: **9**
-- Not represented after reviewed matching rules: **700**
+- Not represented after reviewed matching rules: **671**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **31.3%**
-- Unmatched models with a 2024+ certification: **306**
+- Represented coverage within mapped manufacturers: **34.8%**
+- Unmatched models with a 2024+ certification: **277**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **176**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **147**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -46,13 +46,13 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 - `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's official co-development announcement identifies the six KD commercial engine families manufactured for Kohler generator sets.
 - `Kubota Corporation` EPA model names use certification suffixes such as `-EF` and `-ET`, while Kubota's public generator catalog uses commercial `E4-BG` and `E3-BG` names. Fifteen reviewed aliases require matching displacement, aspiration, emissions tier and Kubota-published 1800 RPM output.
 - `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append the shared Caterpillar base-engine name in parentheses. Ten reviewed aliases map those records only to Perkins ElectropaK pages with matching family, displacement, emissions tier and manufacturer-published 1800 RPM power node.
+- `Rolls-Royce Solutions America Inc` is represented under the `MTU` database brand. Exact 60 Hz commercial model pages retain MTU's `S`, `3B` and `3D` application suffixes and use the latest 1800 RPM power node in the EPA workbook, supplemented by public MTU gendrive specifications and operating instructions where available.
 - `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration names that differ from its TNV generator product names. Nine reviewed aliases map only where displacement, aspiration, emissions tier and the certified power node agree with Yanmar's official generator and industrial-engine documentation.
 
 ## Generator-Priority Gaps by Brand
 
 | Database brand | 2024+ constant-speed models without represented match |
 |---|---:|
-| MTU | 29 |
 | Cummins | 24 |
 | Mitsubishi | 16 |
 | FPT | 12 |
@@ -75,7 +75,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 
 | EPA manufacturer | Database brand | EPA models | Exact | Brand prefix | Base trims | Cert. trims | Cert. aliases | Families | Other-brand exact | Not found | Probable |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Rolls-Royce Solutions America Inc | MTU | 155 | 10 | 27 | 0 | 0 | 0 | 0 | 0 | 118 | 17 |
+| Rolls-Royce Solutions America Inc | MTU | 155 | 39 | 27 | 0 | 0 | 0 | 0 | 0 | 89 | 19 |
 | Cummins Inc. | Cummins | 80 | 23 | 0 | 0 | 0 | 0 | 13 | 0 | 44 | 11 |
 | Perkins Engines Co Ltd | Perkins | 79 | 6 | 0 | 0 | 0 | 10 | 6 | 6 | 51 | 2 |
 | FPT Industrial S.p.A. | FPT | 68 | 0 | 0 | 0 | 0 | 12 | 0 | 0 | 56 | 0 |
@@ -232,18 +232,6 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Perkins Engines Co Ltd | C1.5 | Tier 4 (Final or Phase In) | 18 |  |
 | 2026 | Perkins Engines Co Ltd | C2.2 | Interim Tier 4, Tier 4 (Final or Phase In) | 36 |  |
 | 2026 | Perkins Engines Co Ltd | C7.1 | Interim Tier 4, Tier 4 (Final or Phase In) | 180 |  |
-| 2026 | Rolls-Royce Solutions America Inc | 12V1600G10S | Tier 2 | 561 | MTU 12V1600G10 (0.952) |
-| 2026 | Rolls-Royce Solutions America Inc | 12V1600G20S | Tier 2 | 608 | MTU 12V1600G20 (0.952) |
-| 2026 | Rolls-Royce Solutions America Inc | 12V1600G70S | Tier 2 | 613 | MTU 12V1600 G01S (0.909) |
-| 2026 | Rolls-Royce Solutions America Inc | 12V1600G80S | Tier 2 | 668 | MTU 12V1600 G01S (0.909) |
-| 2026 | Rolls-Royce Solutions America Inc | 12V2000G26S | Tier 2 | 810 |  |
-| 2026 | Rolls-Royce Solutions America Inc | 12V2000G76S | Tier 2 | 890 |  |
-| 2026 | Rolls-Royce Solutions America Inc | 12V2000G86S | Tier 2 | 987 |  |
-| 2026 | Rolls-Royce Solutions America Inc | 12V4000G74S | Tier 2 | 1736 | MTU 12V4000 GS (0.900) |
-| 2026 | Rolls-Royce Solutions America Inc | 16V2000G26S | Tier 2 | 998 |  |
-| 2026 | Rolls-Royce Solutions America Inc | 16V2000G76S | Tier 2 | 1097 |  |
-| 2026 | Rolls-Royce Solutions America Inc | 16V2000G86S | Tier 2 | 1371 |  |
-| 2026 | Rolls-Royce Solutions America Inc | 18V2000G76S | Tier 2 | 1371 |  |
 | 2026 | Societe Internationale des Moteurs-Baudouin | 12M33 | Tier 2 | 1420 |  |
 | 2026 | Societe Internationale des Moteurs-Baudouin | 12M55 | Tier 2 | 2752 |  |
 | 2026 | Societe Internationale des Moteurs-Baudouin | 16M33 | Tier 2 | 1893 |  |
@@ -267,14 +255,23 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2025 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | D03CJ-TAA | Tier 4 (Final or Phase In) | 35 |  |
 | 2025 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | D04CJ-TAA | Tier 4 (Final or Phase In) | 55 |  |
 | 2025 | Perkins Engines Co Ltd | 1204F-E44TTAN(C4.4) | Tier 4 (Final or Phase In) | 129 |  |
-| 2025 | Rolls-Royce Solutions America Inc | 12V1600G30S | Tier 2 | 668 | MTU 12V1600 G01S (0.909) |
-| 2025 | Rolls-Royce Solutions America Inc | 12V1600G90S | Tier 2 | 730 | MTU 12V1600 G01S (0.909) |
 | 2025 | Weichai Power Co.,Ltd. | 12M33 | Tier 2 | 1375 |  |
 | 2025 | Weichai Power Co.,Ltd. | 16M33 | Tier 2 | 1850 |  |
 | 2025 | Weichai Power Co.,Ltd. | 6M33 | Tier 2 | 710 |  |
 | 2024 | Cummins Inc. | QSK23-C | Tier 2 | 708 | Cummins QSK23 (0.909) |
 | 2024 | Cummins Inc. | QSL | Tier 3 | 346 |  |
 | 2024 | Cummins Inc. | QSM11-C | Tier 3 | 298 |  |
+| 2024 | Cummins Inc. | QSZ13-G9 | Tier 3 | 500 |  |
+| 2024 | Deutz AG | TAD550GE | Tier 3 | 98 |  |
+| 2024 | Deutz AG | TAD551GE | Tier 3 | 114 |  |
+| 2024 | Deutz AG | TAD750GE | Tier 3 | 150 |  |
+| 2024 | Deutz AG | TAD751GE | Tier 3 | 174 |  |
+| 2024 | Deutz AG | TAD752GE | Tier 3 | 212 |  |
+| 2024 | Deutz AG | TAD753GE | Tier 3 | 233 |  |
+| 2024 | Deutz AG | TAD754GE | Tier 3 | 260 |  |
+| 2024 | Perkins Engines Co Ltd | 403F-15 | Tier 4 (Final or Phase In) | 15 |  |
+| 2024 | Perkins Engines Co Ltd | C1.1 | Tier 4 (Final or Phase In) | 12 |  |
+| 2024 | Perkins Engines Co Ltd | S773L-F | Tier 4 (Final or Phase In) | 11 |  |
 
 ## Interpretation
 

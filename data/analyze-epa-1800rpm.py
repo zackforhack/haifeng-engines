@@ -548,6 +548,10 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "the shared Caterpillar base-engine name in parentheses. Ten reviewed aliases map those "
         "records only to Perkins ElectropaK pages with matching family, displacement, emissions "
         "tier and manufacturer-published 1800 RPM power node.",
+        "- `Rolls-Royce Solutions America Inc` is represented under the `MTU` database brand. "
+        "Exact 60 Hz commercial model pages retain MTU's `S`, `3B` and `3D` application suffixes "
+        "and use the latest 1800 RPM power node in the EPA workbook, supplemented by public MTU "
+        "gendrive specifications and operating instructions where available.",
         "- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration "
         "names that differ from its TNV generator product names. Nine reviewed aliases map only "
         "where displacement, aspiration, emissions tier and the certified power node agree with "

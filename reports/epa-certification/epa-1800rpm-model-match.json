@@ -14071,6 +14071,81 @@
     "mapped_database_brands": [
       "MTU"
     ],
+    "epa_model": "12V1600G10S",
+    "normalized_model": "12V1600G10S",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JMDDL21.0ZWR",
+      "KMDDL21.0ZWR",
+      "LMDDL21.0ZWR",
+      "MMDDL21.0ZWR",
+      "NMDDL21.0ZWR",
+      "PMDDL21.0ZWR",
+      "RMDDL21.0ZWR",
+      "SMDDL21.0ZWR",
+      "TMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7189"
+    ],
+    "certificates": [
+      "JMDDL21.0ZWR-004",
+      "KMDDL21.0ZWR-002",
+      "LMDDL21.0ZWR-001",
+      "MMDDL21.0ZWR-004",
+      "NMDDL21.0ZWR-003",
+      "PMDDL21.0ZWR-001",
+      "RMDDL21.0ZWR-006",
+      "SMDDL21.0ZWR-001",
+      "TMDDL21.0ZWR-001"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 561,
+    "rated_power_kw_max": 561,
+    "displacements_l": [
+      21.042
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G10S",
+        "slug": "mtu-12v1600g10s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
     "epa_model": "12V1600G11S",
     "normalized_model": "12V1600G11S",
     "first_model_year": 2022,
@@ -14125,6 +14200,81 @@
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V1600G20S",
+    "normalized_model": "12V1600G20S",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JMDDL21.0ZWR",
+      "KMDDL21.0ZWR",
+      "LMDDL21.0ZWR",
+      "MMDDL21.0ZWR",
+      "NMDDL21.0ZWR",
+      "PMDDL21.0ZWR",
+      "RMDDL21.0ZWR",
+      "SMDDL21.0ZWR",
+      "TMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7186"
+    ],
+    "certificates": [
+      "JMDDL21.0ZWR-004",
+      "KMDDL21.0ZWR-002",
+      "LMDDL21.0ZWR-001",
+      "MMDDL21.0ZWR-004",
+      "NMDDL21.0ZWR-003",
+      "PMDDL21.0ZWR-001",
+      "RMDDL21.0ZWR-006",
+      "SMDDL21.0ZWR-001",
+      "TMDDL21.0ZWR-001"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 608,
+    "rated_power_kw_max": 608,
+    "displacements_l": [
+      21.042
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G20S",
+        "slug": "mtu-12v1600g20s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
       }
     ],
     "probable_database_matches": []
@@ -14449,6 +14599,81 @@
     "mapped_database_brands": [
       "MTU"
     ],
+    "epa_model": "12V1600G70S",
+    "normalized_model": "12V1600G70S",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JMDDL21.0ZWR",
+      "KMDDL21.0ZWR",
+      "LMDDL21.0ZWR",
+      "MMDDL21.0ZWR",
+      "NMDDL21.0ZWR",
+      "PMDDL21.0ZWR",
+      "RMDDL21.0ZWR",
+      "SMDDL21.0ZWR",
+      "TMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7188"
+    ],
+    "certificates": [
+      "JMDDL21.0ZWR-004",
+      "KMDDL21.0ZWR-002",
+      "LMDDL21.0ZWR-001",
+      "MMDDL21.0ZWR-004",
+      "NMDDL21.0ZWR-003",
+      "PMDDL21.0ZWR-001",
+      "RMDDL21.0ZWR-006",
+      "SMDDL21.0ZWR-001",
+      "TMDDL21.0ZWR-001"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 613,
+    "rated_power_kw_max": 613,
+    "displacements_l": [
+      21.042
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G70S",
+        "slug": "mtu-12v1600g70s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
     "epa_model": "12V1600G71S",
     "normalized_model": "12V1600G71S",
     "first_model_year": 2022,
@@ -14503,6 +14728,81 @@
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V1600G80S",
+    "normalized_model": "12V1600G80S",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JMDDL21.0ZWR",
+      "KMDDL21.0ZWR",
+      "LMDDL21.0ZWR",
+      "MMDDL21.0ZWR",
+      "NMDDL21.0ZWR",
+      "PMDDL21.0ZWR",
+      "RMDDL21.0ZWR",
+      "SMDDL21.0ZWR",
+      "TMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7185"
+    ],
+    "certificates": [
+      "JMDDL21.0ZWR-004",
+      "KMDDL21.0ZWR-002",
+      "LMDDL21.0ZWR-001",
+      "MMDDL21.0ZWR-004",
+      "NMDDL21.0ZWR-003",
+      "PMDDL21.0ZWR-001",
+      "RMDDL21.0ZWR-006",
+      "SMDDL21.0ZWR-001",
+      "TMDDL21.0ZWR-001"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 668,
+    "rated_power_kw_max": 668,
+    "displacements_l": [
+      21.042
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G80S",
+        "slug": "mtu-12v1600g80s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
       }
     ],
     "probable_database_matches": []
@@ -14629,6 +14929,261 @@
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V2000G26S",
+    "normalized_model": "12V2000G26S",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FMDDL40.1GNR",
+      "GMDDL40.1GNR",
+      "HMDDL40.1GNR",
+      "JMDDL40.1GNR",
+      "KMDDL40.1GNR",
+      "LMDDL40.1GNR",
+      "MMDDL40.1GNR",
+      "NMDDL40.1GNR",
+      "PMDDL40.1GNR",
+      "RMDDL40.1GNR",
+      "SMDDL40.1GNR",
+      "TMDDL40.1GNR"
+    ],
+    "engine_codes": [
+      "7290"
+    ],
+    "certificates": [
+      "FMDDL40.1GNR-006",
+      "GMDDL40.1GNR-004",
+      "HMDDL40.1GNR-001",
+      "JMDDL40.1GNR-007",
+      "KMDDL40.1GNR-005",
+      "LMDDL40.1GNR-006",
+      "MMDDL40.1GNR-005",
+      "NMDDL40.1GNR-004",
+      "PMDDL40.1GNR-003",
+      "RMDDL40.1GNR-004",
+      "SMDDL40.1GNR-003",
+      "TMDDL40.1GNR-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 810,
+    "rated_power_kw_max": 810,
+    "displacements_l": [
+      26.796000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V2000G26S",
+        "slug": "mtu-12v2000g26s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V2000G76S",
+    "normalized_model": "12V2000G76S",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FMDDL40.1GNR",
+      "GMDDL40.1GNR",
+      "HMDDL40.1GNR",
+      "JMDDL40.1GNR",
+      "KMDDL40.1GNR",
+      "LMDDL40.1GNR",
+      "MMDDL40.1GNR",
+      "NMDDL40.1GNR",
+      "PMDDL40.1GNR",
+      "RMDDL40.1GNR",
+      "SMDDL40.1GNR",
+      "TMDDL40.1GNR"
+    ],
+    "engine_codes": [
+      "7286"
+    ],
+    "certificates": [
+      "FMDDL40.1GNR-006",
+      "GMDDL40.1GNR-004",
+      "HMDDL40.1GNR-001",
+      "JMDDL40.1GNR-007",
+      "KMDDL40.1GNR-005",
+      "LMDDL40.1GNR-006",
+      "MMDDL40.1GNR-005",
+      "NMDDL40.1GNR-004",
+      "PMDDL40.1GNR-003",
+      "RMDDL40.1GNR-004",
+      "SMDDL40.1GNR-003",
+      "TMDDL40.1GNR-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 890,
+    "rated_power_kw_max": 890,
+    "displacements_l": [
+      26.796000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V2000G76S",
+        "slug": "mtu-12v2000g76s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V2000G86S",
+    "normalized_model": "12V2000G86S",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FMDDL40.1GNR",
+      "GMDDL40.1GNR",
+      "HMDDL40.1GNR",
+      "JMDDL40.1GNR",
+      "KMDDL40.1GNR",
+      "LMDDL40.1GNR",
+      "MMDDL40.1GNR",
+      "NMDDL40.1GNR",
+      "PMDDL40.1GNR",
+      "RMDDL40.1GNR",
+      "SMDDL40.1GNR",
+      "TMDDL40.1GNR"
+    ],
+    "engine_codes": [
+      "7287"
+    ],
+    "certificates": [
+      "FMDDL40.1GNR-006",
+      "GMDDL40.1GNR-004",
+      "HMDDL40.1GNR-001",
+      "JMDDL40.1GNR-007",
+      "KMDDL40.1GNR-005",
+      "LMDDL40.1GNR-006",
+      "MMDDL40.1GNR-005",
+      "NMDDL40.1GNR-004",
+      "PMDDL40.1GNR-003",
+      "RMDDL40.1GNR-004",
+      "SMDDL40.1GNR-003",
+      "TMDDL40.1GNR-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 987,
+    "rated_power_kw_max": 987,
+    "displacements_l": [
+      26.796000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V2000G86S",
+        "slug": "mtu-12v2000g86s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
       }
     ],
     "probable_database_matches": []
@@ -14787,6 +15342,79 @@
     "mapped_database_brands": [
       "MTU"
     ],
+    "epa_model": "12V4000G74S",
+    "normalized_model": "12V4000G74S",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JMDDL95.4GTR",
+      "KMDDL95.4GTR",
+      "MMDDL95.4GTZ",
+      "NMDDL95.4GTZ",
+      "PMDDL95.4GTZ",
+      "RMDDL95.4GTZ",
+      "SMDDL95.4GTZ",
+      "TMDDL95.4GTZ"
+    ],
+    "engine_codes": [
+      "7315"
+    ],
+    "certificates": [
+      "JMDDL95.4GTR-001",
+      "KMDDL95.4GTR-007",
+      "MMDDL95.4GTZ-002",
+      "NMDDL95.4GTZ-005",
+      "PMDDL95.4GTZ-004",
+      "RMDDL95.4GTZ-002",
+      "SMDDL95.4GTZ-005",
+      "TMDDL95.4GTZ-004"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1736,
+    "rated_power_kw_max": 1736,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V4000G74S",
+        "slug": "mtu-12v4000g74s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
     "epa_model": "12V4000G84S",
     "normalized_model": "12V4000G84S",
     "first_model_year": 2018,
@@ -14853,6 +15481,261 @@
         "slug": "mtu-12v4000-g84s",
         "rpm_rated": 1500,
         "emissions_standard": "Unregulated",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V2000G26S",
+    "normalized_model": "16V2000G26S",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FMDDL40.1GNR",
+      "GMDDL40.1GNR",
+      "HMDDL40.1GNR",
+      "JMDDL40.1GNR",
+      "KMDDL40.1GNR",
+      "LMDDL40.1GNR",
+      "MMDDL40.1GNR",
+      "NMDDL40.1GNR",
+      "PMDDL40.1GNR",
+      "RMDDL40.1GNR",
+      "SMDDL40.1GNR",
+      "TMDDL40.1GNR"
+    ],
+    "engine_codes": [
+      "7291"
+    ],
+    "certificates": [
+      "FMDDL40.1GNR-006",
+      "GMDDL40.1GNR-004",
+      "HMDDL40.1GNR-001",
+      "JMDDL40.1GNR-007",
+      "KMDDL40.1GNR-005",
+      "LMDDL40.1GNR-006",
+      "MMDDL40.1GNR-005",
+      "NMDDL40.1GNR-004",
+      "PMDDL40.1GNR-003",
+      "RMDDL40.1GNR-004",
+      "SMDDL40.1GNR-003",
+      "TMDDL40.1GNR-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 998,
+    "rated_power_kw_max": 998,
+    "displacements_l": [
+      35.727000000000004
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "16V2000G26S",
+        "slug": "mtu-16v2000g26s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V2000G76S",
+    "normalized_model": "16V2000G76S",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FMDDL40.1GNR",
+      "GMDDL40.1GNR",
+      "HMDDL40.1GNR",
+      "JMDDL40.1GNR",
+      "KMDDL40.1GNR",
+      "LMDDL40.1GNR",
+      "MMDDL40.1GNR",
+      "NMDDL40.1GNR",
+      "PMDDL40.1GNR",
+      "RMDDL40.1GNR",
+      "SMDDL40.1GNR",
+      "TMDDL40.1GNR"
+    ],
+    "engine_codes": [
+      "7288"
+    ],
+    "certificates": [
+      "FMDDL40.1GNR-006",
+      "GMDDL40.1GNR-004",
+      "HMDDL40.1GNR-001",
+      "JMDDL40.1GNR-007",
+      "KMDDL40.1GNR-005",
+      "LMDDL40.1GNR-006",
+      "MMDDL40.1GNR-005",
+      "NMDDL40.1GNR-004",
+      "PMDDL40.1GNR-003",
+      "RMDDL40.1GNR-004",
+      "SMDDL40.1GNR-003",
+      "TMDDL40.1GNR-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1097,
+    "rated_power_kw_max": 1097,
+    "displacements_l": [
+      35.727000000000004
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "16V2000G76S",
+        "slug": "mtu-16v2000g76s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V2000G86S",
+    "normalized_model": "16V2000G86S",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FMDDL40.1GNR",
+      "GMDDL40.1GNR",
+      "HMDDL40.1GNR",
+      "JMDDL40.1GNR",
+      "KMDDL40.1GNR",
+      "LMDDL40.1GNR",
+      "MMDDL40.1GNR",
+      "NMDDL40.1GNR",
+      "PMDDL40.1GNR",
+      "RMDDL40.1GNR",
+      "SMDDL40.1GNR",
+      "TMDDL40.1GNR"
+    ],
+    "engine_codes": [
+      "7289"
+    ],
+    "certificates": [
+      "FMDDL40.1GNR-006",
+      "GMDDL40.1GNR-004",
+      "HMDDL40.1GNR-001",
+      "JMDDL40.1GNR-007",
+      "KMDDL40.1GNR-005",
+      "LMDDL40.1GNR-006",
+      "MMDDL40.1GNR-005",
+      "NMDDL40.1GNR-004",
+      "PMDDL40.1GNR-003",
+      "RMDDL40.1GNR-004",
+      "SMDDL40.1GNR-003",
+      "TMDDL40.1GNR-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1371,
+    "rated_power_kw_max": 1371,
+    "displacements_l": [
+      35.727000000000004
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "16V2000G86S",
+        "slug": "mtu-16v2000g86s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -15237,6 +16120,91 @@
         "slug": "mtu-16v4000-g94s",
         "rpm_rated": 1500,
         "emissions_standard": "Unregulated",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "18V2000G76S",
+    "normalized_model": "18V2000G76S",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FMDDL40.1GNR",
+      "GMDDL40.1GNR",
+      "HMDDL40.1GNR",
+      "JMDDL40.1GNR",
+      "KMDDL40.1GNR",
+      "LMDDL40.1GNR",
+      "MMDDL40.1GNR",
+      "NMDDL40.1GNR",
+      "PMDDL40.1GNR",
+      "RMDDL40.1GNR",
+      "SMDDL40.1GNR",
+      "TMDDL40.1GNR"
+    ],
+    "engine_codes": [
+      "7265"
+    ],
+    "certificates": [
+      "FMDDL40.1GNR-006",
+      "GMDDL40.1GNR-004",
+      "HMDDL40.1GNR-001",
+      "JMDDL40.1GNR-007",
+      "KMDDL40.1GNR-005",
+      "LMDDL40.1GNR-006",
+      "MMDDL40.1GNR-005",
+      "NMDDL40.1GNR-004",
+      "PMDDL40.1GNR-003",
+      "RMDDL40.1GNR-004",
+      "SMDDL40.1GNR-003",
+      "TMDDL40.1GNR-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1371,
+    "rated_power_kw_max": 1371,
+    "displacements_l": [
+      40.193000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "18V2000G76S",
+        "slug": "mtu-18v2000g76s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -17898,6 +18866,150 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V1600G30S",
+    "normalized_model": "12V1600G30S",
+    "first_model_year": 2018,
+    "latest_model_year": 2025,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "JMDDL21.0ZWR",
+      "KMDDL21.0ZWR",
+      "LMDDL21.0ZWR",
+      "MMDDL21.0ZWR",
+      "NMDDL21.0ZWR",
+      "PMDDL21.0ZWR",
+      "RMDDL21.0ZWR",
+      "SMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7314"
+    ],
+    "certificates": [
+      "JMDDL21.0ZWR-004",
+      "KMDDL21.0ZWR-002",
+      "LMDDL21.0ZWR-001",
+      "MMDDL21.0ZWR-004",
+      "NMDDL21.0ZWR-003",
+      "PMDDL21.0ZWR-001",
+      "RMDDL21.0ZWR-006",
+      "SMDDL21.0ZWR-001"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 668,
+    "rated_power_kw_max": 668,
+    "displacements_l": [
+      21.042
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G30S",
+        "slug": "mtu-12v1600g30s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V1600G90S",
+    "normalized_model": "12V1600G90S",
+    "first_model_year": 2018,
+    "latest_model_year": 2025,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "JMDDL21.0ZWR",
+      "KMDDL21.0ZWR",
+      "LMDDL21.0ZWR",
+      "MMDDL21.0ZWR",
+      "NMDDL21.0ZWR",
+      "PMDDL21.0ZWR",
+      "RMDDL21.0ZWR",
+      "SMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7313"
+    ],
+    "certificates": [
+      "JMDDL21.0ZWR-004",
+      "KMDDL21.0ZWR-002",
+      "LMDDL21.0ZWR-001",
+      "MMDDL21.0ZWR-004",
+      "NMDDL21.0ZWR-003",
+      "PMDDL21.0ZWR-001",
+      "RMDDL21.0ZWR-006",
+      "SMDDL21.0ZWR-001"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 730,
+    "rated_power_kw_max": 730,
+    "displacements_l": [
+      21.042
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G90S",
+        "slug": "mtu-12v1600g90s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "AB Volvo Penta",
     "mapped_database_brands": [
       "Volvo Penta"
@@ -18847,6 +19959,1128 @@
         "slug": "perkins-403f-11g",
         "rpm_rated": 1500,
         "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "10V1600G20S",
+    "normalized_model": "10V1600G20S",
+    "first_model_year": 2018,
+    "latest_model_year": 2024,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "JMDDL21.0ZWR",
+      "KMDDL21.0ZWR",
+      "LMDDL21.0ZWR",
+      "MMDDL21.0ZWR",
+      "NMDDL21.0ZWR",
+      "PMDDL21.0ZWR",
+      "RMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7191"
+    ],
+    "certificates": [
+      "JMDDL21.0ZWR-004",
+      "KMDDL21.0ZWR-002",
+      "LMDDL21.0ZWR-001",
+      "MMDDL21.0ZWR-004",
+      "NMDDL21.0ZWR-003",
+      "PMDDL21.0ZWR-001",
+      "RMDDL21.0ZWR-006"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 511,
+    "rated_power_kw_max": 511,
+    "displacements_l": [
+      17.535
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G20S",
+        "slug": "mtu-10v1600g20s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "10V1600G70S 3D",
+    "normalized_model": "10V1600G70S3D",
+    "first_model_year": 2016,
+    "latest_model_year": 2024,
+    "model_years": [
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "GMDDL14.0ZWK",
+      "HMDDL14.0ZWK",
+      "KMDDL14.0ZWK",
+      "LMDDL14.0ZWK",
+      "MMDDL14.0ZWK",
+      "NMDDL14.0ZWK",
+      "PMDDL14.0ZWK",
+      "RMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7244"
+    ],
+    "certificates": [
+      "GMDDL14.0ZWK-005",
+      "HMDDL14.0ZWK-007",
+      "KMDDL14.0ZWK-003",
+      "LMDDL14.0ZWK-002",
+      "MMDDL14.0ZWK-003",
+      "NMDDL14.0ZWK-002",
+      "PMDDL14.0ZWK-002",
+      "RMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 511,
+    "rated_power_kw_max": 511,
+    "displacements_l": [
+      17.535
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G70S 3D",
+        "slug": "mtu-10v1600g70s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "10V1600G80S",
+    "normalized_model": "10V1600G80S",
+    "first_model_year": 2018,
+    "latest_model_year": 2024,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "JMDDL21.0ZWR",
+      "KMDDL21.0ZWR",
+      "LMDDL21.0ZWR",
+      "MMDDL21.0ZWR",
+      "NMDDL21.0ZWR",
+      "PMDDL21.0ZWR",
+      "RMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7190"
+    ],
+    "certificates": [
+      "JMDDL21.0ZWR-004",
+      "KMDDL21.0ZWR-002",
+      "LMDDL21.0ZWR-001",
+      "MMDDL21.0ZWR-004",
+      "NMDDL21.0ZWR-003",
+      "PMDDL21.0ZWR-001",
+      "RMDDL21.0ZWR-006"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 561,
+    "rated_power_kw_max": 561,
+    "displacements_l": [
+      17.535
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G80S",
+        "slug": "mtu-10v1600g80s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000G15S",
+    "normalized_model": "12V4000G15S",
+    "first_model_year": 2021,
+    "latest_model_year": 2024,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "MMDDL95.4GTZ",
+      "NMDDL95.4GTZ",
+      "PMDDL95.4GTZ",
+      "RMDDL95.4GTZ"
+    ],
+    "engine_codes": [
+      "7338"
+    ],
+    "certificates": [
+      "MMDDL95.4GTZ-002",
+      "NMDDL95.4GTZ-005",
+      "PMDDL95.4GTZ-004",
+      "RMDDL95.4GTZ-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1489,
+    "rated_power_kw_max": 1489,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V4000G15S",
+        "slug": "mtu-12v4000g15s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000G25S",
+    "normalized_model": "12V4000G25S",
+    "first_model_year": 2021,
+    "latest_model_year": 2024,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "MMDDL95.4GTZ",
+      "NMDDL95.4GTZ",
+      "PMDDL95.4GTZ",
+      "RMDDL95.4GTZ"
+    ],
+    "engine_codes": [
+      "7339"
+    ],
+    "certificates": [
+      "MMDDL95.4GTZ-002",
+      "NMDDL95.4GTZ-005",
+      "PMDDL95.4GTZ-004",
+      "RMDDL95.4GTZ-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1745,
+    "rated_power_kw_max": 1745,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V4000G25S",
+        "slug": "mtu-12v4000g25s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000G75S",
+    "normalized_model": "12V4000G75S",
+    "first_model_year": 2021,
+    "latest_model_year": 2024,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "MMDDL95.4GTZ",
+      "NMDDL95.4GTZ",
+      "PMDDL95.4GTZ",
+      "RMDDL95.4GTZ"
+    ],
+    "engine_codes": [
+      "7340"
+    ],
+    "certificates": [
+      "MMDDL95.4GTZ-002",
+      "NMDDL95.4GTZ-005",
+      "PMDDL95.4GTZ-004",
+      "RMDDL95.4GTZ-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1638,
+    "rated_power_kw_max": 1638,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V4000G75S",
+        "slug": "mtu-12v4000g75s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000G85S",
+    "normalized_model": "12V4000G85S",
+    "first_model_year": 2021,
+    "latest_model_year": 2024,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "MMDDL95.4GTZ",
+      "NMDDL95.4GTZ",
+      "PMDDL95.4GTZ",
+      "RMDDL95.4GTZ"
+    ],
+    "engine_codes": [
+      "7341"
+    ],
+    "certificates": [
+      "MMDDL95.4GTZ-002",
+      "NMDDL95.4GTZ-005",
+      "PMDDL95.4GTZ-004",
+      "RMDDL95.4GTZ-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1919,
+    "rated_power_kw_max": 1919,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V4000G85S",
+        "slug": "mtu-12v4000g85s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "6R1600G10S 3B",
+    "normalized_model": "6R1600G10S3B",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CMDDL14.0ZWK",
+      "DMDDL14.0ZWK",
+      "EMDDL14.0ZWK",
+      "FMDDL14.0ZWK",
+      "GMDDL14.0ZWK",
+      "HMDDL14.0ZWK",
+      "KMDDL14.0ZWK",
+      "LMDDL14.0ZWK",
+      "MMDDL14.0ZWK",
+      "NMDDL14.0ZWK",
+      "PMDDL14.0ZWK",
+      "RMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7218"
+    ],
+    "certificates": [
+      "CMDDL14.0ZWK-004",
+      "DMDDL14.0ZWK-005",
+      "EMDDL14.0ZWK-005",
+      "FMDDL14.0ZWK-004",
+      "GMDDL14.0ZWK-005",
+      "HMDDL14.0ZWK-007",
+      "KMDDL14.0ZWK-003",
+      "LMDDL14.0ZWK-002",
+      "MMDDL14.0ZWK-003",
+      "NMDDL14.0ZWK-002",
+      "PMDDL14.0ZWK-002",
+      "RMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 284,
+    "rated_power_kw_max": 312,
+    "displacements_l": [
+      10.521
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G10S 3B",
+        "slug": "mtu-6r1600g10s-3b",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "6R1600G20S 3B",
+    "normalized_model": "6R1600G20S3B",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CMDDL14.0ZWK",
+      "DMDDL14.0ZWK",
+      "EMDDL14.0ZWK",
+      "FMDDL14.0ZWK",
+      "GMDDL14.0ZWK",
+      "HMDDL14.0ZWK",
+      "KMDDL14.0ZWK",
+      "LMDDL14.0ZWK",
+      "MMDDL14.0ZWK",
+      "NMDDL14.0ZWK",
+      "PMDDL14.0ZWK",
+      "RMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7217"
+    ],
+    "certificates": [
+      "CMDDL14.0ZWK-004",
+      "DMDDL14.0ZWK-005",
+      "EMDDL14.0ZWK-005",
+      "FMDDL14.0ZWK-004",
+      "GMDDL14.0ZWK-005",
+      "HMDDL14.0ZWK-007",
+      "KMDDL14.0ZWK-003",
+      "LMDDL14.0ZWK-002",
+      "MMDDL14.0ZWK-003",
+      "NMDDL14.0ZWK-002",
+      "PMDDL14.0ZWK-002",
+      "RMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 312,
+    "rated_power_kw_max": 343,
+    "displacements_l": [
+      10.521
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G20S 3B",
+        "slug": "mtu-6r1600g20s-3b",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "6R1600G70S 3D",
+    "normalized_model": "6R1600G70S3D",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CMDDL14.0ZWK",
+      "DMDDL14.0ZWK",
+      "EMDDL14.0ZWK",
+      "FMDDL14.0ZWK",
+      "GMDDL14.0ZWK",
+      "HMDDL14.0ZWK",
+      "KMDDL14.0ZWK",
+      "LMDDL14.0ZWK",
+      "MMDDL14.0ZWK",
+      "NMDDL14.0ZWK",
+      "PMDDL14.0ZWK",
+      "RMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7216"
+    ],
+    "certificates": [
+      "CMDDL14.0ZWK-004",
+      "DMDDL14.0ZWK-005",
+      "EMDDL14.0ZWK-005",
+      "FMDDL14.0ZWK-004",
+      "GMDDL14.0ZWK-005",
+      "HMDDL14.0ZWK-007",
+      "KMDDL14.0ZWK-003",
+      "LMDDL14.0ZWK-002",
+      "MMDDL14.0ZWK-003",
+      "NMDDL14.0ZWK-002",
+      "PMDDL14.0ZWK-002",
+      "RMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 312,
+    "rated_power_kw_max": 312,
+    "displacements_l": [
+      10.521
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G70S 3D",
+        "slug": "mtu-6r1600g70s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "6R1600G80S 3D",
+    "normalized_model": "6R1600G80S3D",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CMDDL14.0ZWK",
+      "DMDDL14.0ZWK",
+      "EMDDL14.0ZWK",
+      "FMDDL14.0ZWK",
+      "GMDDL14.0ZWK",
+      "HMDDL14.0ZWK",
+      "KMDDL14.0ZWK",
+      "LMDDL14.0ZWK",
+      "MMDDL14.0ZWK",
+      "NMDDL14.0ZWK",
+      "PMDDL14.0ZWK",
+      "RMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7215"
+    ],
+    "certificates": [
+      "CMDDL14.0ZWK-004",
+      "DMDDL14.0ZWK-005",
+      "EMDDL14.0ZWK-005",
+      "FMDDL14.0ZWK-004",
+      "GMDDL14.0ZWK-005",
+      "HMDDL14.0ZWK-007",
+      "KMDDL14.0ZWK-003",
+      "LMDDL14.0ZWK-002",
+      "MMDDL14.0ZWK-003",
+      "NMDDL14.0ZWK-002",
+      "PMDDL14.0ZWK-002",
+      "RMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 343,
+    "rated_power_kw_max": 343,
+    "displacements_l": [
+      10.521
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G80S 3D",
+        "slug": "mtu-6r1600g80s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "8V1600G10S 3B",
+    "normalized_model": "8V1600G10S3B",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CMDDL14.0ZWK",
+      "DMDDL14.0ZWK",
+      "EMDDL14.0ZWK",
+      "FMDDL14.0ZWK",
+      "GMDDL14.0ZWK",
+      "HMDDL14.0ZWK",
+      "KMDDL14.0ZWK",
+      "LMDDL14.0ZWK",
+      "MMDDL14.0ZWK",
+      "NMDDL14.0ZWK",
+      "PMDDL14.0ZWK",
+      "RMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7222"
+    ],
+    "certificates": [
+      "CMDDL14.0ZWK-004",
+      "DMDDL14.0ZWK-005",
+      "EMDDL14.0ZWK-005",
+      "FMDDL14.0ZWK-004",
+      "GMDDL14.0ZWK-005",
+      "HMDDL14.0ZWK-007",
+      "KMDDL14.0ZWK-003",
+      "LMDDL14.0ZWK-002",
+      "MMDDL14.0ZWK-003",
+      "NMDDL14.0ZWK-002",
+      "PMDDL14.0ZWK-002",
+      "RMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 371,
+    "rated_power_kw_max": 409,
+    "displacements_l": [
+      14.028
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G10S 3B",
+        "slug": "mtu-8v1600g10s-3b",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "8V1600G20S 3B",
+    "normalized_model": "8V1600G20S3B",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CMDDL14.0ZWK",
+      "DMDDL14.0ZWK",
+      "EMDDL14.0ZWK",
+      "FMDDL14.0ZWK",
+      "GMDDL14.0ZWK",
+      "HMDDL14.0ZWK",
+      "KMDDL14.0ZWK",
+      "LMDDL14.0ZWK",
+      "MMDDL14.0ZWK",
+      "NMDDL14.0ZWK",
+      "PMDDL14.0ZWK",
+      "RMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7221"
+    ],
+    "certificates": [
+      "CMDDL14.0ZWK-004",
+      "DMDDL14.0ZWK-005",
+      "EMDDL14.0ZWK-005",
+      "FMDDL14.0ZWK-004",
+      "GMDDL14.0ZWK-005",
+      "HMDDL14.0ZWK-007",
+      "KMDDL14.0ZWK-003",
+      "LMDDL14.0ZWK-002",
+      "MMDDL14.0ZWK-003",
+      "NMDDL14.0ZWK-002",
+      "PMDDL14.0ZWK-002",
+      "RMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 408,
+    "rated_power_kw_max": 448,
+    "displacements_l": [
+      14.028
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G20S 3B",
+        "slug": "mtu-8v1600g20s-3b",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "8V1600G70S 3D",
+    "normalized_model": "8V1600G70S3D",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CMDDL14.0ZWK",
+      "DMDDL14.0ZWK",
+      "EMDDL14.0ZWK",
+      "FMDDL14.0ZWK",
+      "GMDDL14.0ZWK",
+      "HMDDL14.0ZWK",
+      "KMDDL14.0ZWK",
+      "LMDDL14.0ZWK",
+      "MMDDL14.0ZWK",
+      "NMDDL14.0ZWK",
+      "PMDDL14.0ZWK",
+      "RMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7220"
+    ],
+    "certificates": [
+      "CMDDL14.0ZWK-004",
+      "DMDDL14.0ZWK-005",
+      "EMDDL14.0ZWK-005",
+      "FMDDL14.0ZWK-004",
+      "GMDDL14.0ZWK-005",
+      "HMDDL14.0ZWK-007",
+      "KMDDL14.0ZWK-003",
+      "LMDDL14.0ZWK-002",
+      "MMDDL14.0ZWK-003",
+      "NMDDL14.0ZWK-002",
+      "PMDDL14.0ZWK-002",
+      "RMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 408,
+    "rated_power_kw_max": 409,
+    "displacements_l": [
+      14.028
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G70S 3D",
+        "slug": "mtu-8v1600g70s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "8V1600G80S 3D",
+    "normalized_model": "8V1600G80S3D",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CMDDL14.0ZWK",
+      "DMDDL14.0ZWK",
+      "EMDDL14.0ZWK",
+      "FMDDL14.0ZWK",
+      "GMDDL14.0ZWK",
+      "HMDDL14.0ZWK",
+      "KMDDL14.0ZWK",
+      "LMDDL14.0ZWK",
+      "MMDDL14.0ZWK",
+      "NMDDL14.0ZWK",
+      "PMDDL14.0ZWK",
+      "RMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7219"
+    ],
+    "certificates": [
+      "CMDDL14.0ZWK-004",
+      "DMDDL14.0ZWK-005",
+      "EMDDL14.0ZWK-005",
+      "FMDDL14.0ZWK-004",
+      "GMDDL14.0ZWK-005",
+      "HMDDL14.0ZWK-007",
+      "KMDDL14.0ZWK-003",
+      "LMDDL14.0ZWK-002",
+      "MMDDL14.0ZWK-003",
+      "NMDDL14.0ZWK-002",
+      "PMDDL14.0ZWK-002",
+      "RMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 448,
+    "rated_power_kw_max": 448,
+    "displacements_l": [
+      14.028
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G80S 3D",
+        "slug": "mtu-8v1600g80s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
         "fuel_type": "Diesel"
       }
     ],
@@ -35202,574 +37436,6 @@
     "mapped_database_brands": [
       "MTU"
     ],
-    "epa_model": "12V1600G10S",
-    "normalized_model": "12V1600G10S",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JMDDL21.0ZWR",
-      "KMDDL21.0ZWR",
-      "LMDDL21.0ZWR",
-      "MMDDL21.0ZWR",
-      "NMDDL21.0ZWR",
-      "PMDDL21.0ZWR",
-      "RMDDL21.0ZWR",
-      "SMDDL21.0ZWR",
-      "TMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7189"
-    ],
-    "certificates": [
-      "JMDDL21.0ZWR-004",
-      "KMDDL21.0ZWR-002",
-      "LMDDL21.0ZWR-001",
-      "MMDDL21.0ZWR-004",
-      "NMDDL21.0ZWR-003",
-      "PMDDL21.0ZWR-001",
-      "RMDDL21.0ZWR-006",
-      "SMDDL21.0ZWR-001",
-      "TMDDL21.0ZWR-001"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 561,
-    "rated_power_kw_max": 561,
-    "displacements_l": [
-      21.042
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V1600G10",
-        "slug": "mtu-12v1600g10",
-        "similarity": 0.952
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600 G01S",
-        "slug": "mtu-12v1600g01s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600 G11S",
-        "slug": "mtu-12v1600g11s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600 G21S",
-        "slug": "mtu-12v1600g21s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600 G31S",
-        "slug": "mtu-12v1600g31s",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V1600G20S",
-    "normalized_model": "12V1600G20S",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JMDDL21.0ZWR",
-      "KMDDL21.0ZWR",
-      "LMDDL21.0ZWR",
-      "MMDDL21.0ZWR",
-      "NMDDL21.0ZWR",
-      "PMDDL21.0ZWR",
-      "RMDDL21.0ZWR",
-      "SMDDL21.0ZWR",
-      "TMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7186"
-    ],
-    "certificates": [
-      "JMDDL21.0ZWR-004",
-      "KMDDL21.0ZWR-002",
-      "LMDDL21.0ZWR-001",
-      "MMDDL21.0ZWR-004",
-      "NMDDL21.0ZWR-003",
-      "PMDDL21.0ZWR-001",
-      "RMDDL21.0ZWR-006",
-      "SMDDL21.0ZWR-001",
-      "TMDDL21.0ZWR-001"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 608,
-    "rated_power_kw_max": 608,
-    "displacements_l": [
-      21.042
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V1600G20",
-        "slug": "mtu-12v1600g20",
-        "similarity": 0.952
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600 G01S",
-        "slug": "mtu-12v1600g01s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600 G21S",
-        "slug": "mtu-12v1600g21s",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V1600G70S",
-    "normalized_model": "12V1600G70S",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JMDDL21.0ZWR",
-      "KMDDL21.0ZWR",
-      "LMDDL21.0ZWR",
-      "MMDDL21.0ZWR",
-      "NMDDL21.0ZWR",
-      "PMDDL21.0ZWR",
-      "RMDDL21.0ZWR",
-      "SMDDL21.0ZWR",
-      "TMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7188"
-    ],
-    "certificates": [
-      "JMDDL21.0ZWR-004",
-      "KMDDL21.0ZWR-002",
-      "LMDDL21.0ZWR-001",
-      "MMDDL21.0ZWR-004",
-      "NMDDL21.0ZWR-003",
-      "PMDDL21.0ZWR-001",
-      "RMDDL21.0ZWR-006",
-      "SMDDL21.0ZWR-001",
-      "TMDDL21.0ZWR-001"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 613,
-    "rated_power_kw_max": 613,
-    "displacements_l": [
-      21.042
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V1600 G01S",
-        "slug": "mtu-12v1600g01s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600 G71S",
-        "slug": "mtu-12v1600g71s",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V1600G80S",
-    "normalized_model": "12V1600G80S",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JMDDL21.0ZWR",
-      "KMDDL21.0ZWR",
-      "LMDDL21.0ZWR",
-      "MMDDL21.0ZWR",
-      "NMDDL21.0ZWR",
-      "PMDDL21.0ZWR",
-      "RMDDL21.0ZWR",
-      "SMDDL21.0ZWR",
-      "TMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7185"
-    ],
-    "certificates": [
-      "JMDDL21.0ZWR-004",
-      "KMDDL21.0ZWR-002",
-      "LMDDL21.0ZWR-001",
-      "MMDDL21.0ZWR-004",
-      "NMDDL21.0ZWR-003",
-      "PMDDL21.0ZWR-001",
-      "RMDDL21.0ZWR-006",
-      "SMDDL21.0ZWR-001",
-      "TMDDL21.0ZWR-001"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 668,
-    "rated_power_kw_max": 668,
-    "displacements_l": [
-      21.042
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V1600 G01S",
-        "slug": "mtu-12v1600g01s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600 G81S",
-        "slug": "mtu-12v1600g81s",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V2000G26S",
-    "normalized_model": "12V2000G26S",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FMDDL40.1GNR",
-      "GMDDL40.1GNR",
-      "HMDDL40.1GNR",
-      "JMDDL40.1GNR",
-      "KMDDL40.1GNR",
-      "LMDDL40.1GNR",
-      "MMDDL40.1GNR",
-      "NMDDL40.1GNR",
-      "PMDDL40.1GNR",
-      "RMDDL40.1GNR",
-      "SMDDL40.1GNR",
-      "TMDDL40.1GNR"
-    ],
-    "engine_codes": [
-      "7290"
-    ],
-    "certificates": [
-      "FMDDL40.1GNR-006",
-      "GMDDL40.1GNR-004",
-      "HMDDL40.1GNR-001",
-      "JMDDL40.1GNR-007",
-      "KMDDL40.1GNR-005",
-      "LMDDL40.1GNR-006",
-      "MMDDL40.1GNR-005",
-      "NMDDL40.1GNR-004",
-      "PMDDL40.1GNR-003",
-      "RMDDL40.1GNR-004",
-      "SMDDL40.1GNR-003",
-      "TMDDL40.1GNR-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 810,
-    "rated_power_kw_max": 810,
-    "displacements_l": [
-      26.796000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V2000G76S",
-    "normalized_model": "12V2000G76S",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FMDDL40.1GNR",
-      "GMDDL40.1GNR",
-      "HMDDL40.1GNR",
-      "JMDDL40.1GNR",
-      "KMDDL40.1GNR",
-      "LMDDL40.1GNR",
-      "MMDDL40.1GNR",
-      "NMDDL40.1GNR",
-      "PMDDL40.1GNR",
-      "RMDDL40.1GNR",
-      "SMDDL40.1GNR",
-      "TMDDL40.1GNR"
-    ],
-    "engine_codes": [
-      "7286"
-    ],
-    "certificates": [
-      "FMDDL40.1GNR-006",
-      "GMDDL40.1GNR-004",
-      "HMDDL40.1GNR-001",
-      "JMDDL40.1GNR-007",
-      "KMDDL40.1GNR-005",
-      "LMDDL40.1GNR-006",
-      "MMDDL40.1GNR-005",
-      "NMDDL40.1GNR-004",
-      "PMDDL40.1GNR-003",
-      "RMDDL40.1GNR-004",
-      "SMDDL40.1GNR-003",
-      "TMDDL40.1GNR-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 890,
-    "rated_power_kw_max": 890,
-    "displacements_l": [
-      26.796000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V2000G86S",
-    "normalized_model": "12V2000G86S",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FMDDL40.1GNR",
-      "GMDDL40.1GNR",
-      "HMDDL40.1GNR",
-      "JMDDL40.1GNR",
-      "KMDDL40.1GNR",
-      "LMDDL40.1GNR",
-      "MMDDL40.1GNR",
-      "NMDDL40.1GNR",
-      "PMDDL40.1GNR",
-      "RMDDL40.1GNR",
-      "SMDDL40.1GNR",
-      "TMDDL40.1GNR"
-    ],
-    "engine_codes": [
-      "7287"
-    ],
-    "certificates": [
-      "FMDDL40.1GNR-006",
-      "GMDDL40.1GNR-004",
-      "HMDDL40.1GNR-001",
-      "JMDDL40.1GNR-007",
-      "KMDDL40.1GNR-005",
-      "LMDDL40.1GNR-006",
-      "MMDDL40.1GNR-005",
-      "NMDDL40.1GNR-004",
-      "PMDDL40.1GNR-003",
-      "RMDDL40.1GNR-004",
-      "SMDDL40.1GNR-003",
-      "TMDDL40.1GNR-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 987,
-    "rated_power_kw_max": 987,
-    "displacements_l": [
-      26.796000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
     "epa_model": "12V4000C15",
     "normalized_model": "12V4000C15",
     "first_model_year": 2015,
@@ -36055,77 +37721,6 @@
     "mapped_database_brands": [
       "MTU"
     ],
-    "epa_model": "12V4000G74S",
-    "normalized_model": "12V4000G74S",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JMDDL95.4GTR",
-      "KMDDL95.4GTR",
-      "MMDDL95.4GTZ",
-      "NMDDL95.4GTZ",
-      "PMDDL95.4GTZ",
-      "RMDDL95.4GTZ",
-      "SMDDL95.4GTZ",
-      "TMDDL95.4GTZ"
-    ],
-    "engine_codes": [
-      "7315"
-    ],
-    "certificates": [
-      "JMDDL95.4GTR-001",
-      "KMDDL95.4GTR-007",
-      "MMDDL95.4GTZ-002",
-      "NMDDL95.4GTZ-005",
-      "PMDDL95.4GTZ-004",
-      "RMDDL95.4GTZ-002",
-      "SMDDL95.4GTZ-005",
-      "TMDDL95.4GTZ-004"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1736,
-    "rated_power_kw_max": 1736,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V4000 GS",
-        "slug": "mtu-12v4000-gs",
-        "similarity": 0.9
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
     "epa_model": "12V4000T25L",
     "normalized_model": "12V4000T25L",
     "first_model_year": 2022,
@@ -36170,234 +37765,6 @@
     "rated_power_kw_max": 1364,
     "displacements_l": [
       57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V2000G26S",
-    "normalized_model": "16V2000G26S",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FMDDL40.1GNR",
-      "GMDDL40.1GNR",
-      "HMDDL40.1GNR",
-      "JMDDL40.1GNR",
-      "KMDDL40.1GNR",
-      "LMDDL40.1GNR",
-      "MMDDL40.1GNR",
-      "NMDDL40.1GNR",
-      "PMDDL40.1GNR",
-      "RMDDL40.1GNR",
-      "SMDDL40.1GNR",
-      "TMDDL40.1GNR"
-    ],
-    "engine_codes": [
-      "7291"
-    ],
-    "certificates": [
-      "FMDDL40.1GNR-006",
-      "GMDDL40.1GNR-004",
-      "HMDDL40.1GNR-001",
-      "JMDDL40.1GNR-007",
-      "KMDDL40.1GNR-005",
-      "LMDDL40.1GNR-006",
-      "MMDDL40.1GNR-005",
-      "NMDDL40.1GNR-004",
-      "PMDDL40.1GNR-003",
-      "RMDDL40.1GNR-004",
-      "SMDDL40.1GNR-003",
-      "TMDDL40.1GNR-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 998,
-    "rated_power_kw_max": 998,
-    "displacements_l": [
-      35.727000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V2000G76S",
-    "normalized_model": "16V2000G76S",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FMDDL40.1GNR",
-      "GMDDL40.1GNR",
-      "HMDDL40.1GNR",
-      "JMDDL40.1GNR",
-      "KMDDL40.1GNR",
-      "LMDDL40.1GNR",
-      "MMDDL40.1GNR",
-      "NMDDL40.1GNR",
-      "PMDDL40.1GNR",
-      "RMDDL40.1GNR",
-      "SMDDL40.1GNR",
-      "TMDDL40.1GNR"
-    ],
-    "engine_codes": [
-      "7288"
-    ],
-    "certificates": [
-      "FMDDL40.1GNR-006",
-      "GMDDL40.1GNR-004",
-      "HMDDL40.1GNR-001",
-      "JMDDL40.1GNR-007",
-      "KMDDL40.1GNR-005",
-      "LMDDL40.1GNR-006",
-      "MMDDL40.1GNR-005",
-      "NMDDL40.1GNR-004",
-      "PMDDL40.1GNR-003",
-      "RMDDL40.1GNR-004",
-      "SMDDL40.1GNR-003",
-      "TMDDL40.1GNR-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1097,
-    "rated_power_kw_max": 1097,
-    "displacements_l": [
-      35.727000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V2000G86S",
-    "normalized_model": "16V2000G86S",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FMDDL40.1GNR",
-      "GMDDL40.1GNR",
-      "HMDDL40.1GNR",
-      "JMDDL40.1GNR",
-      "KMDDL40.1GNR",
-      "LMDDL40.1GNR",
-      "MMDDL40.1GNR",
-      "NMDDL40.1GNR",
-      "PMDDL40.1GNR",
-      "RMDDL40.1GNR",
-      "SMDDL40.1GNR",
-      "TMDDL40.1GNR"
-    ],
-    "engine_codes": [
-      "7289"
-    ],
-    "certificates": [
-      "FMDDL40.1GNR-006",
-      "GMDDL40.1GNR-004",
-      "HMDDL40.1GNR-001",
-      "JMDDL40.1GNR-007",
-      "KMDDL40.1GNR-005",
-      "LMDDL40.1GNR-006",
-      "MMDDL40.1GNR-005",
-      "NMDDL40.1GNR-004",
-      "PMDDL40.1GNR-003",
-      "RMDDL40.1GNR-004",
-      "SMDDL40.1GNR-003",
-      "TMDDL40.1GNR-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1371,
-    "rated_power_kw_max": 1371,
-    "displacements_l": [
-      35.727000000000004
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -36581,82 +37948,6 @@
     "rated_power_kw_max": 2400,
     "displacements_l": [
       76.265
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "18V2000G76S",
-    "normalized_model": "18V2000G76S",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FMDDL40.1GNR",
-      "GMDDL40.1GNR",
-      "HMDDL40.1GNR",
-      "JMDDL40.1GNR",
-      "KMDDL40.1GNR",
-      "LMDDL40.1GNR",
-      "MMDDL40.1GNR",
-      "NMDDL40.1GNR",
-      "PMDDL40.1GNR",
-      "RMDDL40.1GNR",
-      "SMDDL40.1GNR",
-      "TMDDL40.1GNR"
-    ],
-    "engine_codes": [
-      "7265"
-    ],
-    "certificates": [
-      "FMDDL40.1GNR-006",
-      "GMDDL40.1GNR-004",
-      "HMDDL40.1GNR-001",
-      "JMDDL40.1GNR-007",
-      "KMDDL40.1GNR-005",
-      "LMDDL40.1GNR-006",
-      "MMDDL40.1GNR-005",
-      "NMDDL40.1GNR-004",
-      "PMDDL40.1GNR-003",
-      "RMDDL40.1GNR-004",
-      "SMDDL40.1GNR-003",
-      "TMDDL40.1GNR-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1371,
-    "rated_power_kw_max": 1371,
-    "displacements_l": [
-      40.193000000000005
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -39822,158 +41113,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V1600G30S",
-    "normalized_model": "12V1600G30S",
-    "first_model_year": 2018,
-    "latest_model_year": 2025,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "JMDDL21.0ZWR",
-      "KMDDL21.0ZWR",
-      "LMDDL21.0ZWR",
-      "MMDDL21.0ZWR",
-      "NMDDL21.0ZWR",
-      "PMDDL21.0ZWR",
-      "RMDDL21.0ZWR",
-      "SMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7314"
-    ],
-    "certificates": [
-      "JMDDL21.0ZWR-004",
-      "KMDDL21.0ZWR-002",
-      "LMDDL21.0ZWR-001",
-      "MMDDL21.0ZWR-004",
-      "NMDDL21.0ZWR-003",
-      "PMDDL21.0ZWR-001",
-      "RMDDL21.0ZWR-006",
-      "SMDDL21.0ZWR-001"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 668,
-    "rated_power_kw_max": 668,
-    "displacements_l": [
-      21.042
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V1600 G01S",
-        "slug": "mtu-12v1600g01s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600 G31S",
-        "slug": "mtu-12v1600g31s",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V1600G90S",
-    "normalized_model": "12V1600G90S",
-    "first_model_year": 2018,
-    "latest_model_year": 2025,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "JMDDL21.0ZWR",
-      "KMDDL21.0ZWR",
-      "LMDDL21.0ZWR",
-      "MMDDL21.0ZWR",
-      "NMDDL21.0ZWR",
-      "PMDDL21.0ZWR",
-      "RMDDL21.0ZWR",
-      "SMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7313"
-    ],
-    "certificates": [
-      "JMDDL21.0ZWR-004",
-      "KMDDL21.0ZWR-002",
-      "LMDDL21.0ZWR-001",
-      "MMDDL21.0ZWR-004",
-      "NMDDL21.0ZWR-003",
-      "PMDDL21.0ZWR-001",
-      "RMDDL21.0ZWR-006",
-      "SMDDL21.0ZWR-001"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 730,
-    "rated_power_kw_max": 730,
-    "displacements_l": [
-      21.042
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V1600 G01S",
-        "slug": "mtu-12v1600g01s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600 G91S",
-        "slug": "mtu-12v1600g91s",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
     "manufacturer": "Scania CV AB",
     "mapped_database_brands": [
       "Scania"
@@ -42611,1035 +43750,6 @@
     "rated_power_kw_max": 11,
     "displacements_l": [
       1.1320000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "10V1600G20S",
-    "normalized_model": "10V1600G20S",
-    "first_model_year": 2018,
-    "latest_model_year": 2024,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "JMDDL21.0ZWR",
-      "KMDDL21.0ZWR",
-      "LMDDL21.0ZWR",
-      "MMDDL21.0ZWR",
-      "NMDDL21.0ZWR",
-      "PMDDL21.0ZWR",
-      "RMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7191"
-    ],
-    "certificates": [
-      "JMDDL21.0ZWR-004",
-      "KMDDL21.0ZWR-002",
-      "LMDDL21.0ZWR-001",
-      "MMDDL21.0ZWR-004",
-      "NMDDL21.0ZWR-003",
-      "PMDDL21.0ZWR-001",
-      "RMDDL21.0ZWR-006"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 511,
-    "rated_power_kw_max": 511,
-    "displacements_l": [
-      17.535
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "10V1600G20",
-        "slug": "mtu-10v1600g20",
-        "similarity": 0.952
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "10V1600G70S 3D",
-    "normalized_model": "10V1600G70S3D",
-    "first_model_year": 2016,
-    "latest_model_year": 2024,
-    "model_years": [
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "GMDDL14.0ZWK",
-      "HMDDL14.0ZWK",
-      "KMDDL14.0ZWK",
-      "LMDDL14.0ZWK",
-      "MMDDL14.0ZWK",
-      "NMDDL14.0ZWK",
-      "PMDDL14.0ZWK",
-      "RMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7244"
-    ],
-    "certificates": [
-      "GMDDL14.0ZWK-005",
-      "HMDDL14.0ZWK-007",
-      "KMDDL14.0ZWK-003",
-      "LMDDL14.0ZWK-002",
-      "MMDDL14.0ZWK-003",
-      "NMDDL14.0ZWK-002",
-      "PMDDL14.0ZWK-002",
-      "RMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 511,
-    "rated_power_kw_max": 511,
-    "displacements_l": [
-      17.535
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "10V1600G80S",
-    "normalized_model": "10V1600G80S",
-    "first_model_year": 2018,
-    "latest_model_year": 2024,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "JMDDL21.0ZWR",
-      "KMDDL21.0ZWR",
-      "LMDDL21.0ZWR",
-      "MMDDL21.0ZWR",
-      "NMDDL21.0ZWR",
-      "PMDDL21.0ZWR",
-      "RMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7190"
-    ],
-    "certificates": [
-      "JMDDL21.0ZWR-004",
-      "KMDDL21.0ZWR-002",
-      "LMDDL21.0ZWR-001",
-      "MMDDL21.0ZWR-004",
-      "NMDDL21.0ZWR-003",
-      "PMDDL21.0ZWR-001",
-      "RMDDL21.0ZWR-006"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 561,
-    "rated_power_kw_max": 561,
-    "displacements_l": [
-      17.535
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000G15S",
-    "normalized_model": "12V4000G15S",
-    "first_model_year": 2021,
-    "latest_model_year": 2024,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "MMDDL95.4GTZ",
-      "NMDDL95.4GTZ",
-      "PMDDL95.4GTZ",
-      "RMDDL95.4GTZ"
-    ],
-    "engine_codes": [
-      "7338"
-    ],
-    "certificates": [
-      "MMDDL95.4GTZ-002",
-      "NMDDL95.4GTZ-005",
-      "PMDDL95.4GTZ-004",
-      "RMDDL95.4GTZ-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1489,
-    "rated_power_kw_max": 1489,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V4000 GS",
-        "slug": "mtu-12v4000-gs",
-        "similarity": 0.9
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000G25S",
-    "normalized_model": "12V4000G25S",
-    "first_model_year": 2021,
-    "latest_model_year": 2024,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "MMDDL95.4GTZ",
-      "NMDDL95.4GTZ",
-      "PMDDL95.4GTZ",
-      "RMDDL95.4GTZ"
-    ],
-    "engine_codes": [
-      "7339"
-    ],
-    "certificates": [
-      "MMDDL95.4GTZ-002",
-      "NMDDL95.4GTZ-005",
-      "PMDDL95.4GTZ-004",
-      "RMDDL95.4GTZ-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1745,
-    "rated_power_kw_max": 1745,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V4000 GS",
-        "slug": "mtu-12v4000-gs",
-        "similarity": 0.9
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000G75S",
-    "normalized_model": "12V4000G75S",
-    "first_model_year": 2021,
-    "latest_model_year": 2024,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "MMDDL95.4GTZ",
-      "NMDDL95.4GTZ",
-      "PMDDL95.4GTZ",
-      "RMDDL95.4GTZ"
-    ],
-    "engine_codes": [
-      "7340"
-    ],
-    "certificates": [
-      "MMDDL95.4GTZ-002",
-      "NMDDL95.4GTZ-005",
-      "PMDDL95.4GTZ-004",
-      "RMDDL95.4GTZ-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1638,
-    "rated_power_kw_max": 1638,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V4000 GS",
-        "slug": "mtu-12v4000-gs",
-        "similarity": 0.9
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000G85S",
-    "normalized_model": "12V4000G85S",
-    "first_model_year": 2021,
-    "latest_model_year": 2024,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "MMDDL95.4GTZ",
-      "NMDDL95.4GTZ",
-      "PMDDL95.4GTZ",
-      "RMDDL95.4GTZ"
-    ],
-    "engine_codes": [
-      "7341"
-    ],
-    "certificates": [
-      "MMDDL95.4GTZ-002",
-      "NMDDL95.4GTZ-005",
-      "PMDDL95.4GTZ-004",
-      "RMDDL95.4GTZ-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1919,
-    "rated_power_kw_max": 1919,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V4000 GS",
-        "slug": "mtu-12v4000-gs",
-        "similarity": 0.9
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "6R1600G10S 3B",
-    "normalized_model": "6R1600G10S3B",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CMDDL14.0ZWK",
-      "DMDDL14.0ZWK",
-      "EMDDL14.0ZWK",
-      "FMDDL14.0ZWK",
-      "GMDDL14.0ZWK",
-      "HMDDL14.0ZWK",
-      "KMDDL14.0ZWK",
-      "LMDDL14.0ZWK",
-      "MMDDL14.0ZWK",
-      "NMDDL14.0ZWK",
-      "PMDDL14.0ZWK",
-      "RMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7218"
-    ],
-    "certificates": [
-      "CMDDL14.0ZWK-004",
-      "DMDDL14.0ZWK-005",
-      "EMDDL14.0ZWK-005",
-      "FMDDL14.0ZWK-004",
-      "GMDDL14.0ZWK-005",
-      "HMDDL14.0ZWK-007",
-      "KMDDL14.0ZWK-003",
-      "LMDDL14.0ZWK-002",
-      "MMDDL14.0ZWK-003",
-      "NMDDL14.0ZWK-002",
-      "PMDDL14.0ZWK-002",
-      "RMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 284,
-    "rated_power_kw_max": 312,
-    "displacements_l": [
-      10.521
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "6R1600G20S 3B",
-    "normalized_model": "6R1600G20S3B",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CMDDL14.0ZWK",
-      "DMDDL14.0ZWK",
-      "EMDDL14.0ZWK",
-      "FMDDL14.0ZWK",
-      "GMDDL14.0ZWK",
-      "HMDDL14.0ZWK",
-      "KMDDL14.0ZWK",
-      "LMDDL14.0ZWK",
-      "MMDDL14.0ZWK",
-      "NMDDL14.0ZWK",
-      "PMDDL14.0ZWK",
-      "RMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7217"
-    ],
-    "certificates": [
-      "CMDDL14.0ZWK-004",
-      "DMDDL14.0ZWK-005",
-      "EMDDL14.0ZWK-005",
-      "FMDDL14.0ZWK-004",
-      "GMDDL14.0ZWK-005",
-      "HMDDL14.0ZWK-007",
-      "KMDDL14.0ZWK-003",
-      "LMDDL14.0ZWK-002",
-      "MMDDL14.0ZWK-003",
-      "NMDDL14.0ZWK-002",
-      "PMDDL14.0ZWK-002",
-      "RMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 312,
-    "rated_power_kw_max": 343,
-    "displacements_l": [
-      10.521
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "6R1600G70S 3D",
-    "normalized_model": "6R1600G70S3D",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CMDDL14.0ZWK",
-      "DMDDL14.0ZWK",
-      "EMDDL14.0ZWK",
-      "FMDDL14.0ZWK",
-      "GMDDL14.0ZWK",
-      "HMDDL14.0ZWK",
-      "KMDDL14.0ZWK",
-      "LMDDL14.0ZWK",
-      "MMDDL14.0ZWK",
-      "NMDDL14.0ZWK",
-      "PMDDL14.0ZWK",
-      "RMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7216"
-    ],
-    "certificates": [
-      "CMDDL14.0ZWK-004",
-      "DMDDL14.0ZWK-005",
-      "EMDDL14.0ZWK-005",
-      "FMDDL14.0ZWK-004",
-      "GMDDL14.0ZWK-005",
-      "HMDDL14.0ZWK-007",
-      "KMDDL14.0ZWK-003",
-      "LMDDL14.0ZWK-002",
-      "MMDDL14.0ZWK-003",
-      "NMDDL14.0ZWK-002",
-      "PMDDL14.0ZWK-002",
-      "RMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 312,
-    "rated_power_kw_max": 312,
-    "displacements_l": [
-      10.521
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "6R1600G80S 3D",
-    "normalized_model": "6R1600G80S3D",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CMDDL14.0ZWK",
-      "DMDDL14.0ZWK",
-      "EMDDL14.0ZWK",
-      "FMDDL14.0ZWK",
-      "GMDDL14.0ZWK",
-      "HMDDL14.0ZWK",
-      "KMDDL14.0ZWK",
-      "LMDDL14.0ZWK",
-      "MMDDL14.0ZWK",
-      "NMDDL14.0ZWK",
-      "PMDDL14.0ZWK",
-      "RMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7215"
-    ],
-    "certificates": [
-      "CMDDL14.0ZWK-004",
-      "DMDDL14.0ZWK-005",
-      "EMDDL14.0ZWK-005",
-      "FMDDL14.0ZWK-004",
-      "GMDDL14.0ZWK-005",
-      "HMDDL14.0ZWK-007",
-      "KMDDL14.0ZWK-003",
-      "LMDDL14.0ZWK-002",
-      "MMDDL14.0ZWK-003",
-      "NMDDL14.0ZWK-002",
-      "PMDDL14.0ZWK-002",
-      "RMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 343,
-    "rated_power_kw_max": 343,
-    "displacements_l": [
-      10.521
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "8V1600G10S 3B",
-    "normalized_model": "8V1600G10S3B",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CMDDL14.0ZWK",
-      "DMDDL14.0ZWK",
-      "EMDDL14.0ZWK",
-      "FMDDL14.0ZWK",
-      "GMDDL14.0ZWK",
-      "HMDDL14.0ZWK",
-      "KMDDL14.0ZWK",
-      "LMDDL14.0ZWK",
-      "MMDDL14.0ZWK",
-      "NMDDL14.0ZWK",
-      "PMDDL14.0ZWK",
-      "RMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7222"
-    ],
-    "certificates": [
-      "CMDDL14.0ZWK-004",
-      "DMDDL14.0ZWK-005",
-      "EMDDL14.0ZWK-005",
-      "FMDDL14.0ZWK-004",
-      "GMDDL14.0ZWK-005",
-      "HMDDL14.0ZWK-007",
-      "KMDDL14.0ZWK-003",
-      "LMDDL14.0ZWK-002",
-      "MMDDL14.0ZWK-003",
-      "NMDDL14.0ZWK-002",
-      "PMDDL14.0ZWK-002",
-      "RMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 371,
-    "rated_power_kw_max": 409,
-    "displacements_l": [
-      14.028
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "8V1600G20S 3B",
-    "normalized_model": "8V1600G20S3B",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CMDDL14.0ZWK",
-      "DMDDL14.0ZWK",
-      "EMDDL14.0ZWK",
-      "FMDDL14.0ZWK",
-      "GMDDL14.0ZWK",
-      "HMDDL14.0ZWK",
-      "KMDDL14.0ZWK",
-      "LMDDL14.0ZWK",
-      "MMDDL14.0ZWK",
-      "NMDDL14.0ZWK",
-      "PMDDL14.0ZWK",
-      "RMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7221"
-    ],
-    "certificates": [
-      "CMDDL14.0ZWK-004",
-      "DMDDL14.0ZWK-005",
-      "EMDDL14.0ZWK-005",
-      "FMDDL14.0ZWK-004",
-      "GMDDL14.0ZWK-005",
-      "HMDDL14.0ZWK-007",
-      "KMDDL14.0ZWK-003",
-      "LMDDL14.0ZWK-002",
-      "MMDDL14.0ZWK-003",
-      "NMDDL14.0ZWK-002",
-      "PMDDL14.0ZWK-002",
-      "RMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 408,
-    "rated_power_kw_max": 448,
-    "displacements_l": [
-      14.028
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "8V1600G20",
-        "slug": "mtu-8v1600g20",
-        "similarity": 0.857
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "8V1600G70S 3D",
-    "normalized_model": "8V1600G70S3D",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CMDDL14.0ZWK",
-      "DMDDL14.0ZWK",
-      "EMDDL14.0ZWK",
-      "FMDDL14.0ZWK",
-      "GMDDL14.0ZWK",
-      "HMDDL14.0ZWK",
-      "KMDDL14.0ZWK",
-      "LMDDL14.0ZWK",
-      "MMDDL14.0ZWK",
-      "NMDDL14.0ZWK",
-      "PMDDL14.0ZWK",
-      "RMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7220"
-    ],
-    "certificates": [
-      "CMDDL14.0ZWK-004",
-      "DMDDL14.0ZWK-005",
-      "EMDDL14.0ZWK-005",
-      "FMDDL14.0ZWK-004",
-      "GMDDL14.0ZWK-005",
-      "HMDDL14.0ZWK-007",
-      "KMDDL14.0ZWK-003",
-      "LMDDL14.0ZWK-002",
-      "MMDDL14.0ZWK-003",
-      "NMDDL14.0ZWK-002",
-      "PMDDL14.0ZWK-002",
-      "RMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 408,
-    "rated_power_kw_max": 409,
-    "displacements_l": [
-      14.028
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "8V1600G80S 3D",
-    "normalized_model": "8V1600G80S3D",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CMDDL14.0ZWK",
-      "DMDDL14.0ZWK",
-      "EMDDL14.0ZWK",
-      "FMDDL14.0ZWK",
-      "GMDDL14.0ZWK",
-      "HMDDL14.0ZWK",
-      "KMDDL14.0ZWK",
-      "LMDDL14.0ZWK",
-      "MMDDL14.0ZWK",
-      "NMDDL14.0ZWK",
-      "PMDDL14.0ZWK",
-      "RMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7219"
-    ],
-    "certificates": [
-      "CMDDL14.0ZWK-004",
-      "DMDDL14.0ZWK-005",
-      "EMDDL14.0ZWK-005",
-      "FMDDL14.0ZWK-004",
-      "GMDDL14.0ZWK-005",
-      "HMDDL14.0ZWK-007",
-      "KMDDL14.0ZWK-003",
-      "LMDDL14.0ZWK-002",
-      "MMDDL14.0ZWK-003",
-      "NMDDL14.0ZWK-002",
-      "PMDDL14.0ZWK-002",
-      "RMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 448,
-    "rated_power_kw_max": 448,
-    "displacements_l": [
-      14.028
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -47561,7 +47671,20 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "16V2000G26S",
+        "slug": "mtu-16v2000g26s",
+        "similarity": 0.909
+      },
+      {
+        "brand": "MTU",
+        "model": "16V2000G76S",
+        "slug": "mtu-16v2000g76s",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -47609,7 +47732,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "16V2000G76S",
+        "slug": "mtu-16v2000g76s",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "AB Volvo Penta",
@@ -48906,7 +49036,32 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G70S 3D",
+        "slug": "mtu-10v1600g70s-3d",
+        "similarity": 0.917
+      },
+      {
+        "brand": "MTU",
+        "model": "10V1600G20S",
+        "slug": "mtu-10v1600g20s",
+        "similarity": 0.909
+      },
+      {
+        "brand": "MTU",
+        "model": "10V1600G80S",
+        "slug": "mtu-10v1600g80s",
+        "similarity": 0.909
+      },
+      {
+        "brand": "MTU",
+        "model": "12V1600G70S",
+        "slug": "mtu-12v1600g70s",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -48948,7 +49103,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G10S 3B",
+        "slug": "mtu-6r1600g10s-3b",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -48990,7 +49152,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G20S 3B",
+        "slug": "mtu-6r1600g20s-3b",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -49032,7 +49201,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G70S 3D",
+        "slug": "mtu-6r1600g70s-3d",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -49074,7 +49250,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G80S 3D",
+        "slug": "mtu-6r1600g80s-3d",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -49116,7 +49299,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G10S 3B",
+        "slug": "mtu-8v1600g10s-3b",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -49164,6 +49354,12 @@
         "model": "8V1600G20",
         "slug": "mtu-8v1600g20",
         "similarity": 0.947
+      },
+      {
+        "brand": "MTU",
+        "model": "8V1600G20S 3B",
+        "slug": "mtu-8v1600g20s-3b",
+        "similarity": 0.909
       }
     ]
   },
@@ -49207,7 +49403,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G70S 3D",
+        "slug": "mtu-8v1600g70s-3d",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -49249,7 +49452,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G80S 3D",
+        "slug": "mtu-8v1600g80s-3d",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Yanmar Power Technology Co., Ltd.",
@@ -50042,6 +50252,18 @@
     "probable_database_matches": [
       {
         "brand": "MTU",
+        "model": "10V1600G20S",
+        "slug": "mtu-10v1600g20s",
+        "similarity": 0.917
+      },
+      {
+        "brand": "MTU",
+        "model": "8V1600G20S 3B",
+        "slug": "mtu-8v1600g20s-3b",
+        "similarity": 0.88
+      },
+      {
+        "brand": "MTU",
         "model": "10V1600G20",
         "slug": "mtu-10v1600g20",
         "similarity": 0.87
@@ -50103,7 +50325,26 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G70S 3D",
+        "slug": "mtu-10v1600g70s-3d",
+        "similarity": 0.923
+      },
+      {
+        "brand": "MTU",
+        "model": "10V1600G80S",
+        "slug": "mtu-10v1600g80s",
+        "similarity": 0.917
+      },
+      {
+        "brand": "MTU",
+        "model": "8V1600G80S 3D",
+        "slug": "mtu-8v1600g80s-3d",
+        "similarity": 0.88
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -50161,6 +50402,18 @@
     "match_status": "not_found",
     "database_matches": [],
     "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G10S",
+        "slug": "mtu-12v1600g10s",
+        "similarity": 0.917
+      },
+      {
+        "brand": "MTU",
+        "model": "8V1600G10S 3B",
+        "slug": "mtu-8v1600g10s-3b",
+        "similarity": 0.88
+      },
       {
         "brand": "MTU",
         "model": "12V1600G10",
@@ -50227,6 +50480,18 @@
     "probable_database_matches": [
       {
         "brand": "MTU",
+        "model": "12V1600G20S",
+        "slug": "mtu-12v1600g20s",
+        "similarity": 0.917
+      },
+      {
+        "brand": "MTU",
+        "model": "8V1600G20S 3B",
+        "slug": "mtu-8v1600g20s-3b",
+        "similarity": 0.88
+      },
+      {
+        "brand": "MTU",
         "model": "12V1600G20",
         "slug": "mtu-12v1600g20",
         "similarity": 0.87
@@ -50288,7 +50553,26 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G70S 3D",
+        "slug": "mtu-10v1600g70s-3d",
+        "similarity": 0.923
+      },
+      {
+        "brand": "MTU",
+        "model": "12V1600G70S",
+        "slug": "mtu-12v1600g70s",
+        "similarity": 0.917
+      },
+      {
+        "brand": "MTU",
+        "model": "8V1600G70S 3D",
+        "slug": "mtu-8v1600g70s-3d",
+        "similarity": 0.88
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -50345,7 +50629,20 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G80S",
+        "slug": "mtu-12v1600g80s",
+        "similarity": 0.917
+      },
+      {
+        "brand": "MTU",
+        "model": "8V1600G80S 3D",
+        "slug": "mtu-8v1600g80s-3d",
+        "similarity": 0.88
+      }
+    ]
   },
   {
     "manufacturer": "FPT Industrial S.p.A.",
@@ -55720,7 +56017,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G70S 3D",
+        "slug": "mtu-10v1600g70s-3d",
+        "similarity": 0.923
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",
@@ -58034,7 +58338,26 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "MTU",
+        "model": "16V2000G26S",
+        "slug": "mtu-16v2000g26s",
+        "similarity": 0.909
+      },
+      {
+        "brand": "MTU",
+        "model": "16V2000G76S",
+        "slug": "mtu-16v2000g76s",
+        "similarity": 0.909
+      },
+      {
+        "brand": "MTU",
+        "model": "16V2000G86S",
+        "slug": "mtu-16v2000g86s",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Yanmar Power Technology Co., Ltd.",
