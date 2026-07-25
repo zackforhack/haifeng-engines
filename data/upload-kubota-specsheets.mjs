@@ -1,74 +1,175 @@
+// Rebuild Kubota datasheet links from Kubota's official product-PDF catalog.
+// A match requires the exact engine-family prefix and numeric E-generation.
+// Dry-run by default. Use --apply to replace managed Kubota links.
+
 import { createClient } from '@supabase/supabase-js'
 import { uploadPdf } from './pdf-upload-utils.mjs'
-import fs from 'fs'
-import path from 'path'
-import os from 'os'
+import fs from 'node:fs'
+import os from 'node:os'
+import path from 'node:path'
 
-// Kubota serves per-product spec PDFs at /en/products/product_pdf/{id}_pdf_1.pdf.
-// We crawled an id->model index (data/kubota-crawl.mjs -> /tmp/kubota_index.json) and match
-// each DB variant to the base engine + emission tier (E2/E3/E4), ignoring market/cert suffixes.
-const supabase = createClient('https://ntrysdovwnbegxtjsqkz.supabase.co', process.env.SUPABASE_SERVICE_KEY)
-const BUCKET = 'engine-pdfs'
-const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36'
-const pdfUrl = (id) => `https://engine.kubota.com/en/products/product_pdf/${id}_pdf_1.pdf`
-const TMP = path.join(os.tmpdir(), 'kubota-specs'); fs.mkdirSync(TMP, { recursive: true })
+const apply = process.argv.includes('--apply')
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL ?? 'https://ntrysdovwnbegxtjsqkz.supabase.co',
+  process.env.SUPABASE_SERVICE_KEY,
+)
+const bucket = 'engine-pdfs'
+const userAgent =
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+  + 'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36'
+const pdfUrl = (id) =>
+  `https://engine.kubota.com/en/products/product_pdf/${id}_pdf_1.pdf`
+const tmp = path.join(os.tmpdir(), 'kubota-specs')
+fs.mkdirSync(tmp, { recursive: true })
 
-const index = JSON.parse(fs.readFileSync('/tmp/kubota_index.json', 'utf8'))   // [{id, model}]
-const baseOf = (m) => (m.toUpperCase().match(/^[A-Z]+\d+[A-Z]*/) || [''])[0]
-const tierOf = (m) => { const x = m.toUpperCase().match(/-E(\d)/); return x ? x[1] : null }   // -E2B.. -> 2
-
-// build lookup maps
-const byKey = {}, byBase = {}
-for (const { id, model } of index) {
-  const b = baseOf(model), t = tierOf(model)
-  if (t) (byKey[`${b}|${t}`] ??= []).push(id)
-  ;(byBase[b] ??= []).push(id)
-  if (b.endsWith('DI')) (byBase[b.slice(0, -2)] ??= []).push(id)   // V3800DI also under V3800
+if (!process.env.SUPABASE_SERVICE_KEY) {
+  throw new Error('SUPABASE_SERVICE_KEY is required')
+}
+if (!fs.existsSync('/tmp/kubota_index.json')) {
+  throw new Error('Missing /tmp/kubota_index.json; run data/kubota-crawl.mjs first')
 }
 
-function candidateIds(model) {
-  let b = baseOf(model); const t = tierOf(model)
-  const ids = []
-  if (t && byKey[`${b}|${t}`]) ids.push(...byKey[`${b}|${t}`])
-  if (byBase[b]) ids.push(...byBase[b])
-  if (b.endsWith('DI') && byBase[b.slice(0, -2)]) ids.push(...byBase[b.slice(0, -2)])
-  return [...new Set(ids)]
+const index = JSON.parse(fs.readFileSync('/tmp/kubota_index.json', 'utf8'))
+
+function tierOf(model) {
+  const match = model.toUpperCase().match(/-?E(\d)/)
+  return match ? match[1] : null
 }
+
+function familyOf(model) {
+  const upper = model.toUpperCase().trim()
+  const match = upper.match(/^(.*?)-?E\d/)
+  return match?.[1]?.replace(/-$/, '') || null
+}
+
+const catalogByKey = new Map()
+for (const entry of index) {
+  const family = familyOf(entry.model)
+  const tier = tierOf(entry.model)
+  if (!family || !tier) continue
+  const key = `${family}|${tier}`
+  const candidates = catalogByKey.get(key) ?? []
+  candidates.push(entry)
+  catalogByKey.set(key, candidates)
+}
+
+function candidates(model) {
+  const family = familyOf(model)
+  const tier = tierOf(model)
+  return family && tier ? (catalogByKey.get(`${family}|${tier}`) ?? []) : []
+}
+
 async function getPdf(id) {
   try {
-    const res = await fetch(pdfUrl(id), { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(30000) })
-    if (!res.ok) return null
-    const b = Buffer.from(await res.arrayBuffer())
-    return b.slice(0, 4).toString() === '%PDF' ? b : null
-  } catch { return null }
-}
-
-const PAGE = 1000; let pdfs = []; let from = 0
-while (true) { const { data } = await supabase.from('engine_pdfs').select('engine_id').range(from, from + PAGE - 1); pdfs.push(...(data ?? [])); if (!data || data.length < PAGE) break; from += PAGE }
-const withPdf = new Set(pdfs.map(p => p.engine_id))
-const { data: engs } = await supabase.from('engines').select('id, model, slug').eq('brand', 'Kubota')
-const missing = engs.filter(e => !withPdf.has(e.id))
-console.log(`${missing.length} Kubota models missing docs\n`)
-
-const cache = {}
-let ok = 0, none = 0
-for (const e of missing) {
-  process.stdout.write(`${e.model} ... `)
-  let buf = null, usedId = null
-  for (const id of candidateIds(e.model)) {
-    if (cache[id] === undefined) cache[id] = await getPdf(id)
-    if (cache[id]) { buf = cache[id]; usedId = id; break }
+    const response = await fetch(pdfUrl(id), {
+      headers: { 'User-Agent': userAgent },
+      signal: AbortSignal.timeout(30000),
+    })
+    if (!response.ok) return null
+    const buffer = Buffer.from(await response.arrayBuffer())
+    return buffer.subarray(0, 4).toString() === '%PDF' ? buffer : null
+  } catch {
+    return null
   }
-  if (!buf) { console.log('no match'); none++; continue }
-  const storagePath = `kubota/spec-sheets/${baseOf(e.model).toLowerCase()}-e${tierOf(e.model) || 'x'}-${usedId}.pdf`
-  const f = path.join(TMP, `${usedId}.pdf`); fs.writeFileSync(f, buf)
-  const { ok: up } = await uploadPdf(supabase, BUCKET, f, storagePath)
-  if (!up) { console.log('upload failed'); none++; continue }
-  await supabase.from('engine_pdfs').delete().eq('engine_id', e.id).eq('storage_path', storagePath)
-  const { error } = await supabase.from('engine_pdfs').insert({
-    engine_id: e.id, type: 'datasheet', label: `Kubota ${e.model} Spec Sheet`, storage_path: storagePath, file_size_bytes: buf.length,
-  })
-  if (error) { console.log('link failed'); none++; continue }
-  console.log(`id=${usedId} (${Math.round(buf.length / 1024)}KB) ✓`); ok++
 }
-console.log(`\n✓ ${ok} linked · ${none} no match`)
+
+const { data: engines, error: engineError } = await supabase
+  .from('engines')
+  .select('id, model, slug')
+  .eq('brand', 'Kubota')
+if (engineError) throw engineError
+
+const { data: existing, error: pdfError } = await supabase
+  .from('engine_pdfs')
+  .select('id, engine_id, storage_path')
+  .in('engine_id', engines.map((engine) => engine.id))
+if (pdfError) throw pdfError
+
+const managed = existing.filter((pdf) =>
+  pdf.storage_path?.startsWith('kubota/spec-sheets/')
+)
+console.log(
+  `${engines.length} Kubota engines; ${managed.length} managed links will be audited.\n`,
+)
+
+const cache = new Map()
+const matches = []
+let unmatched = 0
+
+for (const engine of engines) {
+  process.stdout.write(`${engine.model} ... `)
+  let selected = null
+  let buffer = null
+
+  for (const candidate of candidates(engine.model)) {
+    if (!cache.has(candidate.id)) cache.set(candidate.id, await getPdf(candidate.id))
+    const candidatePdf = cache.get(candidate.id)
+    if (candidatePdf) {
+      selected = candidate
+      buffer = candidatePdf
+      break
+    }
+  }
+
+  if (!selected || !buffer) {
+    console.log('intentionally unmatched')
+    unmatched++
+    continue
+  }
+
+  const storagePath =
+    `kubota/spec-sheets/${familyOf(engine.model).toLowerCase()}`
+    + `-e${tierOf(engine.model)}-${selected.id}.pdf`
+  matches.push({ engine, selected, buffer, storagePath })
+  console.log(
+    `${selected.model} id=${selected.id} (${Math.round(buffer.length / 1024)}KB) exact`,
+  )
+}
+
+if (!apply) {
+  console.log(`\n[dry run] ${matches.length} exact matches · ${unmatched} unmatched`)
+  console.log(`${managed.length} managed links would be replaced by ${matches.length}.`)
+  console.log('Re-run with --apply to rebuild the verified Kubota link set.')
+  process.exit(0)
+}
+
+if (managed.length) {
+  const { error: deleteError } = await supabase
+    .from('engine_pdfs')
+    .delete()
+    .in('id', managed.map((pdf) => pdf.id))
+  if (deleteError) throw deleteError
+}
+
+let linked = 0
+let failed = 0
+for (const { engine, selected, buffer, storagePath } of matches) {
+  const localPath = path.join(tmp, `${selected.id}.pdf`)
+  fs.writeFileSync(localPath, buffer)
+  const upload = await uploadPdf(supabase, bucket, localPath, storagePath)
+  if (!upload.ok) {
+    console.log(`${engine.model}: upload failed`)
+    failed++
+    continue
+  }
+
+  const { error } = await supabase.from('engine_pdfs').insert({
+    engine_id: engine.id,
+    type: 'datasheet',
+    label: `Kubota ${selected.model} Official Specification Sheet`,
+    storage_path: storagePath,
+    file_size_bytes: buffer.length,
+  })
+  if (error) {
+    console.log(`${engine.model}: link failed`)
+    failed++
+    continue
+  }
+  console.log(`${engine.model} -> ${selected.model} linked`)
+  linked++
+}
+
+console.log(
+  `\nRebuilt ${linked} verified Kubota links; ${unmatched} intentionally unmatched; `
+  + `${failed} failed.`,
+)
