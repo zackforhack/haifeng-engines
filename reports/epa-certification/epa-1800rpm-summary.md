@@ -23,17 +23,17 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **26**
+- Reviewed certification aliases: **50**
 - Verified commercial family matches: **34**
 - Exact matches whose database page uses 1800 as its primary RPM: **34**
 - Exact model under another database brand: **9**
-- Not represented after reviewed matching rules: **724**
+- Not represented after reviewed matching rules: **700**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **28.4%**
-- Unmatched models with a 2024+ certification: **330**
+- Represented coverage within mapped manufacturers: **31.3%**
+- Unmatched models with a 2024+ certification: **306**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **200**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **176**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -44,7 +44,9 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 - `Caterpillar Inc.` is also compared with `Perkins` for reviewed family-prefix matches. Official Perkins product documentation identifies commercial models such as `1706J-E93TA` and `2406J-E13TA` behind the shorter EPA family names.
 - `FPT Industrial S.p.A.` uses internal EPA certification codes for its Tier 3 engines. Twelve reviewed aliases are mapped to N45, N67 and Cursor 9 commercial pages only where displacement, certification family and published power node agree with FPT's official power-generation brochure.
 - `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's official co-development announcement identifies the six KD commercial engine families manufactured for Kohler generator sets.
+- `Kubota Corporation` EPA model names use certification suffixes such as `-EF` and `-ET`, while Kubota's public generator catalog uses commercial `E4-BG` and `E3-BG` names. Fifteen reviewed aliases require matching displacement, aspiration, emissions tier and Kubota-published 1800 RPM output.
 - `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append the shared Caterpillar base-engine name in parentheses. Ten reviewed aliases map those records only to Perkins ElectropaK pages with matching family, displacement, emissions tier and manufacturer-published 1800 RPM power node.
+- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration names that differ from its TNV generator product names. Nine reviewed aliases map only where displacement, aspiration, emissions tier and the certified power node agree with Yanmar's official generator and industrial-engine documentation.
 
 ## Generator-Priority Gaps by Brand
 
@@ -52,13 +54,12 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 |---|---:|
 | MTU | 29 |
 | Cummins | 24 |
-| Kubota | 19 |
-| Yanmar | 19 |
 | Mitsubishi | 16 |
 | FPT | 12 |
 | Perkins | 12 |
 | Isuzu | 11 |
 | Deutz | 10 |
+| Yanmar | 10 |
 | Baudouin | 9 |
 | Hyundai | 8 |
 | John Deere | 8 |
@@ -66,6 +67,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Caterpillar | 6 |
 | Kirloskar | 6 |
 | Liebherr | 6 |
+| Kubota | 4 |
 | Weichai | 3 |
 | Volvo Penta | 1 |
 
@@ -80,8 +82,8 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 55 | 0 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 2 | 0 | 0 | 44 | 3 | 0 | 0 | 7 | 0 |
 | Discovery Energy, LLC. | Kohler | 48 | 2 | 0 | 14 | 0 | 1 | 0 | 0 | 31 | 2 |
-| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | 38 | 0 |
-| Kubota Corporation | Kubota | 37 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 37 | 0 |
+| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 0 | 0 | 0 | 0 | 9 | 4 | 0 | 29 | 0 |
+| Kubota Corporation | Kubota | 37 | 0 | 0 | 0 | 0 | 15 | 0 | 0 | 22 | 0 |
 | Caterpillar Inc. | Caterpillar | 35 | 15 | 0 | 0 | 0 | 0 | 11 | 0 | 9 | 1 |
 | Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 1 |
 | AB Volvo Penta | Volvo Penta | 28 | 21 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 7 |
@@ -198,23 +200,10 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Kirloskar Americas Corporation | 4R810NA1 | Tier 2, Tier 4 (Final or Phase In) | 35 |  |
 | 2026 | Kirloskar Americas Corporation | 4R810TA1 | Tier 3, Tier 4 (Final or Phase In) | 70 |  |
 | 2026 | Kirloskar Americas Corporation | 4R810TA2 | Tier 3, Tier 4 (Final or Phase In) | 48 |  |
-| 2026 | Kubota Corporation | D1005-BG-EF | Tier 4 (Final or Phase In) | 11 |  |
-| 2026 | Kubota Corporation | D1005-EF | Tier 4 (Final or Phase In) | 11 |  |
-| 2026 | Kubota Corporation | D1105-BG-EF | Tier 4 (Final or Phase In) | 13 |  |
-| 2026 | Kubota Corporation | D1105-EF | Tier 4 (Final or Phase In) | 13 |  |
-| 2026 | Kubota Corporation | D1503-M-BG-EF | Tier 4 (Final or Phase In) | 18 |  |
-| 2026 | Kubota Corporation | D1703-M-BG-ET | Interim Tier 4 | 20 |  |
-| 2026 | Kubota Corporation | D1803-CR-TI-BG-EF | Tier 4 (Final or Phase In) | 28 |  |
-| 2026 | Kubota Corporation | V1505-BG-EF | Tier 4 (Final or Phase In) | 18 |  |
-| 2026 | Kubota Corporation | V2203-M-BG-ET | Interim Tier 4 | 28 |  |
 | 2026 | Kubota Corporation | V2403-CR-NT-BG-EF | Tier 4 (Final or Phase In) | 37 |  |
 | 2026 | Kubota Corporation | V2403-CR-NTI-BG-EF | Tier 4 (Final or Phase In) | 54 |  |
-| 2026 | Kubota Corporation | V2403-CR-TI-BG-EF | Tier 4 (Final or Phase In) | 37 |  |
 | 2026 | Kubota Corporation | V3300-BG-EF | Interim Tier 4 | 36 |  |
-| 2026 | Kubota Corporation | V3600-T-BG-ET | Interim Tier 4, Tier 3 | 52 |  |
 | 2026 | Kubota Corporation | V3800-CR-TI-BG-ET | Tier 3 | 67 |  |
-| 2026 | Kubota Corporation | V3800-DI-T-BG-ET | Interim Tier 4, Tier 3 | 55 |  |
-| 2026 | Kubota Corporation | Z482-D2-EF | Tier 4 (Final or Phase In) | 5 |  |
 | 2026 | Liebherr Machines Bulle SA | D976 A7-02 | Tier 2 | 820 |  |
 | 2026 | Liebherr Machines Bulle SA | D9912G | Tier 2 | 2700 |  |
 | 2026 | Liebherr Machines Bulle SA | D9916G | Tier 2 | 3490 |  |
@@ -267,12 +256,25 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Yanmar Power Technology Co., Ltd. | 3MTGAG | Interim Tier 4, Tier 4 (Final or Phase In) | 28 |  |
 | 2026 | Yanmar Power Technology Co., Ltd. | 3MTGP | Interim Tier 4, Tier 4 (Final or Phase In) | 28 |  |
 | 2026 | Yanmar Power Technology Co., Ltd. | 3NNGAG | Tier 4 (Final or Phase In) | 22 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 3TNGAG | Tier 3, Tier 4 (Final or Phase In) | 42 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 3TNGP | Interim Tier 4, Tier 3, Tier 4 (Final or Phase In) | 44 |  |
 | 2026 | Yanmar Power Technology Co., Ltd. | 3TNV76-CL | Tier 4 (Final or Phase In) | 12 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 3TNV88-CL | Tier 4 (Final or Phase In) | 18 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 3TTGAG | Tier 3, Tier 4 (Final or Phase In) | 51 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 3TTGP | Interim Tier 4, Tier 3, Tier 4 (Final or Phase In) | 51 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 4HNGFM | Tier 4 (Final or Phase In) | 16 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 4HNGPM | Tier 4 (Final or Phase In) | 16 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 4TNV88-CL | Interim Tier 4, Tier 4 (Final or Phase In) | 24 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 4WNGAA | Tier 4 (Final or Phase In) | 11 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 4WNGPA | Tier 4 (Final or Phase In) | 11 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 5ENGAA | Tier 4 (Final or Phase In) | 9 |  |
+| 2025 | Deere & Company | 6135 | Interim Tier 4, Tier 3, Tier 4 (Final or Phase In) | 563 |  |
+| 2025 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | D03CJ-TAA | Tier 4 (Final or Phase In) | 35 |  |
+| 2025 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | D04CJ-TAA | Tier 4 (Final or Phase In) | 55 |  |
+| 2025 | Perkins Engines Co Ltd | 1204F-E44TTAN(C4.4) | Tier 4 (Final or Phase In) | 129 |  |
+| 2025 | Rolls-Royce Solutions America Inc | 12V1600G30S | Tier 2 | 668 | MTU 12V1600 G01S (0.909) |
+| 2025 | Rolls-Royce Solutions America Inc | 12V1600G90S | Tier 2 | 730 | MTU 12V1600 G01S (0.909) |
+| 2025 | Weichai Power Co.,Ltd. | 12M33 | Tier 2 | 1375 |  |
+| 2025 | Weichai Power Co.,Ltd. | 16M33 | Tier 2 | 1850 |  |
+| 2025 | Weichai Power Co.,Ltd. | 6M33 | Tier 2 | 710 |  |
+| 2024 | Cummins Inc. | QSK23-C | Tier 2 | 708 | Cummins QSK23 (0.909) |
+| 2024 | Cummins Inc. | QSL | Tier 3 | 346 |  |
+| 2024 | Cummins Inc. | QSM11-C | Tier 3 | 298 |  |
 
 ## Interpretation
 

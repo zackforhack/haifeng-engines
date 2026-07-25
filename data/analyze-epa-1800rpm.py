@@ -78,6 +78,21 @@ CERTIFICATION_ALIASES = {
     ("Liebherr Machines Bulle SA", "D9812G"): ("Liebherr", "D9812"),
     ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
     ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
+    ("Kubota Corporation", "D1005BGEF"): ("Kubota", "D1005-E4BG1-SAE-2"),
+    ("Kubota Corporation", "D1005EF"): ("Kubota", "D1005-E4BG1-SAE-2"),
+    ("Kubota Corporation", "D1105BGEF"): ("Kubota", "D1105-E4BG1-SAE-2X"),
+    ("Kubota Corporation", "D1105EF"): ("Kubota", "D1105-E4BG1-SAE-2X"),
+    ("Kubota Corporation", "D1305BGEF"): ("Kubota", "D1305-E4BG1-CHN-1"),
+    ("Kubota Corporation", "D1503MBGEF"): ("Kubota", "D1503-M-E4-BG"),
+    ("Kubota Corporation", "D1703MBGET"): ("Kubota", "D1703-M-E3-BG"),
+    ("Kubota Corporation", "D1803CRTIBGEF"): ("Kubota", "D1803-CR-TI-E4-BG"),
+    ("Kubota Corporation", "V1505BGEF"): ("Kubota", "V1505-E4BG1-SAE-2X"),
+    ("Kubota Corporation", "V2203MBGET"): ("Kubota", "V2203-M-E3-BG"),
+    ("Kubota Corporation", "V2403CRTIBGEF"): ("Kubota", "V2403-CR-TI-E4-BG"),
+    ("Kubota Corporation", "V3300BGET"): ("Kubota", "V3300-E3-BG"),
+    ("Kubota Corporation", "V3600TBGET"): ("Kubota", "V3600-T-E3-BG"),
+    ("Kubota Corporation", "V3800DITBGET"): ("Kubota", "V3800DI-T-E3-BG"),
+    ("Kubota Corporation", "Z482D2EF"): ("Kubota", "Z482-E4B-CHN-1"),
     ("Perkins Engines Co Ltd", "403D11C1P1"): ("Perkins", "403D-11G"),
     ("Perkins Engines Co Ltd", "403F11C1P1"): ("Perkins", "403F-11G"),
     ("Perkins Engines Co Ltd", "404D22TAC2P2"): ("Perkins", "404D-22TAG"),
@@ -88,6 +103,15 @@ CERTIFICATION_ALIASES = {
     ("Perkins Engines Co Ltd", "1106DE70TAC7P1"): ("Perkins", "1106D-E70TAG5"),
     ("Perkins Engines Co Ltd", "1204JE44TTAC4P4"): ("Perkins", "1204J-E44TTAG2"),
     ("Perkins Engines Co Ltd", "1206JE70TTAC7P1"): ("Perkins", "1206J-E70TTAG4"),
+    ("Yanmar Power Technology Co., Ltd.", "3TNGAG"): ("Yanmar", "4TNV98C-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "3TNGP"): ("Yanmar", "4TNV98C-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "3TNV88CL"): ("Yanmar", "3TNV88F-UG6GE"),
+    ("Yanmar Power Technology Co., Ltd.", "3TTGAG"): ("Yanmar", "4TNV98CT-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "3TTGP"): ("Yanmar", "4TNV98CT-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "4TNGAC"): ("Yanmar", "4TNV98C-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "4TNGPC"): ("Yanmar", "4TNV98C-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "4TTGAC"): ("Yanmar", "4TNV98CT-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "4TTGPC"): ("Yanmar", "4TNV98CT-GGE"),
 }
 
 REPRESENTED_STATUSES = {
@@ -516,10 +540,18 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "- `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's "
         "official co-development announcement identifies the six KD commercial engine families "
         "manufactured for Kohler generator sets.",
+        "- `Kubota Corporation` EPA model names use certification suffixes such as `-EF` and "
+        "`-ET`, while Kubota's public generator catalog uses commercial `E4-BG` and `E3-BG` "
+        "names. Fifteen reviewed aliases require matching displacement, aspiration, emissions "
+        "tier and Kubota-published 1800 RPM output.",
         "- `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append "
         "the shared Caterpillar base-engine name in parentheses. Ten reviewed aliases map those "
         "records only to Perkins ElectropaK pages with matching family, displacement, emissions "
         "tier and manufacturer-published 1800 RPM power node.",
+        "- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration "
+        "names that differ from its TNV generator product names. Nine reviewed aliases map only "
+        "where displacement, aspiration, emissions tier and the certified power node agree with "
+        "Yanmar's official generator and industrial-engine documentation.",
         "",
         "## Generator-Priority Gaps by Brand",
         "",

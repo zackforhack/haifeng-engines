@@ -9471,6 +9471,1140 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1005-BG-EF",
+    "normalized_model": "D1005BGEF",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DKBXL01.0BCC",
+      "EKBXL01.0BCC",
+      "FKBXL01.0BCC",
+      "GKBXL01.0BCC",
+      "HKBXL01.0BCC",
+      "JKBXL01.0BCC",
+      "KKBXL01.0BCC",
+      "LKBXL01.0BCC",
+      "MKBXL01.0BCC",
+      "NKBXL01.0BCC",
+      "PKBXL01.0BCC",
+      "RKBXL01.0BCC",
+      "SKBXL01.0BCC",
+      "TKBXL01.0BCB"
+    ],
+    "engine_codes": [
+      "D1005-BG-EF01",
+      "D1005-BG-EF02"
+    ],
+    "certificates": [
+      "DKBXL01.0BCC-020",
+      "EKBXL01.0BCC-013",
+      "FKBXL01.0BCC-018",
+      "GKBXL01.0BCC-016",
+      "HKBXL01.0BCC-010",
+      "JKBXL01.0BCC-007",
+      "KKBXL01.0BCC-031",
+      "LKBXL01.0BCC-012",
+      "MKBXL01.0BCC-018",
+      "NKBXL01.0BCC-031",
+      "PKBXL01.0BCC-025",
+      "RKBXL01.0BCC-006",
+      "SKBXL01.0BCC-007",
+      "TKBXL01.0BCB-010"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 11,
+    "rated_power_kw_max": 11,
+    "displacements_l": [
+      1.002
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1005-E4BG1-SAE-2",
+        "slug": "kubota-d1005-e4bg1-sae-2",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1005-EF",
+    "normalized_model": "D1005EF",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HKBXL01.0BCB",
+      "JKBXL01.0BCB",
+      "KKBXL01.0BCB",
+      "LKBXL01.0BCB",
+      "MKBXL01.0BCB",
+      "NKBXL01.0BCB",
+      "PKBXL01.0BCB",
+      "RKBXL01.0BCB",
+      "SKBXL01.0BCB",
+      "TKBXL01.0BCB"
+    ],
+    "engine_codes": [
+      "D1005-EF08"
+    ],
+    "certificates": [
+      "HKBXL01.0BCB-009",
+      "JKBXL01.0BCB-006",
+      "KKBXL01.0BCB-026",
+      "LKBXL01.0BCB-013",
+      "MKBXL01.0BCB-017",
+      "NKBXL01.0BCB-019",
+      "PKBXL01.0BCB-024",
+      "RKBXL01.0BCB-005",
+      "SKBXL01.0BCB-029",
+      "TKBXL01.0BCB-010"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 11,
+    "displacements_l": [
+      1.002
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1005-E4BG1-SAE-2",
+        "slug": "kubota-d1005-e4bg1-sae-2",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1105-BG-EF",
+    "normalized_model": "D1105BGEF",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DKBXL01.5BCC",
+      "EKBXL01.5BCC",
+      "FKBXL01.5BCC",
+      "GKBXL01.5BCC",
+      "HKBXL01.5BCC",
+      "JKBXL01.5BCC",
+      "KKBXL01.5BCC",
+      "LKBXL01.5BCC",
+      "MKBXL01.5BCC",
+      "NKBXL01.5BCC",
+      "PKBXL01.5BCC",
+      "RKBXL01.5BCC",
+      "SKBXL01.5BCC",
+      "TKBXL01.5BCB"
+    ],
+    "engine_codes": [
+      "D1105-BG-EF01"
+    ],
+    "certificates": [
+      "DKBXL01.5BCC-017",
+      "EKBXL01.5BCC-012",
+      "FKBXL01.5BCC-022",
+      "GKBXL01.5BCC-020",
+      "HKBXL01.5BCC-014",
+      "JKBXL01.5BCC-010",
+      "KKBXL01.5BCC-030",
+      "LKBXL01.5BCC-022",
+      "MKBXL01.5BCC-016",
+      "NKBXL01.5BCC-018",
+      "PKBXL01.5BCC-029",
+      "RKBXL01.5BCC-009",
+      "SKBXL01.5BCC-023",
+      "TKBXL01.5BCB-018"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 12,
+    "rated_power_kw_max": 13,
+    "displacements_l": [
+      1.124
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1105-E4BG1-SAE-2X",
+        "slug": "kubota-d1105-e4bg1-sae-2x",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1105-EF",
+    "normalized_model": "D1105EF",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HKBXL01.5BCB",
+      "JKBXL01.5BCB",
+      "KKBXL01.5BCB",
+      "LKBXL01.5BCB",
+      "MKBXL01.5BCB",
+      "NKBXL01.5BCB",
+      "PKBXL01.5BCB",
+      "RKBXL01.5BCB",
+      "SKBXL01.5BCB",
+      "TKBXL01.5BCB"
+    ],
+    "engine_codes": [
+      "D1105-EF10"
+    ],
+    "certificates": [
+      "HKBXL01.5BCB-013",
+      "JKBXL01.5BCB-009",
+      "KKBXL01.5BCB-029",
+      "LKBXL01.5BCB-021",
+      "MKBXL01.5BCB-015",
+      "NKBXL01.5BCB-021",
+      "PKBXL01.5BCB-028",
+      "RKBXL01.5BCB-010",
+      "SKBXL01.5BCB-040",
+      "TKBXL01.5BCB-018"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 12,
+    "rated_power_kw_max": 13,
+    "displacements_l": [
+      1.124
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1105-E4BG1-SAE-2X",
+        "slug": "kubota-d1105-e4bg1-sae-2x",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1503-M-BG-EF",
+    "normalized_model": "D1503MBGEF",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DKBXL01.5FCC",
+      "EKBXL01.5FCC",
+      "FKBXL01.5FCC",
+      "GKBXL01.5FCC",
+      "HKBXL01.5FCC",
+      "JKBXL01.5FCC",
+      "KKBXL01.5FCC",
+      "LKBXL01.5FCC",
+      "MKBXL01.5FCC",
+      "NKBXL01.5FCC",
+      "PKBXL01.5FCC",
+      "RKBXL01.5FCC",
+      "SKBXL01.5FCC",
+      "TKBXL01.5FCC"
+    ],
+    "engine_codes": [
+      "D1503-M-BG-EF01",
+      "D1503-M-BG-EF01e",
+      "D1503-M-BG-EF02e",
+      "D1503-M-BG-EF21",
+      "D1503-M-BG-EF21e"
+    ],
+    "certificates": [
+      "DKBXL01.5FCC-022",
+      "EKBXL01.5FCC-019",
+      "FKBXL01.5FCC-023",
+      "GKBXL01.5FCC-021",
+      "HKBXL01.5FCC-015",
+      "JKBXL01.5FCC-004",
+      "KKBXL01.5FCC-033",
+      "LKBXL01.5FCC-025",
+      "MKBXL01.5FCC-056",
+      "NKBXL01.5FCC-022",
+      "PKBXL01.5FCC-032",
+      "RKBXL01.5FCC-011",
+      "SKBXL01.5FCC-037",
+      "TKBXL01.5FCC-012"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.5
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1503-M-E4-BG",
+        "slug": "kubota-d1503-m-e4-bg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1703-M-BG-ET",
+    "normalized_model": "D1703MBGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CKBXL02.2FCC",
+      "DKBXL02.2FCC",
+      "EKBXL02.2FCC",
+      "FKBXL02.2FCC",
+      "GKBXL02.2FCC",
+      "HKBXL02.2FCC",
+      "JKBXL02.2FCC",
+      "KKBXL02.2FCC",
+      "LKBXL02.2FCC",
+      "MKBXL02.2FCC",
+      "NKBXL02.2FCC",
+      "PKBXL02.2FCC",
+      "RKBXL02.2FCC",
+      "SKBXL02.2FCC",
+      "TKBXL02.2FCC"
+    ],
+    "engine_codes": [
+      "D1703-M-BG-ET01",
+      "D1703-M-BG-ET01e"
+    ],
+    "certificates": [
+      "CKBXL02.2FCC-028",
+      "DKBXL02.2FCC-033",
+      "EKBXL02.2FCC-020",
+      "FKBXL02.2FCC-025",
+      "GKBXL02.2FCC-040",
+      "HKBXL02.2FCC-035",
+      "JKBXL02.2FCC-020",
+      "KKBXL02.2FCC-036",
+      "LKBXL02.2FCC-043",
+      "MKBXL02.2FCC-057",
+      "NKBXL02.2FCC-060",
+      "PKBXL02.2FCC-061",
+      "RKBXL02.2FCC-056",
+      "SKBXL02.2FCC-032",
+      "TKBXL02.2FCC-030"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 20,
+    "rated_power_kw_max": 20,
+    "displacements_l": [
+      1.6480000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1703-M-E3-BG",
+        "slug": "kubota-d1703-m-e3-bg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1803-CR-TI-BG-EF",
+    "normalized_model": "D1803CRTIBGEF",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FKBXL02.4EMC",
+      "GKBXL02.4EMC",
+      "HKBXL02.4EMC",
+      "JKBXL02.4EMC",
+      "KKBXL02.4EMC",
+      "LKBXL02.4EMC",
+      "MKBXL02.4EMC",
+      "NKBXL02.4EMC",
+      "PKBXL02.4EMC",
+      "RKBXL02.4EMC",
+      "SKBXL02.4EMC",
+      "TKBXL02.4EMC"
+    ],
+    "engine_codes": [
+      "D1803-CR-TI-BG-EF01",
+      "D1803-CR-TI-BG-EF02"
+    ],
+    "certificates": [
+      "FKBXL02.4EMC-039",
+      "GKBXL02.4EMC-031",
+      "HKBXL02.4EMC-022",
+      "JKBXL02.4EMC-030",
+      "KKBXL02.4EMC-044",
+      "LKBXL02.4EMC-032",
+      "MKBXL02.4EMC-042",
+      "NKBXL02.4EMC-038",
+      "PKBXL02.4EMC-009",
+      "RKBXL02.4EMC-026",
+      "SKBXL02.4EMC-020",
+      "TKBXL02.4EMC-032"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 27,
+    "rated_power_kw_max": 28,
+    "displacements_l": [
+      1.826
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1803-CR-TI-E4-BG",
+        "slug": "kubota-d1803-cr-ti-e4-bg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V1505-BG-EF",
+    "normalized_model": "V1505BGEF",
+    "first_model_year": 2013,
+    "latest_model_year": 2026,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "DKBXL01.5BCC",
+      "EKBXL01.5BCC",
+      "FKBXL01.5BCC",
+      "GKBXL01.5BCC",
+      "HKBXL01.5BCC",
+      "JKBXL01.5BCC",
+      "KKBXL01.5BCC",
+      "LKBXL01.5BCC",
+      "MKBXL01.5BCC",
+      "NKBXL01.5BCC",
+      "PKBXL01.5BCC",
+      "RKBXL01.5BCC",
+      "SKBXL01.5BCC",
+      "TKBXL01.5BCB"
+    ],
+    "engine_codes": [
+      "V1505-BG-EF01",
+      "V1505-BG-EF02"
+    ],
+    "certificates": [
+      "DKBXL01.5BCC-017",
+      "EKBXL01.5BCC-012",
+      "FKBXL01.5BCC-022",
+      "GKBXL01.5BCC-020",
+      "HKBXL01.5BCC-014",
+      "JKBXL01.5BCC-010",
+      "KKBXL01.5BCC-030",
+      "LKBXL01.5BCC-022",
+      "MKBXL01.5BCC-016",
+      "NKBXL01.5BCC-018",
+      "PKBXL01.5BCC-029",
+      "RKBXL01.5BCC-009",
+      "SKBXL01.5BCC-023",
+      "TKBXL01.5BCB-018"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 16,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.498
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V1505-E4BG1-SAE-2X",
+        "slug": "kubota-v1505-e4bg1-sae-2x",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V2203-M-BG-ET",
+    "normalized_model": "V2203MBGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CKBXL02.2FCC",
+      "DKBXL02.2FCC",
+      "EKBXL02.2FCC",
+      "FKBXL02.2FCC",
+      "GKBXL02.2FCC",
+      "HKBXL02.2FCC",
+      "JKBXL02.2FCC",
+      "KKBXL02.2FCC",
+      "LKBXL02.2FCC",
+      "MKBXL02.2FCC",
+      "NKBXL02.2FCC",
+      "PKBXL02.2FCC",
+      "RKBXL02.2FCC",
+      "SKBXL02.2FCC",
+      "TKBXL02.2FCC"
+    ],
+    "engine_codes": [
+      "V2203-M-BG-ET01",
+      "V2203-M-BG-ET02",
+      "V2203-M-BG-ET02e"
+    ],
+    "certificates": [
+      "CKBXL02.2FCC-028",
+      "DKBXL02.2FCC-033",
+      "EKBXL02.2FCC-020",
+      "FKBXL02.2FCC-025",
+      "GKBXL02.2FCC-040",
+      "HKBXL02.2FCC-035",
+      "JKBXL02.2FCC-020",
+      "KKBXL02.2FCC-036",
+      "LKBXL02.2FCC-043",
+      "MKBXL02.2FCC-057",
+      "NKBXL02.2FCC-060",
+      "PKBXL02.2FCC-061",
+      "RKBXL02.2FCC-056",
+      "SKBXL02.2FCC-032",
+      "TKBXL02.2FCC-030"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 26,
+    "rated_power_kw_max": 28,
+    "displacements_l": [
+      2.197
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V2203-M-E3-BG",
+        "slug": "kubota-v2203-m-e3-bg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V2403-CR-TI-BG-EF",
+    "normalized_model": "V2403CRTIBGEF",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FKBXL02.4EMC",
+      "GKBXL02.4EMC",
+      "HKBXL02.4EMC",
+      "JKBXL02.4EMC",
+      "KKBXL02.4EMC",
+      "LKBXL02.4EMC",
+      "MKBXL02.4EMC",
+      "NKBXL02.4EMC",
+      "PKBXL02.4EMC",
+      "RKBXL02.4EMC",
+      "SKBXL02.4EMC",
+      "TKBXL02.4EMC"
+    ],
+    "engine_codes": [
+      "V2403-CR-TI-BG-EF01"
+    ],
+    "certificates": [
+      "FKBXL02.4EMC-039",
+      "GKBXL02.4EMC-031",
+      "HKBXL02.4EMC-022",
+      "JKBXL02.4EMC-030",
+      "KKBXL02.4EMC-044",
+      "LKBXL02.4EMC-032",
+      "MKBXL02.4EMC-042",
+      "NKBXL02.4EMC-038",
+      "PKBXL02.4EMC-009",
+      "RKBXL02.4EMC-026",
+      "SKBXL02.4EMC-020",
+      "TKBXL02.4EMC-032"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 37,
+    "displacements_l": [
+      2.435
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V2403-CR-TI-E4-BG",
+        "slug": "kubota-v2403-cr-ti-e4-bg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V3600-T-BG-ET",
+    "normalized_model": "V3600TBGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CKBXL03.6BAC",
+      "GKBXL03.6BAC",
+      "HKBXL03.6BAC",
+      "JKBXL03.6BAC",
+      "KKBXL03.6BAC",
+      "LKBXL03.6BAC",
+      "MKBXL03.6BAC",
+      "NKBXL03.6BAC",
+      "PKBXL03.6BAC",
+      "RKBXL03.6BAC",
+      "SKBXL03.6BAC",
+      "TKBXL03.6BAC"
+    ],
+    "engine_codes": [
+      "V3600-T-BG-ET01",
+      "V3600-T-BG-ET02",
+      "V3600-T-BG-ET03"
+    ],
+    "certificates": [
+      "CKBXL03.6BAC-041",
+      "GKBXL03.6BAC-006",
+      "HKBXL03.6BAC-037",
+      "JKBXL03.6BAC-022",
+      "KKBXL03.6BAC-038",
+      "LKBXL03.6BAC-058",
+      "MKBXL03.6BAC-060",
+      "NKBXL03.6BAC-063",
+      "PKBXL03.6BAC-063",
+      "RKBXL03.6BAC-058",
+      "SKBXL03.6BAC-010",
+      "TKBXL03.6BAC-031"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable",
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 45,
+    "rated_power_kw_max": 52,
+    "displacements_l": [
+      3.621
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V3600-T-E3-BG",
+        "slug": "kubota-v3600-t-e3-bg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V3800-DI-T-BG-ET",
+    "normalized_model": "V3800DITBGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CKBXL03.8AAC",
+      "GKBXL03.8AAC",
+      "HKBXL03.8AAC",
+      "JKBXL03.8AAC",
+      "KKBXL03.8AAC",
+      "LKBXL03.8AAC",
+      "MKBXL03.8AAC",
+      "NKBXL03.8AAC",
+      "PKBXL03.8AAC",
+      "RKBXL03.8AAC",
+      "SKBXL03.8AAC",
+      "TKBXL03.8AAC"
+    ],
+    "engine_codes": [
+      "V3800-DI-T-BG-ET01",
+      "V3800-DI-T-BG-ET01e"
+    ],
+    "certificates": [
+      "CKBXL03.8AAC-004",
+      "GKBXL03.8AAC-007",
+      "HKBXL03.8AAC-038",
+      "JKBXL03.8AAC-023",
+      "KKBXL03.8AAC-039",
+      "LKBXL03.8AAC-053",
+      "MKBXL03.8AAC-058",
+      "NKBXL03.8AAC-064",
+      "PKBXL03.8AAC-064",
+      "RKBXL03.8AAC-059",
+      "SKBXL03.8AAC-035",
+      "TKBXL03.8AAC-035"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable",
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 54,
+    "rated_power_kw_max": 55,
+    "displacements_l": [
+      3.77
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V3800DI-T-E3-BG",
+        "slug": "kubota-v3800di-t-e3-bg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "Z482-D2-EF",
+    "normalized_model": "Z482D2EF",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HKBXL.719KCC",
+      "JKBXL.719KCC",
+      "KKBXL.719KCC",
+      "LKBXL.719KCC",
+      "MKBXL.719KCC",
+      "NKBXL.719KCC",
+      "PKBXL.719KCC",
+      "RKBXL.719KCC",
+      "SKBXL.719KCC",
+      "TKBXL.719KCB"
+    ],
+    "engine_codes": [
+      "Z482-D2-EF07",
+      "Z482-D2-EF07e"
+    ],
+    "certificates": [
+      "HKBXL.719KCC-007",
+      "JKBXL.719KCC-017",
+      "KKBXL.719KCC-022",
+      "LKBXL.719KCC-015",
+      "MKBXL.719KCC-013",
+      "NKBXL.719KCC-012",
+      "PKBXL.719KCC-020",
+      "RKBXL.719KCC-016",
+      "SKBXL.719KCC-026",
+      "TKBXL.719KCB-009"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 4,
+    "rated_power_kw_max": 5,
+    "displacements_l": [
+      0.47900000000000004
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "Z482-E4B-CHN-1",
+        "slug": "kubota-z482-e4b-chn-1",
+        "rpm_rated": 3600,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Liebherr Machines Bulle SA",
     "mapped_database_brands": [
       "Kohler",
@@ -12150,7 +13284,7 @@
         "model": "1106D-E70TAG5",
         "slug": "perkins-1106d-e70tag5",
         "rpm_rated": 1500,
-        "emissions_standard": "U.S. EPA Tier 3",
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
         "fuel_type": "Diesel"
       }
     ],
@@ -12220,7 +13354,7 @@
         "model": "1204J-E44TTAG2",
         "slug": "perkins-1204j-e44ttag2",
         "rpm_rated": 1500,
-        "emissions_standard": "U.S. EPA Final Tier 4",
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -14564,6 +15698,171 @@
     "mapped_database_brands": [
       "Yanmar"
     ],
+    "epa_model": "3TNGAG",
+    "normalized_model": "3TNGAG",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GYDXL3.32S4N",
+      "JYDXL3.32S4N",
+      "KYDXL3.32S4N",
+      "LYDXL3.32S4N",
+      "MYDXL03.3S4N",
+      "NYDXL03.3S4N",
+      "PYDXL03.3S4N",
+      "RYDXL03.3S4N",
+      "SYDXL03.3S4N",
+      "TYDXL03.3S4N"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "GYDXL3.32S4N-013",
+      "JYDXL3.32S4N-031",
+      "KYDXL3.32S4N-050",
+      "LYDXL3.32S4N-050",
+      "MYDXL03.3S4N-053",
+      "NYDXL03.3S4N-019",
+      "PYDXL03.3S4N-041",
+      "RYDXL03.3S4N-037",
+      "SYDXL03.3S4N-047",
+      "TYDXL03.3S4N-046"
+    ],
+    "applicable_tiers": [
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 42,
+    "rated_power_kw_max": 42,
+    "displacements_l": [
+      3.319
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "4TNV98C-GGE",
+        "slug": "yanmar-4tnv98c-gge",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3TNGP",
+    "normalized_model": "3TNGP",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2016,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CYDXL3.32C4N",
+      "GYDXL3.32C4N",
+      "GYDXL3.32S4N",
+      "JYDXL3.32S4N",
+      "KYDXL3.32S4N",
+      "LYDXL3.32S4N",
+      "MYDXL03.3S4N",
+      "NYDXL03.3S4N",
+      "PYDXL03.3S4N",
+      "RYDXL03.3S4N",
+      "SYDXL03.3S4N",
+      "TYDXL03.3S4N"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL3.32C4N-034",
+      "GYDXL3.32C4N-011",
+      "GYDXL3.32S4N-013",
+      "JYDXL3.32S4N-031",
+      "KYDXL3.32S4N-050",
+      "LYDXL3.32S4N-050",
+      "MYDXL03.3S4N-053",
+      "NYDXL03.3S4N-019",
+      "PYDXL03.3S4N-041",
+      "RYDXL03.3S4N-037",
+      "SYDXL03.3S4N-047",
+      "TYDXL03.3S4N-046"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable",
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 44,
+    "rated_power_kw_max": 44,
+    "displacements_l": [
+      3.319
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "4TNV98C-GGE",
+        "slug": "yanmar-4tnv98c-gge",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
     "epa_model": "3TNV76-G",
     "normalized_model": "3TNV76G",
     "first_model_year": 2012,
@@ -14635,6 +15934,652 @@
         "slug": "yanmar-3tnv76-gge",
         "rpm_rated": 1500,
         "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3TNV88-CL",
+    "normalized_model": "3TNV88CL",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CYDXL1.64J3N",
+      "HYDXL1.64S3A",
+      "JYDXL1.64S3A",
+      "KYDXL1.64S3A",
+      "LYDXL1.64S3A",
+      "MYDXL01.6S3A",
+      "NYDXL01.6S3A",
+      "PYDXL01.6S3A",
+      "RYDXL01.6S3A",
+      "SYDXL01.6S3A",
+      "TYDXL01.6S3A"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL1.64J3N-019",
+      "HYDXL1.64S3A-006",
+      "JYDXL1.64S3A-043",
+      "KYDXL1.64S3A-025",
+      "LYDXL1.64S3A-031",
+      "MYDXL01.6S3A-049",
+      "NYDXL01.6S3A-023",
+      "PYDXL01.6S3A-042",
+      "RYDXL01.6S3A-050",
+      "SYDXL01.6S3A-036",
+      "TYDXL01.6S3A-050"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.6420000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNV88F-UG6GE",
+        "slug": "yanmar-3tnv88f-ug6ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3TTGAG",
+    "normalized_model": "3TTGAG",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GYDXL3.32S4T",
+      "JYDXL3.32S4T",
+      "KYDXL3.32S4T",
+      "LYDXL3.32S4T",
+      "MYDXL03.3S4T",
+      "NYDXL03.3S4T",
+      "PYDXL03.3S4T",
+      "RYDXL03.3S4T",
+      "SYDXL03.3S4T",
+      "TYDXL03.3S4T"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "GYDXL3.32S4T-014",
+      "JYDXL3.32S4T-030",
+      "KYDXL3.32S4T-051",
+      "LYDXL3.32S4T-051",
+      "MYDXL03.3S4T-054",
+      "NYDXL03.3S4T-024",
+      "PYDXL03.3S4T-040",
+      "RYDXL03.3S4T-036",
+      "SYDXL03.3S4T-048",
+      "TYDXL03.3S4T-044"
+    ],
+    "applicable_tiers": [
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 51,
+    "rated_power_kw_max": 51,
+    "displacements_l": [
+      3.319
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "4TNV98CT-GGE",
+        "slug": "yanmar-4tnv98ct-gge",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3TTGP",
+    "normalized_model": "3TTGP",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2016,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CYDXL3.32C4T",
+      "GYDXL3.32C4T",
+      "GYDXL3.32S4T",
+      "JYDXL3.32S4T",
+      "KYDXL3.32S4T",
+      "LYDXL3.32S4T",
+      "MYDXL03.3S4T",
+      "NYDXL03.3S4T",
+      "PYDXL03.3S4T",
+      "RYDXL03.3S4T",
+      "SYDXL03.3S4T",
+      "TYDXL03.3S4T"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL3.32C4T-035",
+      "GYDXL3.32C4T-012",
+      "GYDXL3.32S4T-014",
+      "JYDXL3.32S4T-030",
+      "KYDXL3.32S4T-051",
+      "LYDXL3.32S4T-051",
+      "MYDXL03.3S4T-054",
+      "NYDXL03.3S4T-024",
+      "PYDXL03.3S4T-040",
+      "RYDXL03.3S4T-036",
+      "SYDXL03.3S4T-048",
+      "TYDXL03.3S4T-044"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable",
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 51,
+    "rated_power_kw_max": 51,
+    "displacements_l": [
+      3.319
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "4TNV98CT-GGE",
+        "slug": "yanmar-4tnv98ct-gge",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "4TNGAC",
+    "normalized_model": "4TNGAC",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HYDXL3.32NGA",
+      "JYDXL3.32NGA",
+      "KYDXL3.32NGA",
+      "LYDXL3.32NGA",
+      "MYDXL03.3NGA",
+      "NYDXL03.3NGA",
+      "PYDXL03.3NGA",
+      "RYDXL03.3NGA",
+      "SYDXL03.3NGA",
+      "TYDXL03.3NGA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "HYDXL3.32NGA-045",
+      "JYDXL3.32NGA-040",
+      "KYDXL3.32NGA-033",
+      "LYDXL3.32NGA-052",
+      "MYDXL03.3NGA-046",
+      "NYDXL03.3NGA-036",
+      "PYDXL03.3NGA-055",
+      "RYDXL03.3NGA-027",
+      "SYDXL03.3NGA-049",
+      "TYDXL03.3NGA-040"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 42,
+    "rated_power_kw_max": 42,
+    "displacements_l": [
+      3.319
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "4TNV98C-GGE",
+        "slug": "yanmar-4tnv98c-gge",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "4TNGPC",
+    "normalized_model": "4TNGPC",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HYDXL3.32NGA",
+      "JYDXL3.32NGA",
+      "KYDXL3.32NGA",
+      "LYDXL3.32NGA",
+      "MYDXL03.3NGA",
+      "NYDXL03.3NGA",
+      "PYDXL03.3NGA",
+      "RYDXL03.3NGA",
+      "SYDXL03.3NGA",
+      "TYDXL03.3NGA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "HYDXL3.32NGA-045",
+      "JYDXL3.32NGA-040",
+      "KYDXL3.32NGA-033",
+      "LYDXL3.32NGA-052",
+      "MYDXL03.3NGA-046",
+      "NYDXL03.3NGA-036",
+      "PYDXL03.3NGA-055",
+      "RYDXL03.3NGA-027",
+      "SYDXL03.3NGA-049",
+      "TYDXL03.3NGA-040"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 43,
+    "rated_power_kw_max": 43,
+    "displacements_l": [
+      3.319
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "4TNV98C-GGE",
+        "slug": "yanmar-4tnv98c-gge",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "4TTGAC",
+    "normalized_model": "4TTGAC",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HYDXL3.32TGA",
+      "JYDXL3.32TGA",
+      "KYDXL3.32TGA",
+      "LYDXL3.32TGA",
+      "MYDXL03.3TGA",
+      "NYDXL03.3TGA",
+      "PYDXL03.3TGA",
+      "RYDXL03.3TGA",
+      "SYDXL03.3TGA",
+      "TYDXL03.3TGA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "HYDXL3.32TGA-046",
+      "JYDXL3.32TGA-009",
+      "KYDXL3.32TGA-037",
+      "LYDXL3.32TGA-039",
+      "MYDXL03.3TGA-047",
+      "NYDXL03.3TGA-035",
+      "PYDXL03.3TGA-054",
+      "RYDXL03.3TGA-028",
+      "SYDXL03.3TGA-050",
+      "TYDXL03.3TGA-041"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 51,
+    "rated_power_kw_max": 51,
+    "displacements_l": [
+      3.319
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "4TNV98CT-GGE",
+        "slug": "yanmar-4tnv98ct-gge",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "4TTGPC",
+    "normalized_model": "4TTGPC",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HYDXL3.32TGA",
+      "JYDXL3.32TGA",
+      "KYDXL3.32TGA",
+      "LYDXL3.32TGA",
+      "MYDXL03.3TGA",
+      "NYDXL03.3TGA",
+      "PYDXL03.3TGA",
+      "RYDXL03.3TGA",
+      "SYDXL03.3TGA",
+      "TYDXL03.3TGA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "HYDXL3.32TGA-046",
+      "JYDXL3.32TGA-009",
+      "KYDXL3.32TGA-037",
+      "LYDXL3.32TGA-039",
+      "MYDXL03.3TGA-047",
+      "NYDXL03.3TGA-035",
+      "PYDXL03.3TGA-054",
+      "RYDXL03.3TGA-028",
+      "SYDXL03.3TGA-050",
+      "TYDXL03.3TGA-041"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 53,
+    "rated_power_kw_max": 53,
+    "displacements_l": [
+      3.319
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "4TNV98CT-GGE",
+        "slug": "yanmar-4tnv98ct-gge",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1305-BG-EF",
+    "normalized_model": "D1305BGEF",
+    "first_model_year": 2013,
+    "latest_model_year": 2025,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "DKBXL01.3DCC",
+      "EKBXL01.3DCC",
+      "FKBXL01.3DCC",
+      "GKBXL01.3DCC",
+      "HKBXL01.3DCC",
+      "JKBXL01.3DCC",
+      "KKBXL01.3DCC",
+      "LKBXL01.3DCC",
+      "MKBXL01.3DCC",
+      "NKBXL01.3DCC",
+      "PKBXL01.3DCC",
+      "RKBXL01.3DCC",
+      "SKBXL01.3DCC"
+    ],
+    "engine_codes": [
+      "D1305-BG-EF01",
+      "D1305-BG-EF02"
+    ],
+    "certificates": [
+      "DKBXL01.3DCC-019",
+      "EKBXL01.3DCC-014",
+      "FKBXL01.3DCC-020",
+      "GKBXL01.3DCC-018",
+      "HKBXL01.3DCC-012",
+      "JKBXL01.3DCC-008",
+      "KKBXL01.3DCC-028",
+      "LKBXL01.3DCC-019",
+      "MKBXL01.3DCC-020",
+      "NKBXL01.3DCC-017",
+      "PKBXL01.3DCC-027",
+      "RKBXL01.3DCC-007",
+      "SKBXL01.3DCC-008"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 14,
+    "rated_power_kw_max": 15,
+    "displacements_l": [
+      1.2610000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1305-E4BG1-CHN-1",
+        "slug": "kubota-d1305-e4bg1-chn-1",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -16685,6 +18630,94 @@
         "slug": "cummins-qsz13-g7",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V3300-BG-ET",
+    "normalized_model": "V3300BGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CKBXL03.3BCC",
+      "DKBXL03.3BCC",
+      "EKBXL03.3BCC",
+      "FKBXL03.3BCC",
+      "GKBXL03.3BCC",
+      "HKBXL03.3BCC",
+      "JKBXL03.3BCC",
+      "KKBXL03.3BCC",
+      "LKBXL03.3BCC",
+      "MKBXL03.3BCC",
+      "NKBXL03.3BCC",
+      "PKBXL03.3BCC",
+      "RKBXL03.3BCC"
+    ],
+    "engine_codes": [
+      "V3300-BG-ET01",
+      "V3300-BG-ET01e"
+    ],
+    "certificates": [
+      "CKBXL03.3BCC-013",
+      "DKBXL03.3BCC-034",
+      "EKBXL03.3BCC-024",
+      "FKBXL03.3BCC-026",
+      "GKBXL03.3BCC-041",
+      "HKBXL03.3BCC-036",
+      "JKBXL03.3BCC-021",
+      "KKBXL03.3BCC-037",
+      "LKBXL03.3BCC-057",
+      "MKBXL03.3BCC-059",
+      "NKBXL03.3BCC-061",
+      "PKBXL03.3BCC-062",
+      "RKBXL03.3BCC-057"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      3.319
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V3300-E3-BG",
+        "slug": "kubota-v3300-e3-bg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -29988,721 +32021,6 @@
     "mapped_database_brands": [
       "Kubota"
     ],
-    "epa_model": "D1005-BG-EF",
-    "normalized_model": "D1005BGEF",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DKBXL01.0BCC",
-      "EKBXL01.0BCC",
-      "FKBXL01.0BCC",
-      "GKBXL01.0BCC",
-      "HKBXL01.0BCC",
-      "JKBXL01.0BCC",
-      "KKBXL01.0BCC",
-      "LKBXL01.0BCC",
-      "MKBXL01.0BCC",
-      "NKBXL01.0BCC",
-      "PKBXL01.0BCC",
-      "RKBXL01.0BCC",
-      "SKBXL01.0BCC",
-      "TKBXL01.0BCB"
-    ],
-    "engine_codes": [
-      "D1005-BG-EF01",
-      "D1005-BG-EF02"
-    ],
-    "certificates": [
-      "DKBXL01.0BCC-020",
-      "EKBXL01.0BCC-013",
-      "FKBXL01.0BCC-018",
-      "GKBXL01.0BCC-016",
-      "HKBXL01.0BCC-010",
-      "JKBXL01.0BCC-007",
-      "KKBXL01.0BCC-031",
-      "LKBXL01.0BCC-012",
-      "MKBXL01.0BCC-018",
-      "NKBXL01.0BCC-031",
-      "PKBXL01.0BCC-025",
-      "RKBXL01.0BCC-006",
-      "SKBXL01.0BCC-007",
-      "TKBXL01.0BCB-010"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 11,
-    "rated_power_kw_max": 11,
-    "displacements_l": [
-      1.002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "D1005-EF",
-    "normalized_model": "D1005EF",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HKBXL01.0BCB",
-      "JKBXL01.0BCB",
-      "KKBXL01.0BCB",
-      "LKBXL01.0BCB",
-      "MKBXL01.0BCB",
-      "NKBXL01.0BCB",
-      "PKBXL01.0BCB",
-      "RKBXL01.0BCB",
-      "SKBXL01.0BCB",
-      "TKBXL01.0BCB"
-    ],
-    "engine_codes": [
-      "D1005-EF08"
-    ],
-    "certificates": [
-      "HKBXL01.0BCB-009",
-      "JKBXL01.0BCB-006",
-      "KKBXL01.0BCB-026",
-      "LKBXL01.0BCB-013",
-      "MKBXL01.0BCB-017",
-      "NKBXL01.0BCB-019",
-      "PKBXL01.0BCB-024",
-      "RKBXL01.0BCB-005",
-      "SKBXL01.0BCB-029",
-      "TKBXL01.0BCB-010"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 11,
-    "displacements_l": [
-      1.002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "D1105-BG-EF",
-    "normalized_model": "D1105BGEF",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DKBXL01.5BCC",
-      "EKBXL01.5BCC",
-      "FKBXL01.5BCC",
-      "GKBXL01.5BCC",
-      "HKBXL01.5BCC",
-      "JKBXL01.5BCC",
-      "KKBXL01.5BCC",
-      "LKBXL01.5BCC",
-      "MKBXL01.5BCC",
-      "NKBXL01.5BCC",
-      "PKBXL01.5BCC",
-      "RKBXL01.5BCC",
-      "SKBXL01.5BCC",
-      "TKBXL01.5BCB"
-    ],
-    "engine_codes": [
-      "D1105-BG-EF01"
-    ],
-    "certificates": [
-      "DKBXL01.5BCC-017",
-      "EKBXL01.5BCC-012",
-      "FKBXL01.5BCC-022",
-      "GKBXL01.5BCC-020",
-      "HKBXL01.5BCC-014",
-      "JKBXL01.5BCC-010",
-      "KKBXL01.5BCC-030",
-      "LKBXL01.5BCC-022",
-      "MKBXL01.5BCC-016",
-      "NKBXL01.5BCC-018",
-      "PKBXL01.5BCC-029",
-      "RKBXL01.5BCC-009",
-      "SKBXL01.5BCC-023",
-      "TKBXL01.5BCB-018"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 12,
-    "rated_power_kw_max": 13,
-    "displacements_l": [
-      1.124
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "D1105-EF",
-    "normalized_model": "D1105EF",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HKBXL01.5BCB",
-      "JKBXL01.5BCB",
-      "KKBXL01.5BCB",
-      "LKBXL01.5BCB",
-      "MKBXL01.5BCB",
-      "NKBXL01.5BCB",
-      "PKBXL01.5BCB",
-      "RKBXL01.5BCB",
-      "SKBXL01.5BCB",
-      "TKBXL01.5BCB"
-    ],
-    "engine_codes": [
-      "D1105-EF10"
-    ],
-    "certificates": [
-      "HKBXL01.5BCB-013",
-      "JKBXL01.5BCB-009",
-      "KKBXL01.5BCB-029",
-      "LKBXL01.5BCB-021",
-      "MKBXL01.5BCB-015",
-      "NKBXL01.5BCB-021",
-      "PKBXL01.5BCB-028",
-      "RKBXL01.5BCB-010",
-      "SKBXL01.5BCB-040",
-      "TKBXL01.5BCB-018"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 12,
-    "rated_power_kw_max": 13,
-    "displacements_l": [
-      1.124
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "D1503-M-BG-EF",
-    "normalized_model": "D1503MBGEF",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DKBXL01.5FCC",
-      "EKBXL01.5FCC",
-      "FKBXL01.5FCC",
-      "GKBXL01.5FCC",
-      "HKBXL01.5FCC",
-      "JKBXL01.5FCC",
-      "KKBXL01.5FCC",
-      "LKBXL01.5FCC",
-      "MKBXL01.5FCC",
-      "NKBXL01.5FCC",
-      "PKBXL01.5FCC",
-      "RKBXL01.5FCC",
-      "SKBXL01.5FCC",
-      "TKBXL01.5FCC"
-    ],
-    "engine_codes": [
-      "D1503-M-BG-EF01",
-      "D1503-M-BG-EF01e",
-      "D1503-M-BG-EF02e",
-      "D1503-M-BG-EF21",
-      "D1503-M-BG-EF21e"
-    ],
-    "certificates": [
-      "DKBXL01.5FCC-022",
-      "EKBXL01.5FCC-019",
-      "FKBXL01.5FCC-023",
-      "GKBXL01.5FCC-021",
-      "HKBXL01.5FCC-015",
-      "JKBXL01.5FCC-004",
-      "KKBXL01.5FCC-033",
-      "LKBXL01.5FCC-025",
-      "MKBXL01.5FCC-056",
-      "NKBXL01.5FCC-022",
-      "PKBXL01.5FCC-032",
-      "RKBXL01.5FCC-011",
-      "SKBXL01.5FCC-037",
-      "TKBXL01.5FCC-012"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.5
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "D1703-M-BG-ET",
-    "normalized_model": "D1703MBGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CKBXL02.2FCC",
-      "DKBXL02.2FCC",
-      "EKBXL02.2FCC",
-      "FKBXL02.2FCC",
-      "GKBXL02.2FCC",
-      "HKBXL02.2FCC",
-      "JKBXL02.2FCC",
-      "KKBXL02.2FCC",
-      "LKBXL02.2FCC",
-      "MKBXL02.2FCC",
-      "NKBXL02.2FCC",
-      "PKBXL02.2FCC",
-      "RKBXL02.2FCC",
-      "SKBXL02.2FCC",
-      "TKBXL02.2FCC"
-    ],
-    "engine_codes": [
-      "D1703-M-BG-ET01",
-      "D1703-M-BG-ET01e"
-    ],
-    "certificates": [
-      "CKBXL02.2FCC-028",
-      "DKBXL02.2FCC-033",
-      "EKBXL02.2FCC-020",
-      "FKBXL02.2FCC-025",
-      "GKBXL02.2FCC-040",
-      "HKBXL02.2FCC-035",
-      "JKBXL02.2FCC-020",
-      "KKBXL02.2FCC-036",
-      "LKBXL02.2FCC-043",
-      "MKBXL02.2FCC-057",
-      "NKBXL02.2FCC-060",
-      "PKBXL02.2FCC-061",
-      "RKBXL02.2FCC-056",
-      "SKBXL02.2FCC-032",
-      "TKBXL02.2FCC-030"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 20,
-    "rated_power_kw_max": 20,
-    "displacements_l": [
-      1.6480000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "D1803-CR-TI-BG-EF",
-    "normalized_model": "D1803CRTIBGEF",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FKBXL02.4EMC",
-      "GKBXL02.4EMC",
-      "HKBXL02.4EMC",
-      "JKBXL02.4EMC",
-      "KKBXL02.4EMC",
-      "LKBXL02.4EMC",
-      "MKBXL02.4EMC",
-      "NKBXL02.4EMC",
-      "PKBXL02.4EMC",
-      "RKBXL02.4EMC",
-      "SKBXL02.4EMC",
-      "TKBXL02.4EMC"
-    ],
-    "engine_codes": [
-      "D1803-CR-TI-BG-EF01",
-      "D1803-CR-TI-BG-EF02"
-    ],
-    "certificates": [
-      "FKBXL02.4EMC-039",
-      "GKBXL02.4EMC-031",
-      "HKBXL02.4EMC-022",
-      "JKBXL02.4EMC-030",
-      "KKBXL02.4EMC-044",
-      "LKBXL02.4EMC-032",
-      "MKBXL02.4EMC-042",
-      "NKBXL02.4EMC-038",
-      "PKBXL02.4EMC-009",
-      "RKBXL02.4EMC-026",
-      "SKBXL02.4EMC-020",
-      "TKBXL02.4EMC-032"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 27,
-    "rated_power_kw_max": 28,
-    "displacements_l": [
-      1.826
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "V1505-BG-EF",
-    "normalized_model": "V1505BGEF",
-    "first_model_year": 2013,
-    "latest_model_year": 2026,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "DKBXL01.5BCC",
-      "EKBXL01.5BCC",
-      "FKBXL01.5BCC",
-      "GKBXL01.5BCC",
-      "HKBXL01.5BCC",
-      "JKBXL01.5BCC",
-      "KKBXL01.5BCC",
-      "LKBXL01.5BCC",
-      "MKBXL01.5BCC",
-      "NKBXL01.5BCC",
-      "PKBXL01.5BCC",
-      "RKBXL01.5BCC",
-      "SKBXL01.5BCC",
-      "TKBXL01.5BCB"
-    ],
-    "engine_codes": [
-      "V1505-BG-EF01",
-      "V1505-BG-EF02"
-    ],
-    "certificates": [
-      "DKBXL01.5BCC-017",
-      "EKBXL01.5BCC-012",
-      "FKBXL01.5BCC-022",
-      "GKBXL01.5BCC-020",
-      "HKBXL01.5BCC-014",
-      "JKBXL01.5BCC-010",
-      "KKBXL01.5BCC-030",
-      "LKBXL01.5BCC-022",
-      "MKBXL01.5BCC-016",
-      "NKBXL01.5BCC-018",
-      "PKBXL01.5BCC-029",
-      "RKBXL01.5BCC-009",
-      "SKBXL01.5BCC-023",
-      "TKBXL01.5BCB-018"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 16,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.498
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "V2203-M-BG-ET",
-    "normalized_model": "V2203MBGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CKBXL02.2FCC",
-      "DKBXL02.2FCC",
-      "EKBXL02.2FCC",
-      "FKBXL02.2FCC",
-      "GKBXL02.2FCC",
-      "HKBXL02.2FCC",
-      "JKBXL02.2FCC",
-      "KKBXL02.2FCC",
-      "LKBXL02.2FCC",
-      "MKBXL02.2FCC",
-      "NKBXL02.2FCC",
-      "PKBXL02.2FCC",
-      "RKBXL02.2FCC",
-      "SKBXL02.2FCC",
-      "TKBXL02.2FCC"
-    ],
-    "engine_codes": [
-      "V2203-M-BG-ET01",
-      "V2203-M-BG-ET02",
-      "V2203-M-BG-ET02e"
-    ],
-    "certificates": [
-      "CKBXL02.2FCC-028",
-      "DKBXL02.2FCC-033",
-      "EKBXL02.2FCC-020",
-      "FKBXL02.2FCC-025",
-      "GKBXL02.2FCC-040",
-      "HKBXL02.2FCC-035",
-      "JKBXL02.2FCC-020",
-      "KKBXL02.2FCC-036",
-      "LKBXL02.2FCC-043",
-      "MKBXL02.2FCC-057",
-      "NKBXL02.2FCC-060",
-      "PKBXL02.2FCC-061",
-      "RKBXL02.2FCC-056",
-      "SKBXL02.2FCC-032",
-      "TKBXL02.2FCC-030"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 26,
-    "rated_power_kw_max": 28,
-    "displacements_l": [
-      2.197
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
     "epa_model": "V2203L-DI-EF",
     "normalized_model": "V2203LDIEF",
     "first_model_year": 2013,
@@ -31011,81 +32329,6 @@
     "mapped_database_brands": [
       "Kubota"
     ],
-    "epa_model": "V2403-CR-TI-BG-EF",
-    "normalized_model": "V2403CRTIBGEF",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FKBXL02.4EMC",
-      "GKBXL02.4EMC",
-      "HKBXL02.4EMC",
-      "JKBXL02.4EMC",
-      "KKBXL02.4EMC",
-      "LKBXL02.4EMC",
-      "MKBXL02.4EMC",
-      "NKBXL02.4EMC",
-      "PKBXL02.4EMC",
-      "RKBXL02.4EMC",
-      "SKBXL02.4EMC",
-      "TKBXL02.4EMC"
-    ],
-    "engine_codes": [
-      "V2403-CR-TI-BG-EF01"
-    ],
-    "certificates": [
-      "FKBXL02.4EMC-039",
-      "GKBXL02.4EMC-031",
-      "HKBXL02.4EMC-022",
-      "JKBXL02.4EMC-030",
-      "KKBXL02.4EMC-044",
-      "LKBXL02.4EMC-032",
-      "MKBXL02.4EMC-042",
-      "NKBXL02.4EMC-038",
-      "PKBXL02.4EMC-009",
-      "RKBXL02.4EMC-026",
-      "SKBXL02.4EMC-020",
-      "TKBXL02.4EMC-032"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 37,
-    "displacements_l": [
-      2.435
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
     "epa_model": "V3300-BG-EF",
     "normalized_model": "V3300BGEF",
     "first_model_year": 2025,
@@ -31131,85 +32374,6 @@
     "mapped_database_brands": [
       "Kubota"
     ],
-    "epa_model": "V3600-T-BG-ET",
-    "normalized_model": "V3600TBGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CKBXL03.6BAC",
-      "GKBXL03.6BAC",
-      "HKBXL03.6BAC",
-      "JKBXL03.6BAC",
-      "KKBXL03.6BAC",
-      "LKBXL03.6BAC",
-      "MKBXL03.6BAC",
-      "NKBXL03.6BAC",
-      "PKBXL03.6BAC",
-      "RKBXL03.6BAC",
-      "SKBXL03.6BAC",
-      "TKBXL03.6BAC"
-    ],
-    "engine_codes": [
-      "V3600-T-BG-ET01",
-      "V3600-T-BG-ET02",
-      "V3600-T-BG-ET03"
-    ],
-    "certificates": [
-      "CKBXL03.6BAC-041",
-      "GKBXL03.6BAC-006",
-      "HKBXL03.6BAC-037",
-      "JKBXL03.6BAC-022",
-      "KKBXL03.6BAC-038",
-      "LKBXL03.6BAC-058",
-      "MKBXL03.6BAC-060",
-      "NKBXL03.6BAC-063",
-      "PKBXL03.6BAC-063",
-      "RKBXL03.6BAC-058",
-      "SKBXL03.6BAC-010",
-      "TKBXL03.6BAC-031"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable",
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 45,
-    "rated_power_kw_max": 52,
-    "displacements_l": [
-      3.621
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
     "epa_model": "V3800-CR-TI-BG-ET",
     "normalized_model": "V3800CRTIBGET",
     "first_model_year": 2026,
@@ -31242,154 +32406,6 @@
     "rated_power_kw_max": 67,
     "displacements_l": [
       3.77
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "V3800-DI-T-BG-ET",
-    "normalized_model": "V3800DITBGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CKBXL03.8AAC",
-      "GKBXL03.8AAC",
-      "HKBXL03.8AAC",
-      "JKBXL03.8AAC",
-      "KKBXL03.8AAC",
-      "LKBXL03.8AAC",
-      "MKBXL03.8AAC",
-      "NKBXL03.8AAC",
-      "PKBXL03.8AAC",
-      "RKBXL03.8AAC",
-      "SKBXL03.8AAC",
-      "TKBXL03.8AAC"
-    ],
-    "engine_codes": [
-      "V3800-DI-T-BG-ET01",
-      "V3800-DI-T-BG-ET01e"
-    ],
-    "certificates": [
-      "CKBXL03.8AAC-004",
-      "GKBXL03.8AAC-007",
-      "HKBXL03.8AAC-038",
-      "JKBXL03.8AAC-023",
-      "KKBXL03.8AAC-039",
-      "LKBXL03.8AAC-053",
-      "MKBXL03.8AAC-058",
-      "NKBXL03.8AAC-064",
-      "PKBXL03.8AAC-064",
-      "RKBXL03.8AAC-059",
-      "SKBXL03.8AAC-035",
-      "TKBXL03.8AAC-035"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable",
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 54,
-    "rated_power_kw_max": 55,
-    "displacements_l": [
-      3.77
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "Z482-D2-EF",
-    "normalized_model": "Z482D2EF",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HKBXL.719KCC",
-      "JKBXL.719KCC",
-      "KKBXL.719KCC",
-      "LKBXL.719KCC",
-      "MKBXL.719KCC",
-      "NKBXL.719KCC",
-      "PKBXL.719KCC",
-      "RKBXL.719KCC",
-      "SKBXL.719KCC",
-      "TKBXL.719KCB"
-    ],
-    "engine_codes": [
-      "Z482-D2-EF07",
-      "Z482-D2-EF07e"
-    ],
-    "certificates": [
-      "HKBXL.719KCC-007",
-      "JKBXL.719KCC-017",
-      "KKBXL.719KCC-022",
-      "LKBXL.719KCC-015",
-      "MKBXL.719KCC-013",
-      "NKBXL.719KCC-012",
-      "PKBXL.719KCC-020",
-      "RKBXL.719KCC-016",
-      "SKBXL.719KCC-026",
-      "TKBXL.719KCB-009"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 4,
-    "rated_power_kw_max": 5,
-    "displacements_l": [
-      0.47900000000000004
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -36555,153 +37571,6 @@
     "mapped_database_brands": [
       "Yanmar"
     ],
-    "epa_model": "3TNGAG",
-    "normalized_model": "3TNGAG",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GYDXL3.32S4N",
-      "JYDXL3.32S4N",
-      "KYDXL3.32S4N",
-      "LYDXL3.32S4N",
-      "MYDXL03.3S4N",
-      "NYDXL03.3S4N",
-      "PYDXL03.3S4N",
-      "RYDXL03.3S4N",
-      "SYDXL03.3S4N",
-      "TYDXL03.3S4N"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "GYDXL3.32S4N-013",
-      "JYDXL3.32S4N-031",
-      "KYDXL3.32S4N-050",
-      "LYDXL3.32S4N-050",
-      "MYDXL03.3S4N-053",
-      "NYDXL03.3S4N-019",
-      "PYDXL03.3S4N-041",
-      "RYDXL03.3S4N-037",
-      "SYDXL03.3S4N-047",
-      "TYDXL03.3S4N-046"
-    ],
-    "applicable_tiers": [
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 42,
-    "rated_power_kw_max": 42,
-    "displacements_l": [
-      3.319
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3TNGP",
-    "normalized_model": "3TNGP",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2016,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CYDXL3.32C4N",
-      "GYDXL3.32C4N",
-      "GYDXL3.32S4N",
-      "JYDXL3.32S4N",
-      "KYDXL3.32S4N",
-      "LYDXL3.32S4N",
-      "MYDXL03.3S4N",
-      "NYDXL03.3S4N",
-      "PYDXL03.3S4N",
-      "RYDXL03.3S4N",
-      "SYDXL03.3S4N",
-      "TYDXL03.3S4N"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL3.32C4N-034",
-      "GYDXL3.32C4N-011",
-      "GYDXL3.32S4N-013",
-      "JYDXL3.32S4N-031",
-      "KYDXL3.32S4N-050",
-      "LYDXL3.32S4N-050",
-      "MYDXL03.3S4N-053",
-      "NYDXL03.3S4N-019",
-      "PYDXL03.3S4N-041",
-      "RYDXL03.3S4N-037",
-      "SYDXL03.3S4N-047",
-      "TYDXL03.3S4N-046"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable",
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 44,
-    "rated_power_kw_max": 44,
-    "displacements_l": [
-      3.319
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
     "epa_model": "3TNV76-CL",
     "normalized_model": "3TNV76CL",
     "first_model_year": 2012,
@@ -36764,225 +37633,6 @@
     "rated_power_kw_max": 12,
     "displacements_l": [
       1.116
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3TNV88-CL",
-    "normalized_model": "3TNV88CL",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CYDXL1.64J3N",
-      "HYDXL1.64S3A",
-      "JYDXL1.64S3A",
-      "KYDXL1.64S3A",
-      "LYDXL1.64S3A",
-      "MYDXL01.6S3A",
-      "NYDXL01.6S3A",
-      "PYDXL01.6S3A",
-      "RYDXL01.6S3A",
-      "SYDXL01.6S3A",
-      "TYDXL01.6S3A"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL1.64J3N-019",
-      "HYDXL1.64S3A-006",
-      "JYDXL1.64S3A-043",
-      "KYDXL1.64S3A-025",
-      "LYDXL1.64S3A-031",
-      "MYDXL01.6S3A-049",
-      "NYDXL01.6S3A-023",
-      "PYDXL01.6S3A-042",
-      "RYDXL01.6S3A-050",
-      "SYDXL01.6S3A-036",
-      "TYDXL01.6S3A-050"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.6420000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3TTGAG",
-    "normalized_model": "3TTGAG",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GYDXL3.32S4T",
-      "JYDXL3.32S4T",
-      "KYDXL3.32S4T",
-      "LYDXL3.32S4T",
-      "MYDXL03.3S4T",
-      "NYDXL03.3S4T",
-      "PYDXL03.3S4T",
-      "RYDXL03.3S4T",
-      "SYDXL03.3S4T",
-      "TYDXL03.3S4T"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "GYDXL3.32S4T-014",
-      "JYDXL3.32S4T-030",
-      "KYDXL3.32S4T-051",
-      "LYDXL3.32S4T-051",
-      "MYDXL03.3S4T-054",
-      "NYDXL03.3S4T-024",
-      "PYDXL03.3S4T-040",
-      "RYDXL03.3S4T-036",
-      "SYDXL03.3S4T-048",
-      "TYDXL03.3S4T-044"
-    ],
-    "applicable_tiers": [
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 51,
-    "rated_power_kw_max": 51,
-    "displacements_l": [
-      3.319
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3TTGP",
-    "normalized_model": "3TTGP",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2016,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CYDXL3.32C4T",
-      "GYDXL3.32C4T",
-      "GYDXL3.32S4T",
-      "JYDXL3.32S4T",
-      "KYDXL3.32S4T",
-      "LYDXL3.32S4T",
-      "MYDXL03.3S4T",
-      "NYDXL03.3S4T",
-      "PYDXL03.3S4T",
-      "RYDXL03.3S4T",
-      "SYDXL03.3S4T",
-      "TYDXL03.3S4T"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL3.32C4T-035",
-      "GYDXL3.32C4T-012",
-      "GYDXL3.32S4T-014",
-      "JYDXL3.32S4T-030",
-      "KYDXL3.32S4T-051",
-      "LYDXL3.32S4T-051",
-      "MYDXL03.3S4T-054",
-      "NYDXL03.3S4T-024",
-      "PYDXL03.3S4T-040",
-      "RYDXL03.3S4T-036",
-      "SYDXL03.3S4T-048",
-      "TYDXL03.3S4T-044"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable",
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 51,
-    "rated_power_kw_max": 51,
-    "displacements_l": [
-      3.319
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -37152,144 +37802,6 @@
     "mapped_database_brands": [
       "Yanmar"
     ],
-    "epa_model": "4TNGAC",
-    "normalized_model": "4TNGAC",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HYDXL3.32NGA",
-      "JYDXL3.32NGA",
-      "KYDXL3.32NGA",
-      "LYDXL3.32NGA",
-      "MYDXL03.3NGA",
-      "NYDXL03.3NGA",
-      "PYDXL03.3NGA",
-      "RYDXL03.3NGA",
-      "SYDXL03.3NGA",
-      "TYDXL03.3NGA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "HYDXL3.32NGA-045",
-      "JYDXL3.32NGA-040",
-      "KYDXL3.32NGA-033",
-      "LYDXL3.32NGA-052",
-      "MYDXL03.3NGA-046",
-      "NYDXL03.3NGA-036",
-      "PYDXL03.3NGA-055",
-      "RYDXL03.3NGA-027",
-      "SYDXL03.3NGA-049",
-      "TYDXL03.3NGA-040"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 42,
-    "rated_power_kw_max": 42,
-    "displacements_l": [
-      3.319
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "4TNGPC",
-    "normalized_model": "4TNGPC",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HYDXL3.32NGA",
-      "JYDXL3.32NGA",
-      "KYDXL3.32NGA",
-      "LYDXL3.32NGA",
-      "MYDXL03.3NGA",
-      "NYDXL03.3NGA",
-      "PYDXL03.3NGA",
-      "RYDXL03.3NGA",
-      "SYDXL03.3NGA",
-      "TYDXL03.3NGA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "HYDXL3.32NGA-045",
-      "JYDXL3.32NGA-040",
-      "KYDXL3.32NGA-033",
-      "LYDXL3.32NGA-052",
-      "MYDXL03.3NGA-046",
-      "NYDXL03.3NGA-036",
-      "PYDXL03.3NGA-055",
-      "RYDXL03.3NGA-027",
-      "SYDXL03.3NGA-049",
-      "TYDXL03.3NGA-040"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 43,
-    "rated_power_kw_max": 43,
-    "displacements_l": [
-      3.319
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
     "epa_model": "4TNV88-CL",
     "normalized_model": "4TNV88CL",
     "first_model_year": 2012,
@@ -37358,144 +37870,6 @@
     "rated_power_kw_max": 24,
     "displacements_l": [
       2.19
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "4TTGAC",
-    "normalized_model": "4TTGAC",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HYDXL3.32TGA",
-      "JYDXL3.32TGA",
-      "KYDXL3.32TGA",
-      "LYDXL3.32TGA",
-      "MYDXL03.3TGA",
-      "NYDXL03.3TGA",
-      "PYDXL03.3TGA",
-      "RYDXL03.3TGA",
-      "SYDXL03.3TGA",
-      "TYDXL03.3TGA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "HYDXL3.32TGA-046",
-      "JYDXL3.32TGA-009",
-      "KYDXL3.32TGA-037",
-      "LYDXL3.32TGA-039",
-      "MYDXL03.3TGA-047",
-      "NYDXL03.3TGA-035",
-      "PYDXL03.3TGA-054",
-      "RYDXL03.3TGA-028",
-      "SYDXL03.3TGA-050",
-      "TYDXL03.3TGA-041"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 51,
-    "rated_power_kw_max": 51,
-    "displacements_l": [
-      3.319
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "4TTGPC",
-    "normalized_model": "4TTGPC",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HYDXL3.32TGA",
-      "JYDXL3.32TGA",
-      "KYDXL3.32TGA",
-      "LYDXL3.32TGA",
-      "MYDXL03.3TGA",
-      "NYDXL03.3TGA",
-      "PYDXL03.3TGA",
-      "RYDXL03.3TGA",
-      "SYDXL03.3TGA",
-      "TYDXL03.3TGA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "HYDXL3.32TGA-046",
-      "JYDXL3.32TGA-009",
-      "KYDXL3.32TGA-037",
-      "LYDXL3.32TGA-039",
-      "MYDXL03.3TGA-047",
-      "NYDXL03.3TGA-035",
-      "PYDXL03.3TGA-054",
-      "RYDXL03.3TGA-028",
-      "SYDXL03.3TGA-050",
-      "TYDXL03.3TGA-041"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 53,
-    "rated_power_kw_max": 53,
-    "displacements_l": [
-      3.319
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -39105,85 +39479,6 @@
     "rated_power_kw_max": 40,
     "displacements_l": [
       3.387
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "D1305-BG-EF",
-    "normalized_model": "D1305BGEF",
-    "first_model_year": 2013,
-    "latest_model_year": 2025,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "DKBXL01.3DCC",
-      "EKBXL01.3DCC",
-      "FKBXL01.3DCC",
-      "GKBXL01.3DCC",
-      "HKBXL01.3DCC",
-      "JKBXL01.3DCC",
-      "KKBXL01.3DCC",
-      "LKBXL01.3DCC",
-      "MKBXL01.3DCC",
-      "NKBXL01.3DCC",
-      "PKBXL01.3DCC",
-      "RKBXL01.3DCC",
-      "SKBXL01.3DCC"
-    ],
-    "engine_codes": [
-      "D1305-BG-EF01",
-      "D1305-BG-EF02"
-    ],
-    "certificates": [
-      "DKBXL01.3DCC-019",
-      "EKBXL01.3DCC-014",
-      "FKBXL01.3DCC-020",
-      "GKBXL01.3DCC-018",
-      "HKBXL01.3DCC-012",
-      "JKBXL01.3DCC-008",
-      "KKBXL01.3DCC-028",
-      "LKBXL01.3DCC-019",
-      "MKBXL01.3DCC-020",
-      "NKBXL01.3DCC-017",
-      "PKBXL01.3DCC-027",
-      "RKBXL01.3DCC-007",
-      "SKBXL01.3DCC-008"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 14,
-    "rated_power_kw_max": 15,
-    "displacements_l": [
-      1.2610000000000001
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -42050,85 +42345,6 @@
     "displacements_l": [
       3.387,
       3.7630000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "V3300-BG-ET",
-    "normalized_model": "V3300BGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CKBXL03.3BCC",
-      "DKBXL03.3BCC",
-      "EKBXL03.3BCC",
-      "FKBXL03.3BCC",
-      "GKBXL03.3BCC",
-      "HKBXL03.3BCC",
-      "JKBXL03.3BCC",
-      "KKBXL03.3BCC",
-      "LKBXL03.3BCC",
-      "MKBXL03.3BCC",
-      "NKBXL03.3BCC",
-      "PKBXL03.3BCC",
-      "RKBXL03.3BCC"
-    ],
-    "engine_codes": [
-      "V3300-BG-ET01",
-      "V3300-BG-ET01e"
-    ],
-    "certificates": [
-      "CKBXL03.3BCC-013",
-      "DKBXL03.3BCC-034",
-      "EKBXL03.3BCC-024",
-      "FKBXL03.3BCC-026",
-      "GKBXL03.3BCC-041",
-      "HKBXL03.3BCC-036",
-      "JKBXL03.3BCC-021",
-      "KKBXL03.3BCC-037",
-      "LKBXL03.3BCC-057",
-      "MKBXL03.3BCC-059",
-      "NKBXL03.3BCC-061",
-      "PKBXL03.3BCC-062",
-      "RKBXL03.3BCC-057"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      3.319
     ],
     "match_status": "not_found",
     "database_matches": [],
