@@ -58,6 +58,45 @@ FAMILY_MATCH_BRANDS = {
     "Yanmar Power Technology Co., Ltd.": {"Yanmar"},
 }
 
+# Reviewed short certification families that intentionally represent multiple
+# commercial generator-drive variants. The emissions token prevents an
+# unregulated model with the same family prefix from satisfying EPA coverage.
+REVIEWED_FAMILY_MATCHES = {
+    ("Deere & Company", "3029"): ("John Deere", "3029", "U.S. EPA"),
+    ("Deere & Company", "4045"): ("John Deere", "4045", "U.S. EPA"),
+    ("Deere & Company", "6068"): ("John Deere", "6068", "U.S. EPA"),
+    ("Deere & Company", "6090"): ("John Deere", "6090", "U.S. EPA"),
+    ("Deere & Company", "6136"): ("John Deere", "6136", "U.S. EPA"),
+    (
+        "Societe Internationale des Moteurs-Baudouin",
+        "6M33",
+    ): ("Baudouin", "6M33", "U.S. EPA Tier 2"),
+    (
+        "Societe Internationale des Moteurs-Baudouin",
+        "8M33",
+    ): ("Baudouin", "8M33", "U.S. EPA Tier 2"),
+    (
+        "Societe Internationale des Moteurs-Baudouin",
+        "12M33",
+    ): ("Baudouin", "12M33", "U.S. EPA Tier 2"),
+    (
+        "Societe Internationale des Moteurs-Baudouin",
+        "12M55",
+    ): ("Baudouin", "12M55", "U.S. EPA Tier 2"),
+    (
+        "Societe Internationale des Moteurs-Baudouin",
+        "16M33",
+    ): ("Baudouin", "16M33", "U.S. EPA Tier 2"),
+    (
+        "Societe Internationale des Moteurs-Baudouin",
+        "16M55",
+    ): ("Baudouin", "16M55", "U.S. EPA Tier 2"),
+    (
+        "Societe Internationale des Moteurs-Baudouin",
+        "20M33",
+    ): ("Baudouin", "20M33", "U.S. EPA Tier 2"),
+}
+
 CERTIFICATION_ALIASES = {
     (
         "Discovery Energy, LLC.",
@@ -105,6 +144,7 @@ CERTIFICATION_ALIASES = {
     ("Liebherr Machines Bulle SA", "D9812G"): ("Liebherr", "D9812"),
     ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
     ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
+    ("Liebherr Machines Bulle SA", "D976A702"): ("Liebherr", "D976"),
     ("Kubota Corporation", "D1005BGEF"): ("Kubota", "D1005-E4BG1-SAE-2"),
     ("Kubota Corporation", "D1005EF"): ("Kubota", "D1005-E4BG1-SAE-2"),
     ("Kubota Corporation", "D1105BGEF"): ("Kubota", "D1105-E4BG1-SAE-2X"),
@@ -352,19 +392,37 @@ def match_models(models: dict, engines: list[dict]) -> list[dict]:
             )
             if alias_target and engine["brand"] == alias_target[0]
         ]
-        family_brands = FAMILY_MATCH_BRANDS.get(manufacturer, set())
-        family_brand_candidates = sorted(
-            [
-                engine
-                for brand in family_brands
-                for engine in by_brand.get(brand, [])
-                if len(normalized_model) >= 5
-                and engine["normalized_model"].startswith(normalized_model)
-                and len(engine["normalized_model"]) > len(normalized_model)
-                and len(engine["normalized_model"]) - len(normalized_model) <= 12
-            ],
-            key=lambda engine: engine["slug"],
-        )[:10]
+        reviewed_family = REVIEWED_FAMILY_MATCHES.get(
+            (manufacturer, normalized_model)
+        )
+        if reviewed_family:
+            family_brand, family_prefix, emissions_token = reviewed_family
+            normalized_prefix = normalize_model(family_prefix)
+            family_brand_candidates = sorted(
+                [
+                    engine
+                    for engine in by_brand.get(family_brand, [])
+                    if engine["normalized_model"].startswith(normalized_prefix)
+                    and emissions_token in str(
+                        engine.get("emissions_standard") or ""
+                    )
+                ],
+                key=lambda engine: engine["slug"],
+            )[:10]
+        else:
+            family_brands = FAMILY_MATCH_BRANDS.get(manufacturer, set())
+            family_brand_candidates = sorted(
+                [
+                    engine
+                    for brand in family_brands
+                    for engine in by_brand.get(brand, [])
+                    if len(normalized_model) >= 5
+                    and engine["normalized_model"].startswith(normalized_model)
+                    and len(engine["normalized_model"]) > len(normalized_model)
+                    and len(engine["normalized_model"]) - len(normalized_model) <= 12
+                ],
+                key=lambda engine: engine["slug"],
+            )[:10]
 
         if exact_brand_candidates:
             status = "exact_brand_match"
@@ -522,7 +580,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "- Counted a redundant leading database brand as represented only when the remaining normalized model had at least five characters.",
         "- Counted slash-suffixed certification trims as represented only when the explicit base model before `/` matched the verified database brand.",
         "- Counted non-slash certification trims only through reviewed manufacturer, brand and suffix-pattern rules.",
-        "- Counted commercial family variants only for explicit EPA-manufacturer/database-brand mappings and a normalized family prefix of at least five characters.",
+        "- Counted commercial family variants only through reviewed manufacturer, brand and prefix rules; short families also require an EPA emissions label on the matched page.",
         "- Counted non-literal certification aliases only from the reviewed `CERTIFICATION_ALIASES` map.",
         "- Exact model matches under another brand and other similar suffix variants remain review items.",
         "",

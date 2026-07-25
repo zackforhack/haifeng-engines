@@ -1,5 +1,56 @@
 [
   {
+    "manufacturer": "HD Construction Equipment Co., Ltd.",
+    "mapped_database_brands": [
+      "Hyundai"
+    ],
+    "epa_model": "DM02AP",
+    "normalized_model": "DM02AP",
+    "first_model_year": 2027,
+    "latest_model_year": 2027,
+    "model_years": [
+      2027
+    ],
+    "engine_families": [
+      "VDICL02.4LCA"
+    ],
+    "engine_codes": [
+      "DM02-MCG00_01"
+    ],
+    "certificates": [
+      "VDICL02.4LCA-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 55,
+    "rated_power_kw_max": 55,
+    "displacements_l": [
+      2.392
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "DM02AP",
+        "slug": "hyundai-dm02ap",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
     "mapped_database_brands": [
       "Hatz"
@@ -1810,6 +1861,92 @@
     "mapped_database_brands": [
       "Caterpillar"
     ],
+    "epa_model": "1506",
+    "normalized_model": "1506",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FCPXL08.8NZS",
+      "GCPXL08.8NZS",
+      "HCPXL08.8NZS",
+      "JCPXL08.8NZS",
+      "KCPXL08.8NZS",
+      "LCPXL08.8NZS",
+      "MCPXL08.8NZS",
+      "NCPXL08.8NZS",
+      "PCPXL08.8NZS",
+      "RCPXL08.8NZS",
+      "SCPXL08.8NZS",
+      "TCPXL08.8NZS"
+    ],
+    "engine_codes": [
+      "11",
+      "9"
+    ],
+    "certificates": [
+      "FCPXL08.8NZS-017",
+      "GCPXL08.8NZS-001",
+      "HCPXL08.8NZS-008",
+      "JCPXL08.8NZS-004",
+      "KCPXL08.8NZS-005",
+      "LCPXL08.8NZS-014",
+      "MCPXL08.8NZS-001-R01",
+      "NCPXL08.8NZS-008",
+      "PCPXL08.8NZS-001",
+      "RCPXL08.8NZS-023",
+      "SCPXL08.8NZS-023-R01",
+      "TCPXL08.8NZS-001-R01"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 297,
+    "rated_power_kw_max": 358,
+    "displacements_l": [
+      8.808
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Caterpillar",
+        "model": "1506",
+        "slug": "caterpillar-1506",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Caterpillar Inc.",
+    "mapped_database_brands": [
+      "Caterpillar"
+    ],
     "epa_model": "1706D",
     "normalized_model": "1706D",
     "first_model_year": 2020,
@@ -2059,6 +2196,82 @@
         "slug": "perkins-2206d-e13tag3",
         "rpm_rated": 1500,
         "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Caterpillar Inc.",
+    "mapped_database_brands": [
+      "Caterpillar"
+    ],
+    "epa_model": "2206F",
+    "normalized_model": "2206F",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JCPXL12.5HTF",
+      "KCPXL12.5HTF",
+      "LCPXL12.5HTF",
+      "MCPXL12.5HTF",
+      "NCPXL12.5HTF",
+      "PCPXL12.5HTF",
+      "RCPXL12.5HTF",
+      "SCPXL12.5HTF",
+      "TCPXL12.5HTF"
+    ],
+    "engine_codes": [
+      "34"
+    ],
+    "certificates": [
+      "JCPXL12.5HTF-024",
+      "KCPXL12.5HTF-024",
+      "LCPXL12.5HTF-028",
+      "MCPXL12.5HTF-015",
+      "NCPXL12.5HTF-026",
+      "PCPXL12.5HTF-027",
+      "RCPXL12.5HTF-002",
+      "SCPXL12.5HTF-005",
+      "TCPXL12.5HTF-024"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 423,
+    "rated_power_kw_max": 423,
+    "displacements_l": [
+      12.503
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Caterpillar",
+        "model": "2206F",
+        "slug": "caterpillar-2206f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -2706,6 +2919,124 @@
     "mapped_database_brands": [
       "Caterpillar"
     ],
+    "epa_model": "3512E",
+    "normalized_model": "3512E",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FCPXL58.6HXF",
+      "GCPXL58.6HXF",
+      "HCPXL58.6HXF",
+      "JCPXL58.6HXF",
+      "KCPXL58.6HXF",
+      "LCPXL58.6HXF",
+      "LCPXL58.6HXZ",
+      "LCPXL58.6NXV",
+      "MCPXL58.6HXF",
+      "MCPXL58.6HXZ",
+      "MCPXL58.6NXV",
+      "NCPXL58.6HXF",
+      "NCPXL58.6HXZ",
+      "NCPXL58.6NXV",
+      "PCPXL58.6HXF",
+      "PCPXL58.6HXZ",
+      "PCPXL58.6NXV",
+      "RCPXL58.6HXF",
+      "RCPXL58.6HXZ",
+      "RCPXL58.6NXV",
+      "SCPXL58.6HXF",
+      "SCPXL58.6HXZ",
+      "SCPXL58.6NXV",
+      "TCPXL58.6HXF",
+      "TCPXL58.6HXZ",
+      "TCPXL58.6NXV"
+    ],
+    "engine_codes": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "CERT 1"
+    ],
+    "certificates": [
+      "FCPXL58.6HXF-023",
+      "GCPXL58.6HXF-013",
+      "HCPXL58.6HXF-019",
+      "JCPXL58.6HXF-012",
+      "KCPXL58.6HXF-004",
+      "LCPXL58.6HXF-011",
+      "LCPXL58.6HXZ-012",
+      "LCPXL58.6NXV-001",
+      "MCPXL58.6HXF-027",
+      "MCPXL58.6HXZ-019",
+      "MCPXL58.6NXV-021",
+      "NCPXL58.6HXF-018",
+      "NCPXL58.6HXZ-020",
+      "NCPXL58.6NXV-015",
+      "PCPXL58.6HXF-021",
+      "PCPXL58.6HXZ-015",
+      "PCPXL58.6NXV-032",
+      "RCPXL58.6HXF-012",
+      "RCPXL58.6HXZ-021",
+      "RCPXL58.6NXV-020",
+      "SCPXL58.6HXF-012",
+      "SCPXL58.6HXZ-022",
+      "SCPXL58.6NXV-021",
+      "TCPXL58.6HXF-028",
+      "TCPXL58.6HXZ-010",
+      "TCPXL58.6NXV-009"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel; Dual Fuel Blend of Diesel and Natural Gas"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 1120,
+    "rated_power_kw_max": 1864,
+    "displacements_l": [
+      58.561
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Caterpillar",
+        "model": "3512E",
+        "slug": "caterpillar-3512e",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Caterpillar Inc.",
+    "mapped_database_brands": [
+      "Caterpillar"
+    ],
     "epa_model": "3516C",
     "normalized_model": "3516C",
     "first_model_year": 2012,
@@ -2866,6 +3197,168 @@
     "mapped_database_brands": [
       "Caterpillar"
     ],
+    "epa_model": "3516E",
+    "normalized_model": "3516E",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GCPXL78.1NZS",
+      "HCPXL78.1NZS",
+      "JCPXL78.1NZS",
+      "KCPXL78.1NZS",
+      "LCPXL78.1NZS",
+      "MCPXL78.1NZS",
+      "NCPXL78.1NZS",
+      "PCPXL78.1NZS",
+      "RCPXL78.1NZS",
+      "SCPXL78.1NZS",
+      "TCPXL78.1NZS"
+    ],
+    "engine_codes": [
+      "26",
+      "27",
+      "28",
+      "43",
+      "45",
+      "58",
+      "59",
+      "63",
+      "75",
+      "76",
+      "77",
+      "78",
+      "80",
+      "81",
+      "92",
+      "93",
+      "CERT TEST 3"
+    ],
+    "certificates": [
+      "GCPXL78.1NZS-010",
+      "HCPXL78.1NZS-016",
+      "JCPXL78.1NZS-002",
+      "KCPXL78.1NZS-014",
+      "LCPXL78.1NZS-022",
+      "MCPXL78.1NZS-009",
+      "NCPXL78.1NZS-011",
+      "PCPXL78.1NZS-009",
+      "RCPXL78.1NZS-030",
+      "SCPXL78.1NZS-031",
+      "TCPXL78.1NZS-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 2725,
+    "rated_power_kw_max": 3372,
+    "displacements_l": [
+      78.081
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Caterpillar",
+        "model": "3516E",
+        "slug": "caterpillar-3516e",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Caterpillar Inc.",
+    "mapped_database_brands": [
+      "Caterpillar"
+    ],
+    "epa_model": "5006C",
+    "normalized_model": "5006C",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NCPXL45.8NZS",
+      "PCPXL45.8NZS",
+      "RCPXL45.8NZS",
+      "SCPXL61.1NZS",
+      "TCPXL61.1NZS"
+    ],
+    "engine_codes": [
+      "5006C-TAG3",
+      "CERT TEST"
+    ],
+    "certificates": [
+      "NCPXL45.8NZS-001",
+      "PCPXL45.8NZS-008",
+      "RCPXL45.8NZS-029",
+      "SCPXL61.1NZS-033",
+      "TCPXL61.1NZS-004"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 887,
+    "rated_power_kw_max": 887,
+    "displacements_l": [
+      22.921
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Caterpillar",
+        "model": "5006C",
+        "slug": "caterpillar-5006c",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Caterpillar Inc.",
+    "mapped_database_brands": [
+      "Caterpillar"
+    ],
     "epa_model": "5008C",
     "normalized_model": "5008C",
     "first_model_year": 2022,
@@ -2993,6 +3486,58 @@
         "model": "5012C-E46TAG6",
         "slug": "perkins-5012c-e46tag6",
         "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Caterpillar Inc.",
+    "mapped_database_brands": [
+      "Caterpillar"
+    ],
+    "epa_model": "5016C",
+    "normalized_model": "5016C",
+    "first_model_year": 2026,
+    "latest_model_year": 2026,
+    "model_years": [
+      2026
+    ],
+    "engine_families": [
+      "TCPXL61.1NZS"
+    ],
+    "engine_codes": [
+      "5016C-TRG6",
+      "5016C-TRG7"
+    ],
+    "certificates": [
+      "TCPXL61.1NZS-004"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2015,
+    "rated_power_kw_max": 2283,
+    "displacements_l": [
+      61.123000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Caterpillar",
+        "model": "5016C",
+        "slug": "caterpillar-5016c",
+        "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
@@ -9066,6 +9611,1438 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "3029",
+    "normalized_model": "3029",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "EJDXL02.9121",
+      "EJDXL02.9303",
+      "FJDXL02.9121",
+      "FJDXL02.9142",
+      "FJDXL02.9303",
+      "GJDXL02.9121",
+      "GJDXL02.9142",
+      "GJDXL02.9303",
+      "HJDXL02.9121",
+      "HJDXL02.9142",
+      "HJDXL02.9303",
+      "JJDXL02.9121",
+      "JJDXL02.9142",
+      "JJDXL02.9303",
+      "KJDXL02.9121",
+      "KJDXL02.9142",
+      "KJDXL02.9303",
+      "KJDXL02.9318",
+      "LJDXL02.9121",
+      "LJDXL02.9142",
+      "LJDXL02.9303",
+      "LJDXL02.9318",
+      "MJDXL02.9121",
+      "MJDXL02.9142",
+      "MJDXL02.9303",
+      "MJDXL02.9318",
+      "NJDXL02.9121",
+      "NJDXL02.9142",
+      "NJDXL02.9303",
+      "NJDXL02.9318",
+      "PJDXL02.9121",
+      "PJDXL02.9142",
+      "PJDXL02.9303",
+      "PJDXL02.9318",
+      "RJDXL02.9121",
+      "RJDXL02.9142",
+      "RJDXL02.9318",
+      "SJDXL02.9121",
+      "SJDXL02.9142",
+      "SJDXL02.9318",
+      "TJDXL02.9121",
+      "TJDXL02.9142",
+      "TJDXL02.9318"
+    ],
+    "engine_codes": [
+      "3029HFG03A",
+      "3029HFG03B",
+      "3029HFG03C",
+      "3029HFG89A",
+      "3029HFG89F",
+      "3029HFU89F",
+      "3029HG530A",
+      "3029HG530B",
+      "3029HG530C",
+      "3029HP530A",
+      "3029HP530B",
+      "3029HP530C",
+      "3029TFG80C",
+      "3029TFG89C",
+      "3029TFU80C",
+      "3029TFU89C"
+    ],
+    "certificates": [
+      "EJDXL02.9121-008",
+      "EJDXL02.9303-026",
+      "FJDXL02.9121-002",
+      "FJDXL02.9142-011",
+      "FJDXL02.9303-022",
+      "GJDXL02.9121-002",
+      "GJDXL02.9142-011",
+      "GJDXL02.9303-012",
+      "HJDXL02.9121-003",
+      "HJDXL02.9142-002",
+      "HJDXL02.9303-016",
+      "JJDXL02.9121-004",
+      "JJDXL02.9142-003",
+      "JJDXL02.9303-012",
+      "KJDXL02.9121-002",
+      "KJDXL02.9142-001",
+      "KJDXL02.9303-016",
+      "KJDXL02.9318-017",
+      "LJDXL02.9121-004",
+      "LJDXL02.9142-003",
+      "LJDXL02.9303-021",
+      "LJDXL02.9318-013",
+      "MJDXL02.9121-002",
+      "MJDXL02.9142-001",
+      "MJDXL02.9303-011",
+      "MJDXL02.9318-012",
+      "NJDXL02.9121-002",
+      "NJDXL02.9142-001",
+      "NJDXL02.9303-011",
+      "NJDXL02.9318-012",
+      "PJDXL02.9121-004",
+      "PJDXL02.9142-003",
+      "PJDXL02.9303-013",
+      "PJDXL02.9318-014",
+      "RJDXL02.9121-003",
+      "RJDXL02.9142-002",
+      "RJDXL02.9318-012",
+      "SJDXL02.9121-002",
+      "SJDXL02.9142-001",
+      "SJDXL02.9318-011",
+      "TJDXL02.9121-004",
+      "TJDXL02.9142-003",
+      "TJDXL02.9318-017"
+    ],
+    "applicable_tiers": [
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 35,
+    "rated_power_kw_max": 55,
+    "displacements_l": [
+      2.94
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "3029HFG89",
+        "slug": "john-deere-3029hfg89-t3-50kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "3029HFG89",
+        "slug": "john-deere-3029hfg89-t3iiia-40kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "3029HG530",
+        "slug": "john-deere-3029hg530-ft4sv-30kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "3029HG530",
+        "slug": "john-deere-3029hg530-ft4sv-40kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "3029HG530",
+        "slug": "john-deere-3029hg530-ft4sv-55kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "3029TFG89",
+        "slug": "john-deere-3029tfg89-t3-35kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "3029TFG89",
+        "slug": "john-deere-3029tfg89-t3iiia-30kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "4039",
+    "normalized_model": "4039",
+    "first_model_year": 2026,
+    "latest_model_year": 2026,
+    "model_years": [
+      2026
+    ],
+    "engine_families": [
+      "TJDXL03.9346"
+    ],
+    "engine_codes": [
+      "JD4GGHRAC01",
+      "JD4GGHRAC03",
+      "JD4GGHREC01"
+    ],
+    "certificates": [
+      "TJDXL03.9346-026"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 86,
+    "rated_power_kw_max": 126,
+    "displacements_l": [
+      3.9410000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "4039",
+        "slug": "john-deere-4039",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "4045",
+    "normalized_model": "4045",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CJDXL04.5211",
+      "CJDXL06.8210",
+      "DJDXL04.5119",
+      "DJDXL04.5211",
+      "DJDXL06.8120",
+      "DJDXL06.8210",
+      "DJDXL13.5103",
+      "EJDXL04.5119",
+      "EJDXL04.5141",
+      "EJDXL04.5211",
+      "EJDXL04.5214",
+      "EJDXL04.5304",
+      "EJDXL06.8120",
+      "EJDXL06.8210",
+      "EJDXL13.5103",
+      "FJDXL04.5119",
+      "FJDXL04.5141",
+      "FJDXL04.5214",
+      "FJDXL04.5304",
+      "FJDXL04.5305",
+      "FJDXL06.8120",
+      "FJDXL06.8302",
+      "FJDXL13.5103",
+      "GJDXL04.5119",
+      "GJDXL04.5141",
+      "GJDXL04.5214",
+      "GJDXL04.5304",
+      "GJDXL04.5311",
+      "GJDXL06.8120",
+      "GJDXL06.8302",
+      "GJDXL06.8307",
+      "GJDXL13.5103",
+      "HJDXL04.5119",
+      "HJDXL04.5141",
+      "HJDXL04.5214",
+      "HJDXL04.5304",
+      "HJDXL04.5311",
+      "HJDXL04.5315",
+      "HJDXL06.8120",
+      "HJDXL06.8302",
+      "HJDXL13.5103",
+      "JJDXL04.5119",
+      "JJDXL04.5141",
+      "JJDXL04.5214",
+      "JJDXL04.5304",
+      "JJDXL04.5311",
+      "JJDXL04.5315",
+      "JJDXL06.8120",
+      "JJDXL06.8302",
+      "JJDXL13.5103",
+      "KJDXL04.5119",
+      "KJDXL04.5141",
+      "KJDXL04.5214",
+      "KJDXL04.5304",
+      "KJDXL04.5311",
+      "KJDXL04.5315",
+      "KJDXL06.8120",
+      "KJDXL06.8302",
+      "KJDXL13.5103",
+      "LJDXL04.5119",
+      "LJDXL04.5141",
+      "LJDXL04.5214",
+      "LJDXL04.5304",
+      "LJDXL04.5311",
+      "LJDXL04.5315",
+      "LJDXL06.8120",
+      "LJDXL06.8302",
+      "LJDXL13.5103",
+      "MJDXL04.5119",
+      "MJDXL04.5141",
+      "MJDXL04.5214",
+      "MJDXL04.5304",
+      "MJDXL04.5311",
+      "MJDXL04.5315",
+      "MJDXL06.8120",
+      "MJDXL06.8302",
+      "MJDXL13.5103",
+      "NJDXL04.5119",
+      "NJDXL04.5141",
+      "NJDXL04.5214",
+      "NJDXL04.5304",
+      "NJDXL04.5315",
+      "NJDXL04.5316",
+      "NJDXL06.8120",
+      "NJDXL06.8302",
+      "NJDXL13.5103",
+      "PJDXL04.5119",
+      "PJDXL04.5141",
+      "PJDXL04.5214",
+      "PJDXL04.5304",
+      "PJDXL04.5315",
+      "PJDXL04.5316",
+      "PJDXL04.5337",
+      "PJDXL06.8120",
+      "PJDXL06.8302",
+      "PJDXL06.8309",
+      "PJDXL13.5103",
+      "RJDXL04.5119",
+      "RJDXL04.5141",
+      "RJDXL04.5214",
+      "RJDXL04.5304",
+      "RJDXL04.5315",
+      "RJDXL04.5316",
+      "RJDXL04.5337",
+      "RJDXL06.8120",
+      "RJDXL06.8302",
+      "RJDXL06.8309",
+      "RJDXL13.5103",
+      "SJDXL04.5119",
+      "SJDXL04.5141",
+      "SJDXL04.5214",
+      "SJDXL04.5304",
+      "SJDXL04.5315",
+      "SJDXL04.5316",
+      "SJDXL04.5337",
+      "SJDXL06.8120",
+      "SJDXL06.8302",
+      "SJDXL06.8309",
+      "SJDXL13.5103",
+      "SJDXL13.5179",
+      "TJDXL04.5119",
+      "TJDXL04.5141",
+      "TJDXL04.5214",
+      "TJDXL04.5304",
+      "TJDXL04.5315",
+      "TJDXL04.5316",
+      "TJDXL04.5337",
+      "TJDXL06.8120",
+      "TJDXL06.8302",
+      "TJDXL06.8309",
+      "TJDXL13.5179"
+    ],
+    "engine_codes": [
+      "4045CG440A",
+      "4045HF280D",
+      "4045HF285H",
+      "4045HF285I",
+      "4045HF285J",
+      "4045HF285K",
+      "4045HF485E",
+      "4045HFG04A",
+      "4045HFG04B",
+      "4045HFG04C",
+      "4045HFG06A",
+      "4045HFG09A",
+      "4045HFG09B",
+      "4045HFG81B",
+      "4045HFG82D",
+      "4045HFG82E",
+      "4045HFG82G",
+      "4045HFG82K",
+      "4045HFG85A",
+      "4045HFG92A",
+      "4045HFG92B",
+      "4045HFG92C",
+      "4045HFG92D",
+      "4045HFG92E",
+      "4045HFG92F",
+      "4045HFG93A",
+      "4045HFG93B",
+      "4045HFS80",
+      "4045HFS82",
+      "4045HFS83",
+      "4045HFS85B",
+      "4045HFS86B",
+      "4045HFS87B",
+      "4045HFS88B",
+      "4045HFU81B",
+      "4045HFU82D",
+      "4045HFU82E",
+      "4045HFU82G",
+      "4045HG551A",
+      "4045HG551C",
+      "4045HP551A",
+      "4045HP551C",
+      "4045HPRNT12",
+      "4045HPRNT13",
+      "4045HXU11",
+      "4045TF280D",
+      "4045TF280E",
+      "4045TF285E",
+      "4045TF290J",
+      "4045TFG03A"
+    ],
+    "certificates": [
+      "CJDXL04.5211-004",
+      "CJDXL06.8210-003",
+      "DJDXL04.5119-008",
+      "DJDXL04.5211-018",
+      "DJDXL06.8120-002",
+      "DJDXL06.8210-019",
+      "DJDXL13.5103-006",
+      "EJDXL04.5119-009",
+      "EJDXL04.5141-011",
+      "EJDXL04.5211-021",
+      "EJDXL04.5214-012",
+      "EJDXL04.5304-024",
+      "EJDXL06.8120-010",
+      "EJDXL06.8210-020",
+      "EJDXL13.5103-014",
+      "FJDXL04.5119-003",
+      "FJDXL04.5141-005",
+      "FJDXL04.5214-006",
+      "FJDXL04.5304-015",
+      "FJDXL04.5305-001",
+      "FJDXL06.8120-004",
+      "FJDXL06.8302-014",
+      "FJDXL13.5103-008",
+      "GJDXL04.5119-003",
+      "GJDXL04.5141-005",
+      "GJDXL04.5214-006",
+      "GJDXL04.5304-013",
+      "GJDXL04.5311-028",
+      "GJDXL06.8120-004",
+      "GJDXL06.8302-019",
+      "GJDXL06.8307-001",
+      "GJDXL13.5103-008",
+      "HJDXL04.5119-004",
+      "HJDXL04.5141-006",
+      "HJDXL04.5214-010",
+      "HJDXL04.5304-017",
+      "HJDXL04.5311-012",
+      "HJDXL04.5315-023",
+      "HJDXL06.8120-005",
+      "HJDXL06.8302-022",
+      "HJDXL13.5103-011",
+      "JJDXL04.5119-005",
+      "JJDXL04.5141-007",
+      "JJDXL04.5214-008",
+      "JJDXL04.5304-026",
+      "JJDXL04.5311-024",
+      "JJDXL04.5315-017-R01",
+      "JJDXL06.8120-006",
+      "JJDXL06.8302-013",
+      "JJDXL13.5103-010",
+      "KJDXL04.5119-004",
+      "KJDXL04.5141-009",
+      "KJDXL04.5214-005",
+      "KJDXL04.5304-018",
+      "KJDXL04.5311-010",
+      "KJDXL04.5315-015",
+      "KJDXL06.8120-003",
+      "KJDXL06.8302-019",
+      "KJDXL13.5103-007",
+      "LJDXL04.5119-005",
+      "LJDXL04.5141-007",
+      "LJDXL04.5214-012",
+      "LJDXL04.5304-020",
+      "LJDXL04.5311-014",
+      "LJDXL04.5315-016",
+      "LJDXL06.8120-006",
+      "LJDXL06.8302-027",
+      "LJDXL13.5103-011",
+      "MJDXL04.5119-003",
+      "MJDXL04.5141-010",
+      "MJDXL04.5214-005",
+      "MJDXL04.5304-018",
+      "MJDXL04.5311-013",
+      "MJDXL04.5315-015",
+      "MJDXL06.8120-004",
+      "MJDXL06.8302-029",
+      "MJDXL13.5103-007",
+      "NJDXL04.5119-003",
+      "NJDXL04.5141-005",
+      "NJDXL04.5214-006",
+      "NJDXL04.5304-015",
+      "NJDXL04.5315-014",
+      "NJDXL04.5316-024",
+      "NJDXL06.8120-004",
+      "NJDXL06.8302-022",
+      "NJDXL13.5103-009",
+      "PJDXL04.5119-008",
+      "PJDXL04.5141-010",
+      "PJDXL04.5214-005",
+      "PJDXL04.5304-015",
+      "PJDXL04.5315-019",
+      "PJDXL04.5316-025",
+      "PJDXL04.5337-001",
+      "PJDXL06.8120-009",
+      "PJDXL06.8302-029",
+      "PJDXL06.8309-031",
+      "PJDXL13.5103-012",
+      "RJDXL04.5119-005",
+      "RJDXL04.5141-011",
+      "RJDXL04.5214-006",
+      "RJDXL04.5304-017",
+      "RJDXL04.5315-019",
+      "RJDXL04.5316-015",
+      "RJDXL04.5337-021",
+      "RJDXL06.8120-004",
+      "RJDXL06.8302-020",
+      "RJDXL06.8309-023",
+      "RJDXL13.5103-008",
+      "SJDXL04.5119-003",
+      "SJDXL04.5141-005",
+      "SJDXL04.5214-006",
+      "SJDXL04.5304-015",
+      "SJDXL04.5315-013",
+      "SJDXL04.5316-014",
+      "SJDXL04.5337-019",
+      "SJDXL06.8120-004",
+      "SJDXL06.8302-018",
+      "SJDXL06.8309-016",
+      "SJDXL13.5103-010",
+      "SJDXL13.5179-030",
+      "TJDXL04.5119-005",
+      "TJDXL04.5141-007",
+      "TJDXL04.5214-008",
+      "TJDXL04.5304-019",
+      "TJDXL04.5315-018",
+      "TJDXL04.5316-011",
+      "TJDXL04.5337-025",
+      "TJDXL06.8120-006",
+      "TJDXL06.8302-010",
+      "TJDXL06.8309-021",
+      "TJDXL13.5179-002"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 3.4",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 55,
+    "rated_power_kw_max": 147,
+    "displacements_l": [
+      4.525
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "4045CG440",
+        "slug": "john-deere-4045cg440-ft4-125kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "4045HF280",
+        "slug": "john-deere-4045hf280-t3-80kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "4045HF285",
+        "slug": "john-deere-4045hf285-t3-100kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "4045HF285",
+        "slug": "john-deere-4045hf285-t3-125kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "4045HFG04",
+        "slug": "john-deere-4045hfg04-ft4-60kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "4045HFG04",
+        "slug": "john-deere-4045hfg04-ft4-75kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "4045HFG04",
+        "slug": "john-deere-4045hfg04-ft4-95kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "4045HFG81",
+        "slug": "john-deere-4045hfg81-t3iiia-60kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "4045HFG82",
+        "slug": "john-deere-4045hfg82-t3iiia-100kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "4045HFG82",
+        "slug": "john-deere-4045hfg82-t3iiia-120kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "6068",
+    "normalized_model": "6068",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CJDXL06.8204",
+      "DJDXL06.8120",
+      "DJDXL06.8204",
+      "DJDXL13.5103",
+      "EJDXL06.8120",
+      "EJDXL06.8302",
+      "EJDXL13.5103",
+      "FJDXL06.8120",
+      "FJDXL06.8204",
+      "FJDXL06.8302",
+      "FJDXL13.5103",
+      "GJDXL06.8120",
+      "GJDXL06.8302",
+      "GJDXL06.8309",
+      "GJDXL06.8312",
+      "GJDXL13.5103",
+      "HJDXL06.8120",
+      "HJDXL06.8309",
+      "HJDXL06.8312",
+      "HJDXL13.5103",
+      "JJDXL06.8120",
+      "JJDXL06.8309",
+      "JJDXL06.8312",
+      "JJDXL13.5103",
+      "KJDXL06.8120",
+      "KJDXL06.8309",
+      "KJDXL06.8312",
+      "KJDXL13.5103",
+      "LJDXL06.8120",
+      "LJDXL06.8309",
+      "LJDXL06.8312",
+      "LJDXL13.5103",
+      "MJDXL06.8120",
+      "MJDXL06.8309",
+      "MJDXL06.8312",
+      "MJDXL13.5103",
+      "NJDXL06.8120",
+      "NJDXL06.8309",
+      "NJDXL06.8312",
+      "NJDXL13.5103",
+      "PJDXL06.8120",
+      "PJDXL06.8309",
+      "PJDXL06.8312",
+      "PJDXL13.5103",
+      "RJDXL06.8120",
+      "RJDXL06.8309",
+      "RJDXL06.8312",
+      "RJDXL13.5103",
+      "SJDXL06.8120",
+      "SJDXL06.8309",
+      "SJDXL06.8312",
+      "SJDXL13.5103",
+      "SJDXL13.5179",
+      "TJDXL06.8120",
+      "TJDXL06.8309",
+      "TJDXL06.8312",
+      "TJDXL13.5179"
+    ],
+    "engine_codes": [
+      "6068CG550A",
+      "6068CG550B",
+      "6068CP550A",
+      "6068CP550B",
+      "6068DW404",
+      "6068HDW86",
+      "6068HDW94",
+      "6068HDW97",
+      "6068HDW98",
+      "6068HF285K",
+      "6068HF285L",
+      "6068HF485T",
+      "6068HF485U",
+      "6068HFG05A",
+      "6068HFG05B",
+      "6068HFG06A",
+      "6068HFG06B",
+      "6068HFG08-A",
+      "6068HFG08-B",
+      "6068HFG08A",
+      "6068HFG08B",
+      "6068HFG09-A",
+      "6068HFG09-B",
+      "6068HFG09A",
+      "6068HFG09B",
+      "6068HFG82D",
+      "6068HFG82E",
+      "6068HFG82F",
+      "6068HFG85A",
+      "6068HFG85B",
+      "6068HFG94A",
+      "6068HFG94B",
+      "6068HFG95A",
+      "6068HFG95B",
+      "6068HFS82",
+      "6068HFS83",
+      "6068HFS85B",
+      "6068HFS86B",
+      "6068HFS89",
+      "6068HFU82D",
+      "6068HFU82E",
+      "6068HG550A",
+      "6068HG550B",
+      "6068HP550A",
+      "6068HP550B",
+      "6068HPRNT7",
+      "6068HXU10A",
+      "6068HXU10B"
+    ],
+    "certificates": [
+      "CJDXL06.8204-030",
+      "DJDXL06.8120-002",
+      "DJDXL06.8204-009",
+      "DJDXL13.5103-006",
+      "EJDXL06.8120-010",
+      "EJDXL06.8302-003",
+      "EJDXL13.5103-014",
+      "FJDXL06.8120-004",
+      "FJDXL06.8204-018",
+      "FJDXL06.8302-014",
+      "FJDXL13.5103-008",
+      "GJDXL06.8120-004",
+      "GJDXL06.8302-019",
+      "GJDXL06.8309-020",
+      "GJDXL06.8312-017",
+      "GJDXL13.5103-008",
+      "HJDXL06.8120-005",
+      "HJDXL06.8309-024",
+      "HJDXL06.8312-013",
+      "HJDXL13.5103-011",
+      "JJDXL06.8120-006",
+      "JJDXL06.8309-014",
+      "JJDXL06.8312-025",
+      "JJDXL13.5103-010",
+      "KJDXL06.8120-003",
+      "KJDXL06.8309-020",
+      "KJDXL06.8312-011",
+      "KJDXL13.5103-007",
+      "LJDXL06.8120-006",
+      "LJDXL06.8309-026",
+      "LJDXL06.8312-015",
+      "LJDXL13.5103-011",
+      "MJDXL06.8120-004",
+      "MJDXL06.8309-028",
+      "MJDXL06.8312-014",
+      "MJDXL13.5103-007",
+      "NJDXL06.8120-004",
+      "NJDXL06.8309-023",
+      "NJDXL06.8312-013",
+      "NJDXL13.5103-009",
+      "PJDXL06.8120-009",
+      "PJDXL06.8309-031",
+      "PJDXL06.8312-018",
+      "PJDXL13.5103-012",
+      "RJDXL06.8120-004",
+      "RJDXL06.8309-023",
+      "RJDXL06.8312-014",
+      "RJDXL13.5103-008",
+      "SJDXL06.8120-004",
+      "SJDXL06.8309-016",
+      "SJDXL06.8312-020",
+      "SJDXL13.5103-010",
+      "SJDXL13.5179-030",
+      "TJDXL06.8120-006",
+      "TJDXL06.8309-021",
+      "TJDXL06.8312-014",
+      "TJDXL13.5179-002"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 2.0",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 147,
+    "rated_power_kw_max": 248,
+    "displacements_l": [
+      6.788
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "6068CG550",
+        "slug": "john-deere-6068cg550-ft4sv-200kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6068HF285",
+        "slug": "john-deere-6068hf285-t3-160kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6068HF285",
+        "slug": "john-deere-6068hf285-t3-190kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6068HFG05",
+        "slug": "john-deere-6068hfg05-ft4-155kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6068HFG05",
+        "slug": "john-deere-6068hfg05-ft4-190kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6068HFG06",
+        "slug": "john-deere-6068hfg06-ft4-210kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6068HFG06",
+        "slug": "john-deere-6068hfg06-ft4-235kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6068HFG82",
+        "slug": "john-deere-6068hfg82-t3-230kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6068HFG82",
+        "slug": "john-deere-6068hfg82-t3iiia-150kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6068HFG82",
+        "slug": "john-deere-6068hfg82-t3iiia-200kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "6090",
+    "normalized_model": "6090",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CJDXL09.0202",
+      "DJDXL09.0202",
+      "EJDXL09.0114",
+      "EJDXL09.0301",
+      "FJDXL09.0114",
+      "FJDXL09.0301",
+      "GJDXL09.0114",
+      "GJDXL09.0301",
+      "GJDXL09.0308",
+      "GJDXL09.0313",
+      "HJDXL09.0114",
+      "HJDXL09.0308",
+      "HJDXL09.0313",
+      "JJDXL09.0114",
+      "JJDXL09.0308",
+      "JJDXL09.0313",
+      "KJDXL09.0114",
+      "KJDXL09.0308",
+      "KJDXL09.0313",
+      "LJDXL09.0114",
+      "LJDXL09.0308",
+      "LJDXL09.0313",
+      "MJDXL09.0114",
+      "MJDXL09.0308",
+      "MJDXL09.0313",
+      "NJDXL09.0114",
+      "NJDXL09.0308",
+      "NJDXL09.0313",
+      "PJDXL09.0114",
+      "PJDXL09.0308",
+      "PJDXL09.0313",
+      "PJDXL09.0333",
+      "RJDXL09.0114",
+      "RJDXL09.0308",
+      "RJDXL09.0313",
+      "RJDXL09.0333",
+      "SJDXL09.0114",
+      "SJDXL09.0308",
+      "SJDXL09.0313",
+      "SJDXL09.0333",
+      "TJDXL09.0114",
+      "TJDXL09.0308",
+      "TJDXL09.0313",
+      "TJDXL09.0333"
+    ],
+    "engine_codes": [
+      "6090CG550A",
+      "6090CG550C",
+      "6090CG550E",
+      "6090CP550A",
+      "6090CP550C",
+      "6090CP550E",
+      "6090HDW22",
+      "6090HDW31",
+      "6090HDW41",
+      "6090HDW52",
+      "6090HF484A",
+      "6090HF484B",
+      "6090HF484C",
+      "6090HF484D",
+      "6090HFG06A",
+      "6090HFG06C",
+      "6090HFG06E",
+      "6090HFG09-A",
+      "6090HFG09-B",
+      "6090HFG09-C",
+      "6090HFG09-D",
+      "6090HFG09-E",
+      "6090HFG09A",
+      "6090HFG09B",
+      "6090HFG09C",
+      "6090HFG09D",
+      "6090HFG09E",
+      "6090HFG84B",
+      "6090HFG84D",
+      "6090HFG86A",
+      "6090HFG86C",
+      "6090HFG86E",
+      "6090HFG94A",
+      "6090HFG95A",
+      "6090HFG95B",
+      "6090HFG95C",
+      "6090HFS85B",
+      "6090HFS86B",
+      "6090HFU84B",
+      "6090HFU84D",
+      "6090HPRNT7",
+      "6090WG504",
+      "6090WG504B",
+      "6090WG506"
+    ],
+    "certificates": [
+      "CJDXL09.0202-014-R01",
+      "DJDXL09.0202-010",
+      "EJDXL09.0114-013",
+      "EJDXL09.0301-001",
+      "FJDXL09.0114-007",
+      "FJDXL09.0301-016",
+      "GJDXL09.0114-007",
+      "GJDXL09.0301-021",
+      "GJDXL09.0308-025",
+      "GJDXL09.0313-029",
+      "HJDXL09.0114-007",
+      "HJDXL09.0308-019",
+      "HJDXL09.0313-014",
+      "JJDXL09.0114-009",
+      "JJDXL09.0308-019",
+      "JJDXL09.0313-027",
+      "KJDXL09.0114-006",
+      "KJDXL09.0308-023",
+      "KJDXL09.0313-012",
+      "LJDXL09.0114-010",
+      "LJDXL09.0308-025",
+      "LJDXL09.0313-018",
+      "MJDXL09.0114-006",
+      "MJDXL09.0308-026",
+      "MJDXL09.0313-017",
+      "NJDXL09.0114-007",
+      "NJDXL09.0308-021",
+      "NJDXL09.0313-016",
+      "PJDXL09.0114-011",
+      "PJDXL09.0308-030",
+      "PJDXL09.0313-020",
+      "PJDXL09.0333-021",
+      "RJDXL09.0114-007",
+      "RJDXL09.0308-028",
+      "RJDXL09.0313-016",
+      "RJDXL09.0333-022",
+      "SJDXL09.0114-007",
+      "SJDXL09.0308-021",
+      "SJDXL09.0313-022",
+      "SJDXL09.0333-027",
+      "TJDXL09.0114-009",
+      "TJDXL09.0308-020",
+      "TJDXL09.0313-013",
+      "TJDXL09.0333-022"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 2.0",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 228,
+    "rated_power_kw_max": 364,
+    "displacements_l": [
+      8.924000000000001,
+      8.984
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "6090CG550",
+        "slug": "john-deere-6090cg550-ft4sv-275kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6090CG550",
+        "slug": "john-deere-6090cg550-ft4sv-300kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6090HF484",
+        "slug": "john-deere-6090hf484-t3-310kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6090HF484",
+        "slug": "john-deere-6090hf484-t3-340kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6090HFG06",
+        "slug": "john-deere-6090hfg06-ft4-270kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6090HFG06",
+        "slug": "john-deere-6090hfg06-ft4-320kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6090HFG84",
+        "slug": "john-deere-6090hfg84-t3-275kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6090HFG84",
+        "slug": "john-deere-6090hfg84-t3iiia-250kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6090HFG84",
+        "slug": "john-deere-6090hfg84-t3iiia-300kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6090HFG85",
+        "slug": "john-deere-6090hfg85-t3-345kva",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "6136",
+    "normalized_model": "6136",
+    "first_model_year": 2021,
+    "latest_model_year": 2026,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "MJDXL13.5320",
+      "MJDXL13.5334",
+      "NJDXL13.5320",
+      "NJDXL13.5334",
+      "PJDXL13.5320",
+      "PJDXL13.5334",
+      "RJDXL13.5320",
+      "RJDXL13.5334",
+      "SJDXL13.5320",
+      "SJDXL13.5334",
+      "TJDXL13.5320",
+      "TJDXL13.5334"
+    ],
+    "engine_codes": [
+      "6136CG440A",
+      "6136CG550A",
+      "6136DW503"
+    ],
+    "certificates": [
+      "MJDXL13.5320-022",
+      "MJDXL13.5334-021",
+      "NJDXL13.5320-018",
+      "NJDXL13.5334-017",
+      "PJDXL13.5320-024",
+      "PJDXL13.5334-023",
+      "RJDXL13.5320-026",
+      "RJDXL13.5334-029",
+      "SJDXL13.5320-028",
+      "SJDXL13.5334-029",
+      "TJDXL13.5320-024",
+      "TJDXL13.5334-023"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 460,
+    "rated_power_kw_max": 505,
+    "displacements_l": [
+      13.548
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "6136CG440",
+        "slug": "john-deere-6136cg440-ft4-500kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
+        "model": "6136CG550",
+        "slug": "john-deere-6136cg550-ft4sv-500kva",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "6180",
+    "normalized_model": "6180",
+    "first_model_year": 2026,
+    "latest_model_year": 2026,
+    "model_years": [
+      2026
+    ],
+    "engine_families": [
+      "TJDXL18.0180"
+    ],
+    "engine_codes": [
+      "6180CG280A",
+      "6180CG280C",
+      "6180HPRNT3A"
+    ],
+    "certificates": [
+      "TJDXL18.0180-001"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 600,
+    "rated_power_kw_max": 710,
+    "displacements_l": [
+      17.96
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "6180",
+        "slug": "john-deere-6180",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Deutz AG",
     "mapped_database_brands": [
       "Deutz"
@@ -10128,6 +12105,94 @@
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 3",
         "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDI1903ESM",
+    "normalized_model": "KDI1903ESM",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "EKHXL2.48ESM",
+      "FKHXL2.48ESM",
+      "GKHXL2.48ESM",
+      "HKHXL2.48ESM",
+      "JKHXL2.48ESM",
+      "KKHXL2.48ESM",
+      "LKHXL2.48ESM",
+      "MKHXL02.5ESM",
+      "NKHXL02.5ESM",
+      "PKHXL02.5ESM",
+      "RKHXL02.5ESM",
+      "SKHXL02.5ESM",
+      "TKHXL02.5ESM"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "EKHXL2.48ESM-007",
+      "FKHXL2.48ESM-003",
+      "GKHXL2.48ESM-006",
+      "HKHXL2.48ESM-005",
+      "JKHXL2.48ESM-003",
+      "KKHXL2.48ESM-006",
+      "LKHXL2.48ESM-007",
+      "MKHXL02.5ESM-002",
+      "NKHXL02.5ESM-007",
+      "PKHXL02.5ESM-009",
+      "RKHXL02.5ESM-010-R01",
+      "SKHXL02.5ESM-002",
+      "TKHXL02.5ESM-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 21,
+    "rated_power_kw_max": 21,
+    "displacements_l": [
+      1.861
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI1903ESM",
+        "slug": "kohler-kdi1903esm",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
       }
     ],
     "probable_database_matches": []
@@ -12142,6 +14207,401 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "HD Construction Equipment Co., Ltd.",
+    "mapped_database_brands": [
+      "Hyundai"
+    ],
+    "epa_model": "DX05G",
+    "normalized_model": "DX05G",
+    "first_model_year": 2026,
+    "latest_model_year": 2026,
+    "model_years": [
+      2026
+    ],
+    "engine_families": [
+      "TDICL05.0LCG"
+    ],
+    "engine_codes": [
+      "DX05-LCG01",
+      "DX05-LCG02"
+    ],
+    "certificates": [
+      "TDICL05.0LCG-004"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 150,
+    "rated_power_kw_max": 197,
+    "displacements_l": [
+      5.018000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "DX05G",
+        "slug": "hyundai-dx05g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "HD Construction Equipment Co., Ltd.",
+    "mapped_database_brands": [
+      "Hyundai"
+    ],
+    "epa_model": "DX05PG",
+    "normalized_model": "DX05PG",
+    "first_model_year": 2026,
+    "latest_model_year": 2026,
+    "model_years": [
+      2026
+    ],
+    "engine_families": [
+      "TDICL05.0LEA"
+    ],
+    "engine_codes": [
+      "DX05-LEG00",
+      "DX05-LEG01",
+      "DX05-LEG02"
+    ],
+    "certificates": [
+      "TDICL05.0LEA-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 150,
+    "rated_power_kw_max": 200,
+    "displacements_l": [
+      5.018000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "DX05PG",
+        "slug": "hyundai-dx05pg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "HD Construction Equipment Co., Ltd.",
+    "mapped_database_brands": [
+      "Hyundai"
+    ],
+    "epa_model": "DX08G",
+    "normalized_model": "DX08G",
+    "first_model_year": 2026,
+    "latest_model_year": 2026,
+    "model_years": [
+      2026
+    ],
+    "engine_families": [
+      "TDICL07.5LCG"
+    ],
+    "engine_codes": [
+      "DX08-LCG02",
+      "DX08-LCG03",
+      "DX08-LCG04"
+    ],
+    "certificates": [
+      "TDICL07.5LCG-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 234,
+    "rated_power_kw_max": 294,
+    "displacements_l": [
+      7.527
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "DX08G",
+        "slug": "hyundai-dx08g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "HD Construction Equipment Co., Ltd.",
+    "mapped_database_brands": [
+      "Hyundai"
+    ],
+    "epa_model": "DX12G",
+    "normalized_model": "DX12G",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PDICL11.0LCG",
+      "RDICL11.0LCG",
+      "SDICL11.0LCG",
+      "TDICL11.0LCG"
+    ],
+    "engine_codes": [
+      "DX12-LCG15",
+      "DX12-LCG16",
+      "DX12-LCG17"
+    ],
+    "certificates": [
+      "PDICL11.0LCG-001",
+      "RDICL11.0LCG-013",
+      "SDICL11.0LCG-012",
+      "TDICL11.0LCG-017"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 375,
+    "rated_power_kw_max": 441,
+    "displacements_l": [
+      11.051
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "DX12G",
+        "slug": "hyundai-dx12g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "HD Construction Equipment Co., Ltd.",
+    "mapped_database_brands": [
+      "Hyundai"
+    ],
+    "epa_model": "DX15G",
+    "normalized_model": "DX15G",
+    "first_model_year": 2025,
+    "latest_model_year": 2026,
+    "model_years": [
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "SDICL15.1LBG",
+      "TDICL15.1LBG"
+    ],
+    "engine_codes": [
+      "DX15-LBG00",
+      "DX15-LBG02"
+    ],
+    "certificates": [
+      "SDICL15.1LBG-002",
+      "TDICL15.1LBG-011"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 618,
+    "rated_power_kw_max": 662,
+    "displacements_l": [
+      15.133000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "DX15G",
+        "slug": "hyundai-dx15g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "HD Construction Equipment Co., Ltd.",
+    "mapped_database_brands": [
+      "Hyundai"
+    ],
+    "epa_model": "DX15GA",
+    "normalized_model": "DX15GA",
+    "first_model_year": 2025,
+    "latest_model_year": 2026,
+    "model_years": [
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "SDICL15.1LBA",
+      "TDICL15.1LBA"
+    ],
+    "engine_codes": [
+      "DX15-LCG03",
+      "DX15-LCG04"
+    ],
+    "certificates": [
+      "SDICL15.1LBA-001",
+      "TDICL15.1LBA-018"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 522,
+    "rated_power_kw_max": 560,
+    "displacements_l": [
+      15.133000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "DX15GA",
+        "slug": "hyundai-dx15ga",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "HD Construction Equipment Co., Ltd.",
+    "mapped_database_brands": [
+      "Hyundai"
+    ],
+    "epa_model": "DX22",
+    "normalized_model": "DX22",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NDICL21.9LBG",
+      "PDICL21.9LBG",
+      "RDICL21.9LBG",
+      "SDICL21.9LBG",
+      "TDICL21.9LBG"
+    ],
+    "engine_codes": [
+      "DX22-LBG00",
+      "DX22-LBG01",
+      "DX22-LBG02"
+    ],
+    "certificates": [
+      "NDICL21.9LBG-001",
+      "PDICL21.9LBG-011",
+      "RDICL21.9LBG-005",
+      "SDICL21.9LBG-008",
+      "TDICL21.9LBG-012"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 836,
+    "rated_power_kw_max": 995,
+    "displacements_l": [
+      21.927
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "DX22",
+        "slug": "hyundai-dx22",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Isuzu Motors Limited",
     "mapped_database_brands": [
       "Isuzu"
@@ -12946,6 +15406,433 @@
         "slug": "isuzu-lv-4le2",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kirloskar Americas Corporation",
+    "mapped_database_brands": [
+      "Kirloskar"
+    ],
+    "epa_model": "2R550NA1",
+    "normalized_model": "2R550NA1",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NKOEL1.09NAX",
+      "PKOEL1.09NAX",
+      "RKOEL1.09NAX",
+      "SKOEL1.09NAX",
+      "TKOEL1.09NAX"
+    ],
+    "engine_codes": [
+      "2R550NA1"
+    ],
+    "certificates": [
+      "NKOEL1.09NAX-005",
+      "PKOEL1.09NAX-005",
+      "RKOEL1.09NAX-005",
+      "SKOEL1.09NAX-002",
+      "TKOEL1.09NAX-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 12,
+    "rated_power_kw_max": 12,
+    "displacements_l": [
+      1.092
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kirloskar",
+        "model": "2R550NA1",
+        "slug": "kirloskar-2r550na1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kirloskar Americas Corporation",
+    "mapped_database_brands": [
+      "Kirloskar"
+    ],
+    "epa_model": "3R550NA1",
+    "normalized_model": "3R550NA1",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NKOEL1.64NAX",
+      "PKOEL1.64NAX",
+      "RKOEL1.64NAX",
+      "SKOEL1.64NAX",
+      "TKOEL1.64NAX"
+    ],
+    "engine_codes": [
+      "3R550NA1"
+    ],
+    "certificates": [
+      "NKOEL1.64NAX-004",
+      "PKOEL1.64NAX-004",
+      "RKOEL1.64NAX-004",
+      "SKOEL1.64NAX-004",
+      "TKOEL1.64NAX-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 17,
+    "rated_power_kw_max": 17,
+    "displacements_l": [
+      1.6380000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kirloskar",
+        "model": "3R550NA1",
+        "slug": "kirloskar-3r550na1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kirloskar Americas Corporation",
+    "mapped_database_brands": [
+      "Kirloskar"
+    ],
+    "epa_model": "4K1080TA1",
+    "normalized_model": "4K1080TA1",
+    "first_model_year": 2019,
+    "latest_model_year": 2026,
+    "model_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "KKOEL4.33TAX",
+      "LKOEL4.33TAX",
+      "MKOEL4.33TAX",
+      "NKOEL4.33TAX",
+      "PKOEL4.33TAX",
+      "RKOEL4.33TAX",
+      "SKOEL4.33TAX",
+      "TKOEL4.33TAX"
+    ],
+    "engine_codes": [
+      "4K1080TA1"
+    ],
+    "certificates": [
+      "KKOEL4.33TAX-003",
+      "LKOEL4.33TAX-003",
+      "MKOEL4.33TAX-003-R01",
+      "NKOEL4.33TAX-003",
+      "PKOEL4.33TAX-003",
+      "RKOEL4.33TAX-003",
+      "SKOEL4.33TAX-003",
+      "TKOEL4.33TAX-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 115,
+    "rated_power_kw_max": 115,
+    "displacements_l": [
+      4.33
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kirloskar",
+        "model": "4K1080TA1",
+        "slug": "kirloskar-4k1080ta1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kirloskar Americas Corporation",
+    "mapped_database_brands": [
+      "Kirloskar"
+    ],
+    "epa_model": "4R810NA1",
+    "normalized_model": "4R810NA1",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JKOEL3.24NAX",
+      "KKOEL3.24NAX",
+      "LKOEL3.24NAX",
+      "MKOEL3.24NAX",
+      "NKOEL3.24NAX",
+      "PKOEL3.24NAX",
+      "RKOEL3.24NAX",
+      "SKOEL3.24NAX",
+      "TKOEL3.24NAX"
+    ],
+    "engine_codes": [
+      "4R810NA1"
+    ],
+    "certificates": [
+      "JKOEL3.24NAX-001",
+      "KKOEL3.24NAX-001",
+      "LKOEL3.24NAX-001",
+      "MKOEL3.24NAX-001-R01",
+      "NKOEL3.24NAX-001",
+      "PKOEL3.24NAX-001",
+      "RKOEL3.24NAX-001",
+      "SKOEL3.24NAX-001",
+      "TKOEL3.24NAX-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 35,
+    "rated_power_kw_max": 35,
+    "displacements_l": [
+      3.2430000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kirloskar",
+        "model": "4R810NA1",
+        "slug": "kirloskar-4r810na1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kirloskar Americas Corporation",
+    "mapped_database_brands": [
+      "Kirloskar"
+    ],
+    "epa_model": "4R810TA1",
+    "normalized_model": "4R810TA1",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JKOEL3.24TAX",
+      "KKOEL3.24TAX",
+      "LKOEL3.24TAX",
+      "MKOEL3.24TAX",
+      "NKOEL3.24TAX",
+      "PKOEL3.24TAX",
+      "RKOEL3.24TAX",
+      "SKOEL3.24TAX",
+      "TKOEL3.24TAX"
+    ],
+    "engine_codes": [
+      "4R810TA1"
+    ],
+    "certificates": [
+      "JKOEL3.24TAX-002",
+      "KKOEL3.24TAX-002",
+      "LKOEL3.24TAX-002",
+      "MKOEL3.24TAX-002-R01",
+      "NKOEL3.24TAX-002",
+      "PKOEL3.24TAX-002",
+      "RKOEL3.24TAX-002",
+      "SKOEL3.24TAX-005",
+      "TKOEL3.24TAX-004"
+    ],
+    "applicable_tiers": [
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 70,
+    "rated_power_kw_max": 70,
+    "displacements_l": [
+      3.2430000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kirloskar",
+        "model": "4R810TA1",
+        "slug": "kirloskar-4r810ta1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kirloskar Americas Corporation",
+    "mapped_database_brands": [
+      "Kirloskar"
+    ],
+    "epa_model": "4R810TA2",
+    "normalized_model": "4R810TA2",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JKOEL3.24TAX",
+      "KKOEL3.24TAX",
+      "LKOEL3.24TAX",
+      "MKOEL3.24TAX",
+      "NKOEL3.24TAX",
+      "PKOEL3.24TAX",
+      "RKOEL3.24TAX",
+      "SKOEL3.24TAX",
+      "TKOEL3.24TAX"
+    ],
+    "engine_codes": [
+      "4R810TA2"
+    ],
+    "certificates": [
+      "JKOEL3.24TAX-002",
+      "KKOEL3.24TAX-002",
+      "LKOEL3.24TAX-002",
+      "MKOEL3.24TAX-002-R01",
+      "NKOEL3.24TAX-002",
+      "PKOEL3.24TAX-002",
+      "RKOEL3.24TAX-002",
+      "SKOEL3.24TAX-005",
+      "TKOEL3.24TAX-004"
+    ],
+    "applicable_tiers": [
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 48,
+    "rated_power_kw_max": 48,
+    "displacements_l": [
+      3.2430000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kirloskar",
+        "model": "4R810TA2",
+        "slug": "kirloskar-4r810ta2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -14343,6 +17230,72 @@
       "Kohler",
       "Liebherr"
     ],
+    "epa_model": "D976 A7-02",
+    "normalized_model": "D976A702",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NLHAL18.0ESP",
+      "PLHAL18.0ESP",
+      "RLHAL18.0ESP",
+      "SLHAL18.0ESP",
+      "TLHAL18.0ESP"
+    ],
+    "engine_codes": [
+      "R06G71001",
+      "R06G71002",
+      "R06G71003"
+    ],
+    "certificates": [
+      "NLHAL18.0ESP-019",
+      "PLHAL18.0ESP-003",
+      "RLHAL18.0ESP-010",
+      "SLHAL18.0ESP-013",
+      "TLHAL18.0ESP-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 670,
+    "rated_power_kw_max": 820,
+    "displacements_l": [
+      17.96
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D976",
+        "slug": "liebherr-d976",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Tier 2",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
     "epa_model": "D9812G",
     "normalized_model": "D9812G",
     "first_model_year": 2017,
@@ -14610,6 +17563,141 @@
       "Kohler",
       "Liebherr"
     ],
+    "epa_model": "D9912G",
+    "normalized_model": "D9912G",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NLHAL103.E9P",
+      "PLHAL103.E9P",
+      "RLHAL103.E9P",
+      "SLHAL103.E9P",
+      "TLHAL103.E9P"
+    ],
+    "engine_codes": [
+      "C12GA1150",
+      "C12GA1151",
+      "C12GA1152",
+      "C12GA1153",
+      "C12GA1154",
+      "C12GA1155"
+    ],
+    "certificates": [
+      "NLHAL103.E9P-021",
+      "PLHAL103.E9P-020",
+      "RLHAL103.E9P-019",
+      "SLHAL103.E9P-020",
+      "TLHAL103.E9P-013"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2180,
+    "rated_power_kw_max": 2700,
+    "displacements_l": [
+      62.056000000000004
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9912G",
+        "slug": "liebherr-d9912g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "D9916G",
+    "normalized_model": "D9916G",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PLHAL103.E9P",
+      "RLHAL103.E9P",
+      "SLHAL103.E9P",
+      "TLHAL103.E9P"
+    ],
+    "engine_codes": [
+      "C16GA1150",
+      "C16GA1151",
+      "C16GA1152",
+      "C16GA1153",
+      "C16GA1154",
+      "C16GA1155"
+    ],
+    "certificates": [
+      "PLHAL103.E9P-020",
+      "RLHAL103.E9P-019",
+      "SLHAL103.E9P-020",
+      "TLHAL103.E9P-013"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3010,
+    "rated_power_kw_max": 3490,
+    "displacements_l": [
+      82.742
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Liebherr",
+        "model": "D9916G",
+        "slug": "liebherr-d9916g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
     "epa_model": "KD103V20-6AES",
     "normalized_model": "KD103V206AES",
     "first_model_year": 2020,
@@ -14738,6 +17826,198 @@
         "brand": "Kohler",
         "model": "KD103V20",
         "slug": "kohler-kd103v20",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD18L06-6AES",
+    "normalized_model": "KD18L066AES",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NLHAL18.0ESP",
+      "PLHAL18.0ESP",
+      "RLHAL18.0ESP",
+      "SLHAL18.0ESP",
+      "TLHAL18.0ESP"
+    ],
+    "engine_codes": [
+      "R06G71002"
+    ],
+    "certificates": [
+      "NLHAL18.0ESP-019",
+      "PLHAL18.0ESP-003",
+      "RLHAL18.0ESP-010",
+      "SLHAL18.0ESP-013",
+      "TLHAL18.0ESP-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 670,
+    "rated_power_kw_max": 670,
+    "displacements_l": [
+      17.96
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD18L06-6AES",
+        "slug": "kohler-kd18l06-6aes",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD18L06-6BES",
+    "normalized_model": "KD18L066BES",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NLHAL18.0ESP",
+      "PLHAL18.0ESP",
+      "RLHAL18.0ESP",
+      "SLHAL18.0ESP",
+      "TLHAL18.0ESP"
+    ],
+    "engine_codes": [
+      "R06G71003"
+    ],
+    "certificates": [
+      "NLHAL18.0ESP-019",
+      "PLHAL18.0ESP-003",
+      "RLHAL18.0ESP-010",
+      "SLHAL18.0ESP-013",
+      "TLHAL18.0ESP-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 785,
+    "rated_power_kw_max": 785,
+    "displacements_l": [
+      17.96
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD18L06-6BES",
+        "slug": "kohler-kd18l06-6bes",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Liebherr Machines Bulle SA",
+    "mapped_database_brands": [
+      "Kohler",
+      "Liebherr"
+    ],
+    "epa_model": "KD18L06-6CES",
+    "normalized_model": "KD18L066CES",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NLHAL18.0ESP",
+      "PLHAL18.0ESP",
+      "RLHAL18.0ESP",
+      "SLHAL18.0ESP",
+      "TLHAL18.0ESP"
+    ],
+    "engine_codes": [
+      "R06G71001"
+    ],
+    "certificates": [
+      "NLHAL18.0ESP-019",
+      "PLHAL18.0ESP-003",
+      "RLHAL18.0ESP-010",
+      "SLHAL18.0ESP-013",
+      "TLHAL18.0ESP-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 820,
+    "rated_power_kw_max": 820,
+    "displacements_l": [
+      17.96
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KD18L06-6CES",
+        "slug": "kohler-kd18l06-6ces",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
@@ -21870,6 +25150,708 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
+    "mapped_database_brands": [
+      "Baudouin"
+    ],
+    "epa_model": "12M33",
+    "normalized_model": "12M33",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PMRBL65.4EMS",
+      "RMRBL65.4EMS",
+      "SMRBL65.4EMS",
+      "TMRBL65.4EMS"
+    ],
+    "engine_codes": [
+      "12M33G12D2/6",
+      "12M33G13D2/6",
+      "12M33G8D2/6"
+    ],
+    "certificates": [
+      "PMRBL65.4EMS-002",
+      "RMRBL65.4EMS-002",
+      "SMRBL65.4EMS-001",
+      "TMRBL65.4EMS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1120,
+    "rated_power_kw_max": 1420,
+    "displacements_l": [
+      39.231
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "Baudouin",
+        "model": "12M33G12D2/6",
+        "slug": "baudouin-12m33g12d2-6",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "12M33G4D2/5",
+        "slug": "baudouin-12m33g4d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "12M33G6D2/5",
+        "slug": "baudouin-12m33g6d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "12M33G8D2/5",
+        "slug": "baudouin-12m33g8d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
+    "mapped_database_brands": [
+      "Baudouin"
+    ],
+    "epa_model": "12M55",
+    "normalized_model": "12M55",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PMRBL109.EMS",
+      "RMRBL109.EMS",
+      "SMRBL109.EMS",
+      "TMRBL109.EMS"
+    ],
+    "engine_codes": [
+      "12M55G2D2/S",
+      "12M55G4D2/6",
+      "12M55G5D2/6",
+      "12M55G6D2/6"
+    ],
+    "certificates": [
+      "PMRBL109.EMS-001",
+      "RMRBL109.EMS-001",
+      "SMRBL109.EMS-002",
+      "TMRBL109.EMS-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2210,
+    "rated_power_kw_max": 2752,
+    "displacements_l": [
+      65.653
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "Baudouin",
+        "model": "12M55G10D2/5",
+        "slug": "baudouin-12m55g10d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "12M55G4D2/6",
+        "slug": "baudouin-12m55g4d2-6",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "12M55G5D2/6",
+        "slug": "baudouin-12m55g5d2-6",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "12M55G8D2/5",
+        "slug": "baudouin-12m55g8d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
+    "mapped_database_brands": [
+      "Baudouin"
+    ],
+    "epa_model": "16M33",
+    "normalized_model": "16M33",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PMRBL65.4EMS",
+      "RMRBL65.4EMS",
+      "SMRBL65.4EMS",
+      "TMRBL65.4EMS"
+    ],
+    "engine_codes": [
+      "16M33G2D2/6",
+      "16M33G4D2/6"
+    ],
+    "certificates": [
+      "PMRBL65.4EMS-002",
+      "RMRBL65.4EMS-002",
+      "SMRBL65.4EMS-001",
+      "TMRBL65.4EMS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1680,
+    "rated_power_kw_max": 1893,
+    "displacements_l": [
+      52.308
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "Baudouin",
+        "model": "16M33G2D2/6",
+        "slug": "baudouin-16m33g2d2-6",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "16M33G4D2/5",
+        "slug": "baudouin-16m33g4d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "16M33G6D2/5",
+        "slug": "baudouin-16m33g6d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "16M33G8D2/5",
+        "slug": "baudouin-16m33g8d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
+    "mapped_database_brands": [
+      "Baudouin"
+    ],
+    "epa_model": "16M55",
+    "normalized_model": "16M55",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PMRBL109.EMS",
+      "RMRBL109.EMS",
+      "SMRBL109.EMS",
+      "TMRBL109.EMS"
+    ],
+    "engine_codes": [
+      "16M55G2D2/6",
+      "16M55G2D2/S",
+      "16M55G3D2/6",
+      "16M55G4D2/6",
+      "16M55G5D2/6",
+      "16M55G6D2/6",
+      "16M55G7D2/6",
+      "16M55G8D2/6"
+    ],
+    "certificates": [
+      "PMRBL109.EMS-001",
+      "RMRBL109.EMS-001",
+      "SMRBL109.EMS-002",
+      "TMRBL109.EMS-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2960,
+    "rated_power_kw_max": 3600,
+    "displacements_l": [
+      87.537
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "Baudouin",
+        "model": "16M55G2D2/5",
+        "slug": "baudouin-16m55g2d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "16M55G4D2/5",
+        "slug": "baudouin-16m55g4d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "16M55G6D2/5",
+        "slug": "baudouin-16m55g6d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "16M55G8D2/5",
+        "slug": "baudouin-16m55g8d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
+    "mapped_database_brands": [
+      "Baudouin"
+    ],
+    "epa_model": "20M33",
+    "normalized_model": "20M33",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PMRBL65.4EMS",
+      "RMRBL65.4EMS",
+      "SMRBL65.4EMS",
+      "TMRBL65.4EMS"
+    ],
+    "engine_codes": [
+      "20M33G2D2/6",
+      "20M33G4D2/6",
+      "20M33G6D2/6"
+    ],
+    "certificates": [
+      "PMRBL65.4EMS-002",
+      "RMRBL65.4EMS-002",
+      "SMRBL65.4EMS-001",
+      "TMRBL65.4EMS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2027,
+    "rated_power_kw_max": 2460,
+    "displacements_l": [
+      65.384
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "Baudouin",
+        "model": "20M33G2D2/5",
+        "slug": "baudouin-20m33g2d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "20M33G4D2/5",
+        "slug": "baudouin-20m33g4d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "20M33G6D2/5",
+        "slug": "baudouin-20m33g6d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
+    "mapped_database_brands": [
+      "Baudouin"
+    ],
+    "epa_model": "20M55",
+    "normalized_model": "20M55",
+    "first_model_year": 2025,
+    "latest_model_year": 2026,
+    "model_years": [
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "SMRBL109.EMS",
+      "TMRBL109.EMS"
+    ],
+    "engine_codes": [
+      "20M55G2D2/6",
+      "20M55G2D2/S",
+      "20M55G4D2/6",
+      "20M55G6D2/6"
+    ],
+    "certificates": [
+      "SMRBL109.EMS-002",
+      "TMRBL109.EMS-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3905,
+    "rated_power_kw_max": 4550,
+    "displacements_l": [
+      109.42200000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Baudouin",
+        "model": "20M55",
+        "slug": "baudouin-20m55",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
+    "mapped_database_brands": [
+      "Baudouin"
+    ],
+    "epa_model": "20M61",
+    "normalized_model": "20M61",
+    "first_model_year": 2026,
+    "latest_model_year": 2026,
+    "model_years": [
+      2026
+    ],
+    "engine_families": [
+      "TMRBL122.EMS"
+    ],
+    "engine_codes": [
+      "20M61G2D2/6",
+      "20M61G3D2/6",
+      "20M61G4D2/6",
+      "20M61G6D2/6"
+    ],
+    "certificates": [
+      "TMRBL122.EMS-001"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 4850,
+    "rated_power_kw_max": 5450,
+    "displacements_l": [
+      121.917
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Baudouin",
+        "model": "20M61",
+        "slug": "baudouin-20m61",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
+    "mapped_database_brands": [
+      "Baudouin"
+    ],
+    "epa_model": "6M33",
+    "normalized_model": "6M33",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PMRBL65.4EMS",
+      "RMRBL65.4EMS",
+      "SMRBL65.4EMS",
+      "TMRBL65.4EMS"
+    ],
+    "engine_codes": [
+      "6M33G10D2/6",
+      "6M33G12D2/6",
+      "6M33G8D2/6"
+    ],
+    "certificates": [
+      "PMRBL65.4EMS-002",
+      "RMRBL65.4EMS-002",
+      "SMRBL65.4EMS-001",
+      "TMRBL65.4EMS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 670,
+    "rated_power_kw_max": 726,
+    "displacements_l": [
+      19.615000000000002
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "Baudouin",
+        "model": "6M33G10D2/6",
+        "slug": "baudouin-6m33g10d2-6",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "6M33G12D2/6",
+        "slug": "baudouin-6m33g12d2-6",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "6M33G6D2/5",
+        "slug": "baudouin-6m33g6d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "6M33G8D2/5",
+        "slug": "baudouin-6m33g8d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
+    "mapped_database_brands": [
+      "Baudouin"
+    ],
+    "epa_model": "8M33",
+    "normalized_model": "8M33",
+    "first_model_year": 2023,
+    "latest_model_year": 2026,
+    "model_years": [
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "PMRBL65.4EMS",
+      "RMRBL65.4EMS",
+      "SMRBL65.4EMS",
+      "TMRBL65.4EMS"
+    ],
+    "engine_codes": [
+      "8M33G4D2/6",
+      "8M33G5D2/6",
+      "8M33G6D2/6"
+    ],
+    "certificates": [
+      "PMRBL65.4EMS-002",
+      "RMRBL65.4EMS-002",
+      "SMRBL65.4EMS-001",
+      "TMRBL65.4EMS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 800,
+    "rated_power_kw_max": 946,
+    "displacements_l": [
+      26.154
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "Baudouin",
+        "model": "8M33G2D2/5",
+        "slug": "baudouin-8m33g2d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "8M33G4D2/5",
+        "slug": "baudouin-8m33g4d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Baudouin",
+        "model": "8M33G6D2/5",
+        "slug": "baudouin-8m33g6d2-5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Yanmar Power Technology Co., Ltd.",
     "mapped_database_brands": [
       "Yanmar"
@@ -22836,6 +26818,221 @@
         "slug": "yanmar-4tnv98ct-gge",
         "rpm_rated": 1800,
         "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "6135",
+    "normalized_model": "6135",
+    "first_model_year": 2011,
+    "latest_model_year": 2025,
+    "model_years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "BJDXL13.5201",
+      "CJDXL13.5201",
+      "DJDXL13.5103",
+      "DJDXL13.5201",
+      "EJDXL13.5103",
+      "EJDXL13.5132",
+      "EJDXL13.5300",
+      "FJDXL13.5103",
+      "FJDXL13.5132",
+      "FJDXL13.5146",
+      "FJDXL13.5300",
+      "GJDXL13.5103",
+      "GJDXL13.5132",
+      "GJDXL13.5146",
+      "GJDXL13.5300",
+      "GJDXL13.5310",
+      "GJDXL13.5314",
+      "HJDXL13.5103",
+      "HJDXL13.5132",
+      "HJDXL13.5146",
+      "HJDXL13.5201",
+      "HJDXL13.5310",
+      "HJDXL13.5314",
+      "JJDXL13.5103",
+      "JJDXL13.5132",
+      "JJDXL13.5146",
+      "JJDXL13.5201",
+      "JJDXL13.5310",
+      "JJDXL13.5314",
+      "KJDXL13.5103",
+      "KJDXL13.5132",
+      "KJDXL13.5146",
+      "KJDXL13.5310",
+      "KJDXL13.5314",
+      "LJDXL13.5103",
+      "LJDXL13.5132",
+      "LJDXL13.5146",
+      "LJDXL13.5310",
+      "LJDXL13.5314",
+      "MJDXL13.5103",
+      "MJDXL13.5132",
+      "MJDXL13.5146",
+      "MJDXL13.5310",
+      "MJDXL13.5314",
+      "NJDXL13.5103",
+      "NJDXL13.5132",
+      "NJDXL13.5146",
+      "NJDXL13.5310",
+      "NJDXL13.5314",
+      "PJDXL13.5103",
+      "PJDXL13.5132",
+      "PJDXL13.5146",
+      "PJDXL13.5310",
+      "PJDXL13.5314",
+      "RJDXL13.5103",
+      "RJDXL13.5132",
+      "RJDXL13.5146",
+      "RJDXL13.5310",
+      "RJDXL13.5314",
+      "SJDXL13.5103",
+      "SJDXL13.5132",
+      "SJDXL13.5146",
+      "SJDXL13.5310",
+      "SJDXL13.5314"
+    ],
+    "engine_codes": [
+      "6135HDW08",
+      "6135HDW10",
+      "6135HDW22",
+      "6135HF485S",
+      "6135HF485T",
+      "6135HF485U",
+      "6135HFG06A",
+      "6135HFG09-A",
+      "6135HFG09-B",
+      "6135HFG09-C",
+      "6135HFG09A",
+      "6135HFG09B",
+      "6135HFG09C",
+      "6135HFG75A",
+      "6135HFG84A",
+      "6135HFG84B",
+      "6135HFG95A",
+      "6135HFG95B",
+      "6135HFG95C",
+      "6135HPRNT4"
+    ],
+    "certificates": [
+      "BJDXL13.5201-002",
+      "CJDXL13.5201-013-R01",
+      "DJDXL13.5103-006",
+      "DJDXL13.5201-011",
+      "EJDXL13.5103-014",
+      "EJDXL13.5132-015",
+      "EJDXL13.5300-002",
+      "FJDXL13.5103-008",
+      "FJDXL13.5132-010",
+      "FJDXL13.5146-009",
+      "FJDXL13.5300-017",
+      "GJDXL13.5103-008",
+      "GJDXL13.5132-010",
+      "GJDXL13.5146-009",
+      "GJDXL13.5300-022",
+      "GJDXL13.5310-023",
+      "GJDXL13.5314-030",
+      "HJDXL13.5103-011",
+      "HJDXL13.5132-009",
+      "HJDXL13.5146-008",
+      "HJDXL13.5201-001",
+      "HJDXL13.5310-021",
+      "HJDXL13.5314-015",
+      "JJDXL13.5103-010",
+      "JJDXL13.5132-016",
+      "JJDXL13.5146-011",
+      "JJDXL13.5201-022",
+      "JJDXL13.5310-021",
+      "JJDXL13.5314-028",
+      "KJDXL13.5103-007",
+      "KJDXL13.5132-026",
+      "KJDXL13.5146-008",
+      "KJDXL13.5310-024",
+      "KJDXL13.5314-013",
+      "LJDXL13.5103-011",
+      "LJDXL13.5132-008",
+      "LJDXL13.5146-009",
+      "LJDXL13.5310-024",
+      "LJDXL13.5314-019",
+      "MJDXL13.5103-007",
+      "MJDXL13.5132-009",
+      "MJDXL13.5146-008",
+      "MJDXL13.5310-025",
+      "MJDXL13.5314-016",
+      "NJDXL13.5103-009",
+      "NJDXL13.5132-010",
+      "NJDXL13.5146-008",
+      "NJDXL13.5310-020",
+      "NJDXL13.5314-026",
+      "PJDXL13.5103-012",
+      "PJDXL13.5132-006",
+      "PJDXL13.5146-007",
+      "PJDXL13.5310-026",
+      "PJDXL13.5314-022",
+      "RJDXL13.5103-008",
+      "RJDXL13.5132-010",
+      "RJDXL13.5146-009",
+      "RJDXL13.5310-027",
+      "RJDXL13.5314-024",
+      "SJDXL13.5103-010",
+      "SJDXL13.5132-009",
+      "SJDXL13.5146-008",
+      "SJDXL13.5310-024",
+      "SJDXL13.5314-025"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 2.0",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 345,
+    "rated_power_kw_max": 563,
+    "displacements_l": [
+      13.548
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "6135",
+        "slug": "john-deere-6135",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Tier 3 / U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -30706,48 +34903,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "HD Construction Equipment Co., Ltd.",
-    "mapped_database_brands": [
-      "Hyundai"
-    ],
-    "epa_model": "DM02AP",
-    "normalized_model": "DM02AP",
-    "first_model_year": 2027,
-    "latest_model_year": 2027,
-    "model_years": [
-      2027
-    ],
-    "engine_families": [
-      "VDICL02.4LCA"
-    ],
-    "engine_codes": [
-      "DM02-MCG00_01"
-    ],
-    "certificates": [
-      "VDICL02.4LCA-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 55,
-    "rated_power_kw_max": 55,
-    "displacements_l": [
-      2.392
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "AB Volvo Penta",
     "mapped_database_brands": [
       "Volvo Penta"
@@ -30810,446 +34965,6 @@
         "similarity": 0.947
       }
     ]
-  },
-  {
-    "manufacturer": "Caterpillar Inc.",
-    "mapped_database_brands": [
-      "Caterpillar"
-    ],
-    "epa_model": "1506",
-    "normalized_model": "1506",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FCPXL08.8NZS",
-      "GCPXL08.8NZS",
-      "HCPXL08.8NZS",
-      "JCPXL08.8NZS",
-      "KCPXL08.8NZS",
-      "LCPXL08.8NZS",
-      "MCPXL08.8NZS",
-      "NCPXL08.8NZS",
-      "PCPXL08.8NZS",
-      "RCPXL08.8NZS",
-      "SCPXL08.8NZS",
-      "TCPXL08.8NZS"
-    ],
-    "engine_codes": [
-      "11",
-      "9"
-    ],
-    "certificates": [
-      "FCPXL08.8NZS-017",
-      "GCPXL08.8NZS-001",
-      "HCPXL08.8NZS-008",
-      "JCPXL08.8NZS-004",
-      "KCPXL08.8NZS-005",
-      "LCPXL08.8NZS-014",
-      "MCPXL08.8NZS-001-R01",
-      "NCPXL08.8NZS-008",
-      "PCPXL08.8NZS-001",
-      "RCPXL08.8NZS-023",
-      "SCPXL08.8NZS-023-R01",
-      "TCPXL08.8NZS-001-R01"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 297,
-    "rated_power_kw_max": 358,
-    "displacements_l": [
-      8.808
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Caterpillar Inc.",
-    "mapped_database_brands": [
-      "Caterpillar"
-    ],
-    "epa_model": "2206F",
-    "normalized_model": "2206F",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JCPXL12.5HTF",
-      "KCPXL12.5HTF",
-      "LCPXL12.5HTF",
-      "MCPXL12.5HTF",
-      "NCPXL12.5HTF",
-      "PCPXL12.5HTF",
-      "RCPXL12.5HTF",
-      "SCPXL12.5HTF",
-      "TCPXL12.5HTF"
-    ],
-    "engine_codes": [
-      "34"
-    ],
-    "certificates": [
-      "JCPXL12.5HTF-024",
-      "KCPXL12.5HTF-024",
-      "LCPXL12.5HTF-028",
-      "MCPXL12.5HTF-015",
-      "NCPXL12.5HTF-026",
-      "PCPXL12.5HTF-027",
-      "RCPXL12.5HTF-002",
-      "SCPXL12.5HTF-005",
-      "TCPXL12.5HTF-024"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 423,
-    "rated_power_kw_max": 423,
-    "displacements_l": [
-      12.503
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Caterpillar Inc.",
-    "mapped_database_brands": [
-      "Caterpillar"
-    ],
-    "epa_model": "3512E",
-    "normalized_model": "3512E",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FCPXL58.6HXF",
-      "GCPXL58.6HXF",
-      "HCPXL58.6HXF",
-      "JCPXL58.6HXF",
-      "KCPXL58.6HXF",
-      "LCPXL58.6HXF",
-      "LCPXL58.6HXZ",
-      "LCPXL58.6NXV",
-      "MCPXL58.6HXF",
-      "MCPXL58.6HXZ",
-      "MCPXL58.6NXV",
-      "NCPXL58.6HXF",
-      "NCPXL58.6HXZ",
-      "NCPXL58.6NXV",
-      "PCPXL58.6HXF",
-      "PCPXL58.6HXZ",
-      "PCPXL58.6NXV",
-      "RCPXL58.6HXF",
-      "RCPXL58.6HXZ",
-      "RCPXL58.6NXV",
-      "SCPXL58.6HXF",
-      "SCPXL58.6HXZ",
-      "SCPXL58.6NXV",
-      "TCPXL58.6HXF",
-      "TCPXL58.6HXZ",
-      "TCPXL58.6NXV"
-    ],
-    "engine_codes": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "CERT 1"
-    ],
-    "certificates": [
-      "FCPXL58.6HXF-023",
-      "GCPXL58.6HXF-013",
-      "HCPXL58.6HXF-019",
-      "JCPXL58.6HXF-012",
-      "KCPXL58.6HXF-004",
-      "LCPXL58.6HXF-011",
-      "LCPXL58.6HXZ-012",
-      "LCPXL58.6NXV-001",
-      "MCPXL58.6HXF-027",
-      "MCPXL58.6HXZ-019",
-      "MCPXL58.6NXV-021",
-      "NCPXL58.6HXF-018",
-      "NCPXL58.6HXZ-020",
-      "NCPXL58.6NXV-015",
-      "PCPXL58.6HXF-021",
-      "PCPXL58.6HXZ-015",
-      "PCPXL58.6NXV-032",
-      "RCPXL58.6HXF-012",
-      "RCPXL58.6HXZ-021",
-      "RCPXL58.6NXV-020",
-      "SCPXL58.6HXF-012",
-      "SCPXL58.6HXZ-022",
-      "SCPXL58.6NXV-021",
-      "TCPXL58.6HXF-028",
-      "TCPXL58.6HXZ-010",
-      "TCPXL58.6NXV-009"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel; Dual Fuel Blend of Diesel and Natural Gas"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 1120,
-    "rated_power_kw_max": 1864,
-    "displacements_l": [
-      58.561
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Caterpillar Inc.",
-    "mapped_database_brands": [
-      "Caterpillar"
-    ],
-    "epa_model": "3516E",
-    "normalized_model": "3516E",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GCPXL78.1NZS",
-      "HCPXL78.1NZS",
-      "JCPXL78.1NZS",
-      "KCPXL78.1NZS",
-      "LCPXL78.1NZS",
-      "MCPXL78.1NZS",
-      "NCPXL78.1NZS",
-      "PCPXL78.1NZS",
-      "RCPXL78.1NZS",
-      "SCPXL78.1NZS",
-      "TCPXL78.1NZS"
-    ],
-    "engine_codes": [
-      "26",
-      "27",
-      "28",
-      "43",
-      "45",
-      "58",
-      "59",
-      "63",
-      "75",
-      "76",
-      "77",
-      "78",
-      "80",
-      "81",
-      "92",
-      "93",
-      "CERT TEST 3"
-    ],
-    "certificates": [
-      "GCPXL78.1NZS-010",
-      "HCPXL78.1NZS-016",
-      "JCPXL78.1NZS-002",
-      "KCPXL78.1NZS-014",
-      "LCPXL78.1NZS-022",
-      "MCPXL78.1NZS-009",
-      "NCPXL78.1NZS-011",
-      "PCPXL78.1NZS-009",
-      "RCPXL78.1NZS-030",
-      "SCPXL78.1NZS-031",
-      "TCPXL78.1NZS-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 2725,
-    "rated_power_kw_max": 3372,
-    "displacements_l": [
-      78.081
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Caterpillar Inc.",
-    "mapped_database_brands": [
-      "Caterpillar"
-    ],
-    "epa_model": "5006C",
-    "normalized_model": "5006C",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NCPXL45.8NZS",
-      "PCPXL45.8NZS",
-      "RCPXL45.8NZS",
-      "SCPXL61.1NZS",
-      "TCPXL61.1NZS"
-    ],
-    "engine_codes": [
-      "5006C-TAG3",
-      "CERT TEST"
-    ],
-    "certificates": [
-      "NCPXL45.8NZS-001",
-      "PCPXL45.8NZS-008",
-      "RCPXL45.8NZS-029",
-      "SCPXL61.1NZS-033",
-      "TCPXL61.1NZS-004"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 887,
-    "rated_power_kw_max": 887,
-    "displacements_l": [
-      22.921
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Caterpillar Inc.",
-    "mapped_database_brands": [
-      "Caterpillar"
-    ],
-    "epa_model": "5016C",
-    "normalized_model": "5016C",
-    "first_model_year": 2026,
-    "latest_model_year": 2026,
-    "model_years": [
-      2026
-    ],
-    "engine_families": [
-      "TCPXL61.1NZS"
-    ],
-    "engine_codes": [
-      "5016C-TRG6",
-      "5016C-TRG7"
-    ],
-    "certificates": [
-      "TCPXL61.1NZS-004"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2015,
-    "rated_power_kw_max": 2283,
-    "displacements_l": [
-      61.123000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
   },
   {
     "manufacturer": "Cummins Inc.",
@@ -32515,1103 +36230,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "3029",
-    "normalized_model": "3029",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "EJDXL02.9121",
-      "EJDXL02.9303",
-      "FJDXL02.9121",
-      "FJDXL02.9142",
-      "FJDXL02.9303",
-      "GJDXL02.9121",
-      "GJDXL02.9142",
-      "GJDXL02.9303",
-      "HJDXL02.9121",
-      "HJDXL02.9142",
-      "HJDXL02.9303",
-      "JJDXL02.9121",
-      "JJDXL02.9142",
-      "JJDXL02.9303",
-      "KJDXL02.9121",
-      "KJDXL02.9142",
-      "KJDXL02.9303",
-      "KJDXL02.9318",
-      "LJDXL02.9121",
-      "LJDXL02.9142",
-      "LJDXL02.9303",
-      "LJDXL02.9318",
-      "MJDXL02.9121",
-      "MJDXL02.9142",
-      "MJDXL02.9303",
-      "MJDXL02.9318",
-      "NJDXL02.9121",
-      "NJDXL02.9142",
-      "NJDXL02.9303",
-      "NJDXL02.9318",
-      "PJDXL02.9121",
-      "PJDXL02.9142",
-      "PJDXL02.9303",
-      "PJDXL02.9318",
-      "RJDXL02.9121",
-      "RJDXL02.9142",
-      "RJDXL02.9318",
-      "SJDXL02.9121",
-      "SJDXL02.9142",
-      "SJDXL02.9318",
-      "TJDXL02.9121",
-      "TJDXL02.9142",
-      "TJDXL02.9318"
-    ],
-    "engine_codes": [
-      "3029HFG03A",
-      "3029HFG03B",
-      "3029HFG03C",
-      "3029HFG89A",
-      "3029HFG89F",
-      "3029HFU89F",
-      "3029HG530A",
-      "3029HG530B",
-      "3029HG530C",
-      "3029HP530A",
-      "3029HP530B",
-      "3029HP530C",
-      "3029TFG80C",
-      "3029TFG89C",
-      "3029TFU80C",
-      "3029TFU89C"
-    ],
-    "certificates": [
-      "EJDXL02.9121-008",
-      "EJDXL02.9303-026",
-      "FJDXL02.9121-002",
-      "FJDXL02.9142-011",
-      "FJDXL02.9303-022",
-      "GJDXL02.9121-002",
-      "GJDXL02.9142-011",
-      "GJDXL02.9303-012",
-      "HJDXL02.9121-003",
-      "HJDXL02.9142-002",
-      "HJDXL02.9303-016",
-      "JJDXL02.9121-004",
-      "JJDXL02.9142-003",
-      "JJDXL02.9303-012",
-      "KJDXL02.9121-002",
-      "KJDXL02.9142-001",
-      "KJDXL02.9303-016",
-      "KJDXL02.9318-017",
-      "LJDXL02.9121-004",
-      "LJDXL02.9142-003",
-      "LJDXL02.9303-021",
-      "LJDXL02.9318-013",
-      "MJDXL02.9121-002",
-      "MJDXL02.9142-001",
-      "MJDXL02.9303-011",
-      "MJDXL02.9318-012",
-      "NJDXL02.9121-002",
-      "NJDXL02.9142-001",
-      "NJDXL02.9303-011",
-      "NJDXL02.9318-012",
-      "PJDXL02.9121-004",
-      "PJDXL02.9142-003",
-      "PJDXL02.9303-013",
-      "PJDXL02.9318-014",
-      "RJDXL02.9121-003",
-      "RJDXL02.9142-002",
-      "RJDXL02.9318-012",
-      "SJDXL02.9121-002",
-      "SJDXL02.9142-001",
-      "SJDXL02.9318-011",
-      "TJDXL02.9121-004",
-      "TJDXL02.9142-003",
-      "TJDXL02.9318-017"
-    ],
-    "applicable_tiers": [
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 35,
-    "rated_power_kw_max": 55,
-    "displacements_l": [
-      2.94
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "4039",
-    "normalized_model": "4039",
-    "first_model_year": 2026,
-    "latest_model_year": 2026,
-    "model_years": [
-      2026
-    ],
-    "engine_families": [
-      "TJDXL03.9346"
-    ],
-    "engine_codes": [
-      "JD4GGHRAC01",
-      "JD4GGHRAC03",
-      "JD4GGHREC01"
-    ],
-    "certificates": [
-      "TJDXL03.9346-026"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 86,
-    "rated_power_kw_max": 126,
-    "displacements_l": [
-      3.9410000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "4045",
-    "normalized_model": "4045",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CJDXL04.5211",
-      "CJDXL06.8210",
-      "DJDXL04.5119",
-      "DJDXL04.5211",
-      "DJDXL06.8120",
-      "DJDXL06.8210",
-      "DJDXL13.5103",
-      "EJDXL04.5119",
-      "EJDXL04.5141",
-      "EJDXL04.5211",
-      "EJDXL04.5214",
-      "EJDXL04.5304",
-      "EJDXL06.8120",
-      "EJDXL06.8210",
-      "EJDXL13.5103",
-      "FJDXL04.5119",
-      "FJDXL04.5141",
-      "FJDXL04.5214",
-      "FJDXL04.5304",
-      "FJDXL04.5305",
-      "FJDXL06.8120",
-      "FJDXL06.8302",
-      "FJDXL13.5103",
-      "GJDXL04.5119",
-      "GJDXL04.5141",
-      "GJDXL04.5214",
-      "GJDXL04.5304",
-      "GJDXL04.5311",
-      "GJDXL06.8120",
-      "GJDXL06.8302",
-      "GJDXL06.8307",
-      "GJDXL13.5103",
-      "HJDXL04.5119",
-      "HJDXL04.5141",
-      "HJDXL04.5214",
-      "HJDXL04.5304",
-      "HJDXL04.5311",
-      "HJDXL04.5315",
-      "HJDXL06.8120",
-      "HJDXL06.8302",
-      "HJDXL13.5103",
-      "JJDXL04.5119",
-      "JJDXL04.5141",
-      "JJDXL04.5214",
-      "JJDXL04.5304",
-      "JJDXL04.5311",
-      "JJDXL04.5315",
-      "JJDXL06.8120",
-      "JJDXL06.8302",
-      "JJDXL13.5103",
-      "KJDXL04.5119",
-      "KJDXL04.5141",
-      "KJDXL04.5214",
-      "KJDXL04.5304",
-      "KJDXL04.5311",
-      "KJDXL04.5315",
-      "KJDXL06.8120",
-      "KJDXL06.8302",
-      "KJDXL13.5103",
-      "LJDXL04.5119",
-      "LJDXL04.5141",
-      "LJDXL04.5214",
-      "LJDXL04.5304",
-      "LJDXL04.5311",
-      "LJDXL04.5315",
-      "LJDXL06.8120",
-      "LJDXL06.8302",
-      "LJDXL13.5103",
-      "MJDXL04.5119",
-      "MJDXL04.5141",
-      "MJDXL04.5214",
-      "MJDXL04.5304",
-      "MJDXL04.5311",
-      "MJDXL04.5315",
-      "MJDXL06.8120",
-      "MJDXL06.8302",
-      "MJDXL13.5103",
-      "NJDXL04.5119",
-      "NJDXL04.5141",
-      "NJDXL04.5214",
-      "NJDXL04.5304",
-      "NJDXL04.5315",
-      "NJDXL04.5316",
-      "NJDXL06.8120",
-      "NJDXL06.8302",
-      "NJDXL13.5103",
-      "PJDXL04.5119",
-      "PJDXL04.5141",
-      "PJDXL04.5214",
-      "PJDXL04.5304",
-      "PJDXL04.5315",
-      "PJDXL04.5316",
-      "PJDXL04.5337",
-      "PJDXL06.8120",
-      "PJDXL06.8302",
-      "PJDXL06.8309",
-      "PJDXL13.5103",
-      "RJDXL04.5119",
-      "RJDXL04.5141",
-      "RJDXL04.5214",
-      "RJDXL04.5304",
-      "RJDXL04.5315",
-      "RJDXL04.5316",
-      "RJDXL04.5337",
-      "RJDXL06.8120",
-      "RJDXL06.8302",
-      "RJDXL06.8309",
-      "RJDXL13.5103",
-      "SJDXL04.5119",
-      "SJDXL04.5141",
-      "SJDXL04.5214",
-      "SJDXL04.5304",
-      "SJDXL04.5315",
-      "SJDXL04.5316",
-      "SJDXL04.5337",
-      "SJDXL06.8120",
-      "SJDXL06.8302",
-      "SJDXL06.8309",
-      "SJDXL13.5103",
-      "SJDXL13.5179",
-      "TJDXL04.5119",
-      "TJDXL04.5141",
-      "TJDXL04.5214",
-      "TJDXL04.5304",
-      "TJDXL04.5315",
-      "TJDXL04.5316",
-      "TJDXL04.5337",
-      "TJDXL06.8120",
-      "TJDXL06.8302",
-      "TJDXL06.8309",
-      "TJDXL13.5179"
-    ],
-    "engine_codes": [
-      "4045CG440A",
-      "4045HF280D",
-      "4045HF285H",
-      "4045HF285I",
-      "4045HF285J",
-      "4045HF285K",
-      "4045HF485E",
-      "4045HFG04A",
-      "4045HFG04B",
-      "4045HFG04C",
-      "4045HFG06A",
-      "4045HFG09A",
-      "4045HFG09B",
-      "4045HFG81B",
-      "4045HFG82D",
-      "4045HFG82E",
-      "4045HFG82G",
-      "4045HFG82K",
-      "4045HFG85A",
-      "4045HFG92A",
-      "4045HFG92B",
-      "4045HFG92C",
-      "4045HFG92D",
-      "4045HFG92E",
-      "4045HFG92F",
-      "4045HFG93A",
-      "4045HFG93B",
-      "4045HFS80",
-      "4045HFS82",
-      "4045HFS83",
-      "4045HFS85B",
-      "4045HFS86B",
-      "4045HFS87B",
-      "4045HFS88B",
-      "4045HFU81B",
-      "4045HFU82D",
-      "4045HFU82E",
-      "4045HFU82G",
-      "4045HG551A",
-      "4045HG551C",
-      "4045HP551A",
-      "4045HP551C",
-      "4045HPRNT12",
-      "4045HPRNT13",
-      "4045HXU11",
-      "4045TF280D",
-      "4045TF280E",
-      "4045TF285E",
-      "4045TF290J",
-      "4045TFG03A"
-    ],
-    "certificates": [
-      "CJDXL04.5211-004",
-      "CJDXL06.8210-003",
-      "DJDXL04.5119-008",
-      "DJDXL04.5211-018",
-      "DJDXL06.8120-002",
-      "DJDXL06.8210-019",
-      "DJDXL13.5103-006",
-      "EJDXL04.5119-009",
-      "EJDXL04.5141-011",
-      "EJDXL04.5211-021",
-      "EJDXL04.5214-012",
-      "EJDXL04.5304-024",
-      "EJDXL06.8120-010",
-      "EJDXL06.8210-020",
-      "EJDXL13.5103-014",
-      "FJDXL04.5119-003",
-      "FJDXL04.5141-005",
-      "FJDXL04.5214-006",
-      "FJDXL04.5304-015",
-      "FJDXL04.5305-001",
-      "FJDXL06.8120-004",
-      "FJDXL06.8302-014",
-      "FJDXL13.5103-008",
-      "GJDXL04.5119-003",
-      "GJDXL04.5141-005",
-      "GJDXL04.5214-006",
-      "GJDXL04.5304-013",
-      "GJDXL04.5311-028",
-      "GJDXL06.8120-004",
-      "GJDXL06.8302-019",
-      "GJDXL06.8307-001",
-      "GJDXL13.5103-008",
-      "HJDXL04.5119-004",
-      "HJDXL04.5141-006",
-      "HJDXL04.5214-010",
-      "HJDXL04.5304-017",
-      "HJDXL04.5311-012",
-      "HJDXL04.5315-023",
-      "HJDXL06.8120-005",
-      "HJDXL06.8302-022",
-      "HJDXL13.5103-011",
-      "JJDXL04.5119-005",
-      "JJDXL04.5141-007",
-      "JJDXL04.5214-008",
-      "JJDXL04.5304-026",
-      "JJDXL04.5311-024",
-      "JJDXL04.5315-017-R01",
-      "JJDXL06.8120-006",
-      "JJDXL06.8302-013",
-      "JJDXL13.5103-010",
-      "KJDXL04.5119-004",
-      "KJDXL04.5141-009",
-      "KJDXL04.5214-005",
-      "KJDXL04.5304-018",
-      "KJDXL04.5311-010",
-      "KJDXL04.5315-015",
-      "KJDXL06.8120-003",
-      "KJDXL06.8302-019",
-      "KJDXL13.5103-007",
-      "LJDXL04.5119-005",
-      "LJDXL04.5141-007",
-      "LJDXL04.5214-012",
-      "LJDXL04.5304-020",
-      "LJDXL04.5311-014",
-      "LJDXL04.5315-016",
-      "LJDXL06.8120-006",
-      "LJDXL06.8302-027",
-      "LJDXL13.5103-011",
-      "MJDXL04.5119-003",
-      "MJDXL04.5141-010",
-      "MJDXL04.5214-005",
-      "MJDXL04.5304-018",
-      "MJDXL04.5311-013",
-      "MJDXL04.5315-015",
-      "MJDXL06.8120-004",
-      "MJDXL06.8302-029",
-      "MJDXL13.5103-007",
-      "NJDXL04.5119-003",
-      "NJDXL04.5141-005",
-      "NJDXL04.5214-006",
-      "NJDXL04.5304-015",
-      "NJDXL04.5315-014",
-      "NJDXL04.5316-024",
-      "NJDXL06.8120-004",
-      "NJDXL06.8302-022",
-      "NJDXL13.5103-009",
-      "PJDXL04.5119-008",
-      "PJDXL04.5141-010",
-      "PJDXL04.5214-005",
-      "PJDXL04.5304-015",
-      "PJDXL04.5315-019",
-      "PJDXL04.5316-025",
-      "PJDXL04.5337-001",
-      "PJDXL06.8120-009",
-      "PJDXL06.8302-029",
-      "PJDXL06.8309-031",
-      "PJDXL13.5103-012",
-      "RJDXL04.5119-005",
-      "RJDXL04.5141-011",
-      "RJDXL04.5214-006",
-      "RJDXL04.5304-017",
-      "RJDXL04.5315-019",
-      "RJDXL04.5316-015",
-      "RJDXL04.5337-021",
-      "RJDXL06.8120-004",
-      "RJDXL06.8302-020",
-      "RJDXL06.8309-023",
-      "RJDXL13.5103-008",
-      "SJDXL04.5119-003",
-      "SJDXL04.5141-005",
-      "SJDXL04.5214-006",
-      "SJDXL04.5304-015",
-      "SJDXL04.5315-013",
-      "SJDXL04.5316-014",
-      "SJDXL04.5337-019",
-      "SJDXL06.8120-004",
-      "SJDXL06.8302-018",
-      "SJDXL06.8309-016",
-      "SJDXL13.5103-010",
-      "SJDXL13.5179-030",
-      "TJDXL04.5119-005",
-      "TJDXL04.5141-007",
-      "TJDXL04.5214-008",
-      "TJDXL04.5304-019",
-      "TJDXL04.5315-018",
-      "TJDXL04.5316-011",
-      "TJDXL04.5337-025",
-      "TJDXL06.8120-006",
-      "TJDXL06.8302-010",
-      "TJDXL06.8309-021",
-      "TJDXL13.5179-002"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 3.4",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 55,
-    "rated_power_kw_max": 147,
-    "displacements_l": [
-      4.525
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "6068",
-    "normalized_model": "6068",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CJDXL06.8204",
-      "DJDXL06.8120",
-      "DJDXL06.8204",
-      "DJDXL13.5103",
-      "EJDXL06.8120",
-      "EJDXL06.8302",
-      "EJDXL13.5103",
-      "FJDXL06.8120",
-      "FJDXL06.8204",
-      "FJDXL06.8302",
-      "FJDXL13.5103",
-      "GJDXL06.8120",
-      "GJDXL06.8302",
-      "GJDXL06.8309",
-      "GJDXL06.8312",
-      "GJDXL13.5103",
-      "HJDXL06.8120",
-      "HJDXL06.8309",
-      "HJDXL06.8312",
-      "HJDXL13.5103",
-      "JJDXL06.8120",
-      "JJDXL06.8309",
-      "JJDXL06.8312",
-      "JJDXL13.5103",
-      "KJDXL06.8120",
-      "KJDXL06.8309",
-      "KJDXL06.8312",
-      "KJDXL13.5103",
-      "LJDXL06.8120",
-      "LJDXL06.8309",
-      "LJDXL06.8312",
-      "LJDXL13.5103",
-      "MJDXL06.8120",
-      "MJDXL06.8309",
-      "MJDXL06.8312",
-      "MJDXL13.5103",
-      "NJDXL06.8120",
-      "NJDXL06.8309",
-      "NJDXL06.8312",
-      "NJDXL13.5103",
-      "PJDXL06.8120",
-      "PJDXL06.8309",
-      "PJDXL06.8312",
-      "PJDXL13.5103",
-      "RJDXL06.8120",
-      "RJDXL06.8309",
-      "RJDXL06.8312",
-      "RJDXL13.5103",
-      "SJDXL06.8120",
-      "SJDXL06.8309",
-      "SJDXL06.8312",
-      "SJDXL13.5103",
-      "SJDXL13.5179",
-      "TJDXL06.8120",
-      "TJDXL06.8309",
-      "TJDXL06.8312",
-      "TJDXL13.5179"
-    ],
-    "engine_codes": [
-      "6068CG550A",
-      "6068CG550B",
-      "6068CP550A",
-      "6068CP550B",
-      "6068DW404",
-      "6068HDW86",
-      "6068HDW94",
-      "6068HDW97",
-      "6068HDW98",
-      "6068HF285K",
-      "6068HF285L",
-      "6068HF485T",
-      "6068HF485U",
-      "6068HFG05A",
-      "6068HFG05B",
-      "6068HFG06A",
-      "6068HFG06B",
-      "6068HFG08-A",
-      "6068HFG08-B",
-      "6068HFG08A",
-      "6068HFG08B",
-      "6068HFG09-A",
-      "6068HFG09-B",
-      "6068HFG09A",
-      "6068HFG09B",
-      "6068HFG82D",
-      "6068HFG82E",
-      "6068HFG82F",
-      "6068HFG85A",
-      "6068HFG85B",
-      "6068HFG94A",
-      "6068HFG94B",
-      "6068HFG95A",
-      "6068HFG95B",
-      "6068HFS82",
-      "6068HFS83",
-      "6068HFS85B",
-      "6068HFS86B",
-      "6068HFS89",
-      "6068HFU82D",
-      "6068HFU82E",
-      "6068HG550A",
-      "6068HG550B",
-      "6068HP550A",
-      "6068HP550B",
-      "6068HPRNT7",
-      "6068HXU10A",
-      "6068HXU10B"
-    ],
-    "certificates": [
-      "CJDXL06.8204-030",
-      "DJDXL06.8120-002",
-      "DJDXL06.8204-009",
-      "DJDXL13.5103-006",
-      "EJDXL06.8120-010",
-      "EJDXL06.8302-003",
-      "EJDXL13.5103-014",
-      "FJDXL06.8120-004",
-      "FJDXL06.8204-018",
-      "FJDXL06.8302-014",
-      "FJDXL13.5103-008",
-      "GJDXL06.8120-004",
-      "GJDXL06.8302-019",
-      "GJDXL06.8309-020",
-      "GJDXL06.8312-017",
-      "GJDXL13.5103-008",
-      "HJDXL06.8120-005",
-      "HJDXL06.8309-024",
-      "HJDXL06.8312-013",
-      "HJDXL13.5103-011",
-      "JJDXL06.8120-006",
-      "JJDXL06.8309-014",
-      "JJDXL06.8312-025",
-      "JJDXL13.5103-010",
-      "KJDXL06.8120-003",
-      "KJDXL06.8309-020",
-      "KJDXL06.8312-011",
-      "KJDXL13.5103-007",
-      "LJDXL06.8120-006",
-      "LJDXL06.8309-026",
-      "LJDXL06.8312-015",
-      "LJDXL13.5103-011",
-      "MJDXL06.8120-004",
-      "MJDXL06.8309-028",
-      "MJDXL06.8312-014",
-      "MJDXL13.5103-007",
-      "NJDXL06.8120-004",
-      "NJDXL06.8309-023",
-      "NJDXL06.8312-013",
-      "NJDXL13.5103-009",
-      "PJDXL06.8120-009",
-      "PJDXL06.8309-031",
-      "PJDXL06.8312-018",
-      "PJDXL13.5103-012",
-      "RJDXL06.8120-004",
-      "RJDXL06.8309-023",
-      "RJDXL06.8312-014",
-      "RJDXL13.5103-008",
-      "SJDXL06.8120-004",
-      "SJDXL06.8309-016",
-      "SJDXL06.8312-020",
-      "SJDXL13.5103-010",
-      "SJDXL13.5179-030",
-      "TJDXL06.8120-006",
-      "TJDXL06.8309-021",
-      "TJDXL06.8312-014",
-      "TJDXL13.5179-002"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 2.0",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 147,
-    "rated_power_kw_max": 248,
-    "displacements_l": [
-      6.788
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "6090",
-    "normalized_model": "6090",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CJDXL09.0202",
-      "DJDXL09.0202",
-      "EJDXL09.0114",
-      "EJDXL09.0301",
-      "FJDXL09.0114",
-      "FJDXL09.0301",
-      "GJDXL09.0114",
-      "GJDXL09.0301",
-      "GJDXL09.0308",
-      "GJDXL09.0313",
-      "HJDXL09.0114",
-      "HJDXL09.0308",
-      "HJDXL09.0313",
-      "JJDXL09.0114",
-      "JJDXL09.0308",
-      "JJDXL09.0313",
-      "KJDXL09.0114",
-      "KJDXL09.0308",
-      "KJDXL09.0313",
-      "LJDXL09.0114",
-      "LJDXL09.0308",
-      "LJDXL09.0313",
-      "MJDXL09.0114",
-      "MJDXL09.0308",
-      "MJDXL09.0313",
-      "NJDXL09.0114",
-      "NJDXL09.0308",
-      "NJDXL09.0313",
-      "PJDXL09.0114",
-      "PJDXL09.0308",
-      "PJDXL09.0313",
-      "PJDXL09.0333",
-      "RJDXL09.0114",
-      "RJDXL09.0308",
-      "RJDXL09.0313",
-      "RJDXL09.0333",
-      "SJDXL09.0114",
-      "SJDXL09.0308",
-      "SJDXL09.0313",
-      "SJDXL09.0333",
-      "TJDXL09.0114",
-      "TJDXL09.0308",
-      "TJDXL09.0313",
-      "TJDXL09.0333"
-    ],
-    "engine_codes": [
-      "6090CG550A",
-      "6090CG550C",
-      "6090CG550E",
-      "6090CP550A",
-      "6090CP550C",
-      "6090CP550E",
-      "6090HDW22",
-      "6090HDW31",
-      "6090HDW41",
-      "6090HDW52",
-      "6090HF484A",
-      "6090HF484B",
-      "6090HF484C",
-      "6090HF484D",
-      "6090HFG06A",
-      "6090HFG06C",
-      "6090HFG06E",
-      "6090HFG09-A",
-      "6090HFG09-B",
-      "6090HFG09-C",
-      "6090HFG09-D",
-      "6090HFG09-E",
-      "6090HFG09A",
-      "6090HFG09B",
-      "6090HFG09C",
-      "6090HFG09D",
-      "6090HFG09E",
-      "6090HFG84B",
-      "6090HFG84D",
-      "6090HFG86A",
-      "6090HFG86C",
-      "6090HFG86E",
-      "6090HFG94A",
-      "6090HFG95A",
-      "6090HFG95B",
-      "6090HFG95C",
-      "6090HFS85B",
-      "6090HFS86B",
-      "6090HFU84B",
-      "6090HFU84D",
-      "6090HPRNT7",
-      "6090WG504",
-      "6090WG504B",
-      "6090WG506"
-    ],
-    "certificates": [
-      "CJDXL09.0202-014-R01",
-      "DJDXL09.0202-010",
-      "EJDXL09.0114-013",
-      "EJDXL09.0301-001",
-      "FJDXL09.0114-007",
-      "FJDXL09.0301-016",
-      "GJDXL09.0114-007",
-      "GJDXL09.0301-021",
-      "GJDXL09.0308-025",
-      "GJDXL09.0313-029",
-      "HJDXL09.0114-007",
-      "HJDXL09.0308-019",
-      "HJDXL09.0313-014",
-      "JJDXL09.0114-009",
-      "JJDXL09.0308-019",
-      "JJDXL09.0313-027",
-      "KJDXL09.0114-006",
-      "KJDXL09.0308-023",
-      "KJDXL09.0313-012",
-      "LJDXL09.0114-010",
-      "LJDXL09.0308-025",
-      "LJDXL09.0313-018",
-      "MJDXL09.0114-006",
-      "MJDXL09.0308-026",
-      "MJDXL09.0313-017",
-      "NJDXL09.0114-007",
-      "NJDXL09.0308-021",
-      "NJDXL09.0313-016",
-      "PJDXL09.0114-011",
-      "PJDXL09.0308-030",
-      "PJDXL09.0313-020",
-      "PJDXL09.0333-021",
-      "RJDXL09.0114-007",
-      "RJDXL09.0308-028",
-      "RJDXL09.0313-016",
-      "RJDXL09.0333-022",
-      "SJDXL09.0114-007",
-      "SJDXL09.0308-021",
-      "SJDXL09.0313-022",
-      "SJDXL09.0333-027",
-      "TJDXL09.0114-009",
-      "TJDXL09.0308-020",
-      "TJDXL09.0313-013",
-      "TJDXL09.0333-022"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 2.0",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 228,
-    "rated_power_kw_max": 364,
-    "displacements_l": [
-      8.924000000000001,
-      8.984
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "6136",
-    "normalized_model": "6136",
-    "first_model_year": 2021,
-    "latest_model_year": 2026,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "MJDXL13.5320",
-      "MJDXL13.5334",
-      "NJDXL13.5320",
-      "NJDXL13.5334",
-      "PJDXL13.5320",
-      "PJDXL13.5334",
-      "RJDXL13.5320",
-      "RJDXL13.5334",
-      "SJDXL13.5320",
-      "SJDXL13.5334",
-      "TJDXL13.5320",
-      "TJDXL13.5334"
-    ],
-    "engine_codes": [
-      "6136CG440A",
-      "6136CG550A",
-      "6136DW503"
-    ],
-    "certificates": [
-      "MJDXL13.5320-022",
-      "MJDXL13.5334-021",
-      "NJDXL13.5320-018",
-      "NJDXL13.5334-017",
-      "PJDXL13.5320-024",
-      "PJDXL13.5334-023",
-      "RJDXL13.5320-026",
-      "RJDXL13.5334-029",
-      "SJDXL13.5320-028",
-      "SJDXL13.5334-029",
-      "TJDXL13.5320-024",
-      "TJDXL13.5334-023"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 460,
-    "rated_power_kw_max": 505,
-    "displacements_l": [
-      13.548
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "6180",
-    "normalized_model": "6180",
-    "first_model_year": 2026,
-    "latest_model_year": 2026,
-    "model_years": [
-      2026
-    ],
-    "engine_families": [
-      "TJDXL18.0180"
-    ],
-    "engine_codes": [
-      "6180CG280A",
-      "6180CG280C",
-      "6180HPRNT3A"
-    ],
-    "certificates": [
-      "TJDXL18.0180-001"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 600,
-    "rated_power_kw_max": 710,
-    "displacements_l": [
-      17.96
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "Deutz AG",
     "mapped_database_brands": [
       "Deutz"
@@ -34564,92 +37182,6 @@
     "match_status": "not_found",
     "database_matches": [],
     "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDI1903ESM",
-    "normalized_model": "KDI1903ESM",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "EKHXL2.48ESM",
-      "FKHXL2.48ESM",
-      "GKHXL2.48ESM",
-      "HKHXL2.48ESM",
-      "JKHXL2.48ESM",
-      "KKHXL2.48ESM",
-      "LKHXL2.48ESM",
-      "MKHXL02.5ESM",
-      "NKHXL02.5ESM",
-      "PKHXL02.5ESM",
-      "RKHXL02.5ESM",
-      "SKHXL02.5ESM",
-      "TKHXL02.5ESM"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "EKHXL2.48ESM-007",
-      "FKHXL2.48ESM-003",
-      "GKHXL2.48ESM-006",
-      "HKHXL2.48ESM-005",
-      "JKHXL2.48ESM-003",
-      "KKHXL2.48ESM-006",
-      "LKHXL2.48ESM-007",
-      "MKHXL02.5ESM-002",
-      "NKHXL02.5ESM-007",
-      "PKHXL02.5ESM-009",
-      "RKHXL02.5ESM-010-R01",
-      "SKHXL02.5ESM-002",
-      "TKHXL02.5ESM-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 21,
-    "rated_power_kw_max": 21,
-    "displacements_l": [
-      1.861
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI1903M",
-        "slug": "kohler-kdi1903m",
-        "similarity": 0.889
-      }
-    ]
   },
   {
     "manufacturer": "Discovery Energy, LLC.",
@@ -36089,7 +38621,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "DM02AP",
+        "slug": "hyundai-dm02ap",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "HD Construction Equipment Co., Ltd.",
@@ -36277,137 +38816,6 @@
     "mapped_database_brands": [
       "Hyundai"
     ],
-    "epa_model": "DX05G",
-    "normalized_model": "DX05G",
-    "first_model_year": 2026,
-    "latest_model_year": 2026,
-    "model_years": [
-      2026
-    ],
-    "engine_families": [
-      "TDICL05.0LCG"
-    ],
-    "engine_codes": [
-      "DX05-LCG01",
-      "DX05-LCG02"
-    ],
-    "certificates": [
-      "TDICL05.0LCG-004"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 150,
-    "rated_power_kw_max": 197,
-    "displacements_l": [
-      5.018000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "HD Construction Equipment Co., Ltd.",
-    "mapped_database_brands": [
-      "Hyundai"
-    ],
-    "epa_model": "DX05PG",
-    "normalized_model": "DX05PG",
-    "first_model_year": 2026,
-    "latest_model_year": 2026,
-    "model_years": [
-      2026
-    ],
-    "engine_families": [
-      "TDICL05.0LEA"
-    ],
-    "engine_codes": [
-      "DX05-LEG00",
-      "DX05-LEG01",
-      "DX05-LEG02"
-    ],
-    "certificates": [
-      "TDICL05.0LEA-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 150,
-    "rated_power_kw_max": 200,
-    "displacements_l": [
-      5.018000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "HD Construction Equipment Co., Ltd.",
-    "mapped_database_brands": [
-      "Hyundai"
-    ],
-    "epa_model": "DX08G",
-    "normalized_model": "DX08G",
-    "first_model_year": 2026,
-    "latest_model_year": 2026,
-    "model_years": [
-      2026
-    ],
-    "engine_families": [
-      "TDICL07.5LCG"
-    ],
-    "engine_codes": [
-      "DX08-LCG02",
-      "DX08-LCG03",
-      "DX08-LCG04"
-    ],
-    "certificates": [
-      "TDICL07.5LCG-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 234,
-    "rated_power_kw_max": 294,
-    "displacements_l": [
-      7.527
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "HD Construction Equipment Co., Ltd.",
-    "mapped_database_brands": [
-      "Hyundai"
-    ],
     "epa_model": "DX08P",
     "normalized_model": "DX08P",
     "first_model_year": 2026,
@@ -36505,208 +38913,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "HD Construction Equipment Co., Ltd.",
-    "mapped_database_brands": [
-      "Hyundai"
-    ],
-    "epa_model": "DX12G",
-    "normalized_model": "DX12G",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PDICL11.0LCG",
-      "RDICL11.0LCG",
-      "SDICL11.0LCG",
-      "TDICL11.0LCG"
-    ],
-    "engine_codes": [
-      "DX12-LCG15",
-      "DX12-LCG16",
-      "DX12-LCG17"
-    ],
-    "certificates": [
-      "PDICL11.0LCG-001",
-      "RDICL11.0LCG-013",
-      "SDICL11.0LCG-012",
-      "TDICL11.0LCG-017"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 375,
-    "rated_power_kw_max": 441,
-    "displacements_l": [
-      11.051
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "HD Construction Equipment Co., Ltd.",
-    "mapped_database_brands": [
-      "Hyundai"
-    ],
-    "epa_model": "DX15G",
-    "normalized_model": "DX15G",
-    "first_model_year": 2025,
-    "latest_model_year": 2026,
-    "model_years": [
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "SDICL15.1LBG",
-      "TDICL15.1LBG"
-    ],
-    "engine_codes": [
-      "DX15-LBG00",
-      "DX15-LBG02"
-    ],
-    "certificates": [
-      "SDICL15.1LBG-002",
-      "TDICL15.1LBG-011"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 618,
-    "rated_power_kw_max": 662,
-    "displacements_l": [
-      15.133000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "HD Construction Equipment Co., Ltd.",
-    "mapped_database_brands": [
-      "Hyundai"
-    ],
-    "epa_model": "DX15GA",
-    "normalized_model": "DX15GA",
-    "first_model_year": 2025,
-    "latest_model_year": 2026,
-    "model_years": [
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "SDICL15.1LBA",
-      "TDICL15.1LBA"
-    ],
-    "engine_codes": [
-      "DX15-LCG03",
-      "DX15-LCG04"
-    ],
-    "certificates": [
-      "SDICL15.1LBA-001",
-      "TDICL15.1LBA-018"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 522,
-    "rated_power_kw_max": 560,
-    "displacements_l": [
-      15.133000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "HD Construction Equipment Co., Ltd.",
-    "mapped_database_brands": [
-      "Hyundai"
-    ],
-    "epa_model": "DX22",
-    "normalized_model": "DX22",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NDICL21.9LBG",
-      "PDICL21.9LBG",
-      "RDICL21.9LBG",
-      "SDICL21.9LBG",
-      "TDICL21.9LBG"
-    ],
-    "engine_codes": [
-      "DX22-LBG00",
-      "DX22-LBG01",
-      "DX22-LBG02"
-    ],
-    "certificates": [
-      "NDICL21.9LBG-001",
-      "PDICL21.9LBG-011",
-      "RDICL21.9LBG-005",
-      "SDICL21.9LBG-008",
-      "TDICL21.9LBG-012"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 836,
-    "rated_power_kw_max": 995,
-    "displacements_l": [
-      21.927
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "DX08G",
+        "slug": "hyundai-dx08g",
+        "similarity": 0.909
+      }
+    ]
   },
   {
     "manufacturer": "Isuzu Motors Limited",
@@ -36941,379 +39155,6 @@
     "rated_power_kw_max": 124,
     "displacements_l": [
       5.1930000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kirloskar Americas Corporation",
-    "mapped_database_brands": [
-      "Kirloskar"
-    ],
-    "epa_model": "2R550NA1",
-    "normalized_model": "2R550NA1",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NKOEL1.09NAX",
-      "PKOEL1.09NAX",
-      "RKOEL1.09NAX",
-      "SKOEL1.09NAX",
-      "TKOEL1.09NAX"
-    ],
-    "engine_codes": [
-      "2R550NA1"
-    ],
-    "certificates": [
-      "NKOEL1.09NAX-005",
-      "PKOEL1.09NAX-005",
-      "RKOEL1.09NAX-005",
-      "SKOEL1.09NAX-002",
-      "TKOEL1.09NAX-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 12,
-    "rated_power_kw_max": 12,
-    "displacements_l": [
-      1.092
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kirloskar Americas Corporation",
-    "mapped_database_brands": [
-      "Kirloskar"
-    ],
-    "epa_model": "3R550NA1",
-    "normalized_model": "3R550NA1",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NKOEL1.64NAX",
-      "PKOEL1.64NAX",
-      "RKOEL1.64NAX",
-      "SKOEL1.64NAX",
-      "TKOEL1.64NAX"
-    ],
-    "engine_codes": [
-      "3R550NA1"
-    ],
-    "certificates": [
-      "NKOEL1.64NAX-004",
-      "PKOEL1.64NAX-004",
-      "RKOEL1.64NAX-004",
-      "SKOEL1.64NAX-004",
-      "TKOEL1.64NAX-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 17,
-    "rated_power_kw_max": 17,
-    "displacements_l": [
-      1.6380000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kirloskar Americas Corporation",
-    "mapped_database_brands": [
-      "Kirloskar"
-    ],
-    "epa_model": "4K1080TA1",
-    "normalized_model": "4K1080TA1",
-    "first_model_year": 2019,
-    "latest_model_year": 2026,
-    "model_years": [
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "KKOEL4.33TAX",
-      "LKOEL4.33TAX",
-      "MKOEL4.33TAX",
-      "NKOEL4.33TAX",
-      "PKOEL4.33TAX",
-      "RKOEL4.33TAX",
-      "SKOEL4.33TAX",
-      "TKOEL4.33TAX"
-    ],
-    "engine_codes": [
-      "4K1080TA1"
-    ],
-    "certificates": [
-      "KKOEL4.33TAX-003",
-      "LKOEL4.33TAX-003",
-      "MKOEL4.33TAX-003-R01",
-      "NKOEL4.33TAX-003",
-      "PKOEL4.33TAX-003",
-      "RKOEL4.33TAX-003",
-      "SKOEL4.33TAX-003",
-      "TKOEL4.33TAX-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 115,
-    "rated_power_kw_max": 115,
-    "displacements_l": [
-      4.33
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kirloskar Americas Corporation",
-    "mapped_database_brands": [
-      "Kirloskar"
-    ],
-    "epa_model": "4R810NA1",
-    "normalized_model": "4R810NA1",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JKOEL3.24NAX",
-      "KKOEL3.24NAX",
-      "LKOEL3.24NAX",
-      "MKOEL3.24NAX",
-      "NKOEL3.24NAX",
-      "PKOEL3.24NAX",
-      "RKOEL3.24NAX",
-      "SKOEL3.24NAX",
-      "TKOEL3.24NAX"
-    ],
-    "engine_codes": [
-      "4R810NA1"
-    ],
-    "certificates": [
-      "JKOEL3.24NAX-001",
-      "KKOEL3.24NAX-001",
-      "LKOEL3.24NAX-001",
-      "MKOEL3.24NAX-001-R01",
-      "NKOEL3.24NAX-001",
-      "PKOEL3.24NAX-001",
-      "RKOEL3.24NAX-001",
-      "SKOEL3.24NAX-001",
-      "TKOEL3.24NAX-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 35,
-    "rated_power_kw_max": 35,
-    "displacements_l": [
-      3.2430000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kirloskar Americas Corporation",
-    "mapped_database_brands": [
-      "Kirloskar"
-    ],
-    "epa_model": "4R810TA1",
-    "normalized_model": "4R810TA1",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JKOEL3.24TAX",
-      "KKOEL3.24TAX",
-      "LKOEL3.24TAX",
-      "MKOEL3.24TAX",
-      "NKOEL3.24TAX",
-      "PKOEL3.24TAX",
-      "RKOEL3.24TAX",
-      "SKOEL3.24TAX",
-      "TKOEL3.24TAX"
-    ],
-    "engine_codes": [
-      "4R810TA1"
-    ],
-    "certificates": [
-      "JKOEL3.24TAX-002",
-      "KKOEL3.24TAX-002",
-      "LKOEL3.24TAX-002",
-      "MKOEL3.24TAX-002-R01",
-      "NKOEL3.24TAX-002",
-      "PKOEL3.24TAX-002",
-      "RKOEL3.24TAX-002",
-      "SKOEL3.24TAX-005",
-      "TKOEL3.24TAX-004"
-    ],
-    "applicable_tiers": [
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 70,
-    "rated_power_kw_max": 70,
-    "displacements_l": [
-      3.2430000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kirloskar Americas Corporation",
-    "mapped_database_brands": [
-      "Kirloskar"
-    ],
-    "epa_model": "4R810TA2",
-    "normalized_model": "4R810TA2",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JKOEL3.24TAX",
-      "KKOEL3.24TAX",
-      "LKOEL3.24TAX",
-      "MKOEL3.24TAX",
-      "NKOEL3.24TAX",
-      "PKOEL3.24TAX",
-      "RKOEL3.24TAX",
-      "SKOEL3.24TAX",
-      "TKOEL3.24TAX"
-    ],
-    "engine_codes": [
-      "4R810TA2"
-    ],
-    "certificates": [
-      "JKOEL3.24TAX-002",
-      "KKOEL3.24TAX-002",
-      "LKOEL3.24TAX-002",
-      "MKOEL3.24TAX-002-R01",
-      "NKOEL3.24TAX-002",
-      "PKOEL3.24TAX-002",
-      "RKOEL3.24TAX-002",
-      "SKOEL3.24TAX-005",
-      "TKOEL3.24TAX-004"
-    ],
-    "applicable_tiers": [
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 48,
-    "rated_power_kw_max": 48,
-    "displacements_l": [
-      3.2430000000000003
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -38061,345 +39902,6 @@
     "rated_power_kw_max": 67,
     "displacements_l": [
       3.77
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Kohler",
-      "Liebherr"
-    ],
-    "epa_model": "D976 A7-02",
-    "normalized_model": "D976A702",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NLHAL18.0ESP",
-      "PLHAL18.0ESP",
-      "RLHAL18.0ESP",
-      "SLHAL18.0ESP",
-      "TLHAL18.0ESP"
-    ],
-    "engine_codes": [
-      "R06G71001",
-      "R06G71002",
-      "R06G71003"
-    ],
-    "certificates": [
-      "NLHAL18.0ESP-019",
-      "PLHAL18.0ESP-003",
-      "RLHAL18.0ESP-010",
-      "SLHAL18.0ESP-013",
-      "TLHAL18.0ESP-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 670,
-    "rated_power_kw_max": 820,
-    "displacements_l": [
-      17.96
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Kohler",
-      "Liebherr"
-    ],
-    "epa_model": "D9912G",
-    "normalized_model": "D9912G",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NLHAL103.E9P",
-      "PLHAL103.E9P",
-      "RLHAL103.E9P",
-      "SLHAL103.E9P",
-      "TLHAL103.E9P"
-    ],
-    "engine_codes": [
-      "C12GA1150",
-      "C12GA1151",
-      "C12GA1152",
-      "C12GA1153",
-      "C12GA1154",
-      "C12GA1155"
-    ],
-    "certificates": [
-      "NLHAL103.E9P-021",
-      "PLHAL103.E9P-020",
-      "RLHAL103.E9P-019",
-      "SLHAL103.E9P-020",
-      "TLHAL103.E9P-013"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2180,
-    "rated_power_kw_max": 2700,
-    "displacements_l": [
-      62.056000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Kohler",
-      "Liebherr"
-    ],
-    "epa_model": "D9916G",
-    "normalized_model": "D9916G",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PLHAL103.E9P",
-      "RLHAL103.E9P",
-      "SLHAL103.E9P",
-      "TLHAL103.E9P"
-    ],
-    "engine_codes": [
-      "C16GA1150",
-      "C16GA1151",
-      "C16GA1152",
-      "C16GA1153",
-      "C16GA1154",
-      "C16GA1155"
-    ],
-    "certificates": [
-      "PLHAL103.E9P-020",
-      "RLHAL103.E9P-019",
-      "SLHAL103.E9P-020",
-      "TLHAL103.E9P-013"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3010,
-    "rated_power_kw_max": 3490,
-    "displacements_l": [
-      82.742
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Kohler",
-      "Liebherr"
-    ],
-    "epa_model": "KD18L06-6AES",
-    "normalized_model": "KD18L066AES",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NLHAL18.0ESP",
-      "PLHAL18.0ESP",
-      "RLHAL18.0ESP",
-      "SLHAL18.0ESP",
-      "TLHAL18.0ESP"
-    ],
-    "engine_codes": [
-      "R06G71002"
-    ],
-    "certificates": [
-      "NLHAL18.0ESP-019",
-      "PLHAL18.0ESP-003",
-      "RLHAL18.0ESP-010",
-      "SLHAL18.0ESP-013",
-      "TLHAL18.0ESP-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 670,
-    "rated_power_kw_max": 670,
-    "displacements_l": [
-      17.96
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Kohler",
-      "Liebherr"
-    ],
-    "epa_model": "KD18L06-6BES",
-    "normalized_model": "KD18L066BES",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NLHAL18.0ESP",
-      "PLHAL18.0ESP",
-      "RLHAL18.0ESP",
-      "SLHAL18.0ESP",
-      "TLHAL18.0ESP"
-    ],
-    "engine_codes": [
-      "R06G71003"
-    ],
-    "certificates": [
-      "NLHAL18.0ESP-019",
-      "PLHAL18.0ESP-003",
-      "RLHAL18.0ESP-010",
-      "SLHAL18.0ESP-013",
-      "TLHAL18.0ESP-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 785,
-    "rated_power_kw_max": 785,
-    "displacements_l": [
-      17.96
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Liebherr Machines Bulle SA",
-    "mapped_database_brands": [
-      "Kohler",
-      "Liebherr"
-    ],
-    "epa_model": "KD18L06-6CES",
-    "normalized_model": "KD18L066CES",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NLHAL18.0ESP",
-      "PLHAL18.0ESP",
-      "RLHAL18.0ESP",
-      "SLHAL18.0ESP",
-      "TLHAL18.0ESP"
-    ],
-    "engine_codes": [
-      "R06G71001"
-    ],
-    "certificates": [
-      "NLHAL18.0ESP-019",
-      "PLHAL18.0ESP-003",
-      "RLHAL18.0ESP-010",
-      "SLHAL18.0ESP-013",
-      "TLHAL18.0ESP-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 820,
-    "rated_power_kw_max": 820,
-    "displacements_l": [
-      17.96
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -39748,475 +41250,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
-    "mapped_database_brands": [
-      "Baudouin"
-    ],
-    "epa_model": "12M33",
-    "normalized_model": "12M33",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PMRBL65.4EMS",
-      "RMRBL65.4EMS",
-      "SMRBL65.4EMS",
-      "TMRBL65.4EMS"
-    ],
-    "engine_codes": [
-      "12M33G12D2/6",
-      "12M33G13D2/6",
-      "12M33G8D2/6"
-    ],
-    "certificates": [
-      "PMRBL65.4EMS-002",
-      "RMRBL65.4EMS-002",
-      "SMRBL65.4EMS-001",
-      "TMRBL65.4EMS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1120,
-    "rated_power_kw_max": 1420,
-    "displacements_l": [
-      39.231
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
-    "mapped_database_brands": [
-      "Baudouin"
-    ],
-    "epa_model": "12M55",
-    "normalized_model": "12M55",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PMRBL109.EMS",
-      "RMRBL109.EMS",
-      "SMRBL109.EMS",
-      "TMRBL109.EMS"
-    ],
-    "engine_codes": [
-      "12M55G2D2/S",
-      "12M55G4D2/6",
-      "12M55G5D2/6",
-      "12M55G6D2/6"
-    ],
-    "certificates": [
-      "PMRBL109.EMS-001",
-      "RMRBL109.EMS-001",
-      "SMRBL109.EMS-002",
-      "TMRBL109.EMS-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2210,
-    "rated_power_kw_max": 2752,
-    "displacements_l": [
-      65.653
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
-    "mapped_database_brands": [
-      "Baudouin"
-    ],
-    "epa_model": "16M33",
-    "normalized_model": "16M33",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PMRBL65.4EMS",
-      "RMRBL65.4EMS",
-      "SMRBL65.4EMS",
-      "TMRBL65.4EMS"
-    ],
-    "engine_codes": [
-      "16M33G2D2/6",
-      "16M33G4D2/6"
-    ],
-    "certificates": [
-      "PMRBL65.4EMS-002",
-      "RMRBL65.4EMS-002",
-      "SMRBL65.4EMS-001",
-      "TMRBL65.4EMS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1680,
-    "rated_power_kw_max": 1893,
-    "displacements_l": [
-      52.308
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
-    "mapped_database_brands": [
-      "Baudouin"
-    ],
-    "epa_model": "16M55",
-    "normalized_model": "16M55",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PMRBL109.EMS",
-      "RMRBL109.EMS",
-      "SMRBL109.EMS",
-      "TMRBL109.EMS"
-    ],
-    "engine_codes": [
-      "16M55G2D2/6",
-      "16M55G2D2/S",
-      "16M55G3D2/6",
-      "16M55G4D2/6",
-      "16M55G5D2/6",
-      "16M55G6D2/6",
-      "16M55G7D2/6",
-      "16M55G8D2/6"
-    ],
-    "certificates": [
-      "PMRBL109.EMS-001",
-      "RMRBL109.EMS-001",
-      "SMRBL109.EMS-002",
-      "TMRBL109.EMS-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2960,
-    "rated_power_kw_max": 3600,
-    "displacements_l": [
-      87.537
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
-    "mapped_database_brands": [
-      "Baudouin"
-    ],
-    "epa_model": "20M33",
-    "normalized_model": "20M33",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PMRBL65.4EMS",
-      "RMRBL65.4EMS",
-      "SMRBL65.4EMS",
-      "TMRBL65.4EMS"
-    ],
-    "engine_codes": [
-      "20M33G2D2/6",
-      "20M33G4D2/6",
-      "20M33G6D2/6"
-    ],
-    "certificates": [
-      "PMRBL65.4EMS-002",
-      "RMRBL65.4EMS-002",
-      "SMRBL65.4EMS-001",
-      "TMRBL65.4EMS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2027,
-    "rated_power_kw_max": 2460,
-    "displacements_l": [
-      65.384
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
-    "mapped_database_brands": [
-      "Baudouin"
-    ],
-    "epa_model": "20M55",
-    "normalized_model": "20M55",
-    "first_model_year": 2025,
-    "latest_model_year": 2026,
-    "model_years": [
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "SMRBL109.EMS",
-      "TMRBL109.EMS"
-    ],
-    "engine_codes": [
-      "20M55G2D2/6",
-      "20M55G2D2/S",
-      "20M55G4D2/6",
-      "20M55G6D2/6"
-    ],
-    "certificates": [
-      "SMRBL109.EMS-002",
-      "TMRBL109.EMS-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3905,
-    "rated_power_kw_max": 4550,
-    "displacements_l": [
-      109.42200000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
-    "mapped_database_brands": [
-      "Baudouin"
-    ],
-    "epa_model": "20M61",
-    "normalized_model": "20M61",
-    "first_model_year": 2026,
-    "latest_model_year": 2026,
-    "model_years": [
-      2026
-    ],
-    "engine_families": [
-      "TMRBL122.EMS"
-    ],
-    "engine_codes": [
-      "20M61G2D2/6",
-      "20M61G3D2/6",
-      "20M61G4D2/6",
-      "20M61G6D2/6"
-    ],
-    "certificates": [
-      "TMRBL122.EMS-001"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 4850,
-    "rated_power_kw_max": 5450,
-    "displacements_l": [
-      121.917
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
-    "mapped_database_brands": [
-      "Baudouin"
-    ],
-    "epa_model": "6M33",
-    "normalized_model": "6M33",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PMRBL65.4EMS",
-      "RMRBL65.4EMS",
-      "SMRBL65.4EMS",
-      "TMRBL65.4EMS"
-    ],
-    "engine_codes": [
-      "6M33G10D2/6",
-      "6M33G12D2/6",
-      "6M33G8D2/6"
-    ],
-    "certificates": [
-      "PMRBL65.4EMS-002",
-      "RMRBL65.4EMS-002",
-      "SMRBL65.4EMS-001",
-      "TMRBL65.4EMS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 670,
-    "rated_power_kw_max": 726,
-    "displacements_l": [
-      19.615000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Societe Internationale des Moteurs-Baudouin",
-    "mapped_database_brands": [
-      "Baudouin"
-    ],
-    "epa_model": "8M33",
-    "normalized_model": "8M33",
-    "first_model_year": 2023,
-    "latest_model_year": 2026,
-    "model_years": [
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "PMRBL65.4EMS",
-      "RMRBL65.4EMS",
-      "SMRBL65.4EMS",
-      "TMRBL65.4EMS"
-    ],
-    "engine_codes": [
-      "8M33G4D2/6",
-      "8M33G5D2/6",
-      "8M33G6D2/6"
-    ],
-    "certificates": [
-      "PMRBL65.4EMS-002",
-      "RMRBL65.4EMS-002",
-      "SMRBL65.4EMS-001",
-      "TMRBL65.4EMS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 800,
-    "rated_power_kw_max": 946,
-    "displacements_l": [
-      26.154
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "Volvo Construction Equipment",
     "mapped_database_brands": [],
     "epa_model": "D16J",
@@ -41137,212 +42170,6 @@
     "rated_power_kw_max": 39,
     "displacements_l": [
       1.826
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "6135",
-    "normalized_model": "6135",
-    "first_model_year": 2011,
-    "latest_model_year": 2025,
-    "model_years": [
-      2011,
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "BJDXL13.5201",
-      "CJDXL13.5201",
-      "DJDXL13.5103",
-      "DJDXL13.5201",
-      "EJDXL13.5103",
-      "EJDXL13.5132",
-      "EJDXL13.5300",
-      "FJDXL13.5103",
-      "FJDXL13.5132",
-      "FJDXL13.5146",
-      "FJDXL13.5300",
-      "GJDXL13.5103",
-      "GJDXL13.5132",
-      "GJDXL13.5146",
-      "GJDXL13.5300",
-      "GJDXL13.5310",
-      "GJDXL13.5314",
-      "HJDXL13.5103",
-      "HJDXL13.5132",
-      "HJDXL13.5146",
-      "HJDXL13.5201",
-      "HJDXL13.5310",
-      "HJDXL13.5314",
-      "JJDXL13.5103",
-      "JJDXL13.5132",
-      "JJDXL13.5146",
-      "JJDXL13.5201",
-      "JJDXL13.5310",
-      "JJDXL13.5314",
-      "KJDXL13.5103",
-      "KJDXL13.5132",
-      "KJDXL13.5146",
-      "KJDXL13.5310",
-      "KJDXL13.5314",
-      "LJDXL13.5103",
-      "LJDXL13.5132",
-      "LJDXL13.5146",
-      "LJDXL13.5310",
-      "LJDXL13.5314",
-      "MJDXL13.5103",
-      "MJDXL13.5132",
-      "MJDXL13.5146",
-      "MJDXL13.5310",
-      "MJDXL13.5314",
-      "NJDXL13.5103",
-      "NJDXL13.5132",
-      "NJDXL13.5146",
-      "NJDXL13.5310",
-      "NJDXL13.5314",
-      "PJDXL13.5103",
-      "PJDXL13.5132",
-      "PJDXL13.5146",
-      "PJDXL13.5310",
-      "PJDXL13.5314",
-      "RJDXL13.5103",
-      "RJDXL13.5132",
-      "RJDXL13.5146",
-      "RJDXL13.5310",
-      "RJDXL13.5314",
-      "SJDXL13.5103",
-      "SJDXL13.5132",
-      "SJDXL13.5146",
-      "SJDXL13.5310",
-      "SJDXL13.5314"
-    ],
-    "engine_codes": [
-      "6135HDW08",
-      "6135HDW10",
-      "6135HDW22",
-      "6135HF485S",
-      "6135HF485T",
-      "6135HF485U",
-      "6135HFG06A",
-      "6135HFG09-A",
-      "6135HFG09-B",
-      "6135HFG09-C",
-      "6135HFG09A",
-      "6135HFG09B",
-      "6135HFG09C",
-      "6135HFG75A",
-      "6135HFG84A",
-      "6135HFG84B",
-      "6135HFG95A",
-      "6135HFG95B",
-      "6135HFG95C",
-      "6135HPRNT4"
-    ],
-    "certificates": [
-      "BJDXL13.5201-002",
-      "CJDXL13.5201-013-R01",
-      "DJDXL13.5103-006",
-      "DJDXL13.5201-011",
-      "EJDXL13.5103-014",
-      "EJDXL13.5132-015",
-      "EJDXL13.5300-002",
-      "FJDXL13.5103-008",
-      "FJDXL13.5132-010",
-      "FJDXL13.5146-009",
-      "FJDXL13.5300-017",
-      "GJDXL13.5103-008",
-      "GJDXL13.5132-010",
-      "GJDXL13.5146-009",
-      "GJDXL13.5300-022",
-      "GJDXL13.5310-023",
-      "GJDXL13.5314-030",
-      "HJDXL13.5103-011",
-      "HJDXL13.5132-009",
-      "HJDXL13.5146-008",
-      "HJDXL13.5201-001",
-      "HJDXL13.5310-021",
-      "HJDXL13.5314-015",
-      "JJDXL13.5103-010",
-      "JJDXL13.5132-016",
-      "JJDXL13.5146-011",
-      "JJDXL13.5201-022",
-      "JJDXL13.5310-021",
-      "JJDXL13.5314-028",
-      "KJDXL13.5103-007",
-      "KJDXL13.5132-026",
-      "KJDXL13.5146-008",
-      "KJDXL13.5310-024",
-      "KJDXL13.5314-013",
-      "LJDXL13.5103-011",
-      "LJDXL13.5132-008",
-      "LJDXL13.5146-009",
-      "LJDXL13.5310-024",
-      "LJDXL13.5314-019",
-      "MJDXL13.5103-007",
-      "MJDXL13.5132-009",
-      "MJDXL13.5146-008",
-      "MJDXL13.5310-025",
-      "MJDXL13.5314-016",
-      "NJDXL13.5103-009",
-      "NJDXL13.5132-010",
-      "NJDXL13.5146-008",
-      "NJDXL13.5310-020",
-      "NJDXL13.5314-026",
-      "PJDXL13.5103-012",
-      "PJDXL13.5132-006",
-      "PJDXL13.5146-007",
-      "PJDXL13.5310-026",
-      "PJDXL13.5314-022",
-      "RJDXL13.5103-008",
-      "RJDXL13.5132-010",
-      "RJDXL13.5146-009",
-      "RJDXL13.5310-027",
-      "RJDXL13.5314-024",
-      "SJDXL13.5103-010",
-      "SJDXL13.5132-009",
-      "SJDXL13.5146-008",
-      "SJDXL13.5310-024",
-      "SJDXL13.5314-025"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 2.0",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 345,
-    "rated_power_kw_max": 563,
-    "displacements_l": [
-      13.548
     ],
     "match_status": "not_found",
     "database_matches": [],

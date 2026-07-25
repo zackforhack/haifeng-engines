@@ -23,6 +23,10 @@ export interface FilterParams {
 // alt-fuel), gasoline and unknown fuels match neither broad bucket but are still selectable via
 // the granular Fuel Type dropdown.
 const GAS_FUEL = /natural gas|biogas|biomethane|coal gas|cng|lng|lpg|propane/i
+// Full engine rows include nested PDF metadata. Keep each response below
+// Next.js's 2 MB data-cache entry limit so static generation can reuse it.
+const ENGINE_FETCH_PAGE = 500
+
 export function matchesFuel(fuelType: string | null | undefined, fuel: 'diesel' | 'gas'): boolean {
   const ft = fuelType ?? ''
   return fuel === 'gas' ? GAS_FUEL.test(ft) : /diesel/i.test(ft)
@@ -75,7 +79,6 @@ function representativeKwe(e: Engine): number | null {
 }
 
 export async function filterEngines(params: FilterParams): Promise<Engine[]> {
-  const PAGE = 1000
   const all: Engine[] = []
   let from = 0
 
@@ -113,11 +116,11 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
       q = q.order('brand').order('model')
     }
 
-    const { data, error } = await q.range(from, from + PAGE - 1)
+    const { data, error } = await q.range(from, from + ENGINE_FETCH_PAGE - 1)
     if (error) throw error
     all.push(...(data ?? []))
-    if (!data || data.length < PAGE) break
-    from += PAGE
+    if (!data || data.length < ENGINE_FETCH_PAGE) break
+    from += ENGINE_FETCH_PAGE
   }
 
   // Post-fetch filters
