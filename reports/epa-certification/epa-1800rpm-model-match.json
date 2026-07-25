@@ -32999,11 +32999,11 @@
     "displacements_l": [
       17.535
     ],
-    "match_status": "exact_brand_match",
+    "match_status": "certification_alias_match",
     "database_matches": [
       {
         "brand": "MTU",
-        "model": "10V1600G70S 3D",
+        "model": "10V1600G70S",
         "slug": "mtu-10v1600g70s-3d",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 3",
@@ -36370,8 +36370,8 @@
         "brand": "MTU",
         "model": "MTU 12V4000 G43",
         "slug": "mtu-12v4000-g43",
-        "rpm_rated": 1500,
-        "emissions_standard": "Unregulated",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -36434,8 +36434,8 @@
         "brand": "MTU",
         "model": "MTU 12V4000 G83",
         "slug": "mtu-12v4000-g83",
-        "rpm_rated": 1500,
-        "emissions_standard": "Unregulated",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -36738,8 +36738,8 @@
         "brand": "MTU",
         "model": "MTU 16V4000 G43",
         "slug": "mtu-16v4000-g43",
-        "rpm_rated": 1500,
-        "emissions_standard": "Unregulated",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -36802,8 +36802,8 @@
         "brand": "MTU",
         "model": "MTU 16V4000 G83",
         "slug": "mtu-16v4000-g83",
-        "rpm_rated": 1500,
-        "emissions_standard": "Unregulated",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -36875,8 +36875,8 @@
         "brand": "MTU",
         "model": "MTU 16V4000 G83L",
         "slug": "mtu-16v4000-g83l",
-        "rpm_rated": 1500,
-        "emissions_standard": "Unregulated",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -37002,8 +37002,8 @@
         "brand": "MTU",
         "model": "MTU 20V4000 G43",
         "slug": "mtu-20v4000-g43",
-        "rpm_rated": 1500,
-        "emissions_standard": "Unregulated",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -37066,8 +37066,8 @@
         "brand": "MTU",
         "model": "MTU 20V4000 G83",
         "slug": "mtu-20v4000-g83",
-        "rpm_rated": 1500,
-        "emissions_standard": "Unregulated",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -37131,8 +37131,8 @@
         "brand": "MTU",
         "model": "MTU 20V4000 G83L",
         "slug": "mtu-20v4000-g83l",
-        "rpm_rated": 1500,
-        "emissions_standard": "Unregulated",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -38049,11 +38049,11 @@
     "displacements_l": [
       17.535
     ],
-    "match_status": "certification_alias_match",
+    "match_status": "exact_brand_match",
     "database_matches": [
       {
         "brand": "MTU",
-        "model": "10V1600G70S 3D",
+        "model": "10V1600G70S",
         "slug": "mtu-10v1600g70s-3d",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 3",
@@ -42240,6 +42240,2365 @@
         "slug": "yanmar-4tnv98ct-gge",
         "rpm_rated": 1800,
         "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Komatsu Ltd.",
+    "mapped_database_brands": [
+      "Komatsu"
+    ],
+    "epa_model": "SAA6D170E2-3",
+    "normalized_model": "SAA6D170E23",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CKLXL23.2FD5",
+      "DKLXL23.2FD5",
+      "EKLXL23.2FD5",
+      "FKLXL23.2FD5"
+    ],
+    "engine_codes": [
+      "2C02",
+      "2C04",
+      "2C06",
+      "2G01",
+      "2G03",
+      "2G05"
+    ],
+    "certificates": [
+      "CKLXL23.2FD5-005",
+      "DKLXL23.2FD5-007",
+      "EKLXL23.2FD5-005",
+      "FKLXL23.2FD5-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 567,
+    "rated_power_kw_max": 910,
+    "displacements_l": [
+      23.152
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Komatsu",
+        "model": "SAA6D170E2-3",
+        "slug": "komatsu-saa6d170e2-3",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "2682/1800",
+    "normalized_model": "26821800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL06.6PJ1",
+      "DPKXL06.6PJ1",
+      "EPKXL06.6PJ1",
+      "FPKXL06.6PJ1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL06.6PJ1-013",
+      "DPKXL06.6PJ1-007",
+      "EPKXL06.6PJ1-015",
+      "FPKXL06.6PJ1-021"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 135,
+    "rated_power_kw_max": 172,
+    "displacements_l": [
+      6.598000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "2682/1800",
+        "slug": "perkins-2682-1800",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "2690/1800",
+    "normalized_model": "26901800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL06.6PJ1",
+      "DPKXL06.6PJ1",
+      "EPKXL06.6PJ1",
+      "FPKXL06.6PJ1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL06.6PJ1-013",
+      "DPKXL06.6PJ1-007",
+      "EPKXL06.6PJ1-015",
+      "FPKXL06.6PJ1-021"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 139,
+    "rated_power_kw_max": 162,
+    "displacements_l": [
+      6.598000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "2690/1800",
+        "slug": "perkins-2690-1800",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "2694/1800",
+    "normalized_model": "26941800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL06.6PJ1",
+      "DPKXL06.6PJ1",
+      "EPKXL06.6PJ1",
+      "FPKXL06.6PJ1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL06.6PJ1-013",
+      "DPKXL06.6PJ1-007",
+      "EPKXL06.6PJ1-015",
+      "FPKXL06.6PJ1-021"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 205,
+    "rated_power_kw_max": 205,
+    "displacements_l": [
+      6.598000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "2694/1800",
+        "slug": "perkins-2694-1800",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3036/1800",
+    "normalized_model": "30361800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL06.6PJ1",
+      "DPKXL06.6PJ1",
+      "EPKXL06.6PJ1",
+      "FPKXL06.6PJ1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL06.6PJ1-013",
+      "DPKXL06.6PJ1-007",
+      "EPKXL06.6PJ1-015",
+      "FPKXL06.6PJ1-021"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 151,
+    "rated_power_kw_max": 151,
+    "displacements_l": [
+      6.598000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "3036/1800",
+        "slug": "perkins-3036-1800",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3318/1800",
+    "normalized_model": "33181800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL06.6PJ1",
+      "DPKXL06.6PJ1",
+      "EPKXL06.6PJ1",
+      "FPKXL06.6PJ1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL06.6PJ1-013",
+      "DPKXL06.6PJ1-007",
+      "EPKXL06.6PJ1-015",
+      "FPKXL06.6PJ1-021"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 151,
+    "rated_power_kw_max": 151,
+    "displacements_l": [
+      6.598000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "3318/1800",
+        "slug": "perkins-3318-1800",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3454/1800",
+    "normalized_model": "34541800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL04.4NL1",
+      "DPKXL04.4NL1",
+      "EPKXL04.4NL1",
+      "FPKXL04.4NL1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL04.4NL1-008",
+      "DPKXL04.4NL1-011",
+      "EPKXL04.4NL1-011",
+      "FPKXL04.4NL1-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 64,
+    "rated_power_kw_max": 64,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "3454/1800",
+        "slug": "perkins-3454-1800",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3662/1800",
+    "normalized_model": "36621800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL04.4MK1",
+      "DPKXL04.4MK1",
+      "EPKXL04.4MK1",
+      "FPKXL04.4MK1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL04.4MK1-002-R01",
+      "DPKXL04.4MK1-014",
+      "EPKXL04.4MK1-006",
+      "FPKXL04.4MK1-015"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 3.4",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 71,
+    "rated_power_kw_max": 71,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1204E-E44TA(C4.4)",
+        "slug": "perkins-1204e-e44ta-c4-4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / Euro Stage IIIB",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3688/1800",
+    "normalized_model": "36881800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL7.01BL1",
+      "DPKXL7.01BL1",
+      "EPKXL7.01BL1",
+      "FPKXL7.01BL1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL7.01BL1-016-R01",
+      "DPKXL7.01BL1-016",
+      "EPKXL7.01BL1-016",
+      "FPKXL7.01BL1-009"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 2.0",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 180,
+    "rated_power_kw_max": 180,
+    "displacements_l": [
+      7.014
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "3688/1800",
+        "slug": "perkins-3688-1800",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3690/1800",
+    "normalized_model": "36901800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL7.01BL1",
+      "DPKXL7.01BL1",
+      "EPKXL7.01BL1",
+      "FPKXL7.01BL1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL7.01BL1-016-R01",
+      "DPKXL7.01BL1-016",
+      "EPKXL7.01BL1-016",
+      "FPKXL7.01BL1-009"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 2.0",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 152,
+    "rated_power_kw_max": 152,
+    "displacements_l": [
+      7.014
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "3690/1800",
+        "slug": "perkins-3690-1800",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3728/1800",
+    "normalized_model": "37281800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL7.01BL1",
+      "DPKXL7.01BL1",
+      "EPKXL7.01BL1",
+      "FPKXL7.01BL1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL7.01BL1-016-R01",
+      "DPKXL7.01BL1-016",
+      "EPKXL7.01BL1-016",
+      "FPKXL7.01BL1-009"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 2.0",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 184,
+    "rated_power_kw_max": 184,
+    "displacements_l": [
+      7.014
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "3728/1800",
+        "slug": "perkins-3728-1800",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3730/1800",
+    "normalized_model": "37301800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL7.01BL1",
+      "DPKXL7.01BL1",
+      "EPKXL7.01BL1",
+      "FPKXL7.01BL1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL7.01BL1-016-R01",
+      "DPKXL7.01BL1-016",
+      "EPKXL7.01BL1-016",
+      "FPKXL7.01BL1-009"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 2.0",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 239,
+    "rated_power_kw_max": 239,
+    "displacements_l": [
+      7.014
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "3730/1800",
+        "slug": "perkins-3730-1800",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3790/1800",
+    "normalized_model": "37901800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL04.4ML1",
+      "DPKXL04.4ML1",
+      "EPKXL04.4ML1",
+      "FPKXL04.4ML1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL04.4ML1-003-R01",
+      "DPKXL04.4ML1-017",
+      "EPKXL04.4ML1-007",
+      "FPKXL04.4ML1-002"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 3.4",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 129,
+    "rated_power_kw_max": 129,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1204E-E44TTA(C4.4)",
+        "slug": "perkins-1204e-e44tta-c4-4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / Euro Stage IIIB",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3792/1800",
+    "normalized_model": "37921800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL04.4MK1",
+      "DPKXL04.4MK1",
+      "EPKXL04.4MK1",
+      "FPKXL04.4MK1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL04.4MK1-002-R01",
+      "DPKXL04.4MK1-014",
+      "EPKXL04.4MK1-006",
+      "FPKXL04.4MK1-015"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 3.4",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 82,
+    "rated_power_kw_max": 82,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1204E-E44TA(C4.4)",
+        "slug": "perkins-1204e-e44ta-c4-4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / Euro Stage IIIB",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "3862/1800",
+    "normalized_model": "38621800",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CPKXL04.4ML1",
+      "DPKXL04.4ML1",
+      "EPKXL04.4ML1",
+      "FPKXL04.4ML1"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CPKXL04.4ML1-003-R01",
+      "DPKXL04.4ML1-017",
+      "EPKXL04.4ML1-007",
+      "FPKXL04.4ML1-002"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 3.4",
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 122,
+    "rated_power_kw_max": 122,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1204E-E44TTA(C4.4)",
+        "slug": "perkins-1204e-e44tta-c4-4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / Euro Stage IIIB",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "10V1600G70S 3B",
+    "normalized_model": "10V1600G70S3B",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL14.0ZWK",
+      "DMDDL14.0ZWK",
+      "EMDDL14.0ZWK",
+      "FMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7244"
+    ],
+    "certificates": [
+      "CMDDL14.0ZWK-004",
+      "DMDDL14.0ZWK-005",
+      "EMDDL14.0ZWK-005",
+      "FMDDL14.0ZWK-004"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 511,
+    "rated_power_kw_max": 511,
+    "displacements_l": [
+      17.535
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G70S",
+        "slug": "mtu-10v1600g70s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000G43 3B",
+    "normalized_model": "12V4000G433B",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7003"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1520,
+    "rated_power_kw_max": 1520,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 12V4000 G43",
+        "slug": "mtu-12v4000-g43",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000G43 3D",
+    "normalized_model": "12V4000G433D",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7001"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1736,
+    "rated_power_kw_max": 1736,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 12V4000 G43",
+        "slug": "mtu-12v4000-g43",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000G43 3F",
+    "normalized_model": "12V4000G433F",
+    "first_model_year": 2015,
+    "latest_model_year": 2015,
+    "model_years": [
+      2015
+    ],
+    "engine_families": [
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7276"
+    ],
+    "certificates": [
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1520,
+    "rated_power_kw_max": 1520,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 12V4000 G43",
+        "slug": "mtu-12v4000-g43",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000G83 3B",
+    "normalized_model": "12V4000G833B",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7002"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1736,
+    "rated_power_kw_max": 1736,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 12V4000 G83",
+        "slug": "mtu-12v4000-g83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000G83 3D",
+    "normalized_model": "12V4000G833D",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7000"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1910,
+    "rated_power_kw_max": 1910,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 12V4000 G83",
+        "slug": "mtu-12v4000-g83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000G83 3F",
+    "normalized_model": "12V4000G833F",
+    "first_model_year": 2015,
+    "latest_model_year": 2015,
+    "model_years": [
+      2015
+    ],
+    "engine_families": [
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7277"
+    ],
+    "certificates": [
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1736,
+    "rated_power_kw_max": 1736,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 12V4000 G83",
+        "slug": "mtu-12v4000-g83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V4000P83",
+    "normalized_model": "12V4000P83",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7116"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 1848,
+    "rated_power_kw_max": 1848,
+    "displacements_l": [
+      57.199000000000005
+    ],
+    "match_status": "brand_prefix_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 12V4000 P83",
+        "slug": "mtu-12v4000-p83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V4000G43 3B",
+    "normalized_model": "16V4000G433B",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7007"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2020,
+    "rated_power_kw_max": 2020,
+    "displacements_l": [
+      76.265
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 16V4000 G43",
+        "slug": "mtu-16v4000-g43",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V4000G43 3D",
+    "normalized_model": "16V4000G433D",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7005"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2280,
+    "rated_power_kw_max": 2280,
+    "displacements_l": [
+      76.265
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 16V4000 G43",
+        "slug": "mtu-16v4000-g43",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V4000G43 3F",
+    "normalized_model": "16V4000G433F",
+    "first_model_year": 2015,
+    "latest_model_year": 2015,
+    "model_years": [
+      2015
+    ],
+    "engine_families": [
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7278"
+    ],
+    "certificates": [
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2020,
+    "rated_power_kw_max": 2020,
+    "displacements_l": [
+      76.265
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 16V4000 G43",
+        "slug": "mtu-16v4000-g43",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V4000G83 3B",
+    "normalized_model": "16V4000G833B",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7006"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2280,
+    "rated_power_kw_max": 2280,
+    "displacements_l": [
+      76.265
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 16V4000 G83",
+        "slug": "mtu-16v4000-g83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V4000G83 3D",
+    "normalized_model": "16V4000G833D",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7004"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2500,
+    "rated_power_kw_max": 2500,
+    "displacements_l": [
+      76.265
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 16V4000 G83",
+        "slug": "mtu-16v4000-g83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V4000G83 3F",
+    "normalized_model": "16V4000G833F",
+    "first_model_year": 2015,
+    "latest_model_year": 2015,
+    "model_years": [
+      2015
+    ],
+    "engine_families": [
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7279"
+    ],
+    "certificates": [
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2280,
+    "rated_power_kw_max": 2280,
+    "displacements_l": [
+      76.265
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 16V4000 G83",
+        "slug": "mtu-16v4000-g83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V4000G83L 3D",
+    "normalized_model": "16V4000G83L3D",
+    "first_model_year": 2015,
+    "latest_model_year": 2015,
+    "model_years": [
+      2015
+    ],
+    "engine_families": [
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7252"
+    ],
+    "certificates": [
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2740,
+    "rated_power_kw_max": 2740,
+    "displacements_l": [
+      76.265
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 16V4000 G83L",
+        "slug": "mtu-16v4000-g83l",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V4000P83",
+    "normalized_model": "16V4000P83",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7117"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2464,
+    "rated_power_kw_max": 2464,
+    "displacements_l": [
+      76.265
+    ],
+    "match_status": "brand_prefix_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 16V4000 P83",
+        "slug": "mtu-16v4000-p83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "20V4000G43 3B",
+    "normalized_model": "20V4000G433B",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7013"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2490,
+    "rated_power_kw_max": 2490,
+    "displacements_l": [
+      95.33200000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 20V4000 G43",
+        "slug": "mtu-20v4000-g43",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "20V4000G43 3D",
+    "normalized_model": "20V4000G433D",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7010"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2740,
+    "rated_power_kw_max": 2740,
+    "displacements_l": [
+      95.33200000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 20V4000 G43",
+        "slug": "mtu-20v4000-g43",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "20V4000G43 3F",
+    "normalized_model": "20V4000G433F",
+    "first_model_year": 2015,
+    "latest_model_year": 2015,
+    "model_years": [
+      2015
+    ],
+    "engine_families": [
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7280"
+    ],
+    "certificates": [
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2490,
+    "rated_power_kw_max": 2490,
+    "displacements_l": [
+      95.33200000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 20V4000 G43",
+        "slug": "mtu-20v4000-g43",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "20V4000G83 3B",
+    "normalized_model": "20V4000G833B",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7012"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2740,
+    "rated_power_kw_max": 2740,
+    "displacements_l": [
+      95.33200000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 20V4000 G83",
+        "slug": "mtu-20v4000-g83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "20V4000G83 3D",
+    "normalized_model": "20V4000G833D",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7009"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3010,
+    "rated_power_kw_max": 3010,
+    "displacements_l": [
+      95.33200000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 20V4000 G83",
+        "slug": "mtu-20v4000-g83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "20V4000G83 3F",
+    "normalized_model": "20V4000G833F",
+    "first_model_year": 2015,
+    "latest_model_year": 2015,
+    "model_years": [
+      2015
+    ],
+    "engine_families": [
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7281"
+    ],
+    "certificates": [
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2740,
+    "rated_power_kw_max": 2740,
+    "displacements_l": [
+      95.33200000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 20V4000 G83",
+        "slug": "mtu-20v4000-g83",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "20V4000G83L 3B",
+    "normalized_model": "20V4000G83L3B",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7011"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3010,
+    "rated_power_kw_max": 3010,
+    "displacements_l": [
+      95.33200000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 20V4000 G83L",
+        "slug": "mtu-20v4000-g83l",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "20V4000G83L 3D",
+    "normalized_model": "20V4000G83L3D",
+    "first_model_year": 2012,
+    "latest_model_year": 2015,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "engine_families": [
+      "CMDDL95.4XTR",
+      "DMDDL95.4XTR",
+      "EMDDL95.4XTR",
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7008"
+    ],
+    "certificates": [
+      "CMDDL95.4XTR-006-R01",
+      "DMDDL95.4XTR-006",
+      "EMDDL95.4XTR-006",
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3490,
+    "rated_power_kw_max": 3490,
+    "displacements_l": [
+      95.33200000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 20V4000 G83L",
+        "slug": "mtu-20v4000-g83l",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "20V4000G83L 3F",
+    "normalized_model": "20V4000G83L3F",
+    "first_model_year": 2015,
+    "latest_model_year": 2015,
+    "model_years": [
+      2015
+    ],
+    "engine_families": [
+      "FMDDL95.4XTR"
+    ],
+    "engine_codes": [
+      "7282"
+    ],
+    "certificates": [
+      "FMDDL95.4XTR-005"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 3010,
+    "rated_power_kw_max": 3010,
+    "displacements_l": [
+      95.33200000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "MTU 20V4000 G83L",
+        "slug": "mtu-20v4000-g83l",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -56975,62 +59334,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Komatsu Ltd.",
-    "mapped_database_brands": [
-      "Komatsu"
-    ],
-    "epa_model": "SAA6D170E2-3",
-    "normalized_model": "SAA6D170E23",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CKLXL23.2FD5",
-      "DKLXL23.2FD5",
-      "EKLXL23.2FD5",
-      "FKLXL23.2FD5"
-    ],
-    "engine_codes": [
-      "2C02",
-      "2C04",
-      "2C06",
-      "2G01",
-      "2G03",
-      "2G05"
-    ],
-    "certificates": [
-      "CKLXL23.2FD5-005",
-      "DKLXL23.2FD5-007",
-      "EKLXL23.2FD5-005",
-      "FKLXL23.2FD5-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 567,
-    "rated_power_kw_max": 910,
-    "displacements_l": [
-      23.152
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "Perkins Engines Co Ltd",
     "mapped_database_brands": [
       "Perkins"
@@ -57137,214 +59440,6 @@
     "mapped_database_brands": [
       "Perkins"
     ],
-    "epa_model": "2682/1800",
-    "normalized_model": "26821800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL06.6PJ1",
-      "DPKXL06.6PJ1",
-      "EPKXL06.6PJ1",
-      "FPKXL06.6PJ1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL06.6PJ1-013",
-      "DPKXL06.6PJ1-007",
-      "EPKXL06.6PJ1-015",
-      "FPKXL06.6PJ1-021"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 135,
-    "rated_power_kw_max": 172,
-    "displacements_l": [
-      6.598000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "2690/1800",
-    "normalized_model": "26901800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL06.6PJ1",
-      "DPKXL06.6PJ1",
-      "EPKXL06.6PJ1",
-      "FPKXL06.6PJ1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL06.6PJ1-013",
-      "DPKXL06.6PJ1-007",
-      "EPKXL06.6PJ1-015",
-      "FPKXL06.6PJ1-021"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 139,
-    "rated_power_kw_max": 162,
-    "displacements_l": [
-      6.598000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "2694/1800",
-    "normalized_model": "26941800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL06.6PJ1",
-      "DPKXL06.6PJ1",
-      "EPKXL06.6PJ1",
-      "FPKXL06.6PJ1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL06.6PJ1-013",
-      "DPKXL06.6PJ1-007",
-      "EPKXL06.6PJ1-015",
-      "FPKXL06.6PJ1-021"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 205,
-    "rated_power_kw_max": 205,
-    "displacements_l": [
-      6.598000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "3036/1800",
-    "normalized_model": "30361800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL06.6PJ1",
-      "DPKXL06.6PJ1",
-      "EPKXL06.6PJ1",
-      "FPKXL06.6PJ1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL06.6PJ1-013",
-      "DPKXL06.6PJ1-007",
-      "EPKXL06.6PJ1-015",
-      "FPKXL06.6PJ1-021"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 151,
-    "rated_power_kw_max": 151,
-    "displacements_l": [
-      6.598000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
     "epa_model": "3038/1800",
     "normalized_model": "30381800",
     "first_model_year": 2012,
@@ -57386,379 +59481,6 @@
     "rated_power_kw_max": 130,
     "displacements_l": [
       6.598000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "3318/1800",
-    "normalized_model": "33181800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL06.6PJ1",
-      "DPKXL06.6PJ1",
-      "EPKXL06.6PJ1",
-      "FPKXL06.6PJ1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL06.6PJ1-013",
-      "DPKXL06.6PJ1-007",
-      "EPKXL06.6PJ1-015",
-      "FPKXL06.6PJ1-021"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 151,
-    "rated_power_kw_max": 151,
-    "displacements_l": [
-      6.598000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "3454/1800",
-    "normalized_model": "34541800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL04.4NL1",
-      "DPKXL04.4NL1",
-      "EPKXL04.4NL1",
-      "FPKXL04.4NL1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL04.4NL1-008",
-      "DPKXL04.4NL1-011",
-      "EPKXL04.4NL1-011",
-      "FPKXL04.4NL1-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 64,
-    "rated_power_kw_max": 64,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "3662/1800",
-    "normalized_model": "36621800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL04.4MK1",
-      "DPKXL04.4MK1",
-      "EPKXL04.4MK1",
-      "FPKXL04.4MK1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL04.4MK1-002-R01",
-      "DPKXL04.4MK1-014",
-      "EPKXL04.4MK1-006",
-      "FPKXL04.4MK1-015"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 3.4",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 71,
-    "rated_power_kw_max": 71,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "3688/1800",
-    "normalized_model": "36881800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL7.01BL1",
-      "DPKXL7.01BL1",
-      "EPKXL7.01BL1",
-      "FPKXL7.01BL1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL7.01BL1-016-R01",
-      "DPKXL7.01BL1-016",
-      "EPKXL7.01BL1-016",
-      "FPKXL7.01BL1-009"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 2.0",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 180,
-    "rated_power_kw_max": 180,
-    "displacements_l": [
-      7.014
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "3690/1800",
-    "normalized_model": "36901800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL7.01BL1",
-      "DPKXL7.01BL1",
-      "EPKXL7.01BL1",
-      "FPKXL7.01BL1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL7.01BL1-016-R01",
-      "DPKXL7.01BL1-016",
-      "EPKXL7.01BL1-016",
-      "FPKXL7.01BL1-009"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 2.0",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 152,
-    "rated_power_kw_max": 152,
-    "displacements_l": [
-      7.014
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "3728/1800",
-    "normalized_model": "37281800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL7.01BL1",
-      "DPKXL7.01BL1",
-      "EPKXL7.01BL1",
-      "FPKXL7.01BL1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL7.01BL1-016-R01",
-      "DPKXL7.01BL1-016",
-      "EPKXL7.01BL1-016",
-      "FPKXL7.01BL1-009"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 2.0",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 184,
-    "rated_power_kw_max": 184,
-    "displacements_l": [
-      7.014
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "3730/1800",
-    "normalized_model": "37301800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL7.01BL1",
-      "DPKXL7.01BL1",
-      "EPKXL7.01BL1",
-      "FPKXL7.01BL1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL7.01BL1-016-R01",
-      "DPKXL7.01BL1-016",
-      "EPKXL7.01BL1-016",
-      "FPKXL7.01BL1-009"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 2.0",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 239,
-    "rated_power_kw_max": 239,
-    "displacements_l": [
-      7.014
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -58029,165 +59751,6 @@
     "mapped_database_brands": [
       "Perkins"
     ],
-    "epa_model": "3790/1800",
-    "normalized_model": "37901800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL04.4ML1",
-      "DPKXL04.4ML1",
-      "EPKXL04.4ML1",
-      "FPKXL04.4ML1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL04.4ML1-003-R01",
-      "DPKXL04.4ML1-017",
-      "EPKXL04.4ML1-007",
-      "FPKXL04.4ML1-002"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 3.4",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 129,
-    "rated_power_kw_max": 129,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "3792/1800",
-    "normalized_model": "37921800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL04.4MK1",
-      "DPKXL04.4MK1",
-      "EPKXL04.4MK1",
-      "FPKXL04.4MK1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL04.4MK1-002-R01",
-      "DPKXL04.4MK1-014",
-      "EPKXL04.4MK1-006",
-      "FPKXL04.4MK1-015"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 3.4",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 82,
-    "rated_power_kw_max": 82,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "3862/1800",
-    "normalized_model": "38621800",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CPKXL04.4ML1",
-      "DPKXL04.4ML1",
-      "EPKXL04.4ML1",
-      "FPKXL04.4ML1"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CPKXL04.4ML1-003-R01",
-      "DPKXL04.4ML1-017",
-      "EPKXL04.4ML1-007",
-      "FPKXL04.4ML1-002"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 3.4",
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 122,
-    "rated_power_kw_max": 122,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
     "epa_model": "4296/1800",
     "normalized_model": "42961800",
     "first_model_year": 2014,
@@ -58268,1216 +59831,6 @@
     "rated_power_kw_max": 180,
     "displacements_l": [
       7.014
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "10V1600G70S 3B",
-    "normalized_model": "10V1600G70S3B",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL14.0ZWK",
-      "DMDDL14.0ZWK",
-      "EMDDL14.0ZWK",
-      "FMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7244"
-    ],
-    "certificates": [
-      "CMDDL14.0ZWK-004",
-      "DMDDL14.0ZWK-005",
-      "EMDDL14.0ZWK-005",
-      "FMDDL14.0ZWK-004"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 511,
-    "rated_power_kw_max": 511,
-    "displacements_l": [
-      17.535
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "10V1600G70S 3D",
-        "slug": "mtu-10v1600g70s-3d",
-        "similarity": 0.923
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000G43 3B",
-    "normalized_model": "12V4000G433B",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7003"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1520,
-    "rated_power_kw_max": 1520,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000G43 3D",
-    "normalized_model": "12V4000G433D",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7001"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1736,
-    "rated_power_kw_max": 1736,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000G43 3F",
-    "normalized_model": "12V4000G433F",
-    "first_model_year": 2015,
-    "latest_model_year": 2015,
-    "model_years": [
-      2015
-    ],
-    "engine_families": [
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7276"
-    ],
-    "certificates": [
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1520,
-    "rated_power_kw_max": 1520,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000G83 3B",
-    "normalized_model": "12V4000G833B",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7002"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1736,
-    "rated_power_kw_max": 1736,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000G83 3D",
-    "normalized_model": "12V4000G833D",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7000"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1910,
-    "rated_power_kw_max": 1910,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000G83 3F",
-    "normalized_model": "12V4000G833F",
-    "first_model_year": 2015,
-    "latest_model_year": 2015,
-    "model_years": [
-      2015
-    ],
-    "engine_families": [
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7277"
-    ],
-    "certificates": [
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1736,
-    "rated_power_kw_max": 1736,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V4000P83",
-    "normalized_model": "12V4000P83",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7116"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 1848,
-    "rated_power_kw_max": 1848,
-    "displacements_l": [
-      57.199000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V4000G43 3B",
-    "normalized_model": "16V4000G433B",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7007"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2020,
-    "rated_power_kw_max": 2020,
-    "displacements_l": [
-      76.265
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V4000G43 3D",
-    "normalized_model": "16V4000G433D",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7005"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2280,
-    "rated_power_kw_max": 2280,
-    "displacements_l": [
-      76.265
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V4000G43 3F",
-    "normalized_model": "16V4000G433F",
-    "first_model_year": 2015,
-    "latest_model_year": 2015,
-    "model_years": [
-      2015
-    ],
-    "engine_families": [
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7278"
-    ],
-    "certificates": [
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2020,
-    "rated_power_kw_max": 2020,
-    "displacements_l": [
-      76.265
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V4000G83 3B",
-    "normalized_model": "16V4000G833B",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7006"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2280,
-    "rated_power_kw_max": 2280,
-    "displacements_l": [
-      76.265
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V4000G83 3D",
-    "normalized_model": "16V4000G833D",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7004"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2500,
-    "rated_power_kw_max": 2500,
-    "displacements_l": [
-      76.265
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V4000G83 3F",
-    "normalized_model": "16V4000G833F",
-    "first_model_year": 2015,
-    "latest_model_year": 2015,
-    "model_years": [
-      2015
-    ],
-    "engine_families": [
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7279"
-    ],
-    "certificates": [
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2280,
-    "rated_power_kw_max": 2280,
-    "displacements_l": [
-      76.265
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V4000G83L 3D",
-    "normalized_model": "16V4000G83L3D",
-    "first_model_year": 2015,
-    "latest_model_year": 2015,
-    "model_years": [
-      2015
-    ],
-    "engine_families": [
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7252"
-    ],
-    "certificates": [
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2740,
-    "rated_power_kw_max": 2740,
-    "displacements_l": [
-      76.265
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V4000P83",
-    "normalized_model": "16V4000P83",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7117"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2464,
-    "rated_power_kw_max": 2464,
-    "displacements_l": [
-      76.265
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "20V4000G43 3B",
-    "normalized_model": "20V4000G433B",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7013"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2490,
-    "rated_power_kw_max": 2490,
-    "displacements_l": [
-      95.33200000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "20V4000G43 3D",
-    "normalized_model": "20V4000G433D",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7010"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2740,
-    "rated_power_kw_max": 2740,
-    "displacements_l": [
-      95.33200000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "20V4000G43 3F",
-    "normalized_model": "20V4000G433F",
-    "first_model_year": 2015,
-    "latest_model_year": 2015,
-    "model_years": [
-      2015
-    ],
-    "engine_families": [
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7280"
-    ],
-    "certificates": [
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2490,
-    "rated_power_kw_max": 2490,
-    "displacements_l": [
-      95.33200000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "20V4000G83 3B",
-    "normalized_model": "20V4000G833B",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7012"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2740,
-    "rated_power_kw_max": 2740,
-    "displacements_l": [
-      95.33200000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "20V4000G83 3D",
-    "normalized_model": "20V4000G833D",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7009"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3010,
-    "rated_power_kw_max": 3010,
-    "displacements_l": [
-      95.33200000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "20V4000G83 3F",
-    "normalized_model": "20V4000G833F",
-    "first_model_year": 2015,
-    "latest_model_year": 2015,
-    "model_years": [
-      2015
-    ],
-    "engine_families": [
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7281"
-    ],
-    "certificates": [
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2740,
-    "rated_power_kw_max": 2740,
-    "displacements_l": [
-      95.33200000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "20V4000G83L 3B",
-    "normalized_model": "20V4000G83L3B",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7011"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3010,
-    "rated_power_kw_max": 3010,
-    "displacements_l": [
-      95.33200000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "20V4000G83L 3D",
-    "normalized_model": "20V4000G83L3D",
-    "first_model_year": 2012,
-    "latest_model_year": 2015,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015
-    ],
-    "engine_families": [
-      "CMDDL95.4XTR",
-      "DMDDL95.4XTR",
-      "EMDDL95.4XTR",
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7008"
-    ],
-    "certificates": [
-      "CMDDL95.4XTR-006-R01",
-      "DMDDL95.4XTR-006",
-      "EMDDL95.4XTR-006",
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3490,
-    "rated_power_kw_max": 3490,
-    "displacements_l": [
-      95.33200000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "20V4000G83L 3F",
-    "normalized_model": "20V4000G83L3F",
-    "first_model_year": 2015,
-    "latest_model_year": 2015,
-    "model_years": [
-      2015
-    ],
-    "engine_families": [
-      "FMDDL95.4XTR"
-    ],
-    "engine_codes": [
-      "7282"
-    ],
-    "certificates": [
-      "FMDDL95.4XTR-005"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 3010,
-    "rated_power_kw_max": 3010,
-    "displacements_l": [
-      95.33200000000001
     ],
     "match_status": "not_found",
     "database_matches": [],

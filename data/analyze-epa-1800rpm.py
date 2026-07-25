@@ -173,10 +173,8 @@ CERTIFICATION_ALIASES = {
         "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
         "S6RPTAW",
     ): ("Mitsubishi", "S6R-Y2PTAW"),
-    ("Rolls-Royce Solutions America Inc", "10V1600G70S"): (
-        "MTU",
-        "10V1600G70S 3D",
-    ),
+    ("Rolls-Royce Solutions America Inc", "10V1600G70S3B"): ("MTU", "10V1600G70S"),
+    ("Rolls-Royce Solutions America Inc", "10V1600G70S3D"): ("MTU", "10V1600G70S"),
     ("Rolls-Royce Solutions America Inc", "6R1600G10S"): (
         "MTU",
         "6R1600G10S 3B",
@@ -265,6 +263,28 @@ CERTIFICATION_ALIASES = {
     ("Rolls-Royce Solutions America Inc", "12V2000P823B3C"): ("MTU", "MTU 12V2000 P82"),
     ("Rolls-Royce Solutions America Inc", "16V2000P823A"): ("MTU", "MTU 16V2000 P82"),
     ("Rolls-Royce Solutions America Inc", "16V2000P823B3C"): ("MTU", "MTU 16V2000 P82"),
+    ("Rolls-Royce Solutions America Inc", "12V4000G433B"): ("MTU", "MTU 12V4000 G43"),
+    ("Rolls-Royce Solutions America Inc", "12V4000G433D"): ("MTU", "MTU 12V4000 G43"),
+    ("Rolls-Royce Solutions America Inc", "12V4000G433F"): ("MTU", "MTU 12V4000 G43"),
+    ("Rolls-Royce Solutions America Inc", "12V4000G833B"): ("MTU", "MTU 12V4000 G83"),
+    ("Rolls-Royce Solutions America Inc", "12V4000G833D"): ("MTU", "MTU 12V4000 G83"),
+    ("Rolls-Royce Solutions America Inc", "12V4000G833F"): ("MTU", "MTU 12V4000 G83"),
+    ("Rolls-Royce Solutions America Inc", "16V4000G433B"): ("MTU", "MTU 16V4000 G43"),
+    ("Rolls-Royce Solutions America Inc", "16V4000G433D"): ("MTU", "MTU 16V4000 G43"),
+    ("Rolls-Royce Solutions America Inc", "16V4000G433F"): ("MTU", "MTU 16V4000 G43"),
+    ("Rolls-Royce Solutions America Inc", "16V4000G833B"): ("MTU", "MTU 16V4000 G83"),
+    ("Rolls-Royce Solutions America Inc", "16V4000G833D"): ("MTU", "MTU 16V4000 G83"),
+    ("Rolls-Royce Solutions America Inc", "16V4000G833F"): ("MTU", "MTU 16V4000 G83"),
+    ("Rolls-Royce Solutions America Inc", "16V4000G83L3D"): ("MTU", "MTU 16V4000 G83L"),
+    ("Rolls-Royce Solutions America Inc", "20V4000G433B"): ("MTU", "MTU 20V4000 G43"),
+    ("Rolls-Royce Solutions America Inc", "20V4000G433D"): ("MTU", "MTU 20V4000 G43"),
+    ("Rolls-Royce Solutions America Inc", "20V4000G433F"): ("MTU", "MTU 20V4000 G43"),
+    ("Rolls-Royce Solutions America Inc", "20V4000G833B"): ("MTU", "MTU 20V4000 G83"),
+    ("Rolls-Royce Solutions America Inc", "20V4000G833D"): ("MTU", "MTU 20V4000 G83"),
+    ("Rolls-Royce Solutions America Inc", "20V4000G833F"): ("MTU", "MTU 20V4000 G83"),
+    ("Rolls-Royce Solutions America Inc", "20V4000G83L3B"): ("MTU", "MTU 20V4000 G83L"),
+    ("Rolls-Royce Solutions America Inc", "20V4000G83L3D"): ("MTU", "MTU 20V4000 G83L"),
+    ("Rolls-Royce Solutions America Inc", "20V4000G83L3F"): ("MTU", "MTU 20V4000 G83L"),
     ("Liebherr Machines Bulle SA", "D9812G"): ("Liebherr", "D9812"),
     ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
     ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
@@ -302,6 +322,10 @@ CERTIFICATION_ALIASES = {
     ("Perkins Engines Co Ltd", "1106DE70TAC7P1"): ("Perkins", "1106D-E70TAG5"),
     ("Perkins Engines Co Ltd", "1204JE44TTAC4P4"): ("Perkins", "1204J-E44TTAG2"),
     ("Perkins Engines Co Ltd", "1206JE70TTAC7P1"): ("Perkins", "1206J-E70TTAG4"),
+    ("Perkins Engines Co Ltd", "36621800"): ("Perkins", "1204E-E44TA(C4.4)"),
+    ("Perkins Engines Co Ltd", "37901800"): ("Perkins", "1204E-E44TTA(C4.4)"),
+    ("Perkins Engines Co Ltd", "37921800"): ("Perkins", "1204E-E44TA(C4.4)"),
+    ("Perkins Engines Co Ltd", "38621800"): ("Perkins", "1204E-E44TTA(C4.4)"),
     ("Yanmar Power Technology Co., Ltd.", "3TNGAG"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TNGA"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TNGP"): ("Yanmar", "4TNV98C-GGE"),
@@ -750,6 +774,14 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         and result["mapped_database_brands"]
         and "Constant Speed" in result["engine_operations"]
     ]
+    legacy_2015_priority = [
+        result
+        for result in results
+        if result["match_status"] not in REPRESENTED_STATUSES
+        and result["latest_model_year"] == 2015
+        and result["mapped_database_brands"]
+        and "Constant Speed" in result["engine_operations"]
+    ]
     generator_priority_brands = defaultdict(int)
     for result in generator_priority:
         for brand in result["mapped_database_brands"]:
@@ -806,6 +838,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Legacy 2018 review queue (mapped brand, constant speed): **{len(legacy_2018_priority):,}**",
         f"- Legacy 2017 review queue (mapped brand, constant speed): **{len(legacy_2017_priority):,}**",
         f"- Legacy 2016 review queue (mapped brand, constant speed): **{len(legacy_2016_priority):,}**",
+        f"- Legacy 2015 review queue (mapped brand, constant speed): **{len(legacy_2015_priority):,}**",
         "",
         "The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use "
         "1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second "

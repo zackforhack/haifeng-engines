@@ -19,17 +19,17 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **256**
-- Matches after removing a redundant database brand prefix: **32**
+- Exact manufacturer/brand matches: **267**
+- Matches after removing a redundant database brand prefix: **34**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **132**
+- Reviewed certification aliases: **159**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **198**
+- Exact matches whose database page uses 1800 as its primary RPM: **209**
 - Exact model under another database brand: **7**
-- Not represented after reviewed matching rules: **430**
+- Not represented after reviewed matching rules: **390**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **63.9%**
+- Represented coverage within mapped manufacturers: **68.7%**
 - Unmatched models with a 2024+ certification: **130**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
@@ -39,6 +39,7 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 - Legacy 2018 review queue (mapped brand, constant speed): **0**
 - Legacy 2017 review queue (mapped brand, constant speed): **0**
 - Legacy 2016 review queue (mapped brand, constant speed): **0**
+- Legacy 2015 review queue (mapped brand, constant speed): **0**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -66,9 +67,9 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 
 | EPA manufacturer | Database brand | EPA models | Exact | Brand prefix | Base trims | Cert. trims | Cert. aliases | Families | Other-brand exact | Not found | Probable |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Rolls-Royce Solutions America Inc | MTU | 155 | 41 | 32 | 0 | 0 | 47 | 0 | 0 | 35 | 2 |
+| Rolls-Royce Solutions America Inc | MTU | 155 | 41 | 34 | 0 | 0 | 70 | 0 | 0 | 10 | 1 |
 | Cummins Inc. | Cummins | 80 | 48 | 0 | 0 | 0 | 3 | 14 | 0 | 15 | 1 |
-| Perkins Engines Co Ltd | Perkins | 79 | 19 | 0 | 0 | 0 | 17 | 10 | 2 | 31 | 4 |
+| Perkins Engines Co Ltd | Perkins | 79 | 29 | 0 | 0 | 0 | 21 | 10 | 2 | 17 | 4 |
 | FPT Industrial S.p.A. | FPT | 68 | 12 | 0 | 0 | 0 | 12 | 0 | 0 | 44 | 1 |
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 53 | 0 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 7 | 0 | 0 | 44 | 4 | 0 | 0 | 1 | 0 |
@@ -85,7 +86,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Deere & Company | John Deere | 19 | 3 | 0 | 0 | 0 | 0 | 5 | 0 | 11 | 5 |
 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | Mitsubishi | 19 | 10 | 0 | 0 | 0 | 6 | 0 | 0 | 3 | 0 |
 | Scania CV AB | Scania | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | 0 |
-| Komatsu Ltd. | Komatsu | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | 1 |
+| Komatsu Ltd. | Komatsu | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 9 | 1 |
 | Mercedes Benz | Unmapped | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | 0 |
 | KUKJE MACHINERY CO., LTD | Unmapped | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 9 | 0 |
 | Societe Internationale des Moteurs-Baudouin | Baudouin | 9 | 2 | 0 | 0 | 0 | 0 | 7 | 0 | 0 | 0 |
