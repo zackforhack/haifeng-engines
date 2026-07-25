@@ -20,18 +20,18 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **300**
+- Exact manufacturer/brand matches: **304**
 - Matches after removing a redundant database brand prefix: **34**
 - Slash-suffixed certification trims represented by a verified base model: **20**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **179**
-- Fully represented certification groups: **7**
+- Reviewed certification aliases: **219**
+- Fully represented certification groups: **8**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **242**
-- Exact model under another database brand: **7**
-- Not represented after reviewed matching rules: **324**
-- Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **76.6%**
+- Exact matches whose database page uses 1800 as its primary RPM: **246**
+- Exact model under another database brand: **2**
+- Not represented after reviewed matching rules: **284**
+- Models from mapped manufacturers: **892**
+- Represented coverage within mapped manufacturers: **76.7%**
 - Unmatched models with a 2024+ certification: **130**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
@@ -77,7 +77,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Cummins Inc. | Cummins | 80 | 48 | 0 | 0 | 0 | 6 | 14 | 0 | 12 | 1 |
 | Perkins Engines Co Ltd | Perkins | 79 | 31 | 0 | 0 | 0 | 21 | 10 | 2 | 15 | 2 |
 | FPT Industrial S.p.A. | FPT | 68 | 12 | 0 | 0 | 0 | 12 | 0 | 0 | 44 | 1 |
-| IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 53 | 0 |
+| IHI Agri-Tech Corporation | Perkins, Shibaura | 58 | 4 | 0 | 0 | 0 | 40 | 0 | 0 | 13 | 2 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 7 | 0 | 0 | 44 | 4 | 0 | 0 | 1 | 0 |
 | Discovery Energy, LLC. | Kohler | 48 | 5 | 0 | 14 | 0 | 4 | 0 | 0 | 25 | 0 |
 | Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 8 | 0 | 0 | 0 | 26 | 5 | 0 | 3 | 0 |

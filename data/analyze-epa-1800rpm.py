@@ -32,6 +32,7 @@ MANUFACTURER_BRANDS = {
     "FAW JIEFANG AUTOMOTIVE CO.,LTD,WUXI DIESEL ENGINE WORKS": {"FAWDE"},
     "FPT Industrial S.p.A.": {"FPT"},
     "HD Construction Equipment Co., Ltd.": {"Hyundai"},
+    "IHI Agri-Tech Corporation": {"Perkins", "Shibaura"},
     "Isuzu Motors Limited": {"Isuzu"},
     "Kirloskar Americas Corporation": {"Kirloskar"},
     "Komatsu Ltd.": {"Komatsu"},
@@ -119,6 +120,71 @@ REVIEWED_FAMILY_MATCHES = {
 }
 
 CERTIFICATION_ALIASES = {
+    ("IHI Agri-Tech Corporation", "402F05"): (
+        "Perkins",
+        "402F-05(C0.5)",
+    ),
+    ("IHI Agri-Tech Corporation", "403D11"): ("Shibaura", "S773L-F"),
+    ("IHI Agri-Tech Corporation", "403D15"): ("Shibaura", "N843-F"),
+    ("IHI Agri-Tech Corporation", "403F07"): ("Shibaura", "E673L-F"),
+    ("IHI Agri-Tech Corporation", "403F11"): ("Shibaura", "S773L-F"),
+    ("IHI Agri-Tech Corporation", "403F15"): ("Shibaura", "N843-F"),
+    ("IHI Agri-Tech Corporation", "404D22"): ("Perkins", "404D-22G"),
+    ("IHI Agri-Tech Corporation", "404D22TA"): ("Perkins", "404D-22TAG"),
+    ("IHI Agri-Tech Corporation", "404D22TAC2P2"): (
+        "Perkins",
+        "404D-22TAG",
+    ),
+    ("IHI Agri-Tech Corporation", "C0P5"): (
+        "Perkins",
+        "402F-05(C0.5)",
+    ),
+    ("IHI Agri-Tech Corporation", "C0P7"): ("Shibaura", "E673L-F"),
+    ("IHI Agri-Tech Corporation", "C1P1"): ("Shibaura", "S773L-F"),
+    ("IHI Agri-Tech Corporation", "C1P5"): ("Shibaura", "N843-F"),
+    ("IHI Agri-Tech Corporation", "361800C"): ("Shibaura", "N4LDI-TA"),
+    ("IHI Agri-Tech Corporation", "4LT301800C"): ("Shibaura", "N4LDI-T"),
+    ("IHI Agri-Tech Corporation", "ER49DI1800C"): (
+        "Perkins",
+        "404F-E22TA",
+    ),
+    ("IHI Agri-Tech Corporation", "ER49DI1800CCD"): (
+        "Perkins",
+        "404F-E22TA",
+    ),
+    ("IHI Agri-Tech Corporation", "101800C"): ("Shibaura", "E673L-C"),
+    ("IHI Agri-Tech Corporation", "271800C"): ("Shibaura", "N844-D"),
+    ("IHI Agri-Tech Corporation", "3LT201800C"): ("Shibaura", "N3LDI-T"),
+    ("IHI Agri-Tech Corporation", "GG71800C"): (
+        "Perkins",
+        "402F-05(C0.5)",
+    ),
+    ("IHI Agri-Tech Corporation", "GH101800C"): ("Shibaura", "E673L-C"),
+    ("IHI Agri-Tech Corporation", "GK221800C"): ("Shibaura", "N843-F"),
+    ("IHI Agri-Tech Corporation", "151800C"): ("Shibaura", "S773L-D"),
+    ("IHI Agri-Tech Corporation", "2003"): ("Shibaura", "N843-D"),
+    ("IHI Agri-Tech Corporation", "211800C"): ("Shibaura", "N843-D"),
+    ("IHI Agri-Tech Corporation", "321800C"): ("Shibaura", "N844L-D"),
+    ("IHI Agri-Tech Corporation", "E3618C"): ("Shibaura", "E673L-F"),
+    ("IHI Agri-Tech Corporation", "E3718C"): ("Shibaura", "E673L-F"),
+    ("IHI Agri-Tech Corporation", "EG51800C"): (
+        "Perkins",
+        "402F-05(C0.5)",
+    ),
+    ("IHI Agri-Tech Corporation", "EH81800C"): ("Shibaura", "E673L-F"),
+    ("IHI Agri-Tech Corporation", "EH8P1800C"): ("Shibaura", "E673L-F"),
+    ("IHI Agri-Tech Corporation", "GJ131500CA"): ("Shibaura", "S773L-F"),
+    ("IHI Agri-Tech Corporation", "GJ131800C"): ("Shibaura", "S773L-F"),
+    ("IHI Agri-Tech Corporation", "GJ161800C"): ("Shibaura", "S773L-F"),
+    ("IHI Agri-Tech Corporation", "GN291800C"): ("Perkins", "404D-22G"),
+    ("IHI Agri-Tech Corporation", "GN331800C"): ("Perkins", "404D-22G"),
+    ("IHI Agri-Tech Corporation", "GR491800C"): ("Perkins", "404D-22TAG"),
+    ("IHI Agri-Tech Corporation", "EG41800C"): (
+        "Perkins",
+        "402F-05(C0.5)",
+    ),
+    ("IHI Agri-Tech Corporation", "EG61800C"): ("Shibaura", "E673L-F"),
+    ("IHI Agri-Tech Corporation", "EH61800C"): ("Shibaura", "E673L-F"),
     (
         "Discovery Energy, LLC.",
         "KSDNATG140318",
@@ -397,6 +463,11 @@ CERTIFICATION_ALIASES = {
 # model names. A group is represented only when every reviewed commercial model
 # listed here exists in the catalog.
 CERTIFICATION_ALIAS_GROUPS = {
+    ("IHI Agri-Tech Corporation", "C2P2"): (
+        ("Perkins", "404D-22G"),
+        ("Perkins", "404D-22TAG"),
+        ("Perkins", "404F-E22TA"),
+    ),
     ("Lister Petter Limited", "408"): (
         ("Lister Petter", "LPWS2"),
         ("Lister Petter", "LPWS3"),

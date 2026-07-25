@@ -36108,6 +36108,1253 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "402F-05",
+    "normalized_model": "402F05",
+    "first_model_year": 2017,
+    "latest_model_year": 2020,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "HH3XL.761F1C",
+      "JH3XL.761F1C",
+      "KH3XL.761F1C",
+      "LH3XL.761F1C"
+    ],
+    "engine_codes": [
+      "EG5-1800C",
+      "EG5/1800C"
+    ],
+    "certificates": [
+      "HH3XL.761F1C-022-R01",
+      "JH3XL.761F1C-018-R01",
+      "KH3XL.761F1C-007",
+      "LH3XL.761F1C-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 4,
+    "rated_power_kw_max": 4,
+    "displacements_l": [
+      0.508
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "402F-05(C0.5)",
+        "slug": "perkins-402f-05-c0-5",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "403D-11",
+    "normalized_model": "403D11",
+    "first_model_year": 2017,
+    "latest_model_year": 2020,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "HH3XL1.13LCS",
+      "JH3XL1.13LCS",
+      "KH3XL1.13LCS",
+      "LH3XL1.13LCS"
+    ],
+    "engine_codes": [
+      "GJ13/1800C",
+      "GJ16/1800C"
+    ],
+    "certificates": [
+      "HH3XL1.13LCS-003-R01",
+      "JH3XL1.13LCS-001-R01",
+      "KH3XL1.13LCS-003",
+      "LH3XL1.13LCS-015-R01"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 12,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "S773L-F",
+        "slug": "shibaura-s773l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "403D-15",
+    "normalized_model": "403D15",
+    "first_model_year": 2017,
+    "latest_model_year": 2020,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "HH3XL1.49N3C",
+      "JH3XL1.49N3C",
+      "KH3XL1.49N3C",
+      "LH3XL1.49N3C"
+    ],
+    "engine_codes": [
+      "GK22/1800C"
+    ],
+    "certificates": [
+      "HH3XL1.49N3C-005-R01",
+      "JH3XL1.49N3C-005-R01",
+      "KH3XL1.49N3C-005",
+      "LH3XL1.49N3C-017-R01"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 16,
+    "rated_power_kw_max": 16,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N843-F",
+        "slug": "shibaura-n843-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "403F-07",
+    "normalized_model": "403F07",
+    "first_model_year": 2017,
+    "latest_model_year": 2020,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "HH3XL.761F1C",
+      "JH3XL.761F1C",
+      "KH3XL.761F1C",
+      "LH3XL.761F1C"
+    ],
+    "engine_codes": [
+      "6546/1800",
+      "6576/1800",
+      "EH8-1800C",
+      "EH8/1800C"
+    ],
+    "certificates": [
+      "HH3XL.761F1C-022-R01",
+      "JH3XL.761F1C-018-R01",
+      "KH3XL.761F1C-007",
+      "LH3XL.761F1C-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 6,
+    "rated_power_kw_max": 7,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-F",
+        "slug": "shibaura-e673l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "403F-11",
+    "normalized_model": "403F11",
+    "first_model_year": 2013,
+    "latest_model_year": 2020,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "DH3XL1.13F2C",
+      "EH3XL1.13F2C",
+      "FH3XL1.13F2C",
+      "GH3XL1.13F2C",
+      "HH3XL1.13F2C",
+      "JH3XL1.13F2C",
+      "KH3XL1.13F2C",
+      "LH3XL1.13F2C"
+    ],
+    "engine_codes": [
+      "6600/1800",
+      "6602/1800",
+      "EJ10-1800C",
+      "EJ13-1800C",
+      "EJ13/1800C",
+      "EJ14-1800C"
+    ],
+    "certificates": [
+      "DH3XL1.13F2C-029",
+      "EH3XL1.13F2C-011",
+      "FH3XL1.13F2C-022",
+      "GH3XL1.13F2C-026",
+      "HH3XL1.13F2C-024",
+      "JH3XL1.13F2C-007-R01",
+      "KH3XL1.13F2C-011",
+      "LH3XL1.13F2C-003"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 11,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "S773L-F",
+        "slug": "shibaura-s773l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "403F-15",
+    "normalized_model": "403F15",
+    "first_model_year": 2013,
+    "latest_model_year": 2020,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "DH3XL1.49F2C",
+      "EH3XL1.49F2C",
+      "FH3XL1.49F2C",
+      "GH3XL1.49F2C",
+      "HH3XL1.49F2C",
+      "JH3XL1.49F2C",
+      "KH3XL1.49F2C",
+      "LH3XL1.49F2C"
+    ],
+    "engine_codes": [
+      "EK15-1800C",
+      "EK19-1800C",
+      "EK19/1800C",
+      "EK20-1800C",
+      "EK20/1800C"
+    ],
+    "certificates": [
+      "DH3XL1.49F2C-032",
+      "EH3XL1.49F2C-013",
+      "FH3XL1.49F2C-024",
+      "GH3XL1.49F2C-028",
+      "HH3XL1.49F2C-026",
+      "JH3XL1.49F2C-009-R01",
+      "KH3XL1.49F2C-013",
+      "LH3XL1.49F2C-010-R01"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 14,
+    "rated_power_kw_max": 15,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "403F-15",
+        "slug": "perkins-403f-15",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "404D-22",
+    "normalized_model": "404D22",
+    "first_model_year": 2017,
+    "latest_model_year": 2020,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "HH3XL2.22NLC",
+      "JH3XL2.22NLC",
+      "KH3XL2.22NLC",
+      "LH3XL2.22NLC"
+    ],
+    "engine_codes": [
+      "GN29/1800C",
+      "GN33/1800C"
+    ],
+    "certificates": [
+      "HH3XL2.22NLC-017-R01",
+      "JH3XL2.22NLC-006-R01",
+      "KH3XL2.22NLC-006",
+      "LH3XL2.22NLC-019-R01"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 22,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404D-22G",
+        "slug": "perkins-404d-22g",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "404D-22TA",
+    "normalized_model": "404D22TA",
+    "first_model_year": 2017,
+    "latest_model_year": 2020,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "HH3XL2.22TCC",
+      "JH3XL2.22TCC",
+      "KH3XL2.22TCC",
+      "LH3XL2.22TCC"
+    ],
+    "engine_codes": [
+      "GR49/1800C"
+    ],
+    "certificates": [
+      "HH3XL2.22TCC-019-R01",
+      "JH3XL2.22TCC-003-R01",
+      "KH3XL2.22TCC-002",
+      "LH3XL2.22TCC-007"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404D-22TAG",
+        "slug": "perkins-404d-22tag",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 4 Interim",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "404D-22TA(C2.2)",
+    "normalized_model": "404D22TAC2P2",
+    "first_model_year": 2019,
+    "latest_model_year": 2020,
+    "model_years": [
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "KH3XL2.22TCC",
+      "LH3XL2.22TCC"
+    ],
+    "engine_codes": [
+      "PARENT-GR49/1800C"
+    ],
+    "certificates": [
+      "KH3XL2.22TCC-002",
+      "LH3XL2.22TCC-007"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404D-22TAG",
+        "slug": "perkins-404d-22tag",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 4 Interim",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "C0.5",
+    "normalized_model": "C0P5",
+    "first_model_year": 2017,
+    "latest_model_year": 2020,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "HH3XL.761F1C",
+      "JH3XL.761F1C",
+      "KH3XL.761F1C",
+      "LH3XL.761F1C"
+    ],
+    "engine_codes": [
+      "EG5-1800C",
+      "EG5/1800C"
+    ],
+    "certificates": [
+      "HH3XL.761F1C-022-R01",
+      "JH3XL.761F1C-018-R01",
+      "KH3XL.761F1C-007",
+      "LH3XL.761F1C-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 4,
+    "rated_power_kw_max": 4,
+    "displacements_l": [
+      0.508
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "402F-05(C0.5)",
+        "slug": "perkins-402f-05-c0-5",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "C0.7",
+    "normalized_model": "C0P7",
+    "first_model_year": 2017,
+    "latest_model_year": 2020,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "HH3XL.761F1C",
+      "JH3XL.761F1C",
+      "KH3XL.761F1C",
+      "LH3XL.761F1C"
+    ],
+    "engine_codes": [
+      "6546/1800",
+      "6576/1800",
+      "EH8-1800C",
+      "EH8/1800C"
+    ],
+    "certificates": [
+      "HH3XL.761F1C-022-R01",
+      "JH3XL.761F1C-018-R01",
+      "KH3XL.761F1C-007",
+      "LH3XL.761F1C-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 6,
+    "rated_power_kw_max": 7,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-F",
+        "slug": "shibaura-e673l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "C1.1",
+    "normalized_model": "C1P1",
+    "first_model_year": 2013,
+    "latest_model_year": 2020,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "DH3XL1.13F2C",
+      "EH3XL1.13F2C",
+      "FH3XL1.13F2C",
+      "GH3XL1.13F2C",
+      "HH3XL1.13F2C",
+      "HH3XL1.13LCS",
+      "JH3XL1.13F2C",
+      "JH3XL1.13LCS",
+      "KH3XL1.13F2C",
+      "KH3XL1.13LCS",
+      "LH3XL1.13F2C",
+      "LH3XL1.13LCS"
+    ],
+    "engine_codes": [
+      "6600/1800",
+      "6602/1800",
+      "EJ10-1800C",
+      "EJ13-1800C",
+      "EJ13/1800C",
+      "EJ14-1800C",
+      "GJ13/1800C",
+      "GJ16/1800C"
+    ],
+    "certificates": [
+      "DH3XL1.13F2C-029",
+      "EH3XL1.13F2C-011",
+      "FH3XL1.13F2C-022",
+      "GH3XL1.13F2C-026",
+      "HH3XL1.13F2C-024",
+      "HH3XL1.13LCS-003-R01",
+      "JH3XL1.13F2C-007-R01",
+      "JH3XL1.13LCS-001-R01",
+      "KH3XL1.13F2C-011",
+      "KH3XL1.13LCS-003",
+      "LH3XL1.13F2C-003",
+      "LH3XL1.13LCS-015-R01"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 12,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "S773L-F",
+        "slug": "shibaura-s773l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "C1.5",
+    "normalized_model": "C1P5",
+    "first_model_year": 2013,
+    "latest_model_year": 2020,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "DH3XL1.49F2C",
+      "DH3XL1.49FTV",
+      "EH3XL1.49F2C",
+      "EH3XL1.49FTV",
+      "FH3XL1.49F2C",
+      "FH3XL1.49FTV",
+      "GH3XL1.49F2C",
+      "GH3XL1.49FTV",
+      "HH3XL1.49F2C",
+      "HH3XL1.49FTV",
+      "JH3XL1.49F2C",
+      "JH3XL1.49FTV",
+      "JH3XL1.49N3C",
+      "KH3XL1.49F2C",
+      "KH3XL1.49FTV",
+      "KH3XL1.49N3C",
+      "LH3XL1.49F2C",
+      "LH3XL1.49FTV",
+      "LH3XL1.49N3C"
+    ],
+    "engine_codes": [
+      "EK15-1800C",
+      "EK19-1800C",
+      "EK19/1800C",
+      "EK20-1800C",
+      "EK20/1800C",
+      "EL18-1800",
+      "EL25-1800",
+      "EL25/1800",
+      "GK22/1800C"
+    ],
+    "certificates": [
+      "DH3XL1.49F2C-032",
+      "DH3XL1.49FTV-026",
+      "EH3XL1.49F2C-013",
+      "EH3XL1.49FTV-029",
+      "FH3XL1.49F2C-024",
+      "FH3XL1.49FTV-026",
+      "GH3XL1.49F2C-028",
+      "GH3XL1.49FTV-030",
+      "HH3XL1.49F2C-026",
+      "HH3XL1.49FTV-028-R01",
+      "JH3XL1.49F2C-009-R01",
+      "JH3XL1.49FTV-011-R01",
+      "JH3XL1.49N3C-005-R01",
+      "KH3XL1.49F2C-013",
+      "KH3XL1.49FTV-015",
+      "KH3XL1.49N3C-005",
+      "LH3XL1.49F2C-010-R01",
+      "LH3XL1.49FTV-005",
+      "LH3XL1.49N3C-017-R01"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 14,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N843-F",
+        "slug": "shibaura-n843-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "C2.2",
+    "normalized_model": "C2P2",
+    "first_model_year": 2013,
+    "latest_model_year": 2020,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "DH3XL2.22NFV",
+      "EH3XL2.22NFV",
+      "FH3XL2.22NFV",
+      "GH3XL2.22NFV",
+      "HH3XL2.22NFV",
+      "HH3XL2.22NLC",
+      "HH3XL2.22NLT",
+      "HH3XL2.22TCC",
+      "HH3XL2.22TF3",
+      "JH3XL2.22NFV",
+      "JH3XL2.22NLC",
+      "JH3XL2.22NLT",
+      "JH3XL2.22TCC",
+      "JH3XL2.22TF3",
+      "KH3XL2.22NFV",
+      "KH3XL2.22NLC",
+      "KH3XL2.22NLT",
+      "KH3XL2.22TCC",
+      "KH3XL2.22TF3",
+      "LH3XL2.22NLC",
+      "LH3XL2.22NLT",
+      "LH3XL2.22TCC"
+    ],
+    "engine_codes": [
+      "EN33/1800",
+      "EP45/1800",
+      "GN29/1800C",
+      "GN33/1800C",
+      "GP45/1800",
+      "GR49/1800C"
+    ],
+    "certificates": [
+      "DH3XL2.22NFV-023",
+      "EH3XL2.22NFV-015",
+      "FH3XL2.22NFV-036",
+      "GH3XL2.22NFV-032",
+      "HH3XL2.22NFV-031-R01",
+      "HH3XL2.22NLC-017-R01",
+      "HH3XL2.22NLT-018-R01",
+      "HH3XL2.22TCC-019-R01",
+      "HH3XL2.22TF3-032-R01",
+      "JH3XL2.22NFV-014-R01",
+      "JH3XL2.22NLC-006-R01",
+      "JH3XL2.22NLT-002-R01",
+      "JH3XL2.22TCC-003-R01",
+      "JH3XL2.22TF3-015-R01",
+      "KH3XL2.22NFV-017",
+      "KH3XL2.22NLC-006",
+      "KH3XL2.22NLT-001",
+      "KH3XL2.22TCC-002",
+      "KH3XL2.22TF3-018",
+      "LH3XL2.22NLC-019-R01",
+      "LH3XL2.22NLT-006",
+      "LH3XL2.22TCC-007"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 22,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_group_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404D-22G",
+        "slug": "perkins-404d-22g",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Perkins",
+        "model": "404D-22TAG",
+        "slug": "perkins-404d-22tag",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 4 Interim",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Perkins",
+        "model": "404F-E22TA",
+        "slug": "perkins-404f-e22ta",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4 / Euro Stage IIIB",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "E673L-F",
+    "normalized_model": "E673LF",
+    "first_model_year": 2017,
+    "latest_model_year": 2020,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "HH3XL.761F1C",
+      "JH3XL.761F1C",
+      "KH3XL.761F1C",
+      "LH3XL.761F1C"
+    ],
+    "engine_codes": [
+      "E36-18C",
+      "E37-18C",
+      "PARENT-E37-18C"
+    ],
+    "certificates": [
+      "HH3XL.761F1C-022-R01",
+      "JH3XL.761F1C-018-R01",
+      "KH3XL.761F1C-007",
+      "LH3XL.761F1C-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 6,
+    "rated_power_kw_max": 7,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-F",
+        "slug": "shibaura-e673l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "N843-F",
+    "normalized_model": "N843F",
+    "first_model_year": 2013,
+    "latest_model_year": 2020,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "DH3XL1.49F2C",
+      "EH3XL1.49F2C",
+      "FH3XL1.49F2C",
+      "GH3XL1.49F2C",
+      "HH3XL1.49F2C",
+      "JH3XL1.49F2C",
+      "KH3XL1.49F2C",
+      "LH3XL1.49F2C"
+    ],
+    "engine_codes": [
+      "N315-18C",
+      "PARENT-N315-18C"
+    ],
+    "certificates": [
+      "DH3XL1.49F2C-032",
+      "EH3XL1.49F2C-013",
+      "FH3XL1.49F2C-024",
+      "GH3XL1.49F2C-028",
+      "HH3XL1.49F2C-026",
+      "JH3XL1.49F2C-009-R01",
+      "KH3XL1.49F2C-013",
+      "LH3XL1.49F2C-010-R01"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 15,
+    "rated_power_kw_max": 16,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N843-F",
+        "slug": "shibaura-n843-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "S773L-F",
+    "normalized_model": "S773LF",
+    "first_model_year": 2013,
+    "latest_model_year": 2020,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "engine_families": [
+      "DH3XL1.13F2C",
+      "EH3XL1.13F2C",
+      "FH3XL1.13F2C",
+      "GH3XL1.13F2C",
+      "HH3XL1.13F2C",
+      "JH3XL1.13F2C",
+      "KH3XL1.13F2C",
+      "LH3XL1.13F2C"
+    ],
+    "engine_codes": [
+      "PARENT-S311-18C",
+      "S310-18C",
+      "S311-18C"
+    ],
+    "certificates": [
+      "DH3XL1.13F2C-029",
+      "EH3XL1.13F2C-011",
+      "FH3XL1.13F2C-022",
+      "GH3XL1.13F2C-026",
+      "HH3XL1.13F2C-024",
+      "JH3XL1.13F2C-007-R01",
+      "KH3XL1.13F2C-011",
+      "LH3XL1.13F2C-003"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 11,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "S773L-F",
+        "slug": "shibaura-s773l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Perkins",
+        "model": "S773L-F",
+        "slug": "perkins-s773l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Perkins Engines Co Ltd",
     "mapped_database_brands": [
       "Perkins"
@@ -37431,6 +38678,250 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "361800C",
+    "normalized_model": "361800C",
+    "first_model_year": 2016,
+    "latest_model_year": 2019,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "GH3XL2.22TDI",
+      "HH3XL2.22TDI",
+      "JH3XL2.22TDI",
+      "KH3XL2.22TDI"
+    ],
+    "engine_codes": [
+      "N4LDI-TA"
+    ],
+    "certificates": [
+      "GH3XL2.22TDI-043",
+      "HH3XL2.22TDI-035-R01",
+      "JH3XL2.22TDI-020",
+      "KH3XL2.22TDI-023"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N4LDI-TA",
+        "slug": "shibaura-n4ldi-ta",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "4LT301800C",
+    "normalized_model": "4LT301800C",
+    "first_model_year": 2015,
+    "latest_model_year": 2019,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "FH3XL2.22TD3",
+      "GH3XL2.22TD3",
+      "HH3XL2.22TD3",
+      "JH3XL2.22TD3",
+      "KH3XL2.22TD3"
+    ],
+    "engine_codes": [
+      "N4LDI-T"
+    ],
+    "certificates": [
+      "FH3XL2.22TD3-043",
+      "GH3XL2.22TD3-023",
+      "HH3XL2.22TD3-036-R01",
+      "JH3XL2.22TD3-021",
+      "KH3XL2.22TD3-022"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 30,
+    "rated_power_kw_max": 30,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N4LDI-T",
+        "slug": "shibaura-n4ldi-t",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "ER49DI/1800C",
+    "normalized_model": "ER49DI1800C",
+    "first_model_year": 2016,
+    "latest_model_year": 2019,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "GH3XL2.22TDI",
+      "HH3XL2.22TDI",
+      "JH3XL2.22TDI",
+      "KH3XL2.22TDI"
+    ],
+    "engine_codes": [
+      "404F-E22TA",
+      "C2.2"
+    ],
+    "certificates": [
+      "GH3XL2.22TDI-043",
+      "HH3XL2.22TDI-035-R01",
+      "JH3XL2.22TDI-020",
+      "KH3XL2.22TDI-023"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404F-E22TA",
+        "slug": "perkins-404f-e22ta",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4 / Euro Stage IIIB",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "ER49DI/1800C-CD",
+    "normalized_model": "ER49DI1800CCD",
+    "first_model_year": 2018,
+    "latest_model_year": 2019,
+    "model_years": [
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "JH3XL2.22TDI",
+      "KH3XL2.22TDI"
+    ],
+    "engine_codes": [
+      "404F-E22TA",
+      "C2.2"
+    ],
+    "certificates": [
+      "JH3XL2.22TDI-020",
+      "KH3XL2.22TDI-023"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404F-E22TA",
+        "slug": "perkins-404f-e22ta",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4 / Euro Stage IIIB",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
     "mapped_database_brands": [
       "Hatz"
@@ -38699,6 +40190,406 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "10/1800C",
+    "normalized_model": "101800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CH3XL.507E2C",
+      "DH3XL.507E2C",
+      "EH3XL.507E2C",
+      "FH3XL.507E2C",
+      "GH3XL.507E2C",
+      "HH3XL.507E2C"
+    ],
+    "engine_codes": [
+      "E673L-C"
+    ],
+    "certificates": [
+      "CH3XL.507E2C-020",
+      "DH3XL.507E2C-001",
+      "EH3XL.507E2C-001",
+      "FH3XL.507E2C-001",
+      "GH3XL.507E2C-001",
+      "HH3XL.507E2C-001-R01"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 7,
+    "rated_power_kw_max": 7,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-C",
+        "slug": "shibaura-e673l-c",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "27/1800C",
+    "normalized_model": "271800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CH3XL2.00NCS",
+      "DH3XL2.00NCS",
+      "EH3XL2.00NCS",
+      "FH3XL2.00NCS",
+      "GH3XL2.00NCS",
+      "HH3XL2.00NCS"
+    ],
+    "engine_codes": [
+      "N844-D"
+    ],
+    "certificates": [
+      "CH3XL2.00NCS-012",
+      "DH3XL2.00NCS-004",
+      "EH3XL2.00NCS-008",
+      "FH3XL2.00NCS-012",
+      "GH3XL2.00NCS-012",
+      "HH3XL2.00NCS-013-R01"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 20,
+    "rated_power_kw_max": 20,
+    "displacements_l": [
+      1.995
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N844-D",
+        "slug": "shibaura-n844-d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "3LT201800C",
+    "normalized_model": "3LT201800C",
+    "first_model_year": 2015,
+    "latest_model_year": 2017,
+    "model_years": [
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "FH3XL2.22TD3",
+      "GH3XL2.22TD3",
+      "HH3XL2.22TD3"
+    ],
+    "engine_codes": [
+      "N3LDI-T"
+    ],
+    "certificates": [
+      "FH3XL2.22TD3-043",
+      "GH3XL2.22TD3-023",
+      "HH3XL2.22TD3-036-R01"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 20,
+    "rated_power_kw_max": 20,
+    "displacements_l": [
+      1.663
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N3LDI-T",
+        "slug": "shibaura-n3ldi-t",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "GG7/1800C",
+    "normalized_model": "GG71800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CH3XL.507E2C",
+      "DH3XL.507E2C",
+      "EH3XL.507E2C",
+      "FH3XL.507E2C",
+      "GH3XL.507E2C",
+      "HH3XL.507E2C"
+    ],
+    "engine_codes": [
+      "402D-05",
+      "C0.5"
+    ],
+    "certificates": [
+      "CH3XL.507E2C-020",
+      "DH3XL.507E2C-001",
+      "EH3XL.507E2C-001",
+      "FH3XL.507E2C-001",
+      "GH3XL.507E2C-001",
+      "HH3XL.507E2C-001-R01"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 5,
+    "rated_power_kw_max": 5,
+    "displacements_l": [
+      0.508
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "402F-05(C0.5)",
+        "slug": "perkins-402f-05-c0-5",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "GH10/1800C",
+    "normalized_model": "GH101800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CH3XL.507E2C",
+      "DH3XL.507E2C",
+      "EH3XL.507E2C",
+      "FH3XL.507E2C",
+      "GH3XL.507E2C",
+      "HH3XL.507E2C"
+    ],
+    "engine_codes": [
+      "403D-07",
+      "C0.7"
+    ],
+    "certificates": [
+      "CH3XL.507E2C-020",
+      "DH3XL.507E2C-001",
+      "EH3XL.507E2C-001",
+      "FH3XL.507E2C-001",
+      "GH3XL.507E2C-001",
+      "HH3XL.507E2C-001-R01"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 7,
+    "rated_power_kw_max": 7,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-C",
+        "slug": "shibaura-e673l-c",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "GK22/1800C",
+    "normalized_model": "GK221800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CH3XL1.49N3C",
+      "DH3XL1.49N3C",
+      "EH3XL1.49N3C",
+      "FH3XL1.49N3C",
+      "GH3XL1.49N3C",
+      "HH3XL1.49N3C"
+    ],
+    "engine_codes": [
+      "403D-15",
+      "C1.5"
+    ],
+    "certificates": [
+      "CH3XL1.49N3C-014",
+      "DH3XL1.49N3C-003",
+      "EH3XL1.49N3C-004",
+      "FH3XL1.49N3C-007",
+      "GH3XL1.49N3C-007",
+      "HH3XL1.49N3C-005-R01"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 16,
+    "rated_power_kw_max": 16,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N843-F",
+        "slug": "shibaura-n843-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Rolls-Royce Solutions America Inc",
     "mapped_database_brands": [
       "MTU"
@@ -39089,6 +40980,951 @@
         "slug": "mtu-12v1600g80s",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "15/1800C",
+    "normalized_model": "151800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "CH3XL1.13LCS",
+      "DH3XL1.13LCS",
+      "EH3XL1.13LCS",
+      "FH3XL1.13LCS",
+      "GH3XL1.13LCS"
+    ],
+    "engine_codes": [
+      "S773L-D"
+    ],
+    "certificates": [
+      "CH3XL1.13LCS-013",
+      "DH3XL1.13LCS-002",
+      "EH3XL1.13LCS-007",
+      "FH3XL1.13LCS-003",
+      "GH3XL1.13LCS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 11,
+    "rated_power_kw_max": 11,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "S773L-D",
+        "slug": "shibaura-s773l-d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "2003",
+    "normalized_model": "2003",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "CH3XL1.49N3C",
+      "DH3XL1.49N3C",
+      "EH3XL1.49N3C",
+      "FH3XL1.49N3C",
+      "GH3XL1.49N3C"
+    ],
+    "engine_codes": [
+      "N843-D"
+    ],
+    "certificates": [
+      "CH3XL1.49N3C-014",
+      "DH3XL1.49N3C-003",
+      "EH3XL1.49N3C-004",
+      "FH3XL1.49N3C-007",
+      "GH3XL1.49N3C-007"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 15,
+    "rated_power_kw_max": 15,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N843-D",
+        "slug": "shibaura-n843-d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "21/1800C",
+    "normalized_model": "211800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "CH3XL1.49N3C",
+      "DH3XL1.49N3C",
+      "EH3XL1.49N3C",
+      "FH3XL1.49N3C",
+      "GH3XL1.49N3C"
+    ],
+    "engine_codes": [
+      "N843-D"
+    ],
+    "certificates": [
+      "CH3XL1.49N3C-014",
+      "DH3XL1.49N3C-003",
+      "EH3XL1.49N3C-004",
+      "FH3XL1.49N3C-007",
+      "GH3XL1.49N3C-007"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 15,
+    "rated_power_kw_max": 15,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N843-D",
+        "slug": "shibaura-n843-d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "32/1800C",
+    "normalized_model": "321800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "CH3XL2.22NLC",
+      "DH3XL2.22NLC",
+      "EH3XL2.22NLC",
+      "FH3XL2.22NLC",
+      "GH3XL2.22NLC"
+    ],
+    "engine_codes": [
+      "N844L-D"
+    ],
+    "certificates": [
+      "CH3XL2.22NLC-018",
+      "DH3XL2.22NLC-005",
+      "EH3XL2.22NLC-002",
+      "FH3XL2.22NLC-016",
+      "GH3XL2.22NLC-016"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 24,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "N844L-D",
+        "slug": "shibaura-n844l-d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "E36-18C",
+    "normalized_model": "E3618C",
+    "first_model_year": 2013,
+    "latest_model_year": 2016,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "DH3XL.507F1C",
+      "EH3XL.761F1C",
+      "FH3XL.761F1C",
+      "GH3XL.761F1C"
+    ],
+    "engine_codes": [
+      "E673L-F"
+    ],
+    "certificates": [
+      "DH3XL.507F1C-028",
+      "EH3XL.761F1C-009",
+      "FH3XL.761F1C-021",
+      "GH3XL.761F1C-024"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 6,
+    "rated_power_kw_max": 6,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-F",
+        "slug": "shibaura-e673l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "E37-18C",
+    "normalized_model": "E3718C",
+    "first_model_year": 2013,
+    "latest_model_year": 2016,
+    "model_years": [
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "DH3XL.507F1C",
+      "EH3XL.761F1C",
+      "FH3XL.761F1C",
+      "GH3XL.761F1C"
+    ],
+    "engine_codes": [
+      "E673L-F"
+    ],
+    "certificates": [
+      "DH3XL.507F1C-028",
+      "EH3XL.761F1C-009",
+      "FH3XL.761F1C-021",
+      "GH3XL.761F1C-024"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 7,
+    "rated_power_kw_max": 7,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-F",
+        "slug": "shibaura-e673l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "EG5-1800C",
+    "normalized_model": "EG51800C",
+    "first_model_year": 2014,
+    "latest_model_year": 2016,
+    "model_years": [
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "EH3XL.761F1C",
+      "FH3XL.761F1C",
+      "GH3XL.761F1C"
+    ],
+    "engine_codes": [
+      "402F-05",
+      "C0.5"
+    ],
+    "certificates": [
+      "EH3XL.761F1C-009",
+      "FH3XL.761F1C-021",
+      "GH3XL.761F1C-024"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 4,
+    "rated_power_kw_max": 4,
+    "displacements_l": [
+      0.508
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "402F-05(C0.5)",
+        "slug": "perkins-402f-05-c0-5",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "EH8-1800C",
+    "normalized_model": "EH81800C",
+    "first_model_year": 2014,
+    "latest_model_year": 2016,
+    "model_years": [
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "EH3XL.761F1C",
+      "FH3XL.761F1C",
+      "GH3XL.761F1C"
+    ],
+    "engine_codes": [
+      "403F-07",
+      "C0.7"
+    ],
+    "certificates": [
+      "EH3XL.761F1C-009",
+      "FH3XL.761F1C-021",
+      "GH3XL.761F1C-024"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 6,
+    "rated_power_kw_max": 6,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-F",
+        "slug": "shibaura-e673l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "EH8P-1800C",
+    "normalized_model": "EH8P1800C",
+    "first_model_year": 2014,
+    "latest_model_year": 2016,
+    "model_years": [
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "EH3XL.761F1C",
+      "FH3XL.761F1C",
+      "GH3XL.761F1C"
+    ],
+    "engine_codes": [
+      "403F-07",
+      "C0.7"
+    ],
+    "certificates": [
+      "EH3XL.761F1C-009",
+      "FH3XL.761F1C-021",
+      "GH3XL.761F1C-024"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 6,
+    "rated_power_kw_max": 6,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-F",
+        "slug": "shibaura-e673l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "GJ13/1500CA",
+    "normalized_model": "GJ131500CA",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "CH3XL1.13LCS",
+      "DH3XL1.13LCS",
+      "EH3XL1.13LCS",
+      "FH3XL1.13LCS",
+      "GH3XL1.13LCS"
+    ],
+    "engine_codes": [
+      "403D-11",
+      "C1.1"
+    ],
+    "certificates": [
+      "CH3XL1.13LCS-013",
+      "DH3XL1.13LCS-002",
+      "EH3XL1.13LCS-007",
+      "FH3XL1.13LCS-003",
+      "GH3XL1.13LCS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 10,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "S773L-F",
+        "slug": "shibaura-s773l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "GJ13/1800C",
+    "normalized_model": "GJ131800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "CH3XL1.13LCS",
+      "DH3XL1.13LCS",
+      "EH3XL1.13LCS",
+      "FH3XL1.13LCS",
+      "GH3XL1.13LCS"
+    ],
+    "engine_codes": [
+      "403D-11",
+      "C1.1"
+    ],
+    "certificates": [
+      "CH3XL1.13LCS-013",
+      "DH3XL1.13LCS-002",
+      "EH3XL1.13LCS-007",
+      "FH3XL1.13LCS-003",
+      "GH3XL1.13LCS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 10,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "S773L-F",
+        "slug": "shibaura-s773l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "GJ16/1800C",
+    "normalized_model": "GJ161800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "CH3XL1.13LCS",
+      "DH3XL1.13LCS",
+      "EH3XL1.13LCS",
+      "FH3XL1.13LCS",
+      "GH3XL1.13LCS"
+    ],
+    "engine_codes": [
+      "403D-11",
+      "C1.1"
+    ],
+    "certificates": [
+      "CH3XL1.13LCS-013",
+      "DH3XL1.13LCS-002",
+      "EH3XL1.13LCS-007",
+      "FH3XL1.13LCS-003",
+      "GH3XL1.13LCS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 12,
+    "rated_power_kw_max": 12,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "S773L-F",
+        "slug": "shibaura-s773l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "GN29/1800C",
+    "normalized_model": "GN291800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "CH3XL2.22NLC",
+      "DH3XL2.22NLC",
+      "EH3XL2.22NLC",
+      "FH3XL2.22NLC",
+      "GH3XL2.22NLC"
+    ],
+    "engine_codes": [
+      "404D-22",
+      "C2.2"
+    ],
+    "certificates": [
+      "CH3XL2.22NLC-018",
+      "DH3XL2.22NLC-005",
+      "EH3XL2.22NLC-002",
+      "FH3XL2.22NLC-016",
+      "GH3XL2.22NLC-016"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 22,
+    "rated_power_kw_max": 22,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404D-22G",
+        "slug": "perkins-404d-22g",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "GN33/1800C",
+    "normalized_model": "GN331800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "CH3XL2.22NLC",
+      "DH3XL2.22NLC",
+      "EH3XL2.22NLC",
+      "FH3XL2.22NLC",
+      "GH3XL2.22NLC"
+    ],
+    "engine_codes": [
+      "404D-22",
+      "C2.2"
+    ],
+    "certificates": [
+      "CH3XL2.22NLC-018",
+      "DH3XL2.22NLC-005",
+      "EH3XL2.22NLC-002",
+      "FH3XL2.22NLC-016",
+      "GH3XL2.22NLC-016"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 24,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404D-22G",
+        "slug": "perkins-404d-22g",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "GR49/1800C",
+    "normalized_model": "GR491800C",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "engine_families": [
+      "CH3XL2.22TCC",
+      "DH3XL2.22TCC",
+      "EH3XL2.22TCC",
+      "FH3XL2.22TCC",
+      "GH3XL2.22TCC"
+    ],
+    "engine_codes": [
+      "404D-22TA",
+      "C2.2"
+    ],
+    "certificates": [
+      "CH3XL2.22TCC-019",
+      "DH3XL2.22TCC-006",
+      "EH3XL2.22TCC-005",
+      "FH3XL2.22TCC-018",
+      "GH3XL2.22TCC-018"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404D-22TAG",
+        "slug": "perkins-404d-22tag",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 4 Interim",
         "fuel_type": "Diesel"
       }
     ],
@@ -45718,6 +48554,163 @@
         "slug": "john-deere-6090h",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "EG4-1800C",
+    "normalized_model": "EG41800C",
+    "first_model_year": 2013,
+    "latest_model_year": 2013,
+    "model_years": [
+      2013
+    ],
+    "engine_families": [
+      "DH3XL.507F1C"
+    ],
+    "engine_codes": [
+      "402F-05",
+      "C0.5"
+    ],
+    "certificates": [
+      "DH3XL.507F1C-028"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 4,
+    "rated_power_kw_max": 4,
+    "displacements_l": [
+      0.508
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "402F-05(C0.5)",
+        "slug": "perkins-402f-05-c0-5",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "EG6-1800C",
+    "normalized_model": "EG61800C",
+    "first_model_year": 2013,
+    "latest_model_year": 2013,
+    "model_years": [
+      2013
+    ],
+    "engine_families": [
+      "DH3XL.507F1C"
+    ],
+    "engine_codes": [
+      "C0.7"
+    ],
+    "certificates": [
+      "DH3XL.507F1C-028"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 6,
+    "rated_power_kw_max": 6,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-F",
+        "slug": "shibaura-e673l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "IHI Agri-Tech Corporation",
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
+    "epa_model": "EH6-1800C",
+    "normalized_model": "EH61800C",
+    "first_model_year": 2013,
+    "latest_model_year": 2013,
+    "model_years": [
+      2013
+    ],
+    "engine_families": [
+      "DH3XL.507F1C"
+    ],
+    "engine_codes": [
+      "403F-07"
+    ],
+    "certificates": [
+      "DH3XL.507F1C-028"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 6,
+    "rated_power_kw_max": 6,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Shibaura",
+        "model": "E673L-F",
+        "slug": "shibaura-e673l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -59185,348 +62178,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "402F-05",
-    "normalized_model": "402F05",
-    "first_model_year": 2017,
-    "latest_model_year": 2020,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
     ],
-    "engine_families": [
-      "HH3XL.761F1C",
-      "JH3XL.761F1C",
-      "KH3XL.761F1C",
-      "LH3XL.761F1C"
-    ],
-    "engine_codes": [
-      "EG5-1800C",
-      "EG5/1800C"
-    ],
-    "certificates": [
-      "HH3XL.761F1C-022-R01",
-      "JH3XL.761F1C-018-R01",
-      "KH3XL.761F1C-007",
-      "LH3XL.761F1C-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 4,
-    "rated_power_kw_max": 4,
-    "displacements_l": [
-      0.508
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "403D-11",
-    "normalized_model": "403D11",
-    "first_model_year": 2017,
-    "latest_model_year": 2020,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "HH3XL1.13LCS",
-      "JH3XL1.13LCS",
-      "KH3XL1.13LCS",
-      "LH3XL1.13LCS"
-    ],
-    "engine_codes": [
-      "GJ13/1800C",
-      "GJ16/1800C"
-    ],
-    "certificates": [
-      "HH3XL1.13LCS-003-R01",
-      "JH3XL1.13LCS-001-R01",
-      "KH3XL1.13LCS-003",
-      "LH3XL1.13LCS-015-R01"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 12,
-    "displacements_l": [
-      1.1320000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "403D-15",
-    "normalized_model": "403D15",
-    "first_model_year": 2017,
-    "latest_model_year": 2020,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "HH3XL1.49N3C",
-      "JH3XL1.49N3C",
-      "KH3XL1.49N3C",
-      "LH3XL1.49N3C"
-    ],
-    "engine_codes": [
-      "GK22/1800C"
-    ],
-    "certificates": [
-      "HH3XL1.49N3C-005-R01",
-      "JH3XL1.49N3C-005-R01",
-      "KH3XL1.49N3C-005",
-      "LH3XL1.49N3C-017-R01"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 16,
-    "rated_power_kw_max": 16,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "403F-07",
-    "normalized_model": "403F07",
-    "first_model_year": 2017,
-    "latest_model_year": 2020,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "HH3XL.761F1C",
-      "JH3XL.761F1C",
-      "KH3XL.761F1C",
-      "LH3XL.761F1C"
-    ],
-    "engine_codes": [
-      "6546/1800",
-      "6576/1800",
-      "EH8-1800C",
-      "EH8/1800C"
-    ],
-    "certificates": [
-      "HH3XL.761F1C-022-R01",
-      "JH3XL.761F1C-018-R01",
-      "KH3XL.761F1C-007",
-      "LH3XL.761F1C-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 6,
-    "rated_power_kw_max": 7,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "403F-11",
-    "normalized_model": "403F11",
-    "first_model_year": 2013,
-    "latest_model_year": 2020,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "DH3XL1.13F2C",
-      "EH3XL1.13F2C",
-      "FH3XL1.13F2C",
-      "GH3XL1.13F2C",
-      "HH3XL1.13F2C",
-      "JH3XL1.13F2C",
-      "KH3XL1.13F2C",
-      "LH3XL1.13F2C"
-    ],
-    "engine_codes": [
-      "6600/1800",
-      "6602/1800",
-      "EJ10-1800C",
-      "EJ13-1800C",
-      "EJ13/1800C",
-      "EJ14-1800C"
-    ],
-    "certificates": [
-      "DH3XL1.13F2C-029",
-      "EH3XL1.13F2C-011",
-      "FH3XL1.13F2C-022",
-      "GH3XL1.13F2C-026",
-      "HH3XL1.13F2C-024",
-      "JH3XL1.13F2C-007-R01",
-      "KH3XL1.13F2C-011",
-      "LH3XL1.13F2C-003"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 11,
-    "displacements_l": [
-      1.1320000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "403F-15",
-    "normalized_model": "403F15",
-    "first_model_year": 2013,
-    "latest_model_year": 2020,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "DH3XL1.49F2C",
-      "EH3XL1.49F2C",
-      "FH3XL1.49F2C",
-      "GH3XL1.49F2C",
-      "HH3XL1.49F2C",
-      "JH3XL1.49F2C",
-      "KH3XL1.49F2C",
-      "LH3XL1.49F2C"
-    ],
-    "engine_codes": [
-      "EK15-1800C",
-      "EK19-1800C",
-      "EK19/1800C",
-      "EK20-1800C",
-      "EK20/1800C"
-    ],
-    "certificates": [
-      "DH3XL1.49F2C-032",
-      "EH3XL1.49F2C-013",
-      "FH3XL1.49F2C-024",
-      "GH3XL1.49F2C-028",
-      "HH3XL1.49F2C-026",
-      "JH3XL1.49F2C-009-R01",
-      "KH3XL1.49F2C-013",
-      "LH3XL1.49F2C-010-R01"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 14,
-    "rated_power_kw_max": 15,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "exact_model_other_brand",
-    "database_matches": [
-      {
-        "brand": "Perkins",
-        "model": "403F-15",
-        "slug": "perkins-403f-15",
-        "rpm_rated": 1800,
-        "emissions_standard": "U.S. EPA Final Tier 4",
-        "fuel_type": "Diesel"
-      }
-    ],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
     "epa_model": "403F-15T",
     "normalized_model": "403F15T",
     "first_model_year": 2013,
@@ -59585,11 +62240,21 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "403F-15",
+        "slug": "perkins-403f-15",
+        "similarity": 0.923
+      }
+    ]
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
     "epa_model": "403F-15T(C1.5)",
     "normalized_model": "403F15TC1P5",
     "first_model_year": 2019,
@@ -59632,57 +62297,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "404D-22",
-    "normalized_model": "404D22",
-    "first_model_year": 2017,
-    "latest_model_year": 2020,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
     ],
-    "engine_families": [
-      "HH3XL2.22NLC",
-      "JH3XL2.22NLC",
-      "KH3XL2.22NLC",
-      "LH3XL2.22NLC"
-    ],
-    "engine_codes": [
-      "GN29/1800C",
-      "GN33/1800C"
-    ],
-    "certificates": [
-      "HH3XL2.22NLC-017-R01",
-      "JH3XL2.22NLC-006-R01",
-      "KH3XL2.22NLC-006",
-      "LH3XL2.22NLC-019-R01"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 22,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
     "epa_model": "404D-22T",
     "normalized_model": "404D22T",
     "first_model_year": 2017,
@@ -59727,11 +62345,27 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404D-22TG",
+        "slug": "perkins-404d-22tg",
+        "similarity": 0.933
+      },
+      {
+        "brand": "Perkins",
+        "model": "404D-22TAG",
+        "slug": "perkins-404d-22tag",
+        "similarity": 0.875
+      }
+    ]
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
     "epa_model": "404D-22T(C2.2)",
     "normalized_model": "404D22TC2P2",
     "first_model_year": 2019,
@@ -59770,679 +62404,6 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "404D-22TA",
-    "normalized_model": "404D22TA",
-    "first_model_year": 2017,
-    "latest_model_year": 2020,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "HH3XL2.22TCC",
-      "JH3XL2.22TCC",
-      "KH3XL2.22TCC",
-      "LH3XL2.22TCC"
-    ],
-    "engine_codes": [
-      "GR49/1800C"
-    ],
-    "certificates": [
-      "HH3XL2.22TCC-019-R01",
-      "JH3XL2.22TCC-003-R01",
-      "KH3XL2.22TCC-002",
-      "LH3XL2.22TCC-007"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "404D-22TA(C2.2)",
-    "normalized_model": "404D22TAC2P2",
-    "first_model_year": 2019,
-    "latest_model_year": 2020,
-    "model_years": [
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "KH3XL2.22TCC",
-      "LH3XL2.22TCC"
-    ],
-    "engine_codes": [
-      "PARENT-GR49/1800C"
-    ],
-    "certificates": [
-      "KH3XL2.22TCC-002",
-      "LH3XL2.22TCC-007"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "C0.5",
-    "normalized_model": "C0P5",
-    "first_model_year": 2017,
-    "latest_model_year": 2020,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "HH3XL.761F1C",
-      "JH3XL.761F1C",
-      "KH3XL.761F1C",
-      "LH3XL.761F1C"
-    ],
-    "engine_codes": [
-      "EG5-1800C",
-      "EG5/1800C"
-    ],
-    "certificates": [
-      "HH3XL.761F1C-022-R01",
-      "JH3XL.761F1C-018-R01",
-      "KH3XL.761F1C-007",
-      "LH3XL.761F1C-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 4,
-    "rated_power_kw_max": 4,
-    "displacements_l": [
-      0.508
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "C0.7",
-    "normalized_model": "C0P7",
-    "first_model_year": 2017,
-    "latest_model_year": 2020,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "HH3XL.761F1C",
-      "JH3XL.761F1C",
-      "KH3XL.761F1C",
-      "LH3XL.761F1C"
-    ],
-    "engine_codes": [
-      "6546/1800",
-      "6576/1800",
-      "EH8-1800C",
-      "EH8/1800C"
-    ],
-    "certificates": [
-      "HH3XL.761F1C-022-R01",
-      "JH3XL.761F1C-018-R01",
-      "KH3XL.761F1C-007",
-      "LH3XL.761F1C-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 6,
-    "rated_power_kw_max": 7,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "C1.1",
-    "normalized_model": "C1P1",
-    "first_model_year": 2013,
-    "latest_model_year": 2020,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "DH3XL1.13F2C",
-      "EH3XL1.13F2C",
-      "FH3XL1.13F2C",
-      "GH3XL1.13F2C",
-      "HH3XL1.13F2C",
-      "HH3XL1.13LCS",
-      "JH3XL1.13F2C",
-      "JH3XL1.13LCS",
-      "KH3XL1.13F2C",
-      "KH3XL1.13LCS",
-      "LH3XL1.13F2C",
-      "LH3XL1.13LCS"
-    ],
-    "engine_codes": [
-      "6600/1800",
-      "6602/1800",
-      "EJ10-1800C",
-      "EJ13-1800C",
-      "EJ13/1800C",
-      "EJ14-1800C",
-      "GJ13/1800C",
-      "GJ16/1800C"
-    ],
-    "certificates": [
-      "DH3XL1.13F2C-029",
-      "EH3XL1.13F2C-011",
-      "FH3XL1.13F2C-022",
-      "GH3XL1.13F2C-026",
-      "HH3XL1.13F2C-024",
-      "HH3XL1.13LCS-003-R01",
-      "JH3XL1.13F2C-007-R01",
-      "JH3XL1.13LCS-001-R01",
-      "KH3XL1.13F2C-011",
-      "KH3XL1.13LCS-003",
-      "LH3XL1.13F2C-003",
-      "LH3XL1.13LCS-015-R01"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 12,
-    "displacements_l": [
-      1.1320000000000001
-    ],
-    "match_status": "exact_model_other_brand",
-    "database_matches": [
-      {
-        "brand": "Caterpillar",
-        "model": "C1.1",
-        "slug": "caterpillar-c1-1",
-        "rpm_rated": 1500,
-        "emissions_standard": "Euro Stage IIIA",
-        "fuel_type": "Diesel"
-      }
-    ],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "C1.5",
-    "normalized_model": "C1P5",
-    "first_model_year": 2013,
-    "latest_model_year": 2020,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "DH3XL1.49F2C",
-      "DH3XL1.49FTV",
-      "EH3XL1.49F2C",
-      "EH3XL1.49FTV",
-      "FH3XL1.49F2C",
-      "FH3XL1.49FTV",
-      "GH3XL1.49F2C",
-      "GH3XL1.49FTV",
-      "HH3XL1.49F2C",
-      "HH3XL1.49FTV",
-      "JH3XL1.49F2C",
-      "JH3XL1.49FTV",
-      "JH3XL1.49N3C",
-      "KH3XL1.49F2C",
-      "KH3XL1.49FTV",
-      "KH3XL1.49N3C",
-      "LH3XL1.49F2C",
-      "LH3XL1.49FTV",
-      "LH3XL1.49N3C"
-    ],
-    "engine_codes": [
-      "EK15-1800C",
-      "EK19-1800C",
-      "EK19/1800C",
-      "EK20-1800C",
-      "EK20/1800C",
-      "EL18-1800",
-      "EL25-1800",
-      "EL25/1800",
-      "GK22/1800C"
-    ],
-    "certificates": [
-      "DH3XL1.49F2C-032",
-      "DH3XL1.49FTV-026",
-      "EH3XL1.49F2C-013",
-      "EH3XL1.49FTV-029",
-      "FH3XL1.49F2C-024",
-      "FH3XL1.49FTV-026",
-      "GH3XL1.49F2C-028",
-      "GH3XL1.49FTV-030",
-      "HH3XL1.49F2C-026",
-      "HH3XL1.49FTV-028-R01",
-      "JH3XL1.49F2C-009-R01",
-      "JH3XL1.49FTV-011-R01",
-      "JH3XL1.49N3C-005-R01",
-      "KH3XL1.49F2C-013",
-      "KH3XL1.49FTV-015",
-      "KH3XL1.49N3C-005",
-      "LH3XL1.49F2C-010-R01",
-      "LH3XL1.49FTV-005",
-      "LH3XL1.49N3C-017-R01"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 14,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "exact_model_other_brand",
-    "database_matches": [
-      {
-        "brand": "Caterpillar",
-        "model": "C1.5",
-        "slug": "caterpillar-c1-5",
-        "rpm_rated": 1500,
-        "emissions_standard": "Euro Stage IIIA",
-        "fuel_type": "Diesel"
-      }
-    ],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "C2.2",
-    "normalized_model": "C2P2",
-    "first_model_year": 2013,
-    "latest_model_year": 2020,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "DH3XL2.22NFV",
-      "EH3XL2.22NFV",
-      "FH3XL2.22NFV",
-      "GH3XL2.22NFV",
-      "HH3XL2.22NFV",
-      "HH3XL2.22NLC",
-      "HH3XL2.22NLT",
-      "HH3XL2.22TCC",
-      "HH3XL2.22TF3",
-      "JH3XL2.22NFV",
-      "JH3XL2.22NLC",
-      "JH3XL2.22NLT",
-      "JH3XL2.22TCC",
-      "JH3XL2.22TF3",
-      "KH3XL2.22NFV",
-      "KH3XL2.22NLC",
-      "KH3XL2.22NLT",
-      "KH3XL2.22TCC",
-      "KH3XL2.22TF3",
-      "LH3XL2.22NLC",
-      "LH3XL2.22NLT",
-      "LH3XL2.22TCC"
-    ],
-    "engine_codes": [
-      "EN33/1800",
-      "EP45/1800",
-      "GN29/1800C",
-      "GN33/1800C",
-      "GP45/1800",
-      "GR49/1800C"
-    ],
-    "certificates": [
-      "DH3XL2.22NFV-023",
-      "EH3XL2.22NFV-015",
-      "FH3XL2.22NFV-036",
-      "GH3XL2.22NFV-032",
-      "HH3XL2.22NFV-031-R01",
-      "HH3XL2.22NLC-017-R01",
-      "HH3XL2.22NLT-018-R01",
-      "HH3XL2.22TCC-019-R01",
-      "HH3XL2.22TF3-032-R01",
-      "JH3XL2.22NFV-014-R01",
-      "JH3XL2.22NLC-006-R01",
-      "JH3XL2.22NLT-002-R01",
-      "JH3XL2.22TCC-003-R01",
-      "JH3XL2.22TF3-015-R01",
-      "KH3XL2.22NFV-017",
-      "KH3XL2.22NLC-006",
-      "KH3XL2.22NLT-001",
-      "KH3XL2.22TCC-002",
-      "KH3XL2.22TF3-018",
-      "LH3XL2.22NLC-019-R01",
-      "LH3XL2.22NLT-006",
-      "LH3XL2.22TCC-007"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 22,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "exact_model_other_brand",
-    "database_matches": [
-      {
-        "brand": "Caterpillar",
-        "model": "C2.2",
-        "slug": "caterpillar-c2-2",
-        "rpm_rated": 1500,
-        "emissions_standard": "Euro Stage IIIA",
-        "fuel_type": "Diesel"
-      }
-    ],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "E673L-F",
-    "normalized_model": "E673LF",
-    "first_model_year": 2017,
-    "latest_model_year": 2020,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "HH3XL.761F1C",
-      "JH3XL.761F1C",
-      "KH3XL.761F1C",
-      "LH3XL.761F1C"
-    ],
-    "engine_codes": [
-      "E36-18C",
-      "E37-18C",
-      "PARENT-E37-18C"
-    ],
-    "certificates": [
-      "HH3XL.761F1C-022-R01",
-      "JH3XL.761F1C-018-R01",
-      "KH3XL.761F1C-007",
-      "LH3XL.761F1C-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 6,
-    "rated_power_kw_max": 7,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "N843-F",
-    "normalized_model": "N843F",
-    "first_model_year": 2013,
-    "latest_model_year": 2020,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "DH3XL1.49F2C",
-      "EH3XL1.49F2C",
-      "FH3XL1.49F2C",
-      "GH3XL1.49F2C",
-      "HH3XL1.49F2C",
-      "JH3XL1.49F2C",
-      "KH3XL1.49F2C",
-      "LH3XL1.49F2C"
-    ],
-    "engine_codes": [
-      "N315-18C",
-      "PARENT-N315-18C"
-    ],
-    "certificates": [
-      "DH3XL1.49F2C-032",
-      "EH3XL1.49F2C-013",
-      "FH3XL1.49F2C-024",
-      "GH3XL1.49F2C-028",
-      "HH3XL1.49F2C-026",
-      "JH3XL1.49F2C-009-R01",
-      "KH3XL1.49F2C-013",
-      "LH3XL1.49F2C-010-R01"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 15,
-    "rated_power_kw_max": 16,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "S773L-F",
-    "normalized_model": "S773LF",
-    "first_model_year": 2013,
-    "latest_model_year": 2020,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020
-    ],
-    "engine_families": [
-      "DH3XL1.13F2C",
-      "EH3XL1.13F2C",
-      "FH3XL1.13F2C",
-      "GH3XL1.13F2C",
-      "HH3XL1.13F2C",
-      "JH3XL1.13F2C",
-      "KH3XL1.13F2C",
-      "LH3XL1.13F2C"
-    ],
-    "engine_codes": [
-      "PARENT-S311-18C",
-      "S310-18C",
-      "S311-18C"
-    ],
-    "certificates": [
-      "DH3XL1.13F2C-029",
-      "EH3XL1.13F2C-011",
-      "FH3XL1.13F2C-022",
-      "GH3XL1.13F2C-026",
-      "HH3XL1.13F2C-024",
-      "JH3XL1.13F2C-007-R01",
-      "KH3XL1.13F2C-011",
-      "LH3XL1.13F2C-003"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 11,
-    "displacements_l": [
-      1.1320000000000001
-    ],
-    "match_status": "exact_model_other_brand",
-    "database_matches": [
-      {
-        "brand": "Perkins",
-        "model": "S773L-F",
-        "slug": "perkins-s773l-f",
-        "rpm_rated": 1800,
-        "emissions_standard": "U.S. EPA Final Tier 4",
-        "fuel_type": "Diesel"
-      }
-    ],
     "probable_database_matches": []
   },
   {
@@ -60609,56 +62570,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "361800C",
-    "normalized_model": "361800C",
-    "first_model_year": 2016,
-    "latest_model_year": 2019,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
     ],
-    "engine_families": [
-      "GH3XL2.22TDI",
-      "HH3XL2.22TDI",
-      "JH3XL2.22TDI",
-      "KH3XL2.22TDI"
-    ],
-    "engine_codes": [
-      "N4LDI-TA"
-    ],
-    "certificates": [
-      "GH3XL2.22TDI-043",
-      "HH3XL2.22TDI-035-R01",
-      "JH3XL2.22TDI-020",
-      "KH3XL2.22TDI-023"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
     "epa_model": "404F-22",
     "normalized_model": "404F22",
     "first_model_year": 2013,
@@ -60716,7 +62631,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
     "epa_model": "404F-22T",
     "normalized_model": "404F22T",
     "first_model_year": 2013,
@@ -60765,153 +62683,6 @@
     ],
     "rated_power_kw_min": 33,
     "rated_power_kw_max": 33,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "4LT301800C",
-    "normalized_model": "4LT301800C",
-    "first_model_year": 2015,
-    "latest_model_year": 2019,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "FH3XL2.22TD3",
-      "GH3XL2.22TD3",
-      "HH3XL2.22TD3",
-      "JH3XL2.22TD3",
-      "KH3XL2.22TD3"
-    ],
-    "engine_codes": [
-      "N4LDI-T"
-    ],
-    "certificates": [
-      "FH3XL2.22TD3-043",
-      "GH3XL2.22TD3-023",
-      "HH3XL2.22TD3-036-R01",
-      "JH3XL2.22TD3-021",
-      "KH3XL2.22TD3-022"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 30,
-    "rated_power_kw_max": 30,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "ER49DI/1800C",
-    "normalized_model": "ER49DI1800C",
-    "first_model_year": 2016,
-    "latest_model_year": 2019,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "GH3XL2.22TDI",
-      "HH3XL2.22TDI",
-      "JH3XL2.22TDI",
-      "KH3XL2.22TDI"
-    ],
-    "engine_codes": [
-      "404F-E22TA",
-      "C2.2"
-    ],
-    "certificates": [
-      "GH3XL2.22TDI-043",
-      "HH3XL2.22TDI-035-R01",
-      "JH3XL2.22TDI-020",
-      "KH3XL2.22TDI-023"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "ER49DI/1800C-CD",
-    "normalized_model": "ER49DI1800CCD",
-    "first_model_year": 2018,
-    "latest_model_year": 2019,
-    "model_years": [
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "JH3XL2.22TDI",
-      "KH3XL2.22TDI"
-    ],
-    "engine_codes": [
-      "404F-E22TA",
-      "C2.2"
-    ],
-    "certificates": [
-      "JH3XL2.22TDI-020",
-      "KH3XL2.22TDI-023"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
     "displacements_l": [
       2.217
     ],
@@ -61296,279 +63067,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "10/1800C",
-    "normalized_model": "101800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
     ],
-    "engine_families": [
-      "CH3XL.507E2C",
-      "DH3XL.507E2C",
-      "EH3XL.507E2C",
-      "FH3XL.507E2C",
-      "GH3XL.507E2C",
-      "HH3XL.507E2C"
-    ],
-    "engine_codes": [
-      "E673L-C"
-    ],
-    "certificates": [
-      "CH3XL.507E2C-020",
-      "DH3XL.507E2C-001",
-      "EH3XL.507E2C-001",
-      "FH3XL.507E2C-001",
-      "GH3XL.507E2C-001",
-      "HH3XL.507E2C-001-R01"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 7,
-    "rated_power_kw_max": 7,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "27/1800C",
-    "normalized_model": "271800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CH3XL2.00NCS",
-      "DH3XL2.00NCS",
-      "EH3XL2.00NCS",
-      "FH3XL2.00NCS",
-      "GH3XL2.00NCS",
-      "HH3XL2.00NCS"
-    ],
-    "engine_codes": [
-      "N844-D"
-    ],
-    "certificates": [
-      "CH3XL2.00NCS-012",
-      "DH3XL2.00NCS-004",
-      "EH3XL2.00NCS-008",
-      "FH3XL2.00NCS-012",
-      "GH3XL2.00NCS-012",
-      "HH3XL2.00NCS-013-R01"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 20,
-    "rated_power_kw_max": 20,
-    "displacements_l": [
-      1.995
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "3LT201800C",
-    "normalized_model": "3LT201800C",
-    "first_model_year": 2015,
-    "latest_model_year": 2017,
-    "model_years": [
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "FH3XL2.22TD3",
-      "GH3XL2.22TD3",
-      "HH3XL2.22TD3"
-    ],
-    "engine_codes": [
-      "N3LDI-T"
-    ],
-    "certificates": [
-      "FH3XL2.22TD3-043",
-      "GH3XL2.22TD3-023",
-      "HH3XL2.22TD3-036-R01"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 20,
-    "rated_power_kw_max": 20,
-    "displacements_l": [
-      1.663
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "GG7/1800C",
-    "normalized_model": "GG71800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CH3XL.507E2C",
-      "DH3XL.507E2C",
-      "EH3XL.507E2C",
-      "FH3XL.507E2C",
-      "GH3XL.507E2C",
-      "HH3XL.507E2C"
-    ],
-    "engine_codes": [
-      "402D-05",
-      "C0.5"
-    ],
-    "certificates": [
-      "CH3XL.507E2C-020",
-      "DH3XL.507E2C-001",
-      "EH3XL.507E2C-001",
-      "FH3XL.507E2C-001",
-      "GH3XL.507E2C-001",
-      "HH3XL.507E2C-001-R01"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 5,
-    "rated_power_kw_max": 5,
-    "displacements_l": [
-      0.508
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "GH10/1800C",
-    "normalized_model": "GH101800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CH3XL.507E2C",
-      "DH3XL.507E2C",
-      "EH3XL.507E2C",
-      "FH3XL.507E2C",
-      "GH3XL.507E2C",
-      "HH3XL.507E2C"
-    ],
-    "engine_codes": [
-      "403D-07",
-      "C0.7"
-    ],
-    "certificates": [
-      "CH3XL.507E2C-020",
-      "DH3XL.507E2C-001",
-      "EH3XL.507E2C-001",
-      "FH3XL.507E2C-001",
-      "GH3XL.507E2C-001",
-      "HH3XL.507E2C-001-R01"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 7,
-    "rated_power_kw_max": 7,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
     "epa_model": "GK22/1800",
     "normalized_model": "GK221800",
     "first_model_year": 2012,
@@ -61624,63 +63126,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "GK22/1800C",
-    "normalized_model": "GK221800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
     ],
-    "engine_families": [
-      "CH3XL1.49N3C",
-      "DH3XL1.49N3C",
-      "EH3XL1.49N3C",
-      "FH3XL1.49N3C",
-      "GH3XL1.49N3C",
-      "HH3XL1.49N3C"
-    ],
-    "engine_codes": [
-      "403D-15",
-      "C1.5"
-    ],
-    "certificates": [
-      "CH3XL1.49N3C-014",
-      "DH3XL1.49N3C-003",
-      "EH3XL1.49N3C-004",
-      "FH3XL1.49N3C-007",
-      "GH3XL1.49N3C-007",
-      "HH3XL1.49N3C-005-R01"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 16,
-    "rated_power_kw_max": 16,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
     "epa_model": "GL25/1800",
     "normalized_model": "GL251800",
     "first_model_year": 2012,
@@ -61736,7 +63185,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
     "epa_model": "GN33/1800",
     "normalized_model": "GN331800",
     "first_model_year": 2012,
@@ -61898,215 +63350,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "15/1800C",
-    "normalized_model": "151800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
     ],
-    "engine_families": [
-      "CH3XL1.13LCS",
-      "DH3XL1.13LCS",
-      "EH3XL1.13LCS",
-      "FH3XL1.13LCS",
-      "GH3XL1.13LCS"
-    ],
-    "engine_codes": [
-      "S773L-D"
-    ],
-    "certificates": [
-      "CH3XL1.13LCS-013",
-      "DH3XL1.13LCS-002",
-      "EH3XL1.13LCS-007",
-      "FH3XL1.13LCS-003",
-      "GH3XL1.13LCS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 11,
-    "rated_power_kw_max": 11,
-    "displacements_l": [
-      1.1320000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "2003",
-    "normalized_model": "2003",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "CH3XL1.49N3C",
-      "DH3XL1.49N3C",
-      "EH3XL1.49N3C",
-      "FH3XL1.49N3C",
-      "GH3XL1.49N3C"
-    ],
-    "engine_codes": [
-      "N843-D"
-    ],
-    "certificates": [
-      "CH3XL1.49N3C-014",
-      "DH3XL1.49N3C-003",
-      "EH3XL1.49N3C-004",
-      "FH3XL1.49N3C-007",
-      "GH3XL1.49N3C-007"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 15,
-    "rated_power_kw_max": 15,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "21/1800C",
-    "normalized_model": "211800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "CH3XL1.49N3C",
-      "DH3XL1.49N3C",
-      "EH3XL1.49N3C",
-      "FH3XL1.49N3C",
-      "GH3XL1.49N3C"
-    ],
-    "engine_codes": [
-      "N843-D"
-    ],
-    "certificates": [
-      "CH3XL1.49N3C-014",
-      "DH3XL1.49N3C-003",
-      "EH3XL1.49N3C-004",
-      "FH3XL1.49N3C-007",
-      "GH3XL1.49N3C-007"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 15,
-    "rated_power_kw_max": 15,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "32/1800C",
-    "normalized_model": "321800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "CH3XL2.22NLC",
-      "DH3XL2.22NLC",
-      "EH3XL2.22NLC",
-      "FH3XL2.22NLC",
-      "GH3XL2.22NLC"
-    ],
-    "engine_codes": [
-      "N844L-D"
-    ],
-    "certificates": [
-      "CH3XL2.22NLC-018",
-      "DH3XL2.22NLC-005",
-      "EH3XL2.22NLC-002",
-      "FH3XL2.22NLC-016",
-      "GH3XL2.22NLC-016"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 24,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
     "epa_model": "C2.2T",
     "normalized_model": "C2P2T",
     "first_model_year": 2013,
@@ -62155,458 +63402,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "E36-18C",
-    "normalized_model": "E3618C",
-    "first_model_year": 2013,
-    "latest_model_year": 2016,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
     ],
-    "engine_families": [
-      "DH3XL.507F1C",
-      "EH3XL.761F1C",
-      "FH3XL.761F1C",
-      "GH3XL.761F1C"
-    ],
-    "engine_codes": [
-      "E673L-F"
-    ],
-    "certificates": [
-      "DH3XL.507F1C-028",
-      "EH3XL.761F1C-009",
-      "FH3XL.761F1C-021",
-      "GH3XL.761F1C-024"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 6,
-    "rated_power_kw_max": 6,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "E37-18C",
-    "normalized_model": "E3718C",
-    "first_model_year": 2013,
-    "latest_model_year": 2016,
-    "model_years": [
-      2013,
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "DH3XL.507F1C",
-      "EH3XL.761F1C",
-      "FH3XL.761F1C",
-      "GH3XL.761F1C"
-    ],
-    "engine_codes": [
-      "E673L-F"
-    ],
-    "certificates": [
-      "DH3XL.507F1C-028",
-      "EH3XL.761F1C-009",
-      "FH3XL.761F1C-021",
-      "GH3XL.761F1C-024"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 7,
-    "rated_power_kw_max": 7,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "EG5-1800C",
-    "normalized_model": "EG51800C",
-    "first_model_year": 2014,
-    "latest_model_year": 2016,
-    "model_years": [
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "EH3XL.761F1C",
-      "FH3XL.761F1C",
-      "GH3XL.761F1C"
-    ],
-    "engine_codes": [
-      "402F-05",
-      "C0.5"
-    ],
-    "certificates": [
-      "EH3XL.761F1C-009",
-      "FH3XL.761F1C-021",
-      "GH3XL.761F1C-024"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 4,
-    "rated_power_kw_max": 4,
-    "displacements_l": [
-      0.508
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "EH8-1800C",
-    "normalized_model": "EH81800C",
-    "first_model_year": 2014,
-    "latest_model_year": 2016,
-    "model_years": [
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "EH3XL.761F1C",
-      "FH3XL.761F1C",
-      "GH3XL.761F1C"
-    ],
-    "engine_codes": [
-      "403F-07",
-      "C0.7"
-    ],
-    "certificates": [
-      "EH3XL.761F1C-009",
-      "FH3XL.761F1C-021",
-      "GH3XL.761F1C-024"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 6,
-    "rated_power_kw_max": 6,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "EH8P-1800C",
-    "normalized_model": "EH8P1800C",
-    "first_model_year": 2014,
-    "latest_model_year": 2016,
-    "model_years": [
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "EH3XL.761F1C",
-      "FH3XL.761F1C",
-      "GH3XL.761F1C"
-    ],
-    "engine_codes": [
-      "403F-07",
-      "C0.7"
-    ],
-    "certificates": [
-      "EH3XL.761F1C-009",
-      "FH3XL.761F1C-021",
-      "GH3XL.761F1C-024"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 6,
-    "rated_power_kw_max": 6,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "GJ13/1500CA",
-    "normalized_model": "GJ131500CA",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "CH3XL1.13LCS",
-      "DH3XL1.13LCS",
-      "EH3XL1.13LCS",
-      "FH3XL1.13LCS",
-      "GH3XL1.13LCS"
-    ],
-    "engine_codes": [
-      "403D-11",
-      "C1.1"
-    ],
-    "certificates": [
-      "CH3XL1.13LCS-013",
-      "DH3XL1.13LCS-002",
-      "EH3XL1.13LCS-007",
-      "FH3XL1.13LCS-003",
-      "GH3XL1.13LCS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 10,
-    "displacements_l": [
-      1.1320000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "GJ13/1800C",
-    "normalized_model": "GJ131800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "CH3XL1.13LCS",
-      "DH3XL1.13LCS",
-      "EH3XL1.13LCS",
-      "FH3XL1.13LCS",
-      "GH3XL1.13LCS"
-    ],
-    "engine_codes": [
-      "403D-11",
-      "C1.1"
-    ],
-    "certificates": [
-      "CH3XL1.13LCS-013",
-      "DH3XL1.13LCS-002",
-      "EH3XL1.13LCS-007",
-      "FH3XL1.13LCS-003",
-      "GH3XL1.13LCS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 10,
-    "displacements_l": [
-      1.1320000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "GJ16/1800C",
-    "normalized_model": "GJ161800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "CH3XL1.13LCS",
-      "DH3XL1.13LCS",
-      "EH3XL1.13LCS",
-      "FH3XL1.13LCS",
-      "GH3XL1.13LCS"
-    ],
-    "engine_codes": [
-      "403D-11",
-      "C1.1"
-    ],
-    "certificates": [
-      "CH3XL1.13LCS-013",
-      "DH3XL1.13LCS-002",
-      "EH3XL1.13LCS-007",
-      "FH3XL1.13LCS-003",
-      "GH3XL1.13LCS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 12,
-    "rated_power_kw_max": 12,
-    "displacements_l": [
-      1.1320000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "GN29/1800C",
-    "normalized_model": "GN291800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "CH3XL2.22NLC",
-      "DH3XL2.22NLC",
-      "EH3XL2.22NLC",
-      "FH3XL2.22NLC",
-      "GH3XL2.22NLC"
-    ],
-    "engine_codes": [
-      "404D-22",
-      "C2.2"
-    ],
-    "certificates": [
-      "CH3XL2.22NLC-018",
-      "DH3XL2.22NLC-005",
-      "EH3XL2.22NLC-002",
-      "FH3XL2.22NLC-016",
-      "GH3XL2.22NLC-016"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 22,
-    "rated_power_kw_max": 22,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
     "epa_model": "GN33/1800ABT",
     "normalized_model": "GN331800ABT",
     "first_model_year": 2014,
@@ -62653,60 +63452,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "GN33/1800C",
-    "normalized_model": "GN331800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
     ],
-    "engine_families": [
-      "CH3XL2.22NLC",
-      "DH3XL2.22NLC",
-      "EH3XL2.22NLC",
-      "FH3XL2.22NLC",
-      "GH3XL2.22NLC"
-    ],
-    "engine_codes": [
-      "404D-22",
-      "C2.2"
-    ],
-    "certificates": [
-      "CH3XL2.22NLC-018",
-      "DH3XL2.22NLC-005",
-      "EH3XL2.22NLC-002",
-      "FH3XL2.22NLC-016",
-      "GH3XL2.22NLC-016"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 24,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
     "epa_model": "GP45/1800",
     "normalized_model": "GP451800",
     "first_model_year": 2012,
@@ -62772,7 +63521,10 @@
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Perkins",
+      "Shibaura"
+    ],
     "epa_model": "GP45/1800ABT",
     "normalized_model": "GP451800ABT",
     "first_model_year": 2014,
@@ -62810,59 +63562,6 @@
     ],
     "rated_power_kw_min": 33,
     "rated_power_kw_max": 33,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "GR49/1800C",
-    "normalized_model": "GR491800C",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016
-    ],
-    "engine_families": [
-      "CH3XL2.22TCC",
-      "DH3XL2.22TCC",
-      "EH3XL2.22TCC",
-      "FH3XL2.22TCC",
-      "GH3XL2.22TCC"
-    ],
-    "engine_codes": [
-      "404D-22TA",
-      "C2.2"
-    ],
-    "certificates": [
-      "CH3XL2.22TCC-019",
-      "DH3XL2.22TCC-006",
-      "EH3XL2.22TCC-005",
-      "FH3XL2.22TCC-018",
-      "GH3XL2.22TCC-018"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
     "displacements_l": [
       2.217
     ],
@@ -64890,127 +65589,6 @@
     "rated_power_kw_max": 213,
     "displacements_l": [
       7.640000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "EG4-1800C",
-    "normalized_model": "EG41800C",
-    "first_model_year": 2013,
-    "latest_model_year": 2013,
-    "model_years": [
-      2013
-    ],
-    "engine_families": [
-      "DH3XL.507F1C"
-    ],
-    "engine_codes": [
-      "402F-05",
-      "C0.5"
-    ],
-    "certificates": [
-      "DH3XL.507F1C-028"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 4,
-    "rated_power_kw_max": 4,
-    "displacements_l": [
-      0.508
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "EG6-1800C",
-    "normalized_model": "EG61800C",
-    "first_model_year": 2013,
-    "latest_model_year": 2013,
-    "model_years": [
-      2013
-    ],
-    "engine_families": [
-      "DH3XL.507F1C"
-    ],
-    "engine_codes": [
-      "C0.7"
-    ],
-    "certificates": [
-      "DH3XL.507F1C-028"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 6,
-    "rated_power_kw_max": 6,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "IHI Agri-Tech Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "EH6-1800C",
-    "normalized_model": "EH61800C",
-    "first_model_year": 2013,
-    "latest_model_year": 2013,
-    "model_years": [
-      2013
-    ],
-    "engine_families": [
-      "DH3XL.507F1C"
-    ],
-    "engine_codes": [
-      "403F-07"
-    ],
-    "certificates": [
-      "DH3XL.507F1C-028"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 6,
-    "rated_power_kw_max": 6,
-    "displacements_l": [
-      0.762
     ],
     "match_status": "not_found",
     "database_matches": [],
