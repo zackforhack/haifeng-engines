@@ -53236,6 +53236,223 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Yangdong Co., Ltd.",
+    "mapped_database_brands": [
+      "Yangdong"
+    ],
+    "epa_model": "YD385ZLD",
+    "normalized_model": "YD385ZLD",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BYNDL1.81AAA",
+      "CYNDL1.81AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BYNDL1.81AAA-001",
+      "CYNDL1.81AAA-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 16,
+    "rated_power_kw_max": 16,
+    "displacements_l": [
+      1.532
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yangdong",
+        "model": "YD385ZLD",
+        "slug": "yangdong-yd385zld",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yangdong Co., Ltd.",
+    "mapped_database_brands": [
+      "Yangdong"
+    ],
+    "epa_model": "YD480ZLD",
+    "normalized_model": "YD480ZLD",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BYNDL1.81AAA",
+      "CYNDL1.81AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BYNDL1.81AAA-001",
+      "CYNDL1.81AAA-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.81
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yangdong",
+        "model": "YD480ZLD",
+        "slug": "yangdong-yd480zld",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yangdong Co., Ltd.",
+    "mapped_database_brands": [
+      "Yangdong"
+    ],
+    "epa_model": "YND485ZLD",
+    "normalized_model": "YND485ZLD",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BYNDL2.16AAA",
+      "CYNDL2.16AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BYNDL2.16AAA-002",
+      "CYNDL2.16AAA-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 27,
+    "rated_power_kw_max": 27,
+    "displacements_l": [
+      2.043,
+      2.156
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yangdong",
+        "model": "YND485ZLD",
+        "slug": "yangdong-ynd485zld",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yangdong Co., Ltd.",
+    "mapped_database_brands": [
+      "Yangdong"
+    ],
+    "epa_model": "YSD490ZLD",
+    "normalized_model": "YSD490ZLD",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BYNDL2.55AAA",
+      "CYNDL2.55AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BYNDL2.55AAA-003",
+      "CYNDL2.55AAA-004"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 40,
+    "rated_power_kw_max": 40,
+    "displacements_l": [
+      2.545
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yangdong",
+        "model": "YSD490ZLD",
+        "slug": "yangdong-ysd490zld",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Yanmar Power Technology Co., Ltd.",
     "mapped_database_brands": [
       "Yanmar"
@@ -68346,179 +68563,6 @@
     "rated_power_kw_max": 27,
     "displacements_l": [
       2.19
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yangdong Co., Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "YD385ZLD",
-    "normalized_model": "YD385ZLD",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BYNDL1.81AAA",
-      "CYNDL1.81AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BYNDL1.81AAA-001",
-      "CYNDL1.81AAA-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 16,
-    "rated_power_kw_max": 16,
-    "displacements_l": [
-      1.532
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yangdong Co., Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "YD480ZLD",
-    "normalized_model": "YD480ZLD",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BYNDL1.81AAA",
-      "CYNDL1.81AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BYNDL1.81AAA-001",
-      "CYNDL1.81AAA-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.81
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yangdong Co., Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "YND485ZLD",
-    "normalized_model": "YND485ZLD",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BYNDL2.16AAA",
-      "CYNDL2.16AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BYNDL2.16AAA-002",
-      "CYNDL2.16AAA-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 27,
-    "rated_power_kw_max": 27,
-    "displacements_l": [
-      2.043,
-      2.156
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yangdong Co., Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "YSD490ZLD",
-    "normalized_model": "YSD490ZLD",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BYNDL2.55AAA",
-      "CYNDL2.55AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BYNDL2.55AAA-003",
-      "CYNDL2.55AAA-004"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 40,
-    "rated_power_kw_max": 40,
-    "displacements_l": [
-      2.545
     ],
     "match_status": "not_found",
     "database_matches": [],

@@ -54,6 +54,7 @@ MANUFACTURER_BRANDS = {
     "Tianjin Lovol Engines Co., Ltd.": {"Lovol"},
     "TYM Corporation": {"TYM"},
     "Weichai Power Co.,Ltd.": {"Weichai"},
+    "Yangdong Co., Ltd.": {"Yangdong"},
     "Yanmar Power Technology Co., Ltd.": {"Yanmar"},
     "Zhejiang Xinchai Co., Ltd.": {"Xinchai"},
 }
