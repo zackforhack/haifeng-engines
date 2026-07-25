@@ -233,6 +233,38 @@ CERTIFICATION_ALIASES = {
         "MTU",
         "12V1600G80S",
     ),
+    ("Rolls-Royce Solutions America Inc", "12V2000G443B"): ("MTU", "MTU 12V2000 G44"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G443D"): ("MTU", "MTU 12V2000 G44"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G443B"): ("MTU", "MTU 16V2000 G44"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G443D"): ("MTU", "MTU 16V2000 G44"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G45TB3B"): ("MTU", "MTU 12V2000 G45"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G45TB3D"): ("MTU", "MTU 12V2000 G45"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G45TD3B"): ("MTU", "MTU 12V2000 G45"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G45TD3D"): ("MTU", "MTU 12V2000 G45"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G45TB3B"): ("MTU", "MTU 16V2000 G45"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G45TB3D"): ("MTU", "MTU 16V2000 G45"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G45TD3B"): ("MTU", "MTU 16V2000 G45"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G45TD3D"): ("MTU", "MTU 16V2000 G45"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G843B"): ("MTU", "MTU 12V2000 G84"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G843D"): ("MTU", "MTU 12V2000 G84"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G843B"): ("MTU", "MTU 16V2000 G84"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G843D"): ("MTU", "MTU 16V2000 G84"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G85TB3B"): ("MTU", "MTU 12V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G85TB3D"): ("MTU", "MTU 12V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G85TD3B"): ("MTU", "MTU 12V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "12V2000G85TD3D"): ("MTU", "MTU 12V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G85TB3B"): ("MTU", "MTU 16V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G85TB3D"): ("MTU", "MTU 16V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G85TD3B"): ("MTU", "MTU 16V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "16V2000G85TD3D"): ("MTU", "MTU 16V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "18V2000G85TB3B"): ("MTU", "MTU 18V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "18V2000G85TB3D"): ("MTU", "MTU 18V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "18V2000G85TD3B"): ("MTU", "MTU 18V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "18V2000G85TD3D"): ("MTU", "MTU 18V2000 G85"),
+    ("Rolls-Royce Solutions America Inc", "12V2000P823A"): ("MTU", "MTU 12V2000 P82"),
+    ("Rolls-Royce Solutions America Inc", "12V2000P823B3C"): ("MTU", "MTU 12V2000 P82"),
+    ("Rolls-Royce Solutions America Inc", "16V2000P823A"): ("MTU", "MTU 16V2000 P82"),
+    ("Rolls-Royce Solutions America Inc", "16V2000P823B3C"): ("MTU", "MTU 16V2000 P82"),
     ("Liebherr Machines Bulle SA", "D9812G"): ("Liebherr", "D9812"),
     ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
     ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
@@ -271,9 +303,11 @@ CERTIFICATION_ALIASES = {
     ("Perkins Engines Co Ltd", "1204JE44TTAC4P4"): ("Perkins", "1204J-E44TTAG2"),
     ("Perkins Engines Co Ltd", "1206JE70TTAC7P1"): ("Perkins", "1206J-E70TTAG4"),
     ("Yanmar Power Technology Co., Ltd.", "3TNGAG"): ("Yanmar", "4TNV98C-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "3TNGA"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TNGP"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TNV88CL"): ("Yanmar", "3TNV88F-UG6GE"),
     ("Yanmar Power Technology Co., Ltd.", "3TTGAG"): ("Yanmar", "4TNV98CT-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "3TTGA"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TTGP"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "4TNGAC"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "4TNGPC"): ("Yanmar", "4TNV98C-GGE"),
@@ -282,6 +316,8 @@ CERTIFICATION_ALIASES = {
     ("Yanmar Power Technology Co., Ltd.", "4TTGAC"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "4TTGPC"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3NNGAG"): ("Yanmar", "4TNV88-CL"),
+    ("Yanmar Power Technology Co., Ltd.", "3NNGA"): ("Yanmar", "4TNV88-CL"),
+    ("Motorenfabrik Hatz GmbH & Co. KG", "1D81SZTU"): ("Hatz", "1D81"),
     (
         "Yanmar Power Technology Co., Ltd.",
         "4HNGFM",
@@ -706,6 +742,14 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         and result["mapped_database_brands"]
         and "Constant Speed" in result["engine_operations"]
     ]
+    legacy_2016_priority = [
+        result
+        for result in results
+        if result["match_status"] not in REPRESENTED_STATUSES
+        and result["latest_model_year"] == 2016
+        and result["mapped_database_brands"]
+        and "Constant Speed" in result["engine_operations"]
+    ]
     generator_priority_brands = defaultdict(int)
     for result in generator_priority:
         for brand in result["mapped_database_brands"]:
@@ -761,6 +805,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Legacy 2019 review queue (mapped brand, constant speed): **{len(legacy_2019_priority):,}**",
         f"- Legacy 2018 review queue (mapped brand, constant speed): **{len(legacy_2018_priority):,}**",
         f"- Legacy 2017 review queue (mapped brand, constant speed): **{len(legacy_2017_priority):,}**",
+        f"- Legacy 2016 review queue (mapped brand, constant speed): **{len(legacy_2016_priority):,}**",
         "",
         "The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use "
         "1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second "
