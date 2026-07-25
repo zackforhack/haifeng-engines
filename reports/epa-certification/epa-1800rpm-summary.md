@@ -19,22 +19,25 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **241**
+- Exact manufacturer/brand matches: **247**
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **76**
+- Reviewed certification aliases: **96**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **183**
+- Exact matches whose database page uses 1800 as its primary RPM: **189**
 - Exact model under another database brand: **7**
-- Not represented after reviewed matching rules: **506**
+- Not represented after reviewed matching rules: **480**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **54.8%**
+- Represented coverage within mapped manufacturers: **57.9%**
 - Unmatched models with a 2024+ certification: **130**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
 - Generator-priority review queue (2024+, mapped brand, constant speed): **0**
 - Next-tier review queue (2020–2023, mapped brand, constant speed): **0**
+- Legacy 2019 review queue (mapped brand, constant speed): **0**
+- Legacy 2018 review queue (mapped brand, constant speed): **0**
+- Legacy 2017 review queue (mapped brand, constant speed): **0**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -49,7 +52,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 - `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's official co-development announcement identifies the six KD commercial engine families manufactured for Kohler generator sets.
 - `Kubota Corporation` EPA model names use certification suffixes such as `-EF` and `-ET`, while Kubota's public generator catalog uses commercial `E4-BG` and `E3-BG` names. Sixteen reviewed aliases require matching displacement, aspiration, emissions tier and Kubota-published 1800 RPM output.
 - `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append the shared Caterpillar base-engine name in parentheses. Seventeen reviewed aliases map those records only to Perkins commercial pages with matching family, displacement, emissions tier and manufacturer-published 1800 RPM power node.
-- `Rolls-Royce Solutions America Inc` is represented under the `MTU` database brand. Exact 60 Hz commercial model pages retain MTU's `S`, `3B` and `3D` application suffixes and use the latest 1800 RPM power node in the EPA workbook, supplemented by public MTU gendrive specifications and operating instructions where available.
+- `Rolls-Royce Solutions America Inc` is represented under the `MTU` database brand. Exact 60 Hz commercial model pages retain MTU's `S`, `3B` and `3D` application suffixes and use the latest 1800 RPM power node in the EPA workbook. Fifteen reviewed aliases cover EPA certification names whose only difference is the presence or absence of the verified `3B` or `3D` suffix, supplemented by public MTU gendrive specifications and operating instructions where available.
 - `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration names that differ from its TNV generator product names. Seventeen reviewed aliases map only where displacement, aspiration, emissions tier and the certified power node agree with Yanmar's official generator and industrial-engine documentation.
 
 ## Generator-Priority Gaps by Brand
@@ -62,21 +65,21 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 
 | EPA manufacturer | Database brand | EPA models | Exact | Brand prefix | Base trims | Cert. trims | Cert. aliases | Families | Other-brand exact | Not found | Probable |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Rolls-Royce Solutions America Inc | MTU | 155 | 41 | 27 | 0 | 0 | 0 | 0 | 0 | 87 | 17 |
+| Rolls-Royce Solutions America Inc | MTU | 155 | 41 | 27 | 0 | 0 | 15 | 0 | 0 | 72 | 2 |
 | Cummins Inc. | Cummins | 80 | 48 | 0 | 0 | 0 | 3 | 14 | 0 | 15 | 1 |
-| Perkins Engines Co Ltd | Perkins | 79 | 14 | 0 | 0 | 0 | 17 | 10 | 2 | 36 | 5 |
+| Perkins Engines Co Ltd | Perkins | 79 | 16 | 0 | 0 | 0 | 17 | 10 | 2 | 34 | 4 |
 | FPT Industrial S.p.A. | FPT | 68 | 12 | 0 | 0 | 0 | 12 | 0 | 0 | 44 | 1 |
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 53 | 0 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 7 | 0 | 0 | 44 | 4 | 0 | 0 | 1 | 0 |
-| Discovery Energy, LLC. | Kohler | 48 | 3 | 0 | 14 | 0 | 1 | 0 | 0 | 30 | 1 |
-| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 4 | 0 | 0 | 0 | 17 | 5 | 0 | 16 | 0 |
+| Discovery Energy, LLC. | Kohler | 48 | 3 | 0 | 14 | 0 | 2 | 0 | 0 | 29 | 0 |
+| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 5 | 0 | 0 | 0 | 17 | 5 | 0 | 15 | 0 |
 | Kubota Corporation | Kubota | 37 | 6 | 0 | 0 | 0 | 16 | 0 | 0 | 15 | 1 |
 | Caterpillar Inc. | Caterpillar | 35 | 21 | 0 | 0 | 0 | 0 | 11 | 0 | 3 | 1 |
-| Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 1 |
-| AB Volvo Penta | Volvo Penta | 28 | 22 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 6 |
+| Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 17 | 1 |
+| AB Volvo Penta | Volvo Penta | 28 | 22 | 0 | 0 | 0 | 2 | 0 | 0 | 4 | 4 |
 | Deutz AG | Deutz | 28 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 0 |
 | HD Construction Equipment Co., Ltd. | Hyundai | 26 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 2 |
-| Isuzu Motors Limited | Isuzu | 24 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 13 | 1 |
+| Isuzu Motors Limited | Isuzu | 24 | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 12 | 0 |
 | Daedong Corporation | Unmapped | 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 19 | 0 |
 | Deere & Company | John Deere | 19 | 3 | 0 | 0 | 0 | 0 | 5 | 0 | 11 | 5 |
 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | Mitsubishi | 19 | 10 | 0 | 0 | 0 | 6 | 0 | 0 | 3 | 0 |
@@ -99,11 +102,11 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Volvo Construction Equipment | Unmapped | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
 | Weichai Power Co.,Ltd. | Weichai | 3 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
 | Zhejiang Xinchai Co., Ltd. | Xinchai | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
-| Detroit Diesel Corporation | Detroit Diesel | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 1 |
+| Detroit Diesel Corporation | Detroit Diesel | 2 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
 | PSA Peugeot Citroen | Unmapped | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
 | Wuxi Kipor Power Co., Ltd. | Unmapped | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
 | ENER-G Rudox LLC | Unmapped | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
-| FAW JIEFANG AUTOMOTIVE CO.,LTD,WUXI DIESEL ENGINE WORKS | FAWDE | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| FAW JIEFANG AUTOMOTIVE CO.,LTD,WUXI DIESEL ENGINE WORKS | FAWDE | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Greaves Farymann Diesel GmbH | Unmapped | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 
 ## Priority Review

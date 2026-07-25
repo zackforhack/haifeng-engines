@@ -138,6 +138,17 @@ CERTIFICATION_ALIASES = {
     ("Cummins Inc.", "QSK78G"): ("Cummins", "QSK78"),
     ("Cummins Inc.", "QST30G"): ("Cummins", "QST30"),
     ("Cummins Inc.", "QSX15G"): ("Cummins", "QSX15"),
+    ("AB Volvo Penta", "TAD1641GE"): ("Volvo Penta", "TAD1641GE-B"),
+    ("AB Volvo Penta", "TAD1642GE"): ("Volvo Penta", "TAD1642GE-B"),
+    ("Discovery Energy, LLC.", "KD2504ESM"): ("Kohler", "KDI2504ESM"),
+    ("Detroit Diesel Corporation", "SERIES60"): (
+        "Detroit Diesel",
+        "Series 60 14.0L",
+    ),
+    ("Detroit Diesel Corporation", "SERIES6014L"): (
+        "Detroit Diesel",
+        "Series 60 14.0L",
+    ),
     (
         "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
         "S12A2PTAW",
@@ -162,6 +173,66 @@ CERTIFICATION_ALIASES = {
         "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.",
         "S6RPTAW",
     ): ("Mitsubishi", "S6R-Y2PTAW"),
+    ("Rolls-Royce Solutions America Inc", "10V1600G70S"): (
+        "MTU",
+        "10V1600G70S 3D",
+    ),
+    ("Rolls-Royce Solutions America Inc", "6R1600G10S"): (
+        "MTU",
+        "6R1600G10S 3B",
+    ),
+    ("Rolls-Royce Solutions America Inc", "6R1600G20S"): (
+        "MTU",
+        "6R1600G20S 3B",
+    ),
+    ("Rolls-Royce Solutions America Inc", "6R1600G70S"): (
+        "MTU",
+        "6R1600G70S 3D",
+    ),
+    ("Rolls-Royce Solutions America Inc", "6R1600G80S"): (
+        "MTU",
+        "6R1600G80S 3D",
+    ),
+    ("Rolls-Royce Solutions America Inc", "8V1600G10S"): (
+        "MTU",
+        "8V1600G10S 3B",
+    ),
+    ("Rolls-Royce Solutions America Inc", "8V1600G20S"): (
+        "MTU",
+        "8V1600G20S 3B",
+    ),
+    ("Rolls-Royce Solutions America Inc", "8V1600G70S"): (
+        "MTU",
+        "8V1600G70S 3D",
+    ),
+    ("Rolls-Royce Solutions America Inc", "8V1600G80S"): (
+        "MTU",
+        "8V1600G80S 3D",
+    ),
+    ("Rolls-Royce Solutions America Inc", "10V1600G20S3B"): (
+        "MTU",
+        "10V1600G20S",
+    ),
+    ("Rolls-Royce Solutions America Inc", "10V1600G80S3D"): (
+        "MTU",
+        "10V1600G80S",
+    ),
+    ("Rolls-Royce Solutions America Inc", "12V1600G10S3B"): (
+        "MTU",
+        "12V1600G10S",
+    ),
+    ("Rolls-Royce Solutions America Inc", "12V1600G20S3B"): (
+        "MTU",
+        "12V1600G20S",
+    ),
+    ("Rolls-Royce Solutions America Inc", "12V1600G70S3D"): (
+        "MTU",
+        "12V1600G70S",
+    ),
+    ("Rolls-Royce Solutions America Inc", "12V1600G80S3D"): (
+        "MTU",
+        "12V1600G80S",
+    ),
     ("Liebherr Machines Bulle SA", "D9812G"): ("Liebherr", "D9812"),
     ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
     ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
@@ -611,6 +682,30 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         and result["mapped_database_brands"]
         and "Constant Speed" in result["engine_operations"]
     ]
+    legacy_2019_priority = [
+        result
+        for result in results
+        if result["match_status"] not in REPRESENTED_STATUSES
+        and result["latest_model_year"] == 2019
+        and result["mapped_database_brands"]
+        and "Constant Speed" in result["engine_operations"]
+    ]
+    legacy_2018_priority = [
+        result
+        for result in results
+        if result["match_status"] not in REPRESENTED_STATUSES
+        and result["latest_model_year"] == 2018
+        and result["mapped_database_brands"]
+        and "Constant Speed" in result["engine_operations"]
+    ]
+    legacy_2017_priority = [
+        result
+        for result in results
+        if result["match_status"] not in REPRESENTED_STATUSES
+        and result["latest_model_year"] == 2017
+        and result["mapped_database_brands"]
+        and "Constant Speed" in result["engine_operations"]
+    ]
     generator_priority_brands = defaultdict(int)
     for result in generator_priority:
         for brand in result["mapped_database_brands"]:
@@ -663,6 +758,9 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Variable-speed-only models retained for reference: **{len(variable_speed_only_models):,}**",
         f"- Generator-priority review queue (2024+, mapped brand, constant speed): **{len(generator_priority):,}**",
         f"- Next-tier review queue (2020–2023, mapped brand, constant speed): **{len(next_tier_priority):,}**",
+        f"- Legacy 2019 review queue (mapped brand, constant speed): **{len(legacy_2019_priority):,}**",
+        f"- Legacy 2018 review queue (mapped brand, constant speed): **{len(legacy_2018_priority):,}**",
+        f"- Legacy 2017 review queue (mapped brand, constant speed): **{len(legacy_2017_priority):,}**",
         "",
         "The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use "
         "1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second "
@@ -704,8 +802,10 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "tier and manufacturer-published 1800 RPM power node.",
         "- `Rolls-Royce Solutions America Inc` is represented under the `MTU` database brand. "
         "Exact 60 Hz commercial model pages retain MTU's `S`, `3B` and `3D` application suffixes "
-        "and use the latest 1800 RPM power node in the EPA workbook, supplemented by public MTU "
-        "gendrive specifications and operating instructions where available.",
+        "and use the latest 1800 RPM power node in the EPA workbook. Fifteen reviewed aliases cover "
+        "EPA certification names whose only difference is the presence or absence of the verified "
+        "`3B` or `3D` suffix, supplemented by public MTU gendrive specifications and operating "
+        "instructions where available.",
         "- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration "
         "names that differ from its TNV generator product names. Seventeen reviewed aliases map only "
         "where displacement, aspiration, emissions tier and the certified power node agree with "

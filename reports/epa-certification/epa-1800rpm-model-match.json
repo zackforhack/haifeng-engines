@@ -37139,6 +37139,214 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "AB Volvo Penta",
+    "mapped_database_brands": [
+      "Volvo Penta"
+    ],
+    "epa_model": "TAD1641GE",
+    "normalized_model": "TAD1641GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2019,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "CVPXL16.1ACB",
+      "DVPXL16.1ACB",
+      "EVPXL16.1ACB",
+      "FVPXL16.1ACB",
+      "GVPXL16.1ACB",
+      "HVPXL16.1ACB",
+      "JVPXL16.1ACB",
+      "KVPXL16.1ACB"
+    ],
+    "engine_codes": [
+      "2"
+    ],
+    "certificates": [
+      "CVPXL16.1ACB-007",
+      "DVPXL16.1ACB-003",
+      "EVPXL16.1ACB-008",
+      "FVPXL16.1ACB-006",
+      "GVPXL16.1ACB-006",
+      "HVPXL16.1ACB-001",
+      "JVPXL16.1ACB-007",
+      "KVPXL16.1ACB-007"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 565,
+    "rated_power_kw_max": 565,
+    "displacements_l": [
+      16.123
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Volvo Penta",
+        "model": "TAD1641GE-B",
+        "slug": "volvo-penta-tad1641ge-b",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage II / U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "AB Volvo Penta",
+    "mapped_database_brands": [
+      "Volvo Penta"
+    ],
+    "epa_model": "TAD1642GE",
+    "normalized_model": "TAD1642GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2019,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "CVPXL16.1ACB",
+      "DVPXL16.1ACB",
+      "EVPXL16.1ACB",
+      "FVPXL16.1ACB",
+      "GVPXL16.1ACB",
+      "HVPXL16.1ACB",
+      "JVPXL16.1ACB",
+      "KVPXL16.1ACB"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CVPXL16.1ACB-007",
+      "DVPXL16.1ACB-003",
+      "EVPXL16.1ACB-008",
+      "FVPXL16.1ACB-006",
+      "GVPXL16.1ACB-006",
+      "HVPXL16.1ACB-001",
+      "JVPXL16.1ACB-007",
+      "KVPXL16.1ACB-007"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 604,
+    "rated_power_kw_max": 604,
+    "displacements_l": [
+      16.123
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Volvo Penta",
+        "model": "TAD1642GE-B",
+        "slug": "volvo-penta-tad1642ge-b",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage II / U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KD2504ESM",
+    "normalized_model": "KD2504ESM",
+    "first_model_year": 2015,
+    "latest_model_year": 2019,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "FKHXL2.48ESM",
+      "GKHXL2.48ESM",
+      "HKHXL2.48ESM",
+      "JKHXL2.48ESM",
+      "KKHXL2.48ESM"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "FKHXL2.48ESM-003",
+      "GKHXL2.48ESM-006",
+      "HKHXL2.48ESM-005",
+      "JKHXL2.48ESM-003",
+      "KKHXL2.48ESM-006"
+    ],
+    "applicable_tiers": [
+      "Tier 2",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 29,
+    "rated_power_kw_max": 29,
+    "displacements_l": [
+      2.482
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDI2504ESM",
+        "slug": "kohler-kdi2504esm",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel/HVO"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Discovery Energy, LLC.",
     "mapped_database_brands": [
       "Kohler"
@@ -37430,6 +37638,209 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
+    "mapped_database_brands": [
+      "Hatz"
+    ],
+    "epa_model": "2M41Z",
+    "normalized_model": "2M41Z",
+    "first_model_year": 2012,
+    "latest_model_year": 2019,
+    "model_years": [
+      2012,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "CHZXL2.57V41",
+      "CHZXL3.43C41",
+      "EHZXL1.72C41",
+      "EHZXL1.72M41",
+      "FHZXL1.72M41",
+      "GHZXL1.72M41",
+      "HHZXL1.72M41",
+      "JHZXL1.72M41",
+      "KHZXL1.72M41"
+    ],
+    "engine_codes": [
+      "2M41Z-IFN-1800",
+      "cs-2M41Z-ICFN-1800",
+      "ts-2M41Z-ICFN-1800"
+    ],
+    "certificates": [
+      "CHZXL2.57V41-012",
+      "CHZXL3.43C41-013",
+      "EHZXL1.72C41-001",
+      "EHZXL1.72M41-002",
+      "FHZXL1.72M41-005",
+      "GHZXL1.72M41-003",
+      "HHZXL1.72M41-008",
+      "JHZXL1.72M41-008",
+      "KHZXL1.72M41-006"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 17,
+    "rated_power_kw_max": 20,
+    "displacements_l": [
+      1.7160000000000002
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hatz",
+        "model": "2M41Z",
+        "slug": "hatz-2m41z",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "1204E-E44TA(C4.4)",
+    "normalized_model": "1204EE44TAC4P4",
+    "first_model_year": 2016,
+    "latest_model_year": 2019,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "GPKXL04.4MK1",
+      "HPKXL04.4MK1",
+      "JPKXL04.4MK1",
+      "KPKXL04.4MK1"
+    ],
+    "engine_codes": [
+      "3662/1800",
+      "3792/1800",
+      "PARENT-3792/1800"
+    ],
+    "certificates": [
+      "GPKXL04.4MK1-014",
+      "HPKXL04.4MK1-014",
+      "JPKXL04.4MK1-002",
+      "KPKXL04.4MK1-006"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for distilate fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 71,
+    "rated_power_kw_max": 82,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1204E-E44TA(C4.4)",
+        "slug": "perkins-1204e-e44ta-c4-4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / Euro Stage IIIB",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "1204E-E44TTA(C4.4)",
+    "normalized_model": "1204EE44TTAC4P4",
+    "first_model_year": 2016,
+    "latest_model_year": 2019,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "GPKXL04.4ML1",
+      "HPKXL04.4ML1",
+      "JPKXL04.4ML1",
+      "KPKXL04.4ML1"
+    ],
+    "engine_codes": [
+      "3790/1800",
+      "3862/1800",
+      "PARENT-3790/1800"
+    ],
+    "certificates": [
+      "GPKXL04.4ML1-015",
+      "HPKXL04.4ML1-015",
+      "JPKXL04.4ML1-003",
+      "KPKXL04.4ML1-007"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for distilate fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 122,
+    "rated_power_kw_max": 129,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1204E-E44TTA(C4.4)",
+        "slug": "perkins-1204e-e44tta-c4-4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / Euro Stage IIIB",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Caterpillar Inc.",
     "mapped_database_brands": [
       "Caterpillar"
@@ -37489,6 +37900,1171 @@
         "slug": "caterpillar-c7-1",
         "rpm_rated": 1500,
         "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FAW JIEFANG AUTOMOTIVE CO.,LTD,WUXI DIESEL ENGINE WORKS",
+    "mapped_database_brands": [
+      "FAWDE"
+    ],
+    "epa_model": "4DW93-45DT4",
+    "normalized_model": "4DW9345DT4",
+    "first_model_year": 2018,
+    "latest_model_year": 2018,
+    "model_years": [
+      2018
+    ],
+    "engine_families": [
+      "JFJAL2.545GN"
+    ],
+    "engine_codes": [
+      "4DW93-45DT4"
+    ],
+    "certificates": [
+      "JFJAL2.545GN-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 33,
+    "rated_power_kw_max": 33,
+    "displacements_l": [
+      2.545
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FAWDE",
+        "model": "4DW93-45DT4",
+        "slug": "fawde-4dw93-45dt4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "KV-4LE1",
+    "normalized_model": "KV4LE1",
+    "first_model_year": 2017,
+    "latest_model_year": 2018,
+    "model_years": [
+      2017,
+      2018
+    ],
+    "engine_families": [
+      "HSZXL02.2VNK",
+      "JSZXL02.2VNK"
+    ],
+    "engine_codes": [
+      "4LE1NCVKA-01",
+      "4LE1NCVKA-02"
+    ],
+    "certificates": [
+      "HSZXL02.2VNK-001",
+      "JSZXL02.2VNK-006"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 26,
+    "rated_power_kw_max": 26,
+    "displacements_l": [
+      2.1790000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "KV-4LE1",
+        "slug": "isuzu-kv-4le1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "10V1600G70S",
+    "normalized_model": "10V1600G70S",
+    "first_model_year": 2018,
+    "latest_model_year": 2018,
+    "model_years": [
+      2018
+    ],
+    "engine_families": [
+      "JMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7244"
+    ],
+    "certificates": [
+      "JMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 511,
+    "rated_power_kw_max": 511,
+    "displacements_l": [
+      17.535
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G70S 3D",
+        "slug": "mtu-10v1600g70s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "6R1600G10S",
+    "normalized_model": "6R1600G10S",
+    "first_model_year": 2018,
+    "latest_model_year": 2018,
+    "model_years": [
+      2018
+    ],
+    "engine_families": [
+      "JMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7218"
+    ],
+    "certificates": [
+      "JMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 284,
+    "rated_power_kw_max": 284,
+    "displacements_l": [
+      10.521
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G10S 3B",
+        "slug": "mtu-6r1600g10s-3b",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "6R1600G20S",
+    "normalized_model": "6R1600G20S",
+    "first_model_year": 2018,
+    "latest_model_year": 2018,
+    "model_years": [
+      2018
+    ],
+    "engine_families": [
+      "JMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7217"
+    ],
+    "certificates": [
+      "JMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 312,
+    "rated_power_kw_max": 312,
+    "displacements_l": [
+      10.521
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G20S 3B",
+        "slug": "mtu-6r1600g20s-3b",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "6R1600G70S",
+    "normalized_model": "6R1600G70S",
+    "first_model_year": 2018,
+    "latest_model_year": 2018,
+    "model_years": [
+      2018
+    ],
+    "engine_families": [
+      "JMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7216"
+    ],
+    "certificates": [
+      "JMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 312,
+    "rated_power_kw_max": 312,
+    "displacements_l": [
+      10.521
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G70S 3D",
+        "slug": "mtu-6r1600g70s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "6R1600G80S",
+    "normalized_model": "6R1600G80S",
+    "first_model_year": 2018,
+    "latest_model_year": 2018,
+    "model_years": [
+      2018
+    ],
+    "engine_families": [
+      "JMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7215"
+    ],
+    "certificates": [
+      "JMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 343,
+    "rated_power_kw_max": 343,
+    "displacements_l": [
+      10.521
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "6R1600G80S 3D",
+        "slug": "mtu-6r1600g80s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "8V1600G10S",
+    "normalized_model": "8V1600G10S",
+    "first_model_year": 2018,
+    "latest_model_year": 2018,
+    "model_years": [
+      2018
+    ],
+    "engine_families": [
+      "JMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7222"
+    ],
+    "certificates": [
+      "JMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 371,
+    "rated_power_kw_max": 371,
+    "displacements_l": [
+      14.028
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G10S 3B",
+        "slug": "mtu-8v1600g10s-3b",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "8V1600G20S",
+    "normalized_model": "8V1600G20S",
+    "first_model_year": 2018,
+    "latest_model_year": 2018,
+    "model_years": [
+      2018
+    ],
+    "engine_families": [
+      "JMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7221"
+    ],
+    "certificates": [
+      "JMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 408,
+    "rated_power_kw_max": 408,
+    "displacements_l": [
+      14.028
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G20S 3B",
+        "slug": "mtu-8v1600g20s-3b",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "8V1600G70S",
+    "normalized_model": "8V1600G70S",
+    "first_model_year": 2018,
+    "latest_model_year": 2018,
+    "model_years": [
+      2018
+    ],
+    "engine_families": [
+      "JMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7220"
+    ],
+    "certificates": [
+      "JMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 408,
+    "rated_power_kw_max": 408,
+    "displacements_l": [
+      14.028
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G70S 3D",
+        "slug": "mtu-8v1600g70s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "8V1600G80S",
+    "normalized_model": "8V1600G80S",
+    "first_model_year": 2018,
+    "latest_model_year": 2018,
+    "model_years": [
+      2018
+    ],
+    "engine_families": [
+      "JMDDL14.0ZWK"
+    ],
+    "engine_codes": [
+      "7219"
+    ],
+    "certificates": [
+      "JMDDL14.0ZWK-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 448,
+    "rated_power_kw_max": 448,
+    "displacements_l": [
+      14.028
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "8V1600G80S 3D",
+        "slug": "mtu-8v1600g80s-3d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3TNV82A-CL",
+    "normalized_model": "3TNV82ACL",
+    "first_model_year": 2012,
+    "latest_model_year": 2018,
+    "model_years": [
+      2012,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018
+    ],
+    "engine_families": [
+      "CYDXL1.33J3N",
+      "EYDXL1.33S3N",
+      "FYDXL1.33S3N",
+      "GYDXL1.33S3N",
+      "HYDXL1.33S3N",
+      "JYDXL1.33S3N"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL1.33J3N-017",
+      "EYDXL1.33S3N-006",
+      "FYDXL1.33S3N-033",
+      "GYDXL1.33S3N-046",
+      "HYDXL1.33S3N-038",
+      "JYDXL1.33S3N-042"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 14,
+    "rated_power_kw_max": 14,
+    "displacements_l": [
+      1.331
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNV82A-CL",
+        "slug": "yanmar-3tnv82a-cl",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Detroit Diesel Corporation",
+    "mapped_database_brands": [
+      "Detroit Diesel"
+    ],
+    "epa_model": "Series 60",
+    "normalized_model": "SERIES60",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CDDXL14.0WLD",
+      "DDDXL14.0WLD",
+      "EDDXL14.0WLD",
+      "FDDXL14.0WLD",
+      "GDDXL14.0WLD",
+      "HDDXL14.0WLD"
+    ],
+    "engine_codes": [
+      "5572"
+    ],
+    "certificates": [
+      "CDDXL14.0WLD-001",
+      "DDDXL14.0WLD-001",
+      "EDDXL14.0WLD-001",
+      "FDDXL14.0WLD-001",
+      "GDDXL14.0WLD-001",
+      "HDDXL14.0WLD-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 567,
+    "rated_power_kw_max": 567,
+    "displacements_l": [
+      14.004000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Detroit Diesel",
+        "model": "Series 60 14.0L",
+        "slug": "detroit-diesel-series-60-14-0l",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Detroit Diesel Corporation",
+    "mapped_database_brands": [
+      "Detroit Diesel"
+    ],
+    "epa_model": "Series 60, 14L",
+    "normalized_model": "SERIES6014L",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CDDXL14.0VLD",
+      "DDDXL14.0VLD",
+      "EDDXL14.0VLD",
+      "FDDXL14.0VLD",
+      "GDDXL14.0VLD",
+      "HDDXL14.0VLD"
+    ],
+    "engine_codes": [
+      "5531",
+      "5532",
+      "5533",
+      "5534",
+      "5535",
+      "5536"
+    ],
+    "certificates": [
+      "CDDXL14.0VLD-002",
+      "DDDXL14.0VLD-002",
+      "EDDXL14.0VLD-002",
+      "FDDXL14.0VLD-002",
+      "GDDXL14.0VLD-002",
+      "HDDXL14.0VLD-001"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 310,
+    "rated_power_kw_max": 511,
+    "displacements_l": [
+      14.004000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Detroit Diesel",
+        "model": "Series 60 14.0L",
+        "slug": "detroit-diesel-series-60-14-0l",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2 / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "10V1600G20S 3B",
+    "normalized_model": "10V1600G20S3B",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CMDDL21.0ZWR",
+      "DMDDL21.0ZWR",
+      "EMDDL21.0ZWR",
+      "FMDDL21.0ZWR",
+      "GMDDL21.0ZWR",
+      "HMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7191"
+    ],
+    "certificates": [
+      "CMDDL21.0ZWR-002",
+      "DMDDL21.0ZWR-004",
+      "EMDDL21.0ZWR-004",
+      "FMDDL21.0ZWR-001",
+      "GMDDL21.0ZWR-001",
+      "HMDDL21.0ZWR-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 511,
+    "rated_power_kw_max": 561,
+    "displacements_l": [
+      17.535
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G20S",
+        "slug": "mtu-10v1600g20s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "10V1600G80S 3D",
+    "normalized_model": "10V1600G80S3D",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CMDDL21.0ZWR",
+      "DMDDL21.0ZWR",
+      "EMDDL21.0ZWR",
+      "FMDDL21.0ZWR",
+      "GMDDL21.0ZWR",
+      "HMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7190"
+    ],
+    "certificates": [
+      "CMDDL21.0ZWR-002",
+      "DMDDL21.0ZWR-004",
+      "EMDDL21.0ZWR-004",
+      "FMDDL21.0ZWR-001",
+      "GMDDL21.0ZWR-001",
+      "HMDDL21.0ZWR-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 561,
+    "rated_power_kw_max": 561,
+    "displacements_l": [
+      17.535
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "10V1600G80S",
+        "slug": "mtu-10v1600g80s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V1600G10S 3B",
+    "normalized_model": "12V1600G10S3B",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CMDDL21.0ZWR",
+      "DMDDL21.0ZWR",
+      "EMDDL21.0ZWR",
+      "FMDDL21.0ZWR",
+      "GMDDL21.0ZWR",
+      "HMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7189"
+    ],
+    "certificates": [
+      "CMDDL21.0ZWR-002",
+      "DMDDL21.0ZWR-004",
+      "EMDDL21.0ZWR-004",
+      "FMDDL21.0ZWR-001",
+      "GMDDL21.0ZWR-001",
+      "HMDDL21.0ZWR-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 561,
+    "rated_power_kw_max": 617,
+    "displacements_l": [
+      21.042
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G10S",
+        "slug": "mtu-12v1600g10s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V1600G20S 3B",
+    "normalized_model": "12V1600G20S3B",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CMDDL21.0ZWR",
+      "DMDDL21.0ZWR",
+      "EMDDL21.0ZWR",
+      "FMDDL21.0ZWR",
+      "GMDDL21.0ZWR",
+      "HMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7186"
+    ],
+    "certificates": [
+      "CMDDL21.0ZWR-002",
+      "DMDDL21.0ZWR-004",
+      "EMDDL21.0ZWR-004",
+      "FMDDL21.0ZWR-001",
+      "GMDDL21.0ZWR-001",
+      "HMDDL21.0ZWR-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 608,
+    "rated_power_kw_max": 668,
+    "displacements_l": [
+      21.042
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G20S",
+        "slug": "mtu-12v1600g20s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V1600G70S 3D",
+    "normalized_model": "12V1600G70S3D",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CMDDL21.0ZWR",
+      "DMDDL21.0ZWR",
+      "EMDDL21.0ZWR",
+      "FMDDL21.0ZWR",
+      "GMDDL21.0ZWR",
+      "HMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7188"
+    ],
+    "certificates": [
+      "CMDDL21.0ZWR-002",
+      "DMDDL21.0ZWR-004",
+      "EMDDL21.0ZWR-004",
+      "FMDDL21.0ZWR-001",
+      "GMDDL21.0ZWR-001",
+      "HMDDL21.0ZWR-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 613,
+    "rated_power_kw_max": 613,
+    "displacements_l": [
+      21.042
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G70S",
+        "slug": "mtu-12v1600g70s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "12V1600G80S 3D",
+    "normalized_model": "12V1600G80S3D",
+    "first_model_year": 2012,
+    "latest_model_year": 2017,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "engine_families": [
+      "CMDDL21.0ZWR",
+      "DMDDL21.0ZWR",
+      "EMDDL21.0ZWR",
+      "FMDDL21.0ZWR",
+      "GMDDL21.0ZWR",
+      "HMDDL21.0ZWR"
+    ],
+    "engine_codes": [
+      "7185"
+    ],
+    "certificates": [
+      "CMDDL21.0ZWR-002",
+      "DMDDL21.0ZWR-004",
+      "EMDDL21.0ZWR-004",
+      "FMDDL21.0ZWR-001",
+      "GMDDL21.0ZWR-001",
+      "HMDDL21.0ZWR-002"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 668,
+    "rated_power_kw_max": 668,
+    "displacements_l": [
+      21.042
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "12V1600G80S",
+        "slug": "mtu-12v1600g80s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
         "fuel_type": "Diesel"
       }
     ],
@@ -49629,152 +51205,6 @@
     "mapped_database_brands": [
       "Volvo Penta"
     ],
-    "epa_model": "TAD1641GE",
-    "normalized_model": "TAD1641GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2019,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "CVPXL16.1ACB",
-      "DVPXL16.1ACB",
-      "EVPXL16.1ACB",
-      "FVPXL16.1ACB",
-      "GVPXL16.1ACB",
-      "HVPXL16.1ACB",
-      "JVPXL16.1ACB",
-      "KVPXL16.1ACB"
-    ],
-    "engine_codes": [
-      "2"
-    ],
-    "certificates": [
-      "CVPXL16.1ACB-007",
-      "DVPXL16.1ACB-003",
-      "EVPXL16.1ACB-008",
-      "FVPXL16.1ACB-006",
-      "GVPXL16.1ACB-006",
-      "HVPXL16.1ACB-001",
-      "JVPXL16.1ACB-007",
-      "KVPXL16.1ACB-007"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 565,
-    "rated_power_kw_max": 565,
-    "displacements_l": [
-      16.123
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Volvo Penta",
-        "model": "TAD1641GE-B",
-        "slug": "volvo-penta-tad1641ge-b",
-        "similarity": 0.947
-      },
-      {
-        "brand": "Volvo Penta",
-        "model": "TAD1651GE",
-        "slug": "volvo-penta-tad1651ge",
-        "similarity": 0.889
-      }
-    ]
-  },
-  {
-    "manufacturer": "AB Volvo Penta",
-    "mapped_database_brands": [
-      "Volvo Penta"
-    ],
-    "epa_model": "TAD1642GE",
-    "normalized_model": "TAD1642GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2019,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "CVPXL16.1ACB",
-      "DVPXL16.1ACB",
-      "EVPXL16.1ACB",
-      "FVPXL16.1ACB",
-      "GVPXL16.1ACB",
-      "HVPXL16.1ACB",
-      "JVPXL16.1ACB",
-      "KVPXL16.1ACB"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CVPXL16.1ACB-007",
-      "DVPXL16.1ACB-003",
-      "EVPXL16.1ACB-008",
-      "FVPXL16.1ACB-006",
-      "GVPXL16.1ACB-006",
-      "HVPXL16.1ACB-001",
-      "JVPXL16.1ACB-007",
-      "KVPXL16.1ACB-007"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 604,
-    "rated_power_kw_max": 604,
-    "displacements_l": [
-      16.123
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Volvo Penta",
-        "model": "TAD1642GE-B",
-        "slug": "volvo-penta-tad1642ge-b",
-        "similarity": 0.947
-      }
-    ]
-  },
-  {
-    "manufacturer": "AB Volvo Penta",
-    "mapped_database_brands": [
-      "Volvo Penta"
-    ],
     "epa_model": "TAD1650VE",
     "normalized_model": "TAD1650VE",
     "first_model_year": 2012,
@@ -49931,68 +51361,6 @@
     "match_status": "not_found",
     "database_matches": [],
     "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KD2504ESM",
-    "normalized_model": "KD2504ESM",
-    "first_model_year": 2015,
-    "latest_model_year": 2019,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "FKHXL2.48ESM",
-      "GKHXL2.48ESM",
-      "HKHXL2.48ESM",
-      "JKHXL2.48ESM",
-      "KKHXL2.48ESM"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "FKHXL2.48ESM-003",
-      "GKHXL2.48ESM-006",
-      "HKHXL2.48ESM-005",
-      "JKHXL2.48ESM-003",
-      "KKHXL2.48ESM-006"
-    ],
-    "applicable_tiers": [
-      "Tier 2",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 29,
-    "rated_power_kw_max": 29,
-    "displacements_l": [
-      2.482
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kohler",
-        "model": "KDI2504ESM",
-        "slug": "kohler-kdi2504esm",
-        "similarity": 0.947
-      }
-    ]
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
@@ -50456,74 +51824,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
-    "mapped_database_brands": [
-      "Hatz"
-    ],
-    "epa_model": "2M41Z",
-    "normalized_model": "2M41Z",
-    "first_model_year": 2012,
-    "latest_model_year": 2019,
-    "model_years": [
-      2012,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "CHZXL2.57V41",
-      "CHZXL3.43C41",
-      "EHZXL1.72C41",
-      "EHZXL1.72M41",
-      "FHZXL1.72M41",
-      "GHZXL1.72M41",
-      "HHZXL1.72M41",
-      "JHZXL1.72M41",
-      "KHZXL1.72M41"
-    ],
-    "engine_codes": [
-      "2M41Z-IFN-1800",
-      "cs-2M41Z-ICFN-1800",
-      "ts-2M41Z-ICFN-1800"
-    ],
-    "certificates": [
-      "CHZXL2.57V41-012",
-      "CHZXL3.43C41-013",
-      "EHZXL1.72C41-001",
-      "EHZXL1.72M41-002",
-      "FHZXL1.72M41-005",
-      "GHZXL1.72M41-003",
-      "HHZXL1.72M41-008",
-      "JHZXL1.72M41-008",
-      "KHZXL1.72M41-006"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 17,
-    "rated_power_kw_max": 20,
-    "displacements_l": [
-      1.7160000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "PSA Peugeot Citroen",
     "mapped_database_brands": [],
     "epa_model": "DV6NR",
@@ -50565,121 +51865,6 @@
     "match_status": "not_found",
     "database_matches": [],
     "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "1204E-E44TA(C4.4)",
-    "normalized_model": "1204EE44TAC4P4",
-    "first_model_year": 2016,
-    "latest_model_year": 2019,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "GPKXL04.4MK1",
-      "HPKXL04.4MK1",
-      "JPKXL04.4MK1",
-      "KPKXL04.4MK1"
-    ],
-    "engine_codes": [
-      "3662/1800",
-      "3792/1800",
-      "PARENT-3792/1800"
-    ],
-    "certificates": [
-      "GPKXL04.4MK1-014",
-      "HPKXL04.4MK1-014",
-      "JPKXL04.4MK1-002",
-      "KPKXL04.4MK1-006"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for distilate fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 71,
-    "rated_power_kw_max": 82,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "1204E-E44TTA(C4.4)",
-    "normalized_model": "1204EE44TTAC4P4",
-    "first_model_year": 2016,
-    "latest_model_year": 2019,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "GPKXL04.4ML1",
-      "HPKXL04.4ML1",
-      "JPKXL04.4ML1",
-      "KPKXL04.4ML1"
-    ],
-    "engine_codes": [
-      "3790/1800",
-      "3862/1800",
-      "PARENT-3790/1800"
-    ],
-    "certificates": [
-      "GPKXL04.4ML1-015",
-      "HPKXL04.4ML1-015",
-      "JPKXL04.4ML1-003",
-      "KPKXL04.4ML1-007"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for distilate fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 122,
-    "rated_power_kw_max": 129,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Perkins",
-        "model": "1204F-E44TTAN(C4.4)",
-        "slug": "perkins-1204f-e44ttan-c4-4",
-        "similarity": 0.903
-      }
-    ]
   },
   {
     "manufacturer": "Perkins Engines Co Ltd",
@@ -50812,566 +51997,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "FAW JIEFANG AUTOMOTIVE CO.,LTD,WUXI DIESEL ENGINE WORKS",
-    "mapped_database_brands": [
-      "FAWDE"
-    ],
-    "epa_model": "4DW93-45DT4",
-    "normalized_model": "4DW9345DT4",
-    "first_model_year": 2018,
-    "latest_model_year": 2018,
-    "model_years": [
-      2018
-    ],
-    "engine_families": [
-      "JFJAL2.545GN"
-    ],
-    "engine_codes": [
-      "4DW93-45DT4"
-    ],
-    "certificates": [
-      "JFJAL2.545GN-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 33,
-    "rated_power_kw_max": 33,
-    "displacements_l": [
-      2.545
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "KV-4LE1",
-    "normalized_model": "KV4LE1",
-    "first_model_year": 2017,
-    "latest_model_year": 2018,
-    "model_years": [
-      2017,
-      2018
-    ],
-    "engine_families": [
-      "HSZXL02.2VNK",
-      "JSZXL02.2VNK"
-    ],
-    "engine_codes": [
-      "4LE1NCVKA-01",
-      "4LE1NCVKA-02"
-    ],
-    "certificates": [
-      "HSZXL02.2VNK-001",
-      "JSZXL02.2VNK-006"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 26,
-    "rated_power_kw_max": 26,
-    "displacements_l": [
-      2.1790000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Isuzu",
-        "model": "KV-4LE1T",
-        "slug": "isuzu-kv-4le1t",
-        "similarity": 0.923
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "10V1600G70S",
-    "normalized_model": "10V1600G70S",
-    "first_model_year": 2018,
-    "latest_model_year": 2018,
-    "model_years": [
-      2018
-    ],
-    "engine_families": [
-      "JMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7244"
-    ],
-    "certificates": [
-      "JMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 511,
-    "rated_power_kw_max": 511,
-    "displacements_l": [
-      17.535
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "10V1600G70S 3D",
-        "slug": "mtu-10v1600g70s-3d",
-        "similarity": 0.917
-      },
-      {
-        "brand": "MTU",
-        "model": "10V1600G20S",
-        "slug": "mtu-10v1600g20s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "10V1600G80S",
-        "slug": "mtu-10v1600g80s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600G70S",
-        "slug": "mtu-12v1600g70s",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "6R1600G10S",
-    "normalized_model": "6R1600G10S",
-    "first_model_year": 2018,
-    "latest_model_year": 2018,
-    "model_years": [
-      2018
-    ],
-    "engine_families": [
-      "JMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7218"
-    ],
-    "certificates": [
-      "JMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 284,
-    "rated_power_kw_max": 284,
-    "displacements_l": [
-      10.521
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "6R1600G10S 3B",
-        "slug": "mtu-6r1600g10s-3b",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "6R1600G20S",
-    "normalized_model": "6R1600G20S",
-    "first_model_year": 2018,
-    "latest_model_year": 2018,
-    "model_years": [
-      2018
-    ],
-    "engine_families": [
-      "JMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7217"
-    ],
-    "certificates": [
-      "JMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 312,
-    "rated_power_kw_max": 312,
-    "displacements_l": [
-      10.521
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "6R1600G20S 3B",
-        "slug": "mtu-6r1600g20s-3b",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "6R1600G70S",
-    "normalized_model": "6R1600G70S",
-    "first_model_year": 2018,
-    "latest_model_year": 2018,
-    "model_years": [
-      2018
-    ],
-    "engine_families": [
-      "JMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7216"
-    ],
-    "certificates": [
-      "JMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 312,
-    "rated_power_kw_max": 312,
-    "displacements_l": [
-      10.521
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "6R1600G70S 3D",
-        "slug": "mtu-6r1600g70s-3d",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "6R1600G80S",
-    "normalized_model": "6R1600G80S",
-    "first_model_year": 2018,
-    "latest_model_year": 2018,
-    "model_years": [
-      2018
-    ],
-    "engine_families": [
-      "JMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7215"
-    ],
-    "certificates": [
-      "JMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 343,
-    "rated_power_kw_max": 343,
-    "displacements_l": [
-      10.521
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "6R1600G80S 3D",
-        "slug": "mtu-6r1600g80s-3d",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "8V1600G10S",
-    "normalized_model": "8V1600G10S",
-    "first_model_year": 2018,
-    "latest_model_year": 2018,
-    "model_years": [
-      2018
-    ],
-    "engine_families": [
-      "JMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7222"
-    ],
-    "certificates": [
-      "JMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 371,
-    "rated_power_kw_max": 371,
-    "displacements_l": [
-      14.028
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "8V1600G10S 3B",
-        "slug": "mtu-8v1600g10s-3b",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "8V1600G20S",
-    "normalized_model": "8V1600G20S",
-    "first_model_year": 2018,
-    "latest_model_year": 2018,
-    "model_years": [
-      2018
-    ],
-    "engine_families": [
-      "JMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7221"
-    ],
-    "certificates": [
-      "JMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 408,
-    "rated_power_kw_max": 408,
-    "displacements_l": [
-      14.028
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "8V1600G20",
-        "slug": "mtu-8v1600g20",
-        "similarity": 0.947
-      },
-      {
-        "brand": "MTU",
-        "model": "8V1600G20S 3B",
-        "slug": "mtu-8v1600g20s-3b",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "8V1600G70S",
-    "normalized_model": "8V1600G70S",
-    "first_model_year": 2018,
-    "latest_model_year": 2018,
-    "model_years": [
-      2018
-    ],
-    "engine_families": [
-      "JMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7220"
-    ],
-    "certificates": [
-      "JMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 408,
-    "rated_power_kw_max": 408,
-    "displacements_l": [
-      14.028
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "8V1600G70S 3D",
-        "slug": "mtu-8v1600g70s-3d",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "8V1600G80S",
-    "normalized_model": "8V1600G80S",
-    "first_model_year": 2018,
-    "latest_model_year": 2018,
-    "model_years": [
-      2018
-    ],
-    "engine_families": [
-      "JMDDL14.0ZWK"
-    ],
-    "engine_codes": [
-      "7219"
-    ],
-    "certificates": [
-      "JMDDL14.0ZWK-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 448,
-    "rated_power_kw_max": 448,
-    "displacements_l": [
-      14.028
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "8V1600G80S 3D",
-        "slug": "mtu-8v1600g80s-3d",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
     "manufacturer": "Yanmar Power Technology Co., Ltd.",
     "mapped_database_brands": [
       "Yanmar"
@@ -51423,190 +52048,6 @@
     "match_status": "not_found",
     "database_matches": [],
     "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3TNV82A-CL",
-    "normalized_model": "3TNV82ACL",
-    "first_model_year": 2012,
-    "latest_model_year": 2018,
-    "model_years": [
-      2012,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018
-    ],
-    "engine_families": [
-      "CYDXL1.33J3N",
-      "EYDXL1.33S3N",
-      "FYDXL1.33S3N",
-      "GYDXL1.33S3N",
-      "HYDXL1.33S3N",
-      "JYDXL1.33S3N"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL1.33J3N-017",
-      "EYDXL1.33S3N-006",
-      "FYDXL1.33S3N-033",
-      "GYDXL1.33S3N-046",
-      "HYDXL1.33S3N-038",
-      "JYDXL1.33S3N-042"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 14,
-    "rated_power_kw_max": 14,
-    "displacements_l": [
-      1.331
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Detroit Diesel Corporation",
-    "mapped_database_brands": [
-      "Detroit Diesel"
-    ],
-    "epa_model": "Series 60",
-    "normalized_model": "SERIES60",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CDDXL14.0WLD",
-      "DDDXL14.0WLD",
-      "EDDXL14.0WLD",
-      "FDDXL14.0WLD",
-      "GDDXL14.0WLD",
-      "HDDXL14.0WLD"
-    ],
-    "engine_codes": [
-      "5572"
-    ],
-    "certificates": [
-      "CDDXL14.0WLD-001",
-      "DDDXL14.0WLD-001",
-      "EDDXL14.0WLD-001",
-      "FDDXL14.0WLD-001",
-      "GDDXL14.0WLD-001",
-      "HDDXL14.0WLD-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 567,
-    "rated_power_kw_max": 567,
-    "displacements_l": [
-      14.004000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Detroit Diesel Corporation",
-    "mapped_database_brands": [
-      "Detroit Diesel"
-    ],
-    "epa_model": "Series 60, 14L",
-    "normalized_model": "SERIES6014L",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CDDXL14.0VLD",
-      "DDDXL14.0VLD",
-      "EDDXL14.0VLD",
-      "FDDXL14.0VLD",
-      "GDDXL14.0VLD",
-      "HDDXL14.0VLD"
-    ],
-    "engine_codes": [
-      "5531",
-      "5532",
-      "5533",
-      "5534",
-      "5535",
-      "5536"
-    ],
-    "certificates": [
-      "CDDXL14.0VLD-002",
-      "DDDXL14.0VLD-002",
-      "EDDXL14.0VLD-002",
-      "FDDXL14.0VLD-002",
-      "GDDXL14.0VLD-002",
-      "HDDXL14.0VLD-001"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 310,
-    "rated_power_kw_max": 511,
-    "displacements_l": [
-      14.004000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Detroit Diesel",
-        "model": "Series 60 14.0L",
-        "slug": "detroit-diesel-series-60-14-0l",
-        "similarity": 0.917
-      }
-    ]
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
@@ -52103,456 +52544,6 @@
     "match_status": "not_found",
     "database_matches": [],
     "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "10V1600G20S 3B",
-    "normalized_model": "10V1600G20S3B",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CMDDL21.0ZWR",
-      "DMDDL21.0ZWR",
-      "EMDDL21.0ZWR",
-      "FMDDL21.0ZWR",
-      "GMDDL21.0ZWR",
-      "HMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7191"
-    ],
-    "certificates": [
-      "CMDDL21.0ZWR-002",
-      "DMDDL21.0ZWR-004",
-      "EMDDL21.0ZWR-004",
-      "FMDDL21.0ZWR-001",
-      "GMDDL21.0ZWR-001",
-      "HMDDL21.0ZWR-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 511,
-    "rated_power_kw_max": 561,
-    "displacements_l": [
-      17.535
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "10V1600G20S",
-        "slug": "mtu-10v1600g20s",
-        "similarity": 0.917
-      },
-      {
-        "brand": "MTU",
-        "model": "8V1600G20S 3B",
-        "slug": "mtu-8v1600g20s-3b",
-        "similarity": 0.88
-      },
-      {
-        "brand": "MTU",
-        "model": "10V1600G20",
-        "slug": "mtu-10v1600g20",
-        "similarity": 0.87
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "10V1600G80S 3D",
-    "normalized_model": "10V1600G80S3D",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CMDDL21.0ZWR",
-      "DMDDL21.0ZWR",
-      "EMDDL21.0ZWR",
-      "FMDDL21.0ZWR",
-      "GMDDL21.0ZWR",
-      "HMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7190"
-    ],
-    "certificates": [
-      "CMDDL21.0ZWR-002",
-      "DMDDL21.0ZWR-004",
-      "EMDDL21.0ZWR-004",
-      "FMDDL21.0ZWR-001",
-      "GMDDL21.0ZWR-001",
-      "HMDDL21.0ZWR-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 561,
-    "rated_power_kw_max": 561,
-    "displacements_l": [
-      17.535
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "10V1600G70S 3D",
-        "slug": "mtu-10v1600g70s-3d",
-        "similarity": 0.923
-      },
-      {
-        "brand": "MTU",
-        "model": "10V1600G80S",
-        "slug": "mtu-10v1600g80s",
-        "similarity": 0.917
-      },
-      {
-        "brand": "MTU",
-        "model": "8V1600G80S 3D",
-        "slug": "mtu-8v1600g80s-3d",
-        "similarity": 0.88
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V1600G10S 3B",
-    "normalized_model": "12V1600G10S3B",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CMDDL21.0ZWR",
-      "DMDDL21.0ZWR",
-      "EMDDL21.0ZWR",
-      "FMDDL21.0ZWR",
-      "GMDDL21.0ZWR",
-      "HMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7189"
-    ],
-    "certificates": [
-      "CMDDL21.0ZWR-002",
-      "DMDDL21.0ZWR-004",
-      "EMDDL21.0ZWR-004",
-      "FMDDL21.0ZWR-001",
-      "GMDDL21.0ZWR-001",
-      "HMDDL21.0ZWR-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 561,
-    "rated_power_kw_max": 617,
-    "displacements_l": [
-      21.042
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V1600G10S",
-        "slug": "mtu-12v1600g10s",
-        "similarity": 0.917
-      },
-      {
-        "brand": "MTU",
-        "model": "8V1600G10S 3B",
-        "slug": "mtu-8v1600g10s-3b",
-        "similarity": 0.88
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600G10",
-        "slug": "mtu-12v1600g10",
-        "similarity": 0.87
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V1600G20S 3B",
-    "normalized_model": "12V1600G20S3B",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CMDDL21.0ZWR",
-      "DMDDL21.0ZWR",
-      "EMDDL21.0ZWR",
-      "FMDDL21.0ZWR",
-      "GMDDL21.0ZWR",
-      "HMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7186"
-    ],
-    "certificates": [
-      "CMDDL21.0ZWR-002",
-      "DMDDL21.0ZWR-004",
-      "EMDDL21.0ZWR-004",
-      "FMDDL21.0ZWR-001",
-      "GMDDL21.0ZWR-001",
-      "HMDDL21.0ZWR-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 608,
-    "rated_power_kw_max": 668,
-    "displacements_l": [
-      21.042
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V1600G20S",
-        "slug": "mtu-12v1600g20s",
-        "similarity": 0.917
-      },
-      {
-        "brand": "MTU",
-        "model": "8V1600G20S 3B",
-        "slug": "mtu-8v1600g20s-3b",
-        "similarity": 0.88
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600G20",
-        "slug": "mtu-12v1600g20",
-        "similarity": 0.87
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V1600G70S 3D",
-    "normalized_model": "12V1600G70S3D",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CMDDL21.0ZWR",
-      "DMDDL21.0ZWR",
-      "EMDDL21.0ZWR",
-      "FMDDL21.0ZWR",
-      "GMDDL21.0ZWR",
-      "HMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7188"
-    ],
-    "certificates": [
-      "CMDDL21.0ZWR-002",
-      "DMDDL21.0ZWR-004",
-      "EMDDL21.0ZWR-004",
-      "FMDDL21.0ZWR-001",
-      "GMDDL21.0ZWR-001",
-      "HMDDL21.0ZWR-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 613,
-    "rated_power_kw_max": 613,
-    "displacements_l": [
-      21.042
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "10V1600G70S 3D",
-        "slug": "mtu-10v1600g70s-3d",
-        "similarity": 0.923
-      },
-      {
-        "brand": "MTU",
-        "model": "12V1600G70S",
-        "slug": "mtu-12v1600g70s",
-        "similarity": 0.917
-      },
-      {
-        "brand": "MTU",
-        "model": "8V1600G70S 3D",
-        "slug": "mtu-8v1600g70s-3d",
-        "similarity": 0.88
-      }
-    ]
-  },
-  {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "12V1600G80S 3D",
-    "normalized_model": "12V1600G80S3D",
-    "first_model_year": 2012,
-    "latest_model_year": 2017,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017
-    ],
-    "engine_families": [
-      "CMDDL21.0ZWR",
-      "DMDDL21.0ZWR",
-      "EMDDL21.0ZWR",
-      "FMDDL21.0ZWR",
-      "GMDDL21.0ZWR",
-      "HMDDL21.0ZWR"
-    ],
-    "engine_codes": [
-      "7185"
-    ],
-    "certificates": [
-      "CMDDL21.0ZWR-002",
-      "DMDDL21.0ZWR-004",
-      "EMDDL21.0ZWR-004",
-      "FMDDL21.0ZWR-001",
-      "GMDDL21.0ZWR-001",
-      "HMDDL21.0ZWR-002"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 668,
-    "rated_power_kw_max": 668,
-    "displacements_l": [
-      21.042
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "12V1600G80S",
-        "slug": "mtu-12v1600g80s",
-        "similarity": 0.917
-      },
-      {
-        "brand": "MTU",
-        "model": "8V1600G80S 3D",
-        "slug": "mtu-8v1600g80s-3d",
-        "similarity": 0.88
-      }
-    ]
   },
   {
     "manufacturer": "FPT Industrial S.p.A.",
