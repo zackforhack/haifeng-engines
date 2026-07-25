@@ -34,6 +34,9 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 - Represented coverage within mapped manufacturers: **76.0%**
 - Unmatched models with a 2024+ certification: **124**
 - Models with at least one constant-speed certification: **716**
+- Represented constant-speed certification coverage: **716 of 716 (100.0%)**
+- Unrepresented constant-speed models: **0**
+- Constant-speed models under an unmapped manufacturer: **0**
 - Variable-speed-only models retained for reference: **230**
 - Generator-priority review queue (2024+, mapped brand, constant speed): **0**
 - Next-tier review queue (2020–2023, mapped brand, constant speed): **0**

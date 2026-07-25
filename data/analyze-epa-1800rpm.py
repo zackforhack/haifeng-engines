@@ -903,6 +903,21 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         for result in results
         if "Constant Speed" in result["engine_operations"]
     ]
+    represented_constant_speed_models = [
+        result
+        for result in constant_speed_models
+        if result["match_status"] in REPRESENTED_STATUSES
+    ]
+    unrepresented_constant_speed_models = [
+        result
+        for result in constant_speed_models
+        if result["match_status"] not in REPRESENTED_STATUSES
+    ]
+    unmapped_constant_speed_models = [
+        result
+        for result in constant_speed_models
+        if not result["mapped_database_brands"]
+    ]
     variable_speed_only_models = [
         result
         for result in results
@@ -1046,6 +1061,12 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Represented coverage within mapped manufacturers: **{mapped_matches / mapped_total:.1%}**",
         f"- Unmatched models with a 2024+ certification: **{len(recent_unmatched):,}**",
         f"- Models with at least one constant-speed certification: **{len(constant_speed_models):,}**",
+        f"- Represented constant-speed certification coverage: "
+        f"**{len(represented_constant_speed_models):,} of {len(constant_speed_models):,} "
+        f"({len(represented_constant_speed_models) / len(constant_speed_models):.1%})**",
+        f"- Unrepresented constant-speed models: **{len(unrepresented_constant_speed_models):,}**",
+        f"- Constant-speed models under an unmapped manufacturer: "
+        f"**{len(unmapped_constant_speed_models):,}**",
         f"- Variable-speed-only models retained for reference: **{len(variable_speed_only_models):,}**",
         f"- Generator-priority review queue (2024+, mapped brand, constant speed): **{len(generator_priority):,}**",
         f"- Next-tier review queue (2020–2023, mapped brand, constant speed): **{len(next_tier_priority):,}**",
