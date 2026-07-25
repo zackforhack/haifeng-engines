@@ -9066,6 +9066,328 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "TCD2013L04 2V",
+    "normalized_model": "TCD2013L042V",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CDZXL04.8029",
+      "DDZXL04.8029",
+      "EDZXL04.8029",
+      "FDZXL04.8029",
+      "GDZXL04.8029",
+      "HDZXL04.8029",
+      "JDZXL04.8029",
+      "KDZXL04.8029",
+      "LDZXL04.8029",
+      "MDZXL04.8029",
+      "NDZXL04.8029",
+      "PDZXL04.8029",
+      "RDZXL04.8029",
+      "SDZXL04.8029",
+      "TDZXL04.8029"
+    ],
+    "engine_codes": [
+      "D3UC114",
+      "D3UC97"
+    ],
+    "certificates": [
+      "CDZXL04.8029-019",
+      "DDZXL04.8029-029",
+      "EDZXL04.8029-019",
+      "FDZXL04.8029-021",
+      "GDZXL04.8029-022",
+      "HDZXL04.8029-021",
+      "JDZXL04.8029-027",
+      "KDZXL04.8029-014",
+      "LDZXL04.8029-005",
+      "MDZXL04.8029-018",
+      "NDZXL04.8029-004",
+      "PDZXL04.8029-002",
+      "RDZXL04.8029-002",
+      "SDZXL04.8029-003",
+      "TDZXL04.8029-010"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 98,
+    "rated_power_kw_max": 114,
+    "displacements_l": [
+      4.764
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "TCD2013L04 2V",
+        "slug": "deutz-tcd2013l04-2v",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "TCD2013L06 2V",
+    "normalized_model": "TCD2013L062V",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CDZXL07.1030",
+      "DDZXL07.1030",
+      "EDZXL07.1030",
+      "FDZXL07.1030",
+      "GDZXL07.1030",
+      "HDZXL07.1030",
+      "JDZXL07.1030",
+      "KDZXL07.1030",
+      "LDZXL07.1030",
+      "MDZXL07.1030",
+      "NDZXL07.1030",
+      "PDZXL07.1030",
+      "RDZXL07.1030",
+      "RDZXL07.1126",
+      "SDZXL07.1030",
+      "SDZXL07.1126",
+      "TDZXL07.1030",
+      "TDZXL07.1126"
+    ],
+    "engine_codes": [
+      "C3UI180",
+      "D3UC150",
+      "D3UC173"
+    ],
+    "certificates": [
+      "CDZXL07.1030-011",
+      "DDZXL07.1030-026",
+      "EDZXL07.1030-023",
+      "FDZXL07.1030-025",
+      "GDZXL07.1030-026",
+      "HDZXL07.1030-022",
+      "JDZXL07.1030-022",
+      "KDZXL07.1030-019",
+      "LDZXL07.1030-010",
+      "MDZXL07.1030-009",
+      "NDZXL07.1030-032",
+      "PDZXL07.1030-011",
+      "RDZXL07.1030-006",
+      "RDZXL07.1126-042",
+      "SDZXL07.1030-004",
+      "SDZXL07.1126-038",
+      "TDZXL07.1030-020",
+      "TDZXL07.1126-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 150,
+    "rated_power_kw_max": 180,
+    "displacements_l": [
+      7.1450000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "TCD2013L06 2V",
+        "slug": "deutz-tcd2013l06-2v",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "TCD2013L06 4V",
+    "normalized_model": "TCD2013L064V",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CDZXL07.1031",
+      "CDZXL07.1032",
+      "DDZXL07.1031",
+      "DDZXL07.1032",
+      "EDZXL07.1031",
+      "EDZXL07.1032",
+      "FDZXL07.1031",
+      "FDZXL07.1032",
+      "GDZXL07.1031",
+      "GDZXL07.1032",
+      "HDZXL07.1031",
+      "HDZXL07.1032",
+      "JDZXL07.1031",
+      "JDZXL07.1032",
+      "KDZXL07.1031",
+      "KDZXL07.1032",
+      "LDZXL07.1031",
+      "LDZXL07.1032",
+      "MDZXL07.1031",
+      "MDZXL07.1032",
+      "NDZXL07.1031",
+      "NDZXL07.1032",
+      "PDZXL07.1031",
+      "PDZXL07.1032",
+      "RDZXL07.1031",
+      "RDZXL07.1032",
+      "SDZXL07.1031",
+      "SDZXL07.1032",
+      "TDZXL07.1031",
+      "TDZXL07.1032"
+    ],
+    "engine_codes": [
+      "D3CC211",
+      "D3CC233",
+      "D3CC260"
+    ],
+    "certificates": [
+      "CDZXL07.1031-007",
+      "CDZXL07.1032-006",
+      "DDZXL07.1031-027",
+      "DDZXL07.1032-028",
+      "EDZXL07.1031-024",
+      "EDZXL07.1032-025",
+      "FDZXL07.1031-027",
+      "FDZXL07.1032-028",
+      "GDZXL07.1031-027",
+      "GDZXL07.1032-028",
+      "HDZXL07.1031-023",
+      "HDZXL07.1032-024",
+      "JDZXL07.1031-005",
+      "JDZXL07.1032-025",
+      "KDZXL07.1031-020",
+      "KDZXL07.1032-021",
+      "LDZXL07.1031-011",
+      "LDZXL07.1032-012",
+      "MDZXL07.1031-017",
+      "MDZXL07.1032-019",
+      "NDZXL07.1031-034",
+      "NDZXL07.1032-035",
+      "PDZXL07.1031-015",
+      "PDZXL07.1032-016",
+      "RDZXL07.1031-007",
+      "RDZXL07.1032-008",
+      "SDZXL07.1031-005",
+      "SDZXL07.1032-006",
+      "TDZXL07.1031-018",
+      "TDZXL07.1032-019"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 212,
+    "rated_power_kw_max": 260,
+    "displacements_l": [
+      7.1450000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "TCD2013L06 4V",
+        "slug": "deutz-tcd2013l06-4v",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Discovery Energy, LLC.",
     "mapped_database_brands": [
       "Kohler"
@@ -10360,6 +10682,85 @@
     "mapped_database_brands": [
       "FPT"
     ],
+    "epa_model": "F2CE9685E*E",
+    "normalized_model": "F2CE9685EE",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HFPXL08.7TR3",
+      "JFPXL08.7TR3",
+      "KFPXL08.7TR3",
+      "LFPXL08.7TR3",
+      "MFPXL08.7TR3",
+      "NFPXL08.7TR3",
+      "PFPXL08.7TR3",
+      "RFPXL08.7TR3",
+      "SFPXL08.7TR3",
+      "TFPXL08.7TR3"
+    ],
+    "engine_codes": [
+      "F2CE9685E*E"
+    ],
+    "certificates": [
+      "HFPXL08.7TR3-004",
+      "JFPXL08.7TR3-006",
+      "KFPXL08.7TR3-006",
+      "LFPXL08.7TR3-003",
+      "MFPXL08.7TR3-004",
+      "NFPXL08.7TR3-013",
+      "PFPXL08.7TR3-031",
+      "RFPXL08.7TR3-002",
+      "SFPXL08.7TR3-008",
+      "TFPXL08.7TR3-017"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 230,
+    "rated_power_kw_max": 230,
+    "displacements_l": [
+      8.709
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F2CE9685E*E",
+        "slug": "fpt-f2ce9685e-e",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
     "epa_model": "F4GE9455A*J",
     "normalized_model": "F4GE9455AJ",
     "first_model_year": 2012,
@@ -10536,6 +10937,99 @@
         "brand": "FPT",
         "model": "NEF45SM1X",
         "slug": "fpt-nef45sm1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4GE9485A*J",
+    "normalized_model": "F4GE9485AJ",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CFPXL06.7DGB",
+      "DFPXL06.7DGB",
+      "EFPXL06.7DGB",
+      "FFPXL06.7DGB",
+      "GFPXL06.7DGB",
+      "HFPXL06.7DGB",
+      "JFPXL06.7DGB",
+      "KFPXL06.7DGB",
+      "LFPXL06.7DGB",
+      "MFPXL06.7DGB",
+      "NFPXL06.7DGB",
+      "PFPXL06.7DGB",
+      "RFPXL06.7DGB",
+      "SFPXL06.7DGB",
+      "TFPXL06.7DGB"
+    ],
+    "engine_codes": [
+      "F4GE9485A*J"
+    ],
+    "certificates": [
+      "CFPXL06.7DGB-015",
+      "DFPXL06.7DGB-006",
+      "EFPXL06.7DGB-003",
+      "FFPXL06.7DGB-002",
+      "GFPXL06.7DGB-003",
+      "HFPXL06.7DGB-002",
+      "JFPXL06.7DGB-002",
+      "KFPXL06.7DGB-003",
+      "LFPXL06.7DGB-002",
+      "MFPXL06.7DGB-003",
+      "NFPXL06.7DGB-007",
+      "PFPXL06.7DGB-029",
+      "RFPXL06.7DGB-007",
+      "SFPXL06.7DGB-005",
+      "TFPXL06.7DGB-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 98,
+    "rated_power_kw_max": 98,
+    "displacements_l": [
+      4.485
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F4GE9485A*J",
+        "slug": "fpt-f4ge9485a-j",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 3",
         "fuel_type": "Diesel"
@@ -11021,6 +11515,1437 @@
         "slug": "fpt-nef67-te1pv",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4HE9685A*J",
+    "normalized_model": "F4HE9685AJ",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CFPXL06.7DGS",
+      "DFPXL06.7DGS",
+      "EFPXL06.7DGS",
+      "FFPXL06.7DGS",
+      "GFPXL06.7DGS",
+      "HFPXL06.7DGS",
+      "JFPXL06.7DGS",
+      "KFPXL06.7DGS",
+      "LFPXL06.7DGS",
+      "MFPXL06.7DGS",
+      "NFPXL06.7DGS",
+      "PFPXL06.7DGS",
+      "RFPXL06.7DGS",
+      "SFPXL06.7DGS",
+      "TFPXL06.7DGS"
+    ],
+    "engine_codes": [
+      "F4HE9685A*J"
+    ],
+    "certificates": [
+      "CFPXL06.7DGS-016",
+      "DFPXL06.7DGS-005",
+      "EFPXL06.7DGS-002",
+      "FFPXL06.7DGS-003",
+      "GFPXL06.7DGS-004",
+      "HFPXL06.7DGS-003",
+      "JFPXL06.7DGS-005",
+      "KFPXL06.7DGS-007",
+      "LFPXL06.7DGS-005",
+      "MFPXL06.7DGS-002",
+      "NFPXL06.7DGS-006",
+      "PFPXL06.7DGS-027",
+      "RFPXL06.7DGS-001",
+      "SFPXL06.7DGS-006",
+      "TFPXL06.7DGS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 208,
+    "rated_power_kw_max": 208,
+    "displacements_l": [
+      6.728000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F4HE9685A*J",
+        "slug": "fpt-f4he9685a-j",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4HGE415A*V",
+    "normalized_model": "F4HGE415AV",
+    "first_model_year": 2025,
+    "latest_model_year": 2026,
+    "model_years": [
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "SFPXL06.7FR1",
+      "TFPXL06.7FR1"
+    ],
+    "engine_codes": [
+      "F4HGE415A*V"
+    ],
+    "certificates": [
+      "SFPXL06.7FR1-026",
+      "TFPXL06.7FR1-013"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 125,
+    "rated_power_kw_max": 125,
+    "displacements_l": [
+      4.485
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F4HGE415A*V",
+        "slug": "fpt-f4hge415a-v",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4HGE613Z*V",
+    "normalized_model": "F4HGE613ZV",
+    "first_model_year": 2022,
+    "latest_model_year": 2026,
+    "model_years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "NFPXL06.7FR1",
+      "PFPXL06.7FR1",
+      "RFPXL06.7FR1",
+      "SFPXL06.7FR1",
+      "TFPXL06.7FR1"
+    ],
+    "engine_codes": [
+      "F4HGE613Z*V"
+    ],
+    "certificates": [
+      "NFPXL06.7FR1-043",
+      "PFPXL06.7FR1-025",
+      "RFPXL06.7FR1-011",
+      "SFPXL06.7FR1-026",
+      "TFPXL06.7FR1-013"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 124,
+    "rated_power_kw_max": 124,
+    "displacements_l": [
+      6.728000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F4HGE613Z*V",
+        "slug": "fpt-f4hge613z-v",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4HGE615C*V",
+    "normalized_model": "F4HGE615CV",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LFPXL06.7FR1",
+      "MFPXL06.7FR1",
+      "NFPXL06.7FR1",
+      "PFPXL06.7FR1",
+      "RFPXL06.7FR1",
+      "SFPXL06.7FR1",
+      "TFPXL06.7FR1"
+    ],
+    "engine_codes": [
+      "F4HGE615C*V"
+    ],
+    "certificates": [
+      "LFPXL06.7FR1-011",
+      "MFPXL06.7FR1-034",
+      "NFPXL06.7FR1-043",
+      "PFPXL06.7FR1-025",
+      "RFPXL06.7FR1-011",
+      "SFPXL06.7FR1-026",
+      "TFPXL06.7FR1-013"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 175,
+    "rated_power_kw_max": 175,
+    "displacements_l": [
+      6.728000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F4HGE615C*V",
+        "slug": "fpt-f4hge615c-v",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F4HGE615D*V",
+    "normalized_model": "F4HGE615DV",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LFPXL06.7FR1",
+      "MFPXL06.7FR1",
+      "NFPXL06.7FR1",
+      "PFPXL06.7FR1",
+      "RFPXL06.7FR1",
+      "SFPXL06.7FR1",
+      "TFPXL06.7FR1"
+    ],
+    "engine_codes": [
+      "F4HGE615D*V"
+    ],
+    "certificates": [
+      "LFPXL06.7FR1-011",
+      "MFPXL06.7FR1-034",
+      "NFPXL06.7FR1-043",
+      "PFPXL06.7FR1-025",
+      "RFPXL06.7FR1-011",
+      "SFPXL06.7FR1-026",
+      "TFPXL06.7FR1-013"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 230,
+    "rated_power_kw_max": 230,
+    "displacements_l": [
+      6.728000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F4HGE615D*V",
+        "slug": "fpt-f4hge615d-v",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F5HGL415A*X",
+    "normalized_model": "F5HGL415AX",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LFPXL03.4DEP",
+      "MFPXL03.4DEP",
+      "NFPXL03.4DEP",
+      "PFPXL03.4DEP",
+      "RFPXL03.4DEP",
+      "SFPXL03.4DEP",
+      "TFPXL03.4DEP"
+    ],
+    "engine_codes": [
+      "F5HGL415A*X"
+    ],
+    "certificates": [
+      "LFPXL03.4DEP-038",
+      "MFPXL03.4DEP-024",
+      "NFPXL03.4DEP-004",
+      "PFPXL03.4DEP-010",
+      "RFPXL03.4DEP-027",
+      "SFPXL03.4DEP-037",
+      "TFPXL03.4DEP-026"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 55,
+    "rated_power_kw_max": 55,
+    "displacements_l": [
+      3.387
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F5HGL415A*X",
+        "slug": "fpt-f5hgl415a-x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F5MGL415A*V",
+    "normalized_model": "F5MGL415AV",
+    "first_model_year": 2021,
+    "latest_model_year": 2026,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "MFPXL03.6EHP",
+      "NFPXL03.6EHP",
+      "PFPXL03.6EHP",
+      "RFPXL03.6EHP",
+      "SFPXL03.6EHP",
+      "TFPXL03.6EHP"
+    ],
+    "engine_codes": [
+      "F5MGL415A*V"
+    ],
+    "certificates": [
+      "MFPXL03.6EHP-022",
+      "NFPXL03.6EHP-019",
+      "PFPXL03.6EHP-004",
+      "RFPXL03.6EHP-054",
+      "SFPXL03.6EHP-039",
+      "TFPXL03.6EHP-031"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 105,
+    "rated_power_kw_max": 105,
+    "displacements_l": [
+      3.595
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F5MGL415A*V",
+        "slug": "fpt-f5mgl415a-v",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F5MGL415B*V",
+    "normalized_model": "F5MGL415BV",
+    "first_model_year": 2021,
+    "latest_model_year": 2026,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "MFPXL03.6EHP",
+      "NFPXL03.6EHP",
+      "PFPXL03.6EHP",
+      "RFPXL03.6EHP",
+      "SFPXL03.6EHP",
+      "TFPXL03.6EHP"
+    ],
+    "engine_codes": [
+      "F5MGL415B*V"
+    ],
+    "certificates": [
+      "MFPXL03.6EHP-022",
+      "NFPXL03.6EHP-019",
+      "PFPXL03.6EHP-004",
+      "RFPXL03.6EHP-054",
+      "SFPXL03.6EHP-039",
+      "TFPXL03.6EHP-031"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 94,
+    "rated_power_kw_max": 94,
+    "displacements_l": [
+      3.595
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F5MGL415B*V",
+        "slug": "fpt-f5mgl415b-v",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
+    "epa_model": "F5MGL415C*V",
+    "normalized_model": "F5MGL415CV",
+    "first_model_year": 2021,
+    "latest_model_year": 2026,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "MFPXL03.6EHP",
+      "NFPXL03.6EHP",
+      "PFPXL03.6EHP",
+      "RFPXL03.6EHP",
+      "SFPXL03.6EHP",
+      "TFPXL03.6EHP"
+    ],
+    "engine_codes": [
+      "F5MGL415C*V"
+    ],
+    "certificates": [
+      "MFPXL03.6EHP-022",
+      "NFPXL03.6EHP-019",
+      "PFPXL03.6EHP-004",
+      "RFPXL03.6EHP-054",
+      "SFPXL03.6EHP-039",
+      "TFPXL03.6EHP-031"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 71,
+    "rated_power_kw_max": 71,
+    "displacements_l": [
+      3.595
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F5MGL415C*V",
+        "slug": "fpt-f5mgl415c-v",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BP-4LE2X",
+    "normalized_model": "BP4LE2X",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "ESZXL02.2PXB",
+      "FSZXL02.2PXB",
+      "GSZXL02.2PXB",
+      "HSZXL02.2PXB",
+      "JSZXL02.2PXB",
+      "KSZXL02.2PXB",
+      "LSZXL02.2PXB",
+      "MSZXL02.2PXB",
+      "NSZXL02.2PXB",
+      "PSZXL02.2PXB",
+      "RSZXL02.2PXB",
+      "SSZXL02.2PXB",
+      "TSZXL02.2PXB"
+    ],
+    "engine_codes": [
+      "4LE2XDPBA-01",
+      "4LE2XDPBB-01"
+    ],
+    "certificates": [
+      "ESZXL02.2PXB-002",
+      "FSZXL02.2PXB-005",
+      "GSZXL02.2PXB-002",
+      "HSZXL02.2PXB-007",
+      "JSZXL02.2PXB-001",
+      "KSZXL02.2PXB-004",
+      "LSZXL02.2PXB-003",
+      "MSZXL02.2PXB-004",
+      "NSZXL02.2PXB-006",
+      "PSZXL02.2PXB-006",
+      "RSZXL02.2PXB-002",
+      "SSZXL02.2PXB-003",
+      "TSZXL02.2PXB-003"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 49,
+    "rated_power_kw_max": 49,
+    "displacements_l": [
+      2.1790000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "BP-4LE2X",
+        "slug": "isuzu-bp-4le2x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BQ-6HK1X",
+    "normalized_model": "BQ6HK1X",
+    "first_model_year": 2019,
+    "latest_model_year": 2026,
+    "model_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "KSZXL07.8QXB",
+      "LSZXL07.8QXB",
+      "MSZXL07.8QXB",
+      "NSZXL07.8QXB",
+      "PSZXL07.8QXB",
+      "RSZXL07.8QXB",
+      "SSZXL07.8QXB",
+      "TSZXL07.8QXB"
+    ],
+    "engine_codes": [
+      "6HK1XDQBA-01"
+    ],
+    "certificates": [
+      "KSZXL07.8QXB-016",
+      "LSZXL07.8QXB-011",
+      "MSZXL07.8QXB-012",
+      "NSZXL07.8QXB-003",
+      "PSZXL07.8QXB-014",
+      "RSZXL07.8QXB-014",
+      "SSZXL07.8QXB-014",
+      "TSZXL07.8QXB-014"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 194,
+    "rated_power_kw_max": 194,
+    "displacements_l": [
+      7.79
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "BQ-6HK1X",
+        "slug": "isuzu-bq-6hk1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BQ-6WG1X",
+    "normalized_model": "BQ6WG1X",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FSZXL15.7QXB",
+      "GSZXL15.7QXB",
+      "HSZXL15.7QXB",
+      "JSZXL15.7QXB",
+      "KSZXL15.7QXB",
+      "LSZXL15.7QXB",
+      "MSZXL15.7QXB",
+      "NSZXL15.7QXB",
+      "PSZXL15.7QXB",
+      "RSZXL15.7QXB",
+      "SSZXL15.7QXB",
+      "TSZXL15.7QXB"
+    ],
+    "engine_codes": [
+      "6WG1XDQBA-01",
+      "6WG1XDQBB-01"
+    ],
+    "certificates": [
+      "FSZXL15.7QXB-002",
+      "GSZXL15.7QXB-012",
+      "HSZXL15.7QXB-019",
+      "JSZXL15.7QXB-016",
+      "KSZXL15.7QXB-015",
+      "LSZXL15.7QXB-016",
+      "MSZXL15.7QXB-015",
+      "NSZXL15.7QXB-017",
+      "PSZXL15.7QXB-017",
+      "RSZXL15.7QXB-017",
+      "SSZXL15.7QXB-017",
+      "TSZXL15.7QXB-017"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 382,
+    "rated_power_kw_max": 382,
+    "displacements_l": [
+      15.682
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "BQ-6WG1X",
+        "slug": "isuzu-bq-6wg1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BR-4HK1X",
+    "normalized_model": "BR4HK1X",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FSZXL05.2RXB",
+      "GSZXL05.2RXB",
+      "HSZXL05.2RXB",
+      "JSZXL05.2RXB",
+      "KSZXL05.2RXB",
+      "LSZXL05.2RXB",
+      "MSZXL05.2RXB",
+      "NSZXL05.2RXB",
+      "PSZXL05.2RXB",
+      "RSZXL05.2RXB",
+      "SSZXL05.2RXB",
+      "TSZXL05.2RXB"
+    ],
+    "engine_codes": [
+      "4HK1XDRBA-01",
+      "4HK1XDRBB-01"
+    ],
+    "certificates": [
+      "FSZXL05.2RXB-013",
+      "GSZXL05.2RXB-009",
+      "HSZXL05.2RXB-016",
+      "JSZXL05.2RXB-012",
+      "KSZXL05.2RXB-010",
+      "LSZXL05.2RXB-010",
+      "MSZXL05.2RXB-010",
+      "NSZXL05.2RXB-014",
+      "PSZXL05.2RXB-011",
+      "RSZXL05.2RXB-011",
+      "SSZXL05.2RXB-010",
+      "TSZXL05.2RXB-011"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 127,
+    "rated_power_kw_max": 127,
+    "displacements_l": [
+      5.1930000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "BR-4HK1X",
+        "slug": "isuzu-br-4hk1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BR-4JJ1X",
+    "normalized_model": "BR4JJ1X",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FSZXL03.0RXB",
+      "GSZXL03.0RXB",
+      "HSZXL03.0RXB",
+      "JSZXL03.0RXB",
+      "KSZXL03.0RXB",
+      "LSZXL03.0RXB",
+      "MSZXL03.0RXB",
+      "NSZXL03.0RXB",
+      "PSZXL03.0RXB",
+      "RSZXL03.0RXB",
+      "SSZXL03.0RXB",
+      "TSZXL03.0RXB"
+    ],
+    "engine_codes": [
+      "4JJ1XDRBA-01",
+      "4JJ1XDRBB-01"
+    ],
+    "certificates": [
+      "FSZXL03.0RXB-017",
+      "GSZXL03.0RXB-015",
+      "HSZXL03.0RXB-012",
+      "JSZXL03.0RXB-010",
+      "KSZXL03.0RXB-008",
+      "LSZXL03.0RXB-008",
+      "MSZXL03.0RXB-008",
+      "NSZXL03.0RXB-012",
+      "PSZXL03.0RXB-009",
+      "RSZXL03.0RXB-009",
+      "SSZXL03.0RXB-009",
+      "TSZXL03.0RXB-009"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 71,
+    "rated_power_kw_max": 71,
+    "displacements_l": [
+      2.999
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "BR-4JJ1X",
+        "slug": "isuzu-br-4jj1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BZ-4LE2T",
+    "normalized_model": "BZ4LE2T",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "ESZXL02.2ZTB",
+      "FSZXL02.2ZTB",
+      "GSZXL02.2ZTB",
+      "HSZXL02.2ZTB",
+      "JSZXL02.2ZTB",
+      "KSZXL02.2ZTB",
+      "LSZXL02.2ZTB",
+      "MSZXL02.2ZTB",
+      "NSZXL02.2ZTB",
+      "PSZXL02.2ZTB",
+      "RSZXL02.2ZTB",
+      "SSZXL02.2ZTB",
+      "TSZXL02.2ZTB"
+    ],
+    "engine_codes": [
+      "4LE2TDZBA-01"
+    ],
+    "certificates": [
+      "ESZXL02.2ZTB-001",
+      "FSZXL02.2ZTB-006",
+      "GSZXL02.2ZTB-005",
+      "HSZXL02.2ZTB-009",
+      "JSZXL02.2ZTB-004",
+      "KSZXL02.2ZTB-003",
+      "LSZXL02.2ZTB-002",
+      "MSZXL02.2ZTB-002",
+      "NSZXL02.2ZTB-010",
+      "PSZXL02.2ZTB-005",
+      "RSZXL02.2ZTB-007",
+      "SSZXL02.2ZTB-002",
+      "TSZXL02.2ZTB-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 30,
+    "rated_power_kw_max": 30,
+    "displacements_l": [
+      2.1790000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "BZ-4LE2T",
+        "slug": "isuzu-bz-4le2t",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "KH-6HK1X",
+    "normalized_model": "KH6HK1X",
+    "first_model_year": 2026,
+    "latest_model_year": 2026,
+    "model_years": [
+      2026
+    ],
+    "engine_families": [
+      "TSZXL07.8HXK"
+    ],
+    "engine_codes": [
+      "6HK1XDHKA-01",
+      "6HK1XDHKB-01"
+    ],
+    "certificates": [
+      "TSZXL07.8HXK-020"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 198,
+    "rated_power_kw_max": 198,
+    "displacements_l": [
+      7.79
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "KH-6HK1X",
+        "slug": "isuzu-kh-6hk1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "KI-4HK1X",
+    "normalized_model": "KI4HK1X",
+    "first_model_year": 2026,
+    "latest_model_year": 2026,
+    "model_years": [
+      2026
+    ],
+    "engine_families": [
+      "TSZXL05.2IXK"
+    ],
+    "engine_codes": [
+      "4HK1XDIKA-01",
+      "4HK1XDIKB-01"
+    ],
+    "certificates": [
+      "TSZXL05.2IXK-019"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 129,
+    "rated_power_kw_max": 129,
+    "displacements_l": [
+      5.1930000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "KI-4HK1X",
+        "slug": "isuzu-ki-4hk1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "KJ-4JJ1X",
+    "normalized_model": "KJ4JJ1X",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2026
+    ],
+    "engine_families": [
+      "HSZXL03.0JXK",
+      "JSZXL03.0JXK",
+      "TSZXL03.0JXK"
+    ],
+    "engine_codes": [
+      "4JJ1XDJKA-01",
+      "4JJ1XDJKB-01"
+    ],
+    "certificates": [
+      "HSZXL03.0JXK-003",
+      "JSZXL03.0JXK-008",
+      "TSZXL03.0JXK-018"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 73,
+    "rated_power_kw_max": 73,
+    "displacements_l": [
+      2.999
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "KJ-4JJ1X",
+        "slug": "isuzu-kj-4jj1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "KV-4LE1T",
+    "normalized_model": "KV4LE1T",
+    "first_model_year": 2017,
+    "latest_model_year": 2026,
+    "model_years": [
+      2017,
+      2018,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "HSZXL02.2VTK",
+      "JSZXL02.2VTK",
+      "NSZXL02.2VTK",
+      "PSZXL02.2VTK",
+      "RSZXL02.2VTK",
+      "SSZXL02.2VTK",
+      "TSZXL02.2VTK"
+    ],
+    "engine_codes": [
+      "4LE1TCVKA-01"
+    ],
+    "certificates": [
+      "HSZXL02.2VTK-002",
+      "JSZXL02.2VTK-007",
+      "NSZXL02.2VTK-015",
+      "PSZXL02.2VTK-003",
+      "RSZXL02.2VTK-003",
+      "SSZXL02.2VTK-006",
+      "TSZXL02.2VTK-007"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 35,
+    "rated_power_kw_max": 35,
+    "displacements_l": [
+      2.1790000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "KV-4LE1T",
+        "slug": "isuzu-kv-4le1t",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "LV-4LE2",
+    "normalized_model": "LV4LE2",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JSZXL02.2VNL",
+      "KSZXL02.2VNL",
+      "LSZXL02.2VNL",
+      "MSZXL02.2VNL",
+      "NSZXL02.2VNL",
+      "PSZXL02.2VNL",
+      "RSZXL02.2VNL",
+      "SSZXL02.2VNL",
+      "TSZXL02.2VNL"
+    ],
+    "engine_codes": [
+      "4LE2NCVLA-01"
+    ],
+    "certificates": [
+      "JSZXL02.2VNL-017",
+      "KSZXL02.2VNL-001",
+      "LSZXL02.2VNL-005",
+      "MSZXL02.2VNL-003",
+      "NSZXL02.2VNL-008",
+      "PSZXL02.2VNL-002",
+      "RSZXL02.2VNL-004",
+      "SSZXL02.2VNL-005",
+      "TSZXL02.2VNL-005"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 26,
+    "rated_power_kw_max": 26,
+    "displacements_l": [
+      2.1790000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "LV-4LE2",
+        "slug": "isuzu-lv-4le2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -16282,6 +18207,173 @@
     "mapped_database_brands": [
       "Perkins"
     ],
+    "epa_model": "1206F-E70TA(C7.1)",
+    "normalized_model": "1206FE70TAC7P1",
+    "first_model_year": 2018,
+    "latest_model_year": 2026,
+    "model_years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "JPKXL07.0BN1",
+      "KPKXL07.0BN1",
+      "LPKXL07.0BN1",
+      "MPKXL07.0BN1",
+      "NPKXL07.0BN1",
+      "PPKXL07.0BN1",
+      "RPKXL07.0BN1",
+      "SPKXL07.0BN1",
+      "TPKXL07.0BN1"
+    ],
+    "engine_codes": [
+      "6264/1800"
+    ],
+    "certificates": [
+      "JPKXL07.0BN1-007",
+      "KPKXL07.0BN1-019",
+      "LPKXL07.0BN1-007",
+      "MPKXL07.0BN1-034",
+      "NPKXL07.0BN1-015",
+      "PPKXL07.0BN1-018",
+      "RPKXL07.0BN1-030",
+      "SPKXL07.0BN1-007",
+      "TPKXL07.0BN1-013"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification of Distilate Fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 122,
+    "rated_power_kw_max": 122,
+    "displacements_l": [
+      7.014
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1206F-E70TA(C7.1)",
+        "slug": "perkins-1206f-e70ta-c7-1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "1206F-E70TTA(C7.1)",
+    "normalized_model": "1206FE70TTAC7P1",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "EPKXL07.0BN1",
+      "FPKXL07.0BN1",
+      "GPKXL07.0BN1",
+      "HPKXL07.0BN1",
+      "JPKXL07.0BN1",
+      "KPKXL07.0BN1",
+      "LPKXL07.0BN1",
+      "MPKXL07.0BN1",
+      "NPKXL07.0BN1",
+      "PPKXL07.0BN1",
+      "RPKXL07.0BN1",
+      "SPKXL07.0BN1",
+      "TPKXL07.0BN1"
+    ],
+    "engine_codes": [
+      "4350/1800",
+      "4352/1800",
+      "PARENT-4350/1800"
+    ],
+    "certificates": [
+      "EPKXL07.0BN1-003",
+      "FPKXL07.0BN1-013",
+      "GPKXL07.0BN1-008",
+      "HPKXL07.0BN1-009",
+      "JPKXL07.0BN1-007",
+      "KPKXL07.0BN1-019",
+      "LPKXL07.0BN1-007",
+      "MPKXL07.0BN1-034",
+      "NPKXL07.0BN1-015",
+      "PPKXL07.0BN1-018",
+      "RPKXL07.0BN1-030",
+      "SPKXL07.0BN1-007",
+      "TPKXL07.0BN1-013"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification of Distilate Fuel",
+      "7-15 ppm Ultra Low Sulfur Diesel; Perksin specificatino for Distilate Diesel Fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 184,
+    "rated_power_kw_max": 239,
+    "displacements_l": [
+      7.014
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1206F-E70TTA(C7.1)",
+        "slug": "perkins-1206f-e70tta-c7-1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
     "epa_model": "1206J-E70TTA(C7.1)",
     "normalized_model": "1206JE70TTAC7P1",
     "first_model_year": 2019,
@@ -16347,6 +18439,63 @@
         "slug": "perkins-1206j-e70ttag4",
         "rpm_rated": 1500,
         "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "402F-05(C0.5)",
+    "normalized_model": "402F05C0P5",
+    "first_model_year": 2024,
+    "latest_model_year": 2026,
+    "model_years": [
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "RPKXL.761F1C",
+      "SPKXL.761F1C",
+      "TPKXL.761F1C"
+    ],
+    "engine_codes": [
+      "EG5/1800C"
+    ],
+    "certificates": [
+      "RPKXL.761F1C-013",
+      "SPKXL.761F1C-028",
+      "TPKXL.761F1C-023"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 4,
+    "rated_power_kw_max": 4,
+    "displacements_l": [
+      0.508
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "402F-05(C0.5)",
+        "slug": "perkins-402f-05-c0-5",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -16481,6 +18630,77 @@
     "mapped_database_brands": [
       "Perkins"
     ],
+    "epa_model": "403F-07(C0.7)",
+    "normalized_model": "403F07C0P7",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LPKXL.761F1C",
+      "MPKXL.761F1C",
+      "NPKXL.761F1C",
+      "PPKXL.761F1C",
+      "RPKXL.761F1C",
+      "SPKXL.761F1C",
+      "TPKXL.761F1C"
+    ],
+    "engine_codes": [
+      "6546/1800",
+      "6576/1800",
+      "PARENT-6576/1800"
+    ],
+    "certificates": [
+      "LPKXL.761F1C-024",
+      "MPKXL.761F1C-023",
+      "NPKXL.761F1C-031",
+      "PPKXL.761F1C-028",
+      "RPKXL.761F1C-013",
+      "SPKXL.761F1C-028",
+      "TPKXL.761F1C-023"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 6,
+    "rated_power_kw_max": 7,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "403F-07(C0.7)",
+        "slug": "perkins-403f-07-c0-7",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
     "epa_model": "403F-11(C1.1)",
     "normalized_model": "403F11C1P1",
     "first_model_year": 2020,
@@ -16542,6 +18762,77 @@
         "model": "403F-11G",
         "slug": "perkins-403f-11g",
         "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "403F-15(C1.5)",
+    "normalized_model": "403F15C1P5",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LPKXL1.49F2C",
+      "MPKXL01.5F2C",
+      "NPKXL01.5F2C",
+      "PPKXL01.5F2C",
+      "RPKXL01.5F2C",
+      "SPKXL01.5F2C",
+      "TPKXL01.5F2C"
+    ],
+    "engine_codes": [
+      "6664/1800",
+      "EK19/1800C",
+      "PARENT-6664/1800"
+    ],
+    "certificates": [
+      "LPKXL1.49F2C-026",
+      "MPKXL01.5F2C-027",
+      "NPKXL01.5F2C-035",
+      "PPKXL01.5F2C-031",
+      "RPKXL01.5F2C-017",
+      "SPKXL01.5F2C-011",
+      "TPKXL01.5F2C-026"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 14,
+    "rated_power_kw_max": 15,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "403F-15",
+        "slug": "perkins-403f-15",
+        "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
@@ -19748,6 +22039,87 @@
     "mapped_database_brands": [
       "Yanmar"
     ],
+    "epa_model": "3TNV76-CL",
+    "normalized_model": "3TNV76CL",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CYDXL1.11U3N",
+      "HYDXL1.11S3N",
+      "JYDXL1.11S3N",
+      "KYDXL1.11S3N",
+      "LYDXL1.11S3N",
+      "MYDXL01.1S3N",
+      "NYDXL01.1S3N",
+      "PYDXL01.1S3N",
+      "RYDXL01.1S3N",
+      "SYDXL01.1S3N",
+      "TYDXL01.1S3N"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL1.11U3N-015",
+      "HYDXL1.11S3N-005",
+      "JYDXL1.11S3N-041",
+      "KYDXL1.11S3N-017",
+      "LYDXL1.11S3N-030",
+      "MYDXL01.1S3N-048",
+      "NYDXL01.1S3N-022",
+      "PYDXL01.1S3N-047",
+      "RYDXL01.1S3N-051",
+      "SYDXL01.1S3N-004",
+      "TYDXL01.1S3N-045"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 12,
+    "rated_power_kw_max": 12,
+    "displacements_l": [
+      1.116
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNV76-CL",
+        "slug": "yanmar-3tnv76-cl",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
     "epa_model": "3TNV76-G",
     "normalized_model": "3TNV76G",
     "first_model_year": 2012,
@@ -20221,6 +22593,93 @@
         "slug": "yanmar-4tnv98c-gge",
         "rpm_rated": 1800,
         "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "4TNV88-CL",
+    "normalized_model": "4TNV88CL",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CYDXL2.19J4N",
+      "GYDXL2.19J4N",
+      "GYDXL2.19S4N",
+      "HYDXL2.19S4N",
+      "JYDXL2.19S4N",
+      "KYDXL2.19S4N",
+      "LYDXL2.19S4N",
+      "MYDXL02.2S4N",
+      "NYDXL02.2S4N",
+      "PYDXL02.2S4N",
+      "RYDXL02.2S4N",
+      "SYDXL02.2S4N",
+      "TYDXL02.2S4N"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL2.19J4N-028",
+      "GYDXL2.19J4N-009",
+      "GYDXL2.19S4N-010",
+      "HYDXL2.19S4N-041",
+      "JYDXL2.19S4N-045",
+      "KYDXL2.19S4N-027",
+      "LYDXL2.19S4N-034",
+      "MYDXL02.2S4N-052",
+      "NYDXL02.2S4N-018",
+      "PYDXL02.2S4N-039",
+      "RYDXL02.2S4N-048",
+      "SYDXL02.2S4N-039",
+      "TYDXL02.2S4N-047"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 24,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      2.19
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "4TNV88-CL",
+        "slug": "yanmar-4tnv88-cl",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4 / U.S. EPA Interim Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -21935,6 +24394,90 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "1204F-E44TTAN(C4.4)",
+    "normalized_model": "1204FE44TTANC4P4",
+    "first_model_year": 2015,
+    "latest_model_year": 2025,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "engine_families": [
+      "FPKXL04.4MU1",
+      "GPKXL04.4MU1",
+      "HPKXL04.4MU1",
+      "JPKXL04.4MU1",
+      "KPKXL04.4MU1",
+      "LPKXL04.4MU1",
+      "MPKXL04.4MU1",
+      "NPKXL04.4MU1",
+      "PPKXL04.4MU1",
+      "RPKXL04.4MU1",
+      "SPKXL04.4MU1"
+    ],
+    "engine_codes": [
+      "4526/1800",
+      "PARENT4526/1800"
+    ],
+    "certificates": [
+      "FPKXL04.4MU1-011",
+      "GPKXL04.4MU1-016-R01",
+      "HPKXL04.4MU1-010",
+      "JPKXL04.4MU1-008",
+      "KPKXL04.4MU1-001",
+      "LPKXL04.4MU1-008",
+      "MPKXL04.4MU1-035",
+      "NPKXL04.4MU1-016",
+      "PPKXL04.4MU1-016",
+      "RPKXL04.4MU1-035",
+      "SPKXL04.4MU1-026"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel",
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel."
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 129,
+    "rated_power_kw_max": 129,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1204F-E44TTAN(C4.4)",
+        "slug": "perkins-1204f-e44ttan-c4-4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Rolls-Royce Solutions America Inc",
     "mapped_database_brands": [
       "MTU"
@@ -22890,6 +25433,609 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "TAD550GE",
+    "normalized_model": "TAD550GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CDZXL04.8025",
+      "DDZXL04.8025",
+      "EDZXL04.8025",
+      "FDZXL04.8025",
+      "GDZXL04.8025",
+      "HDZXL04.8025",
+      "JDZXL04.8025",
+      "KDZXL04.8025",
+      "LDZXL04.8025",
+      "MDZXL04.8025",
+      "NDZXL04.8025",
+      "PDZXL04.8025",
+      "RDZXL04.8025"
+    ],
+    "engine_codes": [
+      "D3UC97"
+    ],
+    "certificates": [
+      "CDZXL04.8025-004",
+      "DDZXL04.8025-014",
+      "EDZXL04.8025-018",
+      "FDZXL04.8025-020",
+      "GDZXL04.8025-021",
+      "HDZXL04.8025-002",
+      "JDZXL04.8025-029",
+      "KDZXL04.8025-013",
+      "LDZXL04.8025-004",
+      "MDZXL04.8025-010",
+      "NDZXL04.8025-003",
+      "PDZXL04.8025-001",
+      "RDZXL04.8025-001"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 98,
+    "rated_power_kw_max": 98,
+    "displacements_l": [
+      4.764
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "TAD550GE",
+        "slug": "deutz-tad550ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "TAD551GE",
+    "normalized_model": "TAD551GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CDZXL04.8025",
+      "DDZXL04.8025",
+      "EDZXL04.8025",
+      "FDZXL04.8025",
+      "GDZXL04.8025",
+      "HDZXL04.8025",
+      "JDZXL04.8025",
+      "KDZXL04.8025",
+      "LDZXL04.8025",
+      "MDZXL04.8025",
+      "NDZXL04.8025",
+      "PDZXL04.8025",
+      "RDZXL04.8025"
+    ],
+    "engine_codes": [
+      "D3UC114"
+    ],
+    "certificates": [
+      "CDZXL04.8025-004",
+      "DDZXL04.8025-014",
+      "EDZXL04.8025-018",
+      "FDZXL04.8025-020",
+      "GDZXL04.8025-021",
+      "HDZXL04.8025-002",
+      "JDZXL04.8025-029",
+      "KDZXL04.8025-013",
+      "LDZXL04.8025-004",
+      "MDZXL04.8025-010",
+      "NDZXL04.8025-003",
+      "PDZXL04.8025-001",
+      "RDZXL04.8025-001"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 114,
+    "rated_power_kw_max": 114,
+    "displacements_l": [
+      4.764
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "TAD551GE",
+        "slug": "deutz-tad551ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "TAD750GE",
+    "normalized_model": "TAD750GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CDZXL07.1026",
+      "DDZXL07.1026",
+      "EDZXL07.1026",
+      "FDZXL07.1026",
+      "GDZXL07.1026",
+      "HDZXL07.1026",
+      "KDZXL07.1026",
+      "LDZXL07.1026",
+      "MDZXL07.1026",
+      "NDZXL07.1026",
+      "PDZXL07.1026",
+      "RDZXL07.1026"
+    ],
+    "engine_codes": [
+      "D3UC150"
+    ],
+    "certificates": [
+      "CDZXL07.1026-001",
+      "DDZXL07.1026-015",
+      "EDZXL07.1026-020",
+      "FDZXL07.1026-022",
+      "GDZXL07.1026-023",
+      "HDZXL07.1026-003",
+      "KDZXL07.1026-016",
+      "LDZXL07.1026-006",
+      "MDZXL07.1026-011",
+      "NDZXL07.1026-014",
+      "PDZXL07.1026-010",
+      "RDZXL07.1026-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 150,
+    "rated_power_kw_max": 150,
+    "displacements_l": [
+      7.1450000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "TAD750GE",
+        "slug": "deutz-tad750ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "TAD751GE",
+    "normalized_model": "TAD751GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CDZXL07.1026",
+      "DDZXL07.1026",
+      "EDZXL07.1026",
+      "FDZXL07.1026",
+      "GDZXL07.1026",
+      "HDZXL07.1026",
+      "KDZXL07.1026",
+      "LDZXL07.1026",
+      "MDZXL07.1026",
+      "NDZXL07.1026",
+      "PDZXL07.1026",
+      "RDZXL07.1026"
+    ],
+    "engine_codes": [
+      "D3UC173"
+    ],
+    "certificates": [
+      "CDZXL07.1026-001",
+      "DDZXL07.1026-015",
+      "EDZXL07.1026-020",
+      "FDZXL07.1026-022",
+      "GDZXL07.1026-023",
+      "HDZXL07.1026-003",
+      "KDZXL07.1026-016",
+      "LDZXL07.1026-006",
+      "MDZXL07.1026-011",
+      "NDZXL07.1026-014",
+      "PDZXL07.1026-010",
+      "RDZXL07.1026-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 174,
+    "rated_power_kw_max": 174,
+    "displacements_l": [
+      7.1450000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "TAD751GE",
+        "slug": "deutz-tad751ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "TAD752GE",
+    "normalized_model": "TAD752GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CDZXL07.1027",
+      "DDZXL07.1027",
+      "EDZXL07.1027",
+      "FDZXL07.1027",
+      "GDZXL07.1027",
+      "HDZXL07.1027",
+      "JDZXL07.1027",
+      "KDZXL07.1027",
+      "LDZXL07.1027",
+      "MDZXL07.1027",
+      "NDZXL07.1027",
+      "PDZXL07.1027",
+      "RDZXL07.1027"
+    ],
+    "engine_codes": [
+      "D3CC211"
+    ],
+    "certificates": [
+      "CDZXL07.1027-003",
+      "DDZXL07.1027-016",
+      "EDZXL07.1027-021",
+      "FDZXL07.1027-023",
+      "GDZXL07.1027-024",
+      "HDZXL07.1027-004",
+      "JDZXL07.1027-024",
+      "KDZXL07.1027-017",
+      "LDZXL07.1027-007",
+      "MDZXL07.1027-012",
+      "NDZXL07.1027-015",
+      "PDZXL07.1027-013",
+      "RDZXL07.1027-004"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 212,
+    "rated_power_kw_max": 212,
+    "displacements_l": [
+      7.1450000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "TAD752GE",
+        "slug": "deutz-tad752ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "TAD753GE",
+    "normalized_model": "TAD753GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CDZXL07.1027",
+      "DDZXL07.1027",
+      "EDZXL07.1027",
+      "FDZXL07.1027",
+      "GDZXL07.1027",
+      "HDZXL07.1027",
+      "JDZXL07.1027",
+      "KDZXL07.1027",
+      "LDZXL07.1027",
+      "MDZXL07.1027",
+      "NDZXL07.1027",
+      "PDZXL07.1027",
+      "RDZXL07.1027"
+    ],
+    "engine_codes": [
+      "D3CC233"
+    ],
+    "certificates": [
+      "CDZXL07.1027-003",
+      "DDZXL07.1027-016",
+      "EDZXL07.1027-021",
+      "FDZXL07.1027-023",
+      "GDZXL07.1027-024",
+      "HDZXL07.1027-004",
+      "JDZXL07.1027-024",
+      "KDZXL07.1027-017",
+      "LDZXL07.1027-007",
+      "MDZXL07.1027-012",
+      "NDZXL07.1027-015",
+      "PDZXL07.1027-013",
+      "RDZXL07.1027-004"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 233,
+    "rated_power_kw_max": 233,
+    "displacements_l": [
+      7.1450000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "TAD753GE",
+        "slug": "deutz-tad753ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "TAD754GE",
+    "normalized_model": "TAD754GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2024,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "CDZXL07.1028",
+      "DDZXL07.1028",
+      "EDZXL07.1028",
+      "FDZXL07.1028",
+      "GDZXL07.1028",
+      "HDZXL07.1028",
+      "JDZXL07.1028",
+      "KDZXL07.1028",
+      "LDZXL07.1028",
+      "MDZXL07.1028",
+      "NDZXL07.1028",
+      "PDZXL07.1028",
+      "RDZXL07.1028"
+    ],
+    "engine_codes": [
+      "D3CC260"
+    ],
+    "certificates": [
+      "CDZXL07.1028-002",
+      "DDZXL07.1028-025",
+      "EDZXL07.1028-022",
+      "FDZXL07.1028-024",
+      "GDZXL07.1028-025",
+      "HDZXL07.1028-005",
+      "JDZXL07.1028-023",
+      "KDZXL07.1028-018",
+      "LDZXL07.1028-009",
+      "MDZXL07.1028-013",
+      "NDZXL07.1028-016",
+      "PDZXL07.1028-014",
+      "RDZXL07.1028-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 260,
+    "rated_power_kw_max": 260,
+    "displacements_l": [
+      7.1450000000000005
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "TAD754GE",
+        "slug": "deutz-tad754ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Kubota Corporation",
     "mapped_database_brands": [
       "Kubota"
@@ -23100,6 +26246,134 @@
         "model": "403F-11G",
         "slug": "perkins-403f-11g",
         "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "403F-15",
+    "normalized_model": "403F15",
+    "first_model_year": 2020,
+    "latest_model_year": 2024,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "LPKXL1.49F2C",
+      "MPKXL01.5F2C",
+      "NPKXL01.5F2C",
+      "PPKXL01.5F2C",
+      "RPKXL01.5F2C"
+    ],
+    "engine_codes": [
+      "6664/1800",
+      "EK19/1800C"
+    ],
+    "certificates": [
+      "LPKXL1.49F2C-026",
+      "MPKXL01.5F2C-027",
+      "NPKXL01.5F2C-035",
+      "PPKXL01.5F2C-031",
+      "RPKXL01.5F2C-017"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 14,
+    "rated_power_kw_max": 15,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "403F-15",
+        "slug": "perkins-403f-15",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "S773L-F",
+    "normalized_model": "S773LF",
+    "first_model_year": 2020,
+    "latest_model_year": 2024,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "LPKXL1.13F2C",
+      "MPKXL01.1F2C",
+      "NPKXL01.1F2C",
+      "PPKXL01.1F2C",
+      "RPKXL01.1F2C"
+    ],
+    "engine_codes": [
+      "S310-18C",
+      "S311-18C"
+    ],
+    "certificates": [
+      "LPKXL1.13F2C-027",
+      "MPKXL01.1F2C-040",
+      "NPKXL01.1F2C-034",
+      "PPKXL01.1F2C-030",
+      "RPKXL01.1F2C-015"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 11,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "S773L-F",
+        "slug": "perkins-s773l-f",
+        "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
@@ -24885,6 +28159,127 @@
         "slug": "cummins-qsk50-g4",
         "rpm_rated": 1500,
         "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "402F-05",
+    "normalized_model": "402F05",
+    "first_model_year": 2020,
+    "latest_model_year": 2023,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "engine_families": [
+      "LPKXL.761F1C",
+      "MPKXL.761F1C",
+      "NPKXL.761F1C",
+      "PPKXL.761F1C"
+    ],
+    "engine_codes": [
+      "EG5/1800C"
+    ],
+    "certificates": [
+      "LPKXL.761F1C-024",
+      "MPKXL.761F1C-023",
+      "NPKXL.761F1C-031",
+      "PPKXL.761F1C-028"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 4,
+    "rated_power_kw_max": 4,
+    "displacements_l": [
+      0.508
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "402F-05(C0.5)",
+        "slug": "perkins-402f-05-c0-5",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "403F-07",
+    "normalized_model": "403F07",
+    "first_model_year": 2020,
+    "latest_model_year": 2023,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "engine_families": [
+      "LPKXL.761F1C",
+      "MPKXL.761F1C",
+      "NPKXL.761F1C",
+      "PPKXL.761F1C"
+    ],
+    "engine_codes": [
+      "6546/1800",
+      "6576/1800"
+    ],
+    "certificates": [
+      "LPKXL.761F1C-024",
+      "MPKXL.761F1C-023",
+      "NPKXL.761F1C-031",
+      "PPKXL.761F1C-028"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 6,
+    "rated_power_kw_max": 7,
+    "displacements_l": [
+      0.762
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "403F-07(C0.7)",
+        "slug": "perkins-403f-07-c0-7",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -30895,301 +34290,6 @@
     "mapped_database_brands": [
       "Deutz"
     ],
-    "epa_model": "TCD2013L04 2V",
-    "normalized_model": "TCD2013L042V",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CDZXL04.8029",
-      "DDZXL04.8029",
-      "EDZXL04.8029",
-      "FDZXL04.8029",
-      "GDZXL04.8029",
-      "HDZXL04.8029",
-      "JDZXL04.8029",
-      "KDZXL04.8029",
-      "LDZXL04.8029",
-      "MDZXL04.8029",
-      "NDZXL04.8029",
-      "PDZXL04.8029",
-      "RDZXL04.8029",
-      "SDZXL04.8029",
-      "TDZXL04.8029"
-    ],
-    "engine_codes": [
-      "D3UC114",
-      "D3UC97"
-    ],
-    "certificates": [
-      "CDZXL04.8029-019",
-      "DDZXL04.8029-029",
-      "EDZXL04.8029-019",
-      "FDZXL04.8029-021",
-      "GDZXL04.8029-022",
-      "HDZXL04.8029-021",
-      "JDZXL04.8029-027",
-      "KDZXL04.8029-014",
-      "LDZXL04.8029-005",
-      "MDZXL04.8029-018",
-      "NDZXL04.8029-004",
-      "PDZXL04.8029-002",
-      "RDZXL04.8029-002",
-      "SDZXL04.8029-003",
-      "TDZXL04.8029-010"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 98,
-    "rated_power_kw_max": 114,
-    "displacements_l": [
-      4.764
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
-    "epa_model": "TCD2013L06 2V",
-    "normalized_model": "TCD2013L062V",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CDZXL07.1030",
-      "DDZXL07.1030",
-      "EDZXL07.1030",
-      "FDZXL07.1030",
-      "GDZXL07.1030",
-      "HDZXL07.1030",
-      "JDZXL07.1030",
-      "KDZXL07.1030",
-      "LDZXL07.1030",
-      "MDZXL07.1030",
-      "NDZXL07.1030",
-      "PDZXL07.1030",
-      "RDZXL07.1030",
-      "RDZXL07.1126",
-      "SDZXL07.1030",
-      "SDZXL07.1126",
-      "TDZXL07.1030",
-      "TDZXL07.1126"
-    ],
-    "engine_codes": [
-      "C3UI180",
-      "D3UC150",
-      "D3UC173"
-    ],
-    "certificates": [
-      "CDZXL07.1030-011",
-      "DDZXL07.1030-026",
-      "EDZXL07.1030-023",
-      "FDZXL07.1030-025",
-      "GDZXL07.1030-026",
-      "HDZXL07.1030-022",
-      "JDZXL07.1030-022",
-      "KDZXL07.1030-019",
-      "LDZXL07.1030-010",
-      "MDZXL07.1030-009",
-      "NDZXL07.1030-032",
-      "PDZXL07.1030-011",
-      "RDZXL07.1030-006",
-      "RDZXL07.1126-042",
-      "SDZXL07.1030-004",
-      "SDZXL07.1126-038",
-      "TDZXL07.1030-020",
-      "TDZXL07.1126-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 150,
-    "rated_power_kw_max": 180,
-    "displacements_l": [
-      7.1450000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
-    "epa_model": "TCD2013L06 4V",
-    "normalized_model": "TCD2013L064V",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CDZXL07.1031",
-      "CDZXL07.1032",
-      "DDZXL07.1031",
-      "DDZXL07.1032",
-      "EDZXL07.1031",
-      "EDZXL07.1032",
-      "FDZXL07.1031",
-      "FDZXL07.1032",
-      "GDZXL07.1031",
-      "GDZXL07.1032",
-      "HDZXL07.1031",
-      "HDZXL07.1032",
-      "JDZXL07.1031",
-      "JDZXL07.1032",
-      "KDZXL07.1031",
-      "KDZXL07.1032",
-      "LDZXL07.1031",
-      "LDZXL07.1032",
-      "MDZXL07.1031",
-      "MDZXL07.1032",
-      "NDZXL07.1031",
-      "NDZXL07.1032",
-      "PDZXL07.1031",
-      "PDZXL07.1032",
-      "RDZXL07.1031",
-      "RDZXL07.1032",
-      "SDZXL07.1031",
-      "SDZXL07.1032",
-      "TDZXL07.1031",
-      "TDZXL07.1032"
-    ],
-    "engine_codes": [
-      "D3CC211",
-      "D3CC233",
-      "D3CC260"
-    ],
-    "certificates": [
-      "CDZXL07.1031-007",
-      "CDZXL07.1032-006",
-      "DDZXL07.1031-027",
-      "DDZXL07.1032-028",
-      "EDZXL07.1031-024",
-      "EDZXL07.1032-025",
-      "FDZXL07.1031-027",
-      "FDZXL07.1032-028",
-      "GDZXL07.1031-027",
-      "GDZXL07.1032-028",
-      "HDZXL07.1031-023",
-      "HDZXL07.1032-024",
-      "JDZXL07.1031-005",
-      "JDZXL07.1032-025",
-      "KDZXL07.1031-020",
-      "KDZXL07.1032-021",
-      "LDZXL07.1031-011",
-      "LDZXL07.1032-012",
-      "MDZXL07.1031-017",
-      "MDZXL07.1032-019",
-      "NDZXL07.1031-034",
-      "NDZXL07.1032-035",
-      "PDZXL07.1031-015",
-      "PDZXL07.1032-016",
-      "RDZXL07.1031-007",
-      "RDZXL07.1032-008",
-      "SDZXL07.1031-005",
-      "SDZXL07.1032-006",
-      "TDZXL07.1031-018",
-      "TDZXL07.1032-019"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 212,
-    "rated_power_kw_max": 260,
-    "displacements_l": [
-      7.1450000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
     "epa_model": "TCD5.2L4",
     "normalized_model": "TCD5P2L4",
     "first_model_year": 2024,
@@ -31886,76 +34986,6 @@
     "mapped_database_brands": [
       "FPT"
     ],
-    "epa_model": "F2CE9685E*E",
-    "normalized_model": "F2CE9685EE",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HFPXL08.7TR3",
-      "JFPXL08.7TR3",
-      "KFPXL08.7TR3",
-      "LFPXL08.7TR3",
-      "MFPXL08.7TR3",
-      "NFPXL08.7TR3",
-      "PFPXL08.7TR3",
-      "RFPXL08.7TR3",
-      "SFPXL08.7TR3",
-      "TFPXL08.7TR3"
-    ],
-    "engine_codes": [
-      "F2CE9685E*E"
-    ],
-    "certificates": [
-      "HFPXL08.7TR3-004",
-      "JFPXL08.7TR3-006",
-      "KFPXL08.7TR3-006",
-      "LFPXL08.7TR3-003",
-      "MFPXL08.7TR3-004",
-      "NFPXL08.7TR3-013",
-      "PFPXL08.7TR3-031",
-      "RFPXL08.7TR3-002",
-      "SFPXL08.7TR3-008",
-      "TFPXL08.7TR3-017"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 230,
-    "rated_power_kw_max": 230,
-    "displacements_l": [
-      8.709
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
     "epa_model": "F2CGE615A*V",
     "normalized_model": "F2CGE615AV",
     "first_model_year": 2020,
@@ -32450,174 +35480,6 @@
     "mapped_database_brands": [
       "FPT"
     ],
-    "epa_model": "F4GE9485A*J",
-    "normalized_model": "F4GE9485AJ",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CFPXL06.7DGB",
-      "DFPXL06.7DGB",
-      "EFPXL06.7DGB",
-      "FFPXL06.7DGB",
-      "GFPXL06.7DGB",
-      "HFPXL06.7DGB",
-      "JFPXL06.7DGB",
-      "KFPXL06.7DGB",
-      "LFPXL06.7DGB",
-      "MFPXL06.7DGB",
-      "NFPXL06.7DGB",
-      "PFPXL06.7DGB",
-      "RFPXL06.7DGB",
-      "SFPXL06.7DGB",
-      "TFPXL06.7DGB"
-    ],
-    "engine_codes": [
-      "F4GE9485A*J"
-    ],
-    "certificates": [
-      "CFPXL06.7DGB-015",
-      "DFPXL06.7DGB-006",
-      "EFPXL06.7DGB-003",
-      "FFPXL06.7DGB-002",
-      "GFPXL06.7DGB-003",
-      "HFPXL06.7DGB-002",
-      "JFPXL06.7DGB-002",
-      "KFPXL06.7DGB-003",
-      "LFPXL06.7DGB-002",
-      "MFPXL06.7DGB-003",
-      "NFPXL06.7DGB-007",
-      "PFPXL06.7DGB-029",
-      "RFPXL06.7DGB-007",
-      "SFPXL06.7DGB-005",
-      "TFPXL06.7DGB-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 98,
-    "rated_power_kw_max": 98,
-    "displacements_l": [
-      4.485
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HE9685A*J",
-    "normalized_model": "F4HE9685AJ",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CFPXL06.7DGS",
-      "DFPXL06.7DGS",
-      "EFPXL06.7DGS",
-      "FFPXL06.7DGS",
-      "GFPXL06.7DGS",
-      "HFPXL06.7DGS",
-      "JFPXL06.7DGS",
-      "KFPXL06.7DGS",
-      "LFPXL06.7DGS",
-      "MFPXL06.7DGS",
-      "NFPXL06.7DGS",
-      "PFPXL06.7DGS",
-      "RFPXL06.7DGS",
-      "SFPXL06.7DGS",
-      "TFPXL06.7DGS"
-    ],
-    "engine_codes": [
-      "F4HE9685A*J"
-    ],
-    "certificates": [
-      "CFPXL06.7DGS-016",
-      "DFPXL06.7DGS-005",
-      "EFPXL06.7DGS-002",
-      "FFPXL06.7DGS-003",
-      "GFPXL06.7DGS-004",
-      "HFPXL06.7DGS-003",
-      "JFPXL06.7DGS-005",
-      "KFPXL06.7DGS-007",
-      "LFPXL06.7DGS-005",
-      "MFPXL06.7DGS-002",
-      "NFPXL06.7DGS-006",
-      "PFPXL06.7DGS-027",
-      "RFPXL06.7DGS-001",
-      "SFPXL06.7DGS-006",
-      "TFPXL06.7DGS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 208,
-    "rated_power_kw_max": 208,
-    "displacements_l": [
-      6.728000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
     "epa_model": "F4HE9685B*J",
     "normalized_model": "F4HE9685BJ",
     "first_model_year": 2012,
@@ -32696,463 +35558,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HGE415A*V",
-    "normalized_model": "F4HGE415AV",
-    "first_model_year": 2025,
-    "latest_model_year": 2026,
-    "model_years": [
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "SFPXL06.7FR1",
-      "TFPXL06.7FR1"
-    ],
-    "engine_codes": [
-      "F4HGE415A*V"
-    ],
-    "certificates": [
-      "SFPXL06.7FR1-026",
-      "TFPXL06.7FR1-013"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 125,
-    "rated_power_kw_max": 125,
-    "displacements_l": [
-      4.485
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HGE613Z*V",
-    "normalized_model": "F4HGE613ZV",
-    "first_model_year": 2022,
-    "latest_model_year": 2026,
-    "model_years": [
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "NFPXL06.7FR1",
-      "PFPXL06.7FR1",
-      "RFPXL06.7FR1",
-      "SFPXL06.7FR1",
-      "TFPXL06.7FR1"
-    ],
-    "engine_codes": [
-      "F4HGE613Z*V"
-    ],
-    "certificates": [
-      "NFPXL06.7FR1-043",
-      "PFPXL06.7FR1-025",
-      "RFPXL06.7FR1-011",
-      "SFPXL06.7FR1-026",
-      "TFPXL06.7FR1-013"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 124,
-    "rated_power_kw_max": 124,
-    "displacements_l": [
-      6.728000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HGE615C*V",
-    "normalized_model": "F4HGE615CV",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LFPXL06.7FR1",
-      "MFPXL06.7FR1",
-      "NFPXL06.7FR1",
-      "PFPXL06.7FR1",
-      "RFPXL06.7FR1",
-      "SFPXL06.7FR1",
-      "TFPXL06.7FR1"
-    ],
-    "engine_codes": [
-      "F4HGE615C*V"
-    ],
-    "certificates": [
-      "LFPXL06.7FR1-011",
-      "MFPXL06.7FR1-034",
-      "NFPXL06.7FR1-043",
-      "PFPXL06.7FR1-025",
-      "RFPXL06.7FR1-011",
-      "SFPXL06.7FR1-026",
-      "TFPXL06.7FR1-013"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 175,
-    "rated_power_kw_max": 175,
-    "displacements_l": [
-      6.728000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HGE615D*V",
-    "normalized_model": "F4HGE615DV",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LFPXL06.7FR1",
-      "MFPXL06.7FR1",
-      "NFPXL06.7FR1",
-      "PFPXL06.7FR1",
-      "RFPXL06.7FR1",
-      "SFPXL06.7FR1",
-      "TFPXL06.7FR1"
-    ],
-    "engine_codes": [
-      "F4HGE615D*V"
-    ],
-    "certificates": [
-      "LFPXL06.7FR1-011",
-      "MFPXL06.7FR1-034",
-      "NFPXL06.7FR1-043",
-      "PFPXL06.7FR1-025",
-      "RFPXL06.7FR1-011",
-      "SFPXL06.7FR1-026",
-      "TFPXL06.7FR1-013"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 230,
-    "rated_power_kw_max": 230,
-    "displacements_l": [
-      6.728000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F5HGL415A*X",
-    "normalized_model": "F5HGL415AX",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LFPXL03.4DEP",
-      "MFPXL03.4DEP",
-      "NFPXL03.4DEP",
-      "PFPXL03.4DEP",
-      "RFPXL03.4DEP",
-      "SFPXL03.4DEP",
-      "TFPXL03.4DEP"
-    ],
-    "engine_codes": [
-      "F5HGL415A*X"
-    ],
-    "certificates": [
-      "LFPXL03.4DEP-038",
-      "MFPXL03.4DEP-024",
-      "NFPXL03.4DEP-004",
-      "PFPXL03.4DEP-010",
-      "RFPXL03.4DEP-027",
-      "SFPXL03.4DEP-037",
-      "TFPXL03.4DEP-026"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 55,
-    "rated_power_kw_max": 55,
-    "displacements_l": [
-      3.387
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F5MGL415A*V",
-    "normalized_model": "F5MGL415AV",
-    "first_model_year": 2021,
-    "latest_model_year": 2026,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "MFPXL03.6EHP",
-      "NFPXL03.6EHP",
-      "PFPXL03.6EHP",
-      "RFPXL03.6EHP",
-      "SFPXL03.6EHP",
-      "TFPXL03.6EHP"
-    ],
-    "engine_codes": [
-      "F5MGL415A*V"
-    ],
-    "certificates": [
-      "MFPXL03.6EHP-022",
-      "NFPXL03.6EHP-019",
-      "PFPXL03.6EHP-004",
-      "RFPXL03.6EHP-054",
-      "SFPXL03.6EHP-039",
-      "TFPXL03.6EHP-031"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 105,
-    "rated_power_kw_max": 105,
-    "displacements_l": [
-      3.595
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F5MGL415B*V",
-    "normalized_model": "F5MGL415BV",
-    "first_model_year": 2021,
-    "latest_model_year": 2026,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "MFPXL03.6EHP",
-      "NFPXL03.6EHP",
-      "PFPXL03.6EHP",
-      "RFPXL03.6EHP",
-      "SFPXL03.6EHP",
-      "TFPXL03.6EHP"
-    ],
-    "engine_codes": [
-      "F5MGL415B*V"
-    ],
-    "certificates": [
-      "MFPXL03.6EHP-022",
-      "NFPXL03.6EHP-019",
-      "PFPXL03.6EHP-004",
-      "RFPXL03.6EHP-054",
-      "SFPXL03.6EHP-039",
-      "TFPXL03.6EHP-031"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 94,
-    "rated_power_kw_max": 94,
-    "displacements_l": [
-      3.595
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F5MGL415C*V",
-    "normalized_model": "F5MGL415CV",
-    "first_model_year": 2021,
-    "latest_model_year": 2026,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "MFPXL03.6EHP",
-      "NFPXL03.6EHP",
-      "PFPXL03.6EHP",
-      "RFPXL03.6EHP",
-      "SFPXL03.6EHP",
-      "TFPXL03.6EHP"
-    ],
-    "engine_codes": [
-      "F5MGL415C*V"
-    ],
-    "certificates": [
-      "MFPXL03.6EHP-022",
-      "NFPXL03.6EHP-019",
-      "PFPXL03.6EHP-004",
-      "RFPXL03.6EHP-054",
-      "SFPXL03.6EHP-039",
-      "TFPXL03.6EHP-031"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 71,
-    "rated_power_kw_max": 71,
-    "displacements_l": [
-      3.595
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F4HE9685A*J",
+        "slug": "fpt-f4he9685a-j",
+        "similarity": 0.9
+      }
+    ]
   },
   {
     "manufacturer": "HD Construction Equipment Co., Ltd.",
@@ -34528,717 +36941,6 @@
     "rated_power_kw_max": 124,
     "displacements_l": [
       5.1930000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BP-4LE2X",
-    "normalized_model": "BP4LE2X",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "ESZXL02.2PXB",
-      "FSZXL02.2PXB",
-      "GSZXL02.2PXB",
-      "HSZXL02.2PXB",
-      "JSZXL02.2PXB",
-      "KSZXL02.2PXB",
-      "LSZXL02.2PXB",
-      "MSZXL02.2PXB",
-      "NSZXL02.2PXB",
-      "PSZXL02.2PXB",
-      "RSZXL02.2PXB",
-      "SSZXL02.2PXB",
-      "TSZXL02.2PXB"
-    ],
-    "engine_codes": [
-      "4LE2XDPBA-01",
-      "4LE2XDPBB-01"
-    ],
-    "certificates": [
-      "ESZXL02.2PXB-002",
-      "FSZXL02.2PXB-005",
-      "GSZXL02.2PXB-002",
-      "HSZXL02.2PXB-007",
-      "JSZXL02.2PXB-001",
-      "KSZXL02.2PXB-004",
-      "LSZXL02.2PXB-003",
-      "MSZXL02.2PXB-004",
-      "NSZXL02.2PXB-006",
-      "PSZXL02.2PXB-006",
-      "RSZXL02.2PXB-002",
-      "SSZXL02.2PXB-003",
-      "TSZXL02.2PXB-003"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 49,
-    "rated_power_kw_max": 49,
-    "displacements_l": [
-      2.1790000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BQ-6HK1X",
-    "normalized_model": "BQ6HK1X",
-    "first_model_year": 2019,
-    "latest_model_year": 2026,
-    "model_years": [
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "KSZXL07.8QXB",
-      "LSZXL07.8QXB",
-      "MSZXL07.8QXB",
-      "NSZXL07.8QXB",
-      "PSZXL07.8QXB",
-      "RSZXL07.8QXB",
-      "SSZXL07.8QXB",
-      "TSZXL07.8QXB"
-    ],
-    "engine_codes": [
-      "6HK1XDQBA-01"
-    ],
-    "certificates": [
-      "KSZXL07.8QXB-016",
-      "LSZXL07.8QXB-011",
-      "MSZXL07.8QXB-012",
-      "NSZXL07.8QXB-003",
-      "PSZXL07.8QXB-014",
-      "RSZXL07.8QXB-014",
-      "SSZXL07.8QXB-014",
-      "TSZXL07.8QXB-014"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 194,
-    "rated_power_kw_max": 194,
-    "displacements_l": [
-      7.79
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BQ-6WG1X",
-    "normalized_model": "BQ6WG1X",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FSZXL15.7QXB",
-      "GSZXL15.7QXB",
-      "HSZXL15.7QXB",
-      "JSZXL15.7QXB",
-      "KSZXL15.7QXB",
-      "LSZXL15.7QXB",
-      "MSZXL15.7QXB",
-      "NSZXL15.7QXB",
-      "PSZXL15.7QXB",
-      "RSZXL15.7QXB",
-      "SSZXL15.7QXB",
-      "TSZXL15.7QXB"
-    ],
-    "engine_codes": [
-      "6WG1XDQBA-01",
-      "6WG1XDQBB-01"
-    ],
-    "certificates": [
-      "FSZXL15.7QXB-002",
-      "GSZXL15.7QXB-012",
-      "HSZXL15.7QXB-019",
-      "JSZXL15.7QXB-016",
-      "KSZXL15.7QXB-015",
-      "LSZXL15.7QXB-016",
-      "MSZXL15.7QXB-015",
-      "NSZXL15.7QXB-017",
-      "PSZXL15.7QXB-017",
-      "RSZXL15.7QXB-017",
-      "SSZXL15.7QXB-017",
-      "TSZXL15.7QXB-017"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 382,
-    "rated_power_kw_max": 382,
-    "displacements_l": [
-      15.682
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BR-4HK1X",
-    "normalized_model": "BR4HK1X",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FSZXL05.2RXB",
-      "GSZXL05.2RXB",
-      "HSZXL05.2RXB",
-      "JSZXL05.2RXB",
-      "KSZXL05.2RXB",
-      "LSZXL05.2RXB",
-      "MSZXL05.2RXB",
-      "NSZXL05.2RXB",
-      "PSZXL05.2RXB",
-      "RSZXL05.2RXB",
-      "SSZXL05.2RXB",
-      "TSZXL05.2RXB"
-    ],
-    "engine_codes": [
-      "4HK1XDRBA-01",
-      "4HK1XDRBB-01"
-    ],
-    "certificates": [
-      "FSZXL05.2RXB-013",
-      "GSZXL05.2RXB-009",
-      "HSZXL05.2RXB-016",
-      "JSZXL05.2RXB-012",
-      "KSZXL05.2RXB-010",
-      "LSZXL05.2RXB-010",
-      "MSZXL05.2RXB-010",
-      "NSZXL05.2RXB-014",
-      "PSZXL05.2RXB-011",
-      "RSZXL05.2RXB-011",
-      "SSZXL05.2RXB-010",
-      "TSZXL05.2RXB-011"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 127,
-    "rated_power_kw_max": 127,
-    "displacements_l": [
-      5.1930000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BR-4JJ1X",
-    "normalized_model": "BR4JJ1X",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FSZXL03.0RXB",
-      "GSZXL03.0RXB",
-      "HSZXL03.0RXB",
-      "JSZXL03.0RXB",
-      "KSZXL03.0RXB",
-      "LSZXL03.0RXB",
-      "MSZXL03.0RXB",
-      "NSZXL03.0RXB",
-      "PSZXL03.0RXB",
-      "RSZXL03.0RXB",
-      "SSZXL03.0RXB",
-      "TSZXL03.0RXB"
-    ],
-    "engine_codes": [
-      "4JJ1XDRBA-01",
-      "4JJ1XDRBB-01"
-    ],
-    "certificates": [
-      "FSZXL03.0RXB-017",
-      "GSZXL03.0RXB-015",
-      "HSZXL03.0RXB-012",
-      "JSZXL03.0RXB-010",
-      "KSZXL03.0RXB-008",
-      "LSZXL03.0RXB-008",
-      "MSZXL03.0RXB-008",
-      "NSZXL03.0RXB-012",
-      "PSZXL03.0RXB-009",
-      "RSZXL03.0RXB-009",
-      "SSZXL03.0RXB-009",
-      "TSZXL03.0RXB-009"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 71,
-    "rated_power_kw_max": 71,
-    "displacements_l": [
-      2.999
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BZ-4LE2T",
-    "normalized_model": "BZ4LE2T",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "ESZXL02.2ZTB",
-      "FSZXL02.2ZTB",
-      "GSZXL02.2ZTB",
-      "HSZXL02.2ZTB",
-      "JSZXL02.2ZTB",
-      "KSZXL02.2ZTB",
-      "LSZXL02.2ZTB",
-      "MSZXL02.2ZTB",
-      "NSZXL02.2ZTB",
-      "PSZXL02.2ZTB",
-      "RSZXL02.2ZTB",
-      "SSZXL02.2ZTB",
-      "TSZXL02.2ZTB"
-    ],
-    "engine_codes": [
-      "4LE2TDZBA-01"
-    ],
-    "certificates": [
-      "ESZXL02.2ZTB-001",
-      "FSZXL02.2ZTB-006",
-      "GSZXL02.2ZTB-005",
-      "HSZXL02.2ZTB-009",
-      "JSZXL02.2ZTB-004",
-      "KSZXL02.2ZTB-003",
-      "LSZXL02.2ZTB-002",
-      "MSZXL02.2ZTB-002",
-      "NSZXL02.2ZTB-010",
-      "PSZXL02.2ZTB-005",
-      "RSZXL02.2ZTB-007",
-      "SSZXL02.2ZTB-002",
-      "TSZXL02.2ZTB-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 30,
-    "rated_power_kw_max": 30,
-    "displacements_l": [
-      2.1790000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "KH-6HK1X",
-    "normalized_model": "KH6HK1X",
-    "first_model_year": 2026,
-    "latest_model_year": 2026,
-    "model_years": [
-      2026
-    ],
-    "engine_families": [
-      "TSZXL07.8HXK"
-    ],
-    "engine_codes": [
-      "6HK1XDHKA-01",
-      "6HK1XDHKB-01"
-    ],
-    "certificates": [
-      "TSZXL07.8HXK-020"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 198,
-    "rated_power_kw_max": 198,
-    "displacements_l": [
-      7.79
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "KI-4HK1X",
-    "normalized_model": "KI4HK1X",
-    "first_model_year": 2026,
-    "latest_model_year": 2026,
-    "model_years": [
-      2026
-    ],
-    "engine_families": [
-      "TSZXL05.2IXK"
-    ],
-    "engine_codes": [
-      "4HK1XDIKA-01",
-      "4HK1XDIKB-01"
-    ],
-    "certificates": [
-      "TSZXL05.2IXK-019"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 129,
-    "rated_power_kw_max": 129,
-    "displacements_l": [
-      5.1930000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "KJ-4JJ1X",
-    "normalized_model": "KJ4JJ1X",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2026
-    ],
-    "engine_families": [
-      "HSZXL03.0JXK",
-      "JSZXL03.0JXK",
-      "TSZXL03.0JXK"
-    ],
-    "engine_codes": [
-      "4JJ1XDJKA-01",
-      "4JJ1XDJKB-01"
-    ],
-    "certificates": [
-      "HSZXL03.0JXK-003",
-      "JSZXL03.0JXK-008",
-      "TSZXL03.0JXK-018"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 73,
-    "rated_power_kw_max": 73,
-    "displacements_l": [
-      2.999
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "KV-4LE1T",
-    "normalized_model": "KV4LE1T",
-    "first_model_year": 2017,
-    "latest_model_year": 2026,
-    "model_years": [
-      2017,
-      2018,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "HSZXL02.2VTK",
-      "JSZXL02.2VTK",
-      "NSZXL02.2VTK",
-      "PSZXL02.2VTK",
-      "RSZXL02.2VTK",
-      "SSZXL02.2VTK",
-      "TSZXL02.2VTK"
-    ],
-    "engine_codes": [
-      "4LE1TCVKA-01"
-    ],
-    "certificates": [
-      "HSZXL02.2VTK-002",
-      "JSZXL02.2VTK-007",
-      "NSZXL02.2VTK-015",
-      "PSZXL02.2VTK-003",
-      "RSZXL02.2VTK-003",
-      "SSZXL02.2VTK-006",
-      "TSZXL02.2VTK-007"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 35,
-    "rated_power_kw_max": 35,
-    "displacements_l": [
-      2.1790000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "LV-4LE2",
-    "normalized_model": "LV4LE2",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JSZXL02.2VNL",
-      "KSZXL02.2VNL",
-      "LSZXL02.2VNL",
-      "MSZXL02.2VNL",
-      "NSZXL02.2VNL",
-      "PSZXL02.2VNL",
-      "RSZXL02.2VNL",
-      "SSZXL02.2VNL",
-      "TSZXL02.2VNL"
-    ],
-    "engine_codes": [
-      "4LE2NCVLA-01"
-    ],
-    "certificates": [
-      "JSZXL02.2VNL-017",
-      "KSZXL02.2VNL-001",
-      "LSZXL02.2VNL-005",
-      "MSZXL02.2VNL-003",
-      "NSZXL02.2VNL-008",
-      "PSZXL02.2VNL-002",
-      "RSZXL02.2VNL-004",
-      "SSZXL02.2VNL-005",
-      "TSZXL02.2VNL-005"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 26,
-    "rated_power_kw_max": 26,
-    "displacements_l": [
-      2.1790000000000003
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -36971,327 +38673,6 @@
     "rated_power_kw_max": 18,
     "displacements_l": [
       1.951
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "1206F-E70TA(C7.1)",
-    "normalized_model": "1206FE70TAC7P1",
-    "first_model_year": 2018,
-    "latest_model_year": 2026,
-    "model_years": [
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "JPKXL07.0BN1",
-      "KPKXL07.0BN1",
-      "LPKXL07.0BN1",
-      "MPKXL07.0BN1",
-      "NPKXL07.0BN1",
-      "PPKXL07.0BN1",
-      "RPKXL07.0BN1",
-      "SPKXL07.0BN1",
-      "TPKXL07.0BN1"
-    ],
-    "engine_codes": [
-      "6264/1800"
-    ],
-    "certificates": [
-      "JPKXL07.0BN1-007",
-      "KPKXL07.0BN1-019",
-      "LPKXL07.0BN1-007",
-      "MPKXL07.0BN1-034",
-      "NPKXL07.0BN1-015",
-      "PPKXL07.0BN1-018",
-      "RPKXL07.0BN1-030",
-      "SPKXL07.0BN1-007",
-      "TPKXL07.0BN1-013"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification of Distilate Fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 122,
-    "rated_power_kw_max": 122,
-    "displacements_l": [
-      7.014
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "1206F-E70TTA(C7.1)",
-    "normalized_model": "1206FE70TTAC7P1",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "EPKXL07.0BN1",
-      "FPKXL07.0BN1",
-      "GPKXL07.0BN1",
-      "HPKXL07.0BN1",
-      "JPKXL07.0BN1",
-      "KPKXL07.0BN1",
-      "LPKXL07.0BN1",
-      "MPKXL07.0BN1",
-      "NPKXL07.0BN1",
-      "PPKXL07.0BN1",
-      "RPKXL07.0BN1",
-      "SPKXL07.0BN1",
-      "TPKXL07.0BN1"
-    ],
-    "engine_codes": [
-      "4350/1800",
-      "4352/1800",
-      "PARENT-4350/1800"
-    ],
-    "certificates": [
-      "EPKXL07.0BN1-003",
-      "FPKXL07.0BN1-013",
-      "GPKXL07.0BN1-008",
-      "HPKXL07.0BN1-009",
-      "JPKXL07.0BN1-007",
-      "KPKXL07.0BN1-019",
-      "LPKXL07.0BN1-007",
-      "MPKXL07.0BN1-034",
-      "NPKXL07.0BN1-015",
-      "PPKXL07.0BN1-018",
-      "RPKXL07.0BN1-030",
-      "SPKXL07.0BN1-007",
-      "TPKXL07.0BN1-013"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification of Distilate Fuel",
-      "7-15 ppm Ultra Low Sulfur Diesel; Perksin specificatino for Distilate Diesel Fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 184,
-    "rated_power_kw_max": 239,
-    "displacements_l": [
-      7.014
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "402F-05(C0.5)",
-    "normalized_model": "402F05C0P5",
-    "first_model_year": 2024,
-    "latest_model_year": 2026,
-    "model_years": [
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "RPKXL.761F1C",
-      "SPKXL.761F1C",
-      "TPKXL.761F1C"
-    ],
-    "engine_codes": [
-      "EG5/1800C"
-    ],
-    "certificates": [
-      "RPKXL.761F1C-013",
-      "SPKXL.761F1C-028",
-      "TPKXL.761F1C-023"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 4,
-    "rated_power_kw_max": 4,
-    "displacements_l": [
-      0.508
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "403F-07(C0.7)",
-    "normalized_model": "403F07C0P7",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LPKXL.761F1C",
-      "MPKXL.761F1C",
-      "NPKXL.761F1C",
-      "PPKXL.761F1C",
-      "RPKXL.761F1C",
-      "SPKXL.761F1C",
-      "TPKXL.761F1C"
-    ],
-    "engine_codes": [
-      "6546/1800",
-      "6576/1800",
-      "PARENT-6576/1800"
-    ],
-    "certificates": [
-      "LPKXL.761F1C-024",
-      "MPKXL.761F1C-023",
-      "NPKXL.761F1C-031",
-      "PPKXL.761F1C-028",
-      "RPKXL.761F1C-013",
-      "SPKXL.761F1C-028",
-      "TPKXL.761F1C-023"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 6,
-    "rated_power_kw_max": 7,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "403F-15(C1.5)",
-    "normalized_model": "403F15C1P5",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LPKXL1.49F2C",
-      "MPKXL01.5F2C",
-      "NPKXL01.5F2C",
-      "PPKXL01.5F2C",
-      "RPKXL01.5F2C",
-      "SPKXL01.5F2C",
-      "TPKXL01.5F2C"
-    ],
-    "engine_codes": [
-      "6664/1800",
-      "EK19/1800C",
-      "PARENT-6664/1800"
-    ],
-    "certificates": [
-      "LPKXL1.49F2C-026",
-      "MPKXL01.5F2C-027",
-      "NPKXL01.5F2C-035",
-      "PPKXL01.5F2C-031",
-      "RPKXL01.5F2C-017",
-      "SPKXL01.5F2C-011",
-      "TPKXL01.5F2C-026"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 14,
-    "rated_power_kw_max": 15,
-    "displacements_l": [
-      1.496
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -39226,78 +40607,6 @@
     "mapped_database_brands": [
       "Yanmar"
     ],
-    "epa_model": "3TNV76-CL",
-    "normalized_model": "3TNV76CL",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CYDXL1.11U3N",
-      "HYDXL1.11S3N",
-      "JYDXL1.11S3N",
-      "KYDXL1.11S3N",
-      "LYDXL1.11S3N",
-      "MYDXL01.1S3N",
-      "NYDXL01.1S3N",
-      "PYDXL01.1S3N",
-      "RYDXL01.1S3N",
-      "SYDXL01.1S3N",
-      "TYDXL01.1S3N"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL1.11U3N-015",
-      "HYDXL1.11S3N-005",
-      "JYDXL1.11S3N-041",
-      "KYDXL1.11S3N-017",
-      "LYDXL1.11S3N-030",
-      "MYDXL01.1S3N-048",
-      "NYDXL01.1S3N-022",
-      "PYDXL01.1S3N-047",
-      "RYDXL01.1S3N-051",
-      "SYDXL01.1S3N-004",
-      "TYDXL01.1S3N-045"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 12,
-    "rated_power_kw_max": 12,
-    "displacements_l": [
-      1.116
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
     "epa_model": "4HNGFM",
     "normalized_model": "4HNGFM",
     "first_model_year": 2014,
@@ -39447,84 +40756,6 @@
     "rated_power_kw_max": 16,
     "displacements_l": [
       1.6420000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "4TNV88-CL",
-    "normalized_model": "4TNV88CL",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CYDXL2.19J4N",
-      "GYDXL2.19J4N",
-      "GYDXL2.19S4N",
-      "HYDXL2.19S4N",
-      "JYDXL2.19S4N",
-      "KYDXL2.19S4N",
-      "LYDXL2.19S4N",
-      "MYDXL02.2S4N",
-      "NYDXL02.2S4N",
-      "PYDXL02.2S4N",
-      "RYDXL02.2S4N",
-      "SYDXL02.2S4N",
-      "TYDXL02.2S4N"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL2.19J4N-028",
-      "GYDXL2.19J4N-009",
-      "GYDXL2.19S4N-010",
-      "HYDXL2.19S4N-041",
-      "JYDXL2.19S4N-045",
-      "KYDXL2.19S4N-027",
-      "LYDXL2.19S4N-034",
-      "MYDXL02.2S4N-052",
-      "NYDXL02.2S4N-018",
-      "PYDXL02.2S4N-039",
-      "RYDXL02.2S4N-048",
-      "SYDXL02.2S4N-039",
-      "TYDXL02.2S4N-047"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 24,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      2.19
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -41085,7 +42316,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F5HGL415A*X",
+        "slug": "fpt-f5hgl415a-x",
+        "similarity": 0.9
+      }
+    ]
   },
   {
     "manufacturer": "FPT Industrial S.p.A.",
@@ -41262,81 +42500,6 @@
     "rated_power_kw_max": 18,
     "displacements_l": [
       1.951
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "1204F-E44TTAN(C4.4)",
-    "normalized_model": "1204FE44TTANC4P4",
-    "first_model_year": 2015,
-    "latest_model_year": 2025,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025
-    ],
-    "engine_families": [
-      "FPKXL04.4MU1",
-      "GPKXL04.4MU1",
-      "HPKXL04.4MU1",
-      "JPKXL04.4MU1",
-      "KPKXL04.4MU1",
-      "LPKXL04.4MU1",
-      "MPKXL04.4MU1",
-      "NPKXL04.4MU1",
-      "PPKXL04.4MU1",
-      "RPKXL04.4MU1",
-      "SPKXL04.4MU1"
-    ],
-    "engine_codes": [
-      "4526/1800",
-      "PARENT4526/1800"
-    ],
-    "certificates": [
-      "FPKXL04.4MU1-011",
-      "GPKXL04.4MU1-016-R01",
-      "HPKXL04.4MU1-010",
-      "JPKXL04.4MU1-008",
-      "KPKXL04.4MU1-001",
-      "LPKXL04.4MU1-008",
-      "MPKXL04.4MU1-035",
-      "NPKXL04.4MU1-016",
-      "PPKXL04.4MU1-016",
-      "RPKXL04.4MU1-035",
-      "SPKXL04.4MU1-026"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel",
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for Distilate Diesel Fuel."
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 129,
-    "rated_power_kw_max": 129,
-    "displacements_l": [
-      4.399
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -42455,546 +43618,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
-    "epa_model": "TAD550GE",
-    "normalized_model": "TAD550GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CDZXL04.8025",
-      "DDZXL04.8025",
-      "EDZXL04.8025",
-      "FDZXL04.8025",
-      "GDZXL04.8025",
-      "HDZXL04.8025",
-      "JDZXL04.8025",
-      "KDZXL04.8025",
-      "LDZXL04.8025",
-      "MDZXL04.8025",
-      "NDZXL04.8025",
-      "PDZXL04.8025",
-      "RDZXL04.8025"
-    ],
-    "engine_codes": [
-      "D3UC97"
-    ],
-    "certificates": [
-      "CDZXL04.8025-004",
-      "DDZXL04.8025-014",
-      "EDZXL04.8025-018",
-      "FDZXL04.8025-020",
-      "GDZXL04.8025-021",
-      "HDZXL04.8025-002",
-      "JDZXL04.8025-029",
-      "KDZXL04.8025-013",
-      "LDZXL04.8025-004",
-      "MDZXL04.8025-010",
-      "NDZXL04.8025-003",
-      "PDZXL04.8025-001",
-      "RDZXL04.8025-001"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 98,
-    "rated_power_kw_max": 98,
-    "displacements_l": [
-      4.764
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
-    "epa_model": "TAD551GE",
-    "normalized_model": "TAD551GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CDZXL04.8025",
-      "DDZXL04.8025",
-      "EDZXL04.8025",
-      "FDZXL04.8025",
-      "GDZXL04.8025",
-      "HDZXL04.8025",
-      "JDZXL04.8025",
-      "KDZXL04.8025",
-      "LDZXL04.8025",
-      "MDZXL04.8025",
-      "NDZXL04.8025",
-      "PDZXL04.8025",
-      "RDZXL04.8025"
-    ],
-    "engine_codes": [
-      "D3UC114"
-    ],
-    "certificates": [
-      "CDZXL04.8025-004",
-      "DDZXL04.8025-014",
-      "EDZXL04.8025-018",
-      "FDZXL04.8025-020",
-      "GDZXL04.8025-021",
-      "HDZXL04.8025-002",
-      "JDZXL04.8025-029",
-      "KDZXL04.8025-013",
-      "LDZXL04.8025-004",
-      "MDZXL04.8025-010",
-      "NDZXL04.8025-003",
-      "PDZXL04.8025-001",
-      "RDZXL04.8025-001"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 114,
-    "rated_power_kw_max": 114,
-    "displacements_l": [
-      4.764
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
-    "epa_model": "TAD750GE",
-    "normalized_model": "TAD750GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CDZXL07.1026",
-      "DDZXL07.1026",
-      "EDZXL07.1026",
-      "FDZXL07.1026",
-      "GDZXL07.1026",
-      "HDZXL07.1026",
-      "KDZXL07.1026",
-      "LDZXL07.1026",
-      "MDZXL07.1026",
-      "NDZXL07.1026",
-      "PDZXL07.1026",
-      "RDZXL07.1026"
-    ],
-    "engine_codes": [
-      "D3UC150"
-    ],
-    "certificates": [
-      "CDZXL07.1026-001",
-      "DDZXL07.1026-015",
-      "EDZXL07.1026-020",
-      "FDZXL07.1026-022",
-      "GDZXL07.1026-023",
-      "HDZXL07.1026-003",
-      "KDZXL07.1026-016",
-      "LDZXL07.1026-006",
-      "MDZXL07.1026-011",
-      "NDZXL07.1026-014",
-      "PDZXL07.1026-010",
-      "RDZXL07.1026-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 150,
-    "rated_power_kw_max": 150,
-    "displacements_l": [
-      7.1450000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
-    "epa_model": "TAD751GE",
-    "normalized_model": "TAD751GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CDZXL07.1026",
-      "DDZXL07.1026",
-      "EDZXL07.1026",
-      "FDZXL07.1026",
-      "GDZXL07.1026",
-      "HDZXL07.1026",
-      "KDZXL07.1026",
-      "LDZXL07.1026",
-      "MDZXL07.1026",
-      "NDZXL07.1026",
-      "PDZXL07.1026",
-      "RDZXL07.1026"
-    ],
-    "engine_codes": [
-      "D3UC173"
-    ],
-    "certificates": [
-      "CDZXL07.1026-001",
-      "DDZXL07.1026-015",
-      "EDZXL07.1026-020",
-      "FDZXL07.1026-022",
-      "GDZXL07.1026-023",
-      "HDZXL07.1026-003",
-      "KDZXL07.1026-016",
-      "LDZXL07.1026-006",
-      "MDZXL07.1026-011",
-      "NDZXL07.1026-014",
-      "PDZXL07.1026-010",
-      "RDZXL07.1026-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 174,
-    "rated_power_kw_max": 174,
-    "displacements_l": [
-      7.1450000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
-    "epa_model": "TAD752GE",
-    "normalized_model": "TAD752GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CDZXL07.1027",
-      "DDZXL07.1027",
-      "EDZXL07.1027",
-      "FDZXL07.1027",
-      "GDZXL07.1027",
-      "HDZXL07.1027",
-      "JDZXL07.1027",
-      "KDZXL07.1027",
-      "LDZXL07.1027",
-      "MDZXL07.1027",
-      "NDZXL07.1027",
-      "PDZXL07.1027",
-      "RDZXL07.1027"
-    ],
-    "engine_codes": [
-      "D3CC211"
-    ],
-    "certificates": [
-      "CDZXL07.1027-003",
-      "DDZXL07.1027-016",
-      "EDZXL07.1027-021",
-      "FDZXL07.1027-023",
-      "GDZXL07.1027-024",
-      "HDZXL07.1027-004",
-      "JDZXL07.1027-024",
-      "KDZXL07.1027-017",
-      "LDZXL07.1027-007",
-      "MDZXL07.1027-012",
-      "NDZXL07.1027-015",
-      "PDZXL07.1027-013",
-      "RDZXL07.1027-004"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 212,
-    "rated_power_kw_max": 212,
-    "displacements_l": [
-      7.1450000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
-    "epa_model": "TAD753GE",
-    "normalized_model": "TAD753GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CDZXL07.1027",
-      "DDZXL07.1027",
-      "EDZXL07.1027",
-      "FDZXL07.1027",
-      "GDZXL07.1027",
-      "HDZXL07.1027",
-      "JDZXL07.1027",
-      "KDZXL07.1027",
-      "LDZXL07.1027",
-      "MDZXL07.1027",
-      "NDZXL07.1027",
-      "PDZXL07.1027",
-      "RDZXL07.1027"
-    ],
-    "engine_codes": [
-      "D3CC233"
-    ],
-    "certificates": [
-      "CDZXL07.1027-003",
-      "DDZXL07.1027-016",
-      "EDZXL07.1027-021",
-      "FDZXL07.1027-023",
-      "GDZXL07.1027-024",
-      "HDZXL07.1027-004",
-      "JDZXL07.1027-024",
-      "KDZXL07.1027-017",
-      "LDZXL07.1027-007",
-      "MDZXL07.1027-012",
-      "NDZXL07.1027-015",
-      "PDZXL07.1027-013",
-      "RDZXL07.1027-004"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 233,
-    "rated_power_kw_max": 233,
-    "displacements_l": [
-      7.1450000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
-    "epa_model": "TAD754GE",
-    "normalized_model": "TAD754GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2024,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "CDZXL07.1028",
-      "DDZXL07.1028",
-      "EDZXL07.1028",
-      "FDZXL07.1028",
-      "GDZXL07.1028",
-      "HDZXL07.1028",
-      "JDZXL07.1028",
-      "KDZXL07.1028",
-      "LDZXL07.1028",
-      "MDZXL07.1028",
-      "NDZXL07.1028",
-      "PDZXL07.1028",
-      "RDZXL07.1028"
-    ],
-    "engine_codes": [
-      "D3CC260"
-    ],
-    "certificates": [
-      "CDZXL07.1028-002",
-      "DDZXL07.1028-025",
-      "EDZXL07.1028-022",
-      "FDZXL07.1028-024",
-      "GDZXL07.1028-025",
-      "HDZXL07.1028-005",
-      "JDZXL07.1028-023",
-      "KDZXL07.1028-018",
-      "LDZXL07.1028-009",
-      "MDZXL07.1028-013",
-      "NDZXL07.1028-016",
-      "PDZXL07.1028-014",
-      "RDZXL07.1028-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 260,
-    "rated_power_kw_max": 260,
-    "displacements_l": [
-      7.1450000000000005
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "FPT Industrial S.p.A.",
     "mapped_database_brands": [
       "FPT"
@@ -43660,61 +44283,6 @@
     "mapped_database_brands": [
       "Perkins"
     ],
-    "epa_model": "403F-15",
-    "normalized_model": "403F15",
-    "first_model_year": 2020,
-    "latest_model_year": 2024,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "LPKXL1.49F2C",
-      "MPKXL01.5F2C",
-      "NPKXL01.5F2C",
-      "PPKXL01.5F2C",
-      "RPKXL01.5F2C"
-    ],
-    "engine_codes": [
-      "6664/1800",
-      "EK19/1800C"
-    ],
-    "certificates": [
-      "LPKXL1.49F2C-026",
-      "MPKXL01.5F2C-027",
-      "NPKXL01.5F2C-035",
-      "PPKXL01.5F2C-031",
-      "RPKXL01.5F2C-017"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 14,
-    "rated_power_kw_max": 15,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
     "epa_model": "C1.1",
     "normalized_model": "C1P1",
     "first_model_year": 2020,
@@ -43864,61 +44432,6 @@
         "fuel_type": "Diesel"
       }
     ],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "S773L-F",
-    "normalized_model": "S773LF",
-    "first_model_year": 2020,
-    "latest_model_year": 2024,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "LPKXL1.13F2C",
-      "MPKXL01.1F2C",
-      "NPKXL01.1F2C",
-      "PPKXL01.1F2C",
-      "RPKXL01.1F2C"
-    ],
-    "engine_codes": [
-      "S310-18C",
-      "S311-18C"
-    ],
-    "certificates": [
-      "LPKXL1.13F2C-027",
-      "MPKXL01.1F2C-040",
-      "NPKXL01.1F2C-034",
-      "PPKXL01.1F2C-030",
-      "RPKXL01.1F2C-015"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 11,
-    "displacements_l": [
-      1.1320000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
     "probable_database_matches": []
   },
   {
@@ -44685,109 +45198,6 @@
     "mapped_database_brands": [
       "Perkins"
     ],
-    "epa_model": "402F-05",
-    "normalized_model": "402F05",
-    "first_model_year": 2020,
-    "latest_model_year": 2023,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023
-    ],
-    "engine_families": [
-      "LPKXL.761F1C",
-      "MPKXL.761F1C",
-      "NPKXL.761F1C",
-      "PPKXL.761F1C"
-    ],
-    "engine_codes": [
-      "EG5/1800C"
-    ],
-    "certificates": [
-      "LPKXL.761F1C-024",
-      "MPKXL.761F1C-023",
-      "NPKXL.761F1C-031",
-      "PPKXL.761F1C-028"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 4,
-    "rated_power_kw_max": 4,
-    "displacements_l": [
-      0.508
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "403F-07",
-    "normalized_model": "403F07",
-    "first_model_year": 2020,
-    "latest_model_year": 2023,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023
-    ],
-    "engine_families": [
-      "LPKXL.761F1C",
-      "MPKXL.761F1C",
-      "NPKXL.761F1C",
-      "PPKXL.761F1C"
-    ],
-    "engine_codes": [
-      "6546/1800",
-      "6576/1800"
-    ],
-    "certificates": [
-      "LPKXL.761F1C-024",
-      "MPKXL.761F1C-023",
-      "NPKXL.761F1C-031",
-      "PPKXL.761F1C-028"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 6,
-    "rated_power_kw_max": 7,
-    "displacements_l": [
-      0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
     "epa_model": "403F-15T",
     "normalized_model": "403F15T",
     "first_model_year": 2020,
@@ -44832,7 +45242,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "403F-15",
+        "slug": "perkins-403f-15",
+        "similarity": 0.923
+      }
+    ]
   },
   {
     "manufacturer": "Perkins Engines Co Ltd",
@@ -46804,8 +47221,17 @@
     "displacements_l": [
       1.496
     ],
-    "match_status": "not_found",
-    "database_matches": [],
+    "match_status": "exact_model_other_brand",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "403F-15",
+        "slug": "perkins-403f-15",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
     "probable_database_matches": []
   },
   {
@@ -47716,8 +48142,17 @@
     "displacements_l": [
       1.1320000000000001
     ],
-    "match_status": "not_found",
-    "database_matches": [],
+    "match_status": "exact_model_other_brand",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "S773L-F",
+        "slug": "perkins-s773l-f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
     "probable_database_matches": []
   },
   {
@@ -48969,7 +49404,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1204F-E44TTAN(C4.4)",
+        "slug": "perkins-1204f-e44ttan-c4-4",
+        "similarity": 0.903
+      }
+    ]
   },
   {
     "manufacturer": "Perkins Engines Co Ltd",
@@ -49022,7 +49464,20 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1206F-E70TTA(C7.1)",
+        "slug": "perkins-1206f-e70tta-c7-1",
+        "similarity": 0.933
+      },
+      {
+        "brand": "Perkins",
+        "model": "1206F-E70TA(C7.1)",
+        "slug": "perkins-1206f-e70ta-c7-1",
+        "similarity": 0.897
+      }
+    ]
   },
   {
     "manufacturer": "Perkins Engines Co Ltd",
@@ -49174,7 +49629,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "KV-4LE1T",
+        "slug": "isuzu-kv-4le1t",
+        "similarity": 0.923
+      }
+    ]
   },
   {
     "manufacturer": "Rolls-Royce Solutions America Inc",

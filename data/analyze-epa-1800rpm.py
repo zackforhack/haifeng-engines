@@ -122,6 +122,7 @@ CERTIFICATION_ALIASES = {
     ("Kubota Corporation", "Z482D2EF"): ("Kubota", "Z482-E4B-CHN-1"),
     ("Perkins Engines Co Ltd", "403D11C1P1"): ("Perkins", "403D-11G"),
     ("Perkins Engines Co Ltd", "403F11C1P1"): ("Perkins", "403F-11G"),
+    ("Perkins Engines Co Ltd", "403F15C1P5"): ("Perkins", "403F-15"),
     ("Perkins Engines Co Ltd", "404D22TAC2P2"): ("Perkins", "404D-22TAG"),
     ("Perkins Engines Co Ltd", "404JE22TAC2P2"): ("Perkins", "404J-E22TAG"),
     ("Perkins Engines Co Ltd", "1104D44TC4P4"): ("Perkins", "1104D-44TG1"),
@@ -580,7 +581,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "names. Fifteen reviewed aliases require matching displacement, aspiration, emissions "
         "tier and Kubota-published 1800 RPM output.",
         "- `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append "
-        "the shared Caterpillar base-engine name in parentheses. Ten reviewed aliases map those "
+        "the shared Caterpillar base-engine name in parentheses. Eleven reviewed aliases map those "
         "records only to Perkins ElectropaK pages with matching family, displacement, emissions "
         "tier and manufacturer-published 1800 RPM power node.",
         "- `Rolls-Royce Solutions America Inc` is represented under the `MTU` database brand. "
