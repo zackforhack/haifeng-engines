@@ -10843,6 +10843,14 @@
       },
       {
         "brand": "John Deere",
+        "model": "6068H",
+        "slug": "john-deere-6068h",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
         "model": "6068HF285",
         "slug": "john-deere-6068hf285-t3-160kva",
         "rpm_rated": 1800,
@@ -10901,14 +10909,6 @@
         "brand": "John Deere",
         "model": "6068HFG82",
         "slug": "john-deere-6068hfg82-t3iiia-150kva",
-        "rpm_rated": 1500,
-        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
-        "fuel_type": "Diesel"
-      },
-      {
-        "brand": "John Deere",
-        "model": "6068HFG82",
-        "slug": "john-deere-6068hfg82-t3iiia-200kva",
         "rpm_rated": 1500,
         "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
         "fuel_type": "Diesel"
@@ -46207,6 +46207,1538 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Caterpillar Inc.",
+    "mapped_database_brands": [
+      "Caterpillar"
+    ],
+    "epa_model": "3516C-HD",
+    "normalized_model": "3516CHD",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CCPXL78.1NSA"
+    ],
+    "engine_codes": [
+      "1",
+      "2",
+      "Cert 1",
+      "Cert 2"
+    ],
+    "certificates": [
+      "CCPXL78.1NSA-015"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2285,
+    "rated_power_kw_max": 2760,
+    "displacements_l": [
+      78.081
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Caterpillar",
+        "model": "3516C-HD",
+        "slug": "caterpillar-3516c-hd",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "6068H",
+    "normalized_model": "6068H",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CJDXL06.8120",
+      "CJDXL13.5103"
+    ],
+    "engine_codes": [
+      "6068HF285K",
+      "6068HF285L",
+      "6068HF485T",
+      "6068HF485U",
+      "6068HFG82D",
+      "6068HFG82E",
+      "6068HFG85A",
+      "6068HFG85B",
+      "6068HFS82",
+      "6068HFS83",
+      "6068HFS85B",
+      "6068HFS86B",
+      "6068HFS89",
+      "6068HFU82D",
+      "6068HFU82E"
+    ],
+    "certificates": [
+      "CJDXL06.8120-016",
+      "CJDXL13.5103-020"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 147,
+    "rated_power_kw_max": 235,
+    "displacements_l": [
+      6.788
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "6068H",
+        "slug": "john-deere-6068h",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deutz AG",
+    "mapped_database_brands": [
+      "Deutz"
+    ],
+    "epa_model": "D914L03",
+    "normalized_model": "D914L03",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CDZXL03.2088"
+    ],
+    "engine_codes": [
+      "C3UI36.8"
+    ],
+    "certificates": [
+      "CDZXL03.2088-029"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      3.236
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Deutz",
+        "model": "D914L03",
+        "slug": "deutz-d914l03",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDW1603GE (1800RPM)",
+    "normalized_model": "KDW1603GE1800RPM",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKHXL2.19CH1"
+    ],
+    "engine_codes": [
+      "NA"
+    ],
+    "certificates": [
+      "CKHXL2.19CH1-011"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.649
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDW1603GE (1800 RPM)",
+        "slug": "kohler-kdw1603ge-1800rpm",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "KDW2204TGE",
+    "normalized_model": "KDW2204TGE",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKHXL2.19CT1"
+    ],
+    "engine_codes": [
+      "NA"
+    ],
+    "certificates": [
+      "CKHXL2.19CT1-005"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 31,
+    "rated_power_kw_max": 31,
+    "displacements_l": [
+      2.1990000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDW2204TGE",
+        "slug": "kohler-kdw2204tge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "LDW1603GE (1800RPM)",
+    "normalized_model": "LDW1603GE1800RPM",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKHXL2.19CH1"
+    ],
+    "engine_codes": [
+      "NA"
+    ],
+    "certificates": [
+      "CKHXL2.19CH1-011"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.649
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDW1603GE (1800 RPM)",
+        "slug": "kohler-kdw1603ge-1800rpm",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Discovery Energy, LLC.",
+    "mapped_database_brands": [
+      "Kohler"
+    ],
+    "epa_model": "LDW2204TGE",
+    "normalized_model": "LDW2204TGE",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKHXL2.19CT1"
+    ],
+    "engine_codes": [
+      "NA"
+    ],
+    "certificates": [
+      "CKHXL2.19CT1-005"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 31,
+    "rated_power_kw_max": 31,
+    "displacements_l": [
+      2.1990000000000003
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kohler",
+        "model": "KDW2204TGE",
+        "slug": "kohler-kdw2204tge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BU-4JJ1T",
+    "normalized_model": "BU4JJ1T",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CSZXL03.0UTB"
+    ],
+    "engine_codes": [
+      "4JJ1TDUBA-01"
+    ],
+    "certificates": [
+      "CSZXL03.0UTB-005"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 50,
+    "rated_power_kw_max": 50,
+    "displacements_l": [
+      2.999
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "BU-4JJ1T",
+        "slug": "isuzu-bu-4jj1t",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BV-4LE1",
+    "normalized_model": "BV4LE1",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CSZXL02.2VNC"
+    ],
+    "engine_codes": [
+      "4LE1NCVFA-01",
+      "4LE1NCVFA-02"
+    ],
+    "certificates": [
+      "CSZXL02.2VNC-008"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 26,
+    "rated_power_kw_max": 26,
+    "displacements_l": [
+      2.1790000000000003
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "KV-4LE1",
+        "slug": "isuzu-kv-4le1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BV-4LE1T",
+    "normalized_model": "BV4LE1T",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CSZXL02.2VTB"
+    ],
+    "engine_codes": [
+      "4LE1TCVFA-01"
+    ],
+    "certificates": [
+      "CSZXL02.2VTB-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 35,
+    "rated_power_kw_max": 35,
+    "displacements_l": [
+      2.1790000000000003
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "KV-4LE1T",
+        "slug": "isuzu-kv-4le1t",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BV-4LE2",
+    "normalized_model": "BV4LE2",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CSZXL02.2VNB"
+    ],
+    "engine_codes": [
+      "4LE2NCDFA-01",
+      "4LE2NCVFA-01"
+    ],
+    "certificates": [
+      "CSZXL02.2VNB-007"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 26,
+    "rated_power_kw_max": 26,
+    "displacements_l": [
+      2.1790000000000003
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "LV-4LE2",
+        "slug": "isuzu-lv-4le2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1005-BG-ET",
+    "normalized_model": "D1005BGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKBXL01.0BCC"
+    ],
+    "engine_codes": [
+      "D1005-BG-ET01",
+      "D1005-BG-ET02"
+    ],
+    "certificates": [
+      "CKBXL01.0BCC-027"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 11,
+    "rated_power_kw_max": 12,
+    "displacements_l": [
+      1.002
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1005-E4BG1-SAE-2",
+        "slug": "kubota-d1005-e4bg1-sae-2",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1105-BG-ET",
+    "normalized_model": "D1105BGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKBXL01.5BCC"
+    ],
+    "engine_codes": [
+      "D1105-BG-ET01"
+    ],
+    "certificates": [
+      "CKBXL01.5BCC-024"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 13,
+    "rated_power_kw_max": 13,
+    "displacements_l": [
+      1.124
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1105-E4BG1-SAE-2X",
+        "slug": "kubota-d1105-e4bg1-sae-2x",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1305-BG-ET",
+    "normalized_model": "D1305BGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKBXL01.3DCC"
+    ],
+    "engine_codes": [
+      "D1305-BG-ET01",
+      "D1305-BG-ET02"
+    ],
+    "certificates": [
+      "CKBXL01.3DCC-008"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 14,
+    "rated_power_kw_max": 15,
+    "displacements_l": [
+      1.2610000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1305-E4BG1-CHN-1",
+        "slug": "kubota-d1305-e4bg1-chn-1",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "D1503-M-BG-ET",
+    "normalized_model": "D1503MBGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKBXL01.5FCC"
+    ],
+    "engine_codes": [
+      "D1503-M-BG-ET01",
+      "D1503-M-BG-ET02e"
+    ],
+    "certificates": [
+      "CKBXL01.5FCC-023"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.5
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "D1503-M-E4-BG",
+        "slug": "kubota-d1503-m-e4-bg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V1505-BG-ET",
+    "normalized_model": "V1505BGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKBXL01.5BCC"
+    ],
+    "engine_codes": [
+      "V1505-BG-ET01",
+      "V1505-BG-ET02"
+    ],
+    "certificates": [
+      "CKBXL01.5BCC-024"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 16,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.498
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V1505-E4BG1-SAE-2X",
+        "slug": "kubota-v1505-e4bg1-sae-2x",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V2003-M-BG-ET",
+    "normalized_model": "V2003MBGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKBXL02.0FCC"
+    ],
+    "engine_codes": [
+      "V2003-M-BG-ET01",
+      "V2003-M-BG-ET02",
+      "V2003-M-BG-ET02e"
+    ],
+    "certificates": [
+      "CKBXL02.0FCC-030"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 24,
+    "rated_power_kw_max": 25,
+    "displacements_l": [
+      2
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V2003-M-BG-ET",
+        "slug": "kubota-v2003-m-bg-et",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V2003-M-T-BG-ET",
+    "normalized_model": "V2003MTBGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKBXL02.0FAC"
+    ],
+    "engine_codes": [
+      "V2003-M-T-BG-ET01",
+      "V2003-M-T-BG-ET02e"
+    ],
+    "certificates": [
+      "CKBXL02.0FAC-031"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 31,
+    "rated_power_kw_max": 32,
+    "displacements_l": [
+      2
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V2003-M-T-BG-ET",
+        "slug": "kubota-v2003-m-t-bg-et",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V2403-M-BG-ET",
+    "normalized_model": "V2403MBGET",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CKBXL02.4FCC"
+    ],
+    "engine_codes": [
+      "V2403-M-BG-ET01",
+      "V2403-M-BG-ET02",
+      "V2403-M-BG-ET02e"
+    ],
+    "certificates": [
+      "CKBXL02.4FCC-014"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 30,
+    "rated_power_kw_max": 31,
+    "displacements_l": [
+      2.435
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V2403-M-BG-ET",
+        "slug": "kubota-v2403-m-bg-et",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Lister Petter Limited",
+    "mapped_database_brands": [
+      "Lister Petter"
+    ],
+    "epa_model": "408",
+    "normalized_model": "408",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CL5XL1.86FNI",
+      "CL5XL1.86FTI"
+    ],
+    "engine_codes": [
+      "LPWS2",
+      "LPWS3",
+      "LPWS4",
+      "LPWST4"
+    ],
+    "certificates": [
+      "CL5XL1.86FNI-002",
+      "CL5XL1.86FTI-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      0.929,
+      1.3940000000000001,
+      1.859
+    ],
+    "match_status": "certification_alias_group_match",
+    "database_matches": [
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS2",
+        "slug": "lister-petter-lpws2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS3",
+        "slug": "lister-petter-lpws3",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS4",
+        "slug": "lister-petter-lpws4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWST4",
+        "slug": "lister-petter-lpwst4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Lister Petter Limited",
+    "mapped_database_brands": [
+      "Lister Petter"
+    ],
+    "epa_model": "418",
+    "normalized_model": "418",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CL5XL1.86FNI"
+    ],
+    "engine_codes": [
+      "LPWS2"
+    ],
+    "certificates": [
+      "CL5XL1.86FNI-002"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 10,
+    "displacements_l": [
+      0.929
+    ],
+    "match_status": "certification_alias_group_match",
+    "database_matches": [
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS2",
+        "slug": "lister-petter-lpws2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Lister Petter Limited",
+    "mapped_database_brands": [
+      "Lister Petter"
+    ],
+    "epa_model": "443",
+    "normalized_model": "443",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CL5XL1.86FNI",
+      "CL5XL1.86FTI"
+    ],
+    "engine_codes": [
+      "LPWS2",
+      "LPWS3",
+      "LPWS4",
+      "LPWST4"
+    ],
+    "certificates": [
+      "CL5XL1.86FNI-002",
+      "CL5XL1.86FTI-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      0.929,
+      1.3940000000000001,
+      1.859
+    ],
+    "match_status": "certification_alias_group_match",
+    "database_matches": [
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS2",
+        "slug": "lister-petter-lpws2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS3",
+        "slug": "lister-petter-lpws3",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS4",
+        "slug": "lister-petter-lpws4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWST4",
+        "slug": "lister-petter-lpwst4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Lister Petter Limited",
+    "mapped_database_brands": [
+      "Lister Petter"
+    ],
+    "epa_model": "458",
+    "normalized_model": "458",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CL5XL1.86FNI",
+      "CL5XL1.86FTI"
+    ],
+    "engine_codes": [
+      "LPWS2",
+      "LPWS3",
+      "LPWS4",
+      "LPWST4"
+    ],
+    "certificates": [
+      "CL5XL1.86FNI-002",
+      "CL5XL1.86FTI-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      0.929,
+      1.3940000000000001,
+      1.859
+    ],
+    "match_status": "certification_alias_group_match",
+    "database_matches": [
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS2",
+        "slug": "lister-petter-lpws2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS3",
+        "slug": "lister-petter-lpws3",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS4",
+        "slug": "lister-petter-lpws4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWST4",
+        "slug": "lister-petter-lpwst4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Lister Petter Limited",
+    "mapped_database_brands": [
+      "Lister Petter"
+    ],
+    "epa_model": "468",
+    "normalized_model": "468",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CL5XL1.86FNI"
+    ],
+    "engine_codes": [
+      "LPWS2",
+      "LPWS3",
+      "LPWS4"
+    ],
+    "certificates": [
+      "CL5XL1.86FNI-002"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 20,
+    "displacements_l": [
+      0.929,
+      1.3940000000000001,
+      1.859
+    ],
+    "match_status": "certification_alias_group_match",
+    "database_matches": [
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS2",
+        "slug": "lister-petter-lpws2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS3",
+        "slug": "lister-petter-lpws3",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS4",
+        "slug": "lister-petter-lpws4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Lister Petter Limited",
+    "mapped_database_brands": [
+      "Lister Petter"
+    ],
+    "epa_model": "474",
+    "normalized_model": "474",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CL5XL1.86FNI",
+      "CL5XL1.86FTI"
+    ],
+    "engine_codes": [
+      "LPWS2",
+      "LPWS3",
+      "LPWS4",
+      "LPWST4"
+    ],
+    "certificates": [
+      "CL5XL1.86FNI-002",
+      "CL5XL1.86FTI-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      0.929,
+      1.3940000000000001,
+      1.859
+    ],
+    "match_status": "certification_alias_group_match",
+    "database_matches": [
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS2",
+        "slug": "lister-petter-lpws2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS3",
+        "slug": "lister-petter-lpws3",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS4",
+        "slug": "lister-petter-lpws4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWST4",
+        "slug": "lister-petter-lpwst4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Lister Petter Limited",
+    "mapped_database_brands": [
+      "Lister Petter"
+    ],
+    "epa_model": "479",
+    "normalized_model": "479",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CL5XL1.86FNI",
+      "CL5XL1.86FTI"
+    ],
+    "engine_codes": [
+      "LPWS2",
+      "LPWS3",
+      "LPWS4",
+      "LPWST4"
+    ],
+    "certificates": [
+      "CL5XL1.86FNI-002",
+      "CL5XL1.86FTI-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      0.929,
+      1.3940000000000001,
+      1.859
+    ],
+    "match_status": "certification_alias_group_match",
+    "database_matches": [
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS2",
+        "slug": "lister-petter-lpws2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS3",
+        "slug": "lister-petter-lpws3",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWS4",
+        "slug": "lister-petter-lpws4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Lister Petter",
+        "model": "LPWST4",
+        "slug": "lister-petter-lpwst4",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
     "mapped_database_brands": [
       "Hatz"
@@ -46319,6 +47851,60 @@
     "mapped_database_brands": [
       "Hatz"
     ],
+    "epa_model": "3M41Z",
+    "normalized_model": "3M41Z",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CHZXL2.57V41",
+      "CHZXL3.43C41"
+    ],
+    "engine_codes": [
+      "3M41Z-IFN-1800"
+    ],
+    "certificates": [
+      "CHZXL2.57V41-012",
+      "CHZXL3.43C41-013"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 31,
+    "rated_power_kw_max": 31,
+    "displacements_l": [
+      2.5740000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hatz",
+        "model": "3M41Z",
+        "slug": "hatz-3m41z",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
+    "mapped_database_brands": [
+      "Hatz"
+    ],
     "epa_model": "4L41C",
     "normalized_model": "4L41C",
     "first_model_year": 2012,
@@ -46417,6 +48003,471 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
+    "mapped_database_brands": [
+      "Hatz"
+    ],
+    "epa_model": "4M41Z",
+    "normalized_model": "4M41Z",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CHZXL3.43C41"
+    ],
+    "engine_codes": [
+      "4M41Z-ICFN-1800"
+    ],
+    "certificates": [
+      "CHZXL3.43C41-013"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 37,
+    "rated_power_kw_max": 37,
+    "displacements_l": [
+      3.4320000000000004
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hatz",
+        "model": "4M41Z",
+        "slug": "hatz-4m41z",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
+    "mapped_database_brands": [
+      "Hatz"
+    ],
+    "epa_model": "4M42",
+    "normalized_model": "4M42",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CHZXL3.43C42",
+      "CHZXL3.43V42"
+    ],
+    "engine_codes": [
+      "4M42-IFN-1800"
+    ],
+    "certificates": [
+      "CHZXL3.43C42-014",
+      "CHZXL3.43V42-022"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 39,
+    "rated_power_kw_max": 39,
+    "displacements_l": [
+      3.4320000000000004
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hatz",
+        "model": "4M42",
+        "slug": "hatz-4m42",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
+    "mapped_database_brands": [
+      "Hatz"
+    ],
+    "epa_model": "4M42Z",
+    "normalized_model": "4M42Z",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CHZXL3.43C42",
+      "CHZXL3.43V42"
+    ],
+    "engine_codes": [
+      "4M42Z-IFN-1800"
+    ],
+    "certificates": [
+      "CHZXL3.43C42-014",
+      "CHZXL3.43V42-022"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 38,
+    "rated_power_kw_max": 38,
+    "displacements_l": [
+      3.4320000000000004
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hatz",
+        "model": "4M42Z",
+        "slug": "hatz-4m42z",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3CA1-G",
+    "normalized_model": "3CA1G",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CYDXL0.85U3N"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL0.85U3N-011"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 8,
+    "rated_power_kw_max": 8,
+    "displacements_l": [
+      0.8540000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3CA1-G",
+        "slug": "yanmar-3ca1-g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3CB1-G",
+    "normalized_model": "3CB1G",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CYDXL1.11U3N"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL1.11U3N-015"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 11,
+    "rated_power_kw_max": 11,
+    "displacements_l": [
+      1.116
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNV76-CL",
+        "slug": "yanmar-3tnv76-cl",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3JTGA",
+    "normalized_model": "3JTGA",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CYDXL1.50H3T"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL1.50H3T-018"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3JTGP1",
+        "slug": "yanmar-3jtgp1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3JTGAK",
+    "normalized_model": "3JTGAK",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CYDXL1.50H3T"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL1.50H3T-018"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3JTGP1",
+        "slug": "yanmar-3jtgp1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3KNGA",
+    "normalized_model": "3KNGA",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CYDXL1.64J3N"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL1.64J3N-019"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 17,
+    "rated_power_kw_max": 17,
+    "displacements_l": [
+      1.6420000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNV88F-UG6GE",
+        "slug": "yanmar-3tnv88f-ug6ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3MTGAK",
+    "normalized_model": "3MTGAK",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CYDXL2.00J4T"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL2.00J4T-026"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 28,
+    "rated_power_kw_max": 28,
+    "displacements_l": [
+      1.995
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3MTGAG",
+        "slug": "yanmar-3mtgag",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Yanmar Power Technology Co., Ltd.",
     "mapped_database_brands": [
       "Yanmar"
@@ -46462,6 +48513,57 @@
         "slug": "yanmar-3tnm68-gge",
         "rpm_rated": 1500,
         "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3TNM72-G",
+    "normalized_model": "3TNM72G",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CYDXL0.90U3N"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL0.90U3N-014"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 9,
+    "rated_power_kw_max": 9,
+    "displacements_l": [
+      0.904
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNM72-G",
+        "slug": "yanmar-3tnm72-g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -46618,6 +48720,114 @@
         "slug": "xinchai-a498bzd",
         "rpm_rated": 1500,
         "emissions_standard": "Unregulated",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Zhejiang Xinchai Co., Ltd.",
+    "mapped_database_brands": [
+      "Xinchai"
+    ],
+    "epa_model": "A498BZD1",
+    "normalized_model": "A498BZD1",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BZHXL3.17AAA",
+      "CZHXL3.17AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BZHXL3.17AAA-002",
+      "CZHXL3.17AAA-001"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 32,
+    "rated_power_kw_max": 32,
+    "displacements_l": [
+      3.168
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Xinchai",
+        "model": "A498BZD1",
+        "slug": "xinchai-a498bzd1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Zhejiang Xinchai Co., Ltd.",
+    "mapped_database_brands": [
+      "Xinchai"
+    ],
+    "epa_model": "A498BZD2",
+    "normalized_model": "A498BZD2",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BZHXL3.17AAA",
+      "CZHXL3.17AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BZHXL3.17AAA-002",
+      "CZHXL3.17AAA-001"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 27,
+    "rated_power_kw_max": 27,
+    "displacements_l": [
+      3.168
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Xinchai",
+        "model": "A498BZD2",
+        "slug": "xinchai-a498bzd2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -62858,58 +65068,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Caterpillar Inc.",
-    "mapped_database_brands": [
-      "Caterpillar"
-    ],
-    "epa_model": "3516C-HD",
-    "normalized_model": "3516CHD",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CCPXL78.1NSA"
-    ],
-    "engine_codes": [
-      "1",
-      "2",
-      "Cert 1",
-      "Cert 2"
-    ],
-    "certificates": [
-      "CCPXL78.1NSA-015"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2285,
-    "rated_power_kw_max": 2760,
-    "displacements_l": [
-      78.081
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Caterpillar",
-        "model": "3516C",
-        "slug": "caterpillar-3516c",
-        "similarity": 0.833
-      }
-    ]
-  },
-  {
     "manufacturer": "Daedong Corporation",
     "mapped_database_brands": [],
     "epa_model": "3C093G",
@@ -63026,138 +65184,6 @@
     "rated_power_kw_max": 30,
     "displacements_l": [
       2.197
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "6068H",
-    "normalized_model": "6068H",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CJDXL06.8120",
-      "CJDXL13.5103"
-    ],
-    "engine_codes": [
-      "6068HF285K",
-      "6068HF285L",
-      "6068HF485T",
-      "6068HF485U",
-      "6068HFG82D",
-      "6068HFG82E",
-      "6068HFG85A",
-      "6068HFG85B",
-      "6068HFS82",
-      "6068HFS83",
-      "6068HFS85B",
-      "6068HFS86B",
-      "6068HFS89",
-      "6068HFU82D",
-      "6068HFU82E"
-    ],
-    "certificates": [
-      "CJDXL06.8120-016",
-      "CJDXL13.5103-020"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 147,
-    "rated_power_kw_max": 235,
-    "displacements_l": [
-      6.788
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "John Deere",
-        "model": "6068HF285",
-        "slug": "john-deere-6068hf285-t3-160kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "6068HF285",
-        "slug": "john-deere-6068hf285-t3-190kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "6068HFG05",
-        "slug": "john-deere-6068hfg05-ft4-155kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "6068HFG05",
-        "slug": "john-deere-6068hfg05-ft4-190kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "6068HFG06",
-        "slug": "john-deere-6068hfg06-ft4-210kva",
-        "similarity": 0.714
-      }
-    ]
-  },
-  {
-    "manufacturer": "Deutz AG",
-    "mapped_database_brands": [
-      "Deutz"
-    ],
-    "epa_model": "D914L03",
-    "normalized_model": "D914L03",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CDZXL03.2088"
-    ],
-    "engine_codes": [
-      "C3UI36.8"
-    ],
-    "certificates": [
-      "CDZXL03.2088-029"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      3.236
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -63336,48 +65362,6 @@
     "mapped_database_brands": [
       "Kohler"
     ],
-    "epa_model": "KDW1603GE (1800RPM)",
-    "normalized_model": "KDW1603GE1800RPM",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKHXL2.19CH1"
-    ],
-    "engine_codes": [
-      "NA"
-    ],
-    "certificates": [
-      "CKHXL2.19CH1-011"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.649
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
     "epa_model": "KDW2204GE(1800RPM)",
     "normalized_model": "KDW2204GE1800RPM",
     "first_model_year": 2012,
@@ -63450,48 +65434,6 @@
     ],
     "rated_power_kw_min": 25,
     "rated_power_kw_max": 25,
-    "displacements_l": [
-      2.1990000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "KDW2204TGE",
-    "normalized_model": "KDW2204TGE",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKHXL2.19CT1"
-    ],
-    "engine_codes": [
-      "NA"
-    ],
-    "certificates": [
-      "CKHXL2.19CT1-005"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 31,
-    "rated_power_kw_max": 31,
     "displacements_l": [
       2.1990000000000003
     ],
@@ -63714,48 +65656,6 @@
     "mapped_database_brands": [
       "Kohler"
     ],
-    "epa_model": "LDW1603GE (1800RPM)",
-    "normalized_model": "LDW1603GE1800RPM",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKHXL2.19CH1"
-    ],
-    "engine_codes": [
-      "NA"
-    ],
-    "certificates": [
-      "CKHXL2.19CH1-011"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.649
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
     "epa_model": "LDW2204GE(1800RPM)",
     "normalized_model": "LDW2204GE1800RPM",
     "first_model_year": 2012,
@@ -63828,48 +65728,6 @@
     ],
     "rated_power_kw_min": 25,
     "rated_power_kw_max": 25,
-    "displacements_l": [
-      2.1990000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Discovery Energy, LLC.",
-    "mapped_database_brands": [
-      "Kohler"
-    ],
-    "epa_model": "LDW2204TGE",
-    "normalized_model": "LDW2204TGE",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKHXL2.19CT1"
-    ],
-    "engine_codes": [
-      "NA"
-    ],
-    "certificates": [
-      "CKHXL2.19CT1-005"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 31,
-    "rated_power_kw_max": 31,
     "displacements_l": [
       2.1990000000000003
     ],
@@ -64000,176 +65858,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BU-4JJ1T",
-    "normalized_model": "BU4JJ1T",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CSZXL03.0UTB"
-    ],
-    "engine_codes": [
-      "4JJ1TDUBA-01"
-    ],
-    "certificates": [
-      "CSZXL03.0UTB-005"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 50,
-    "rated_power_kw_max": 50,
-    "displacements_l": [
-      2.999
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BV-4LE1",
-    "normalized_model": "BV4LE1",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CSZXL02.2VNC"
-    ],
-    "engine_codes": [
-      "4LE1NCVFA-01",
-      "4LE1NCVFA-02"
-    ],
-    "certificates": [
-      "CSZXL02.2VNC-008"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 26,
-    "rated_power_kw_max": 26,
-    "displacements_l": [
-      2.1790000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BV-4LE1T",
-    "normalized_model": "BV4LE1T",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CSZXL02.2VTB"
-    ],
-    "engine_codes": [
-      "4LE1TCVFA-01"
-    ],
-    "certificates": [
-      "CSZXL02.2VTB-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 35,
-    "rated_power_kw_max": 35,
-    "displacements_l": [
-      2.1790000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BV-4LE2",
-    "normalized_model": "BV4LE2",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CSZXL02.2VNB"
-    ],
-    "engine_codes": [
-      "4LE2NCDFA-01",
-      "4LE2NCVFA-01"
-    ],
-    "certificates": [
-      "CSZXL02.2VNB-007"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 26,
-    "rated_power_kw_max": 26,
-    "displacements_l": [
-      2.1790000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "KUKJE MACHINERY CO., LTD",
     "mapped_database_brands": [],
     "epa_model": "A1700-Gen1",
@@ -64294,307 +65982,6 @@
     "mapped_database_brands": [
       "Kubota"
     ],
-    "epa_model": "D1005-BG-ET",
-    "normalized_model": "D1005BGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKBXL01.0BCC"
-    ],
-    "engine_codes": [
-      "D1005-BG-ET01",
-      "D1005-BG-ET02"
-    ],
-    "certificates": [
-      "CKBXL01.0BCC-027"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 11,
-    "rated_power_kw_max": 12,
-    "displacements_l": [
-      1.002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "D1105-BG-ET",
-    "normalized_model": "D1105BGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKBXL01.5BCC"
-    ],
-    "engine_codes": [
-      "D1105-BG-ET01"
-    ],
-    "certificates": [
-      "CKBXL01.5BCC-024"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 13,
-    "rated_power_kw_max": 13,
-    "displacements_l": [
-      1.124
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "D1305-BG-ET",
-    "normalized_model": "D1305BGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKBXL01.3DCC"
-    ],
-    "engine_codes": [
-      "D1305-BG-ET01",
-      "D1305-BG-ET02"
-    ],
-    "certificates": [
-      "CKBXL01.3DCC-008"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 14,
-    "rated_power_kw_max": 15,
-    "displacements_l": [
-      1.2610000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "D1503-M-BG-ET",
-    "normalized_model": "D1503MBGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKBXL01.5FCC"
-    ],
-    "engine_codes": [
-      "D1503-M-BG-ET01",
-      "D1503-M-BG-ET02e"
-    ],
-    "certificates": [
-      "CKBXL01.5FCC-023"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.5
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "V1505-BG-ET",
-    "normalized_model": "V1505BGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKBXL01.5BCC"
-    ],
-    "engine_codes": [
-      "V1505-BG-ET01",
-      "V1505-BG-ET02"
-    ],
-    "certificates": [
-      "CKBXL01.5BCC-024"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 16,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.498
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "V2003-M-BG-ET",
-    "normalized_model": "V2003MBGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKBXL02.0FCC"
-    ],
-    "engine_codes": [
-      "V2003-M-BG-ET01",
-      "V2003-M-BG-ET02",
-      "V2003-M-BG-ET02e"
-    ],
-    "certificates": [
-      "CKBXL02.0FCC-030"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 24,
-    "rated_power_kw_max": 25,
-    "displacements_l": [
-      2
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "V2003-M-T-BG-ET",
-    "normalized_model": "V2003MTBGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKBXL02.0FAC"
-    ],
-    "engine_codes": [
-      "V2003-M-T-BG-ET01",
-      "V2003-M-T-BG-ET02e"
-    ],
-    "certificates": [
-      "CKBXL02.0FAC-031"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 31,
-    "rated_power_kw_max": 32,
-    "displacements_l": [
-      2
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
     "epa_model": "V2203L-DI-ET",
     "normalized_model": "V2203LDIET",
     "first_model_year": 2012,
@@ -64628,50 +66015,6 @@
     "rated_power_kw_max": 18,
     "displacements_l": [
       2.216
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "V2403-M-BG-ET",
-    "normalized_model": "V2403MBGET",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CKBXL02.4FCC"
-    ],
-    "engine_codes": [
-      "V2403-M-BG-ET01",
-      "V2403-M-BG-ET02",
-      "V2403-M-BG-ET02e"
-    ],
-    "certificates": [
-      "CKBXL02.4FCC-014"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 30,
-    "rated_power_kw_max": 31,
-    "displacements_l": [
-      2.435
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -64717,7 +66060,14 @@
     ],
     "match_status": "not_found",
     "database_matches": [],
-    "probable_database_matches": []
+    "probable_database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V2403-M-BG-ET",
+        "slug": "kubota-v2403-m-bg-et",
+        "similarity": 0.889
+      }
+    ]
   },
   {
     "manufacturer": "Lion (China) Engine Science and Technology Co.,Ltd.",
@@ -64886,339 +66236,6 @@
     "rated_power_kw_max": 20,
     "displacements_l": [
       2.672
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Lister Petter Limited",
-    "mapped_database_brands": [
-      "Lister Petter"
-    ],
-    "epa_model": "408",
-    "normalized_model": "408",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CL5XL1.86FNI",
-      "CL5XL1.86FTI"
-    ],
-    "engine_codes": [
-      "LPWS2",
-      "LPWS3",
-      "LPWS4",
-      "LPWST4"
-    ],
-    "certificates": [
-      "CL5XL1.86FNI-002",
-      "CL5XL1.86FTI-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      0.929,
-      1.3940000000000001,
-      1.859
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Lister Petter Limited",
-    "mapped_database_brands": [
-      "Lister Petter"
-    ],
-    "epa_model": "418",
-    "normalized_model": "418",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CL5XL1.86FNI"
-    ],
-    "engine_codes": [
-      "LPWS2"
-    ],
-    "certificates": [
-      "CL5XL1.86FNI-002"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 10,
-    "displacements_l": [
-      0.929
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Lister Petter Limited",
-    "mapped_database_brands": [
-      "Lister Petter"
-    ],
-    "epa_model": "443",
-    "normalized_model": "443",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CL5XL1.86FNI",
-      "CL5XL1.86FTI"
-    ],
-    "engine_codes": [
-      "LPWS2",
-      "LPWS3",
-      "LPWS4",
-      "LPWST4"
-    ],
-    "certificates": [
-      "CL5XL1.86FNI-002",
-      "CL5XL1.86FTI-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      0.929,
-      1.3940000000000001,
-      1.859
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Lister Petter Limited",
-    "mapped_database_brands": [
-      "Lister Petter"
-    ],
-    "epa_model": "458",
-    "normalized_model": "458",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CL5XL1.86FNI",
-      "CL5XL1.86FTI"
-    ],
-    "engine_codes": [
-      "LPWS2",
-      "LPWS3",
-      "LPWS4",
-      "LPWST4"
-    ],
-    "certificates": [
-      "CL5XL1.86FNI-002",
-      "CL5XL1.86FTI-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      0.929,
-      1.3940000000000001,
-      1.859
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Lister Petter Limited",
-    "mapped_database_brands": [
-      "Lister Petter"
-    ],
-    "epa_model": "468",
-    "normalized_model": "468",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CL5XL1.86FNI"
-    ],
-    "engine_codes": [
-      "LPWS2",
-      "LPWS3",
-      "LPWS4"
-    ],
-    "certificates": [
-      "CL5XL1.86FNI-002"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 20,
-    "displacements_l": [
-      0.929,
-      1.3940000000000001,
-      1.859
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Lister Petter Limited",
-    "mapped_database_brands": [
-      "Lister Petter"
-    ],
-    "epa_model": "474",
-    "normalized_model": "474",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CL5XL1.86FNI",
-      "CL5XL1.86FTI"
-    ],
-    "engine_codes": [
-      "LPWS2",
-      "LPWS3",
-      "LPWS4",
-      "LPWST4"
-    ],
-    "certificates": [
-      "CL5XL1.86FNI-002",
-      "CL5XL1.86FTI-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      0.929,
-      1.3940000000000001,
-      1.859
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Lister Petter Limited",
-    "mapped_database_brands": [
-      "Lister Petter"
-    ],
-    "epa_model": "479",
-    "normalized_model": "479",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CL5XL1.86FNI",
-      "CL5XL1.86FTI"
-    ],
-    "engine_codes": [
-      "LPWS2",
-      "LPWS3",
-      "LPWS4",
-      "LPWST4"
-    ],
-    "certificates": [
-      "CL5XL1.86FNI-002",
-      "CL5XL1.86FTI-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      0.929,
-      1.3940000000000001,
-      1.859
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -65438,183 +66455,6 @@
     "rated_power_kw_max": 25,
     "displacements_l": [
       2.5060000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
-    "mapped_database_brands": [
-      "Hatz"
-    ],
-    "epa_model": "3M41Z",
-    "normalized_model": "3M41Z",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CHZXL2.57V41",
-      "CHZXL3.43C41"
-    ],
-    "engine_codes": [
-      "3M41Z-IFN-1800"
-    ],
-    "certificates": [
-      "CHZXL2.57V41-012",
-      "CHZXL3.43C41-013"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 31,
-    "rated_power_kw_max": 31,
-    "displacements_l": [
-      2.5740000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
-    "mapped_database_brands": [
-      "Hatz"
-    ],
-    "epa_model": "4M41Z",
-    "normalized_model": "4M41Z",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CHZXL3.43C41"
-    ],
-    "engine_codes": [
-      "4M41Z-ICFN-1800"
-    ],
-    "certificates": [
-      "CHZXL3.43C41-013"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 37,
-    "rated_power_kw_max": 37,
-    "displacements_l": [
-      3.4320000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
-    "mapped_database_brands": [
-      "Hatz"
-    ],
-    "epa_model": "4M42",
-    "normalized_model": "4M42",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CHZXL3.43C42",
-      "CHZXL3.43V42"
-    ],
-    "engine_codes": [
-      "4M42-IFN-1800"
-    ],
-    "certificates": [
-      "CHZXL3.43C42-014",
-      "CHZXL3.43V42-022"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 39,
-    "rated_power_kw_max": 39,
-    "displacements_l": [
-      3.4320000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Motorenfabrik Hatz GmbH & Co. KG",
-    "mapped_database_brands": [
-      "Hatz"
-    ],
-    "epa_model": "4M42Z",
-    "normalized_model": "4M42Z",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CHZXL3.43C42",
-      "CHZXL3.43V42"
-    ],
-    "engine_codes": [
-      "4M42Z-IFN-1800"
-    ],
-    "certificates": [
-      "CHZXL3.43C42-014",
-      "CHZXL3.43V42-022"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 38,
-    "rated_power_kw_max": 38,
-    "displacements_l": [
-      3.4320000000000004
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -66298,404 +67138,6 @@
     "match_status": "not_found",
     "database_matches": [],
     "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3CA1-G",
-    "normalized_model": "3CA1G",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CYDXL0.85U3N"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL0.85U3N-011"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 8,
-    "rated_power_kw_max": 8,
-    "displacements_l": [
-      0.8540000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3CB1-G",
-    "normalized_model": "3CB1G",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CYDXL1.11U3N"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL1.11U3N-015"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 11,
-    "rated_power_kw_max": 11,
-    "displacements_l": [
-      1.116
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3JTGA",
-    "normalized_model": "3JTGA",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CYDXL1.50H3T"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL1.50H3T-018"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3JTGAK",
-    "normalized_model": "3JTGAK",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CYDXL1.50H3T"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL1.50H3T-018"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3KNGA",
-    "normalized_model": "3KNGA",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CYDXL1.64J3N"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL1.64J3N-019"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 17,
-    "rated_power_kw_max": 17,
-    "displacements_l": [
-      1.6420000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3MTGAK",
-    "normalized_model": "3MTGAK",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CYDXL2.00J4T"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL2.00J4T-026"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 28,
-    "rated_power_kw_max": 28,
-    "displacements_l": [
-      1.995
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3TNM72-G",
-    "normalized_model": "3TNM72G",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CYDXL0.90U3N"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL0.90U3N-014"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 9,
-    "rated_power_kw_max": 9,
-    "displacements_l": [
-      0.904
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Zhejiang Xinchai Co., Ltd.",
-    "mapped_database_brands": [
-      "Xinchai"
-    ],
-    "epa_model": "A498BZD1",
-    "normalized_model": "A498BZD1",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BZHXL3.17AAA",
-      "CZHXL3.17AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BZHXL3.17AAA-002",
-      "CZHXL3.17AAA-001"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 32,
-    "rated_power_kw_max": 32,
-    "displacements_l": [
-      3.168
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Xinchai",
-        "model": "A498BZD",
-        "slug": "xinchai-a498bzd",
-        "similarity": 0.933
-      }
-    ]
-  },
-  {
-    "manufacturer": "Zhejiang Xinchai Co., Ltd.",
-    "mapped_database_brands": [
-      "Xinchai"
-    ],
-    "epa_model": "A498BZD2",
-    "normalized_model": "A498BZD2",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BZHXL3.17AAA",
-      "CZHXL3.17AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BZHXL3.17AAA-002",
-      "CZHXL3.17AAA-001"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 27,
-    "rated_power_kw_max": 27,
-    "displacements_l": [
-      3.168
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Xinchai",
-        "model": "A498BZD",
-        "slug": "xinchai-a498bzd",
-        "similarity": 0.933
-      }
-    ]
   },
   {
     "manufacturer": "Kubota Corporation",

@@ -13,23 +13,25 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 - Counted non-slash certification trims only through reviewed manufacturer, brand and suffix-pattern rules.
 - Counted commercial family variants only through reviewed manufacturer, brand and prefix rules; short families also require an EPA emissions label on the matched page.
 - Counted non-literal certification aliases only from the reviewed `CERTIFICATION_ALIASES` map.
+- Counted certification groups only when every commercial model in the reviewed `CERTIFICATION_ALIAS_GROUPS` map was present.
 - Exact model matches under another brand and other similar suffix variants remain review items.
 
 ## Summary
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **282**
+- Exact manufacturer/brand matches: **299**
 - Matches after removing a redundant database brand prefix: **34**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **164**
+- Reviewed certification aliases: **179**
+- Fully represented certification groups: **7**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **224**
+- Exact matches whose database page uses 1800 as its primary RPM: **241**
 - Exact model under another database brand: **7**
-- Not represented after reviewed matching rules: **370**
+- Not represented after reviewed matching rules: **331**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **71.1%**
+- Represented coverage within mapped manufacturers: **75.8%**
 - Unmatched models with a 2024+ certification: **130**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
@@ -42,6 +44,7 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 - Legacy 2015 review queue (mapped brand, constant speed): **0**
 - Legacy 2014 review queue (mapped brand, constant speed): **0**
 - Legacy 2013 review queue (mapped brand, constant speed): **0**
+- Legacy 2012 review queue (mapped brand, constant speed): **0**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -75,24 +78,24 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | FPT Industrial S.p.A. | FPT | 68 | 12 | 0 | 0 | 0 | 12 | 0 | 0 | 44 | 1 |
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 53 | 0 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 7 | 0 | 0 | 44 | 4 | 0 | 0 | 1 | 0 |
-| Discovery Energy, LLC. | Kohler | 48 | 3 | 0 | 14 | 0 | 2 | 0 | 0 | 29 | 0 |
-| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 6 | 0 | 0 | 0 | 21 | 5 | 0 | 10 | 0 |
-| Kubota Corporation | Kubota | 37 | 7 | 0 | 0 | 0 | 16 | 0 | 0 | 14 | 0 |
-| Caterpillar Inc. | Caterpillar | 35 | 21 | 0 | 0 | 0 | 0 | 11 | 0 | 3 | 1 |
-| Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 18 | 0 | 0 | 0 | 1 | 0 | 0 | 10 | 1 |
+| Discovery Energy, LLC. | Kohler | 48 | 5 | 0 | 14 | 0 | 4 | 0 | 0 | 25 | 0 |
+| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 8 | 0 | 0 | 0 | 26 | 5 | 0 | 3 | 0 |
+| Kubota Corporation | Kubota | 37 | 10 | 0 | 0 | 0 | 21 | 0 | 0 | 6 | 1 |
+| Caterpillar Inc. | Caterpillar | 35 | 22 | 0 | 0 | 0 | 0 | 11 | 0 | 2 | 0 |
+| Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 22 | 0 | 0 | 0 | 1 | 0 | 0 | 6 | 1 |
 | AB Volvo Penta | Volvo Penta | 28 | 23 | 0 | 0 | 0 | 2 | 0 | 0 | 3 | 3 |
-| Deutz AG | Deutz | 28 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 0 |
+| Deutz AG | Deutz | 28 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 17 | 0 |
 | HD Construction Equipment Co., Ltd. | Hyundai | 26 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 16 | 2 |
-| Isuzu Motors Limited | Isuzu | 24 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | 0 |
+| Isuzu Motors Limited | Isuzu | 24 | 14 | 0 | 0 | 0 | 3 | 0 | 0 | 7 | 0 |
 | Daedong Corporation | Unmapped | 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 19 | 0 |
-| Deere & Company | John Deere | 19 | 9 | 0 | 0 | 0 | 1 | 5 | 0 | 4 | 1 |
+| Deere & Company | John Deere | 19 | 10 | 0 | 0 | 0 | 1 | 5 | 0 | 3 | 0 |
 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | Mitsubishi | 19 | 10 | 0 | 0 | 0 | 6 | 0 | 0 | 3 | 0 |
 | Scania CV AB | Scania | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | 0 |
 | Komatsu Ltd. | Komatsu | 10 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 9 | 1 |
 | Mercedes Benz | Unmapped | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | 0 |
 | KUKJE MACHINERY CO., LTD | Unmapped | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 9 | 0 |
 | Societe Internationale des Moteurs-Baudouin | Baudouin | 9 | 2 | 0 | 0 | 0 | 0 | 7 | 0 | 0 | 0 |
-| Lister Petter Limited | Lister Petter | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 0 |
+| Lister Petter Limited | Lister Petter | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kirloskar Americas Corporation | Kirloskar | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Shandong Huayuan Laidong Engine Co.,LTD. | Unmapped | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 0 |
 | Tianjin Lovol Engines Co., Ltd. | Lovol | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 0 |
@@ -105,7 +108,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Suzhou Jinding Machinery Manufacturing Co., Ltd. | Unmapped | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
 | Volvo Construction Equipment | Unmapped | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
 | Weichai Power Co.,Ltd. | Weichai | 3 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
-| Zhejiang Xinchai Co., Ltd. | Xinchai | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
+| Zhejiang Xinchai Co., Ltd. | Xinchai | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Detroit Diesel Corporation | Detroit Diesel | 2 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
 | PSA Peugeot Citroen | Unmapped | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
 | Wuxi Kipor Power Co., Ltd. | Unmapped | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |

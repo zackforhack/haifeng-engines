@@ -145,6 +145,11 @@ CERTIFICATION_ALIASES = {
     ("AB Volvo Penta", "TAD1641GE"): ("Volvo Penta", "TAD1641GE-B"),
     ("AB Volvo Penta", "TAD1642GE"): ("Volvo Penta", "TAD1642GE-B"),
     ("Discovery Energy, LLC.", "KD2504ESM"): ("Kohler", "KDI2504ESM"),
+    ("Discovery Energy, LLC.", "LDW1603GE1800RPM"): (
+        "Kohler",
+        "KDW1603GE (1800 RPM)",
+    ),
+    ("Discovery Energy, LLC.", "LDW2204TGE"): ("Kohler", "KDW2204TGE"),
     ("Detroit Diesel Corporation", "SERIES60"): (
         "Detroit Diesel",
         "Series 60 14.0L",
@@ -293,6 +298,9 @@ CERTIFICATION_ALIASES = {
     ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
     ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
     ("Liebherr Machines Bulle SA", "D976A702"): ("Liebherr", "D976"),
+    ("Isuzu Motors Limited", "BV4LE1"): ("Isuzu", "KV-4LE1"),
+    ("Isuzu Motors Limited", "BV4LE1T"): ("Isuzu", "KV-4LE1T"),
+    ("Isuzu Motors Limited", "BV4LE2"): ("Isuzu", "LV-4LE2"),
     ("Kubota Corporation", "D1005BGEF"): ("Kubota", "D1005-E4BG1-SAE-2"),
     ("Kubota Corporation", "D1005EF"): ("Kubota", "D1005-E4BG1-SAE-2"),
     ("Kubota Corporation", "D1105BGEF"): ("Kubota", "D1105-E4BG1-SAE-2X"),
@@ -309,6 +317,11 @@ CERTIFICATION_ALIASES = {
     ("Kubota Corporation", "V3800DITBGET"): ("Kubota", "V3800DI-T-E3-BG"),
     ("Kubota Corporation", "Z482D2EF"): ("Kubota", "Z482-E4B-CHN-1"),
     ("Kubota Corporation", "V3300BGEF"): ("Kubota", "V3300-E3-BG"),
+    ("Kubota Corporation", "D1005BGET"): ("Kubota", "D1005-E4BG1-SAE-2"),
+    ("Kubota Corporation", "D1105BGET"): ("Kubota", "D1105-E4BG1-SAE-2X"),
+    ("Kubota Corporation", "D1305BGET"): ("Kubota", "D1305-E4BG1-CHN-1"),
+    ("Kubota Corporation", "D1503MBGET"): ("Kubota", "D1503-M-E4-BG"),
+    ("Kubota Corporation", "V1505BGET"): ("Kubota", "V1505-E4BG1-SAE-2X"),
     ("Perkins Engines Co Ltd", "C1P1"): ("Perkins", "S773L-F"),
     ("Perkins Engines Co Ltd", "C1P5"): ("Perkins", "403F-15"),
     ("Perkins Engines Co Ltd", "C0P5"): ("Perkins", "402F-05(C0.5)"),
@@ -334,6 +347,14 @@ CERTIFICATION_ALIASES = {
     ("Yanmar Power Technology Co., Ltd.", "3TNGA"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TNGP"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TNV88CL"): ("Yanmar", "3TNV88F-UG6GE"),
+    ("Yanmar Power Technology Co., Ltd.", "3CB1G"): ("Yanmar", "3TNV76-CL"),
+    ("Yanmar Power Technology Co., Ltd.", "3JTGA"): ("Yanmar", "3JTGP1"),
+    ("Yanmar Power Technology Co., Ltd.", "3JTGAK"): ("Yanmar", "3JTGP1"),
+    ("Yanmar Power Technology Co., Ltd.", "3KNGA"): (
+        "Yanmar",
+        "3TNV88F-UG6GE",
+    ),
+    ("Yanmar Power Technology Co., Ltd.", "3MTGAK"): ("Yanmar", "3MTGAG"),
     ("Yanmar Power Technology Co., Ltd.", "3TTGAG"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TTGA"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3TTGP"): ("Yanmar", "4TNV98CT-GGE"),
@@ -372,12 +393,57 @@ CERTIFICATION_ALIASES = {
     ): ("Yanmar", "3TNM74F-NG6GE"),
 }
 
+# Some EPA model fields are certification-group identifiers rather than engine
+# model names. A group is represented only when every reviewed commercial model
+# listed here exists in the catalog.
+CERTIFICATION_ALIAS_GROUPS = {
+    ("Lister Petter Limited", "408"): (
+        ("Lister Petter", "LPWS2"),
+        ("Lister Petter", "LPWS3"),
+        ("Lister Petter", "LPWS4"),
+        ("Lister Petter", "LPWST4"),
+    ),
+    ("Lister Petter Limited", "418"): (
+        ("Lister Petter", "LPWS2"),
+    ),
+    ("Lister Petter Limited", "443"): (
+        ("Lister Petter", "LPWS2"),
+        ("Lister Petter", "LPWS3"),
+        ("Lister Petter", "LPWS4"),
+        ("Lister Petter", "LPWST4"),
+    ),
+    ("Lister Petter Limited", "458"): (
+        ("Lister Petter", "LPWS2"),
+        ("Lister Petter", "LPWS3"),
+        ("Lister Petter", "LPWS4"),
+        ("Lister Petter", "LPWST4"),
+    ),
+    ("Lister Petter Limited", "468"): (
+        ("Lister Petter", "LPWS2"),
+        ("Lister Petter", "LPWS3"),
+        ("Lister Petter", "LPWS4"),
+    ),
+    ("Lister Petter Limited", "474"): (
+        ("Lister Petter", "LPWS2"),
+        ("Lister Petter", "LPWS3"),
+        ("Lister Petter", "LPWS4"),
+        ("Lister Petter", "LPWST4"),
+    ),
+    ("Lister Petter Limited", "479"): (
+        ("Lister Petter", "LPWS2"),
+        ("Lister Petter", "LPWS3"),
+        ("Lister Petter", "LPWS4"),
+        ("Lister Petter", "LPWST4"),
+    ),
+}
+
 REPRESENTED_STATUSES = {
     "exact_brand_match",
     "brand_prefix_match",
     "base_brand_match",
     "certification_trim_match",
     "certification_alias_match",
+    "certification_alias_group_match",
     "family_brand_match",
 }
 
@@ -582,6 +648,26 @@ def match_models(models: dict, engines: list[dict]) -> list[dict]:
             )
             if alias_target and engine["brand"] == alias_target[0]
         ]
+        alias_group = CERTIFICATION_ALIAS_GROUPS.get(
+            (manufacturer, normalized_model)
+        )
+        certification_alias_group_candidates = []
+        if alias_group:
+            group_matches = []
+            for group_brand, group_model in alias_group:
+                target_matches = [
+                    engine
+                    for engine in by_model.get(normalize_model(group_model), [])
+                    if engine["brand"] == group_brand
+                ]
+                if not target_matches:
+                    group_matches = []
+                    break
+                group_matches.extend(target_matches)
+            certification_alias_group_candidates = sorted(
+                group_matches,
+                key=lambda engine: engine["slug"],
+            )
         reviewed_family = REVIEWED_FAMILY_MATCHES.get(
             (manufacturer, normalized_model)
         )
@@ -633,6 +719,10 @@ def match_models(models: dict, engines: list[dict]) -> list[dict]:
         elif certification_alias_candidates:
             status = "certification_alias_match"
             matches = certification_alias_candidates
+            probable = []
+        elif certification_alias_group_candidates:
+            status = "certification_alias_group_match"
+            matches = certification_alias_group_candidates
             probable = []
         elif family_brand_candidates:
             status = "family_brand_match"
@@ -806,6 +896,14 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         and result["mapped_database_brands"]
         and "Constant Speed" in result["engine_operations"]
     ]
+    legacy_2012_priority = [
+        result
+        for result in results
+        if result["match_status"] not in REPRESENTED_STATUSES
+        and result["latest_model_year"] == 2012
+        and result["mapped_database_brands"]
+        and "Constant Speed" in result["engine_operations"]
+    ]
     generator_priority_brands = defaultdict(int)
     for result in generator_priority:
         for brand in result["mapped_database_brands"]:
@@ -836,6 +934,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "- Counted non-slash certification trims only through reviewed manufacturer, brand and suffix-pattern rules.",
         "- Counted commercial family variants only through reviewed manufacturer, brand and prefix rules; short families also require an EPA emissions label on the matched page.",
         "- Counted non-literal certification aliases only from the reviewed `CERTIFICATION_ALIASES` map.",
+        "- Counted certification groups only when every commercial model in the reviewed `CERTIFICATION_ALIAS_GROUPS` map was present.",
         "- Exact model matches under another brand and other similar suffix variants remain review items.",
         "",
         "## Summary",
@@ -847,6 +946,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Slash-suffixed certification trims represented by a verified base model: **{statuses['base_brand_match']:,}**",
         f"- Reviewed manufacturer certification trims: **{statuses['certification_trim_match']:,}**",
         f"- Reviewed certification aliases: **{statuses['certification_alias_match']:,}**",
+        f"- Fully represented certification groups: **{statuses['certification_alias_group_match']:,}**",
         f"- Verified commercial family matches: **{statuses['family_brand_match']:,}**",
         f"- Exact matches whose database page uses 1800 as its primary RPM: **{exact_primary_1800:,}**",
         f"- Exact model under another database brand: **{statuses['exact_model_other_brand']:,}**",
@@ -865,6 +965,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Legacy 2015 review queue (mapped brand, constant speed): **{len(legacy_2015_priority):,}**",
         f"- Legacy 2014 review queue (mapped brand, constant speed): **{len(legacy_2014_priority):,}**",
         f"- Legacy 2013 review queue (mapped brand, constant speed): **{len(legacy_2013_priority):,}**",
+        f"- Legacy 2012 review queue (mapped brand, constant speed): **{len(legacy_2012_priority):,}**",
         "",
         "The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use "
         "1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second "
