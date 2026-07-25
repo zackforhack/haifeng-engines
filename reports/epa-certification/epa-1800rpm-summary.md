@@ -19,21 +19,21 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **227**
+- Exact manufacturer/brand matches: **230**
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
 - Reviewed certification aliases: **70**
-- Verified commercial family matches: **54**
-- Exact matches whose database page uses 1800 as its primary RPM: **169**
+- Verified commercial family matches: **55**
+- Exact matches whose database page uses 1800 as its primary RPM: **172**
 - Exact model under another database brand: **7**
-- Not represented after reviewed matching rules: **527**
+- Not represented after reviewed matching rules: **523**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **52.3%**
-- Unmatched models with a 2024+ certification: **133**
+- Represented coverage within mapped manufacturers: **52.8%**
+- Unmatched models with a 2024+ certification: **130**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **3**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **0**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -55,8 +55,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 
 | Database brand | 2024+ constant-speed models without represented match |
 |---|---:|
-| Yanmar | 2 |
-| FPT | 1 |
+| None | 0 |
 
 ## Manufacturer Coverage
 
@@ -65,11 +64,11 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Rolls-Royce Solutions America Inc | MTU | 155 | 39 | 27 | 0 | 0 | 0 | 0 | 0 | 89 | 19 |
 | Cummins Inc. | Cummins | 80 | 43 | 0 | 0 | 0 | 3 | 14 | 0 | 20 | 5 |
 | Perkins Engines Co Ltd | Perkins | 79 | 13 | 0 | 0 | 0 | 13 | 10 | 2 | 41 | 5 |
-| FPT Industrial S.p.A. | FPT | 68 | 11 | 0 | 0 | 0 | 12 | 0 | 0 | 45 | 2 |
+| FPT Industrial S.p.A. | FPT | 68 | 12 | 0 | 0 | 0 | 12 | 0 | 0 | 44 | 1 |
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 53 | 0 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 7 | 0 | 0 | 44 | 4 | 0 | 0 | 1 | 0 |
 | Discovery Energy, LLC. | Kohler | 48 | 3 | 0 | 14 | 0 | 1 | 0 | 0 | 30 | 1 |
-| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 2 | 0 | 0 | 0 | 15 | 4 | 0 | 21 | 0 |
+| Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 4 | 0 | 0 | 0 | 15 | 5 | 0 | 18 | 0 |
 | Kubota Corporation | Kubota | 37 | 3 | 0 | 0 | 0 | 16 | 0 | 0 | 18 | 3 |
 | Caterpillar Inc. | Caterpillar | 35 | 21 | 0 | 0 | 0 | 0 | 11 | 0 | 3 | 1 |
 | Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 1 |
@@ -112,9 +111,7 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 
 | Latest year | Manufacturer | EPA model | Tier | Power kW | Probable database model |
 |---:|---|---|---|---:|---|
-| 2026 | FPT Industrial S.p.A. | F4HE9685B*J | Tier 3 | 172 | FPT F4HE9685A*J (0.900) |
-| 2026 | Yanmar Power Technology Co., Ltd. | 3MTGAG | Interim Tier 4, Tier 4 (Final or Phase In) | 28 |  |
-| 2026 | Yanmar Power Technology Co., Ltd. | 3MTGP | Interim Tier 4, Tier 4 (Final or Phase In) | 28 |  |
+| - | None | None | - | - | - |
 
 ## Interpretation
 

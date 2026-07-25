@@ -706,6 +706,8 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         generator_priority_brands.items(), key=lambda item: (-item[1], item[0])
     ):
         lines.append(f"| {brand} | {count} |")
+    if not generator_priority_brands:
+        lines.append("| None | 0 |")
 
     lines.extend(
         [
@@ -772,6 +774,8 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
             f"| {result['latest_model_year']} | {result['manufacturer']} | "
             f"{result['epa_model']} | {tier} | {power} | {probable} |"
         )
+    if not generator_priority:
+        lines.append("| - | None | None | - | - | - |")
 
     lines.extend(
         [

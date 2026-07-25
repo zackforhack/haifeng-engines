@@ -13947,6 +13947,100 @@
     "mapped_database_brands": [
       "FPT"
     ],
+    "epa_model": "F4HE9685B*J",
+    "normalized_model": "F4HE9685BJ",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CFPXL06.7DGS",
+      "DFPXL06.7DGS",
+      "EFPXL06.7DGS",
+      "FFPXL06.7DGS",
+      "GFPXL06.7DGS",
+      "HFPXL06.7DGS",
+      "JFPXL06.7DGS",
+      "KFPXL06.7DGS",
+      "LFPXL06.7DGS",
+      "MFPXL06.7DGS",
+      "NFPXL06.7DGS",
+      "PFPXL06.7DGS",
+      "RFPXL06.7DGS",
+      "SFPXL06.7DGS",
+      "TFPXL06.7DGS"
+    ],
+    "engine_codes": [
+      "F4HE9685B*J"
+    ],
+    "certificates": [
+      "CFPXL06.7DGS-016",
+      "DFPXL06.7DGS-005",
+      "EFPXL06.7DGS-002",
+      "FFPXL06.7DGS-003",
+      "GFPXL06.7DGS-004",
+      "HFPXL06.7DGS-003",
+      "JFPXL06.7DGS-005",
+      "KFPXL06.7DGS-007",
+      "LFPXL06.7DGS-005",
+      "MFPXL06.7DGS-002",
+      "NFPXL06.7DGS-006",
+      "PFPXL06.7DGS-027",
+      "RFPXL06.7DGS-001",
+      "SFPXL06.7DGS-006",
+      "TFPXL06.7DGS-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 172,
+    "rated_power_kw_max": 172,
+    "displacements_l": [
+      4.485,
+      6.728000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "FPT",
+        "model": "F4HE9685B*J",
+        "slug": "fpt-f4he9685b-j",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "FPT Industrial S.p.A.",
+    "mapped_database_brands": [
+      "FPT"
+    ],
     "epa_model": "F4HGE415A*V",
     "normalized_model": "F4HGE415AV",
     "first_model_year": 2025,
@@ -26697,6 +26791,175 @@
     "mapped_database_brands": [
       "Yanmar"
     ],
+    "epa_model": "3MTGAG",
+    "normalized_model": "3MTGAG",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "EYDXL2.00S4T",
+      "GYDXL2.00S4T",
+      "HYDXL2.00S4T",
+      "KYDXL2.00S4T",
+      "LYDXL2.00S4T",
+      "MYDXL02.0S4T",
+      "NYDXL02.0S4T",
+      "PYDXL02.0S4T",
+      "RYDXL02.0S4T",
+      "SYDXL02.0S4T",
+      "TYDXL02.0S4T"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "EYDXL2.00S4T-036",
+      "GYDXL2.00S4T-008",
+      "HYDXL2.00S4T-040",
+      "KYDXL2.00S4T-008",
+      "LYDXL2.00S4T-033",
+      "MYDXL02.0S4T-051",
+      "NYDXL02.0S4T-017",
+      "PYDXL02.0S4T-038",
+      "RYDXL02.0S4T-049",
+      "SYDXL02.0S4T-038",
+      "TYDXL02.0S4T-049"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 28,
+    "rated_power_kw_max": 28,
+    "displacements_l": [
+      1.995
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3MTGAG",
+        "slug": "yanmar-3mtgag",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3MTGP",
+    "normalized_model": "3MTGP",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2014,
+      2016,
+      2017,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CYDXL2.00J4T",
+      "EYDXL2.00S4T",
+      "GYDXL2.00J4T",
+      "GYDXL2.00S4T",
+      "HYDXL2.00S4T",
+      "KYDXL2.00S4T",
+      "LYDXL2.00S4T",
+      "MYDXL02.0S4T",
+      "NYDXL02.0S4T",
+      "PYDXL02.0S4T",
+      "RYDXL02.0S4T",
+      "SYDXL02.0S4T",
+      "TYDXL02.0S4T"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL2.00J4T-026",
+      "EYDXL2.00S4T-036",
+      "GYDXL2.00J4T-007",
+      "GYDXL2.00S4T-008",
+      "HYDXL2.00S4T-040",
+      "KYDXL2.00S4T-008",
+      "LYDXL2.00S4T-033",
+      "MYDXL02.0S4T-051",
+      "NYDXL02.0S4T-017",
+      "PYDXL02.0S4T-038",
+      "RYDXL02.0S4T-049",
+      "SYDXL02.0S4T-038",
+      "TYDXL02.0S4T-049"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 28,
+    "rated_power_kw_max": 28,
+    "displacements_l": [
+      1.995
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3MTGP",
+        "slug": "yanmar-3mtgp",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
     "epa_model": "3NNGAG",
     "normalized_model": "3NNGAG",
     "first_model_year": 2016,
@@ -36114,6 +36377,61 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3MTGA",
+    "normalized_model": "3MTGA",
+    "first_model_year": 2012,
+    "latest_model_year": 2016,
+    "model_years": [
+      2012,
+      2016
+    ],
+    "engine_families": [
+      "CYDXL2.00J4T",
+      "GYDXL2.00J4T"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL2.00J4T-026",
+      "GYDXL2.00J4T-007"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 28,
+    "rated_power_kw_max": 28,
+    "displacements_l": [
+      1.995
+    ],
+    "match_status": "family_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3MTGAG",
+        "slug": "yanmar-3mtgag",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Cummins Inc.",
     "mapped_database_brands": [
       "Cummins"
@@ -39795,98 +40113,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "FPT Industrial S.p.A.",
-    "mapped_database_brands": [
-      "FPT"
-    ],
-    "epa_model": "F4HE9685B*J",
-    "normalized_model": "F4HE9685BJ",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2013,
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CFPXL06.7DGS",
-      "DFPXL06.7DGS",
-      "EFPXL06.7DGS",
-      "FFPXL06.7DGS",
-      "GFPXL06.7DGS",
-      "HFPXL06.7DGS",
-      "JFPXL06.7DGS",
-      "KFPXL06.7DGS",
-      "LFPXL06.7DGS",
-      "MFPXL06.7DGS",
-      "NFPXL06.7DGS",
-      "PFPXL06.7DGS",
-      "RFPXL06.7DGS",
-      "SFPXL06.7DGS",
-      "TFPXL06.7DGS"
-    ],
-    "engine_codes": [
-      "F4HE9685B*J"
-    ],
-    "certificates": [
-      "CFPXL06.7DGS-016",
-      "DFPXL06.7DGS-005",
-      "EFPXL06.7DGS-002",
-      "FFPXL06.7DGS-003",
-      "GFPXL06.7DGS-004",
-      "HFPXL06.7DGS-003",
-      "JFPXL06.7DGS-005",
-      "KFPXL06.7DGS-007",
-      "LFPXL06.7DGS-005",
-      "MFPXL06.7DGS-002",
-      "NFPXL06.7DGS-006",
-      "PFPXL06.7DGS-027",
-      "RFPXL06.7DGS-001",
-      "SFPXL06.7DGS-006",
-      "TFPXL06.7DGS-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 172,
-    "rated_power_kw_max": 172,
-    "displacements_l": [
-      4.485,
-      6.728000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "FPT",
-        "model": "F4HE9685A*J",
-        "slug": "fpt-f4he9685a-j",
-        "similarity": 0.9
-      }
-    ]
-  },
-  {
     "manufacturer": "HD Construction Equipment Co., Ltd.",
     "mapped_database_brands": [
       "Hyundai"
@@ -42669,157 +42895,6 @@
     "rated_power_kw_max": 17,
     "displacements_l": [
       1.6420000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3MTGAG",
-    "normalized_model": "3MTGAG",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "EYDXL2.00S4T",
-      "GYDXL2.00S4T",
-      "HYDXL2.00S4T",
-      "KYDXL2.00S4T",
-      "LYDXL2.00S4T",
-      "MYDXL02.0S4T",
-      "NYDXL02.0S4T",
-      "PYDXL02.0S4T",
-      "RYDXL02.0S4T",
-      "SYDXL02.0S4T",
-      "TYDXL02.0S4T"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "EYDXL2.00S4T-036",
-      "GYDXL2.00S4T-008",
-      "HYDXL2.00S4T-040",
-      "KYDXL2.00S4T-008",
-      "LYDXL2.00S4T-033",
-      "MYDXL02.0S4T-051",
-      "NYDXL02.0S4T-017",
-      "PYDXL02.0S4T-038",
-      "RYDXL02.0S4T-049",
-      "SYDXL02.0S4T-038",
-      "TYDXL02.0S4T-049"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 28,
-    "rated_power_kw_max": 28,
-    "displacements_l": [
-      1.995
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3MTGP",
-    "normalized_model": "3MTGP",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2014,
-      2016,
-      2017,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CYDXL2.00J4T",
-      "EYDXL2.00S4T",
-      "GYDXL2.00J4T",
-      "GYDXL2.00S4T",
-      "HYDXL2.00S4T",
-      "KYDXL2.00S4T",
-      "LYDXL2.00S4T",
-      "MYDXL02.0S4T",
-      "NYDXL02.0S4T",
-      "PYDXL02.0S4T",
-      "RYDXL02.0S4T",
-      "SYDXL02.0S4T",
-      "TYDXL02.0S4T"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL2.00J4T-026",
-      "EYDXL2.00S4T-036",
-      "GYDXL2.00J4T-007",
-      "GYDXL2.00S4T-008",
-      "HYDXL2.00S4T-040",
-      "KYDXL2.00S4T-008",
-      "LYDXL2.00S4T-033",
-      "MYDXL02.0S4T-051",
-      "NYDXL02.0S4T-017",
-      "PYDXL02.0S4T-038",
-      "RYDXL02.0S4T-049",
-      "SYDXL02.0S4T-038",
-      "TYDXL02.0S4T-049"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 28,
-    "rated_power_kw_max": 28,
-    "displacements_l": [
-      1.995
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -56102,52 +56177,6 @@
     "rated_power_kw_max": 202,
     "displacements_l": [
       9.291
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3MTGA",
-    "normalized_model": "3MTGA",
-    "first_model_year": 2012,
-    "latest_model_year": 2016,
-    "model_years": [
-      2012,
-      2016
-    ],
-    "engine_families": [
-      "CYDXL2.00J4T",
-      "GYDXL2.00J4T"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL2.00J4T-026",
-      "GYDXL2.00J4T-007"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 28,
-    "rated_power_kw_max": 28,
-    "displacements_l": [
-      1.995
     ],
     "match_status": "not_found",
     "database_matches": [],
