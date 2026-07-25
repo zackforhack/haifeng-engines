@@ -80,8 +80,14 @@ export default async function HomePage() {
             The Generator Engine Encyclopedia
           </span>
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4 text-white">
-            <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-300 bg-clip-text text-transparent">
-              <CountUp end={stats.total} />+
+            <span className="inline-flex items-baseline whitespace-nowrap">
+              <CountUp
+                end={stats.total}
+                className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-300 bg-clip-text text-transparent"
+              />
+              <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-300 bg-clip-text text-transparent">
+                +
+              </span>
             </span>{' '}
             Generator Engine Specifications
           </h1>
