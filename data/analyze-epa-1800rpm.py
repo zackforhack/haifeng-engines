@@ -904,6 +904,14 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         and result["mapped_database_brands"]
         and "Constant Speed" in result["engine_operations"]
     ]
+    legacy_2011_priority = [
+        result
+        for result in results
+        if result["match_status"] not in REPRESENTED_STATUSES
+        and result["latest_model_year"] == 2011
+        and result["mapped_database_brands"]
+        and "Constant Speed" in result["engine_operations"]
+    ]
     generator_priority_brands = defaultdict(int)
     for result in generator_priority:
         for brand in result["mapped_database_brands"]:
@@ -966,6 +974,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Legacy 2014 review queue (mapped brand, constant speed): **{len(legacy_2014_priority):,}**",
         f"- Legacy 2013 review queue (mapped brand, constant speed): **{len(legacy_2013_priority):,}**",
         f"- Legacy 2012 review queue (mapped brand, constant speed): **{len(legacy_2012_priority):,}**",
+        f"- Legacy 2011 review queue (mapped brand, constant speed): **{len(legacy_2011_priority):,}**",
         "",
         "The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use "
         "1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second "

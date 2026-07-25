@@ -48834,6 +48834,363 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V3800-DI-TI-BG-ET",
+    "normalized_model": "V3800DITIBGET",
+    "first_model_year": 2011,
+    "latest_model_year": 2011,
+    "model_years": [
+      2011
+    ],
+    "engine_families": [
+      "BKBXL03.8AHC"
+    ],
+    "engine_codes": [
+      "V3800-DI-TI-BG-ET01"
+    ],
+    "certificates": [
+      "BKBXL03.8AHC-001"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 68,
+    "rated_power_kw_max": 68,
+    "displacements_l": [
+      3.77
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V3800-DI-TI-BG-ET",
+        "slug": "kubota-v3800-di-ti-bg-et",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
+    "mapped_database_brands": [
+      "Lovol"
+    ],
+    "epa_model": "D4ETA/78/1800",
+    "normalized_model": "D4ETA781800",
+    "first_model_year": 2011,
+    "latest_model_year": 2011,
+    "model_years": [
+      2011
+    ],
+    "engine_families": [
+      "BTLEL5.99ADE"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BTLEL5.99ADE-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 78,
+    "rated_power_kw_max": 78,
+    "displacements_l": [
+      3.99
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Lovol",
+        "model": "D4ETA",
+        "slug": "lovol-d4eta",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
+    "mapped_database_brands": [
+      "Lovol"
+    ],
+    "epa_model": "D4ETA/90/1800",
+    "normalized_model": "D4ETA901800",
+    "first_model_year": 2011,
+    "latest_model_year": 2011,
+    "model_years": [
+      2011
+    ],
+    "engine_families": [
+      "BTLEL5.99ADE"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BTLEL5.99ADE-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 90,
+    "rated_power_kw_max": 90,
+    "displacements_l": [
+      3.99
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Lovol",
+        "model": "D4ETA",
+        "slug": "lovol-d4eta",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
+    "mapped_database_brands": [
+      "Lovol"
+    ],
+    "epa_model": "D4ETA/96/1800",
+    "normalized_model": "D4ETA961800",
+    "first_model_year": 2011,
+    "latest_model_year": 2011,
+    "model_years": [
+      2011
+    ],
+    "engine_families": [
+      "BTLEL5.99ADE"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BTLEL5.99ADE-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 96,
+    "rated_power_kw_max": 96,
+    "displacements_l": [
+      3.99
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Lovol",
+        "model": "D4ETA",
+        "slug": "lovol-d4eta",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
+    "mapped_database_brands": [
+      "Lovol"
+    ],
+    "epa_model": "D6ETA/115/1800",
+    "normalized_model": "D6ETA1151800",
+    "first_model_year": 2011,
+    "latest_model_year": 2011,
+    "model_years": [
+      2011
+    ],
+    "engine_families": [
+      "BTLEL5.99ADE"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BTLEL5.99ADE-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 115,
+    "rated_power_kw_max": 115,
+    "displacements_l": [
+      5.985
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Lovol",
+        "model": "D6ETA",
+        "slug": "lovol-d6eta",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
+    "mapped_database_brands": [
+      "Lovol"
+    ],
+    "epa_model": "D6ETA/124/1800",
+    "normalized_model": "D6ETA1241800",
+    "first_model_year": 2011,
+    "latest_model_year": 2011,
+    "model_years": [
+      2011
+    ],
+    "engine_families": [
+      "BTLEL5.99ADE"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BTLEL5.99ADE-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 124,
+    "rated_power_kw_max": 124,
+    "displacements_l": [
+      5.985
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Lovol",
+        "model": "D6ETA",
+        "slug": "lovol-d6eta",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
+    "mapped_database_brands": [
+      "Lovol"
+    ],
+    "epa_model": "D6ETA/129/1800",
+    "normalized_model": "D6ETA1291800",
+    "first_model_year": 2011,
+    "latest_model_year": 2011,
+    "model_years": [
+      2011
+    ],
+    "engine_families": [
+      "BTLEL5.99ADE"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BTLEL5.99ADE-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 129,
+    "rated_power_kw_max": 129,
+    "displacements_l": [
+      5.985
+    ],
+    "match_status": "base_brand_match",
+    "database_matches": [
+      {
+        "brand": "Lovol",
+        "model": "D6ETA",
+        "slug": "lovol-d6eta",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Cummins Inc.",
     "mapped_database_brands": [
       "Cummins"
@@ -67134,300 +67491,6 @@
     "rated_power_kw_max": 40,
     "displacements_l": [
       2.545
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "V3800-DI-TI-BG-ET",
-    "normalized_model": "V3800DITIBGET",
-    "first_model_year": 2011,
-    "latest_model_year": 2011,
-    "model_years": [
-      2011
-    ],
-    "engine_families": [
-      "BKBXL03.8AHC"
-    ],
-    "engine_codes": [
-      "V3800-DI-TI-BG-ET01"
-    ],
-    "certificates": [
-      "BKBXL03.8AHC-001"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 68,
-    "rated_power_kw_max": 68,
-    "displacements_l": [
-      3.77
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
-    "mapped_database_brands": [
-      "Lovol"
-    ],
-    "epa_model": "D4ETA/78/1800",
-    "normalized_model": "D4ETA781800",
-    "first_model_year": 2011,
-    "latest_model_year": 2011,
-    "model_years": [
-      2011
-    ],
-    "engine_families": [
-      "BTLEL5.99ADE"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BTLEL5.99ADE-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 78,
-    "rated_power_kw_max": 78,
-    "displacements_l": [
-      3.99
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
-    "mapped_database_brands": [
-      "Lovol"
-    ],
-    "epa_model": "D4ETA/90/1800",
-    "normalized_model": "D4ETA901800",
-    "first_model_year": 2011,
-    "latest_model_year": 2011,
-    "model_years": [
-      2011
-    ],
-    "engine_families": [
-      "BTLEL5.99ADE"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BTLEL5.99ADE-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 90,
-    "rated_power_kw_max": 90,
-    "displacements_l": [
-      3.99
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
-    "mapped_database_brands": [
-      "Lovol"
-    ],
-    "epa_model": "D4ETA/96/1800",
-    "normalized_model": "D4ETA961800",
-    "first_model_year": 2011,
-    "latest_model_year": 2011,
-    "model_years": [
-      2011
-    ],
-    "engine_families": [
-      "BTLEL5.99ADE"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BTLEL5.99ADE-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 96,
-    "rated_power_kw_max": 96,
-    "displacements_l": [
-      3.99
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
-    "mapped_database_brands": [
-      "Lovol"
-    ],
-    "epa_model": "D6ETA/115/1800",
-    "normalized_model": "D6ETA1151800",
-    "first_model_year": 2011,
-    "latest_model_year": 2011,
-    "model_years": [
-      2011
-    ],
-    "engine_families": [
-      "BTLEL5.99ADE"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BTLEL5.99ADE-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 115,
-    "rated_power_kw_max": 115,
-    "displacements_l": [
-      5.985
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
-    "mapped_database_brands": [
-      "Lovol"
-    ],
-    "epa_model": "D6ETA/124/1800",
-    "normalized_model": "D6ETA1241800",
-    "first_model_year": 2011,
-    "latest_model_year": 2011,
-    "model_years": [
-      2011
-    ],
-    "engine_families": [
-      "BTLEL5.99ADE"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BTLEL5.99ADE-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 124,
-    "rated_power_kw_max": 124,
-    "displacements_l": [
-      5.985
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Tianjin Lovol Engines Co., Ltd.",
-    "mapped_database_brands": [
-      "Lovol"
-    ],
-    "epa_model": "D6ETA/129/1800",
-    "normalized_model": "D6ETA1291800",
-    "first_model_year": 2011,
-    "latest_model_year": 2011,
-    "model_years": [
-      2011
-    ],
-    "engine_families": [
-      "BTLEL5.99ADE"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BTLEL5.99ADE-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 129,
-    "rated_power_kw_max": 129,
-    "displacements_l": [
-      5.985
     ],
     "match_status": "not_found",
     "database_matches": [],
