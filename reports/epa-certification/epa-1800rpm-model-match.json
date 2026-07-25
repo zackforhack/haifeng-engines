@@ -6034,7 +6034,7 @@
         "model": "QSB4.5",
         "slug": "cummins-qsb45",
         "rpm_rated": 1800,
-        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Final Tier 4",
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -44605,6 +44605,615 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "AB Volvo Penta",
+    "mapped_database_brands": [
+      "Volvo Penta"
+    ],
+    "epa_model": "TWD1663GE",
+    "normalized_model": "TWD1663GE",
+    "first_model_year": 2012,
+    "latest_model_year": 2014,
+    "model_years": [
+      2012,
+      2013,
+      2014
+    ],
+    "engine_families": [
+      "CVPXL16.1CDA",
+      "DVPXL16.1CDA",
+      "EVPXL16.1CDA"
+    ],
+    "engine_codes": [
+      "1"
+    ],
+    "certificates": [
+      "CVPXL16.1CDA-005",
+      "DVPXL16.1CDA-010",
+      "EVPXL16.1CDA-009"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 685,
+    "rated_power_kw_max": 685,
+    "displacements_l": [
+      16.123
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Volvo Penta",
+        "model": "TWD1663GE",
+        "slug": "volvo-penta-twd1663ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
+    "epa_model": "QSB5-G7",
+    "normalized_model": "QSB5G7",
+    "first_model_year": 2013,
+    "latest_model_year": 2014,
+    "model_years": [
+      2013,
+      2014
+    ],
+    "engine_families": [
+      "DCEXL04.5AAF",
+      "ECEXL04.5AAF"
+    ],
+    "engine_codes": [
+      "CPL3962:FR93966G"
+    ],
+    "certificates": [
+      "DCEXL04.5AAF-001",
+      "ECEXL04.5AAF-012"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 3.4"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 83,
+    "rated_power_kw_max": 83,
+    "displacements_l": [
+      4.46
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSB4.5",
+        "slug": "cummins-qsb45",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
+    "epa_model": "QSB5-G8",
+    "normalized_model": "QSB5G8",
+    "first_model_year": 2013,
+    "latest_model_year": 2014,
+    "model_years": [
+      2013,
+      2014
+    ],
+    "engine_families": [
+      "DCEXL04.5AAF",
+      "ECEXL04.5AAF"
+    ],
+    "engine_codes": [
+      "CPL3962:FR93967G"
+    ],
+    "certificates": [
+      "DCEXL04.5AAF-001",
+      "ECEXL04.5AAF-012"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 3.4"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 105,
+    "rated_power_kw_max": 105,
+    "displacements_l": [
+      4.46
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSB4.5",
+        "slug": "cummins-qsb45",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Cummins Inc.",
+    "mapped_database_brands": [
+      "Cummins"
+    ],
+    "epa_model": "QSB5-G9",
+    "normalized_model": "QSB5G9",
+    "first_model_year": 2013,
+    "latest_model_year": 2014,
+    "model_years": [
+      2013,
+      2014
+    ],
+    "engine_families": [
+      "DCEXL04.5AAF",
+      "ECEXL04.5AAF"
+    ],
+    "engine_codes": [
+      "CPL3962:FR93968G"
+    ],
+    "certificates": [
+      "DCEXL04.5AAF-001",
+      "ECEXL04.5AAF-012"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 3.4"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 129,
+    "rated_power_kw_max": 129,
+    "displacements_l": [
+      4.46
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Cummins",
+        "model": "QSB4.5",
+        "slug": "cummins-qsb45",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "6135H",
+    "normalized_model": "6135H",
+    "first_model_year": 2012,
+    "latest_model_year": 2014,
+    "model_years": [
+      2012,
+      2013,
+      2014
+    ],
+    "engine_families": [
+      "CJDXL13.5103",
+      "CJDXL13.5132",
+      "DJDXL13.5132",
+      "EJDXL13.5146"
+    ],
+    "engine_codes": [
+      "6135HF485S",
+      "6135HF485T",
+      "6135HF485U",
+      "6135HFG75A",
+      "6135HFG84A",
+      "6135HFG84B"
+    ],
+    "certificates": [
+      "CJDXL13.5103-020",
+      "CJDXL13.5132-011",
+      "DJDXL13.5132-007",
+      "EJDXL13.5146-004"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 345,
+    "rated_power_kw_max": 563,
+    "displacements_l": [
+      13.548
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "6135",
+        "slug": "john-deere-6135",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Tier 3 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "HD Construction Equipment Co., Ltd.",
+    "mapped_database_brands": [
+      "Hyundai"
+    ],
+    "epa_model": "P180FE",
+    "normalized_model": "P180FE",
+    "first_model_year": 2012,
+    "latest_model_year": 2014,
+    "model_years": [
+      2012,
+      2013,
+      2014
+    ],
+    "engine_families": [
+      "CDICL18.3USA",
+      "DDICL18.3USA",
+      "EDICL18.3USA"
+    ],
+    "engine_codes": [
+      "EUSOB"
+    ],
+    "certificates": [
+      "CDICL18.3USA-005",
+      "DDICL18.3USA-005",
+      "EDICL18.3USA-003"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 566,
+    "rated_power_kw_max": 566,
+    "displacements_l": [
+      18.272000000000002
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "P180FE",
+        "slug": "hyundai-p180fe",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "HD Construction Equipment Co., Ltd.",
+    "mapped_database_brands": [
+      "Hyundai"
+    ],
+    "epa_model": "P222FE",
+    "normalized_model": "P222FE",
+    "first_model_year": 2012,
+    "latest_model_year": 2014,
+    "model_years": [
+      2012,
+      2013,
+      2014
+    ],
+    "engine_families": [
+      "CDICL21.9UYA",
+      "DDICL21.9UYA",
+      "EDICL21.9UYA"
+    ],
+    "engine_codes": [
+      "EUYOB"
+    ],
+    "certificates": [
+      "CDICL21.9UYA-004",
+      "DDICL21.9UYA-006",
+      "EDICL21.9UYA-004"
+    ],
+    "applicable_tiers": [
+      "Tier 2"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 711,
+    "rated_power_kw_max": 711,
+    "displacements_l": [
+      21.927
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Hyundai",
+        "model": "P222FE",
+        "slug": "hyundai-p222fe",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Kubota Corporation",
+    "mapped_database_brands": [
+      "Kubota"
+    ],
+    "epa_model": "V3800-CR-TI-BG-EF",
+    "normalized_model": "V3800CRTIBGEF",
+    "first_model_year": 2014,
+    "latest_model_year": 2014,
+    "model_years": [
+      2014
+    ],
+    "engine_families": [
+      "EKBXL03.8AMC"
+    ],
+    "engine_codes": [
+      "V3800-CR-TI-BG-EF01"
+    ],
+    "certificates": [
+      "EKBXL03.8AMC-004"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 3.4"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 67,
+    "rated_power_kw_max": 67,
+    "displacements_l": [
+      3.77
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kubota",
+        "model": "V3800-CR-TI-BG-EF",
+        "slug": "kubota-v3800-cr-ti-bg-ef",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Rolls-Royce Solutions America Inc",
+    "mapped_database_brands": [
+      "MTU"
+    ],
+    "epa_model": "16V2000G56S",
+    "normalized_model": "16V2000G56S",
+    "first_model_year": 2014,
+    "latest_model_year": 2014,
+    "model_years": [
+      2014
+    ],
+    "engine_families": [
+      "EMDDL35.7GNC"
+    ],
+    "engine_codes": [
+      "7263"
+    ],
+    "certificates": [
+      "EMDDL35.7GNC-008"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 809,
+    "rated_power_kw_max": 809,
+    "displacements_l": [
+      35.727000000000004
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "MTU",
+        "model": "16V2000G56S",
+        "slug": "mtu-16v2000g56s",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "3JTGP1",
+    "normalized_model": "3JTGP1",
+    "first_model_year": 2012,
+    "latest_model_year": 2014,
+    "model_years": [
+      2012,
+      2014
+    ],
+    "engine_families": [
+      "CYDXL1.50H3T",
+      "EYDXL1.50S3T"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CYDXL1.50H3T-018",
+      "EYDXL1.50S3T-004"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel",
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.496
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3JTGP1",
+        "slug": "yanmar-3jtgp1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Yanmar Power Technology Co., Ltd.",
+    "mapped_database_brands": [
+      "Yanmar"
+    ],
+    "epa_model": "4HNGAM",
+    "normalized_model": "4HNGAM",
+    "first_model_year": 2013,
+    "latest_model_year": 2014,
+    "model_years": [
+      2013,
+      2014
+    ],
+    "engine_families": [
+      "DYDXL1.64NGA",
+      "EYDXL1.64NGA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "DYDXL1.64NGA-030",
+      "EYDXL1.64NGA-035"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 16,
+    "rated_power_kw_max": 16,
+    "displacements_l": [
+      1.6420000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Yanmar",
+        "model": "3TNV88F-UG6GE",
+        "slug": "yanmar-3tnv88f-ug6ge",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Cummins Inc.",
     "mapped_database_brands": [
       "Cummins"
@@ -59837,214 +60446,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "AB Volvo Penta",
-    "mapped_database_brands": [
-      "Volvo Penta"
-    ],
-    "epa_model": "TWD1663GE",
-    "normalized_model": "TWD1663GE",
-    "first_model_year": 2012,
-    "latest_model_year": 2014,
-    "model_years": [
-      2012,
-      2013,
-      2014
-    ],
-    "engine_families": [
-      "CVPXL16.1CDA",
-      "DVPXL16.1CDA",
-      "EVPXL16.1CDA"
-    ],
-    "engine_codes": [
-      "1"
-    ],
-    "certificates": [
-      "CVPXL16.1CDA-005",
-      "DVPXL16.1CDA-010",
-      "EVPXL16.1CDA-009"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 685,
-    "rated_power_kw_max": 685,
-    "displacements_l": [
-      16.123
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Volvo Penta",
-        "model": "TWD1643GE",
-        "slug": "volvo-penta-twd1643ge",
-        "similarity": 0.889
-      },
-      {
-        "brand": "Volvo Penta",
-        "model": "TWD1653GE",
-        "slug": "volvo-penta-twd1653ge",
-        "similarity": 0.889
-      },
-      {
-        "brand": "Volvo Penta",
-        "model": "TWD1673GE",
-        "slug": "volvo-penta-twd1673ge",
-        "similarity": 0.889
-      },
-      {
-        "brand": "Volvo Penta",
-        "model": "TWD1683GE",
-        "slug": "volvo-penta-twd1683ge",
-        "similarity": 0.889
-      }
-    ]
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
-    "epa_model": "QSB5-G7",
-    "normalized_model": "QSB5G7",
-    "first_model_year": 2013,
-    "latest_model_year": 2014,
-    "model_years": [
-      2013,
-      2014
-    ],
-    "engine_families": [
-      "DCEXL04.5AAF",
-      "ECEXL04.5AAF"
-    ],
-    "engine_codes": [
-      "CPL3962:FR93966G"
-    ],
-    "certificates": [
-      "DCEXL04.5AAF-001",
-      "ECEXL04.5AAF-012"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 3.4"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 83,
-    "rated_power_kw_max": 83,
-    "displacements_l": [
-      4.46
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
-    "epa_model": "QSB5-G8",
-    "normalized_model": "QSB5G8",
-    "first_model_year": 2013,
-    "latest_model_year": 2014,
-    "model_years": [
-      2013,
-      2014
-    ],
-    "engine_families": [
-      "DCEXL04.5AAF",
-      "ECEXL04.5AAF"
-    ],
-    "engine_codes": [
-      "CPL3962:FR93967G"
-    ],
-    "certificates": [
-      "DCEXL04.5AAF-001",
-      "ECEXL04.5AAF-012"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 3.4"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 105,
-    "rated_power_kw_max": 105,
-    "displacements_l": [
-      4.46
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Cummins Inc.",
-    "mapped_database_brands": [
-      "Cummins"
-    ],
-    "epa_model": "QSB5-G9",
-    "normalized_model": "QSB5G9",
-    "first_model_year": 2013,
-    "latest_model_year": 2014,
-    "model_years": [
-      2013,
-      2014
-    ],
-    "engine_families": [
-      "DCEXL04.5AAF",
-      "ECEXL04.5AAF"
-    ],
-    "engine_codes": [
-      "CPL3962:FR93968G"
-    ],
-    "certificates": [
-      "DCEXL04.5AAF-001",
-      "ECEXL04.5AAF-012"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 3.4"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 129,
-    "rated_power_kw_max": 129,
-    "displacements_l": [
-      4.46
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "Cummins Inc.",
     "mapped_database_brands": [
       "Cummins"
@@ -60178,62 +60579,6 @@
     "rated_power_kw_max": 72,
     "displacements_l": [
       3.0500000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "6135H",
-    "normalized_model": "6135H",
-    "first_model_year": 2012,
-    "latest_model_year": 2014,
-    "model_years": [
-      2012,
-      2013,
-      2014
-    ],
-    "engine_families": [
-      "CJDXL13.5103",
-      "CJDXL13.5132",
-      "DJDXL13.5132",
-      "EJDXL13.5146"
-    ],
-    "engine_codes": [
-      "6135HF485S",
-      "6135HF485T",
-      "6135HF485U",
-      "6135HFG75A",
-      "6135HFG84A",
-      "6135HFG84B"
-    ],
-    "certificates": [
-      "CJDXL13.5103-020",
-      "CJDXL13.5132-011",
-      "DJDXL13.5132-007",
-      "EJDXL13.5146-004"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 345,
-    "rated_power_kw_max": 563,
-    "displacements_l": [
-      13.548
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -60456,102 +60801,6 @@
     "rated_power_kw_max": 124,
     "displacements_l": [
       5.89
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "HD Construction Equipment Co., Ltd.",
-    "mapped_database_brands": [
-      "Hyundai"
-    ],
-    "epa_model": "P180FE",
-    "normalized_model": "P180FE",
-    "first_model_year": 2012,
-    "latest_model_year": 2014,
-    "model_years": [
-      2012,
-      2013,
-      2014
-    ],
-    "engine_families": [
-      "CDICL18.3USA",
-      "DDICL18.3USA",
-      "EDICL18.3USA"
-    ],
-    "engine_codes": [
-      "EUSOB"
-    ],
-    "certificates": [
-      "CDICL18.3USA-005",
-      "DDICL18.3USA-005",
-      "EDICL18.3USA-003"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 566,
-    "rated_power_kw_max": 566,
-    "displacements_l": [
-      18.272000000000002
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "HD Construction Equipment Co., Ltd.",
-    "mapped_database_brands": [
-      "Hyundai"
-    ],
-    "epa_model": "P222FE",
-    "normalized_model": "P222FE",
-    "first_model_year": 2012,
-    "latest_model_year": 2014,
-    "model_years": [
-      2012,
-      2013,
-      2014
-    ],
-    "engine_families": [
-      "CDICL21.9UYA",
-      "DDICL21.9UYA",
-      "EDICL21.9UYA"
-    ],
-    "engine_codes": [
-      "EUYOB"
-    ],
-    "certificates": [
-      "CDICL21.9UYA-004",
-      "DDICL21.9UYA-006",
-      "EDICL21.9UYA-004"
-    ],
-    "applicable_tiers": [
-      "Tier 2"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 711,
-    "rated_power_kw_max": 711,
-    "displacements_l": [
-      21.927
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -60821,55 +61070,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Kubota Corporation",
-    "mapped_database_brands": [
-      "Kubota"
-    ],
-    "epa_model": "V3800-CR-TI-BG-EF",
-    "normalized_model": "V3800CRTIBGEF",
-    "first_model_year": 2014,
-    "latest_model_year": 2014,
-    "model_years": [
-      2014
-    ],
-    "engine_families": [
-      "EKBXL03.8AMC"
-    ],
-    "engine_codes": [
-      "V3800-CR-TI-BG-EF01"
-    ],
-    "certificates": [
-      "EKBXL03.8AMC-004"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 3.4"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 67,
-    "rated_power_kw_max": 67,
-    "displacements_l": [
-      3.77
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Kubota",
-        "model": "V3800-CR-TI-BG-ET",
-        "slug": "kubota-v3800-cr-ti-bg-et",
-        "similarity": 0.923
-      }
-    ]
-  },
-  {
     "manufacturer": "Liebherr Machines Bulle SA",
     "mapped_database_brands": [
       "Kohler",
@@ -60964,67 +61164,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Rolls-Royce Solutions America Inc",
-    "mapped_database_brands": [
-      "MTU"
-    ],
-    "epa_model": "16V2000G56S",
-    "normalized_model": "16V2000G56S",
-    "first_model_year": 2014,
-    "latest_model_year": 2014,
-    "model_years": [
-      2014
-    ],
-    "engine_families": [
-      "EMDDL35.7GNC"
-    ],
-    "engine_codes": [
-      "7263"
-    ],
-    "certificates": [
-      "EMDDL35.7GNC-008"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 809,
-    "rated_power_kw_max": 809,
-    "displacements_l": [
-      35.727000000000004
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "MTU",
-        "model": "16V2000G26S",
-        "slug": "mtu-16v2000g26s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "16V2000G76S",
-        "slug": "mtu-16v2000g76s",
-        "similarity": 0.909
-      },
-      {
-        "brand": "MTU",
-        "model": "16V2000G86S",
-        "slug": "mtu-16v2000g86s",
-        "similarity": 0.909
-      }
-    ]
-  },
-  {
     "manufacturer": "Yanmar Power Technology Co., Ltd.",
     "mapped_database_brands": [
       "Yanmar"
@@ -61059,97 +61198,6 @@
     "rated_power_kw_max": 18,
     "displacements_l": [
       1.496
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "3JTGP1",
-    "normalized_model": "3JTGP1",
-    "first_model_year": 2012,
-    "latest_model_year": 2014,
-    "model_years": [
-      2012,
-      2014
-    ],
-    "engine_families": [
-      "CYDXL1.50H3T",
-      "EYDXL1.50S3T"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CYDXL1.50H3T-018",
-      "EYDXL1.50S3T-004"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel",
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.496
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Yanmar Power Technology Co., Ltd.",
-    "mapped_database_brands": [
-      "Yanmar"
-    ],
-    "epa_model": "4HNGAM",
-    "normalized_model": "4HNGAM",
-    "first_model_year": 2013,
-    "latest_model_year": 2014,
-    "model_years": [
-      2013,
-      2014
-    ],
-    "engine_families": [
-      "DYDXL1.64NGA",
-      "EYDXL1.64NGA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "DYDXL1.64NGA-030",
-      "EYDXL1.64NGA-035"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 16,
-    "rated_power_kw_max": 16,
-    "displacements_l": [
-      1.6420000000000001
     ],
     "match_status": "not_found",
     "database_matches": [],

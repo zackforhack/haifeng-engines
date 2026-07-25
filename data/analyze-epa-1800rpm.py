@@ -138,6 +138,10 @@ CERTIFICATION_ALIASES = {
     ("Cummins Inc.", "QSK78G"): ("Cummins", "QSK78"),
     ("Cummins Inc.", "QST30G"): ("Cummins", "QST30"),
     ("Cummins Inc.", "QSX15G"): ("Cummins", "QSX15"),
+    ("Cummins Inc.", "QSB5G7"): ("Cummins", "QSB4.5"),
+    ("Cummins Inc.", "QSB5G8"): ("Cummins", "QSB4.5"),
+    ("Cummins Inc.", "QSB5G9"): ("Cummins", "QSB4.5"),
+    ("Deere & Company", "6135H"): ("John Deere", "6135"),
     ("AB Volvo Penta", "TAD1641GE"): ("Volvo Penta", "TAD1641GE-B"),
     ("AB Volvo Penta", "TAD1642GE"): ("Volvo Penta", "TAD1642GE-B"),
     ("Discovery Energy, LLC.", "KD2504ESM"): ("Kohler", "KDI2504ESM"),
@@ -341,6 +345,10 @@ CERTIFICATION_ALIASES = {
     ("Yanmar Power Technology Co., Ltd.", "4TTGPC"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3NNGAG"): ("Yanmar", "4TNV88-CL"),
     ("Yanmar Power Technology Co., Ltd.", "3NNGA"): ("Yanmar", "4TNV88-CL"),
+    ("Yanmar Power Technology Co., Ltd.", "4HNGAM"): (
+        "Yanmar",
+        "3TNV88F-UG6GE",
+    ),
     ("Motorenfabrik Hatz GmbH & Co. KG", "1D81SZTU"): ("Hatz", "1D81"),
     (
         "Yanmar Power Technology Co., Ltd.",
@@ -782,6 +790,14 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         and result["mapped_database_brands"]
         and "Constant Speed" in result["engine_operations"]
     ]
+    legacy_2014_priority = [
+        result
+        for result in results
+        if result["match_status"] not in REPRESENTED_STATUSES
+        and result["latest_model_year"] == 2014
+        and result["mapped_database_brands"]
+        and "Constant Speed" in result["engine_operations"]
+    ]
     generator_priority_brands = defaultdict(int)
     for result in generator_priority:
         for brand in result["mapped_database_brands"]:
@@ -839,6 +855,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Legacy 2017 review queue (mapped brand, constant speed): **{len(legacy_2017_priority):,}**",
         f"- Legacy 2016 review queue (mapped brand, constant speed): **{len(legacy_2016_priority):,}**",
         f"- Legacy 2015 review queue (mapped brand, constant speed): **{len(legacy_2015_priority):,}**",
+        f"- Legacy 2014 review queue (mapped brand, constant speed): **{len(legacy_2014_priority):,}**",
         "",
         "The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use "
         "1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second "
