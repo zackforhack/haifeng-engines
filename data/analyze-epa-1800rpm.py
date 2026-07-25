@@ -51,6 +51,7 @@ MANUFACTURER_BRANDS = {
     "Scania CV AB": {"Scania"},
     "Shandong Huayuan Laidong Engine Co.,LTD.": {"Laidong"},
     "Societe Internationale des Moteurs-Baudouin": {"Baudouin"},
+    "Suzhou Jinding Machinery Manufacturing Co., Ltd.": {"JDP"},
     "Tianjin Lovol Engines Co., Ltd.": {"Lovol"},
     "TYM Corporation": {"TYM"},
     "Weichai Power Co.,Ltd.": {"Weichai"},

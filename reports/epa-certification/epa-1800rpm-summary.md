@@ -20,18 +20,18 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **343**
+- Exact manufacturer/brand matches: **346**
 - Matches after removing a redundant database brand prefix: **34**
 - Slash-suffixed certification trims represented by a verified base model: **20**
 - Reviewed manufacturer certification trims: **44**
 - Reviewed certification aliases: **219**
 - Fully represented certification groups: **8**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **285**
+- Exact matches whose database page uses 1800 as its primary RPM: **288**
 - Exact model under another database brand: **2**
-- Not represented after reviewed matching rules: **245**
-- Models from mapped manufacturers: **944**
-- Represented coverage within mapped manufacturers: **76.6%**
+- Not represented after reviewed matching rules: **242**
+- Models from mapped manufacturers: **947**
+- Represented coverage within mapped manufacturers: **76.7%**
 - Unmatched models with a 2024+ certification: **126**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
@@ -106,7 +106,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Lion (China) Engine Science and Technology Co.,Ltd. | Lion | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Yangdong Co., Ltd. | Yangdong | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | MAN Truck & Bus AG | MAN | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
-| Suzhou Jinding Machinery Manufacturing Co., Ltd. | Unmapped | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
+| Suzhou Jinding Machinery Manufacturing Co., Ltd. | JDP | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Volvo Construction Equipment | Unmapped | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
 | Weichai Power Co.,Ltd. | Weichai | 3 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
 | Zhejiang Xinchai Co., Ltd. | Xinchai | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |

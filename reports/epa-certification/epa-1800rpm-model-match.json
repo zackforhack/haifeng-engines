@@ -53236,6 +53236,159 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Suzhou Jinding Machinery Manufacturing Co., Ltd.",
+    "mapped_database_brands": [
+      "JDP"
+    ],
+    "epa_model": "JDP385D",
+    "normalized_model": "JDP385D",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CSZJL2.156JD"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CSZJL2.156JD-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 14,
+    "rated_power_kw_max": 14,
+    "displacements_l": [
+      1.532
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "JDP",
+        "model": "JDP385D",
+        "slug": "jdp-jdp385d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Suzhou Jinding Machinery Manufacturing Co., Ltd.",
+    "mapped_database_brands": [
+      "JDP"
+    ],
+    "epa_model": "JDP480D",
+    "normalized_model": "JDP480D",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CSZJL2.156JD"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CSZJL2.156JD-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 16,
+    "rated_power_kw_max": 16,
+    "displacements_l": [
+      1.9100000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "JDP",
+        "model": "JDP480D",
+        "slug": "jdp-jdp480d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Suzhou Jinding Machinery Manufacturing Co., Ltd.",
+    "mapped_database_brands": [
+      "JDP"
+    ],
+    "epa_model": "JDP485D",
+    "normalized_model": "JDP485D",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CSZJL2.156JD"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "CSZJL2.156JD-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      2.156
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "JDP",
+        "model": "JDP485D",
+        "slug": "jdp-jdp485d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Yangdong Co., Ltd.",
     "mapped_database_brands": [
       "Yangdong"
@@ -68357,126 +68510,6 @@
     "rated_power_kw_max": 478,
     "displacements_l": [
       16.353
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Suzhou Jinding Machinery Manufacturing Co., Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "JDP385D",
-    "normalized_model": "JDP385D",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CSZJL2.156JD"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CSZJL2.156JD-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 14,
-    "rated_power_kw_max": 14,
-    "displacements_l": [
-      1.532
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Suzhou Jinding Machinery Manufacturing Co., Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "JDP480D",
-    "normalized_model": "JDP480D",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CSZJL2.156JD"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CSZJL2.156JD-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 16,
-    "rated_power_kw_max": 16,
-    "displacements_l": [
-      1.9100000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Suzhou Jinding Machinery Manufacturing Co., Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "JDP485D",
-    "normalized_model": "JDP485D",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CSZJL2.156JD"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "CSZJL2.156JD-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      2.156
     ],
     "match_status": "not_found",
     "database_matches": [],
