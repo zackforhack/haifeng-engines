@@ -2604,9 +2604,25 @@
     "database_matches": [
       {
         "brand": "Perkins",
+        "model": "2506D-E15TAG0",
+        "slug": "perkins-2506d-e15tag0",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Perkins",
         "model": "2506D-E15TAG1",
         "slug": "perkins-2506d-e15tag1",
         "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "Perkins",
+        "model": "2506D-E15TAGG",
+        "slug": "perkins-2506d-e15tagg",
+        "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 3",
         "fuel_type": "Diesel"
       }
@@ -10070,6 +10086,14 @@
       },
       {
         "brand": "John Deere",
+        "model": "3029T",
+        "slug": "john-deere-3029t",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
         "model": "3029TFG89",
         "slug": "john-deere-3029tfg89-t3-35kva",
         "rpm_rated": 1800,
@@ -10518,6 +10542,14 @@
       },
       {
         "brand": "John Deere",
+        "model": "4045H",
+        "slug": "john-deere-4045h",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
         "model": "4045HF280",
         "slug": "john-deere-4045hf280-t3-80kva",
         "rpm_rated": 1800,
@@ -10576,14 +10608,6 @@
         "brand": "John Deere",
         "model": "4045HFG82",
         "slug": "john-deere-4045hfg82-t3iiia-100kva",
-        "rpm_rated": 1500,
-        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
-        "fuel_type": "Diesel"
-      },
-      {
-        "brand": "John Deere",
-        "model": "4045HFG82",
-        "slug": "john-deere-4045hfg82-t3iiia-120kva",
         "rpm_rated": 1500,
         "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
         "fuel_type": "Diesel"
@@ -11099,6 +11123,14 @@
       },
       {
         "brand": "John Deere",
+        "model": "6090H",
+        "slug": "john-deere-6090h",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      },
+      {
+        "brand": "John Deere",
         "model": "6090HF484",
         "slug": "john-deere-6090hf484-t3-310kva",
         "rpm_rated": 1800,
@@ -11151,14 +11183,6 @@
         "slug": "john-deere-6090hfg84-t3iiia-300kva",
         "rpm_rated": 1500,
         "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
-        "fuel_type": "Diesel"
-      },
-      {
-        "brand": "John Deere",
-        "model": "6090HFG85",
-        "slug": "john-deere-6090hfg85-t3-345kva",
-        "rpm_rated": 1800,
-        "emissions_standard": "U.S. EPA Tier 3",
         "fuel_type": "Diesel"
       }
     ],
@@ -45293,6 +45317,464 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "3029T",
+    "normalized_model": "3029T",
+    "first_model_year": 2011,
+    "latest_model_year": 2013,
+    "model_years": [
+      2011,
+      2012,
+      2013
+    ],
+    "engine_families": [
+      "BJDXL02.9139",
+      "CJDXL02.9139",
+      "DJDXL02.9121"
+    ],
+    "engine_codes": [
+      "3029TF270D",
+      "3029TFG80C",
+      "3029TFU80C"
+    ],
+    "certificates": [
+      "BJDXL02.9139-001",
+      "CJDXL02.9139-010",
+      "DJDXL02.9121-022"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable",
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 35,
+    "rated_power_kw_max": 48,
+    "displacements_l": [
+      2.94
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "3029T",
+        "slug": "john-deere-3029t",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "4024H",
+    "normalized_model": "4024H",
+    "first_model_year": 2011,
+    "latest_model_year": 2013,
+    "model_years": [
+      2011,
+      2012,
+      2013
+    ],
+    "engine_families": [
+      "BJDXL04.5144",
+      "CJDXL03.0113",
+      "DJDXL04.5141"
+    ],
+    "engine_codes": [
+      "4024HF285B"
+    ],
+    "certificates": [
+      "BJDXL04.5144-003",
+      "CJDXL03.0113-025",
+      "DJDXL04.5141-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 60,
+    "rated_power_kw_max": 60,
+    "displacements_l": [
+      2.44
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "4024H",
+        "slug": "john-deere-4024h",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "4045H",
+    "normalized_model": "4045H",
+    "first_model_year": 2011,
+    "latest_model_year": 2013,
+    "model_years": [
+      2011,
+      2012,
+      2013
+    ],
+    "engine_families": [
+      "BJDXL04.5144",
+      "CJDXL04.5119",
+      "CJDXL04.5141",
+      "CJDXL06.8120",
+      "CJDXL13.5103",
+      "DJDXL04.5141"
+    ],
+    "engine_codes": [
+      "4045HF280D",
+      "4045HF285H",
+      "4045HF285I",
+      "4045HF285J",
+      "4045HF285K",
+      "4045HF485E",
+      "4045HFG81B",
+      "4045HFG82D",
+      "4045HFG82E",
+      "4045HFG82G",
+      "4045HFG82K",
+      "4045HFG85A",
+      "4045HFS80",
+      "4045HFS82",
+      "4045HFS83",
+      "4045HFS85B",
+      "4045HFS86B",
+      "4045HFS87B",
+      "4045HFS88B",
+      "4045HFU81B",
+      "4045HFU82D",
+      "4045HFU82E",
+      "4045HFU82G"
+    ],
+    "certificates": [
+      "BJDXL04.5144-003",
+      "CJDXL04.5119-015",
+      "CJDXL04.5141-027",
+      "CJDXL06.8120-016",
+      "CJDXL13.5103-020",
+      "DJDXL04.5141-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 65,
+    "rated_power_kw_max": 147,
+    "displacements_l": [
+      4.525
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "4045H",
+        "slug": "john-deere-4045h",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "4045T",
+    "normalized_model": "4045T",
+    "first_model_year": 2011,
+    "latest_model_year": 2013,
+    "model_years": [
+      2011,
+      2012,
+      2013
+    ],
+    "engine_families": [
+      "BJDXL04.5144",
+      "CJDXL04.5107",
+      "CJDXL04.5112",
+      "CJDXL04.5130",
+      "DJDXL04.5130",
+      "DJDXL04.5141",
+      "DJDXL04.5214"
+    ],
+    "engine_codes": [
+      "4045TF280D",
+      "4045TF280E",
+      "4045TF285E",
+      "4045TF290B",
+      "4045TF290J"
+    ],
+    "certificates": [
+      "BJDXL04.5144-003",
+      "CJDXL04.5107-017",
+      "CJDXL04.5112-018",
+      "CJDXL04.5130-005",
+      "DJDXL04.5130-014",
+      "DJDXL04.5141-003",
+      "DJDXL04.5214-004"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 3",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable",
+      "Option 1 (37-56kW)"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 55,
+    "rated_power_kw_max": 74,
+    "displacements_l": [
+      4.525
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "4045T",
+        "slug": "john-deere-4045t",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3 / U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "5030H",
+    "normalized_model": "5030H",
+    "first_model_year": 2011,
+    "latest_model_year": 2013,
+    "model_years": [
+      2011,
+      2012,
+      2013
+    ],
+    "engine_families": [
+      "BJDXL04.5144",
+      "CJDXL03.0113",
+      "DJDXL04.5141"
+    ],
+    "engine_codes": [
+      "5030HF285G"
+    ],
+    "certificates": [
+      "BJDXL04.5144-003",
+      "CJDXL03.0113-025",
+      "DJDXL04.5141-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 72,
+    "rated_power_kw_max": 72,
+    "displacements_l": [
+      3.0500000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "5030H",
+        "slug": "john-deere-5030h",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Deere & Company",
+    "mapped_database_brands": [
+      "John Deere"
+    ],
+    "epa_model": "6090H",
+    "normalized_model": "6090H",
+    "first_model_year": 2012,
+    "latest_model_year": 2013,
+    "model_years": [
+      2012,
+      2013
+    ],
+    "engine_families": [
+      "CJDXL09.0114",
+      "DJDXL09.0114"
+    ],
+    "engine_codes": [
+      "6090HF484A",
+      "6090HF484B",
+      "6090HF484C",
+      "6090HF484D",
+      "6090HFG84B",
+      "6090HFG84D",
+      "6090HFG84F",
+      "6090HFG84G",
+      "6090HFG84H",
+      "6090HFG84I",
+      "6090HFG86A",
+      "6090HFG86C",
+      "6090HFG86E",
+      "6090HFS85B",
+      "6090HFS86B",
+      "6090HFU84B",
+      "6090HFU84D"
+    ],
+    "certificates": [
+      "CJDXL09.0114-019",
+      "DJDXL09.0114-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 229,
+    "rated_power_kw_max": 345,
+    "displacements_l": [
+      8.984
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "John Deere",
+        "model": "6090H",
+        "slug": "john-deere-6090h",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Isuzu Motors Limited",
+    "mapped_database_brands": [
+      "Isuzu"
+    ],
+    "epa_model": "BL-6WG1X",
+    "normalized_model": "BL6WG1X",
+    "first_model_year": 2013,
+    "latest_model_year": 2013,
+    "model_years": [
+      2013
+    ],
+    "engine_families": [
+      "DSZXL15.7LXB"
+    ],
+    "engine_codes": [
+      "6WG1XDLBA-01"
+    ],
+    "certificates": [
+      "DSZXL15.7LXB-009"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Alternate NOx - 2.0"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 397,
+    "rated_power_kw_max": 397,
+    "displacements_l": [
+      15.682
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Isuzu",
+        "model": "BL-6WG1X",
+        "slug": "isuzu-bl-6wg1x",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Perkins Engines Co Ltd",
     "mapped_database_brands": [
       "Perkins"
@@ -45513,6 +45995,60 @@
     "mapped_database_brands": [
       "Perkins"
     ],
+    "epa_model": "2506D-E15TAG0",
+    "normalized_model": "2506DE15TAG0",
+    "first_model_year": 2012,
+    "latest_model_year": 2013,
+    "model_years": [
+      2012,
+      2013
+    ],
+    "engine_families": [
+      "CPKXL15.2TAG",
+      "DPKXL15.2TAG"
+    ],
+    "engine_codes": [
+      "2"
+    ],
+    "certificates": [
+      "CPKXL15.2TAG-017",
+      "DPKXL15.2TAG-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 479,
+    "rated_power_kw_max": 479,
+    "displacements_l": [
+      15.213000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "2506D-E15TAG0",
+        "slug": "perkins-2506d-e15tag0",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
     "epa_model": "2506D-E15TAG1",
     "normalized_model": "2506DE15TAG1",
     "first_model_year": 2012,
@@ -45556,6 +46092,60 @@
         "model": "2506D-E15TAG1",
         "slug": "perkins-2506d-e15tag1",
         "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "2506D-E15TAGG",
+    "normalized_model": "2506DE15TAGG",
+    "first_model_year": 2012,
+    "latest_model_year": 2013,
+    "model_years": [
+      2012,
+      2013
+    ],
+    "engine_families": [
+      "CPKXL15.2TAG",
+      "DPKXL15.2TAG"
+    ],
+    "engine_codes": [
+      "3"
+    ],
+    "certificates": [
+      "CPKXL15.2TAG-017",
+      "DPKXL15.2TAG-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 407,
+    "rated_power_kw_max": 407,
+    "displacements_l": [
+      15.213000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "2506D-E15TAGG",
+        "slug": "perkins-2506d-e15tagg",
+        "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Tier 3",
         "fuel_type": "Diesel"
       }
@@ -61426,127 +62016,6 @@
     "mapped_database_brands": [
       "John Deere"
     ],
-    "epa_model": "3029T",
-    "normalized_model": "3029T",
-    "first_model_year": 2011,
-    "latest_model_year": 2013,
-    "model_years": [
-      2011,
-      2012,
-      2013
-    ],
-    "engine_families": [
-      "BJDXL02.9139",
-      "CJDXL02.9139",
-      "DJDXL02.9121"
-    ],
-    "engine_codes": [
-      "3029TF270D",
-      "3029TFG80C",
-      "3029TFU80C"
-    ],
-    "certificates": [
-      "BJDXL02.9139-001",
-      "CJDXL02.9139-010",
-      "DJDXL02.9121-022"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable",
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 35,
-    "rated_power_kw_max": 48,
-    "displacements_l": [
-      2.94
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "John Deere",
-        "model": "3029TFG20",
-        "slug": "john-deere-3029tfg20-nc-40kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "3029TFG89",
-        "slug": "john-deere-3029tfg89-t3-35kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "3029TFG89",
-        "slug": "john-deere-3029tfg89-t3iiia-30kva",
-        "similarity": 0.714
-      }
-    ]
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "4024H",
-    "normalized_model": "4024H",
-    "first_model_year": 2011,
-    "latest_model_year": 2013,
-    "model_years": [
-      2011,
-      2012,
-      2013
-    ],
-    "engine_families": [
-      "BJDXL04.5144",
-      "CJDXL03.0113",
-      "DJDXL04.5141"
-    ],
-    "engine_codes": [
-      "4024HF285B"
-    ],
-    "certificates": [
-      "BJDXL04.5144-003",
-      "CJDXL03.0113-025",
-      "DJDXL04.5141-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 60,
-    "rated_power_kw_max": 60,
-    "displacements_l": [
-      2.44
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
     "epa_model": "4024T",
     "normalized_model": "4024T",
     "first_model_year": 2012,
@@ -61591,350 +62060,6 @@
     "match_status": "not_found",
     "database_matches": [],
     "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "4045H",
-    "normalized_model": "4045H",
-    "first_model_year": 2011,
-    "latest_model_year": 2013,
-    "model_years": [
-      2011,
-      2012,
-      2013
-    ],
-    "engine_families": [
-      "BJDXL04.5144",
-      "CJDXL04.5119",
-      "CJDXL04.5141",
-      "CJDXL06.8120",
-      "CJDXL13.5103",
-      "DJDXL04.5141"
-    ],
-    "engine_codes": [
-      "4045HF280D",
-      "4045HF285H",
-      "4045HF285I",
-      "4045HF285J",
-      "4045HF285K",
-      "4045HF485E",
-      "4045HFG81B",
-      "4045HFG82D",
-      "4045HFG82E",
-      "4045HFG82G",
-      "4045HFG82K",
-      "4045HFG85A",
-      "4045HFS80",
-      "4045HFS82",
-      "4045HFS83",
-      "4045HFS85B",
-      "4045HFS86B",
-      "4045HFS87B",
-      "4045HFS88B",
-      "4045HFU81B",
-      "4045HFU82D",
-      "4045HFU82E",
-      "4045HFU82G"
-    ],
-    "certificates": [
-      "BJDXL04.5144-003",
-      "CJDXL04.5119-015",
-      "CJDXL04.5141-027",
-      "CJDXL06.8120-016",
-      "CJDXL13.5103-020",
-      "DJDXL04.5141-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 65,
-    "rated_power_kw_max": 147,
-    "displacements_l": [
-      4.525
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "John Deere",
-        "model": "4045HF280",
-        "slug": "john-deere-4045hf280-t3-80kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "4045HF285",
-        "slug": "john-deere-4045hf285-t3-100kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "4045HF285",
-        "slug": "john-deere-4045hf285-t3-125kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "4045HFG04",
-        "slug": "john-deere-4045hfg04-ft4-60kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "4045HFG04",
-        "slug": "john-deere-4045hfg04-ft4-75kva",
-        "similarity": 0.714
-      }
-    ]
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "4045T",
-    "normalized_model": "4045T",
-    "first_model_year": 2011,
-    "latest_model_year": 2013,
-    "model_years": [
-      2011,
-      2012,
-      2013
-    ],
-    "engine_families": [
-      "BJDXL04.5144",
-      "CJDXL04.5107",
-      "CJDXL04.5112",
-      "CJDXL04.5130",
-      "DJDXL04.5130",
-      "DJDXL04.5141",
-      "DJDXL04.5214"
-    ],
-    "engine_codes": [
-      "4045TF280D",
-      "4045TF280E",
-      "4045TF285E",
-      "4045TF290B",
-      "4045TF290J"
-    ],
-    "certificates": [
-      "BJDXL04.5144-003",
-      "CJDXL04.5107-017",
-      "CJDXL04.5112-018",
-      "CJDXL04.5130-005",
-      "DJDXL04.5130-014",
-      "DJDXL04.5141-003",
-      "DJDXL04.5214-004"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 3",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable",
-      "Option 1 (37-56kW)"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 55,
-    "rated_power_kw_max": 74,
-    "displacements_l": [
-      4.525
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "John Deere",
-        "model": "4045TF280",
-        "slug": "john-deere-4045tf280-t3-70kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "4045TF285",
-        "slug": "john-deere-4045tf285-t3-80kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "4045TF290",
-        "slug": "john-deere-4045tf290-t3-60kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "4045TFG03",
-        "slug": "john-deere-4045tfg03-ft4-55kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "4045TFG20",
-        "slug": "john-deere-4045tfg20-nc-80kva",
-        "similarity": 0.714
-      }
-    ]
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "5030H",
-    "normalized_model": "5030H",
-    "first_model_year": 2011,
-    "latest_model_year": 2013,
-    "model_years": [
-      2011,
-      2012,
-      2013
-    ],
-    "engine_families": [
-      "BJDXL04.5144",
-      "CJDXL03.0113",
-      "DJDXL04.5141"
-    ],
-    "engine_codes": [
-      "5030HF285G"
-    ],
-    "certificates": [
-      "BJDXL04.5144-003",
-      "CJDXL03.0113-025",
-      "DJDXL04.5141-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 72,
-    "rated_power_kw_max": 72,
-    "displacements_l": [
-      3.0500000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Deere & Company",
-    "mapped_database_brands": [
-      "John Deere"
-    ],
-    "epa_model": "6090H",
-    "normalized_model": "6090H",
-    "first_model_year": 2012,
-    "latest_model_year": 2013,
-    "model_years": [
-      2012,
-      2013
-    ],
-    "engine_families": [
-      "CJDXL09.0114",
-      "DJDXL09.0114"
-    ],
-    "engine_codes": [
-      "6090HF484A",
-      "6090HF484B",
-      "6090HF484C",
-      "6090HF484D",
-      "6090HFG84B",
-      "6090HFG84D",
-      "6090HFG84F",
-      "6090HFG84G",
-      "6090HFG84H",
-      "6090HFG84I",
-      "6090HFG86A",
-      "6090HFG86C",
-      "6090HFG86E",
-      "6090HFS85B",
-      "6090HFS86B",
-      "6090HFU84B",
-      "6090HFU84D"
-    ],
-    "certificates": [
-      "CJDXL09.0114-019",
-      "DJDXL09.0114-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 229,
-    "rated_power_kw_max": 345,
-    "displacements_l": [
-      8.984
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "John Deere",
-        "model": "6090HF484",
-        "slug": "john-deere-6090hf484-t3-310kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "6090HF484",
-        "slug": "john-deere-6090hf484-t3-340kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "6090HFG06",
-        "slug": "john-deere-6090hfg06-ft4-270kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "6090HFG06",
-        "slug": "john-deere-6090hfg06-ft4-320kva",
-        "similarity": 0.714
-      },
-      {
-        "brand": "John Deere",
-        "model": "6090HFG84",
-        "slug": "john-deere-6090hfg84-nc-300kva",
-        "similarity": 0.714
-      }
-    ]
   },
   {
     "manufacturer": "Discovery Energy, LLC.",
@@ -62417,48 +62542,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "Isuzu Motors Limited",
-    "mapped_database_brands": [
-      "Isuzu"
-    ],
-    "epa_model": "BL-6WG1X",
-    "normalized_model": "BL6WG1X",
-    "first_model_year": 2013,
-    "latest_model_year": 2013,
-    "model_years": [
-      2013
-    ],
-    "engine_families": [
-      "DSZXL15.7LXB"
-    ],
-    "engine_codes": [
-      "6WG1XDLBA-01"
-    ],
-    "certificates": [
-      "DSZXL15.7LXB-009"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Alternate NOx - 2.0"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 397,
-    "rated_power_kw_max": 397,
-    "displacements_l": [
-      15.682
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "Mercedes Benz",
     "mapped_database_brands": [],
     "epa_model": "DMBXL11.9RJB",
@@ -62593,110 +62676,6 @@
     "match_status": "not_found",
     "database_matches": [],
     "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "2506D-E15TAG0",
-    "normalized_model": "2506DE15TAG0",
-    "first_model_year": 2012,
-    "latest_model_year": 2013,
-    "model_years": [
-      2012,
-      2013
-    ],
-    "engine_families": [
-      "CPKXL15.2TAG",
-      "DPKXL15.2TAG"
-    ],
-    "engine_codes": [
-      "2"
-    ],
-    "certificates": [
-      "CPKXL15.2TAG-017",
-      "DPKXL15.2TAG-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 479,
-    "rated_power_kw_max": 479,
-    "displacements_l": [
-      15.213000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Perkins",
-        "model": "2506D-E15TAG1",
-        "slug": "perkins-2506d-e15tag1",
-        "similarity": 0.917
-      }
-    ]
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "2506D-E15TAGG",
-    "normalized_model": "2506DE15TAGG",
-    "first_model_year": 2012,
-    "latest_model_year": 2013,
-    "model_years": [
-      2012,
-      2013
-    ],
-    "engine_families": [
-      "CPKXL15.2TAG",
-      "DPKXL15.2TAG"
-    ],
-    "engine_codes": [
-      "3"
-    ],
-    "certificates": [
-      "CPKXL15.2TAG-017",
-      "DPKXL15.2TAG-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 407,
-    "rated_power_kw_max": 407,
-    "displacements_l": [
-      15.213000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": [
-      {
-        "brand": "Perkins",
-        "model": "2506D-E15TAG1",
-        "slug": "perkins-2506d-e15tag1",
-        "similarity": 0.917
-      }
-    ]
   },
   {
     "manufacturer": "Scania CV AB",
