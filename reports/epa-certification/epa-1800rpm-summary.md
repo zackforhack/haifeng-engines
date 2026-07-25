@@ -19,21 +19,21 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **121**
+- Exact manufacturer/brand matches: **137**
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **50**
+- Reviewed certification aliases: **53**
 - Verified commercial family matches: **34**
-- Exact matches whose database page uses 1800 as its primary RPM: **63**
+- Exact matches whose database page uses 1800 as its primary RPM: **79**
 - Exact model under another database brand: **9**
-- Not represented after reviewed matching rules: **671**
+- Not represented after reviewed matching rules: **652**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **34.8%**
-- Unmatched models with a 2024+ certification: **277**
+- Represented coverage within mapped manufacturers: **37.1%**
+- Unmatched models with a 2024+ certification: **258**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **147**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **128**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -42,6 +42,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 - `Discovery Energy, LLC.` is compared with the existing `Kohler` brand. Rehlko's official [engine warranty page](https://www.engines.rehlko.com/warranty) identifies Discovery Energy as the responsible company and states that Kohler Engines is now Rehlko.
 - `HD Construction Equipment Co., Ltd.` is compared with the existing `Hyundai` brand. Its [official network page](https://www.hd-ce.com/en/network) lists the current company and its engine production and R&D operations.
 - `Caterpillar Inc.` is also compared with `Perkins` for reviewed family-prefix matches. Official Perkins product documentation identifies commercial models such as `1706J-E93TA` and `2406J-E13TA` behind the shorter EPA family names.
+- `Cummins Inc.` exact generator-drive pages retain commercial `G` and `NR2` suffixes. Three reviewed aliases map generic `-G` certification names to existing QSK78, QST30 and QSX15 family pages where displacement, certification tiers and 1800 RPM operation already agree.
 - `FPT Industrial S.p.A.` uses internal EPA certification codes for its Tier 3 engines. Twelve reviewed aliases are mapped to N45, N67 and Cursor 9 commercial pages only where displacement, certification family and published power node agree with FPT's official power-generation brochure.
 - `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's official co-development announcement identifies the six KD commercial engine families manufactured for Kohler generator sets.
 - `Kubota Corporation` EPA model names use certification suffixes such as `-EF` and `-ET`, while Kubota's public generator catalog uses commercial `E4-BG` and `E3-BG` names. Fifteen reviewed aliases require matching displacement, aspiration, emissions tier and Kubota-published 1800 RPM output.
@@ -53,7 +54,6 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 
 | Database brand | 2024+ constant-speed models without represented match |
 |---|---:|
-| Cummins | 24 |
 | Mitsubishi | 16 |
 | FPT | 12 |
 | Perkins | 12 |
@@ -67,6 +67,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Caterpillar | 6 |
 | Kirloskar | 6 |
 | Liebherr | 6 |
+| Cummins | 5 |
 | Kubota | 4 |
 | Weichai | 3 |
 | Volvo Penta | 1 |
@@ -76,7 +77,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | EPA manufacturer | Database brand | EPA models | Exact | Brand prefix | Base trims | Cert. trims | Cert. aliases | Families | Other-brand exact | Not found | Probable |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Rolls-Royce Solutions America Inc | MTU | 155 | 39 | 27 | 0 | 0 | 0 | 0 | 0 | 89 | 19 |
-| Cummins Inc. | Cummins | 80 | 23 | 0 | 0 | 0 | 0 | 13 | 0 | 44 | 11 |
+| Cummins Inc. | Cummins | 80 | 39 | 0 | 0 | 0 | 3 | 13 | 0 | 25 | 6 |
 | Perkins Engines Co Ltd | Perkins | 79 | 6 | 0 | 0 | 0 | 10 | 6 | 6 | 51 | 2 |
 | FPT Industrial S.p.A. | FPT | 68 | 0 | 0 | 0 | 0 | 12 | 0 | 0 | 56 | 0 |
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 55 | 0 |
@@ -133,25 +134,7 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Caterpillar Inc. | 3516E | Tier 2 | 3372 |  |
 | 2026 | Caterpillar Inc. | 5006C | Tier 2 | 887 |  |
 | 2026 | Caterpillar Inc. | 5016C | Tier 2 | 2283 |  |
-| 2026 | Cummins Inc. | 4BT3.3G4 | Interim Tier 4, Tier 3 | 46 |  |
-| 2026 | Cummins Inc. | 4BT3.3G5 | Interim Tier 4, Tier 3 | 51 |  |
-| 2026 | Cummins Inc. | 4BTAA3.3G12 | Tier 3 | 74 |  |
-| 2026 | Cummins Inc. | 4BTAA3.3G17 | Tier 3 | 65 |  |
-| 2026 | Cummins Inc. | 4BTAA3.3G18 | Tier 3 | 53 |  |
-| 2026 | Cummins Inc. | 4BTAA3.3G7 | Tier 3 | 74 |  |
-| 2026 | Cummins Inc. | KD05L04T-6DDS | Tier 3 | 154 |  |
-| 2026 | Cummins Inc. | KD07L06T-6DDS | Tier 3 | 242 |  |
-| 2026 | Cummins Inc. | KD09L06T-6DDS | Tier 3 | 346 |  |
-| 2026 | Cummins Inc. | QSB7-G4 | Tier 3 | 214 |  |
 | 2026 | Cummins Inc. | QSK19-C | Tier 2, Tier 3, Tier 4 (Final or Phase In) | 567 |  |
-| 2026 | Cummins Inc. | QSK23-G7 NR2 | Tier 2 | 910 |  |
-| 2026 | Cummins Inc. | QSK38-G16 | Tier 2 | 1129 | Cummins QSK38-G1 (0.933) |
-| 2026 | Cummins Inc. | QSK50-G22 | Tier 2 | 1682 | Cummins QSK50-G2 (0.933) |
-| 2026 | Cummins Inc. | QSK50-G23 | Tier 2 | 1947 | Cummins QSK50-G2 (0.933) |
-| 2026 | Cummins Inc. | QSK78-G | Tier 2 | 3029 | Cummins QSK78 (0.909) |
-| 2026 | Cummins Inc. | QSK78-G10 | Tier 2 | 2760 | Cummins QSK78 (0.769) |
-| 2026 | Cummins Inc. | QST30-G | Tier 2 | 1111 | Cummins QST30 (0.909) |
-| 2026 | Cummins Inc. | QSX15-G | Interim Tier 4, Tier 2, Tier 3 | 563 | Cummins QSX15 (0.909) |
 | 2026 | Cummins Inc. | S17 | Tier 2 | 1099 |  |
 | 2026 | Deere & Company | 3029 | Tier 3, Tier 4 (Final or Phase In) | 55 |  |
 | 2026 | Deere & Company | 4039 | Tier 4 (Final or Phase In) | 126 |  |
@@ -261,7 +244,6 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2024 | Cummins Inc. | QSK23-C | Tier 2 | 708 | Cummins QSK23 (0.909) |
 | 2024 | Cummins Inc. | QSL | Tier 3 | 346 |  |
 | 2024 | Cummins Inc. | QSM11-C | Tier 3 | 298 |  |
-| 2024 | Cummins Inc. | QSZ13-G9 | Tier 3 | 500 |  |
 | 2024 | Deutz AG | TAD550GE | Tier 3 | 98 |  |
 | 2024 | Deutz AG | TAD551GE | Tier 3 | 114 |  |
 | 2024 | Deutz AG | TAD750GE | Tier 3 | 150 |  |

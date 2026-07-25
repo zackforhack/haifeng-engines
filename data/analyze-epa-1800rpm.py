@@ -75,6 +75,9 @@ CERTIFICATION_ALIASES = {
     ("FPT Industrial S.p.A.", "F4HE0685AJ"): ("FPT", "NEF67 TE3PV"),
     ("FPT Industrial S.p.A.", "F4HE0685FJ"): ("FPT", "NEF67 TE2PV"),
     ("FPT Industrial S.p.A.", "F4HE0685GJ"): ("FPT", "NEF67 TE1PV"),
+    ("Cummins Inc.", "QSK78G"): ("Cummins", "QSK78"),
+    ("Cummins Inc.", "QST30G"): ("Cummins", "QST30"),
+    ("Cummins Inc.", "QSX15G"): ("Cummins", "QSX15"),
     ("Liebherr Machines Bulle SA", "D9812G"): ("Liebherr", "D9812"),
     ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
     ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
@@ -533,6 +536,10 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "- `Caterpillar Inc.` is also compared with `Perkins` for reviewed family-prefix matches. "
         "Official Perkins product documentation identifies commercial models such as "
         "`1706J-E93TA` and `2406J-E13TA` behind the shorter EPA family names.",
+        "- `Cummins Inc.` exact generator-drive pages retain commercial `G` and `NR2` suffixes. "
+        "Three reviewed aliases map generic `-G` certification names to existing QSK78, QST30 "
+        "and QSX15 family pages where displacement, certification tiers and 1800 RPM operation "
+        "already agree.",
         "- `FPT Industrial S.p.A.` uses internal EPA certification codes for its Tier 3 engines. "
         "Twelve reviewed aliases are mapped to N45, N67 and Cursor 9 commercial pages only where "
         "displacement, certification family and published power node agree with FPT's official "
