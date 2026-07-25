@@ -34244,6 +34244,60 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "TYM Corporation",
+    "mapped_database_brands": [
+      "TYM"
+    ],
+    "epa_model": "T3400T-Gen",
+    "normalized_model": "T3400TGEN",
+    "first_model_year": 2023,
+    "latest_model_year": 2024,
+    "model_years": [
+      2023,
+      2024
+    ],
+    "engine_families": [
+      "PTYCL3.41D43",
+      "RTYCL3.41D43"
+    ],
+    "engine_codes": [
+      "T3400T-Gen"
+    ],
+    "certificates": [
+      "PTYCL3.41D43-006",
+      "RTYCL3.41D43-006"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 64,
+    "rated_power_kw_max": 64,
+    "displacements_l": [
+      3.4090000000000003
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "TYM",
+        "model": "T3400T-Gen",
+        "slug": "tym-t3400t-gen",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Cummins Inc.",
     "mapped_database_brands": [
       "Cummins"
@@ -35848,6 +35902,210 @@
         "slug": "perkins-403f-07-c0-7",
         "rpm_rated": 1800,
         "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "TYM Corporation",
+    "mapped_database_brands": [
+      "TYM"
+    ],
+    "epa_model": "T1700-Gen",
+    "normalized_model": "T1700GEN",
+    "first_model_year": 2023,
+    "latest_model_year": 2023,
+    "model_years": [
+      2023
+    ],
+    "engine_families": [
+      "PTYCL2.28A46"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "PTYCL2.28A46-004"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 19,
+    "rated_power_kw_max": 19,
+    "displacements_l": [
+      1.715
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "TYM",
+        "model": "T1700-Gen",
+        "slug": "tym-t1700-gen",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "TYM Corporation",
+    "mapped_database_brands": [
+      "TYM"
+    ],
+    "epa_model": "T2300-Gen",
+    "normalized_model": "T2300GEN",
+    "first_model_year": 2023,
+    "latest_model_year": 2023,
+    "model_years": [
+      2023
+    ],
+    "engine_families": [
+      "PTYCL2.28A46"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "PTYCL2.28A46-004"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 25,
+    "rated_power_kw_max": 25,
+    "displacements_l": [
+      2.287
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "TYM",
+        "model": "T2300-Gen",
+        "slug": "tym-t2300-gen",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "TYM Corporation",
+    "mapped_database_brands": [
+      "TYM"
+    ],
+    "epa_model": "T2300T-Gen",
+    "normalized_model": "T2300TGEN",
+    "first_model_year": 2023,
+    "latest_model_year": 2023,
+    "model_years": [
+      2023
+    ],
+    "engine_families": [
+      "PTYCL2.39A45"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "PTYCL2.39A45-005"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.287
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "TYM",
+        "model": "T2300T-Gen",
+        "slug": "tym-t2300t-gen",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "TYM Corporation",
+    "mapped_database_brands": [
+      "TYM"
+    ],
+    "epa_model": "T2400T-Gen",
+    "normalized_model": "T2400TGEN",
+    "first_model_year": 2023,
+    "latest_model_year": 2023,
+    "model_years": [
+      2023
+    ],
+    "engine_families": [
+      "PTYCL2.39A45"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "PTYCL2.39A45-005"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.392
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "TYM",
+        "model": "T2400T-Gen",
+        "slug": "tym-t2400t-gen",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -61694,49 +61952,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "TYM Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "T3400T-Gen",
-    "normalized_model": "T3400TGEN",
-    "first_model_year": 2023,
-    "latest_model_year": 2024,
-    "model_years": [
-      2023,
-      2024
-    ],
-    "engine_families": [
-      "PTYCL3.41D43",
-      "RTYCL3.41D43"
-    ],
-    "engine_codes": [
-      "T3400T-Gen"
-    ],
-    "certificates": [
-      "PTYCL3.41D43-006",
-      "RTYCL3.41D43-006"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 64,
-    "rated_power_kw_max": 64,
-    "displacements_l": [
-      3.4090000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "Discovery Energy, LLC.",
     "mapped_database_brands": [
       "Kohler"
@@ -61919,166 +62134,6 @@
         "similarity": 0.923
       }
     ]
-  },
-  {
-    "manufacturer": "TYM Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "T1700-Gen",
-    "normalized_model": "T1700GEN",
-    "first_model_year": 2023,
-    "latest_model_year": 2023,
-    "model_years": [
-      2023
-    ],
-    "engine_families": [
-      "PTYCL2.28A46"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "PTYCL2.28A46-004"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 19,
-    "rated_power_kw_max": 19,
-    "displacements_l": [
-      1.715
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "TYM Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "T2300-Gen",
-    "normalized_model": "T2300GEN",
-    "first_model_year": 2023,
-    "latest_model_year": 2023,
-    "model_years": [
-      2023
-    ],
-    "engine_families": [
-      "PTYCL2.28A46"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "PTYCL2.28A46-004"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 25,
-    "rated_power_kw_max": 25,
-    "displacements_l": [
-      2.287
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "TYM Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "T2300T-Gen",
-    "normalized_model": "T2300TGEN",
-    "first_model_year": 2023,
-    "latest_model_year": 2023,
-    "model_years": [
-      2023
-    ],
-    "engine_families": [
-      "PTYCL2.39A45"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "PTYCL2.39A45-005"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.287
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "TYM Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "T2400T-Gen",
-    "normalized_model": "T2400TGEN",
-    "first_model_year": 2023,
-    "latest_model_year": 2023,
-    "model_years": [
-      2023
-    ],
-    "engine_families": [
-      "PTYCL2.39A45"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "PTYCL2.39A45-005"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.392
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
   },
   {
     "manufacturer": "FPT Industrial S.p.A.",

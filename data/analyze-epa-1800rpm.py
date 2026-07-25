@@ -50,6 +50,7 @@ MANUFACTURER_BRANDS = {
     "Shandong Huayuan Laidong Engine Co.,LTD.": {"Laidong"},
     "Societe Internationale des Moteurs-Baudouin": {"Baudouin"},
     "Tianjin Lovol Engines Co., Ltd.": {"Lovol"},
+    "TYM Corporation": {"TYM"},
     "Weichai Power Co.,Ltd.": {"Weichai"},
     "Yanmar Power Technology Co., Ltd.": {"Yanmar"},
     "Zhejiang Xinchai Co., Ltd.": {"Xinchai"},
