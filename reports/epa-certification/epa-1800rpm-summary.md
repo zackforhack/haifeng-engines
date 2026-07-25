@@ -23,17 +23,17 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **16**
+- Reviewed certification aliases: **26**
 - Verified commercial family matches: **34**
 - Exact matches whose database page uses 1800 as its primary RPM: **34**
 - Exact model under another database brand: **9**
-- Not represented after reviewed matching rules: **734**
+- Not represented after reviewed matching rules: **724**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **27.2%**
-- Unmatched models with a 2024+ certification: **340**
+- Represented coverage within mapped manufacturers: **28.4%**
+- Unmatched models with a 2024+ certification: **330**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **210**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **200**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -44,6 +44,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 - `Caterpillar Inc.` is also compared with `Perkins` for reviewed family-prefix matches. Official Perkins product documentation identifies commercial models such as `1706J-E93TA` and `2406J-E13TA` behind the shorter EPA family names.
 - `FPT Industrial S.p.A.` uses internal EPA certification codes for its Tier 3 engines. Twelve reviewed aliases are mapped to N45, N67 and Cursor 9 commercial pages only where displacement, certification family and published power node agree with FPT's official power-generation brochure.
 - `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's official co-development announcement identifies the six KD commercial engine families manufactured for Kohler generator sets.
+- `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append the shared Caterpillar base-engine name in parentheses. Ten reviewed aliases map those records only to Perkins ElectropaK pages with matching family, displacement, emissions tier and manufacturer-published 1800 RPM power node.
 
 ## Generator-Priority Gaps by Brand
 
@@ -51,11 +52,11 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 |---|---:|
 | MTU | 29 |
 | Cummins | 24 |
-| Perkins | 22 |
 | Kubota | 19 |
 | Yanmar | 19 |
 | Mitsubishi | 16 |
 | FPT | 12 |
+| Perkins | 12 |
 | Isuzu | 11 |
 | Deutz | 10 |
 | Baudouin | 9 |
@@ -74,7 +75,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Rolls-Royce Solutions America Inc | MTU | 155 | 10 | 27 | 0 | 0 | 0 | 0 | 0 | 118 | 17 |
 | Cummins Inc. | Cummins | 80 | 23 | 0 | 0 | 0 | 0 | 13 | 0 | 44 | 11 |
-| Perkins Engines Co Ltd | Perkins | 79 | 6 | 0 | 0 | 0 | 0 | 6 | 6 | 61 | 2 |
+| Perkins Engines Co Ltd | Perkins | 79 | 6 | 0 | 0 | 0 | 10 | 6 | 6 | 51 | 2 |
 | FPT Industrial S.p.A. | FPT | 68 | 0 | 0 | 0 | 0 | 12 | 0 | 0 | 56 | 0 |
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 55 | 0 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 2 | 0 | 0 | 44 | 3 | 0 | 0 | 7 | 0 |
@@ -234,21 +235,11 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S4S | Interim Tier 4, Tier 3 | 35 |  |
 | 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S4S-DTB | Interim Tier 4, Tier 3 | 45 |  |
 | 2026 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | S6R-PTAW | Tier 2 | 685 | Mitsubishi S6R-PTA (0.923) |
-| 2026 | Perkins Engines Co Ltd | 1104D-44T(C4.4) | Tier 3 | 64 |  |
-| 2026 | Perkins Engines Co Ltd | 1104D-E44T(C4.4) | Tier 3 | 71 |  |
-| 2026 | Perkins Engines Co Ltd | 1104D-E44TA(C4.4) | Tier 3 | 120 |  |
-| 2026 | Perkins Engines Co Ltd | 1106D-E70TA / C7.1 | Tier 3 | 235 |  |
-| 2026 | Perkins Engines Co Ltd | 1204J-E44TTA(C4.4) | Tier 4 (Final or Phase In) | 129 |  |
 | 2026 | Perkins Engines Co Ltd | 1206F-E70TA(C7.1) | Tier 4 (Final or Phase In) | 122 |  |
 | 2026 | Perkins Engines Co Ltd | 1206F-E70TTA(C7.1) | Tier 4 (Final or Phase In) | 239 |  |
-| 2026 | Perkins Engines Co Ltd | 1206J-E70TTA(C7.1) | Tier 4 (Final or Phase In) | 239 |  |
 | 2026 | Perkins Engines Co Ltd | 402F-05(C0.5) | Tier 4 (Final or Phase In) | 4 |  |
-| 2026 | Perkins Engines Co Ltd | 403D-11(C1.1) | Tier 4 (Final or Phase In) | 12 |  |
 | 2026 | Perkins Engines Co Ltd | 403F-07(C0.7) | Tier 4 (Final or Phase In) | 7 |  |
-| 2026 | Perkins Engines Co Ltd | 403F-11(C1.1) | Tier 4 (Final or Phase In) | 11 |  |
 | 2026 | Perkins Engines Co Ltd | 403F-15(C1.5) | Tier 4 (Final or Phase In) | 15 |  |
-| 2026 | Perkins Engines Co Ltd | 404D-22TA(C2.2) | Interim Tier 4 | 36 |  |
-| 2026 | Perkins Engines Co Ltd | 404J-E22TA(C2.2) | Tier 4 (Final or Phase In) | 50 |  |
 | 2026 | Perkins Engines Co Ltd | C1.5 | Tier 4 (Final or Phase In) | 18 |  |
 | 2026 | Perkins Engines Co Ltd | C2.2 | Interim Tier 4, Tier 4 (Final or Phase In) | 36 |  |
 | 2026 | Perkins Engines Co Ltd | C7.1 | Interim Tier 4, Tier 4 (Final or Phase In) | 180 |  |
@@ -272,6 +263,16 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Societe Internationale des Moteurs-Baudouin | 20M55 | Tier 2 | 4550 |  |
 | 2026 | Societe Internationale des Moteurs-Baudouin | 20M61 | Tier 2 | 5450 |  |
 | 2026 | Societe Internationale des Moteurs-Baudouin | 6M33 | Tier 2 | 726 |  |
+| 2026 | Societe Internationale des Moteurs-Baudouin | 8M33 | Tier 2 | 946 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 3MTGAG | Interim Tier 4, Tier 4 (Final or Phase In) | 28 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 3MTGP | Interim Tier 4, Tier 4 (Final or Phase In) | 28 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 3NNGAG | Tier 4 (Final or Phase In) | 22 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 3TNGAG | Tier 3, Tier 4 (Final or Phase In) | 42 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 3TNGP | Interim Tier 4, Tier 3, Tier 4 (Final or Phase In) | 44 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 3TNV76-CL | Tier 4 (Final or Phase In) | 12 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 3TNV88-CL | Tier 4 (Final or Phase In) | 18 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 3TTGAG | Tier 3, Tier 4 (Final or Phase In) | 51 |  |
+| 2026 | Yanmar Power Technology Co., Ltd. | 3TTGP | Interim Tier 4, Tier 3, Tier 4 (Final or Phase In) | 51 |  |
 
 ## Interpretation
 

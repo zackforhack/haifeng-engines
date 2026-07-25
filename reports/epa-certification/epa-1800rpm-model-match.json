@@ -11813,6 +11813,554 @@
     "mapped_database_brands": [
       "Perkins"
     ],
+    "epa_model": "1104D-44T(C4.4)",
+    "normalized_model": "1104D44TC4P4",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GPKXL04.4NL1",
+      "HPKXL04.4NL1",
+      "JPKXL04.4NL1",
+      "KPKXL04.4NL1",
+      "LPKXL04.4NL1",
+      "MPKXL04.4NL1",
+      "NPKXL04.4NL1",
+      "PPKXL04.4NL1",
+      "RPKXL04.4NL1",
+      "SPKXL04.4NL1",
+      "TPKXL04.4NL1"
+    ],
+    "engine_codes": [
+      "3454/1800",
+      "PARENT-3454/1800"
+    ],
+    "certificates": [
+      "GPKXL04.4NL1-005",
+      "HPKXL04.4NL1-001",
+      "JPKXL04.4NL1-016",
+      "KPKXL04.4NL1-009",
+      "LPKXL04.4NL1-019",
+      "MPKXL04.4NL1-006",
+      "NPKXL04.4NL1-007",
+      "PPKXL04.4NL1-013",
+      "RPKXL04.4NL1-041",
+      "SPKXL04.4NL1-014",
+      "TPKXL04.4NL1-003"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; Perkins Specification for distilate diesel fuel."
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 64,
+    "rated_power_kw_max": 64,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1104D-44TG1",
+        "slug": "perkins-1104d-44tg1",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "1104D-E44T(C4.4)",
+    "normalized_model": "1104DE44TC4P4",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FPKXL04.4NP1",
+      "GPKXL04.4NP1",
+      "HPKXL04.4NP1",
+      "JPKXL04.4NP1",
+      "KPKXL04.4NP1",
+      "LPKXL04.4NP1",
+      "MPKXL04.4NP1",
+      "NPKXL04.4NP1",
+      "PPKXL04.4NP1",
+      "RPKXL04.4NP1",
+      "SPKXL04.4NP1",
+      "TPKXL04.4NP1"
+    ],
+    "engine_codes": [
+      "4506/1800",
+      "PARENT-4506/1800"
+    ],
+    "certificates": [
+      "FPKXL04.4NP1-019",
+      "GPKXL04.4NP1-001",
+      "HPKXL04.4NP1-008",
+      "JPKXL04.4NP1-011",
+      "KPKXL04.4NP1-015",
+      "LPKXL04.4NP1-016",
+      "MPKXL04.4NP1-005",
+      "NPKXL04.4NP1-006",
+      "PPKXL04.4NP1-005",
+      "RPKXL04.4NP1-005",
+      "SPKXL04.4NP1-027",
+      "TPKXL04.4NP1-004"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 71,
+    "rated_power_kw_max": 71,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1104D-E44TG1",
+        "slug": "perkins-1104d-e44tg1",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "1104D-E44TA(C4.4)",
+    "normalized_model": "1104DE44TAC4P4",
+    "first_model_year": 2015,
+    "latest_model_year": 2026,
+    "model_years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "FPKXL04.4NR1",
+      "GPKXL04.4NR1",
+      "HPKXL04.4NR1",
+      "JPKXL04.4NR1",
+      "KPKXL04.4NR1",
+      "LPKXL04.4NR1",
+      "MPKXL04.4NR1",
+      "NPKXL04.4NR1",
+      "PPKXL04.4NR1",
+      "RPKXL04.4NR1",
+      "SPKXL04.4NR1",
+      "TPKXL04.4NR1"
+    ],
+    "engine_codes": [
+      "4510/1800",
+      "4514/1800",
+      "PARENT-4514/1800"
+    ],
+    "certificates": [
+      "FPKXL04.4NR1-017",
+      "GPKXL04.4NR1-002",
+      "HPKXL04.4NR1-006",
+      "JPKXL04.4NR1-006",
+      "KPKXL04.4NR1-013",
+      "LPKXL04.4NR1-014",
+      "MPKXL04.4NR1-003",
+      "NPKXL04.4NR1-004",
+      "PPKXL04.4NR1-003",
+      "RPKXL04.4NR1-002",
+      "SPKXL04.4NR1-013",
+      "TPKXL04.4NR1-005"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 98,
+    "rated_power_kw_max": 120,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1104D-E44TAG2",
+        "slug": "perkins-1104d-e44tag2",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "1106D-E70TA / C7.1",
+    "normalized_model": "1106DE70TAC7P1",
+    "first_model_year": 2014,
+    "latest_model_year": 2026,
+    "model_years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "EPKXL07.0PW1",
+      "FPKXL07.0PW1",
+      "GPKXL07.0PW1",
+      "HPKXL07.0PW1",
+      "JPKXL07.0PW1",
+      "KPKXL07.0PW1",
+      "LPKXL07.0PW1",
+      "MPKXL07.0PW1",
+      "NPKXL07.0PW1",
+      "PPKXL07.0PW1",
+      "RPKXL07.0PW1",
+      "SPKXL07.0PW1",
+      "TPKXL07.0PW1"
+    ],
+    "engine_codes": [
+      "4364/1800",
+      "4378/1800",
+      "4390/1800",
+      "4392/1800",
+      "PARENT4364/1800"
+    ],
+    "certificates": [
+      "EPKXL07.0PW1-017",
+      "FPKXL07.0PW1-007",
+      "GPKXL07.0PW1-006",
+      "HPKXL07.0PW1-004",
+      "JPKXL07.0PW1-004",
+      "KPKXL07.0PW1-008",
+      "LPKXL07.0PW1-013",
+      "MPKXL07.0PW1-001",
+      "NPKXL07.0PW1-002",
+      "PPKXL07.0PW1-001",
+      "RPKXL07.0PW1-001",
+      "SPKXL07.0PW1-012",
+      "TPKXL07.0PW1-002"
+    ],
+    "applicable_tiers": [
+      "Tier 3"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 171,
+    "rated_power_kw_max": 235,
+    "displacements_l": [
+      7.014
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1106D-E70TAG5",
+        "slug": "perkins-1106d-e70tag5",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "1204J-E44TTA(C4.4)",
+    "normalized_model": "1204JE44TTAC4P4",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LPKXL04.4SU1",
+      "MPKXL04.4SU1",
+      "NPKXL04.4SU1",
+      "PPKXL04.4SU1",
+      "RPKXL04.4SU1",
+      "SPKXL04.4SU1",
+      "TPKXL04.4SU1"
+    ],
+    "engine_codes": [
+      "6320/1800"
+    ],
+    "certificates": [
+      "LPKXL04.4SU1-004",
+      "MPKXL04.4SU1-032",
+      "NPKXL04.4SU1-019",
+      "PPKXL04.4SU1-043",
+      "RPKXL04.4SU1-034",
+      "SPKXL04.4SU1-018",
+      "TPKXL04.4SU1-015"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 129,
+    "rated_power_kw_max": 129,
+    "displacements_l": [
+      4.399
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1204J-E44TTAG2",
+        "slug": "perkins-1204j-e44ttag2",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "1206J-E70TTA(C7.1)",
+    "normalized_model": "1206JE70TTAC7P1",
+    "first_model_year": 2019,
+    "latest_model_year": 2026,
+    "model_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "KPKXL07.0VM1",
+      "LPKXL07.0VM1",
+      "MPKXL07.0VM1",
+      "NPKXL07.0VM1",
+      "PPKXL07.0VM1",
+      "RPKXL07.0VM1",
+      "SPKXL07.0VM1",
+      "TPKXL07.0VM1"
+    ],
+    "engine_codes": [
+      "4902/1800",
+      "6318/1800",
+      "PARENT-4902/1800"
+    ],
+    "certificates": [
+      "KPKXL07.0VM1-017",
+      "LPKXL07.0VM1-011",
+      "MPKXL07.0VM1-033",
+      "NPKXL07.0VM1-013",
+      "PPKXL07.0VM1-020",
+      "RPKXL07.0VM1-038",
+      "SPKXL07.0VM1-008",
+      "TPKXL07.0VM1-014-R01"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification of Distillate Fuel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 184,
+    "rated_power_kw_max": 239,
+    "displacements_l": [
+      7.014
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "1206J-E70TTAG4",
+        "slug": "perkins-1206j-e70ttag4",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "403D-11(C1.1)",
+    "normalized_model": "403D11C1P1",
+    "first_model_year": 2025,
+    "latest_model_year": 2026,
+    "model_years": [
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "SPKXL01.1LCS",
+      "TPKXL01.1LCS"
+    ],
+    "engine_codes": [
+      "GJ13/1800C",
+      "GJ16/1800C"
+    ],
+    "certificates": [
+      "SPKXL01.1LCS-001",
+      "TPKXL01.1LCS-009"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 12,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "403D-11G",
+        "slug": "perkins-403d-11g",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
     "epa_model": "403D-15",
     "normalized_model": "403D15",
     "first_model_year": 2020,
@@ -11872,6 +12420,78 @@
         "slug": "perkins-403d-15g",
         "rpm_rated": 1500,
         "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 3",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "403F-11(C1.1)",
+    "normalized_model": "403F11C1P1",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LPKXL1.13F2C",
+      "MPKXL01.1F2C",
+      "NPKXL01.1F2C",
+      "PPKXL01.1F2C",
+      "RPKXL01.1F2C",
+      "SPKXL01.1F2C",
+      "TPKXL01.1F2C"
+    ],
+    "engine_codes": [
+      "6600/1800",
+      "6602/1800",
+      "EJ13/1800C",
+      "PARENT-6602/1800"
+    ],
+    "certificates": [
+      "LPKXL1.13F2C-027",
+      "MPKXL01.1F2C-040",
+      "NPKXL01.1F2C-034",
+      "PPKXL01.1F2C-030",
+      "RPKXL01.1F2C-015",
+      "SPKXL01.1F2C-010",
+      "TPKXL01.1F2C-025"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 11,
+    "displacements_l": [
+      1.1320000000000001
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "403F-11G",
+        "slug": "perkins-403f-11g",
+        "rpm_rated": 1500,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -12105,6 +12725,145 @@
         "slug": "perkins-404d-22tag",
         "rpm_rated": 1800,
         "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 4 Interim",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "404D-22TA(C2.2)",
+    "normalized_model": "404D22TAC2P2",
+    "first_model_year": 2020,
+    "latest_model_year": 2026,
+    "model_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "LPKXL2.22TCC",
+      "MPKXL02.2TCC",
+      "NPKXL02.2TCC",
+      "PPKXL02.2TCC",
+      "RPKXL02.2TCC",
+      "SPKXL02.2TCC",
+      "TPKXL02.2TCC"
+    ],
+    "engine_codes": [
+      "PARENT-GR49/1800C"
+    ],
+    "certificates": [
+      "LPKXL2.22TCC-041",
+      "MPKXL02.2TCC-014",
+      "NPKXL02.2TCC-027",
+      "PPKXL02.2TCC-007",
+      "RPKXL02.2TCC-007",
+      "SPKXL02.2TCC-034",
+      "TPKXL02.2TCC-022"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404D-22TAG",
+        "slug": "perkins-404d-22tag",
+        "rpm_rated": 1800,
+        "emissions_standard": "Euro Stage IIIA / U.S. EPA Tier 4 Interim",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Perkins Engines Co Ltd",
+    "mapped_database_brands": [
+      "Perkins"
+    ],
+    "epa_model": "404J-E22TA(C2.2)",
+    "normalized_model": "404JE22TAC2P2",
+    "first_model_year": 2021,
+    "latest_model_year": 2026,
+    "model_years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "MPKXL02.2IR1",
+      "NPKXL02.2IR1",
+      "PPKXL02.2IR1",
+      "RPKXL02.2IR1",
+      "SPKXL02.2IR1",
+      "TPKXL02.2IR1"
+    ],
+    "engine_codes": [
+      "6792/1800",
+      "6824/1800",
+      "PARENT-6792/1800",
+      "PARUS-6824/1800"
+    ],
+    "certificates": [
+      "MPKXL02.2IR1-039",
+      "NPKXL02.2IR1-043",
+      "PPKXL02.2IR1-026",
+      "RPKXL02.2IR1-040",
+      "SPKXL02.2IR1-021",
+      "TPKXL02.2IR1-019"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed",
+      "Variable Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 50,
+    "displacements_l": [
+      2.217
+    ],
+    "match_status": "certification_alias_match",
+    "database_matches": [
+      {
+        "brand": "Perkins",
+        "model": "404J-E22TAG",
+        "slug": "perkins-404j-e22tag",
+        "rpm_rated": 1500,
+        "emissions_standard": "Euro Stage V / U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -32608,379 +33367,6 @@
     "mapped_database_brands": [
       "Perkins"
     ],
-    "epa_model": "1104D-44T(C4.4)",
-    "normalized_model": "1104D44TC4P4",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "GPKXL04.4NL1",
-      "HPKXL04.4NL1",
-      "JPKXL04.4NL1",
-      "KPKXL04.4NL1",
-      "LPKXL04.4NL1",
-      "MPKXL04.4NL1",
-      "NPKXL04.4NL1",
-      "PPKXL04.4NL1",
-      "RPKXL04.4NL1",
-      "SPKXL04.4NL1",
-      "TPKXL04.4NL1"
-    ],
-    "engine_codes": [
-      "3454/1800",
-      "PARENT-3454/1800"
-    ],
-    "certificates": [
-      "GPKXL04.4NL1-005",
-      "HPKXL04.4NL1-001",
-      "JPKXL04.4NL1-016",
-      "KPKXL04.4NL1-009",
-      "LPKXL04.4NL1-019",
-      "MPKXL04.4NL1-006",
-      "NPKXL04.4NL1-007",
-      "PPKXL04.4NL1-013",
-      "RPKXL04.4NL1-041",
-      "SPKXL04.4NL1-014",
-      "TPKXL04.4NL1-003"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; Perkins Specification for distilate diesel fuel."
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 64,
-    "rated_power_kw_max": 64,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "1104D-E44T(C4.4)",
-    "normalized_model": "1104DE44TC4P4",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FPKXL04.4NP1",
-      "GPKXL04.4NP1",
-      "HPKXL04.4NP1",
-      "JPKXL04.4NP1",
-      "KPKXL04.4NP1",
-      "LPKXL04.4NP1",
-      "MPKXL04.4NP1",
-      "NPKXL04.4NP1",
-      "PPKXL04.4NP1",
-      "RPKXL04.4NP1",
-      "SPKXL04.4NP1",
-      "TPKXL04.4NP1"
-    ],
-    "engine_codes": [
-      "4506/1800",
-      "PARENT-4506/1800"
-    ],
-    "certificates": [
-      "FPKXL04.4NP1-019",
-      "GPKXL04.4NP1-001",
-      "HPKXL04.4NP1-008",
-      "JPKXL04.4NP1-011",
-      "KPKXL04.4NP1-015",
-      "LPKXL04.4NP1-016",
-      "MPKXL04.4NP1-005",
-      "NPKXL04.4NP1-006",
-      "PPKXL04.4NP1-005",
-      "RPKXL04.4NP1-005",
-      "SPKXL04.4NP1-027",
-      "TPKXL04.4NP1-004"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 71,
-    "rated_power_kw_max": 71,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "1104D-E44TA(C4.4)",
-    "normalized_model": "1104DE44TAC4P4",
-    "first_model_year": 2015,
-    "latest_model_year": 2026,
-    "model_years": [
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "FPKXL04.4NR1",
-      "GPKXL04.4NR1",
-      "HPKXL04.4NR1",
-      "JPKXL04.4NR1",
-      "KPKXL04.4NR1",
-      "LPKXL04.4NR1",
-      "MPKXL04.4NR1",
-      "NPKXL04.4NR1",
-      "PPKXL04.4NR1",
-      "RPKXL04.4NR1",
-      "SPKXL04.4NR1",
-      "TPKXL04.4NR1"
-    ],
-    "engine_codes": [
-      "4510/1800",
-      "4514/1800",
-      "PARENT-4514/1800"
-    ],
-    "certificates": [
-      "FPKXL04.4NR1-017",
-      "GPKXL04.4NR1-002",
-      "HPKXL04.4NR1-006",
-      "JPKXL04.4NR1-006",
-      "KPKXL04.4NR1-013",
-      "LPKXL04.4NR1-014",
-      "MPKXL04.4NR1-003",
-      "NPKXL04.4NR1-004",
-      "PPKXL04.4NR1-003",
-      "RPKXL04.4NR1-002",
-      "SPKXL04.4NR1-013",
-      "TPKXL04.4NR1-005"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 98,
-    "rated_power_kw_max": 120,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "1106D-E70TA / C7.1",
-    "normalized_model": "1106DE70TAC7P1",
-    "first_model_year": 2014,
-    "latest_model_year": 2026,
-    "model_years": [
-      2014,
-      2015,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "EPKXL07.0PW1",
-      "FPKXL07.0PW1",
-      "GPKXL07.0PW1",
-      "HPKXL07.0PW1",
-      "JPKXL07.0PW1",
-      "KPKXL07.0PW1",
-      "LPKXL07.0PW1",
-      "MPKXL07.0PW1",
-      "NPKXL07.0PW1",
-      "PPKXL07.0PW1",
-      "RPKXL07.0PW1",
-      "SPKXL07.0PW1",
-      "TPKXL07.0PW1"
-    ],
-    "engine_codes": [
-      "4364/1800",
-      "4378/1800",
-      "4390/1800",
-      "4392/1800",
-      "PARENT4364/1800"
-    ],
-    "certificates": [
-      "EPKXL07.0PW1-017",
-      "FPKXL07.0PW1-007",
-      "GPKXL07.0PW1-006",
-      "HPKXL07.0PW1-004",
-      "JPKXL07.0PW1-004",
-      "KPKXL07.0PW1-008",
-      "LPKXL07.0PW1-013",
-      "MPKXL07.0PW1-001",
-      "NPKXL07.0PW1-002",
-      "PPKXL07.0PW1-001",
-      "RPKXL07.0PW1-001",
-      "SPKXL07.0PW1-012",
-      "TPKXL07.0PW1-002"
-    ],
-    "applicable_tiers": [
-      "Tier 3"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; Perkins specification for distilate diesel fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 171,
-    "rated_power_kw_max": 235,
-    "displacements_l": [
-      7.014
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "1204J-E44TTA(C4.4)",
-    "normalized_model": "1204JE44TTAC4P4",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LPKXL04.4SU1",
-      "MPKXL04.4SU1",
-      "NPKXL04.4SU1",
-      "PPKXL04.4SU1",
-      "RPKXL04.4SU1",
-      "SPKXL04.4SU1",
-      "TPKXL04.4SU1"
-    ],
-    "engine_codes": [
-      "6320/1800"
-    ],
-    "certificates": [
-      "LPKXL04.4SU1-004",
-      "MPKXL04.4SU1-032",
-      "NPKXL04.4SU1-019",
-      "PPKXL04.4SU1-043",
-      "RPKXL04.4SU1-034",
-      "SPKXL04.4SU1-018",
-      "TPKXL04.4SU1-015"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 129,
-    "rated_power_kw_max": 129,
-    "displacements_l": [
-      4.399
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
     "epa_model": "1206F-E70TA(C7.1)",
     "normalized_model": "1206FE70TAC7P1",
     "first_model_year": 2018,
@@ -33130,72 +33516,6 @@
     "mapped_database_brands": [
       "Perkins"
     ],
-    "epa_model": "1206J-E70TTA(C7.1)",
-    "normalized_model": "1206JE70TTAC7P1",
-    "first_model_year": 2019,
-    "latest_model_year": 2026,
-    "model_years": [
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "KPKXL07.0VM1",
-      "LPKXL07.0VM1",
-      "MPKXL07.0VM1",
-      "NPKXL07.0VM1",
-      "PPKXL07.0VM1",
-      "RPKXL07.0VM1",
-      "SPKXL07.0VM1",
-      "TPKXL07.0VM1"
-    ],
-    "engine_codes": [
-      "4902/1800",
-      "6318/1800",
-      "PARENT-4902/1800"
-    ],
-    "certificates": [
-      "KPKXL07.0VM1-017",
-      "LPKXL07.0VM1-011",
-      "MPKXL07.0VM1-033",
-      "NPKXL07.0VM1-013",
-      "PPKXL07.0VM1-020",
-      "RPKXL07.0VM1-038",
-      "SPKXL07.0VM1-008",
-      "TPKXL07.0VM1-014-R01"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel; Perkins Specification of Distillate Fuel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 184,
-    "rated_power_kw_max": 239,
-    "displacements_l": [
-      7.014
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
     "epa_model": "402F-05(C0.5)",
     "normalized_model": "402F05C0P5",
     "first_model_year": 2024,
@@ -33234,52 +33554,6 @@
     "rated_power_kw_max": 4,
     "displacements_l": [
       0.508
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "403D-11(C1.1)",
-    "normalized_model": "403D11C1P1",
-    "first_model_year": 2025,
-    "latest_model_year": 2026,
-    "model_years": [
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "SPKXL01.1LCS",
-      "TPKXL01.1LCS"
-    ],
-    "engine_codes": [
-      "GJ13/1800C",
-      "GJ16/1800C"
-    ],
-    "certificates": [
-      "SPKXL01.1LCS-001",
-      "TPKXL01.1LCS-009"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 12,
-    "displacements_l": [
-      1.1320000000000001
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -33342,69 +33616,6 @@
     "rated_power_kw_max": 7,
     "displacements_l": [
       0.762
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "403F-11(C1.1)",
-    "normalized_model": "403F11C1P1",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LPKXL1.13F2C",
-      "MPKXL01.1F2C",
-      "NPKXL01.1F2C",
-      "PPKXL01.1F2C",
-      "RPKXL01.1F2C",
-      "SPKXL01.1F2C",
-      "TPKXL01.1F2C"
-    ],
-    "engine_codes": [
-      "6600/1800",
-      "6602/1800",
-      "EJ13/1800C",
-      "PARENT-6602/1800"
-    ],
-    "certificates": [
-      "LPKXL1.13F2C-027",
-      "MPKXL01.1F2C-040",
-      "NPKXL01.1F2C-034",
-      "PPKXL01.1F2C-030",
-      "RPKXL01.1F2C-015",
-      "SPKXL01.1F2C-010",
-      "TPKXL01.1F2C-025"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 11,
-    "displacements_l": [
-      1.1320000000000001
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -33587,127 +33798,6 @@
     ],
     "rated_power_kw_min": 33,
     "rated_power_kw_max": 33,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "404D-22TA(C2.2)",
-    "normalized_model": "404D22TAC2P2",
-    "first_model_year": 2020,
-    "latest_model_year": 2026,
-    "model_years": [
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "LPKXL2.22TCC",
-      "MPKXL02.2TCC",
-      "NPKXL02.2TCC",
-      "PPKXL02.2TCC",
-      "RPKXL02.2TCC",
-      "SPKXL02.2TCC",
-      "TPKXL02.2TCC"
-    ],
-    "engine_codes": [
-      "PARENT-GR49/1800C"
-    ],
-    "certificates": [
-      "LPKXL2.22TCC-041",
-      "MPKXL02.2TCC-014",
-      "NPKXL02.2TCC-027",
-      "PPKXL02.2TCC-007",
-      "RPKXL02.2TCC-007",
-      "SPKXL02.2TCC-034",
-      "TPKXL02.2TCC-022"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.217
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Perkins Engines Co Ltd",
-    "mapped_database_brands": [
-      "Perkins"
-    ],
-    "epa_model": "404J-E22TA(C2.2)",
-    "normalized_model": "404JE22TAC2P2",
-    "first_model_year": 2021,
-    "latest_model_year": 2026,
-    "model_years": [
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "MPKXL02.2IR1",
-      "NPKXL02.2IR1",
-      "PPKXL02.2IR1",
-      "RPKXL02.2IR1",
-      "SPKXL02.2IR1",
-      "TPKXL02.2IR1"
-    ],
-    "engine_codes": [
-      "6792/1800",
-      "6824/1800",
-      "PARENT-6792/1800",
-      "PARUS-6824/1800"
-    ],
-    "certificates": [
-      "MPKXL02.2IR1-039",
-      "NPKXL02.2IR1-043",
-      "PPKXL02.2IR1-026",
-      "RPKXL02.2IR1-040",
-      "SPKXL02.2IR1-021",
-      "TPKXL02.2IR1-019"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed",
-      "Variable Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 50,
     "displacements_l": [
       2.217
     ],

@@ -78,6 +78,16 @@ CERTIFICATION_ALIASES = {
     ("Liebherr Machines Bulle SA", "D9812G"): ("Liebherr", "D9812"),
     ("Liebherr Machines Bulle SA", "D9816G"): ("Liebherr", "D9816"),
     ("Liebherr Machines Bulle SA", "D9820G"): ("Liebherr", "D9820"),
+    ("Perkins Engines Co Ltd", "403D11C1P1"): ("Perkins", "403D-11G"),
+    ("Perkins Engines Co Ltd", "403F11C1P1"): ("Perkins", "403F-11G"),
+    ("Perkins Engines Co Ltd", "404D22TAC2P2"): ("Perkins", "404D-22TAG"),
+    ("Perkins Engines Co Ltd", "404JE22TAC2P2"): ("Perkins", "404J-E22TAG"),
+    ("Perkins Engines Co Ltd", "1104D44TC4P4"): ("Perkins", "1104D-44TG1"),
+    ("Perkins Engines Co Ltd", "1104DE44TC4P4"): ("Perkins", "1104D-E44TG1"),
+    ("Perkins Engines Co Ltd", "1104DE44TAC4P4"): ("Perkins", "1104D-E44TAG2"),
+    ("Perkins Engines Co Ltd", "1106DE70TAC7P1"): ("Perkins", "1106D-E70TAG5"),
+    ("Perkins Engines Co Ltd", "1204JE44TTAC4P4"): ("Perkins", "1204J-E44TTAG2"),
+    ("Perkins Engines Co Ltd", "1206JE70TTAC7P1"): ("Perkins", "1206J-E70TTAG4"),
 }
 
 REPRESENTED_STATUSES = {
@@ -506,6 +516,10 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "- `Liebherr Machines Bulle SA` is compared with both `Liebherr` and `Kohler`. Liebherr's "
         "official co-development announcement identifies the six KD commercial engine families "
         "manufactured for Kohler generator sets.",
+        "- `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append "
+        "the shared Caterpillar base-engine name in parentheses. Ten reviewed aliases map those "
+        "records only to Perkins ElectropaK pages with matching family, displacement, emissions "
+        "tier and manufacturer-published 1800 RPM power node.",
         "",
         "## Generator-Priority Gaps by Brand",
         "",
