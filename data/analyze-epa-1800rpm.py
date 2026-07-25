@@ -184,9 +184,13 @@ CERTIFICATION_ALIASES = {
     ("Kubota Corporation", "V3300BGEF"): ("Kubota", "V3300-E3-BG"),
     ("Perkins Engines Co Ltd", "C1P1"): ("Perkins", "S773L-F"),
     ("Perkins Engines Co Ltd", "C1P5"): ("Perkins", "403F-15"),
+    ("Perkins Engines Co Ltd", "C0P5"): ("Perkins", "402F-05(C0.5)"),
+    ("Perkins Engines Co Ltd", "C0P7"): ("Perkins", "403F-07(C0.7)"),
+    ("Perkins Engines Co Ltd", "E673LF"): ("Perkins", "403F-07(C0.7)"),
     ("Perkins Engines Co Ltd", "403D11C1P1"): ("Perkins", "403D-11G"),
     ("Perkins Engines Co Ltd", "403F11C1P1"): ("Perkins", "403F-11G"),
     ("Perkins Engines Co Ltd", "403F15C1P5"): ("Perkins", "403F-15"),
+    ("Perkins Engines Co Ltd", "404FE22TAC2P2"): ("Perkins", "404F-E22TA"),
     ("Perkins Engines Co Ltd", "404D22TAC2P2"): ("Perkins", "404D-22TAG"),
     ("Perkins Engines Co Ltd", "404JE22TAC2P2"): ("Perkins", "404J-E22TAG"),
     ("Perkins Engines Co Ltd", "1104D44TC4P4"): ("Perkins", "1104D-44TG1"),
@@ -202,6 +206,8 @@ CERTIFICATION_ALIASES = {
     ("Yanmar Power Technology Co., Ltd.", "3TTGP"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "4TNGAC"): ("Yanmar", "4TNV98C-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "4TNGPC"): ("Yanmar", "4TNV98C-GGE"),
+    ("Yanmar Power Technology Co., Ltd.", "4RTGAC"): ("Yanmar", "4TNV86CT"),
+    ("Yanmar Power Technology Co., Ltd.", "4RTGPC"): ("Yanmar", "4TNV86CT"),
     ("Yanmar Power Technology Co., Ltd.", "4TTGAC"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "4TTGPC"): ("Yanmar", "4TNV98CT-GGE"),
     ("Yanmar Power Technology Co., Ltd.", "3NNGAG"): ("Yanmar", "4TNV88-CL"),
@@ -597,6 +603,14 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         if result["mapped_database_brands"]
         and "Constant Speed" in result["engine_operations"]
     ]
+    next_tier_priority = [
+        result
+        for result in results
+        if result["match_status"] not in REPRESENTED_STATUSES
+        and 2020 <= result["latest_model_year"] <= 2023
+        and result["mapped_database_brands"]
+        and "Constant Speed" in result["engine_operations"]
+    ]
     generator_priority_brands = defaultdict(int)
     for result in generator_priority:
         for brand in result["mapped_database_brands"]:
@@ -648,6 +662,7 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         f"- Models with at least one constant-speed certification: **{len(constant_speed_models):,}**",
         f"- Variable-speed-only models retained for reference: **{len(variable_speed_only_models):,}**",
         f"- Generator-priority review queue (2024+, mapped brand, constant speed): **{len(generator_priority):,}**",
+        f"- Next-tier review queue (2020–2023, mapped brand, constant speed): **{len(next_tier_priority):,}**",
         "",
         "The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use "
         "1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second "
@@ -684,15 +699,15 @@ def markdown_report(results: list[dict], source_rows: int, source_path: Path) ->
         "names. Sixteen reviewed aliases require matching displacement, aspiration, emissions "
         "tier and Kubota-published 1800 RPM output.",
         "- `Perkins Engines Co Ltd` EPA records omit the generator-drive `G` suffix and may append "
-        "the shared Caterpillar base-engine name in parentheses. Thirteen reviewed aliases map those "
-        "records only to Perkins ElectropaK pages with matching family, displacement, emissions "
+        "the shared Caterpillar base-engine name in parentheses. Seventeen reviewed aliases map those "
+        "records only to Perkins commercial pages with matching family, displacement, emissions "
         "tier and manufacturer-published 1800 RPM power node.",
         "- `Rolls-Royce Solutions America Inc` is represented under the `MTU` database brand. "
         "Exact 60 Hz commercial model pages retain MTU's `S`, `3B` and `3D` application suffixes "
         "and use the latest 1800 RPM power node in the EPA workbook, supplemented by public MTU "
         "gendrive specifications and operating instructions where available.",
         "- `Yanmar Power Technology Co., Ltd.` uses several EPA certification configuration "
-        "names that differ from its TNV generator product names. Fifteen reviewed aliases map only "
+        "names that differ from its TNV generator product names. Seventeen reviewed aliases map only "
         "where displacement, aspiration, emissions tier and the certified power node agree with "
         "Yanmar's official generator and industrial-engine documentation.",
         "",
