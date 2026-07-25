@@ -20,17 +20,17 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **350**
+- Exact manufacturer/brand matches: **353**
 - Matches after removing a redundant database brand prefix: **34**
 - Slash-suffixed certification trims represented by a verified base model: **20**
 - Reviewed manufacturer certification trims: **44**
 - Reviewed certification aliases: **219**
 - Fully represented certification groups: **8**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **292**
+- Exact matches whose database page uses 1800 as its primary RPM: **295**
 - Exact model under another database brand: **2**
-- Not represented after reviewed matching rules: **238**
-- Models from mapped manufacturers: **961**
+- Not represented after reviewed matching rules: **235**
+- Models from mapped manufacturers: **964**
 - Represented coverage within mapped manufacturers: **76.0%**
 - Unmatched models with a 2024+ certification: **124**
 - Models with at least one constant-speed certification: **716**
@@ -112,8 +112,8 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Zhejiang Xinchai Co., Ltd. | Xinchai | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Detroit Diesel Corporation | Detroit Diesel | 2 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | 0 |
 | PSA Peugeot Citroen | Unmapped | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
-| Wuxi Kipor Power Co., Ltd. | Unmapped | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
-| ENER-G Rudox LLC | Unmapped | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
+| Wuxi Kipor Power Co., Ltd. | Kipor | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| ENER-G Rudox LLC | Mitsubishi | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | FAW JIEFANG AUTOMOTIVE CO.,LTD,WUXI DIESEL ENGINE WORKS | FAWDE | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Greaves Farymann Diesel GmbH | Unmapped | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 |
 

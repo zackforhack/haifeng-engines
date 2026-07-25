@@ -37336,6 +37336,57 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "ENER-G Rudox LLC",
+    "mapped_database_brands": [
+      "Mitsubishi"
+    ],
+    "epa_model": "S16R-Y2PTAW2-1",
+    "normalized_model": "S16RY2PTAW21",
+    "first_model_year": 2021,
+    "latest_model_year": 2021,
+    "model_years": [
+      2021
+    ],
+    "engine_families": [
+      "MRDXL65.4AAA"
+    ],
+    "engine_codes": [
+      "E-01"
+    ],
+    "certificates": [
+      "MRDXL65.4AAA-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 2180,
+    "rated_power_kw_max": 2180,
+    "displacements_l": [
+      65.37
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Mitsubishi",
+        "model": "S16R-Y2PTAW2-1",
+        "slug": "mitsubishi-s16r-y2ptaw2-1-rudox-tier4f",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "IHI Agri-Tech Corporation",
     "mapped_database_brands": [
       "Perkins",
@@ -53679,6 +53730,114 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Wuxi Kipor Power Co., Ltd.",
+    "mapped_database_brands": [
+      "Kipor"
+    ],
+    "epa_model": "KD488ZA",
+    "normalized_model": "KD488ZA",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BWKPL2.19AAA",
+      "CWKPL2.19AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BWKPL2.19AAA-001",
+      "CWKPL2.19AAA-002"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 27,
+    "rated_power_kw_max": 27,
+    "displacements_l": [
+      2.19
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kipor",
+        "model": "KD488ZA",
+        "slug": "kipor-kd488za",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Wuxi Kipor Power Co., Ltd.",
+    "mapped_database_brands": [
+      "Kipor"
+    ],
+    "epa_model": "KD488ZAG",
+    "normalized_model": "KD488ZAG",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BWKPL2.19AAA",
+      "CWKPL2.19AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BWKPL2.19AAA-001",
+      "CWKPL2.19AAA-002"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 27,
+    "rated_power_kw_max": 27,
+    "displacements_l": [
+      2.19
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Kipor",
+        "model": "KD488ZAG",
+        "slug": "kipor-kd488zag",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Yangdong Co., Ltd.",
     "mapped_database_brands": [
       "Yangdong"
@@ -63608,46 +63767,6 @@
     "probable_database_matches": []
   },
   {
-    "manufacturer": "ENER-G Rudox LLC",
-    "mapped_database_brands": [],
-    "epa_model": "S16R-Y2PTAW2-1",
-    "normalized_model": "S16RY2PTAW21",
-    "first_model_year": 2021,
-    "latest_model_year": 2021,
-    "model_years": [
-      2021
-    ],
-    "engine_families": [
-      "MRDXL65.4AAA"
-    ],
-    "engine_codes": [
-      "E-01"
-    ],
-    "certificates": [
-      "MRDXL65.4AAA-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 2180,
-    "rated_power_kw_max": 2180,
-    "displacements_l": [
-      65.37
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
     "manufacturer": "FPT Industrial S.p.A.",
     "mapped_database_brands": [
       "FPT"
@@ -68574,92 +68693,6 @@
     "rated_power_kw_max": 478,
     "displacements_l": [
       16.353
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Wuxi Kipor Power Co., Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "KD488ZA",
-    "normalized_model": "KD488ZA",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BWKPL2.19AAA",
-      "CWKPL2.19AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BWKPL2.19AAA-001",
-      "CWKPL2.19AAA-002"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 27,
-    "rated_power_kw_max": 27,
-    "displacements_l": [
-      2.19
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Wuxi Kipor Power Co., Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "KD488ZAG",
-    "normalized_model": "KD488ZAG",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BWKPL2.19AAA",
-      "CWKPL2.19AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BWKPL2.19AAA-001",
-      "CWKPL2.19AAA-002"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 27,
-    "rated_power_kw_max": 27,
-    "displacements_l": [
-      2.19
     ],
     "match_status": "not_found",
     "database_matches": [],
