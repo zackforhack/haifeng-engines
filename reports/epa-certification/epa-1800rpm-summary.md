@@ -20,18 +20,18 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **319**
+- Exact manufacturer/brand matches: **325**
 - Matches after removing a redundant database brand prefix: **34**
 - Slash-suffixed certification trims represented by a verified base model: **20**
 - Reviewed manufacturer certification trims: **44**
 - Reviewed certification aliases: **219**
 - Fully represented certification groups: **8**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **261**
+- Exact matches whose database page uses 1800 as its primary RPM: **267**
 - Exact model under another database brand: **2**
-- Not represented after reviewed matching rules: **269**
-- Models from mapped manufacturers: **920**
-- Represented coverage within mapped manufacturers: **76.0%**
+- Not represented after reviewed matching rules: **263**
+- Models from mapped manufacturers: **926**
+- Represented coverage within mapped manufacturers: **76.1%**
 - Unmatched models with a 2024+ certification: **127**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
@@ -98,7 +98,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Societe Internationale des Moteurs-Baudouin | Baudouin | 9 | 2 | 0 | 0 | 0 | 0 | 7 | 0 | 0 | 0 |
 | Lister Petter Limited | Lister Petter | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kirloskar Americas Corporation | Kirloskar | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Shandong Huayuan Laidong Engine Co.,LTD. | Unmapped | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 0 |
+| Shandong Huayuan Laidong Engine Co.,LTD. | Laidong | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tianjin Lovol Engines Co., Ltd. | Lovol | 6 | 0 | 0 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
 | International Motors, LLC | Unmapped | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 0 |
 | TYM Corporation | Unmapped | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 0 |

@@ -47,6 +47,7 @@ MANUFACTURER_BRANDS = {
     "Perkins Engines Co Ltd": {"Perkins"},
     "Rolls-Royce Solutions America Inc": {"MTU"},
     "Scania CV AB": {"Scania"},
+    "Shandong Huayuan Laidong Engine Co.,LTD.": {"Laidong"},
     "Societe Internationale des Moteurs-Baudouin": {"Baudouin"},
     "Tianjin Lovol Engines Co., Ltd.": {"Lovol"},
     "Weichai Power Co.,Ltd.": {"Weichai"},

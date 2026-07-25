@@ -52168,6 +52168,330 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
+    "mapped_database_brands": [
+      "Laidong"
+    ],
+    "epa_model": "4L22D",
+    "normalized_model": "4L22D",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BSHLL2.16DDD",
+      "CSHLL2.16DDD"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BSHLL2.16DDD-005",
+      "CSHLL2.16DDD-005"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 24,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      2.156
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Laidong",
+        "model": "4L22D",
+        "slug": "laidong-4l22d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
+    "mapped_database_brands": [
+      "Laidong"
+    ],
+    "epa_model": "4L22D1",
+    "normalized_model": "4L22D1",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BSHLL2.16DDD",
+      "CSHLL2.16DDD"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BSHLL2.16DDD-005",
+      "CSHLL2.16DDD-005"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 21,
+    "rated_power_kw_max": 21,
+    "displacements_l": [
+      2.156
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Laidong",
+        "model": "4L22D1",
+        "slug": "laidong-4l22d1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
+    "mapped_database_brands": [
+      "Laidong"
+    ],
+    "epa_model": "4L22D2",
+    "normalized_model": "4L22D2",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BSHLL2.16DDD",
+      "CSHLL2.16DDD"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BSHLL2.16DDD-005",
+      "CSHLL2.16DDD-005"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 29,
+    "rated_power_kw_max": 29,
+    "displacements_l": [
+      2.156
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Laidong",
+        "model": "4L22D2",
+        "slug": "laidong-4l22d2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
+    "mapped_database_brands": [
+      "Laidong"
+    ],
+    "epa_model": "KM385D",
+    "normalized_model": "KM385D",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BSHLL1.53DDD",
+      "CSHLL1.53DDD"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BSHLL1.53DDD-003",
+      "CSHLL1.53DDD-003"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 17,
+    "rated_power_kw_max": 17,
+    "displacements_l": [
+      1.532
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Laidong",
+        "model": "KM385D",
+        "slug": "laidong-km385d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
+    "mapped_database_brands": [
+      "Laidong"
+    ],
+    "epa_model": "LL380D",
+    "normalized_model": "LL380D",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BSHLL1.36DDD",
+      "CSHLL1.36DDD"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BSHLL1.36DDD-001",
+      "CSHLL1.36DDD-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 13,
+    "rated_power_kw_max": 13,
+    "displacements_l": [
+      1.357
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Laidong",
+        "model": "LL380D",
+        "slug": "laidong-ll380d",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
+    "mapped_database_brands": [
+      "Laidong"
+    ],
+    "epa_model": "LL380D-1",
+    "normalized_model": "LL380D1",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BSHLL1.36DDD",
+      "CSHLL1.36DDD"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BSHLL1.36DDD-001",
+      "CSHLL1.36DDD-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.357
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Laidong",
+        "model": "LL380D-1",
+        "slug": "laidong-ll380d-1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Yanmar Power Technology Co., Ltd.",
     "mapped_database_brands": [
       "Yanmar"
@@ -67662,264 +67986,6 @@
     "rated_power_kw_max": 478,
     "displacements_l": [
       16.353
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
-    "mapped_database_brands": [],
-    "epa_model": "4L22D",
-    "normalized_model": "4L22D",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BSHLL2.16DDD",
-      "CSHLL2.16DDD"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BSHLL2.16DDD-005",
-      "CSHLL2.16DDD-005"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 24,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      2.156
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
-    "mapped_database_brands": [],
-    "epa_model": "4L22D1",
-    "normalized_model": "4L22D1",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BSHLL2.16DDD",
-      "CSHLL2.16DDD"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BSHLL2.16DDD-005",
-      "CSHLL2.16DDD-005"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 21,
-    "rated_power_kw_max": 21,
-    "displacements_l": [
-      2.156
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
-    "mapped_database_brands": [],
-    "epa_model": "4L22D2",
-    "normalized_model": "4L22D2",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BSHLL2.16DDD",
-      "CSHLL2.16DDD"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BSHLL2.16DDD-005",
-      "CSHLL2.16DDD-005"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 29,
-    "rated_power_kw_max": 29,
-    "displacements_l": [
-      2.156
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
-    "mapped_database_brands": [],
-    "epa_model": "KM385D",
-    "normalized_model": "KM385D",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BSHLL1.53DDD",
-      "CSHLL1.53DDD"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BSHLL1.53DDD-003",
-      "CSHLL1.53DDD-003"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 17,
-    "rated_power_kw_max": 17,
-    "displacements_l": [
-      1.532
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
-    "mapped_database_brands": [],
-    "epa_model": "LL380D",
-    "normalized_model": "LL380D",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BSHLL1.36DDD",
-      "CSHLL1.36DDD"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BSHLL1.36DDD-001",
-      "CSHLL1.36DDD-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 13,
-    "rated_power_kw_max": 13,
-    "displacements_l": [
-      1.357
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Shandong Huayuan Laidong Engine Co.,LTD.",
-    "mapped_database_brands": [],
-    "epa_model": "LL380D-1",
-    "normalized_model": "LL380D1",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BSHLL1.36DDD",
-      "CSHLL1.36DDD"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BSHLL1.36DDD-001",
-      "CSHLL1.36DDD-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.357
     ],
     "match_status": "not_found",
     "database_matches": [],
