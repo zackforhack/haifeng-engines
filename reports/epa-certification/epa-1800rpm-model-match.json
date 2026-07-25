@@ -51741,6 +51741,222 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Lion (China) Engine Science and Technology Co.,Ltd.",
+    "mapped_database_brands": [
+      "Lion"
+    ],
+    "epa_model": "LN490DZL",
+    "normalized_model": "LN490DZL",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BLESL2.67AAA",
+      "CLESL2.67AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BLESL2.67AAA-001",
+      "CLESL2.67AAA-001"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 36,
+    "rated_power_kw_max": 36,
+    "displacements_l": [
+      2.672
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Lion",
+        "model": "LN490DZL",
+        "slug": "lion-ln490dzl",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Lion (China) Engine Science and Technology Co.,Ltd.",
+    "mapped_database_brands": [
+      "Lion"
+    ],
+    "epa_model": "LN490DZL-1",
+    "normalized_model": "LN490DZL1",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BLESL2.67AAA",
+      "CLESL2.67AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BLESL2.67AAA-001",
+      "CLESL2.67AAA-001"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 30,
+    "rated_power_kw_max": 30,
+    "displacements_l": [
+      2.672
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Lion",
+        "model": "LN490DZL-1",
+        "slug": "lion-ln490dzl-1",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Lion (China) Engine Science and Technology Co.,Ltd.",
+    "mapped_database_brands": [
+      "Lion"
+    ],
+    "epa_model": "LN490DZL-2",
+    "normalized_model": "LN490DZL2",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BLESL2.67AAA",
+      "CLESL2.67AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BLESL2.67AAA-001",
+      "CLESL2.67AAA-001"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 25,
+    "rated_power_kw_max": 25,
+    "displacements_l": [
+      2.672
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Lion",
+        "model": "LN490DZL-2",
+        "slug": "lion-ln490dzl-2",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Lion (China) Engine Science and Technology Co.,Ltd.",
+    "mapped_database_brands": [
+      "Lion"
+    ],
+    "epa_model": "LN490DZL-3",
+    "normalized_model": "LN490DZL3",
+    "first_model_year": 2011,
+    "latest_model_year": 2012,
+    "model_years": [
+      2011,
+      2012
+    ],
+    "engine_families": [
+      "BLESL2.67AAA",
+      "CLESL2.67AAA"
+    ],
+    "engine_codes": [
+      "N/A"
+    ],
+    "certificates": [
+      "BLESL2.67AAA-001",
+      "CLESL2.67AAA-001"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 20,
+    "rated_power_kw_max": 20,
+    "displacements_l": [
+      2.672
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Lion",
+        "model": "LN490DZL-3",
+        "slug": "lion-ln490dzl-3",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Lister Petter Limited",
     "mapped_database_brands": [
       "Lister Petter"
@@ -67667,178 +67883,6 @@
         "similarity": 0.889
       }
     ]
-  },
-  {
-    "manufacturer": "Lion (China) Engine Science and Technology Co.,Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "LN490DZL",
-    "normalized_model": "LN490DZL",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BLESL2.67AAA",
-      "CLESL2.67AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BLESL2.67AAA-001",
-      "CLESL2.67AAA-001"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 36,
-    "rated_power_kw_max": 36,
-    "displacements_l": [
-      2.672
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Lion (China) Engine Science and Technology Co.,Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "LN490DZL-1",
-    "normalized_model": "LN490DZL1",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BLESL2.67AAA",
-      "CLESL2.67AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BLESL2.67AAA-001",
-      "CLESL2.67AAA-001"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 30,
-    "rated_power_kw_max": 30,
-    "displacements_l": [
-      2.672
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Lion (China) Engine Science and Technology Co.,Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "LN490DZL-2",
-    "normalized_model": "LN490DZL2",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BLESL2.67AAA",
-      "CLESL2.67AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BLESL2.67AAA-001",
-      "CLESL2.67AAA-001"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 25,
-    "rated_power_kw_max": 25,
-    "displacements_l": [
-      2.672
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Lion (China) Engine Science and Technology Co.,Ltd.",
-    "mapped_database_brands": [],
-    "epa_model": "LN490DZL-3",
-    "normalized_model": "LN490DZL3",
-    "first_model_year": 2011,
-    "latest_model_year": 2012,
-    "model_years": [
-      2011,
-      2012
-    ],
-    "engine_families": [
-      "BLESL2.67AAA",
-      "CLESL2.67AAA"
-    ],
-    "engine_codes": [
-      "N/A"
-    ],
-    "certificates": [
-      "BLESL2.67AAA-001",
-      "CLESL2.67AAA-001"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 20,
-    "rated_power_kw_max": 20,
-    "displacements_l": [
-      2.672
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
   },
   {
     "manufacturer": "Mercedes Benz",

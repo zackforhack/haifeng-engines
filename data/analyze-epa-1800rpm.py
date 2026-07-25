@@ -42,6 +42,7 @@ MANUFACTURER_BRANDS = {
     "Kubota Corporation": {"Kubota"},
     "Liebherr Machines Bulle SA": {"Kohler", "Liebherr"},
     "Lister Petter Limited": {"Lister Petter"},
+    "Lion (China) Engine Science and Technology Co.,Ltd.": {"Lion"},
     "MAN Truck & Bus AG": {"MAN"},
     "Mitsubishi Heavy Industries Engine & Turbocharger, Ltd.": {"Mitsubishi"},
     "Motorenfabrik Hatz GmbH & Co. KG": {"Hatz"},
