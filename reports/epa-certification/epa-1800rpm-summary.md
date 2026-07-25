@@ -20,19 +20,19 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **304**
+- Exact manufacturer/brand matches: **313**
 - Matches after removing a redundant database brand prefix: **34**
 - Slash-suffixed certification trims represented by a verified base model: **20**
 - Reviewed manufacturer certification trims: **44**
 - Reviewed certification aliases: **219**
 - Fully represented certification groups: **8**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **246**
+- Exact matches whose database page uses 1800 as its primary RPM: **255**
 - Exact model under another database brand: **2**
-- Not represented after reviewed matching rules: **284**
-- Models from mapped manufacturers: **892**
-- Represented coverage within mapped manufacturers: **76.7%**
-- Unmatched models with a 2024+ certification: **130**
+- Not represented after reviewed matching rules: **275**
+- Models from mapped manufacturers: **911**
+- Represented coverage within mapped manufacturers: **76.1%**
+- Unmatched models with a 2024+ certification: **127**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
 - Generator-priority review queue (2024+, mapped brand, constant speed): **0**
@@ -88,7 +88,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Deutz AG | Deutz | 28 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 17 | 0 |
 | HD Construction Equipment Co., Ltd. | Hyundai | 26 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 16 | 2 |
 | Isuzu Motors Limited | Isuzu | 24 | 14 | 0 | 0 | 0 | 3 | 0 | 0 | 7 | 0 |
-| Daedong Corporation | Unmapped | 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 19 | 0 |
+| Daedong Corporation | Daedong | 19 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | 0 |
 | Deere & Company | John Deere | 19 | 10 | 0 | 0 | 0 | 1 | 5 | 0 | 3 | 0 |
 | Mitsubishi Heavy Industries Engine & Turbocharger, Ltd. | Mitsubishi | 19 | 10 | 0 | 0 | 0 | 6 | 0 | 0 | 3 | 0 |
 | Scania CV AB | Scania | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 11 | 0 |

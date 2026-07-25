@@ -25,6 +25,7 @@ MANUFACTURER_BRANDS = {
     "AB Volvo Penta": {"Volvo Penta"},
     "Caterpillar Inc.": {"Caterpillar"},
     "Cummins Inc.": {"Cummins"},
+    "Daedong Corporation": {"Daedong"},
     "Deere & Company": {"John Deere"},
     "Detroit Diesel Corporation": {"Detroit Diesel"},
     "Deutz AG": {"Deutz"},

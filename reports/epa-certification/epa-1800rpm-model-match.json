@@ -9891,6 +9891,232 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Daedong Corporation",
+    "mapped_database_brands": [
+      "Daedong"
+    ],
+    "epa_model": "3A165LFG",
+    "normalized_model": "3A165LFG",
+    "first_model_year": 2016,
+    "latest_model_year": 2026,
+    "model_years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "GDCLL01.6D7G",
+      "HDCLL01.6D7G",
+      "JDCLL01.6D7G",
+      "KDCLL01.6D7G",
+      "LDCLL01.6D7G",
+      "MDCLL01.6D7G",
+      "NDCLL01.6D7G",
+      "PDCLL01.6D7G",
+      "RDCLL01.6D7G",
+      "SDCLL01.6D7G",
+      "TDCLL01.6D7G"
+    ],
+    "engine_codes": [
+      "3A165LFG-U",
+      "SL17-LEG00",
+      "SL17-LEG01"
+    ],
+    "certificates": [
+      "GDCLL01.6D7G-004",
+      "HDCLL01.6D7G-007",
+      "JDCLL01.6D7G-004",
+      "KDCLL01.6D7G-008",
+      "LDCLL01.6D7G-003",
+      "MDCLL01.6D7G-004",
+      "NDCLL01.6D7G-002",
+      "PDCLL01.6D7G-003",
+      "RDCLL01.6D7G-003",
+      "SDCLL01.6D7G-006",
+      "TDCLL01.6D7G-012"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.6480000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Daedong",
+        "model": "3A165LFG",
+        "slug": "daedong-3a165lfg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Daedong Corporation",
+    "mapped_database_brands": [
+      "Daedong"
+    ],
+    "epa_model": "3C100G",
+    "normalized_model": "3C100G",
+    "first_model_year": 2012,
+    "latest_model_year": 2026,
+    "model_years": [
+      2012,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "CDCLL01.0D5G",
+      "GDCLL01.0D5G",
+      "HDCLL01.0D5G",
+      "JDCLL01.0D5G",
+      "KDCLL01.0D5G",
+      "LDCLL01.0D5G",
+      "MDCLL01.0D5G",
+      "NDCLL01.0D5G",
+      "PDCLL01.0D5G",
+      "RDCLL01.0D5G",
+      "SDCLL01.0D5G",
+      "TDCLL01.0D5G"
+    ],
+    "engine_codes": [
+      "3C100LWEG-U1",
+      "3C100LWG",
+      "3C100LWG-E",
+      "SL10-LEG00",
+      "SL10-LEG01"
+    ],
+    "certificates": [
+      "CDCLL01.0D5G-002",
+      "GDCLL01.0D5G-003",
+      "HDCLL01.0D5G-002",
+      "JDCLL01.0D5G-002",
+      "KDCLL01.0D5G-007",
+      "LDCLL01.0D5G-007",
+      "MDCLL01.0D5G-003",
+      "NDCLL01.0D5G-001",
+      "PDCLL01.0D5G-002",
+      "RDCLL01.0D5G-002",
+      "SDCLL01.0D5G-001",
+      "TDCLL01.0D5G-002"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 10,
+    "rated_power_kw_max": 10,
+    "displacements_l": [
+      1.0070000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Daedong",
+        "model": "3C100G",
+        "slug": "daedong-3c100g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Daedong Corporation",
+    "mapped_database_brands": [
+      "Daedong"
+    ],
+    "epa_model": "3L123G",
+    "normalized_model": "3L123G",
+    "first_model_year": 2025,
+    "latest_model_year": 2026,
+    "model_years": [
+      2025,
+      2026
+    ],
+    "engine_families": [
+      "SDCLL01.2D8G",
+      "TDCLL01.2D8G"
+    ],
+    "engine_codes": [
+      "0900-1894",
+      "1200-1894"
+    ],
+    "certificates": [
+      "SDCLL01.2D8G-009",
+      "TDCLL01.2D8G-004"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 9,
+    "rated_power_kw_max": 12,
+    "displacements_l": [
+      1.233
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Daedong",
+        "model": "3L123G",
+        "slug": "daedong-3l123g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Deere & Company",
     "mapped_database_brands": [
       "John Deere"
@@ -35069,6 +35295,64 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Daedong Corporation",
+    "mapped_database_brands": [
+      "Daedong"
+    ],
+    "epa_model": "3A165G",
+    "normalized_model": "3A165G",
+    "first_model_year": 2012,
+    "latest_model_year": 2023,
+    "model_years": [
+      2012,
+      2023
+    ],
+    "engine_families": [
+      "CDCLL02.2D7G",
+      "PDCLL01.6D7G"
+    ],
+    "engine_codes": [
+      "3A165LWG",
+      "3A165LWG-E",
+      "SL17-LEG00",
+      "SL17-LEG01"
+    ],
+    "certificates": [
+      "CDCLL02.2D7G-003",
+      "PDCLL01.6D7G-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4",
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 18,
+    "rated_power_kw_max": 18,
+    "displacements_l": [
+      1.6480000000000001
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Daedong",
+        "model": "3A165G",
+        "slug": "daedong-3a165g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4 / U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Kubota Corporation",
     "mapped_database_brands": [
       "Kubota"
@@ -38548,6 +38832,114 @@
         "slug": "volvo-penta-tad1642ge-b",
         "rpm_rated": 1500,
         "emissions_standard": "Euro Stage II / U.S. EPA Tier 2",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Daedong Corporation",
+    "mapped_database_brands": [
+      "Daedong"
+    ],
+    "epa_model": "3FTG",
+    "normalized_model": "3FTG",
+    "first_model_year": 2018,
+    "latest_model_year": 2019,
+    "model_years": [
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "JDCLL01.8FTG",
+      "KDCLL01.8FTG"
+    ],
+    "engine_codes": [
+      "2500/1894"
+    ],
+    "certificates": [
+      "JDCLL01.8FTG-008",
+      "KDCLL01.8FTG-003"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 25,
+    "rated_power_kw_max": 25,
+    "displacements_l": [
+      1.826
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Daedong",
+        "model": "3FTG",
+        "slug": "daedong-3ftg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Daedong Corporation",
+    "mapped_database_brands": [
+      "Daedong"
+    ],
+    "epa_model": "4FTG",
+    "normalized_model": "4FTG",
+    "first_model_year": 2018,
+    "latest_model_year": 2019,
+    "model_years": [
+      2018,
+      2019
+    ],
+    "engine_families": [
+      "JDCLL02.4FTG",
+      "KDCLL02.4FTG"
+    ],
+    "engine_codes": [
+      "3700/1894"
+    ],
+    "certificates": [
+      "JDCLL02.4FTG-009",
+      "KDCLL02.4FTG-005"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 37,
+    "rated_power_kw_max": 37,
+    "displacements_l": [
+      2.435
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Daedong",
+        "model": "4FTG",
+        "slug": "daedong-4ftg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
         "fuel_type": "Diesel"
       }
     ],
@@ -49254,6 +49646,161 @@
     "probable_database_matches": []
   },
   {
+    "manufacturer": "Daedong Corporation",
+    "mapped_database_brands": [
+      "Daedong"
+    ],
+    "epa_model": "3C093G",
+    "normalized_model": "3C093G",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CDCLL.927D5G"
+    ],
+    "engine_codes": [
+      "3C093LWG1"
+    ],
+    "certificates": [
+      "CDCLL.927D5G-001"
+    ],
+    "applicable_tiers": [
+      "Tier 4 (Final or Phase In)"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 9,
+    "rated_power_kw_max": 9,
+    "displacements_l": [
+      0.928
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Daedong",
+        "model": "3C093G",
+        "slug": "daedong-3c093g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Final Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Daedong Corporation",
+    "mapped_database_brands": [
+      "Daedong"
+    ],
+    "epa_model": "4A220G",
+    "normalized_model": "4A220G",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CDCLL02.2D7G"
+    ],
+    "engine_codes": [
+      "4A220LWG",
+      "4A220LWG-E"
+    ],
+    "certificates": [
+      "CDCLL02.2D7G-003"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 24,
+    "rated_power_kw_max": 24,
+    "displacements_l": [
+      2.197
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Daedong",
+        "model": "4A220G",
+        "slug": "daedong-4a220g",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
+    "manufacturer": "Daedong Corporation",
+    "mapped_database_brands": [
+      "Daedong"
+    ],
+    "epa_model": "4A220TG",
+    "normalized_model": "4A220TG",
+    "first_model_year": 2012,
+    "latest_model_year": 2012,
+    "model_years": [
+      2012
+    ],
+    "engine_families": [
+      "CDCLL02.2DTG"
+    ],
+    "engine_codes": [
+      "4A220TLWG",
+      "4A220TLWG-E"
+    ],
+    "certificates": [
+      "CDCLL02.2DTG-004"
+    ],
+    "applicable_tiers": [
+      "Interim Tier 4"
+    ],
+    "compliance_standards": [
+      "Not Applicable"
+    ],
+    "fuels": [
+      "7-15 ppm Ultra Low Sulfur Diesel"
+    ],
+    "engine_operations": [
+      "Constant Speed"
+    ],
+    "rated_power_kw_min": 30,
+    "rated_power_kw_max": 30,
+    "displacements_l": [
+      2.197
+    ],
+    "match_status": "exact_brand_match",
+    "database_matches": [
+      {
+        "brand": "Daedong",
+        "model": "4A220TG",
+        "slug": "daedong-4a220tg",
+        "rpm_rated": 1800,
+        "emissions_standard": "U.S. EPA Interim Tier 4",
+        "fuel_type": "Diesel"
+      }
+    ],
+    "probable_database_matches": []
+  },
+  {
     "manufacturer": "Deere & Company",
     "mapped_database_brands": [
       "John Deere"
@@ -52710,156 +53257,9 @@
   },
   {
     "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "3A165LFG",
-    "normalized_model": "3A165LFG",
-    "first_model_year": 2016,
-    "latest_model_year": 2026,
-    "model_years": [
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
+    "mapped_database_brands": [
+      "Daedong"
     ],
-    "engine_families": [
-      "GDCLL01.6D7G",
-      "HDCLL01.6D7G",
-      "JDCLL01.6D7G",
-      "KDCLL01.6D7G",
-      "LDCLL01.6D7G",
-      "MDCLL01.6D7G",
-      "NDCLL01.6D7G",
-      "PDCLL01.6D7G",
-      "RDCLL01.6D7G",
-      "SDCLL01.6D7G",
-      "TDCLL01.6D7G"
-    ],
-    "engine_codes": [
-      "3A165LFG-U",
-      "SL17-LEG00",
-      "SL17-LEG01"
-    ],
-    "certificates": [
-      "GDCLL01.6D7G-004",
-      "HDCLL01.6D7G-007",
-      "JDCLL01.6D7G-004",
-      "KDCLL01.6D7G-008",
-      "LDCLL01.6D7G-003",
-      "MDCLL01.6D7G-004",
-      "NDCLL01.6D7G-002",
-      "PDCLL01.6D7G-003",
-      "RDCLL01.6D7G-003",
-      "SDCLL01.6D7G-006",
-      "TDCLL01.6D7G-012"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.6480000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "3C100G",
-    "normalized_model": "3C100G",
-    "first_model_year": 2012,
-    "latest_model_year": 2026,
-    "model_years": [
-      2012,
-      2016,
-      2017,
-      2018,
-      2019,
-      2020,
-      2021,
-      2022,
-      2023,
-      2024,
-      2025,
-      2026
-    ],
-    "engine_families": [
-      "CDCLL01.0D5G",
-      "GDCLL01.0D5G",
-      "HDCLL01.0D5G",
-      "JDCLL01.0D5G",
-      "KDCLL01.0D5G",
-      "LDCLL01.0D5G",
-      "MDCLL01.0D5G",
-      "NDCLL01.0D5G",
-      "PDCLL01.0D5G",
-      "RDCLL01.0D5G",
-      "SDCLL01.0D5G",
-      "TDCLL01.0D5G"
-    ],
-    "engine_codes": [
-      "3C100LWEG-U1",
-      "3C100LWG",
-      "3C100LWG-E",
-      "SL10-LEG00",
-      "SL10-LEG01"
-    ],
-    "certificates": [
-      "CDCLL01.0D5G-002",
-      "GDCLL01.0D5G-003",
-      "HDCLL01.0D5G-002",
-      "JDCLL01.0D5G-002",
-      "KDCLL01.0D5G-007",
-      "LDCLL01.0D5G-007",
-      "MDCLL01.0D5G-003",
-      "NDCLL01.0D5G-001",
-      "PDCLL01.0D5G-002",
-      "RDCLL01.0D5G-002",
-      "SDCLL01.0D5G-001",
-      "TDCLL01.0D5G-002"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 10,
-    "rated_power_kw_max": 10,
-    "displacements_l": [
-      1.0070000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
     "epa_model": "3H4",
     "normalized_model": "3H4",
     "first_model_year": 2026,
@@ -52897,7 +53297,9 @@
   },
   {
     "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Daedong"
+    ],
     "epa_model": "3HT4",
     "normalized_model": "3HT4",
     "first_model_year": 2026,
@@ -52935,7 +53337,9 @@
   },
   {
     "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Daedong"
+    ],
     "epa_model": "3HTI4",
     "normalized_model": "3HTI4",
     "first_model_year": 2026,
@@ -52973,51 +53377,9 @@
   },
   {
     "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "3L123G",
-    "normalized_model": "3L123G",
-    "first_model_year": 2025,
-    "latest_model_year": 2026,
-    "model_years": [
-      2025,
-      2026
+    "mapped_database_brands": [
+      "Daedong"
     ],
-    "engine_families": [
-      "SDCLL01.2D8G",
-      "TDCLL01.2D8G"
-    ],
-    "engine_codes": [
-      "0900-1894",
-      "1200-1894"
-    ],
-    "certificates": [
-      "SDCLL01.2D8G-009",
-      "TDCLL01.2D8G-004"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 9,
-    "rated_power_kw_max": 12,
-    "displacements_l": [
-      1.233
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
     "epa_model": "4HTG4",
     "normalized_model": "4HTG4",
     "first_model_year": 2022,
@@ -53066,7 +53428,9 @@
   },
   {
     "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Daedong"
+    ],
     "epa_model": "4HTIG4",
     "normalized_model": "4HTIG4",
     "first_model_year": 2024,
@@ -53110,7 +53474,9 @@
   },
   {
     "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Daedong"
+    ],
     "epa_model": "4JTAG4",
     "normalized_model": "4JTAG4",
     "first_model_year": 2024,
@@ -57834,7 +58200,9 @@
   },
   {
     "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Daedong"
+    ],
     "epa_model": "3HG4",
     "normalized_model": "3HG4",
     "first_model_year": 2022,
@@ -57883,7 +58251,9 @@
   },
   {
     "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Daedong"
+    ],
     "epa_model": "3HTG4",
     "normalized_model": "3HTG4",
     "first_model_year": 2022,
@@ -57934,7 +58304,9 @@
   },
   {
     "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Daedong"
+    ],
     "epa_model": "3HTIG4",
     "normalized_model": "3HTIG4",
     "first_model_year": 2025,
@@ -59651,7 +60023,9 @@
   },
   {
     "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
+    "mapped_database_brands": [
+      "Daedong"
+    ],
     "epa_model": "4HT4",
     "normalized_model": "4HT4",
     "first_model_year": 2024,
@@ -60567,53 +60941,6 @@
     "rated_power_kw_max": 64,
     "displacements_l": [
       3.4090000000000003
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "3A165G",
-    "normalized_model": "3A165G",
-    "first_model_year": 2012,
-    "latest_model_year": 2023,
-    "model_years": [
-      2012,
-      2023
-    ],
-    "engine_families": [
-      "CDCLL02.2D7G",
-      "PDCLL01.6D7G"
-    ],
-    "engine_codes": [
-      "3A165LWG",
-      "3A165LWG-E",
-      "SL17-LEG00",
-      "SL17-LEG01"
-    ],
-    "certificates": [
-      "CDCLL02.2D7G-003",
-      "PDCLL01.6D7G-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4",
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 18,
-    "rated_power_kw_max": 18,
-    "displacements_l": [
-      1.6480000000000001
     ],
     "match_status": "not_found",
     "database_matches": [],
@@ -62481,92 +62808,6 @@
         "similarity": 0.889
       }
     ]
-  },
-  {
-    "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "3FTG",
-    "normalized_model": "3FTG",
-    "first_model_year": 2018,
-    "latest_model_year": 2019,
-    "model_years": [
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "JDCLL01.8FTG",
-      "KDCLL01.8FTG"
-    ],
-    "engine_codes": [
-      "2500/1894"
-    ],
-    "certificates": [
-      "JDCLL01.8FTG-008",
-      "KDCLL01.8FTG-003"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 25,
-    "rated_power_kw_max": 25,
-    "displacements_l": [
-      1.826
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "4FTG",
-    "normalized_model": "4FTG",
-    "first_model_year": 2018,
-    "latest_model_year": 2019,
-    "model_years": [
-      2018,
-      2019
-    ],
-    "engine_families": [
-      "JDCLL02.4FTG",
-      "KDCLL02.4FTG"
-    ],
-    "engine_codes": [
-      "3700/1894"
-    ],
-    "certificates": [
-      "JDCLL02.4FTG-009",
-      "KDCLL02.4FTG-005"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 37,
-    "rated_power_kw_max": 37,
-    "displacements_l": [
-      2.435
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
   },
   {
     "manufacturer": "IHI Agri-Tech Corporation",
@@ -65997,128 +66238,6 @@
     "rated_power_kw_max": 265,
     "displacements_l": [
       12.777000000000001
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "3C093G",
-    "normalized_model": "3C093G",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CDCLL.927D5G"
-    ],
-    "engine_codes": [
-      "3C093LWG1"
-    ],
-    "certificates": [
-      "CDCLL.927D5G-001"
-    ],
-    "applicable_tiers": [
-      "Tier 4 (Final or Phase In)"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "300-500 ppm Low Sulfur Diesel; 7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 9,
-    "rated_power_kw_max": 9,
-    "displacements_l": [
-      0.928
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "4A220G",
-    "normalized_model": "4A220G",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CDCLL02.2D7G"
-    ],
-    "engine_codes": [
-      "4A220LWG",
-      "4A220LWG-E"
-    ],
-    "certificates": [
-      "CDCLL02.2D7G-003"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 24,
-    "rated_power_kw_max": 24,
-    "displacements_l": [
-      2.197
-    ],
-    "match_status": "not_found",
-    "database_matches": [],
-    "probable_database_matches": []
-  },
-  {
-    "manufacturer": "Daedong Corporation",
-    "mapped_database_brands": [],
-    "epa_model": "4A220TG",
-    "normalized_model": "4A220TG",
-    "first_model_year": 2012,
-    "latest_model_year": 2012,
-    "model_years": [
-      2012
-    ],
-    "engine_families": [
-      "CDCLL02.2DTG"
-    ],
-    "engine_codes": [
-      "4A220TLWG",
-      "4A220TLWG-E"
-    ],
-    "certificates": [
-      "CDCLL02.2DTG-004"
-    ],
-    "applicable_tiers": [
-      "Interim Tier 4"
-    ],
-    "compliance_standards": [
-      "Not Applicable"
-    ],
-    "fuels": [
-      "7-15 ppm Ultra Low Sulfur Diesel"
-    ],
-    "engine_operations": [
-      "Constant Speed"
-    ],
-    "rated_power_kw_min": 30,
-    "rated_power_kw_max": 30,
-    "displacements_l": [
-      2.197
     ],
     "match_status": "not_found",
     "database_matches": [],
