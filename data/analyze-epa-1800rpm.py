@@ -62,6 +62,7 @@ FAMILY_MATCH_BRANDS = {
 # commercial generator-drive variants. The emissions token prevents an
 # unregulated model with the same family prefix from satisfying EPA coverage.
 REVIEWED_FAMILY_MATCHES = {
+    ("Cummins Inc.", "QSL"): ("Cummins", "QSL9", "U.S. EPA Tier 3"),
     ("Deere & Company", "3029"): ("John Deere", "3029", "U.S. EPA"),
     ("Deere & Company", "4045"): ("John Deere", "4045", "U.S. EPA"),
     ("Deere & Company", "6068"): ("John Deere", "6068", "U.S. EPA"),
@@ -95,6 +96,26 @@ REVIEWED_FAMILY_MATCHES = {
         "Societe Internationale des Moteurs-Baudouin",
         "20M33",
     ): ("Baudouin", "20M33", "U.S. EPA Tier 2"),
+    (
+        "Perkins Engines Co Ltd",
+        "C2P2",
+    ): ("Perkins", "404J", "U.S. EPA Final Tier 4"),
+    (
+        "Perkins Engines Co Ltd",
+        "C7P1",
+    ): ("Perkins", "1206F", "U.S. EPA Final Tier 4"),
+    (
+        "Weichai Power Co.,Ltd.",
+        "6M33",
+    ): ("Baudouin", "6M33", "U.S. EPA Tier 2"),
+    (
+        "Weichai Power Co.,Ltd.",
+        "12M33",
+    ): ("Baudouin", "12M33", "U.S. EPA Tier 2"),
+    (
+        "Weichai Power Co.,Ltd.",
+        "16M33",
+    ): ("Baudouin", "16M33", "U.S. EPA Tier 2"),
 }
 
 CERTIFICATION_ALIASES = {
@@ -160,6 +181,9 @@ CERTIFICATION_ALIASES = {
     ("Kubota Corporation", "V3600TBGET"): ("Kubota", "V3600-T-E3-BG"),
     ("Kubota Corporation", "V3800DITBGET"): ("Kubota", "V3800DI-T-E3-BG"),
     ("Kubota Corporation", "Z482D2EF"): ("Kubota", "Z482-E4B-CHN-1"),
+    ("Kubota Corporation", "V3300BGEF"): ("Kubota", "V3300-E3-BG"),
+    ("Perkins Engines Co Ltd", "C1P1"): ("Perkins", "S773L-F"),
+    ("Perkins Engines Co Ltd", "C1P5"): ("Perkins", "403F-15"),
     ("Perkins Engines Co Ltd", "403D11C1P1"): ("Perkins", "403D-11G"),
     ("Perkins Engines Co Ltd", "403F11C1P1"): ("Perkins", "403F-11G"),
     ("Perkins Engines Co Ltd", "403F15C1P5"): ("Perkins", "403F-15"),

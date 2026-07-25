@@ -19,21 +19,21 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **219**
+- Exact manufacturer/brand matches: **227**
 - Matches after removing a redundant database brand prefix: **27**
 - Slash-suffixed certification trims represented by a verified base model: **14**
 - Reviewed manufacturer certification trims: **44**
-- Reviewed certification aliases: **61**
-- Verified commercial family matches: **48**
-- Exact matches whose database page uses 1800 as its primary RPM: **161**
-- Exact model under another database brand: **11**
-- Not represented after reviewed matching rules: **546**
+- Reviewed certification aliases: **64**
+- Verified commercial family matches: **54**
+- Exact matches whose database page uses 1800 as its primary RPM: **169**
+- Exact model under another database brand: **7**
+- Not represented after reviewed matching rules: **533**
 - Models from mapped manufacturers: **834**
-- Represented coverage within mapped manufacturers: **49.5%**
-- Unmatched models with a 2024+ certification: **156**
+- Represented coverage within mapped manufacturers: **51.6%**
+- Unmatched models with a 2024+ certification: **139**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
-- Generator-priority review queue (2024+, mapped brand, constant speed): **26**
+- Generator-priority review queue (2024+, mapped brand, constant speed): **9**
 
 The primary RPM field does not prove that a page lacks 60 Hz ratings; many catalog pages use 1500 RPM as the primary value while storing separate 60 Hz fields. Those pages need a second rating-level comparison before any RPM correction.
 
@@ -56,29 +56,24 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Database brand | 2024+ constant-speed models without represented match |
 |---|---:|
 | Yanmar | 8 |
-| Cummins | 5 |
-| Kubota | 4 |
-| Perkins | 4 |
-| Weichai | 3 |
 | FPT | 1 |
-| Volvo Penta | 1 |
 
 ## Manufacturer Coverage
 
 | EPA manufacturer | Database brand | EPA models | Exact | Brand prefix | Base trims | Cert. trims | Cert. aliases | Families | Other-brand exact | Not found | Probable |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Rolls-Royce Solutions America Inc | MTU | 155 | 39 | 27 | 0 | 0 | 0 | 0 | 0 | 89 | 19 |
-| Cummins Inc. | Cummins | 80 | 39 | 0 | 0 | 0 | 3 | 13 | 0 | 25 | 6 |
-| Perkins Engines Co Ltd | Perkins | 79 | 13 | 0 | 0 | 0 | 11 | 8 | 6 | 41 | 5 |
+| Cummins Inc. | Cummins | 80 | 43 | 0 | 0 | 0 | 3 | 14 | 0 | 20 | 5 |
+| Perkins Engines Co Ltd | Perkins | 79 | 13 | 0 | 0 | 0 | 13 | 10 | 2 | 41 | 5 |
 | FPT Industrial S.p.A. | FPT | 68 | 11 | 0 | 0 | 0 | 12 | 0 | 0 | 45 | 2 |
 | IHI Agri-Tech Corporation | Unmapped | 58 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 53 | 0 |
 | Liebherr Machines Bulle SA | Kohler, Liebherr | 56 | 7 | 0 | 0 | 44 | 4 | 0 | 0 | 1 | 0 |
 | Discovery Energy, LLC. | Kohler | 48 | 3 | 0 | 14 | 0 | 1 | 0 | 0 | 30 | 1 |
 | Yanmar Power Technology Co., Ltd. | Yanmar | 42 | 2 | 0 | 0 | 0 | 9 | 4 | 0 | 27 | 0 |
-| Kubota Corporation | Kubota | 37 | 0 | 0 | 0 | 0 | 15 | 0 | 0 | 22 | 0 |
+| Kubota Corporation | Kubota | 37 | 3 | 0 | 0 | 0 | 16 | 0 | 0 | 18 | 3 |
 | Caterpillar Inc. | Caterpillar | 35 | 21 | 0 | 0 | 0 | 0 | 11 | 0 | 3 | 1 |
 | Motorenfabrik Hatz GmbH & Co. KG | Hatz | 29 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 1 |
-| AB Volvo Penta | Volvo Penta | 28 | 21 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 7 |
+| AB Volvo Penta | Volvo Penta | 28 | 22 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 6 |
 | Deutz AG | Deutz | 28 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 0 |
 | HD Construction Equipment Co., Ltd. | Hyundai | 26 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 18 | 2 |
 | Isuzu Motors Limited | Isuzu | 24 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 13 | 1 |
@@ -102,7 +97,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | MAN Truck & Bus AG | MAN | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
 | Suzhou Jinding Machinery Manufacturing Co., Ltd. | Unmapped | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
 | Volvo Construction Equipment | Unmapped | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
-| Weichai Power Co.,Ltd. | Weichai | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 3 | 0 |
+| Weichai Power Co.,Ltd. | Weichai | 3 | 0 | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 0 |
 | Zhejiang Xinchai Co., Ltd. | Xinchai | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 2 |
 | Detroit Diesel Corporation | Detroit Diesel | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 1 |
 | PSA Peugeot Citroen | Unmapped | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 |
@@ -117,17 +112,7 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 
 | Latest year | Manufacturer | EPA model | Tier | Power kW | Probable database model |
 |---:|---|---|---|---:|---|
-| 2026 | AB Volvo Penta | TWD1683GE-B | Tier 2 | 685 | Volvo Penta TWD1683GE (0.947) |
-| 2026 | Cummins Inc. | QSK19-C | Tier 2, Tier 3, Tier 4 (Final or Phase In) | 567 |  |
-| 2026 | Cummins Inc. | S17 | Tier 2 | 1099 |  |
 | 2026 | FPT Industrial S.p.A. | F4HE9685B*J | Tier 3 | 172 | FPT F4HE9685A*J (0.900) |
-| 2026 | Kubota Corporation | V2403-CR-NT-BG-EF | Tier 4 (Final or Phase In) | 37 |  |
-| 2026 | Kubota Corporation | V2403-CR-NTI-BG-EF | Tier 4 (Final or Phase In) | 54 |  |
-| 2026 | Kubota Corporation | V3300-BG-EF | Interim Tier 4 | 36 |  |
-| 2026 | Kubota Corporation | V3800-CR-TI-BG-ET | Tier 3 | 67 |  |
-| 2026 | Perkins Engines Co Ltd | C1.5 | Tier 4 (Final or Phase In) | 18 |  |
-| 2026 | Perkins Engines Co Ltd | C2.2 | Interim Tier 4, Tier 4 (Final or Phase In) | 36 |  |
-| 2026 | Perkins Engines Co Ltd | C7.1 | Interim Tier 4, Tier 4 (Final or Phase In) | 180 |  |
 | 2026 | Yanmar Power Technology Co., Ltd. | 3MTGAG | Interim Tier 4, Tier 4 (Final or Phase In) | 28 |  |
 | 2026 | Yanmar Power Technology Co., Ltd. | 3MTGP | Interim Tier 4, Tier 4 (Final or Phase In) | 28 |  |
 | 2026 | Yanmar Power Technology Co., Ltd. | 3NNGAG | Tier 4 (Final or Phase In) | 22 |  |
@@ -136,13 +121,6 @@ These are recent constant-speed EPA-certified models from mapped manufacturers t
 | 2026 | Yanmar Power Technology Co., Ltd. | 4WNGAA | Tier 4 (Final or Phase In) | 11 |  |
 | 2026 | Yanmar Power Technology Co., Ltd. | 4WNGPA | Tier 4 (Final or Phase In) | 11 |  |
 | 2026 | Yanmar Power Technology Co., Ltd. | 5ENGAA | Tier 4 (Final or Phase In) | 9 |  |
-| 2025 | Weichai Power Co.,Ltd. | 12M33 | Tier 2 | 1375 |  |
-| 2025 | Weichai Power Co.,Ltd. | 16M33 | Tier 2 | 1850 |  |
-| 2025 | Weichai Power Co.,Ltd. | 6M33 | Tier 2 | 710 |  |
-| 2024 | Cummins Inc. | QSK23-C | Tier 2 | 708 | Cummins QSK23 (0.909) |
-| 2024 | Cummins Inc. | QSL | Tier 3 | 346 |  |
-| 2024 | Cummins Inc. | QSM11-C | Tier 3 | 298 |  |
-| 2024 | Perkins Engines Co Ltd | C1.1 | Tier 4 (Final or Phase In) | 12 |  |
 
 ## Interpretation
 

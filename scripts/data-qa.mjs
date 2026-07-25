@@ -53,9 +53,12 @@ function representativeKwe(e) {
     num(e.prime_power_kwe_50hz) ??
     num(e.standby_power_kwe_60hz) ??
     num(e.prime_power_kwe_60hz) ??
-    num(e.power_kw) ??
     null
   )
+}
+
+function hasRepresentativePower(e) {
+  return representativeKwe(e) != null || num(e.power_kw) != null
 }
 
 function close(actual, expected, tolerance = 0.06) {
@@ -156,7 +159,7 @@ function completeness(e) {
     ['model', bool(e.model), 8],
     ['slug', bool(e.slug), 8],
     ['status', bool(e.status), 5],
-    ['power', representativeKwe(e) != null, 12],
+    ['power', hasRepresentativePower(e), 12],
     ['displacement_l', num(e.displacement_l) != null, 8],
     ['cylinders', num(e.cylinders) != null, 7],
     ['configuration', bool(e.configuration), 6],
