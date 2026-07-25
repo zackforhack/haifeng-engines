@@ -20,18 +20,18 @@ Source workbook: `nonroad-compression-ignition-2011-present (1).xlsx`
 
 - 1800 RPM source rows: **15,773**
 - Distinct EPA manufacturer/model combinations: **970**
-- Exact manufacturer/brand matches: **330**
+- Exact manufacturer/brand matches: **335**
 - Matches after removing a redundant database brand prefix: **34**
 - Slash-suffixed certification trims represented by a verified base model: **20**
 - Reviewed manufacturer certification trims: **44**
 - Reviewed certification aliases: **219**
 - Fully represented certification groups: **8**
 - Verified commercial family matches: **55**
-- Exact matches whose database page uses 1800 as its primary RPM: **272**
+- Exact matches whose database page uses 1800 as its primary RPM: **277**
 - Exact model under another database brand: **2**
-- Not represented after reviewed matching rules: **258**
-- Models from mapped manufacturers: **931**
-- Represented coverage within mapped manufacturers: **76.3%**
+- Not represented after reviewed matching rules: **253**
+- Models from mapped manufacturers: **936**
+- Represented coverage within mapped manufacturers: **76.4%**
 - Unmatched models with a 2024+ certification: **126**
 - Models with at least one constant-speed certification: **716**
 - Variable-speed-only models retained for reference: **230**
@@ -100,7 +100,7 @@ The primary RPM field does not prove that a page lacks 60 Hz ratings; many catal
 | Kirloskar Americas Corporation | Kirloskar | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Shandong Huayuan Laidong Engine Co.,LTD. | Laidong | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tianjin Lovol Engines Co., Ltd. | Lovol | 6 | 0 | 0 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
-| International Motors, LLC | Unmapped | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 0 |
+| International Motors, LLC | International | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | TYM Corporation | TYM | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Daimler Truck AG | Unmapped | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 |
 | Lion (China) Engine Science and Technology Co.,Ltd. | Unmapped | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4 | 0 |

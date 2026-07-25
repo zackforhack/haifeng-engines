@@ -34,6 +34,7 @@ MANUFACTURER_BRANDS = {
     "FPT Industrial S.p.A.": {"FPT"},
     "HD Construction Equipment Co., Ltd.": {"Hyundai"},
     "IHI Agri-Tech Corporation": {"Perkins", "Shibaura"},
+    "International Motors, LLC": {"International"},
     "Isuzu Motors Limited": {"Isuzu"},
     "Kirloskar Americas Corporation": {"Kirloskar"},
     "KUKJE MACHINERY CO., LTD": {"Kukje"},
