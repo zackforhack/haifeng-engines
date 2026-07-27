@@ -4,17 +4,47 @@ import fs from 'fs'
 import path from 'path'
 import os from 'os'
 
+for (const envFile of ['.env.local', '.env']) {
+  try {
+    for (const rawLine of fs.readFileSync(envFile, 'utf8').split(/\r?\n/)) {
+      const line = rawLine.trim()
+      if (!line || line.startsWith('#') || !line.includes('=')) continue
+      const separator = line.indexOf('=')
+      const key = line.slice(0, separator).trim()
+      const value = line
+        .slice(separator + 1)
+        .trim()
+        .replace(/^['"]|['"]$/g, '')
+      if (key && process.env[key] == null) process.env[key] = value
+    }
+  } catch {
+    // Local environment files are optional in CI.
+  }
+}
+
 // John Deere generator-drive spec sheets live at /specsheets/{MODEL}_{REV}.pdf with an
 // irregular revision suffix (e.g. 6090HFG84_A15, 4045HFG85_E). We HEAD-probe a bounded
 // suffix space per model (letters A-H + optional number 0-30, priority-ordered, stop on
-// first hit). Models with no spec sheet fall back to the official Gen-Drive Selection Guide.
-const supabase = createClient('https://ntrysdovwnbegxtjsqkz.supabase.co', process.env.SUPABASE_SERVICE_KEY)
+// first hit). This pass only adds model-specific sheets; it does not relabel or add a
+// selection-guide fallback.
+const APPLY = process.argv.includes('--apply')
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL ?? 'https://ntrysdovwnbegxtjsqkz.supabase.co',
+  APPLY
+    ? process.env.SUPABASE_SERVICE_KEY
+    : process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+)
 const BUCKET = 'engine-pdfs'
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36'
 const SPEC = 'https://www.deere.com/assets/pdfs/common/industries/engines-and-drivetrain/specsheets'
-const GUIDE = 'https://johndeere.widen.net/content/3cbmawpwkm/original/dswt39-gen-drive-selection-guide.pdf?u=ieggj8&use=cnpyd&download=true'
-const GUIDE_PATH = 'john-deere/brochures/gen-drive-selection-guide.pdf'
 const TMP = path.join(os.tmpdir(), 'jd-gd'); fs.mkdirSync(TMP, { recursive: true })
+
+if (APPLY && !process.env.SUPABASE_SERVICE_KEY) {
+  throw new Error('SUPABASE_SERVICE_KEY is required with --apply')
+}
+if (!APPLY && !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+  throw new Error('NEXT_PUBLIC_SUPABASE_ANON_KEY is required for a dry run')
+}
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
 function suffixes() {
@@ -44,21 +74,18 @@ async function getPdf(url) {
   return b.slice(0, 4).toString() === '%PDF' ? b : null
 }
 
-// missing JD engines, grouped by model (duplicates share a doc)
+// John Deere engines without a datasheet, grouped by model (variants share a doc).
 const PAGE = 1000; let pdfs = []; let from = 0
-while (true) { const { data } = await supabase.from('engine_pdfs').select('engine_id').range(from, from + PAGE - 1); pdfs.push(...(data ?? [])); if (!data || data.length < PAGE) break; from += PAGE }
-const withPdf = new Set(pdfs.map(p => p.engine_id))
+while (true) { const { data, error } = await supabase.from('engine_pdfs').select('engine_id, type').range(from, from + PAGE - 1); if (error) throw error; pdfs.push(...(data ?? [])); if (!data || data.length < PAGE) break; from += PAGE }
+const withDatasheet = new Set(pdfs.filter(p => p.type === 'datasheet').map(p => p.engine_id))
 const { data: jd } = await supabase.from('engines').select('id, model').eq('brand', 'John Deere')
 const byModel = {}
-for (const e of jd) { if (withPdf.has(e.id)) continue; (byModel[e.model] ??= []).push(e.id) }
+for (const e of jd) { if (withDatasheet.has(e.id)) continue; (byModel[e.model] ??= []).push(e.id) }
 const models = Object.keys(byModel)
-console.log(`${models.length} JD models missing docs (${Object.values(byModel).flat().length} rows)\n`)
-
-// prep selection-guide brochure once
-const guideBuf = await getPdf(GUIDE)
-if (guideBuf) { const f = path.join(TMP, 'guide.pdf'); fs.writeFileSync(f, guideBuf); await uploadPdf(supabase, BUCKET, f, GUIDE_PATH); console.log(`selection guide ready (${Math.round(guideBuf.length / 1024)}KB)\n`) }
+console.log(`${APPLY ? 'APPLY' : 'DRY RUN'}: ${models.length} John Deere models missing datasheets (${Object.values(byModel).flat().length} rows)\n`)
 
 async function link(ids, storagePath, type, label, bytes) {
+  if (!APPLY) return ids.length
   let n = 0
   for (const id of ids) {
     await supabase.from('engine_pdfs').delete().eq('engine_id', id).eq('storage_path', storagePath)
@@ -68,7 +95,7 @@ async function link(ids, storagePath, type, label, bytes) {
   return n
 }
 
-let spec = 0, broch = 0, links = 0
+let spec = 0, missing = 0, links = 0
 for (const model of models) {
   process.stdout.write(`${model} ... `)
   const url = await findSpec(model)
@@ -76,18 +103,19 @@ for (const model of models) {
     const buf = await getPdf(url)
     if (buf) {
       const storagePath = `john-deere/spec-sheets/${model.toLowerCase()}.pdf`
-      const f = path.join(TMP, `${model}.pdf`); fs.writeFileSync(f, buf)
-      const { ok } = await uploadPdf(supabase, BUCKET, f, storagePath)
-      if (ok) {
+      let uploadOk = true
+      if (APPLY) {
+        const f = path.join(TMP, `${model}.pdf`); fs.writeFileSync(f, buf)
+        const upload = await uploadPdf(supabase, BUCKET, f, storagePath)
+        uploadOk = upload.ok
+      }
+      if (uploadOk) {
         const n = await link(byModel[model], storagePath, 'datasheet', `John Deere ${model} Spec Sheet`, buf.length)
-        console.log(`spec ${url.split('/').pop()} (${Math.round(buf.length / 1024)}KB) -> ${n} link(s)`); spec++; links += n; continue
+        console.log(`official spec ${url.split('/').pop()} (${Math.round(buf.length / 1024)}KB) -> ${APPLY ? `${n} link(s)` : `${n} proposed link(s)`}`); spec++; links += n; continue
       }
     }
   }
-  if (guideBuf) {
-    const n = await link(byModel[model], GUIDE_PATH, 'brochure', 'John Deere Generator Drive Engine Selection Guide', guideBuf.length)
-    console.log(`selection-guide fallback -> ${n} link(s)`); broch++; links += n; continue
-  }
-  console.log('no doc')
+  console.log('no official model-specific sheet found')
+  missing++
 }
-console.log(`\n✓ ${spec} spec sheets · ${broch} guide-fallback · ${links} engine links`)
+console.log(`\n${APPLY ? '✓' : 'Dry run complete:'} ${spec} official spec sheets · ${links} engine links · ${missing} models still missing`)

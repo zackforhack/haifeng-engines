@@ -140,7 +140,7 @@ export async function uploadPdf(supabase, bucket, filePath, storagePath) {
       const exists = await fileExistsInStorage(supabase, bucket, storagePath)
       if (exists) {
         console.log(`  ⏭  Already in storage — skipping upload (install Ghostscript to re-compress)`)
-        return { ok: true, skipped: true }
+        return { ok: true, skipped: true, uploadedSizeBytes: null }
       }
       console.warn(`  ❌ Too large (${mb} MB), Ghostscript unavailable, and not yet in storage. Skipping.`)
       console.warn(`     Install Ghostscript to enable compression: brew install ghostscript`)
@@ -150,13 +150,33 @@ export async function uploadPdf(supabase, bucket, filePath, storagePath) {
     uploadBuffer = fs.readFileSync(filePath)
   }
 
-  const { error } = await supabase.storage.from(bucket).upload(
-    storagePath, uploadBuffer,
-    { contentType: 'application/pdf', upsert: true }
-  )
-  if (error) {
-    console.error(`  ❌ Upload failed: ${error.message}`)
-    return { ok: false }
+  const maxAttempts = 3
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    try {
+      const { error } = await supabase.storage.from(bucket).upload(
+        storagePath, uploadBuffer,
+        { contentType: 'application/pdf', upsert: true }
+      )
+      if (!error) {
+        return { ok: true, uploadedSizeBytes: uploadBuffer.length }
+      }
+      console.error(
+        `  ❌ Upload attempt ${attempt}/${maxAttempts} failed: ${error.message}`
+      )
+    } catch (error) {
+      console.error(
+        `  ❌ Upload attempt ${attempt}/${maxAttempts} failed: ${error.message}`
+      )
+    }
+
+    // A dropped response can occur after Storage accepted the object.
+    if (await fileExistsInStorage(supabase, bucket, storagePath)) {
+      console.log(`  ✅ File is present in storage after the failed response`)
+      return { ok: true, uploadedSizeBytes: uploadBuffer.length }
+    }
+    if (attempt < maxAttempts) {
+      await new Promise(resolve => setTimeout(resolve, 1000 * attempt))
+    }
   }
-  return { ok: true }
+  return { ok: false }
 }

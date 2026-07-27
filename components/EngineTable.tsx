@@ -10,6 +10,11 @@ const KWE_RANGES = [
   { label: '2,000+ kWe',        min: 2000, max: Infinity },
 ]
 
+function estimatedKwe(e: Engine): number | null {
+  if (e.power_kw == null) return null
+  return Math.round(e.power_kw * 0.9 * 10) / 10
+}
+
 function representativeKwe(e: Engine): number | null {
   return (
     e.standby_power_kwe_50hz ??
@@ -20,6 +25,7 @@ function representativeKwe(e: Engine): number | null {
     e.prime_power_kw_50hz ??
     e.standby_power_kw_60hz ??
     e.prime_power_kw_60hz ??
+    estimatedKwe(e) ??
     null
   )
 }
@@ -64,7 +70,7 @@ export function EngineTable({ engines }: Props) {
     m.get(e.brand)!.push(e)
   }
 
-  const activeRanges = KWE_RANGES.map((r, i) => ({ ...r, i })).filter(
+  const activeRanges = KWE_RANGES.map((range, i) => ({ ...range, i })).filter(
     ({ i }) => allBrands.some((b) => (lookup[i].get(b)?.length ?? 0) > 0)
   )
 
@@ -149,6 +155,15 @@ export function EngineTable({ engines }: Props) {
                                           </span>
                                         )
                                       })}
+                                      {rows.length === 0 && estimatedKwe(e) != null && (
+                                        <span
+                                          className="text-amber-700 whitespace-nowrap"
+                                          title="Reference estimate: 90% of listed mechanical engine power"
+                                        >
+                                          <span className="font-bold">≈ {estimatedKwe(e)}</span>
+                                          <span> kWe est.</span>
+                                        </span>
+                                      )}
                                       {e.emissions_standard && <EmissionsBadge value={e.emissions_standard} />}
                                     </>)
                                   })()}
@@ -170,6 +185,9 @@ export function EngineTable({ engines }: Props) {
       {/* Legend */}
       <div className="flex items-center gap-4 text-[10px] text-gray-400 px-0.5">
         <span><strong className="text-gray-700">Standby</strong> / Prime kWe</span>
+        <span className="text-amber-700">
+          <strong>Estimated kWe</strong> = 0.9 × mechanical kW; reference only
+        </span>
         <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-blue-100 border border-blue-300" />U.S. EPA</span>
         <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-green-100 border border-green-300" />Euro Stage</span>
         <span className="flex items-center gap-1"><span className="inline-block w-2 h-2 rounded-sm bg-red-100 border border-red-300" />China</span>

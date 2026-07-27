@@ -10,6 +10,7 @@
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
+    "test:functional": "node tests/functional/engine-search.mjs",
     "data:qa": "node scripts/data-qa.mjs",
     "seo:report": "node scripts/seo-report.mjs",
     "seo:indexing-queue": "node scripts/indexing-queue.mjs"

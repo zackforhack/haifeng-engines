@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "cummins-6ltaa95-g1",
+    "source": "https://mart.cummins.com/imagelibrary/data/assetfiles/0064180.pdf",
+    "ratings": {
+      "prime_power_kw_50hz": 290,
+      "standby_power_kw_50hz": 320,
+      "prime_power_kwe_50hz": 256,
+      "standby_power_kwe_50hz": 281,
+      "prime_power_kva_50hz": 321,
+      "standby_power_kva_50hz": 352,
+      "prime_power_kw_60hz": 280,
+      "standby_power_kw_60hz": 310,
+      "prime_power_kwe_60hz": 250,
+      "standby_power_kwe_60hz": 275,
+      "prime_power_kva_60hz": 312,
+      "standby_power_kva_60hz": 343
+    }
+  }
+]

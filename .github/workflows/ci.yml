@@ -53,6 +53,36 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Source-verified data QA
+        if: steps.env.outputs.configured == 'true'
+        env:
+          DATA_QA_FAIL_ON: high
+        run: npm run data:qa
+
       - name: Build
         if: steps.env.outputs.configured == 'true'
         run: npm run build
+
+      - name: Install Playwright Chromium
+        if: steps.env.outputs.configured == 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Functional QA
+        if: steps.env.outputs.configured == 'true'
+        env:
+          QA_BASE_URL: http://127.0.0.1:3000
+        run: |
+          npm run start > /tmp/haifeng-next.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in {1..30}; do
+            if curl --fail --silent --show-error "$QA_BASE_URL/engines" > /dev/null; then
+              break
+            fi
+            if [ "$attempt" -eq 30 ]; then
+              cat /tmp/haifeng-next.log
+              exit 1
+            fi
+            sleep 2
+          done
+          npm run test:functional

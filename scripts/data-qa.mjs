@@ -4,6 +4,8 @@ import { createClient } from '@supabase/supabase-js'
 
 const OUT_DIR = process.env.DATA_QA_REPORT_DIR ?? path.join(process.cwd(), 'reports', 'data-qa')
 const SEO_DIR = process.env.SEO_REPORT_DIR ?? path.join(process.cwd(), 'reports', 'seo')
+const VERIFIED_RATINGS_PATH = path.join(process.cwd(), 'data', 'verified-engine-ratings.json')
+const BRAND_LOGOS_PATH = path.join(process.cwd(), 'lib', 'brand-logos.ts')
 const PAGE = 1000
 
 function parseEnvFile(text) {
@@ -208,6 +210,34 @@ async function latestSeoReport() {
   }
 }
 
+async function loadVerifiedRatings() {
+  try {
+    return JSON.parse(await fs.readFile(VERIFIED_RATINGS_PATH, 'utf8'))
+  } catch (error) {
+    if (error.code === 'ENOENT') return []
+    throw error
+  }
+}
+
+async function loadBrandLogoCoverage() {
+  const source = await fs.readFile(BRAND_LOGOS_PATH, 'utf8')
+  const logoBlock = source.match(
+    /export const BRAND_LOGOS[^=]*=\s*\{([\s\S]*?)\n\}/,
+  )?.[1] ?? ''
+  const fallbackBlock = source.match(
+    /export const BRAND_LOGO_FALLBACKS[^=]*=\s*new Set\(\[([\s\S]*?)\]\)/,
+  )?.[1] ?? ''
+
+  return {
+    logos: new Set(
+      [...logoBlock.matchAll(/^\s*"([^"]+)":/gm)].map((match) => match[1]),
+    ),
+    fallbacks: new Set(
+      [...fallbackBlock.matchAll(/"([^"]+)"/g)].map((match) => match[1]),
+    ),
+  }
+}
+
 function pageSignals(seo) {
   const map = new Map()
   for (const row of seo?.gsc?.pages ?? []) {
@@ -226,13 +256,18 @@ function pageSignals(seo) {
   return map
 }
 
-function analyzeEngines(engines) {
+function analyzeEngines(
+  engines,
+  verifiedRatings = [],
+  brandLogoCoverage = { logos: new Set(), fallbacks: new Set() },
+) {
   const issues = []
   const scored = []
   const modelVariants = []
 
   const slugs = new Map()
   const brandModels = new Map()
+  const engineBrands = new Map()
 
   for (const e of engines) {
     const c = completeness(e)
@@ -346,14 +381,61 @@ function analyzeEngines(engines) {
 
     if (e.slug) slugs.set(e.slug, [...(slugs.get(e.slug) ?? []), e])
     if (e.brand && e.model) {
+      engineBrands.set(e.brand, (engineBrands.get(e.brand) ?? 0) + 1)
       const key = `${e.brand.toLowerCase()}|${e.model.toLowerCase()}`
       brandModels.set(key, [...(brandModels.get(key) ?? []), e])
     }
   }
 
+  for (const [brand, engineCount] of engineBrands) {
+    if (brandLogoCoverage.logos.has(brand)) continue
+    if (brandLogoCoverage.fallbacks.has(brand)) {
+      issues.push(issue(
+        'low',
+        'brand_logo_wordmark_fallback',
+        { brand },
+        `${brand} uses a text wordmark fallback across ${engineCount} engine(s)`,
+      ))
+      continue
+    }
+    issues.push(issue(
+      'high',
+      'brand_identity_missing',
+      { brand },
+      `${brand} has ${engineCount} engine(s) but no logo or approved wordmark fallback`,
+    ))
+  }
+
   for (const [slug, rows] of slugs) {
     if (rows.length > 1) issues.push(issue('critical', 'duplicate_slug', rows[0], `Duplicate slug ${slug} appears ${rows.length} times`))
   }
+
+  for (const fixture of verifiedRatings) {
+    const engine = slugs.get(fixture.slug)?.[0]
+    if (!engine) {
+      issues.push(issue(
+        'critical',
+        'verified_rating_engine_missing',
+        { slug: fixture.slug },
+        `Source-verified rating fixture references missing engine ${fixture.slug}`,
+        { source: fixture.source },
+      ))
+      continue
+    }
+    for (const [field, expected] of Object.entries(fixture.ratings ?? {})) {
+      const actual = num(engine[field])
+      if (actual == null || Math.abs(actual - Number(expected)) > 0.1) {
+        issues.push(issue(
+          'high',
+          'verified_rating_mismatch',
+          engine,
+          `${id(engine)} ${field} is ${actual ?? 'missing'}; source-verified value is ${expected}`,
+          { field, actual, expected, source: fixture.source },
+        ))
+      }
+    }
+  }
+
   for (const [key, rows] of brandModels) {
     if (rows.length <= 1) continue
 
@@ -511,13 +593,25 @@ async function main() {
   const supabaseKey = process.env.SUPABASE_SERVICE_KEY ?? requireEnv('NEXT_PUBLIC_SUPABASE_ANON_KEY')
   const supabase = createClient(supabaseUrl, supabaseKey)
 
-  const [engines, alternators, seo] = await Promise.all([
+  const [
+    engines,
+    alternators,
+    seo,
+    verifiedRatings,
+    brandLogoCoverage,
+  ] = await Promise.all([
     fetchAll(supabase, 'engines', '*, pdfs:engine_pdfs(*)'),
     fetchAll(supabase, 'alternators', '*'),
     latestSeoReport(),
+    loadVerifiedRatings(),
+    loadBrandLogoCoverage(),
   ])
 
-  const engineQa = analyzeEngines(engines)
+  const engineQa = analyzeEngines(
+    engines,
+    verifiedRatings,
+    brandLogoCoverage,
+  )
   const alternatorIssues = analyzeAlternators(alternators)
   const gsc = pageSignals(seo)
 
@@ -547,6 +641,20 @@ async function main() {
   console.log(`Wrote ${jsonPath}`)
   console.log(`Wrote ${mdPath}`)
   console.log(`${report.issues.length} issues across ${report.counts.engines} engines and ${report.counts.alternators} alternators`)
+
+  const failOn = process.env.DATA_QA_FAIL_ON
+  if (failOn) {
+    const threshold = severityRank(failOn)
+    const blocking = report.issues.filter(
+      (item) => severityRank(item.severity) <= threshold,
+    )
+    if (blocking.length) {
+      console.error(
+        `${blocking.length} ${failOn}-or-higher data QA issue(s) block this build`,
+      )
+      process.exitCode = 1
+    }
+  }
 }
 
 main().catch((error) => {

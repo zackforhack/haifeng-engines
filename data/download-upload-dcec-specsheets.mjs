@@ -18,6 +18,12 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 const BUCKET = 'engine-pdfs'
 const STORAGE_PREFIX = 'cummins/spec-sheets'
 const BAIFAU = 'https://www.baifapower.com/static/upload/download/FADONGJI'
+const SOURCE_URL_OVERRIDES = new Map([
+  [
+    '6LTAA9.5-G1',
+    'https://mart.cummins.com/imagelibrary/data/assetfiles/0064180.pdf',
+  ],
+])
 const TMP_DIR = path.join(os.tmpdir(), 'dcec-specsheets')
 fs.mkdirSync(TMP_DIR, { recursive: true })
 
@@ -75,7 +81,7 @@ for (const [model, slugs] of MODELS) {
   const filename    = `${model.toLowerCase()}.pdf`
   const storagePath = `${STORAGE_PREFIX}/${filename}`
   const localPath   = path.join(TMP_DIR, filename)
-  const sourceUrl   = `${BAIFAU}/${model}.pdf`
+  const sourceUrl   = SOURCE_URL_OVERRIDES.get(model) ?? `${BAIFAU}/${model}.pdf`
 
   process.stdout.write(`📥 ${model} ... `)
 
@@ -117,7 +123,9 @@ for (const [model, slugs] of MODELS) {
     const { error: insertErr } = await supabase.from('engine_pdfs').insert({
       engine_id: engineId,
       type: 'datasheet',
-      label: `${model} Specification Sheet`,
+      label: SOURCE_URL_OVERRIDES.has(model)
+        ? `Cummins ${model} Official Specification`
+        : `${model} Specification Sheet`,
       storage_path: storagePath,
       file_size_bytes: buf.length,
     })

@@ -12,15 +12,20 @@ const UA = 'HaifengEngineEncyclopedia/1.0 (logo fetch; contact zackforhack@gmail
 
 // brand -> best English Wikipedia article title (null = no known article, skip)
 const TITLES = {
+  '2G': null,
+  'Arrow': null,
   'Ashok Leyland': null,          // P154 is a grille-emblem photo; no clean free logo on Commons
   'Baudouin': 'Moteurs Baudouin',
   'Bergen': null,             // official navy SVG from bergenengines.com, served via LOCAL_LOGOS
   'Caterpillar': 'Caterpillar Inc.',
   'Cummins': 'Cummins',
+  'Daedong': null,
   'Daihatsu': 'Daihatsu',
   'Detroit Diesel': 'Detroit Diesel',
   'Deutz': null,                  // P154 is a photo of an old KHD badge; no clean free logo on Commons
+  'DNGV': null,
   'Doosan': 'Doosan',
+  'ENER-G': null,
   'Kawasaki': 'Kawasaki Heavy Industries',
   'FAWDE': 'FAW Group',
   'FPT': 'FPT Industrial',
@@ -34,35 +39,47 @@ const TITLES = {
   'Jenbacher': null,          // official SVG from jenbacher.com, served via LOCAL_LOGOS
   'Waukesha': null,           // official SVG from waukeshaengine.com, served via LOCAL_LOGOS
   'Hyundai': 'Hyundai Motor Company',
+  'IMPCO': null,
+  'International': null,
   'Isuzu': 'Isuzu',
   'JCB': 'JCB (company)',
   'Jichai': null,             // CNPC Jichai — official CNPC logo (en.wikipedia fair-use), via LOCAL_LOGOS
   'John Deere': 'John Deere',
+  'KEM': null,
+  'Kipor': null,
   'Kirloskar': 'Kirloskar Oil Engines',
   'Kohler': 'Kohler Co.',
   'Komatsu': 'Komatsu Limited',
   'Kubota': 'Kubota',
   'Liebherr': 'Liebherr Group',
   'Lister Petter': null,       // user-provided logo, served via LOCAL_LOGOS
+  'Laidong': null,
   'Lovol': 'Lovol',
   'MAN': 'MAN SE',
+  'Mercedes-Benz': null,
   'Mesa': null,               // mesapowersolutions.com ships a white-only SVG; recolored dark, via LOCAL_LOGOS
   'MWM': null,                // official 'MWM' JPG from mwm.net, served via LOCAL_LOGOS
   'MTU': 'MTU Friedrichshafen',
   'Mahindra': 'Mahindra & Mahindra',
   'Mitsubishi': 'Mitsubishi Heavy Industries',
   'Niigata': 'IHI Corporation',   // Niigata Power Systems is part of the IHI Group; use the IHI mark
+  'Origin Engines': null,
   'PSI': 'Power Solutions International',
   'Perkins': 'Perkins Engines',
   'SDEC': null,
   'Scania': 'Scania AB',
+  'Shibaura': null,
+  'Tecogen': null,
+  'TYM': null,
   'VM Motori': 'VM Motori',
   'Volvo Penta': 'Volvo Penta',
   'Wärtsilä': null,           // official SVG/PNG from wartsila.com, served via LOCAL_LOGOS
   'Weichai': 'Weichai Power',
+  'Yangdong': null,
   'Yanmar': 'Yanmar',
   'Yuchai': 'Guangxi Yuchai Machinery',
   'Yunnei': null,
+  'Zenith Power Products': null,
   // Chinese gas-engine brands with no clean free Wikimedia logo — served from LOCAL_LOGOS.
   // They must be listed here (the emit loop iterates TITLES) or a re-run drops them.
   'Liyu Power': null,
@@ -88,35 +105,53 @@ const DIRECT_FILE = {
 // Wikimedia logo, plus a cleaner Lovol than the Commons Weichai-Lovol mark). These take
 // priority over the Wikimedia fetch and are kept in the manifest on every re-run.
 const LOCAL_LOGOS = {
+  '2G': '2g.svg',
+  'Arrow': 'arrow.png',
   'Ashok Leyland': 'ashok-leyland.png',
   'Baudouin': 'baudouin.png',
   'Bergen': 'bergen.svg',       // official navy "Bergen Engines" wordmark (red accent)
+  'Daedong': 'daedong.svg',
   'Daihatsu': 'daihatsu.png',   // user-provided red-on-white (P154 was a white-only variant)
   'Deutz': 'deutz.png',
+  'DNGV': 'dngv.png',
+  'ENER-G': 'ener-g.jpg',
   'FAWDE': 'fawde.png',
   'Googol': 'googol.webp',
   'Guascor': 'guascor.svg',     // official "Guascor Energy" SVG (teal #005172 + green)
+  'IMPCO': 'impco.png',
+  'International': 'international.svg',
   'Jichai': 'jichai.svg',       // CNPC corporate logo (red sunburst) for CNPC Jichai
   'Jenbacher': 'jenbacher.svg', // official black wordmark (green "N" accent)
+  'KEM': 'kem.png',
+  'Kipor': 'kipor.png',
   'Waukesha': 'waukesha.svg',   // official orange (#EF773C) script wordmark
   'Komatsu': 'komatsu.png',     // P154 SVGs were white-only variants (invisible on white chip)
   'Liebherr': 'liebherr.png',
   'Lister Petter': 'lister-petter.png',
+  'Laidong': 'laidong.jpg',
   'Liyu Power': 'liyu-power.png',   // site only ships a white "fanbai" logo; recolored dark for the white chip
   'Lovol': 'lovol.png',
+  'Mercedes-Benz': 'mercedes-benz.svg',
   'Mesa': 'mesa.svg',               // recolored from the site's white-only mps-logo.svg
   'MWM': 'mwm.jpg',                 // official MWM "Energy. Efficiency. Environment." wordmark
+  'Origin Engines': 'origin-engines.png',
   'PSI': 'psi.jpg',
   'PUSH': 'push.png',
   'SDEC': 'sdec.png',
+  'Shibaura': 'shibaura.svg',
+  'TYM': 'tym.svg',
   'VMAN': 'vman.png',
   'Volvo Penta': 'volvo-penta.png',
   'Wärtsilä': 'wartsila.png',   // official blue/orange swoosh + WÄRTSILÄ wordmark
+  'Yangdong': 'yangdong.png',
   'Xinchai': 'xinchai.png',
   'Yanmar': 'yanmar.png',
   'Yuchai': 'yuchai.png',
   'Yunnei': 'yunnei.webp',
+  'Zenith Power Products': 'zenith-power-products.png',
 }
+
+const WORDMARK_FALLBACKS = ['JDP', 'Kukje', 'Lion', 'Tecogen']
 
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -222,6 +257,10 @@ const ts = `// Auto-generated by data/fetch-brand-logos.mjs — official brand l
 export const BRAND_LOGOS: Record<string, string> = {
 ${entries.map(([b, p]) => `  ${JSON.stringify(b)}: ${JSON.stringify(p)},`).join('\n')}
 }
+
+// These EPA-source brand names do not currently have a clean, attributable
+// manufacturer asset. Render a text wordmark rather than a wrong parent logo.
+export const BRAND_LOGO_FALLBACKS = new Set(${JSON.stringify(WORDMARK_FALLBACKS)})
 `
 fs.writeFileSync(MANIFEST, ts)
 
