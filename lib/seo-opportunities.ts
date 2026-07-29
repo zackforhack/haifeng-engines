@@ -1,4 +1,13 @@
-export const PRIORITY_MODEL_SPECS = [
+interface PriorityModelSpec {
+  href: string
+  brand: string
+  series?: string
+  label: string
+  desc: string
+  type: 'engine' | 'alternator'
+}
+
+export const PRIORITY_MODEL_SPECS: PriorityModelSpec[] = [
   {
     href: '/engines/kohler-kd62v12',
     brand: 'Kohler',
@@ -7,12 +16,11 @@ export const PRIORITY_MODEL_SPECS = [
     type: 'engine',
   },
   {
-    href: '/alternators/stamford-uci224g',
-    brand: 'Stamford',
-    series: 'UCI224',
-    label: 'Stamford UCI224G',
-    desc: 'UCI224 alternator spec page for generator-set matching.',
-    type: 'alternator',
+    href: '/engines/baudouin-20m33g2750-5',
+    brand: 'Baudouin',
+    label: 'Baudouin 20M33G2750/5',
+    desc: '2,750 kVA large 50 Hz diesel generator engine.',
+    type: 'engine',
   },
   {
     href: '/engines/cummins-hsk78g',
