@@ -8,7 +8,6 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: [
       `${base}/sitemap.xml`,
       `${base}/engines/sitemap.xml`,
-      `${base}/engines/compare/sitemap.xml`,
       `${base}/alternators/sitemap.xml`,
       `${base}/brands/sitemap.xml`,
       `${base}/guides/sitemap.xml`,

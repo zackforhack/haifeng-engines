@@ -3,7 +3,6 @@ import { getAllEngines, getAllBrands } from '@/lib/engines'
 import { getAllAlternators, getAlternatorFilterOptions } from '@/lib/alternators'
 import { getAllGuides } from '@/lib/guides'
 import { CONFIG_FACETS, EMISSIONS_FACETS, RPM_FACETS } from '@/lib/facets'
-import { getComparisonPairs } from '@/lib/compare'
 import { brandSlug } from '@/lib/seo'
 
 // Generate from live data on each request rather than a single build-time snapshot — the catalogue
@@ -13,19 +12,12 @@ export const dynamic = 'force-dynamic'
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = 'https://engines.haifengmachinery.com'
 
-  const [engines, brands, alternators, altOptions, comparePairs] = await Promise.all([
+  const [engines, brands, alternators, altOptions] = await Promise.all([
     getAllEngines(),
     getAllBrands(),
     getAllAlternators(),
     getAlternatorFilterOptions(),
-    getComparisonPairs(),
   ])
-
-  const compareUrls = comparePairs.map((pair) => ({
-    url: `${base}/engines/compare/${pair}`,
-    changeFrequency: 'monthly' as const,
-    priority: 0.5,
-  }))
 
   // Each detail page advertises its own generated spec-card image (image sitemap entry)
   // so Google Images can discover the unique, owned graphic on every page.
@@ -88,6 +80,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...brandUrls,
     ...engineUrls,
     ...alternatorUrls,
-    ...compareUrls,
   ]
 }
