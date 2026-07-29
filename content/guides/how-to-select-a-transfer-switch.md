@@ -54,6 +54,12 @@ The install environment sets the NEMA enclosure type:
 
 The switch must be rated for the **load current** *and* coordinated with the **generator capacity**, so the system isn't overloaded when the genset picks up the load. Start from the same load analysis you use to size the generator — see [How to Size a Generator](/guides/how-to-size-a-generator) — and have a qualified engineer confirm the rating against code. The switch should also match your system's voltage and number of poles.
 
+## When ATS selection becomes an EPC question
+
+Transfer switch selection often affects the rest of the generator package. For larger sites, confirm the generator rating, service voltage, load type, transfer sequence, breaker arrangement, paralleling requirement, enclosure location and utility interconnection before finalizing the ATS.
+
+If the project includes switchgear, multiple generators, synchronization, containerization or site integration, review Haifeng's [Custom EPC power solutions](https://www.haifengmachinery.com/custom-epc-power-solutions/) or send the load list and single-line diagram through [Contact Us](https://www.haifengmachinery.com/contact-us/).
+
 ## Bringing it together
 
 The transfer switch is part of a system that starts with the right engine and alternator. Once you've sized the load, browse [generator engines by power range](/engines/power/100-500-kwe) and work through [How to Choose a Generator Engine](/guides/how-to-choose-a-generator-engine) for the rest of the decision. For large or multi-set installations, pair this with [generator paralleling](/guides/generator-paralleling-explained).

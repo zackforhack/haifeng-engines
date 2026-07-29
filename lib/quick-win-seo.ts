@@ -26,6 +26,7 @@ const CONTACT_URL = 'https://www.haifengmachinery.com/contact-us/'
 const DIESEL_REGULATED_URL = 'https://www.haifengmachinery.com/diesel-power-package-regulated/'
 const DIESEL_NON_REGULATED_URL = 'https://www.haifengmachinery.com/product-offerings/'
 const GAS_PACKAGE_URL = 'https://www.haifengmachinery.com/gas-power-package-50hz-60hz/'
+const CUSTOM_EPC_URL = 'https://www.haifengmachinery.com/custom-epc-power-solutions/'
 
 export const QUICK_WIN_ENGINE_SEO: Record<string, QuickWinPageSeo> = {
   'kohler-kd62v12': {
@@ -94,6 +95,72 @@ export const QUICK_WIN_ENGINE_SEO: Record<string, QuickWinPageSeo> = {
       secondaryHref: DIESEL_NON_REGULATED_URL,
     },
   },
+  'mtu-20v4000-g24f': {
+    title: 'MTU 20V4000 G24F Generator Engine Specs - 20V4000 Series',
+    h1: 'MTU 20V4000 G24F Generator Engine Specs',
+    description: 'MTU 20V4000 G24F generator engine specs for high-power diesel generator projects, including Series 4000 ratings, displacement, frequency, datasheet and package review context.',
+    intro: 'The MTU 20V4000 G24F is a high-power Series 4000 generator-drive engine used in large diesel generator packages. Use this page to confirm the model identity, output band, datasheet references, fuel and emissions context before matching the engine to alternator, cooling, enclosure, switchgear and project documentation requirements.',
+    aliases: ['mtu 20v4000', 'MTU 20V4000', 'MTU 20V4000 G24F', '20V4000 G24F', 'MTU Series 4000 generator engine'],
+    links: [
+      { label: 'MTU engine hub', href: '/brands/mtu' },
+      { label: '1,500+ kWe engines', href: '/engines/power/1500-plus-kwe' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Alternator matching guide', href: '/guides/alternator-voltage-and-frequency' },
+      { label: 'Generator paralleling guide', href: '/guides/generator-paralleling-explained' },
+    ],
+    cta: {
+      title: 'Review an MTU 20V4000 generator package',
+      body: 'For large diesel generator projects, Haifeng Machinery can review the MTU 20V4000 rating with alternator, cooling, enclosure, controller, switchgear and documentation requirements.',
+      primaryLabel: 'Request MTU 20V4000 package support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Custom EPC power solutions',
+      secondaryHref: CUSTOM_EPC_URL,
+    },
+  },
+  'weichai-wp7d185e310': {
+    title: 'Weichai WP7D185E310 G-Drive Datasheet & Generator Specs',
+    h1: 'Weichai WP7D185E310 G-Drive Generator Engine Specs',
+    description: 'Weichai WP7D185E310 g-drive generator engine specs and datasheet context for diesel generator package selection, including rating, fuel, emissions and alternator matching notes.',
+    intro: 'The Weichai WP7D185E310 is a generator-drive diesel engine searched by buyers looking for model-specific datasheet and package information. Use this page to confirm the engine identity, rating band, fuel and emissions context before matching it to alternator, controller, enclosure and voltage requirements.',
+    aliases: ['weichai wp7d185e310', 'WP7D185E310', 'WP7D185E310 g-drive', 'weichai wp7d185e310 g-drive datasheet'],
+    links: [
+      { label: 'Weichai engine hub', href: '/brands/weichai' },
+      { label: '100-500 kWe engines', href: '/engines/power/100-500-kwe' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Generator sizing guide', href: '/guides/how-to-size-a-generator' },
+      { label: 'Alternator matching guide', href: '/guides/alternator-voltage-and-frequency' },
+    ],
+    cta: {
+      title: 'Match the WP7D185E310 to a diesel generator package',
+      body: 'Haifeng Machinery can help confirm whether this Weichai g-drive engine fits the required standby or prime load, then match alternator, controller, enclosure and voltage options.',
+      primaryLabel: 'Request Weichai package support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Product offerings',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
+    },
+  },
+  'weichai-wp10d264e200': {
+    title: 'Weichai WP10D264E200 Generator Engine Specs',
+    h1: 'Weichai WP10D264E200 Generator Engine Specs',
+    description: 'Weichai WP10D264E200 generator engine specs for diesel genset selection, including model identity, rating context, fuel, emissions, datasheet and package support.',
+    intro: 'The Weichai WP10D264E200 is a generator-drive diesel engine model searched by buyers comparing Weichai genset options. Use this page to confirm the model, rating, emissions context and datasheet availability before selecting the complete generator package.',
+    aliases: ['wp10d264e200', 'WP10D264E200', 'Weichai WP10D264E200', 'Weichai WP10D264E200 generator engine'],
+    links: [
+      { label: 'Weichai engine hub', href: '/brands/weichai' },
+      { label: '100-500 kWe engines', href: '/engines/power/100-500-kwe' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Generator engine selection guide', href: '/guides/how-to-choose-a-generator-engine' },
+      { label: 'Generator sizing guide', href: '/guides/how-to-size-a-generator' },
+    ],
+    cta: {
+      title: 'Review a Weichai diesel generator package',
+      body: 'Haifeng Machinery can help review the WP10D264E200 rating, alternator match, controls, enclosure, voltage and project documentation for a complete generator package.',
+      primaryLabel: 'Request Weichai package support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Product offerings',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
+    },
+  },
   'yuchai-yc16vtd2270-d30': {
     title: 'Yuchai YC16VTD2270-D30 Generator Engine Specs - 1,500 kWe',
     h1: 'Yuchai YC16VTD2270-D30 Generator Engine Specs',
@@ -137,8 +204,8 @@ export const QUICK_WIN_ALTERNATOR_SEO: Record<string, QuickWinPageSeo> = {
       body: 'Haifeng Machinery can help confirm the alternator frame, voltage, winding, AVR, engine match and enclosure requirements for a complete diesel or gas generator package.',
       primaryLabel: 'Request UCI224G matching support',
       primaryHref: CONTACT_URL,
-      secondaryLabel: 'Browse generator engines',
-      secondaryHref: '/engines',
+      secondaryLabel: 'Custom EPC power solutions',
+      secondaryHref: CUSTOM_EPC_URL,
     },
   },
 }
