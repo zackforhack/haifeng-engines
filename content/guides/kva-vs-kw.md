@@ -4,7 +4,7 @@ description: "What kVA, kW, kWe and kWm actually mean on a generator spec sheet,
 keyword: "kva vs kw"
 cluster: "Power & Sizing"
 order: 1
-updated: "2026-06-07"
+updated: "2026-07-30"
 hero: "/guides/hero-power-ratings.jpg"
 ---
 
@@ -61,6 +61,12 @@ Suppose you need to back up a **320 kW** building load:
 1. Convert to apparent power: 320 kW ÷ 0.8 = **400 kVA** minimum.
 2. Because this is backup duty, you size on the **standby** rating.
 3. So you look for a genset with a **standby rating of at least 400 kVA (320 kWe)** — for example, an engine in the [300–600 kWe range](/engines?min_kwe=300&max_kwe=600) of the catalog.
+
+## Turning kVA and kW into a generator package request
+
+After the kVA/kW conversion is clear, the next step is not just choosing the closest engine rating. A complete generator package also needs the duty rating, voltage, frequency, phase, alternator frame, controller, enclosure, fuel type, site conditions and compliance documents to match the real project.
+
+For standard diesel, gas or mobile power packages, review Haifeng Machinery's [generator product offerings](https://www.haifengmachinery.com/product-offerings/). For projects that include switchgear, paralleling, containerization, transformers, fuel systems or site integration, review [custom EPC power solutions](https://www.haifengmachinery.com/custom-epc-power-solutions/). If you already have a load list, send the kW/kVA target, voltage, frequency, duty type and destination market through [Contact Us](https://www.haifengmachinery.com/contact-us/) for package review.
 
 ## Quick reference
 
