@@ -353,7 +353,7 @@ export default async function BrandPage({ params }: Props) {
       </nav>
 
       <BrandLogo brand={engines[0].brand} size="lg" className="mb-3" />
-      <h1 className="text-2xl font-bold text-gray-900 mb-1">{profile?.h1 ?? `${engines[0].brand} Generator Engines`}</h1>
+      <h1 className="brand-section-title mb-1 font-bold text-gray-900">{profile?.h1 ?? `${engines[0].brand} Generator Engines`}</h1>
       <p className="text-gray-500 mb-4">{engines.length} engines in the database</p>
       <p className="text-gray-600 leading-relaxed max-w-3xl mb-8">{overview}</p>
 

@@ -74,6 +74,11 @@ function representativeKwe(e: Engine): number | null {
     e.prime_power_kwe_50hz ??
     e.standby_power_kwe_60hz ??
     e.prime_power_kwe_60hz ??
+    e.standby_power_kw_50hz ??
+    e.prime_power_kw_50hz ??
+    e.standby_power_kw_60hz ??
+    e.prime_power_kw_60hz ??
+    (e.power_kw == null ? null : Math.round(e.power_kw * 0.9 * 10) / 10) ??
     null
   )
 }

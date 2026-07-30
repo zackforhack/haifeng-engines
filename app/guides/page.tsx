@@ -53,7 +53,7 @@ export default function GuidesPage() {
       <div>
         <div className="text-center py-10 mb-10">
           <p className="text-sm font-semibold text-blue-600 uppercase tracking-widest mb-2">Guides</p>
-          <h1 className="text-4xl font-extrabold text-gray-900 mb-3">Generator Engine & Alternator Guides</h1>
+          <h1 className="brand-display mb-3 font-bold text-gray-900">Generator Engine & Alternator Guides</h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             Practical, plain-English explanations of generator set power ratings, engine selection,
             and alternator fundamentals — backed by real spec data from the encyclopedia.

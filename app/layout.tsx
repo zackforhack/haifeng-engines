@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Analytics } from '@vercel/analytics/next'
 import { SiteNav } from '@/components/SiteNav'
@@ -86,13 +87,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <header className="bg-white border-b border-gray-900 sticky top-0 z-20">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-3 min-w-0 group">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-blue-600 text-white text-xs font-bold">
-                HF
-              </span>
-              <span className="min-w-0">
-                <span className="block text-sm sm:text-base font-bold text-gray-900 whitespace-nowrap">Generator Engine Index</span>
-                <span className="hidden sm:block text-[11px] text-gray-500 whitespace-nowrap">Haifeng Machinery technical reference</span>
+            <Link href="/" className="flex min-w-0 items-center gap-4 group" aria-label="Haifeng Machinery Generator Engine Database">
+              <Image
+                src="/haifeng-logo.png"
+                alt="Haifeng Machinery"
+                width={440}
+                height={150}
+                priority
+                className="h-auto w-[150px] shrink-0 sm:w-[172px]"
+              />
+              <span className="hidden min-w-0 border-l border-gray-300 pl-4 lg:block">
+                <span className="block whitespace-nowrap text-[15px] font-semibold text-gray-900">
+                  Generator Engine Database
+                </span>
+                <span className="block whitespace-nowrap text-[13px] text-gray-500">
+                  Technical specifications and datasheets
+                </span>
               </span>
             </Link>
             <SiteNav />
@@ -106,13 +116,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="border-t border-gray-900 mt-16 bg-white">
           <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-10 text-sm text-gray-500">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-12">
-              <p className="sm:col-span-6 max-w-xl leading-relaxed">
-                Generator Engine Index is a free technical reference maintained by{' '}
-                <a href="https://www.haifengmachinery.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
-                  Haifeng Machinery
-                </a>{' '}
-                / Haifeng Power.
-              </p>
+              <div className="sm:col-span-6 max-w-xl">
+                <Image
+                  src="/haifeng-logo.png"
+                  alt="Haifeng Machinery"
+                  width={440}
+                  height={150}
+                  className="h-auto w-[180px]"
+                />
+                <p className="mt-5 max-w-md text-[15px] leading-6">
+                  Generator Engine Database is a free technical reference maintained by
+                  Haifeng Machinery / Haifeng Power.
+                </p>
+              </div>
               <div className="sm:col-span-3 space-y-2">
                 <p className="text-xs font-bold text-gray-900">Catalog</p>
                 <Link href="/engines" className="block hover:text-blue-600">Engines</Link>
@@ -130,7 +146,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 ))}
               </div>
             </div>
-            <p className="mt-10 pt-4 border-t border-gray-200 text-xs text-gray-400">
+            <p className="mt-10 max-w-md border-t border-gray-200 pt-4 text-xs leading-relaxed text-gray-400">
               Specifications are provided for engineering reference. Confirm final ratings with the manufacturer.
             </p>
           </div>

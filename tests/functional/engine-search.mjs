@@ -15,6 +15,14 @@ const expectedOriginSlugs = [
 
 const browser = await chromium.launch()
 
+async function waitForVisibleEngineLink(page, slug) {
+  await page.waitForFunction((engineSlug) => {
+    return [...document.querySelectorAll(`main a[href="/engines/${engineSlug}"]`)].some(
+      (link) => link.getClientRects().length > 0,
+    )
+  }, slug)
+}
+
 try {
   const page = await browser.newPage()
 
@@ -105,15 +113,46 @@ try {
   await open('/engines?fuel_type=Natural+Gas&q=jenbacher')
   for (const slug of ['jenbacher-j612', 'jenbacher-j616', 'jenbacher-j620', 'jenbacher-j624']) {
     await assert.doesNotReject(
-      () => page.locator(`main a[href="/engines/${slug}"]`).waitFor(),
+      () => waitForVisibleEngineLink(page, slug),
       `Natural-gas Jenbacher search omitted ${slug}`,
     )
   }
 
   await open('/engines?emissions=U.S.+EPA+Final+Tier+4')
   await assert.doesNotReject(
-    () => page.locator('main a[href="/engines/volvo-penta-twd1682ge"]').waitFor(),
+    () => waitForVisibleEngineLink(page, 'volvo-penta-twd1682ge'),
     'EPA Final Tier 4 search omitted Volvo Penta TWD1682GE',
+  )
+  await page.getByLabel('Sort engines').selectOption('kwe_desc')
+  await page.waitForURL(/sort=kwe_desc/)
+  assert.ok(
+    page.url().includes('view=grid'),
+    'Sorting the engine catalog must switch to grid view so ordered results are visible',
+  )
+  assert.ok(
+    !page.url().includes('page='),
+    'Changing sort must reset stale pagination',
+  )
+  await assert.doesNotReject(
+    () => page.getByText('Grid view shows each engine as a specification card.').waitFor(),
+    'Sorted engine results should render as a card list instead of the power-band matrix',
+  )
+
+  const searchInput = page.locator('input[type="search"]')
+  await searchInput.fill('cummins')
+  await searchInput.press('Enter')
+  await page.waitForURL(/q=cummins/)
+  assert.ok(
+    page.url().includes('emissions=U.S.+EPA+Final+Tier+4'),
+    'Searching from a filtered catalog must preserve the selected emissions filter',
+  )
+  assert.ok(
+    page.url().includes('view=grid'),
+    'Searching the engine catalog must render ordered results in grid view',
+  )
+  await assert.doesNotReject(
+    () => page.getByText('7 matching engines', { exact: true }).waitFor(),
+    'EPA Final Tier 4 Cummins search should return the expected narrowed result count',
   )
 
   await open('/engines/origin-engines-3-6l-turbo')

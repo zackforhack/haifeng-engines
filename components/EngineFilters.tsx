@@ -14,7 +14,6 @@ export function EngineFilters({ options, totalCount }: Props) {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
-  const [open, setOpen] = useState(true)
 
   const get = (k: string) => searchParams.get(k) ?? ''
   const q         = get('q')
@@ -31,11 +30,14 @@ export function EngineFilters({ options, totalCount }: Props) {
   const sort      = get('sort')
 
   const activeCount = [brand, origin, emissions, config, fuel, fuelType, hz, minKwe, maxKwe, status].filter(Boolean).length
+  const [open, setOpen] = useState(false)
 
   function update(key: string, value: string) {
     const p = new URLSearchParams(searchParams.toString())
     if (value) p.set(key, value)
     else p.delete(key)
+    p.delete('page')
+    if (key === 'sort' && value) p.set('view', 'grid')
     router.replace(`${pathname}?${p.toString()}`)
   }
 
@@ -46,6 +48,7 @@ export function EngineFilters({ options, totalCount }: Props) {
     if (value) p.set('fuel', value)
     else p.delete('fuel')
     p.delete('fuel_type')
+    p.delete('page')
     router.replace(`${pathname}?${p.toString()}`)
   }
 
@@ -54,6 +57,7 @@ export function EngineFilters({ options, totalCount }: Props) {
     if (value) p.set('fuel_type', value)
     else p.delete('fuel_type')
     p.delete('fuel')
+    p.delete('page')
     router.replace(`${pathname}?${p.toString()}`)
   }
 
@@ -66,8 +70,9 @@ export function EngineFilters({ options, totalCount }: Props) {
   return (
     <aside className="mb-6 xl:sticky xl:top-24 xl:mb-0 xl:self-start">
       {/* Toolbar row */}
-      <div className="flex items-center gap-3 border-t border-gray-900 py-3 xl:flex-wrap">
+      <div className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3 border-t border-gray-900 py-3 sm:flex sm:flex-wrap">
         <button
+          type="button"
           onClick={() => setOpen((v) => !v)}
           className="flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-blue-600 select-none"
         >
@@ -80,16 +85,16 @@ export function EngineFilters({ options, totalCount }: Props) {
           )}
         </button>
         {activeCount > 0 && (
-          <button onClick={clearAll} className="flex items-center gap-1 text-xs text-gray-500 hover:text-blue-600 transition-colors">
+          <button type="button" onClick={clearAll} className="flex items-center gap-1 text-xs text-gray-500 hover:text-blue-600 transition-colors">
             <RotateCcw aria-hidden="true" className="h-3 w-3" /> Clear
           </button>
         )}
-        <div className="ml-auto flex items-center gap-3 xl:ml-0 xl:w-full xl:flex-col xl:items-stretch">
+        <div className="col-span-2 flex min-w-0 items-center gap-3 sm:col-span-1 sm:ml-auto xl:ml-0 xl:w-full xl:flex-col xl:items-stretch">
           <select
             value={sort}
             onChange={(e) => update('sort', e.target.value)}
             aria-label="Sort engines"
-            className="border border-gray-300 bg-white px-2 py-2 text-xs text-gray-700 focus:border-blue-600 focus:outline-none"
+            className="min-w-0 flex-1 border border-gray-300 bg-white px-2 py-2 text-xs text-gray-700 focus:border-blue-600 focus:outline-none xl:w-full"
           >
             <option value="">Sort: Brand A → Z</option>
             <option value="kwe_desc">Sort: Power high → low</option>
@@ -97,15 +102,14 @@ export function EngineFilters({ options, totalCount }: Props) {
             <option value="disp_desc">Sort: Displacement high → low</option>
             <option value="disp_asc">Sort: Displacement low → high</option>
           </select>
-          <span className="text-sm font-bold text-blue-600 whitespace-nowrap">
+          <span className="hidden text-sm font-bold text-blue-600 whitespace-nowrap sm:inline xl:block">
             {totalCount.toLocaleString()} engine{totalCount !== 1 ? 's' : ''}
           </span>
         </div>
       </div>
 
       {/* Filter panel */}
-      {open && (
-        <div className="border-t border-gray-200 bg-gray-50 py-4 space-y-5 xl:px-3">
+      <div className={`${open ? 'block' : 'hidden'} border-t border-gray-200 bg-gray-50 py-4 space-y-5 xl:block xl:px-3`}>
           {/* Dropdowns row */}
           <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-1 gap-3">
             <FilterSelect label="Brand"         param="brand"     value={brand}     options={options.brands}    onUpdate={update} />
@@ -118,7 +122,7 @@ export function EngineFilters({ options, totalCount }: Props) {
           {/* Toggles + power range row */}
           <div className="flex flex-wrap items-end gap-5 xl:flex-col xl:items-stretch">
             {/* Status */}
-            <div>
+            <div className="min-w-0 xl:w-full">
               <p className="text-xs font-medium text-gray-500 mb-1.5">Status</p>
               <ToggleGroup
                 value={status}
@@ -128,7 +132,7 @@ export function EngineFilters({ options, totalCount }: Props) {
             </div>
 
             {/* Fuel (broad bucket; mutually exclusive with the Fuel Type dropdown) */}
-            <div>
+            <div className="min-w-0 xl:w-full">
               <p className="text-xs font-medium text-gray-500 mb-1.5">Fuel</p>
               <ToggleGroup
                 value={fuel}
@@ -138,7 +142,7 @@ export function EngineFilters({ options, totalCount }: Props) {
             </div>
 
             {/* Hz */}
-            <div>
+            <div className="min-w-0 xl:w-full">
               <p className="text-xs font-medium text-gray-500 mb-1.5">Frequency</p>
               <ToggleGroup
                 value={hz}
@@ -148,7 +152,7 @@ export function EngineFilters({ options, totalCount }: Props) {
             </div>
 
             {/* Power range */}
-            <div>
+            <div className="min-w-0 xl:w-full">
               <p className="text-xs font-medium text-gray-500 mb-1.5">Power (kWe)</p>
               <div className="flex items-center gap-1.5">
                 <input
@@ -171,8 +175,7 @@ export function EngineFilters({ options, totalCount }: Props) {
               </div>
             </div>
           </div>
-        </div>
-      )}
+      </div>
     </aside>
   )
 }
@@ -211,15 +214,16 @@ function ToggleGroup({
   onSelect: (v: string) => void
 }) {
   return (
-    <div className="flex border border-gray-300 bg-white">
+    <div className="grid w-full min-w-0 grid-flow-col auto-cols-fr divide-x divide-gray-300 bg-white outline outline-1 outline-gray-300">
       {options.map(([val, label]) => (
         <button
+          type="button"
           key={val}
           onClick={() => onSelect(val)}
-          className={`flex-1 border-r border-gray-300 px-2 py-1.5 text-xs font-medium last:border-r-0 ${
+          className={`min-w-0 px-1.5 py-1.5 text-xs font-medium ${
             value === val
               ? 'bg-blue-600 text-white'
-              : 'bg-white text-gray-600 hover:bg-blue-50'
+              : 'bg-white text-blue-700 hover:bg-blue-50'
           }`}
         >
           {label}

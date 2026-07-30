@@ -571,7 +571,7 @@ export default async function EngineDetailPage({ params }: Props) {
             <div>
               <BrandLogo brand={engine.brand} className="mb-3" />
               <p className="section-index mb-3">{engine.brand}</p>
-              <h1 className="max-w-5xl text-4xl font-bold leading-none text-gray-900 sm:text-6xl">{quickWin?.h1 ?? `${engine.brand} ${engine.model}`}</h1>
+              <h1 className="brand-display max-w-5xl font-bold text-gray-900">{quickWin?.h1 ?? `${engine.brand} ${engine.model}`}</h1>
               {engine.series && <p className="text-gray-500 mt-1">{engine.series}</p>}
             </div>
             <StatusBadge status={engine.status} />

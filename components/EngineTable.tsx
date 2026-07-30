@@ -45,7 +45,7 @@ function EmissionsBadge({ value }: { value: string }) {
   else if (value.includes('China'))
     cls = 'bg-red-50 text-red-600'
   return (
-    <span className={`inline-block px-1 py-px rounded text-[10px] font-medium leading-tight ${cls}`}>
+    <span className={`inline-block rounded px-1 py-px text-[11px] font-medium leading-tight ${cls}`}>
       {value}
     </span>
   )
@@ -94,7 +94,7 @@ export function EngineTable({ engines }: Props) {
               <h3 className="text-sm font-bold text-blue-700">
                 {label}
               </h3>
-              <span className="text-[10px] text-gray-400">{rangeBrands.length} brands</span>
+              <span className="text-[11px] text-gray-400">{rangeBrands.length} brands</span>
             </div>
             <div className="overflow-x-auto border-b border-gray-900">
               <table className="text-xs border-collapse w-full">
@@ -186,7 +186,7 @@ export function EngineTable({ engines }: Props) {
       })}
 
       {/* Legend */}
-      <div className="flex items-center gap-4 text-[10px] text-gray-400 px-0.5">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 px-0.5 text-xs text-gray-400">
         <span><strong className="text-gray-700">Standby</strong> / Prime kWe</span>
         <span className="text-amber-700">
           <strong>Estimated kWe</strong> = 0.9 × mechanical kW; reference only

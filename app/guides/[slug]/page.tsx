@@ -101,7 +101,7 @@ export default async function GuidePage({ params }: Props) {
         )}
 
         <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-2">{g.cluster}</p>
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">{g.title}</h1>
+        <h1 className="brand-display mb-3 font-bold text-gray-900">{g.title}</h1>
         <p className="text-gray-500 mb-8">
           Updated {new Date(g.updated).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
         </p>

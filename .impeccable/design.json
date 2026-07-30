@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-30T12:35:00Z",
+  "title": "Design System: Haifeng Engines",
+  "extensions": {
+    "colorMeta": {
+      "haifeng-blue": {
+        "role": "primary",
+        "displayName": "Haifeng Blue",
+        "canonical": "#002fa7",
+        "tonalRamp": ["#001033", "#001f70", "#002fa7", "#1248c6", "#3468e5", "#6c93f2", "#b9c9fb", "#f1f4fc"]
+      },
+      "haifeng-blue-deep": {
+        "role": "primary",
+        "displayName": "Deep Haifeng Blue",
+        "canonical": "#001f70",
+        "tonalRamp": ["#00091f", "#00113d", "#001f70", "#002fa7", "#3468e5", "#6c93f2", "#b9c9fb", "#f1f4fc"]
+      },
+      "catalog-paper": {
+        "role": "neutral",
+        "displayName": "Catalog Paper",
+        "canonical": "#f7f7f8",
+        "tonalRamp": ["#111111", "#2e2e31", "#47474c", "#696970", "#a4a4aa", "#d8d8dc", "#eeeeef", "#f7f7f8"]
+      },
+      "surface-white": {
+        "role": "neutral",
+        "displayName": "Surface White",
+        "canonical": "#ffffff",
+        "tonalRamp": ["#111111", "#2e2e31", "#47474c", "#696970", "#a4a4aa", "#d8d8dc", "#f7f7f8", "#ffffff"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#111111",
+        "tonalRamp": ["#111111", "#2e2e31", "#47474c", "#696970", "#a4a4aa", "#d8d8dc", "#eeeeef", "#ffffff"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "canonical": "#d8d8dc",
+        "tonalRamp": ["#111111", "#2e2e31", "#47474c", "#696970", "#a4a4aa", "#d8d8dc", "#eeeeef", "#ffffff"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Major page titles and homepage hero statements."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles and major catalog blocks."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Cards, model names, group headers, and compact component headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Technical description, guide copy, and explanatory UI text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Small navigation, indexes, badges, selected controls, and metadata labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "none",
+        "value": "none",
+        "purpose": "The system is flat by default; use borders, spacing, and fills for hierarchy."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "150ms ease",
+        "purpose": "Default hover/focus/control transition used globally."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce disables animation and smooth scroll",
+        "purpose": "Accessibility override for users who request reduced motion."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" },
+      { "name": "container", "value": "1440px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled Haifeng Blue action used for search submit and contact actions.",
+      "html": "<button class=\"ds-btn-primary\">Search <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 5l7 7-7 7\" /></svg></button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:8px;border:0;background:#002fa7;color:#fff;padding:14px 24px;font:600 16px/1.2 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;border-radius:0;transition:background 150ms ease}.ds-btn-primary svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-btn-primary:hover{background:#001f70}.ds-btn-primary:focus-visible{outline:2px solid #111;outline-offset:2px}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Signature catalog search control with icon, square border, and attached primary action.",
+      "html": "<form class=\"ds-search\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m21 21-4.3-4.3M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4Z\" /></svg><input placeholder=\"Search by brand, model, or series...\" /><button>Search</button></form>",
+      "css": ".ds-search{display:flex;width:100%;max-width:672px;border:1px solid #111;background:#fff}.ds-search svg{width:20px;height:20px;margin-left:16px;align-self:center;fill:none;stroke:#5b5b60;stroke-width:2;stroke-linecap:round}.ds-search input{min-width:0;flex:1;border:0;padding:14px 12px;color:#111;font:400 16px/1.4 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-search input::placeholder{color:#696970}.ds-search input:focus{outline:0}.ds-search button{border:0;border-left:1px solid #111;background:#002fa7;color:#fff;padding:0 24px;font:600 16px/1 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-search button:hover{background:#001f70}.ds-search:focus-within{outline:2px solid #002fa7;outline-offset:2px}"
+    },
+    {
+      "name": "Desktop Navigation",
+      "kind": "nav",
+      "refersTo": "nav-active",
+      "description": "Sticky header navigation with divided links and a filled contact action.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-active\">Engines</a><a>Alternators</a><a>Brands</a><a>Guides</a><a class=\"ds-contact\">Contact</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:stretch;height:56px;background:#fff;border-bottom:1px solid #111;font:500 15px/1 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-nav a{display:flex;align-items:center;border-left:1px solid #d8d8dc;padding:0 20px;color:#47474c;text-decoration:none}.ds-nav a:hover{background:#f7f7f8;color:#002fa7}.ds-nav .ds-active{background:#f1f4fc;color:#002fa7}.ds-nav .ds-contact{background:#002fa7;color:#fff;border-left:0;font-weight:600}.ds-nav .ds-contact:hover{background:#001f70;color:#fff}"
+    },
+    {
+      "name": "Engine Card",
+      "kind": "card",
+      "refersTo": "card-catalog",
+      "description": "Compact scan-first engine record for mobile catalog and grid browsing.",
+      "html": "<a class=\"ds-engine-card\"><div class=\"ds-card-top\"><span class=\"ds-brand\">CUMMINS</span><span class=\"ds-status\">Production</span></div><h3>HSK78G</h3><p class=\"ds-series\">HSK series</p><div class=\"ds-rating\"><b>Standby</b> 2000 kWe <span>@1800rpm</span></div><p class=\"ds-meta\">78L · V18 · U.S. EPA Stationary · Made in USA</p></a>",
+      "css": ".ds-engine-card{display:block;min-height:208px;background:#fff;border-right:1px solid #d8d8dc;border-bottom:1px solid #d8d8dc;padding:16px;color:#111;text-decoration:none;transition:background 150ms ease}.ds-engine-card:hover{background:#f1f4fc}.ds-card-top{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px}.ds-brand{font:700 12px/1.2 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;color:#002fa7}.ds-status{background:#eeeeef;border:1px solid #d8d8dc;padding:3px 8px;font-size:12px;color:#47474c}.ds-engine-card h3{margin:0;font:700 16px/1.25 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-series{margin:2px 0 12px;color:#5b5b60;font-size:12px}.ds-rating{font-size:14px;color:#111}.ds-rating b{text-transform:uppercase;font-size:12px;color:#5b5b60;margin-right:6px}.ds-rating span{color:#696970;font-size:12px}.ds-meta{margin:8px 0 0;color:#5b5b60;font-size:12px;line-height:1.45}"
+    },
+    {
+      "name": "Catalog Link Row",
+      "kind": "custom",
+      "refersTo": "card-catalog",
+      "description": "Row-style internal link pattern for priority models and commercial pathways.",
+      "html": "<a class=\"ds-link-row\"><span class=\"ds-index\">01</span><strong>EPA standby diesel generators</strong><p>Review regulated emergency standby diesel generator packages and documentation needs.</p><svg viewBox=\"0 0 24 24\"><path d=\"M5 12h14M13 5l7 7-7 7\" /></svg></a>",
+      "css": ".ds-link-row{display:grid;grid-template-columns:44px minmax(0,220px) minmax(0,1fr) 24px;align-items:baseline;gap:16px;border-bottom:1px solid #d8d8dc;padding:16px 0;color:#111;text-decoration:none}.ds-link-row:hover{background:#f1f4fc}.ds-index{padding-left:8px;color:#002fa7;font:700 12px/1 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-link-row strong{font:700 14px/1.35 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-link-row p{margin:0;color:#5b5b60;font-size:12px;line-height:1.55}.ds-link-row svg{width:16px;height:16px;fill:none;stroke:#002fa7;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}"
+    },
+    {
+      "name": "Facet Link Group",
+      "kind": "custom",
+      "refersTo": "card-catalog",
+      "description": "Technical facet browsing group with strong top rule and underlined links.",
+      "html": "<div class=\"ds-facet\"><h3>Power</h3><div><a>Under 100 kWe</a><a>100-500 kWe</a><a>500-1,500 kWe</a></div></div>",
+      "css": ".ds-facet{display:grid;grid-template-columns:1fr 3fr;border-top:1px solid #111;padding-top:12px;gap:16px}.ds-facet h3{margin:0;color:#111;font:700 14px/1.35 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-facet div{display:flex;flex-wrap:wrap;gap:8px 20px}.ds-facet a{color:#47474c;text-decoration:underline;text-decoration-color:#d8d8dc;text-underline-offset:4px;font:400 14px/1.4 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-facet a:hover{color:#002fa7;text-decoration-color:#002fa7}"
+    },
+    {
+      "name": "Segmented Filter",
+      "kind": "chip",
+      "refersTo": "segmented-selected",
+      "description": "Outlined divided control for status, fuel, and frequency filters.",
+      "html": "<div class=\"ds-segmented\" role=\"group\" aria-label=\"Fuel\"><button class=\"ds-selected\">All</button><button>Diesel</button><button>Gas</button></div>",
+      "css": ".ds-segmented{display:inline-flex;background:#fff;outline:1px solid #d8d8dc;font:500 12px/1.2 \"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-segmented button{min-width:64px;border:0;border-left:1px solid #d8d8dc;background:#fff;color:#002fa7;padding:7px 12px}.ds-segmented button:first-child{border-left:0}.ds-segmented button:hover{background:#f1f4fc}.ds-segmented .ds-selected{background:#002fa7;color:#fff}.ds-segmented button:focus-visible{outline:2px solid #111;outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Precision Catalog",
+    "overview": "Haifeng Engines currently uses a restrained, technical catalog system: off-white paper, white working surfaces, black structural rules, and one disciplined Haifeng blue accent. The experience should feel professional, engineered, and quiet enough for specification research while still clearly connected to Haifeng Machinery.\n\nThe system is closer to a clean industrial reference index than to a marketing brochure. It values exact names, counts, datasheets, model paths, and comparison surfaces. The Apple-like aspiration in PRODUCT.md means future work should raise polish through clarity, spacing, restraint, and material precision, not through invented claims, decorative chrome, or softened technical detail.",
+    "keyCharacteristics": [
+      "Flat, line-driven surfaces with no default shadow vocabulary.",
+      "One accent color used for action, active state, and technical emphasis.",
+      "Dense but orderly catalog layouts built on borders, tables, grids, and search.",
+      "Professional UI typography with tabular numerals and no letter-spacing effects.",
+      "Product truth, route clarity, and SEO architecture remain visible in the interface."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "Haifeng Blue is the only saturated interface color. Do not add extra decorative accent hues unless product truth requires a semantic distinction.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reference Contrast Rule",
+        "body": "Muted text is still technical content; secondary copy must remain readable, especially on mobile and in dense table/card contexts.",
+        "section": "colors"
+      },
+      {
+        "name": "The Numeral Precision Rule",
+        "body": "Preserve tabular numerals for counts, ratings, and technical measurements so dense catalog data aligns optically.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Costume Mono Rule",
+        "body": "Use the system sans for technical UI unless actual code or fixed-width data requires a mono face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Reference Rule",
+        "body": "A card at rest is a bordered or divided surface, not a lifted object. Use lines and spacing before using shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve Haifeng Blue as the single primary action and active-state color.",
+      "Do use exact catalog facts, model names, power ranges, and route labels as design material.",
+      "Do keep mobile catalog paths fast: search, filters, result count, and cards should appear without forcing a dense desktop table.",
+      "Do use borders, spacing, and typographic hierarchy to create structure before introducing decorative effects.",
+      "Do maintain clean professional restraint when pursuing the Apple-like direction: precision, clarity, and polish over spectacle."
+    ],
+    "donts": [
+      "Don't invent claims, certifications, customers, benchmarks, or availability to make a design feel more persuasive.",
+      "Don't replace catalog architecture with generic landing-page sections that hide routes, filters, or technical depth.",
+      "Don't add extra accent colors, gradients, decorative shadows, or rounded card-heavy SaaS styling unless a future approved visual direction explicitly changes the system.",
+      "Don't use monospace, badges, charts, or icons as technical decoration when real specification content is available.",
+      "Don't weaken SEO-critical internal links, category hubs, or structured routes for purely visual simplification."
+    ]
+  }
+}

@@ -82,7 +82,7 @@ export default async function AlternatorsPage({ searchParams }: Props) {
           <p className="section-index mb-5">Alternator index</p>
           <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
-              <h1 className="max-w-4xl text-4xl font-bold leading-[0.96] text-gray-900 sm:text-6xl">
+              <h1 className="brand-display max-w-4xl font-bold text-gray-900">
                 Generator Alternator Specifications
               </h1>
               <p className="mt-5 max-w-2xl text-base leading-7 text-gray-600">
@@ -311,7 +311,7 @@ export default async function AlternatorsPage({ searchParams }: Props) {
         <p className="section-index mb-4">Filtered catalog</p>
         <div className="grid gap-6 lg:grid-cols-[1fr_18rem] lg:items-end">
           <div>
-            <h1 className="text-4xl font-bold text-gray-900">Alternators</h1>
+            <h1 className="brand-display font-bold text-gray-900">Alternators</h1>
             <p className="mt-3 text-sm text-gray-600">
               {total.toLocaleString()} matching model{total !== 1 ? 's' : ''}
             </p>

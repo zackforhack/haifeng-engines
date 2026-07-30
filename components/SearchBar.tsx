@@ -14,12 +14,14 @@ type AltHit = { slug: string; brand: string; model: string; series: string | nul
 export function SearchBar({
   defaultValue = '',
   target,
+  viewOnSearch,
 }: {
   defaultValue?: string
   // Where to send a full-text search submit. Omit to search the current page
   // (preserving its other filters — /engines, /alternators); set to "/engines"
   // on pages that don't handle `q` themselves (the homepage).
   target?: string
+  viewOnSearch?: 'grid'
 }) {
   const router = useRouter()
   const pathname = usePathname()
@@ -43,6 +45,8 @@ export function SearchBar({
     const dest = target ?? pathname
     const p = new URLSearchParams(target ? '' : searchParams.toString())
     if (value.trim()) p.set('q', value.trim()); else p.delete('q')
+    p.delete('page')
+    if (viewOnSearch === 'grid' && value.trim()) p.set('view', 'grid')
     const qs = p.toString()
     setOpen(false)
     router.push(qs ? `${dest}?${qs}` : dest)

@@ -21,7 +21,7 @@ export default async function BrandsPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-gray-900 mb-2">Browse by Brand</h1>
+      <h1 className="brand-section-title mb-2 font-bold text-gray-900">Browse by Brand</h1>
       <p className="text-gray-500 mb-8">{brands.length} brands in the database</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

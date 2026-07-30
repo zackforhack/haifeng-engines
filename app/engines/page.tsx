@@ -10,6 +10,7 @@ import { EngineTable } from '@/components/EngineTable'
 import { BrowseFacets } from '@/components/BrowseFacets'
 import { CommercialPathways } from '@/components/CommercialPathways'
 import { ENGINE_GRID_PAGE_SIZE, ENGINE_TABLE_PAGE_SIZE, hasSearchParams, noindexFollowRobots } from '@/lib/seo'
+import type { Engine } from '@/lib/types'
 
 // Always fetch fresh data — prevents Next.js data cache from hiding new DB rows.
 export const dynamic = 'force-dynamic'
@@ -96,6 +97,7 @@ export default async function EnginesPage({ searchParams }: Props) {
   const totalPages = Math.max(1, Math.ceil(total / pageSize))
   const safePage = Math.min(currentPage, totalPages)
   const engines = allEngines.slice((safePage - 1) * pageSize, safePage * pageSize)
+  const resultLabel = `${total.toLocaleString()} matching engine${total !== 1 ? 's' : ''}`
 
   function pageHref(pg: number) {
     const sp = new URLSearchParams({
@@ -139,12 +141,12 @@ export default async function EnginesPage({ searchParams }: Props) {
     <div>
       <div className="catalog-grid border-b border-gray-900 pb-8 pt-2 mb-8">
         <p className="section-index mb-4">01 Engine catalog</p>
-        <h1 className="text-3xl font-bold text-gray-900 mb-6 sm:text-5xl">
+        <h1 className="brand-display mb-6 font-bold text-gray-900">
           {p.q ? `Results for "${p.q}"` : 'Generator Engine Specifications'}
         </h1>
         <div className="max-w-2xl">
           <Suspense>
-            <SearchBar defaultValue={p.q ?? ''} />
+            <SearchBar defaultValue={p.q ?? ''} viewOnSearch="grid" />
           </Suspense>
         </div>
       </div>
@@ -155,23 +157,22 @@ export default async function EnginesPage({ searchParams }: Props) {
         </Suspense>
 
         <div className="min-w-0">
-          {!hasFilters && (
-            <CommercialPathways
-              eyebrow="Package routes"
-              title="Shortlist engines here, then choose the right Haifeng package path"
-              intro="The catalog helps compare model specifications before inquiry. These commercial routes connect engine shortlists to EPA standby diesel, gas, towable, EPC, and general industrial generator package pages."
-            />
-          )}
-
-          {/* View toggle */}
           {total > 0 && (
-            <div className="mb-5 flex justify-end">
+            <div className="mb-5 flex flex-col gap-3 border-t border-gray-900 pt-3 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h2 className="text-sm font-bold text-gray-900">{resultLabel}</h2>
+                <p className="mt-1 max-w-xl text-xs leading-relaxed text-gray-500">
+                  {isGrid
+                    ? 'Grid view shows each engine as a specification card.'
+                    : 'Table view becomes cards on mobile and a brand-by-power matrix on desktop.'}
+                </p>
+              </div>
               <div className="flex border border-gray-900 bg-white" aria-label="Catalog view">
                 <Link
                   href={viewHref('table')}
                   title="Table view"
                   className={`flex h-9 w-10 items-center justify-center border-r border-gray-900 ${
-                    !isGrid ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-blue-50'
+                    !isGrid ? 'bg-blue-600 text-white' : 'text-blue-700 hover:bg-blue-50'
                   }`}
                 >
                   <List aria-hidden="true" className="h-4 w-4" />
@@ -181,7 +182,7 @@ export default async function EnginesPage({ searchParams }: Props) {
                   href={viewHref('grid')}
                   title="Grid view"
                   className={`flex h-9 w-10 items-center justify-center ${
-                    isGrid ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-blue-50'
+                    isGrid ? 'bg-blue-600 text-white' : 'text-blue-700 hover:bg-blue-50'
                   }`}
                 >
                   <Grid2X2 aria-hidden="true" className="h-4 w-4" />
@@ -198,7 +199,12 @@ export default async function EnginesPage({ searchParams }: Props) {
         </div>
           ) : !isGrid ? (
         <>
-          <EngineTable engines={engines} />
+          <div className="xl:hidden">
+            <EngineCardGrid engines={engines} />
+          </div>
+          <div className="hidden xl:block">
+            <EngineTable engines={engines} />
+          </div>
           {hasFilters && total > ENGINE_TABLE_PAGE_SIZE && total <= FILTERED_TABLE_FULL_RESULT_LIMIT && (
             <p className="text-xs text-gray-400 mt-3">
               Showing all {total.toLocaleString()} filtered engines.
@@ -206,11 +212,7 @@ export default async function EnginesPage({ searchParams }: Props) {
           )}
         </>
           ) : (
-        <div className="grid grid-cols-1 border-t border-gray-900 sm:grid-cols-2 lg:grid-cols-3">
-          {engines.map((engine) => (
-            <EngineCard key={engine.id} engine={engine} />
-          ))}
-        </div>
+        <EngineCardGrid engines={engines} />
           )}
 
           {total > pageSize && (
@@ -224,7 +226,7 @@ export default async function EnginesPage({ searchParams }: Props) {
             {safePage > 1 ? (
               <Link
                 href={pageHref(safePage - 1)}
-                className="flex items-center gap-2 border border-gray-900 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                className="flex items-center gap-2 border border-gray-900 bg-white px-4 py-2 text-sm text-blue-700 hover:bg-blue-50"
               >
                 <ChevronLeft aria-hidden="true" className="h-4 w-4" /> Previous
               </Link>
@@ -241,7 +243,7 @@ export default async function EnginesPage({ searchParams }: Props) {
             {safePage < totalPages ? (
               <Link
                 href={pageHref(safePage + 1)}
-                className="flex items-center gap-2 border border-gray-900 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
+                className="flex items-center gap-2 border border-gray-900 bg-white px-4 py-2 text-sm text-blue-700 hover:bg-blue-50"
               >
                 Next <ChevronRight aria-hidden="true" className="h-4 w-4" />
               </Link>
@@ -255,9 +257,28 @@ export default async function EnginesPage({ searchParams }: Props) {
           )}
 
           {/* Internal-linking hub — shown on the canonical (unfiltered) listing. */}
-          {!hasFilters && <BrowseFacets />}
+          {!hasFilters && (
+            <>
+              <CommercialPathways
+                eyebrow="Package routes"
+                title="Shortlist engines here, then choose the right Haifeng package path"
+                intro="The catalog helps compare model specifications before inquiry. These commercial routes connect engine shortlists to EPA standby diesel, gas, towable, EPC, and general industrial generator package pages."
+              />
+              <BrowseFacets />
+            </>
+          )}
         </div>
       </div>
+    </div>
+  )
+}
+
+function EngineCardGrid({ engines }: { engines: Engine[] }) {
+  return (
+    <div className="grid grid-cols-1 border-t border-gray-900 sm:grid-cols-2 lg:grid-cols-3">
+      {engines.map((engine) => (
+        <EngineCard key={engine.id} engine={engine} />
+      ))}
     </div>
   )
 }
