@@ -69,10 +69,20 @@ jobs:
 
       - name: Generate data QA report
         if: steps.supabase.outputs.configured == 'true'
+        env:
+          DATA_QA_FAIL_ON: high
         run: npm run data:qa
 
+      - name: Database integrity contracts
+        if: steps.supabase.outputs.configured == 'true'
+        run: npm run test:database
+
+      - name: Linked PDF storage integrity
+        if: steps.supabase.outputs.configured == 'true'
+        run: npm run test:storage
+
       - name: Upload reports
-        if: steps.google.outputs.configured == 'true' || steps.supabase.outputs.configured == 'true'
+        if: always() && (steps.google.outputs.configured == 'true' || steps.supabase.outputs.configured == 'true')
         uses: actions/upload-artifact@v4
         with:
           name: seo-monitor-reports

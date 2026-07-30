@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { ArrowRight, ExternalLink } from 'lucide-react'
 import { getAllEngines, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/lib/engines'
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
@@ -84,19 +85,19 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
   const estimated = kweIsEstimated(engine)
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-6">
-      <h2 className="text-lg font-semibold text-gray-900 mb-4">Power Ratings</h2>
+    <section className="border-y border-gray-900 bg-white py-6">
+      <h2 className="text-xl font-bold text-gray-900 mb-2">Power Ratings</h2>
       <p className="text-xs text-gray-400 mb-4">
         kWm = mechanical shaft power · kWe = electrical output · kVA = kWe ÷ 0.8 pf
         {estimated && <span className="text-amber-500"> · kWe estimated — see note below</span>}
       </p>
 
-      <div className="space-y-6">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         {has50hz && (
           <div>
-            <h3 className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
-              <span className="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs font-bold">50 Hz</span>
-              {rpm50} RPM
+            <h3 className="text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between border-t border-gray-900 pt-2">
+              <span className="font-bold text-blue-700">50 Hz</span>
+              <span>{rpm50} RPM</span>
             </h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
@@ -133,9 +134,9 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
 
         {has60hz && (
           <div>
-            <h3 className="text-sm font-semibold text-gray-700 mb-2 flex items-center gap-2">
-              <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-bold">60 Hz</span>
-              {rpm60} RPM
+            <h3 className="text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between border-t border-gray-900 pt-2">
+              <span className="font-bold text-blue-700">60 Hz</span>
+              <span>{rpm60} RPM</span>
             </h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
@@ -171,13 +172,13 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
         )}
       </div>
       {estimated && (
-        <p className="mt-4 text-xs text-amber-600 bg-amber-50 border border-amber-100 rounded-lg px-3 py-2">
+        <p className="mt-5 border-l-4 border-blue-600 bg-blue-50 px-4 py-3 text-xs text-gray-600">
           <strong>Note:</strong> The manufacturer does not publish a separate kWe rating for this engine.
           kWe values shown are estimated from the rated mechanical output (kWm) using a conservative
           90% alternator efficiency factor.
         </p>
       )}
-    </div>
+    </section>
   )
 }
 
@@ -200,11 +201,11 @@ function SpecHero({ engine }: { engine: Engine }) {
   if (cards.length === 0) return null
 
   return (
-    <dl className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-6">
+    <dl className="mb-8 grid grid-cols-2 border-y border-gray-900 sm:grid-cols-3 lg:grid-cols-5">
       {cards.slice(0, 5).map((c) => (
-        <div key={c.label} className="bg-white rounded-xl border border-gray-200 px-4 py-3">
+        <div key={c.label} className="border-b border-r border-gray-200 bg-white px-4 py-4 lg:border-b-0">
           <dt className="text-xs text-gray-500 font-medium leading-tight">{c.label}</dt>
-          <dd className="text-lg font-bold text-gray-900 mt-1">{c.value}</dd>
+          <dd className="mt-2 text-xl font-bold text-gray-900">{c.value}</dd>
         </div>
       ))}
     </dl>
@@ -214,16 +215,16 @@ function SpecHero({ engine }: { engine: Engine }) {
 function RelatedEngines({ engines }: { engines: Engine[] }) {
   if (!engines.length) return null
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-6">
-      <h2 className="text-lg font-semibold text-gray-900 mb-4">Related Engines</h2>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+    <section className="border-t border-gray-900 bg-white pt-5">
+      <h2 className="text-lg font-bold text-gray-900 mb-4">Related Engines</h2>
+      <ul className="grid grid-cols-1 border-t border-gray-200 sm:grid-cols-2">
         {engines.map((e) => {
           const kwe = displayKwe(headlinePower(e))
           return (
             <li key={e.slug}>
               <Link
                 href={`/engines/${e.slug}`}
-                className="flex items-center justify-between gap-2 rounded-lg border border-gray-100 hover:border-blue-300 hover:bg-blue-50 px-3 py-2 transition-colors"
+                className="flex items-center justify-between gap-2 border-b border-r border-gray-200 px-3 py-3 hover:bg-blue-50"
               >
                 <span className="text-sm font-medium text-gray-800 truncate">{e.brand} {e.model}</span>
                 {kwe != null && <span className="flex-shrink-0 text-xs text-gray-500">{kwe.toLocaleString()} kWe</span>}
@@ -232,7 +233,7 @@ function RelatedEngines({ engines }: { engines: Engine[] }) {
           )
         })}
       </ul>
-    </div>
+    </section>
   )
 }
 
@@ -276,8 +277,8 @@ function SmartLink({
 }) {
   if (/^https?:\/\//.test(href)) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
-        {children}
+      <a href={href} target="_blank" rel="noopener noreferrer" className={`${className} inline-flex items-center gap-2`}>
+        {children} <ExternalLink aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
       </a>
     )
   }
@@ -310,7 +311,7 @@ function EngineBuyerContext({
   const fuel = (engine.fuel_type ?? 'diesel').toLowerCase()
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-6">
+    <section className="border-t border-gray-900 bg-white pt-5">
       <h2 className="text-lg font-semibold text-gray-900 mb-3">
         {engine.brand} {engine.model} {variableSpeed ? 'industrial power context' : 'generator set context'}
       </h2>
@@ -334,7 +335,7 @@ function EngineBuyerContext({
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Also searched as</p>
           <div className="flex flex-wrap gap-2">
             {aliases.map((alias) => (
-              <span key={alias} className="rounded-full bg-gray-50 border border-gray-200 px-3 py-1 text-xs text-gray-700">
+              <span key={alias} className="border border-gray-200 bg-gray-50 px-3 py-1 text-xs text-gray-700">
                 {alias}
               </span>
             ))}
@@ -342,17 +343,17 @@ function EngineBuyerContext({
         </div>
       )}
 
-      <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-2 text-sm">
-        <Link href={`/brands/${brandSlug(engine.brand)}`} className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200">
-          All {engine.brand} engines
+      <div className="mt-5 grid grid-cols-1 border-t border-gray-200 sm:grid-cols-3 text-sm">
+        <Link href={`/brands/${brandSlug(engine.brand)}`} className="flex items-center justify-between border-b border-r border-gray-200 px-3 py-3 text-blue-600 hover:bg-blue-50">
+          All {engine.brand} engines <ArrowRight aria-hidden="true" className="h-4 w-4" />
         </Link>
         {competitors[0] && (
-          <Link href={`/engines/compare/${pairSlug(engine.slug, competitors[0].slug)}`} className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200">
-            Compare similar engines
+          <Link href={`/engines/compare/${pairSlug(engine.slug, competitors[0].slug)}`} className="flex items-center justify-between border-b border-r border-gray-200 px-3 py-3 text-blue-600 hover:bg-blue-50">
+            Compare similar engines <ArrowRight aria-hidden="true" className="h-4 w-4" />
           </Link>
         )}
-        <a href={productPackage.href} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200">
-          Haifeng {productPackage.label}
+        <a href={productPackage.href} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between border-b border-gray-200 px-3 py-3 text-blue-600 hover:bg-blue-50">
+          Haifeng {productPackage.label} <ExternalLink aria-hidden="true" className="h-4 w-4" />
         </a>
       </div>
 
@@ -364,7 +365,7 @@ function EngineBuyerContext({
               <SmartLink
                 key={link.href}
                 href={link.href}
-                className="rounded-lg border border-gray-100 px-3 py-2 text-blue-600 hover:bg-blue-50 hover:border-blue-200"
+                className="border border-gray-200 px-3 py-2 text-blue-600 hover:bg-blue-50"
               >
                 {link.label}
               </SmartLink>
@@ -374,20 +375,20 @@ function EngineBuyerContext({
       ) : null}
 
       {quickWin && (
-        <div className="mt-5 rounded-lg border border-blue-100 bg-blue-50 p-4">
+        <div className="mt-5 border-l-4 border-blue-600 bg-blue-50 p-4">
           <h3 className="text-sm font-semibold text-gray-900 mb-1">{quickWin.cta.title}</h3>
           <p className="text-sm text-gray-600 leading-relaxed mb-3">{quickWin.cta.body}</p>
           <div className="flex flex-wrap gap-2 text-sm">
-            <SmartLink href={quickWin.cta.primaryHref} className="rounded-lg bg-blue-600 text-white px-4 py-2 font-semibold hover:bg-blue-700">
-              {quickWin.cta.primaryLabel} ↗
+            <SmartLink href={quickWin.cta.primaryHref} className="bg-blue-600 text-white px-4 py-2 font-semibold hover:bg-blue-700">
+              {quickWin.cta.primaryLabel}
             </SmartLink>
-            <SmartLink href={quickWin.cta.secondaryHref} className="rounded-lg border border-blue-200 bg-white px-4 py-2 font-medium text-blue-600 hover:bg-blue-100">
+            <SmartLink href={quickWin.cta.secondaryHref} className="border border-blue-200 bg-white px-4 py-2 font-medium text-blue-600 hover:bg-blue-100">
               {quickWin.cta.secondaryLabel}
             </SmartLink>
           </div>
         </div>
       )}
-    </div>
+    </section>
   )
 }
 
@@ -396,7 +397,7 @@ function ReferencePanel({ engine, slug }: { engine: Engine; slug: string }) {
   const datasheetCount = engine.pdfs?.length ?? 0
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-6">
+    <section className="border-t border-gray-900 bg-white pt-5">
       <h2 className="text-lg font-semibold text-gray-900 mb-4">Reference</h2>
       <dl className="space-y-3 text-sm">
         <div>
@@ -420,7 +421,7 @@ function ReferencePanel({ engine, slug }: { engine: Engine; slug: string }) {
           </dd>
         </div>
       </dl>
-    </div>
+    </section>
   )
 }
 
@@ -554,9 +555,9 @@ export default async function EngineDetailPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
 
-      <div className="max-w-4xl">
+      <div className="max-w-none">
         {/* Breadcrumb */}
-        <nav className="text-sm text-gray-400 mb-4">
+        <nav className="mb-6 border-b border-gray-200 pb-3 text-sm text-gray-400">
           <Link href="/engines" className="hover:text-blue-600">Engines</Link>
           {' / '}
           <Link href={`/brands/${brandSlug(engine.brand)}`} className="hover:text-blue-600">{engine.brand}</Link>
@@ -565,26 +566,26 @@ export default async function EngineDetailPage({ params }: Props) {
         </nav>
 
         {/* Header */}
-        <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-          <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
+        <header className="catalog-grid border-b border-gray-900 pb-8 pt-2 mb-8">
+          <div className="flex flex-wrap items-start justify-between gap-6 mb-5">
             <div>
               <BrandLogo brand={engine.brand} className="mb-3" />
-              <p className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-1">{engine.brand}</p>
-              <h1 className="text-3xl font-bold text-gray-900">{quickWin?.h1 ?? `${engine.brand} ${engine.model}`}</h1>
+              <p className="section-index mb-3">{engine.brand}</p>
+              <h1 className="max-w-5xl text-4xl font-bold leading-none text-gray-900 sm:text-6xl">{quickWin?.h1 ?? `${engine.brand} ${engine.model}`}</h1>
               {engine.series && <p className="text-gray-500 mt-1">{engine.series}</p>}
             </div>
             <StatusBadge status={engine.status} />
           </div>
 
           {engine.status === 'discontinued' && (
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4 text-sm text-gray-600">
+            <div className="border-l-4 border-gray-900 bg-gray-50 p-4 mb-4 text-sm text-gray-600">
               This engine is no longer in production{engine.year_discontinued ? ` (discontinued ${engine.year_discontinued})` : ''}.
               Specifications and documentation remain archived for reference.
             </div>
           )}
 
-          <p className="text-gray-600 leading-relaxed">{intro}</p>
-        </div>
+          <p className="max-w-4xl text-gray-600 leading-relaxed">{intro}</p>
+        </header>
 
         {/* Spec-card lead image — a unique, owned, indexable graphic (Google Images / social). */}
         <figure className="mb-6">
@@ -594,16 +595,16 @@ export default async function EngineDetailPage({ params }: Props) {
             alt={imageAlt}
             width={1200}
             height={630}
-            className="w-full h-auto rounded-xl border border-gray-200"
+            className="w-full h-auto border-y border-gray-900"
           />
           <figcaption className="sr-only">{imageAlt}</figcaption>
         </figure>
 
         <SpecHero engine={engine} />
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
           {/* Left column */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="space-y-10 lg:col-span-8">
 
             {/* Power Ratings Table */}
             <PowerRatingsTable engine={engine} />
@@ -611,8 +612,8 @@ export default async function EngineDetailPage({ params }: Props) {
             <EngineBuyerContext engine={engine} productPackage={productPackage} competitors={competitors} quickWin={quickWin} />
 
             {/* General Specs */}
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
-              <h2 className="text-lg font-semibold text-gray-900 mb-4">Technical Specifications</h2>
+            <section className="border-t border-gray-900 bg-white pt-5">
+              <h2 className="text-lg font-bold text-gray-900 mb-4">Technical Specifications</h2>
               <table className="w-full">
                 <tbody>
                   <SpecRow label="Brand" value={engine.brand} />
@@ -636,11 +637,11 @@ export default async function EngineDetailPage({ params }: Props) {
                   <SpecRow label="Compatible Generators" value={engine.compatible_generator_brands?.join(', ')} />
                 </tbody>
               </table>
-            </div>
+            </section>
 
             {faqs.length > 0 && (
-              <div className="bg-white rounded-xl border border-gray-200 p-6">
-                <h2 className="text-lg font-semibold text-gray-900 mb-4">Frequently asked questions</h2>
+              <section className="border-t border-gray-900 bg-white pt-5">
+                <h2 className="text-lg font-bold text-gray-900 mb-4">Frequently asked questions</h2>
                 <div className="space-y-5">
                   {faqs.map((f) => (
                     <div key={f.q}>
@@ -649,19 +650,19 @@ export default async function EngineDetailPage({ params }: Props) {
                     </div>
                   ))}
                 </div>
-              </div>
+              </section>
             )}
 
             <RelatedEngines engines={related} />
             {competitors.length > 0 && (
-              <div className="bg-white rounded-xl border border-gray-200 p-6">
-                <h2 className="text-lg font-semibold text-gray-900 mb-4">Compare {engine.brand} {engine.model}</h2>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <section className="border-t border-gray-900 bg-white pt-5">
+                <h2 className="text-lg font-bold text-gray-900 mb-4">Compare {engine.brand} {engine.model}</h2>
+                <ul className="grid grid-cols-1 border-t border-gray-200 sm:grid-cols-2">
                   {competitors.map((c) => (
                     <li key={c.slug}>
                       <Link
                         href={`/engines/compare/${pairSlug(engine.slug, c.slug)}`}
-                        className="flex items-center gap-2 rounded-lg border border-gray-100 hover:border-blue-300 hover:bg-blue-50 px-3 py-2 text-sm text-gray-700 transition-colors"
+                        className="flex items-center gap-2 border-b border-r border-gray-200 px-3 py-3 text-sm text-gray-700 hover:bg-blue-50"
                       >
                         <span className="text-gray-400">vs</span>
                         <span className="font-medium truncate">{c.brand} {c.model}</span>
@@ -669,21 +670,21 @@ export default async function EngineDetailPage({ params }: Props) {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </section>
             )}
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-4">
+          <aside className="space-y-8 lg:col-span-4 lg:sticky lg:top-24 lg:self-start">
             {engine.pdfs && engine.pdfs.length > 0 && (
-              <div className="bg-white rounded-xl border border-gray-200 p-6">
+              <div className="border-t border-gray-900 bg-white pt-5">
                 <PDFDownloadList pdfs={engine.pdfs} />
               </div>
             )}
 
             <ReferencePanel engine={engine} slug={slug} />
 
-            <div className="bg-blue-50 border border-blue-100 rounded-xl p-6">
+            <div className="border-l-4 border-blue-600 bg-blue-50 p-5">
               <p className="font-semibold text-gray-900 mb-1">Need this engine?</p>
               <p className="text-sm text-gray-600 mb-3">
                 Need a generator package using this engine? Haifeng Machinery can help with sizing,
@@ -693,39 +694,39 @@ export default async function EngineDetailPage({ params }: Props) {
                 href="https://www.haifengmachinery.com/contact-us/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-center bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                className="flex items-center justify-center gap-2 bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
               >
-                Get a Quote ↗
+                Get a Quote <ExternalLink aria-hidden="true" className="h-4 w-4" />
               </a>
               <p className="text-sm text-gray-600 mt-3">
                 Or browse Haifeng&apos;s{' '}
                 <a href={productPackage.href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-                  {productPackage.label} ↗
+                  {productPackage.label}
                 </a>
               </p>
             </div>
 
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
+            <div className="border-t border-gray-900 bg-white pt-5">
               <p className="text-sm font-semibold text-gray-700 mb-3">Generator package paths</p>
               <div className="space-y-2 text-sm">
                 <a href="https://www.haifengmachinery.com/product-offerings/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
-                  All product offerings ↗
+                  All product offerings
                 </a>
                 <a href="https://www.haifengmachinery.com/diesel-power-package-regulated/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
-                  EPA standby diesel generators ↗
+                  EPA standby diesel generators
                 </a>
                 <a href="https://www.haifengmachinery.com/gas-power-package-50hz-60hz/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
-                  CNG and LPG gas generator systems ↗
+                  CNG and LPG gas generator systems
                 </a>
                 <a href="https://www.haifengmachinery.com/towable-power-package/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
-                  Rental and towable power ↗
+                  Rental and towable power
                 </a>
                 <a href="https://www.haifengmachinery.com/custom-epc-power-solutions/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
-                  Custom EPC power solutions ↗
+                  Custom EPC power solutions
                 </a>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </>

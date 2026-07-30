@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Link from 'next/link'
+import { ChevronLeft, ChevronRight, Grid2X2, List } from 'lucide-react'
 import { filterEngines, getFilterOptions } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
 import { SearchBar } from '@/components/SearchBar'
@@ -136,59 +137,66 @@ export default async function EnginesPage({ searchParams }: Props) {
 
   return (
     <div>
-      <div className="mb-5">
-        <h1 className="text-2xl font-bold text-gray-900 mb-4">
+      <div className="catalog-grid border-b border-gray-900 pb-8 pt-2 mb-8">
+        <p className="section-index mb-4">01 Engine catalog</p>
+        <h1 className="text-3xl font-bold text-gray-900 mb-6 sm:text-5xl">
           {p.q ? `Results for "${p.q}"` : 'Generator Engine Specifications'}
         </h1>
-        <Suspense>
-          <SearchBar defaultValue={p.q ?? ''} />
-        </Suspense>
+        <div className="max-w-2xl">
+          <Suspense>
+            <SearchBar defaultValue={p.q ?? ''} />
+          </Suspense>
+        </div>
       </div>
 
-      <Suspense>
-        <EngineFilters options={options} totalCount={total} />
-      </Suspense>
+      <div className="min-w-0 xl:grid xl:grid-cols-[240px_minmax(0,1fr)] xl:gap-8">
+        <Suspense>
+          <EngineFilters options={options} totalCount={total} />
+        </Suspense>
 
-      {!hasFilters && (
-        <CommercialPathways
-          eyebrow="Generator package routes"
-          title="Shortlist engines here, then choose the right Haifeng package path"
-          intro="The catalog helps compare model specifications before inquiry. These commercial routes connect engine shortlists to EPA standby diesel, gas, towable, EPC, and general industrial generator package pages."
-        />
-      )}
+        <div className="min-w-0">
+          {!hasFilters && (
+            <CommercialPathways
+              eyebrow="Package routes"
+              title="Shortlist engines here, then choose the right Haifeng package path"
+              intro="The catalog helps compare model specifications before inquiry. These commercial routes connect engine shortlists to EPA standby diesel, gas, towable, EPC, and general industrial generator package pages."
+            />
+          )}
 
-      {/* View toggle */}
-      {total > 0 && (
-        <div className="flex gap-1 mb-4">
-          <Link
-            href={viewHref('table')}
-            className={`px-3 py-1.5 rounded-lg border text-sm font-medium transition-colors ${
-              !isGrid
-                ? 'bg-blue-600 text-white border-blue-600'
-                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
-            }`}
-          >
-            Table
-          </Link>
-          <Link
-            href={viewHref('grid')}
-            className={`px-3 py-1.5 rounded-lg border text-sm font-medium transition-colors ${
-              isGrid
-                ? 'bg-blue-600 text-white border-blue-600'
-                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
-            }`}
-          >
-            Grid
-          </Link>
-        </div>
-      )}
+          {/* View toggle */}
+          {total > 0 && (
+            <div className="mb-5 flex justify-end">
+              <div className="flex border border-gray-900 bg-white" aria-label="Catalog view">
+                <Link
+                  href={viewHref('table')}
+                  title="Table view"
+                  className={`flex h-9 w-10 items-center justify-center border-r border-gray-900 ${
+                    !isGrid ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-blue-50'
+                  }`}
+                >
+                  <List aria-hidden="true" className="h-4 w-4" />
+                  <span className="sr-only">Table</span>
+                </Link>
+                <Link
+                  href={viewHref('grid')}
+                  title="Grid view"
+                  className={`flex h-9 w-10 items-center justify-center ${
+                    isGrid ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-blue-50'
+                  }`}
+                >
+                  <Grid2X2 aria-hidden="true" className="h-4 w-4" />
+                  <span className="sr-only">Grid</span>
+                </Link>
+              </div>
+            </div>
+          )}
 
-      {total === 0 ? (
+          {total === 0 ? (
         <div className="text-center py-20 text-gray-400">
           <p className="text-lg">No engines found.</p>
           <p className="text-sm mt-1">Try adjusting your filters or search query.</p>
         </div>
-      ) : !isGrid ? (
+          ) : !isGrid ? (
         <>
           <EngineTable engines={engines} />
           {hasFilters && total > ENGINE_TABLE_PAGE_SIZE && total <= FILTERED_TABLE_FULL_RESULT_LIMIT && (
@@ -197,15 +205,15 @@ export default async function EnginesPage({ searchParams }: Props) {
             </p>
           )}
         </>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          ) : (
+        <div className="grid grid-cols-1 border-t border-gray-900 sm:grid-cols-2 lg:grid-cols-3">
           {engines.map((engine) => (
             <EngineCard key={engine.id} engine={engine} />
           ))}
         </div>
-      )}
+          )}
 
-      {total > pageSize && (
+          {total > pageSize && (
         <>
           {!isGrid && (
             <p className="text-xs text-gray-400 mt-3">
@@ -216,13 +224,13 @@ export default async function EnginesPage({ searchParams }: Props) {
             {safePage > 1 ? (
               <Link
                 href={pageHref(safePage - 1)}
-                className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 hover:text-blue-700 bg-white transition-colors"
+                className="flex items-center gap-2 border border-gray-900 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
               >
-                ← Previous
+                <ChevronLeft aria-hidden="true" className="h-4 w-4" /> Previous
               </Link>
             ) : (
-              <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed select-none">
-                ← Previous
+              <span className="flex items-center gap-2 border border-gray-200 bg-white px-4 py-2 text-sm text-gray-300 cursor-not-allowed select-none">
+                <ChevronLeft aria-hidden="true" className="h-4 w-4" /> Previous
               </span>
             )}
 
@@ -233,21 +241,23 @@ export default async function EnginesPage({ searchParams }: Props) {
             {safePage < totalPages ? (
               <Link
                 href={pageHref(safePage + 1)}
-                className="px-4 py-2 rounded-lg border border-gray-300 text-sm text-gray-700 hover:border-blue-500 hover:text-blue-700 bg-white transition-colors"
+                className="flex items-center gap-2 border border-gray-900 bg-white px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700"
               >
-                Next →
+                Next <ChevronRight aria-hidden="true" className="h-4 w-4" />
               </Link>
             ) : (
-              <span className="px-4 py-2 rounded-lg border border-gray-200 text-sm text-gray-300 bg-white cursor-not-allowed select-none">
-                Next →
+              <span className="flex items-center gap-2 border border-gray-200 bg-white px-4 py-2 text-sm text-gray-300 cursor-not-allowed select-none">
+                Next <ChevronRight aria-hidden="true" className="h-4 w-4" />
               </span>
             )}
           </div>
         </>
-      )}
+          )}
 
-      {/* Internal-linking hub — shown on the canonical (unfiltered) listing. */}
-      {!hasFilters && <BrowseFacets />}
+          {/* Internal-linking hub — shown on the canonical (unfiltered) listing. */}
+          {!hasFilters && <BrowseFacets />}
+        </div>
+      </div>
     </div>
   )
 }

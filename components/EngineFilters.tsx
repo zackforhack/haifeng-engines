@@ -2,6 +2,7 @@
 
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { useState } from 'react'
+import { Filter, RotateCcw } from 'lucide-react'
 import type { FilterOptions } from '@/lib/engines'
 
 interface Props {
@@ -63,16 +64,14 @@ export function EngineFilters({ options, totalCount }: Props) {
   }
 
   return (
-    <div className="mb-6">
+    <aside className="mb-6 xl:sticky xl:top-24 xl:mb-0 xl:self-start">
       {/* Toolbar row */}
-      <div className="flex items-center gap-3 mb-2">
+      <div className="flex items-center gap-3 border-t border-gray-900 py-3 xl:flex-wrap">
         <button
           onClick={() => setOpen((v) => !v)}
-          className="flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-gray-900 select-none"
+          className="flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-blue-600 select-none"
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3 4h18M7 8h10M11 12h2" />
-          </svg>
+          <Filter aria-hidden="true" className="h-4 w-4" />
           Filters
           {activeCount > 0 && (
             <span className="px-1.5 py-0.5 rounded-full bg-blue-600 text-white text-xs font-bold leading-none">
@@ -81,15 +80,16 @@ export function EngineFilters({ options, totalCount }: Props) {
           )}
         </button>
         {activeCount > 0 && (
-          <button onClick={clearAll} className="text-xs text-gray-400 hover:text-red-500 transition-colors">
-            Clear all
+          <button onClick={clearAll} className="flex items-center gap-1 text-xs text-gray-500 hover:text-blue-600 transition-colors">
+            <RotateCcw aria-hidden="true" className="h-3 w-3" /> Clear
           </button>
         )}
-        <div className="ml-auto flex items-center gap-3">
+        <div className="ml-auto flex items-center gap-3 xl:ml-0 xl:w-full xl:flex-col xl:items-stretch">
           <select
             value={sort}
             onChange={(e) => update('sort', e.target.value)}
-            className="text-xs px-2 py-1.5 border border-gray-300 rounded bg-white text-gray-700 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+            aria-label="Sort engines"
+            className="border border-gray-300 bg-white px-2 py-2 text-xs text-gray-700 focus:border-blue-600 focus:outline-none"
           >
             <option value="">Sort: Brand A → Z</option>
             <option value="kwe_desc">Sort: Power high → low</option>
@@ -97,7 +97,7 @@ export function EngineFilters({ options, totalCount }: Props) {
             <option value="disp_desc">Sort: Displacement high → low</option>
             <option value="disp_asc">Sort: Displacement low → high</option>
           </select>
-          <span className="text-sm text-gray-400 whitespace-nowrap">
+          <span className="text-sm font-bold text-blue-600 whitespace-nowrap">
             {totalCount.toLocaleString()} engine{totalCount !== 1 ? 's' : ''}
           </span>
         </div>
@@ -105,9 +105,9 @@ export function EngineFilters({ options, totalCount }: Props) {
 
       {/* Filter panel */}
       {open && (
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 space-y-4">
+        <div className="border-t border-gray-200 bg-gray-50 py-4 space-y-5 xl:px-3">
           {/* Dropdowns row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-1 gap-3">
             <FilterSelect label="Brand"         param="brand"     value={brand}     options={options.brands}    onUpdate={update} />
             <FilterSelect label="Origin"        param="origin"    value={origin}    options={options.origins}   onUpdate={update} />
             <FilterSelect label="Emissions"     param="emissions" value={emissions} options={options.emissions} onUpdate={update} />
@@ -116,7 +116,7 @@ export function EngineFilters({ options, totalCount }: Props) {
           </div>
 
           {/* Toggles + power range row */}
-          <div className="flex flex-wrap items-end gap-5">
+          <div className="flex flex-wrap items-end gap-5 xl:flex-col xl:items-stretch">
             {/* Status */}
             <div>
               <p className="text-xs font-medium text-gray-500 mb-1.5">Status</p>
@@ -156,7 +156,7 @@ export function EngineFilters({ options, totalCount }: Props) {
                   placeholder="Min"
                   value={minKwe}
                   onChange={(e) => update('min_kwe', e.target.value)}
-                  className="w-20 px-2 py-1 text-xs border border-gray-300 rounded bg-white focus:ring-1 focus:ring-blue-500 focus:outline-none"
+                  className="min-w-0 flex-1 border border-gray-300 bg-white px-2 py-1.5 text-xs focus:border-blue-600 focus:outline-none"
                   min={0}
                 />
                 <span className="text-xs text-gray-400">–</span>
@@ -165,7 +165,7 @@ export function EngineFilters({ options, totalCount }: Props) {
                   placeholder="Max"
                   value={maxKwe}
                   onChange={(e) => update('max_kwe', e.target.value)}
-                  className="w-20 px-2 py-1 text-xs border border-gray-300 rounded bg-white focus:ring-1 focus:ring-blue-500 focus:outline-none"
+                  className="min-w-0 flex-1 border border-gray-300 bg-white px-2 py-1.5 text-xs focus:border-blue-600 focus:outline-none"
                   min={0}
                 />
               </div>
@@ -173,7 +173,7 @@ export function EngineFilters({ options, totalCount }: Props) {
           </div>
         </div>
       )}
-    </div>
+    </aside>
   )
 }
 
@@ -192,7 +192,7 @@ function FilterSelect({
       <select
         value={value}
         onChange={(e) => onUpdate(param, e.target.value)}
-        className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded bg-white text-gray-700 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+        className="w-full border border-gray-300 bg-white px-2 py-2 text-sm text-gray-700 focus:border-blue-600 focus:outline-none"
       >
         <option value="">All {label}{label.endsWith('s') ? '' : 's'}</option>
         {options.map((o) => (
@@ -211,15 +211,15 @@ function ToggleGroup({
   onSelect: (v: string) => void
 }) {
   return (
-    <div className="flex gap-1">
+    <div className="flex border border-gray-300 bg-white">
       {options.map(([val, label]) => (
         <button
           key={val}
           onClick={() => onSelect(val)}
-          className={`px-2.5 py-1 text-xs rounded-full border font-medium transition-colors ${
+          className={`flex-1 border-r border-gray-300 px-2 py-1.5 text-xs font-medium last:border-r-0 ${
             value === val
-              ? 'bg-blue-600 text-white border-blue-600'
-              : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
+              ? 'bg-blue-600 text-white'
+              : 'bg-white text-gray-600 hover:bg-blue-50'
           }`}
         >
           {label}

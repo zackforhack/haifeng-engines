@@ -42,7 +42,7 @@ export function EngineCard({ engine }: { engine: Engine }) {
   return (
     <Link
       href={`/engines/${engine.slug}`}
-      className="block bg-white border border-gray-200 rounded-lg p-4 hover:border-blue-400 hover:shadow-md transition-all"
+      className="block min-h-52 bg-white border-b border-r border-gray-200 p-4 hover:bg-blue-50 transition-colors"
     >
       <div className="flex items-start justify-between gap-2 mb-3">
         <div>

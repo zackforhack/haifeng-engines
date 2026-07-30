@@ -71,7 +71,19 @@ export const PRIORITY_BRAND_HUBS = [
     desc: 'MTU diesel and gas generator engine specs for high-power standby, prime, and EPC packages.',
   },
   {
+    name: 'Weichai',
+    desc: 'Weichai diesel and gas generator engine specs for export and industrial genset packages.',
+  },
+  {
+    name: 'Waukesha',
+    desc: 'Waukesha gas generator engine specs for industrial gas power and long-runtime projects.',
+  },
+  {
     name: 'Detroit Diesel',
     desc: 'Detroit Diesel generator engine specs for legacy and industrial power sets.',
+  },
+  {
+    name: 'Yunnei',
+    desc: 'Yunnei diesel generator engine specs for compact and mid-range genset packages.',
   },
 ]

@@ -59,6 +59,14 @@ jobs:
           DATA_QA_FAIL_ON: high
         run: npm run data:qa
 
+      - name: Database integrity contracts
+        if: steps.env.outputs.configured == 'true'
+        run: npm run test:database
+
+      - name: Linked PDF storage integrity
+        if: steps.env.outputs.configured == 'true'
+        run: npm run test:storage
+
       - name: Build
         if: steps.env.outputs.configured == 'true'
         run: npm run build
@@ -67,7 +75,7 @@ jobs:
         if: steps.env.outputs.configured == 'true'
         run: npx playwright install --with-deps chromium
 
-      - name: Functional QA
+      - name: Functional and integration QA
         if: steps.env.outputs.configured == 'true'
         env:
           QA_BASE_URL: http://127.0.0.1:3000

@@ -83,27 +83,30 @@ export function EngineTable({ engines }: Props) {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-10">
       {activeRanges.map(({ label, i }) => {
         // Only brands that have at least one engine in THIS range
         const rangeBrands = allBrands.filter((b) => (lookup[i].get(b)?.length ?? 0) > 0)
 
         return (
-          <div key={label}>
-            <h3 className="text-xs font-semibold text-blue-700 uppercase tracking-wide mb-1.5 px-0.5">
-              {label}
-            </h3>
-            <div className="overflow-x-auto rounded-lg border border-gray-200">
+          <section key={label}>
+            <div className="mb-2 flex items-baseline justify-between border-t border-gray-900 pt-2">
+              <h3 className="text-sm font-bold text-blue-700">
+                {label}
+              </h3>
+              <span className="text-[10px] text-gray-400">{rangeBrands.length} brands</span>
+            </div>
+            <div className="overflow-x-auto border-b border-gray-900">
               <table className="text-xs border-collapse w-full">
                 <thead>
-                  <tr className="bg-gray-50 border-b border-gray-200">
+                  <tr className="bg-gray-50 border-y border-gray-900">
                     {rangeBrands.map((brand) => {
                       const count = lookup[i].get(brand)?.length ?? 0
                       const dense = count > 4
                       return (
                         <th
                           key={brand}
-                          className={`px-2 py-2 text-center font-semibold text-gray-700 border-r border-gray-200 last:border-r-0 whitespace-nowrap ${dense ? 'min-w-[300px]' : 'min-w-[160px]'}`}
+                          className={`px-2 py-2.5 text-left font-bold text-gray-900 border-r border-gray-200 last:border-r-0 whitespace-nowrap ${dense ? 'min-w-[300px]' : 'min-w-[160px]'}`}
                         >
                           {brand}
                         </th>
@@ -129,7 +132,7 @@ export function EngineTable({ engines }: Props) {
                                 key={e.id}
                                 href={`/engines/${e.slug}`}
                                 title={e.model ?? undefined}
-                                className="flex flex-col gap-px px-1.5 py-1 border-b border-gray-100 last:border-0 hover:bg-blue-50 transition-colors"
+                                className="flex flex-col gap-px border-b border-gray-100 px-1.5 py-2 last:border-0 hover:bg-blue-50 transition-colors"
                               >
                                 <span className="font-semibold text-gray-900 truncate">
                                   {e.model}
@@ -178,7 +181,7 @@ export function EngineTable({ engines }: Props) {
                 </tbody>
               </table>
             </div>
-          </div>
+          </section>
         )
       })}
 

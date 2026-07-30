@@ -1,5 +1,6 @@
 import type { EnginePDF } from '@/lib/types'
 import { getPDFUrl } from '@/lib/engines'
+import { Download, ExternalLink } from 'lucide-react'
 
 const typeLabel: Record<EnginePDF['type'], string> = {
   datasheet: 'Datasheet',
@@ -19,20 +20,18 @@ export function PDFDownloadList({ pdfs }: { pdfs: EnginePDF[] }) {
 
   return (
     <div>
-      <h2 className="text-lg font-semibold text-gray-900 mb-3">Downloads</h2>
-      <ul className="space-y-3">
+      <h2 className="text-lg font-bold text-gray-900 mb-3">Downloads</h2>
+      <ul className="border-t border-gray-200">
         {pdfs.map((pdf) => (
           <li key={pdf.id}>
             <a
               href={getPDFUrl(pdf.storage_path)}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 w-full bg-blue-50 hover:bg-blue-100 border border-blue-200 hover:border-blue-400 rounded-lg px-4 py-3 transition-colors group"
+              className="group flex w-full items-center gap-3 border-b border-gray-200 bg-white px-3 py-3 hover:bg-blue-50"
             >
-              <div className="flex-shrink-0 w-9 h-9 bg-blue-600 group-hover:bg-blue-700 rounded-lg flex items-center justify-center transition-colors">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                </svg>
+              <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center bg-blue-600 text-white">
+                <Download aria-hidden="true" className="h-4 w-4" />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-semibold text-blue-700 group-hover:text-blue-900">
@@ -45,6 +44,7 @@ export function PDFDownloadList({ pdfs }: { pdfs: EnginePDF[] }) {
                   {formatBytes(pdf.file_size_bytes)}
                 </span>
               )}
+              <ExternalLink aria-hidden="true" className="h-3.5 w-3.5 shrink-0 text-gray-400" />
             </a>
           </li>
         ))}

@@ -1,0 +1,32 @@
+{
+  "minimumCounts": {
+    "engines": 2700,
+    "alternators": 145,
+    "enginePdfs": 2800,
+    "engineBrands": 70,
+    "enginesWithAnyDocument": 2260,
+    "enginesWithDatasheet": 1400,
+    "alternatorsWithSpecSheet": 145
+  },
+  "requiredEngineSlugs": [
+    "cummins-6ltaa95-g1",
+    "volvo-penta-twd1682ge",
+    "kohler-kd62v12",
+    "perkins-1206a-e70ttag2",
+    "yuchai-yc16vtd2270-d30",
+    "generac-sg500",
+    "john-deere-6090hf484-t3-340kva",
+    "mitsubishi-s16r2-ptaw2-e-c"
+  ],
+  "requiredAlternatorSlugs": [
+    "stamford-uci224g"
+  ],
+  "requiredBrandCounts": {
+    "Cummins": 280,
+    "Perkins": 145,
+    "Yuchai": 200,
+    "SDEC": 200,
+    "Baudouin": 185,
+    "John Deere": 70
+  }
+}

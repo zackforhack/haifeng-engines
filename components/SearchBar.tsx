@@ -3,6 +3,7 @@
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import { supabase } from '@/lib/supabase'
+import { ArrowRight, Search as SearchIcon } from 'lucide-react'
 
 type EngineHit = {
   slug: string; brand: string; model: string; fuel_type: string | null
@@ -102,8 +103,9 @@ export function SearchBar({
     <div ref={boxRef} className="relative w-full max-w-2xl">
       <form
         onSubmit={(e) => { e.preventDefault(); runSearch(query) }}
-        className="flex gap-2 w-full"
+        className="flex w-full border border-gray-900 bg-white"
       >
+        <SearchIcon aria-hidden="true" className="ml-4 h-5 w-5 shrink-0 self-center text-gray-500" />
         <input
           type="search"
           value={query}
@@ -115,13 +117,14 @@ export function SearchBar({
           aria-expanded={open}
           aria-controls="search-suggestions"
           placeholder="Search by brand, model, or series..."
-          className="flex-1 px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          className="min-w-0 flex-1 border-0 px-3 py-3.5 text-gray-900 placeholder-gray-400 focus:outline-none"
         />
         <button
           type="submit"
-          className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+          className="flex w-12 shrink-0 items-center justify-center border-l border-gray-900 bg-blue-600 text-white hover:bg-blue-700 sm:w-auto sm:gap-2 sm:px-6"
         >
-          Search
+          <span className="sr-only sm:not-sr-only">Search</span>
+          <ArrowRight aria-hidden="true" className="h-4 w-4" />
         </button>
       </form>
 
@@ -129,7 +132,7 @@ export function SearchBar({
         <div
           id="search-suggestions"
           role="listbox"
-          className="absolute z-50 mt-2 w-full bg-white rounded-lg border border-gray-200 shadow-xl overflow-hidden text-left"
+          className="absolute z-50 mt-1 w-full bg-white border border-gray-900 overflow-hidden text-left"
         >
           {engines.length > 0 && (
             <div className="px-3 pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wide text-gray-400">Engines</div>

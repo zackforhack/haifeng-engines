@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { ArrowRight, Database, FileText, Gauge, Layers3 } from 'lucide-react'
 import { getDbStats, getFilterOptions } from '@/lib/engines'
 import { getAllAlternators } from '@/lib/alternators'
 import { getAllGuides } from '@/lib/guides'
@@ -23,10 +24,10 @@ export const metadata: Metadata = {
 const BASE = 'https://engines.haifengmachinery.com'
 
 const POWER_PRESETS = [
-  { label: 'Under 100 kWe',   slug: 'under-100-kwe' },
-  { label: '100 – 500 kWe',   slug: '100-500-kwe' },
-  { label: '500 – 1,500 kWe', slug: '500-1500-kwe' },
-  { label: '1,500+ kWe',      slug: '1500-plus-kwe' },
+  { label: 'Under 100 kWe', slug: 'under-100-kwe' },
+  { label: '100–500 kWe', slug: '100-500-kwe' },
+  { label: '500–1,500 kWe', slug: '500-1500-kwe' },
+  { label: '1,500+ kWe', slug: '1500-plus-kwe' },
 ]
 
 const brandHref = (brand: string) => `/brands/${brandSlug(brand)}`
@@ -40,187 +41,244 @@ export default async function HomePage() {
   ])
 
   const sections = [
-    { href: '/engines', title: 'Engines', desc: `${stats.total.toLocaleString()} diesel & gas engine spec pages`, count: stats.total },
-    { href: '/alternators', title: 'Alternators', desc: `${alternators.length} generator alternator models`, count: alternators.length },
-    { href: '/brands', title: 'Brands', desc: `${stats.brandCount} engine brands worldwide`, count: stats.brandCount },
-    { href: '/guides', title: 'Guides', desc: `${guides.length} practical generator guides`, count: guides.length },
+    {
+      href: '/engines',
+      title: 'Engines',
+      desc: `${stats.total.toLocaleString()} diesel and gas engine specification pages`,
+      count: stats.total,
+      icon: Database,
+    },
+    {
+      href: '/alternators',
+      title: 'Alternators',
+      desc: `${alternators.length} generator alternator models`,
+      count: alternators.length,
+      icon: Gauge,
+    },
+    {
+      href: '/brands',
+      title: 'Brands',
+      desc: `${stats.brandCount} engine manufacturers worldwide`,
+      count: stats.brandCount,
+      icon: Layers3,
+    },
+    {
+      href: '/guides',
+      title: 'Guides',
+      desc: `${guides.length} practical generator references`,
+      count: guides.length,
+      icon: FileText,
+    },
   ]
 
   const itemList = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'The Generator Engine Encyclopedia — sections',
-    itemListElement: sections.map((s, i) => ({
-      '@type': 'ListItem', position: i + 1, name: s.title, url: `${BASE}${s.href}`,
+    itemListElement: sections.map((section, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: section.title,
+      url: `${BASE}${section.href}`,
     })),
   }
 
   return (
     <div>
-      <script type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList).replace(/</g, '\\u003c') }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList).replace(/</g, '\\u003c') }}
+      />
 
-      {/* Hero */}
-      <div className="relative rounded-3xl border border-white/10 mb-10 shadow-xl">
-        <div className="hero-photo" aria-hidden="true">
-          {/* LCP element: optimized + preloaded so it paints fast on mobile (next/image
-              serves resized AVIF/WebP and emits a preload <link>). Ken Burns zoom via .hero-img. */}
-          <Image
-            src="/hero/cummins-engine.jpg"
-            alt=""
-            fill
-            preload
-            sizes="100vw"
-            className="hero-img"
-          />
-          <div className="overlay" />
-        </div>
-        <div className="relative z-10 text-center px-6 py-16 sm:py-24">
-          <span className="inline-block text-xs font-semibold tracking-wider uppercase text-cyan-200 bg-white/10 border border-white/20 backdrop-blur rounded-full px-3 py-1 mb-5">
-            The Generator Engine Encyclopedia
-          </span>
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4 text-white">
-            <span className="inline-flex items-baseline whitespace-nowrap">
-              <CountUp
-                end={stats.total}
-                className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-300 bg-clip-text text-transparent"
-              />
-              <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-indigo-300 bg-clip-text text-transparent">
-                +
+      <section className="catalog-grid border-b border-gray-900 pb-10 pt-2 sm:pb-14 sm:pt-6">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
+          <div className="lg:col-span-7">
+            <p className="section-index mb-6">Global technical reference</p>
+            <h1 className="max-w-4xl text-[clamp(2.5rem,7vw,6.6rem)] font-bold leading-[0.92] text-gray-900">
+              <span className="block text-blue-600">
+                <CountUp end={stats.total} />+
               </span>
-            </span>{' '}
-            Generator Engine Specifications
-          </h1>
-          <p className="text-slate-300 text-lg mb-9 max-w-2xl mx-auto">
-            A free Haifeng Machinery / Haifeng Power reference for <strong className="font-semibold text-white">diesel and gas</strong> engines and alternators used in electrical power generation — search specs, datasheets, and guides by brand, model, emissions standard, and power output.
-          </p>
-          <div className="flex justify-center gap-8 sm:gap-12 flex-wrap mb-10">
+              Generator Engine Specifications
+            </h1>
+            <p className="mt-7 max-w-2xl text-base leading-relaxed text-gray-600 sm:text-lg">
+              Search diesel and gas generator engines, alternators, manufacturer datasheets,
+              emissions standards, and verified power ratings.
+            </p>
+            <div className="mt-8 max-w-2xl">
+              <Suspense>
+                <SearchBar defaultValue="" target="/engines" />
+              </Suspense>
+            </div>
+          </div>
+
+          <dl className="grid grid-cols-3 border-t border-gray-900 lg:col-span-5">
             {[
-              { value: stats.total, label: 'Engines' },
               { value: alternators.length, label: 'Alternators' },
               { value: stats.brandCount, label: 'Brands' },
               { value: stats.originCount, label: 'Countries' },
             ].map(({ value, label }) => (
-              <div key={label} className="text-center">
-                <p className="text-3xl font-bold text-cyan-300"><CountUp end={value} /></p>
-                <p className="text-sm text-slate-400 mt-0.5">{label}</p>
+              <div key={label} className="border-r border-gray-200 px-3 py-4 last:border-r-0 sm:px-5">
+                <dd className="text-2xl font-bold text-gray-900 sm:text-4xl">
+                  <CountUp end={value} />
+                </dd>
+                <dt className="mt-2 text-xs text-gray-500">{label}</dt>
               </div>
             ))}
-          </div>
-          <div className="flex justify-center">
-            <Suspense><SearchBar defaultValue="" target="/engines" /></Suspense>
+            <div className="col-span-3 border-t border-gray-200 px-3 py-3 text-xs text-gray-500 sm:px-5">
+              <span className="font-bold text-blue-600">{stats.total.toLocaleString()}</span>{' '}
+              <span>Engines indexed</span>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section className="swiss-photo -mx-4 sm:-mx-6 lg:-mx-8">
+        <Image
+          src="/hero/cummins-engine.jpg"
+          alt="Cummins generator engine installation"
+          fill
+          preload
+          sizes="100vw"
+        />
+        <div className="absolute bottom-0 left-[18%] z-10 bg-white px-4 py-2 text-xs text-gray-600 sm:px-6">
+          Generator engine reference database by Haifeng Machinery
+        </div>
+      </section>
+
+      <section className="border-b border-gray-900 py-10 sm:py-14">
+        <div className="mb-7 flex items-end justify-between gap-4">
+          <div>
+            <p className="section-index mb-3">01 Catalog</p>
+            <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">Browse the database</h2>
           </div>
         </div>
-      </div>
+        <div className="grid grid-cols-1 border-t border-gray-900 md:grid-cols-2 xl:grid-cols-4">
+          {sections.map((section, index) => {
+            const Icon = section.icon
+            return (
+              <Link
+                key={section.href}
+                href={section.href}
+                className="group border-b border-r border-gray-200 p-5 hover:bg-blue-50 xl:border-b-0"
+              >
+                <div className="mb-8 flex items-start justify-between">
+                  <span className="text-xs font-bold text-blue-600">0{index + 1}</span>
+                  <Icon aria-hidden="true" className="h-5 w-5 text-gray-400 group-hover:text-blue-600" />
+                </div>
+                <p className="text-4xl font-bold text-gray-900">
+                  <CountUp end={section.count} />
+                </p>
+                <h3 className="mt-2 text-lg font-bold text-gray-900">{section.title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-gray-500">{section.desc}</p>
+              </Link>
+            )
+          })}
+        </div>
+      </section>
 
-      {/* Explore sections */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-        {sections.map((s) => (
-          <Link key={s.href} href={s.href}
-            className="block bg-white border border-gray-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-md transition-all">
-            <p className="text-2xl font-extrabold text-blue-700"><CountUp end={s.count} /></p>
-            <h2 className="text-base font-bold text-gray-900 mt-1">{s.title}</h2>
-            <p className="text-xs text-gray-500 mt-0.5">{s.desc}</p>
+      <section className="border-b border-gray-900 py-10 sm:py-14">
+        <div className="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p className="section-index mb-3">02 Models</p>
+            <h2 className="text-2xl font-bold text-gray-900">High-interest specifications</h2>
+          </div>
+          <Link href="/engines" className="hidden items-center gap-2 text-sm font-bold text-blue-600 hover:underline sm:flex">
+            Browse all <ArrowRight aria-hidden="true" className="h-4 w-4" />
           </Link>
-        ))}
-      </div>
-
-      <section className="mb-12">
-        <div className="flex items-baseline justify-between mb-3">
-          <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">High-interest generator specs</h2>
-          <Link href="/engines" className="text-sm text-blue-600 hover:underline">Browse all specs →</Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
-          {PRIORITY_MODEL_SPECS.map((spec) => (
+        <div className="grid grid-cols-1 border-t border-gray-900 sm:grid-cols-2 lg:grid-cols-5">
+          {PRIORITY_MODEL_SPECS.map((spec, index) => (
             <Link
               key={spec.href}
               href={spec.href}
-              className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-md transition-all"
+              className="group min-h-40 border-b border-r border-gray-200 p-4 hover:bg-blue-50"
             >
-              <h3 className="text-sm font-bold text-gray-900">{spec.label}</h3>
-              <p className="text-xs text-gray-500 mt-1 leading-relaxed">{spec.desc}</p>
+              <span className="text-xs text-gray-400">{String(index + 1).padStart(2, '0')}</span>
+              <h3 className="mt-8 text-sm font-bold text-gray-900 group-hover:text-blue-600">{spec.label}</h3>
+              <p className="mt-2 text-xs leading-relaxed text-gray-500">{spec.desc}</p>
             </Link>
           ))}
         </div>
       </section>
 
       <CommercialPathways
-        eyebrow="From database to Haifeng Machinery"
-        title="Use the engine shortlist to choose the right generator package route"
-        intro="After comparing engine model, output, emissions standard, datasheet availability, and alternator fit, move into the Haifeng Machinery page that matches the commercial inquiry."
+        eyebrow="03 Package routes"
+        title="Move from an engine shortlist to a generator package"
+        intro="Compare model, output, emissions, datasheet availability, and alternator fit before choosing the Haifeng Machinery product route that matches the project."
       />
 
-      <section className="mb-12">
-        <div className="flex items-baseline justify-between mb-3">
-          <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Generator brand hubs</h2>
-          <Link href="/brands" className="text-sm text-blue-600 hover:underline">View all brands →</Link>
+      <section className="border-b border-gray-900 py-10 sm:py-14">
+        <div className="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p className="section-index mb-3">04 Manufacturers</p>
+            <h2 className="text-2xl font-bold text-gray-900">Generator brand hubs</h2>
+          </div>
+          <Link href="/brands" className="text-sm font-bold text-blue-600 hover:underline">All brands</Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-1 border-t border-gray-900 sm:grid-cols-2 lg:grid-cols-5">
           {PRIORITY_BRAND_HUBS.map((brand) => (
             <Link
               key={brand.name}
               href={brandHref(brand.name)}
-              className="block bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-md transition-all"
+              className="min-h-36 border-b border-r border-gray-200 p-4 hover:bg-blue-50"
             >
               <h3 className="text-sm font-bold text-gray-900">{brand.name} generator engines</h3>
-              <p className="text-xs text-gray-500 mt-1 leading-relaxed">{brand.desc}</p>
+              <p className="mt-7 text-xs leading-relaxed text-gray-500">{brand.desc}</p>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* Browse by fuel */}
-      <div className="mb-8">
-        <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Browse Engines by Fuel Type</h2>
-        <div className="flex flex-wrap gap-2">
-          {[{ label: 'Diesel', value: 'diesel' }, { label: 'Gas (Natural Gas · CNG/LNG · Biogas)', value: 'gas' }].map(({ label, value }) => (
-            <Link key={value} href={`/engines/fuel/${value}`}
-              className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
-              {label}
-            </Link>
-          ))}
+      <section className="grid grid-cols-1 border-b border-gray-900 py-10 sm:py-14 lg:grid-cols-12">
+        <div className="mb-8 lg:col-span-3 lg:mb-0">
+          <p className="section-index mb-3">05 Browse</p>
+          <h2 className="text-2xl font-bold text-gray-900">Technical facets</h2>
         </div>
-      </div>
+        <div className="space-y-8 lg:col-span-9">
+          <FacetLinks
+            title="Fuel"
+            links={[
+              { label: 'Diesel', href: '/engines/fuel/diesel' },
+              { label: 'Gas: natural gas, CNG, LNG, and biogas', href: '/engines/fuel/gas' },
+            ]}
+          />
+          <FacetLinks
+            title="Emissions"
+            links={['U.S. EPA', 'Euro Stage', 'U.S. EPA Final Tier 4', 'Euro Stage V', 'Unregulated'].map((value) => ({
+              label: value,
+              href: `/engines?${new URLSearchParams({ emissions: value }).toString()}`,
+            }))}
+          />
+          <FacetLinks
+            title="Power"
+            links={POWER_PRESETS.map(({ label, slug }) => ({ label, href: `/engines/power/${slug}` }))}
+          />
+          <FacetLinks
+            title="Brands"
+            links={options.brands.map((brand) => ({ label: brand, href: brandHref(brand) }))}
+          />
+        </div>
+      </section>
+    </div>
+  )
+}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div>
-          <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Browse by Emissions Standard</h2>
-          <div className="flex flex-wrap gap-2">
-            {['U.S. EPA', 'Euro Stage', 'U.S. EPA Final Tier 4', 'Euro Stage V', 'Unregulated'].map((value) => (
-              <Link key={value} href={`/engines?${new URLSearchParams({ emissions: value }).toString()}`}
-                className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
-                {value}
-              </Link>
-            ))}
-          </div>
-        </div>
-        <div>
-          <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Browse by Power Range</h2>
-          <div className="flex flex-wrap gap-2">
-            {POWER_PRESETS.map(({ label, slug }) => (
-              <Link key={label} href={`/engines/power/${slug}`}
-                className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
-                {label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Brands */}
-      <div>
-        <div className="flex items-baseline justify-between mb-3">
-          <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Browse by Brand</h2>
-          <Link href="/brands" className="text-sm text-blue-600 hover:underline">View all brands →</Link>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {options.brands.map((brand) => (
-            <Link key={brand} href={brandHref(brand)}
-              className="px-3 py-1.5 rounded-full border border-gray-300 text-sm text-gray-700 bg-white hover:border-blue-500 hover:text-blue-700 hover:bg-blue-50 transition-colors">
-              {brand}
-            </Link>
-          ))}
-        </div>
+function FacetLinks({
+  title,
+  links,
+}: {
+  title: string
+  links: Array<{ label: string; href: string }>
+}) {
+  return (
+    <div className="grid grid-cols-1 border-t border-gray-900 pt-3 sm:grid-cols-4">
+      <h3 className="mb-3 text-sm font-bold text-gray-900 sm:mb-0">{title}</h3>
+      <div className="flex flex-wrap gap-x-5 gap-y-2 sm:col-span-3">
+        {links.map((link) => (
+          <Link key={`${title}-${link.label}`} href={link.href} className="text-sm text-gray-600 underline decoration-gray-300 underline-offset-4 hover:text-blue-600 hover:decoration-blue-600">
+            {link.label}
+          </Link>
+        ))}
       </div>
     </div>
   )

@@ -84,44 +84,55 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema).replace(/</g, '\\u003c') }}
         />
-        <header className="bg-white border-b border-gray-200 sticky top-0 z-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-1.5 sm:gap-2 min-w-0">
-              <span className="text-sm sm:text-xl font-bold text-blue-700 whitespace-nowrap">The Generator Engine</span>
-              <span className="text-sm sm:text-xl font-light text-gray-600 whitespace-nowrap">Encyclopedia</span>
+        <header className="bg-white border-b border-gray-900 sticky top-0 z-20">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
+            <Link href="/" className="flex items-center gap-3 min-w-0 group">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center bg-blue-600 text-white text-xs font-bold">
+                HF
+              </span>
+              <span className="min-w-0">
+                <span className="block text-sm sm:text-base font-bold text-gray-900 whitespace-nowrap">Generator Engine Index</span>
+                <span className="hidden sm:block text-[11px] text-gray-500 whitespace-nowrap">Haifeng Machinery technical reference</span>
+              </span>
             </Link>
             <SiteNav />
           </div>
         </header>
 
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <main className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {children}
         </main>
 
-        <footer className="border-t border-gray-200 mt-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-500">
-            <div className="flex flex-col sm:flex-row justify-between gap-4">
-              <p>
-                The Generator Engine Encyclopedia — a free resource by{' '}
+        <footer className="border-t border-gray-900 mt-16 bg-white">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-10 text-sm text-gray-500">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-12">
+              <p className="sm:col-span-6 max-w-xl leading-relaxed">
+                Generator Engine Index is a free technical reference maintained by{' '}
                 <a href="https://www.haifengmachinery.com" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
                   Haifeng Machinery
                 </a>{' '}
-                / Haifeng Power
+                / Haifeng Power.
               </p>
-              <div className="flex gap-4">
-                <Link href="/engines" className="hover:text-gray-900">Browse Engines</Link>
-                <Link href="/guides" className="hover:text-gray-900">Guides</Link>
-                <Link href="/brands" className="hover:text-gray-900">Brands</Link>
+              <div className="sm:col-span-3 space-y-2">
+                <p className="text-xs font-bold text-gray-900">Catalog</p>
+                <Link href="/engines" className="block hover:text-blue-600">Engines</Link>
+                <Link href="/alternators" className="block hover:text-blue-600">Alternators</Link>
+                <Link href="/brands" className="block hover:text-blue-600">Brands</Link>
+              </div>
+              <div className="sm:col-span-3 space-y-2">
+                <p className="text-xs font-bold text-gray-900">Resources</p>
+                <Link href="/guides" className="block hover:text-blue-600">Guides</Link>
+                {SOCIALS.map((s) => (
+                  <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
+                    className="block hover:text-blue-600">
+                    {s.label}
+                  </a>
+                ))}
               </div>
             </div>
-            <div className="flex gap-4 mt-6 pt-6 border-t border-gray-100">
-              {SOCIALS.map((s) => (
-                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-600 transition-colors text-xs font-medium">
-                  {s.label}
-                </a>
-              ))}
-            </div>
+            <p className="mt-10 pt-4 border-t border-gray-200 text-xs text-gray-400">
+              Specifications are provided for engineering reference. Confirm final ratings with the manufacturer.
+            </p>
           </div>
         </footer>
         <Analytics />

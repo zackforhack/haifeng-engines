@@ -1,272 +1,313 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0b0b0d;
-  --foreground: #f4f4f5;
-  color-scheme: dark;
+  --background: #f7f7f8;
+  --foreground: #111111;
+  --surface: #ffffff;
+  --muted: #5b5b60;
+  --line: #d8d8dc;
+  --line-strong: #111111;
+  --accent: #002fa7;
+  color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --font-mono: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  letter-spacing: 0;
 }
 
-/* WeblySleek UI — self-hosted (Light / SemiLight / SemiBold). SemiLight serves as the
-   regular body weight; SemiBold covers 600–800 (bold/semibold/extrabold headings). */
-@font-face {
-  font-family: 'WeblySleek UI';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url('/fonts/weblysleekuil.woff') format('woff');
-}
-@font-face {
-  font-family: 'WeblySleek UI';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/weblysleekuisl.woff') format('woff');
-}
-@font-face {
-  font-family: 'WeblySleek UI';
-  font-style: normal;
-  font-weight: 500 800;
-  font-display: swap;
-  src: url('/fonts/weblysleekuisb.woff') format('woff');
+html {
+  background: var(--background);
+  scroll-behavior: smooth;
 }
 
 body {
+  min-width: 320px;
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: 'WeblySleek UI', 'Segoe UI', system-ui, -apple-system, Tahoma, Arial, sans-serif;
-  /* Base weight 500 → SemiBold for stronger contrast on the dark theme */
-  font-weight: 500;
+  font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* ── Dark theme ──────────────────────────────────────────────────────────────
-   The app's components use light Tailwind utilities (bg-white, text-gray-900, …).
-   Rather than touch ~330 class strings across 14 files, we remap those utilities
-   to dark equivalents here. These plain (unlayered) rules win over Tailwind's
-   layered utilities. Surface hierarchy: page < panel < card < raised. Brand
-   accents (blue/green/amber) are kept but lightened for contrast on dark. */
-.bg-white      { background-color: #21212a; }
-.bg-gray-50    { background-color: #16161a; }
-.bg-gray-100   { background-color: #303039; }
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
 
-.text-gray-900 { color: #ffffff; }
-.text-gray-800 { color: #f6f6f8; }
-.text-gray-700 { color: #ececf0; }
-.text-gray-600 { color: #d6d6dd; }
-.text-gray-500 { color: #b4b4bf; }
-.text-gray-400 { color: #9a9aa6; }
-.text-gray-300 { color: #6b6b75; }
+a,
+button,
+input,
+select,
+textarea {
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
 
-.border-gray-100 { border-color: rgba(255, 255, 255, 0.06); }
-.border-gray-200 { border-color: rgba(255, 255, 255, 0.10); }
-.border-gray-300 { border-color: rgba(255, 255, 255, 0.15); }
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
 
-/* Blue accents (links, eyebrows, tints) */
-.text-blue-600 { color: #60a5fa; }
-.text-blue-700 { color: #93c5fd; }
-.bg-blue-50    { background-color: rgba(59, 130, 246, 0.12); }
-.bg-blue-100   { background-color: rgba(59, 130, 246, 0.20); }
-.border-blue-100 { border-color: rgba(59, 130, 246, 0.25); }
-.border-blue-200 { border-color: rgba(59, 130, 246, 0.35); }
+input,
+select,
+textarea {
+  background: #ffffff;
+  color: #111111;
+}
 
-/* Status / emissions pills + estimated-note (dark translucent, light text) */
-.bg-green-100  { background-color: rgba(34, 197, 94, 0.16); }
-.bg-green-200  { background-color: rgba(34, 197, 94, 0.22); }
-.border-green-200 { border-color: rgba(34, 197, 94, 0.30); }
-.text-green-700 { color: #4ade80; }
-.text-green-800 { color: #4ade80; }
-.bg-yellow-100 { background-color: rgba(234, 179, 8, 0.16); }
-.border-yellow-200 { border-color: rgba(234, 179, 8, 0.30); }
-.text-yellow-800 { color: #fde047; }
-.bg-amber-50   { background-color: rgba(245, 158, 11, 0.10); }
-.border-amber-100 { border-color: rgba(245, 158, 11, 0.25); }
-.text-amber-600 { color: #fbbf24; }
-.text-amber-500 { color: #f59e0b; }
+select option {
+  background: #ffffff;
+  color: #111111;
+}
 
-/* Hover variants that would otherwise flash a light surface */
-.hover\:bg-gray-50:hover  { background-color: #1a1a1e; }
-.hover\:bg-gray-100:hover { background-color: #26262b; }
-.hover\:bg-blue-50:hover  { background-color: rgba(59, 130, 246, 0.16); }
-.hover\:bg-blue-100:hover { background-color: rgba(59, 130, 246, 0.24); }
-.hover\:text-gray-900:hover { color: #f4f4f5; }
-.hover\:text-blue-700:hover { color: #bfdbfe; }
-.hover\:text-blue-900:hover { color: #dbeafe; }
+/* Keep the existing utility-heavy component layer on the Swiss token system. */
+.bg-white { background-color: #ffffff; }
+.bg-gray-50 { background-color: #f7f7f8; }
+.bg-gray-100 { background-color: #eeeeef; }
+.text-gray-900,
+.text-gray-800 { color: #111111; }
+.text-gray-700 { color: #2e2e31; }
+.text-gray-600 { color: #47474c; }
+.text-gray-500 { color: #5b5b60; }
+.text-gray-400 { color: #7a7a80; }
+.text-gray-300 { color: #a4a4aa; }
+.border-gray-100 { border-color: #e8e8ea; }
+.border-gray-200,
+.border-gray-300 { border-color: var(--line); }
 
-/* Form controls */
-input, select, textarea { background-color: #111114; color: #f4f4f5; }
-select option { background-color: #17171b; color: #f4f4f5; }
+.text-blue-600,
+.text-blue-700,
+.text-blue-900 { color: var(--accent); }
+.bg-blue-600,
+.bg-blue-700 { background-color: var(--accent); }
+.bg-blue-50 { background-color: #f1f4fc; }
+.bg-blue-100 { background-color: #e4eafd; }
+.border-blue-100,
+.border-blue-200,
+.border-blue-300,
+.border-blue-400,
+.border-blue-500,
+.border-blue-600 { border-color: var(--accent); }
 
-/* ── Futuristic animated hero background ─────────────────────────────────────
-   Flowing gradient "blobs" + a drifting tech grid + a slow sheen sweep. Pure CSS,
-   GPU-friendly (animates transform/opacity only), and disabled for reduced-motion. */
-.hero-bg {
+/* Statuses remain readable without adding a second decorative color system. */
+.text-green-700,
+.text-green-800,
+.text-red-500,
+.text-red-600,
+.text-red-700,
+.text-yellow-800 { color: #111111; }
+.bg-green-50,
+.bg-green-100,
+.bg-green-200,
+.bg-red-50,
+.bg-red-100,
+.bg-yellow-100 { background-color: #eeeeef; }
+.border-green-200,
+.border-green-300,
+.border-red-200,
+.border-red-300,
+.border-yellow-200 { border-color: #a4a4aa; }
+.bg-amber-50 { background-color: #f7f7f8; }
+.border-amber-100 { border-color: #a4a4aa; }
+.text-amber-500,
+.text-amber-600,
+.text-amber-700 { color: #47474c; }
+
+.hover\:bg-gray-50:hover,
+.hover\:bg-gray-100:hover,
+.hover\:bg-blue-50:hover,
+.hover\:bg-blue-100:hover { background-color: #f1f4fc; }
+.hover\:text-gray-900:hover,
+.hover\:text-blue-700:hover,
+.hover\:text-blue-900:hover { color: var(--accent); }
+.hover\:bg-blue-700:hover { background-color: #001f70; }
+.hover\:border-blue-300:hover,
+.hover\:border-blue-400:hover,
+.hover\:border-blue-500:hover { border-color: var(--accent); }
+
+.rounded-3xl,
+.rounded-2xl,
+.rounded-xl { border-radius: 4px; }
+.rounded-lg { border-radius: 3px; }
+.rounded-full { border-radius: 2px; }
+.shadow-sm,
+.shadow-md,
+.shadow-lg,
+.shadow-xl { box-shadow: none; }
+
+.catalog-grid {
+  background-image:
+    linear-gradient(to right, rgba(17, 17, 17, 0.055) 1px, transparent 1px);
+  background-size: calc(100% / 12) 100%;
+}
+
+.section-index {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-index::after {
+  width: 2rem;
+  height: 1px;
+  background: currentColor;
+  content: "";
+}
+
+.metric-number {
+  font-variant-numeric: tabular-nums;
+  line-height: 0.82;
+}
+
+.swiss-photo {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+}
+
+.swiss-photo img {
+  object-fit: cover;
+  object-position: center 43%;
+  filter: grayscale(100%) contrast(1.08);
+}
+
+.swiss-photo::after {
   position: absolute;
   inset: 0;
-  overflow: hidden;
-  background: linear-gradient(135deg, #0b1220 0%, #0a0e1a 55%, #0b1530 100%);
-}
-.hero-bg .blob {
-  position: absolute;
-  border-radius: 9999px;
-  filter: blur(70px);
-  opacity: 0.55;
-  will-change: transform;
-}
-.hero-bg .b1 {
-  width: 42rem; height: 42rem; left: -8rem; top: -12rem;
-  background: radial-gradient(circle at 30% 30%, #3b82f6, transparent 70%);
-  animation: heroBlob1 22s ease-in-out infinite;
-}
-.hero-bg .b2 {
-  width: 38rem; height: 38rem; right: -10rem; top: -6rem;
-  background: radial-gradient(circle at 30% 30%, #06b6d4, transparent 70%);
-  animation: heroBlob2 26s ease-in-out infinite;
-}
-.hero-bg .b3 {
-  width: 36rem; height: 36rem; left: 28%; bottom: -16rem;
-  background: radial-gradient(circle at 30% 30%, #6366f1, transparent 70%);
-  animation: heroBlob3 24s ease-in-out infinite;
-}
-.hero-bg .grid {
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 48px 48px;
-  animation: heroGrid 6s linear infinite;
-  -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, transparent 80%);
-  mask-image: radial-gradient(ellipse at center, #000 35%, transparent 80%);
-}
-.hero-bg .sheen {
-  position: absolute; top: 0; bottom: 0; width: 45%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
-  animation: heroSheen 9s ease-in-out infinite;
+  background: linear-gradient(90deg, rgba(0, 47, 167, 0.78) 0 18%, transparent 18% 100%);
+  content: "";
+  pointer-events: none;
 }
 
-@keyframes heroBlob1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(8%, 6%) scale(1.25); }
-}
-@keyframes heroBlob2 {
-  0%, 100% { transform: translate(0, 0) scale(1.1); }
-  50% { transform: translate(-10%, 8%) scale(1); }
-}
-@keyframes heroBlob3 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(6%, -8%) scale(1.2); }
-}
-@keyframes heroGrid {
-  from { background-position: 0 0; }
-  to { background-position: 0 -48px; }
-}
-@keyframes heroSheen {
-  0% { transform: translateX(-40%); opacity: 0; }
-  20% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { transform: translateX(160%); opacity: 0; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-bg .blob,
-  .hero-bg .grid,
-  .hero-bg .sheen { animation: none; }
-}
-
-/* ── Photo hero with a slow "Ken Burns" zoom (video-like loop from a still) ── */
-/* Background layer clips the photo to the hero's rounded corners itself, so the hero
-   wrapper no longer needs overflow:hidden (which was clipping the search autocomplete). */
-.hero-photo { position: absolute; inset: 0; overflow: hidden; border-radius: inherit; background: #0a0e1a; }
-/* next/image (fill) sets position/inset/size; we add cover + the Ken Burns zoom here. */
-.hero-img {
-  object-fit: cover;
-  transform: scale(1.06);
-  animation: heroKenBurns 34s ease-in-out infinite alternate;
-  will-change: transform;
-}
-.hero-photo .overlay {
-  position: absolute; inset: 0;
-  background:
-    linear-gradient(110deg, rgba(7, 12, 24, 0.93) 0%, rgba(8, 13, 28, 0.7) 48%, rgba(11, 20, 44, 0.52) 100%),
-    radial-gradient(ellipse at 50% 120%, rgba(2, 6, 16, 0.6), transparent 60%);
-}
-@keyframes heroKenBurns {
-  0% { transform: scale(1.06) translate(0, 0); }
-  100% { transform: scale(1.18) translate(-2%, -1.5%); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .hero-img { animation: none; }
-}
-
-/* ── /guides: light reading surface (matches haifengmachinery.com) ──────────── */
-/* Full-bleed white band that breaks out of the centered, padded <main>. */
+/* Guides now inherit the same light system instead of switching themes. */
 .guide-light {
-  background: #ffffff;
-  color: #1f2937;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  margin-top: -2rem;            /* cancel <main> py-8 so it meets the header */
-  margin-bottom: -4rem;         /* and the footer (mt-16 below) */
-  padding: 2.5rem max(1.25rem, calc(50vw - 38rem)) 4rem;
   min-height: 78vh;
+  margin: -2rem calc(50% - 50vw) -4rem;
+  padding: 2.5rem max(1.25rem, calc(50vw - 38rem)) 4rem;
+  background: #ffffff;
+  color: #111111;
 }
-/* Re-map the global dark-theme utility colors back to light, scoped to guides. */
-.guide-light .bg-white     { background-color: #ffffff; }
-.guide-light .bg-gray-50   { background-color: #f9fafb; }
-.guide-light .bg-gray-100  { background-color: #f3f4f6; }
-.guide-light .bg-gray-900  { background-color: #111827; }
-.guide-light .text-gray-900 { color: #111827; }
-.guide-light .text-gray-700 { color: #374151; }
-.guide-light .text-gray-600 { color: #4b5563; }
-.guide-light .text-gray-500 { color: #6b7280; }
-.guide-light .text-gray-400 { color: #9ca3af; }
-.guide-light .text-gray-300 { color: #d1d5db; }
-.guide-light .text-blue-600 { color: #2563eb; }
-.guide-light .text-blue-700 { color: #1d4ed8; }
-.guide-light .bg-blue-50   { background-color: #eff6ff; }
-.guide-light .bg-blue-100  { background-color: #dbeafe; }
-.guide-light .border-gray-200 { border-color: #e5e7eb; }
-.guide-light .border-gray-100 { border-color: #f3f4f6; }
-.guide-light .border-blue-100 { border-color: #dbeafe; }
-.guide-light .hover\:border-blue-400:hover { border-color: #60a5fa; }
-/* Light form controls (override the global dark-theme input styling). */
-.guide-light input, .guide-light select, .guide-light textarea { background-color: #ffffff; color: #111827; }
-.guide-light select option { background-color: #ffffff; color: #111827; }
-.guide-light ::placeholder { color: #9ca3af; }
 
-/* Article body styling for /guides (rendered Markdown) — light theme */
-.guide-content { color: #374151; line-height: 1.75; font-size: 1.05rem; }
+.guide-content {
+  color: #2e2e31;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
 .guide-content > * + * { margin-top: 1.15rem; }
-.guide-content h2 { font-size: 1.5rem; font-weight: 700; color: #111827; margin-top: 2.5rem; margin-bottom: 0.5rem; line-height: 1.3; }
-.guide-content h3 { font-size: 1.2rem; font-weight: 700; color: #111827; margin-top: 1.75rem; margin-bottom: 0.25rem; }
-.guide-content p { color: #374151; }
-.guide-content a { color: #2563eb; text-decoration: underline; text-underline-offset: 2px; }
-.guide-content a:hover { color: #1d4ed8; }
-.guide-content strong { color: #111827; font-weight: 700; }
-.guide-content ul, .guide-content ol { padding-left: 1.4rem; }
+.guide-content h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line-strong);
+  color: #111111;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.guide-content h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.25rem;
+  color: #111111;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.guide-content p { color: #2e2e31; }
+.guide-content a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.guide-content a:hover { color: #001f70; }
+.guide-content strong { color: #111111; font-weight: 700; }
+.guide-content ul,
+.guide-content ol { padding-left: 1.4rem; }
 .guide-content ul { list-style: disc; }
 .guide-content ol { list-style: decimal; }
 .guide-content li { margin-top: 0.4rem; padding-left: 0.2rem; }
-.guide-content li::marker { color: #9ca3af; }
-.guide-content blockquote { border-left: 3px solid #3b82f6; padding-left: 1rem; color: #4b5563; font-style: italic; }
-.guide-content code { background: #f3f4f6; color: #1f2937; padding: 0.1rem 0.35rem; border-radius: 0.25rem; font-size: 0.9em; }
-.guide-content table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
-.guide-content th, .guide-content td { border: 1px solid #e5e7eb; padding: 0.5rem 0.75rem; text-align: left; color: #374151; }
-.guide-content th { background: #f9fafb; font-weight: 600; color: #111827; }
-.guide-content hr { border: 0; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
-.guide-content img { display: block; width: 100%; max-width: 660px; height: auto; margin: 1.75rem auto 0.5rem; border-radius: 12px; }
+.guide-content li::marker { color: var(--accent); }
+.guide-content blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  color: #47474c;
+}
+.guide-content code {
+  border-radius: 2px;
+  background: #eeeeef;
+  color: #111111;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.9em;
+}
+.guide-content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.guide-content th,
+.guide-content td {
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.75rem;
+  color: #2e2e31;
+  text-align: left;
+}
+.guide-content th { background: #f7f7f8; color: #111111; font-weight: 700; }
+.guide-content hr { margin: 2rem 0; border: 0; border-top: 1px solid var(--line); }
+.guide-content img,
+.guide-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+}
+.guide-content img { max-width: 660px; margin: 1.75rem auto 0.5rem; }
 .guide-content figure { margin: 2rem 0; }
-.guide-content figcaption { text-align: center; font-size: 0.85rem; color: #6b7280; margin-top: 0.25rem; }
-.guide-hero { display: block; width: 100%; height: auto; border-radius: 14px; margin: 0.25rem 0 1.5rem; border: 1px solid #e5e7eb; background: #f8fafc; }
+.guide-content figcaption {
+  margin-top: 0.35rem;
+  color: #5b5b60;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.guide-hero { margin: 0.25rem 0 1.5rem; background: #f7f7f8; }
+
+@media (max-width: 639px) {
+  .catalog-grid {
+    background-size: 25% 100%;
+  }
+
+  .swiss-photo {
+    min-height: 210px;
+  }
+
+  .swiss-photo::after {
+    background: linear-gradient(90deg, rgba(0, 47, 167, 0.78) 0 10%, transparent 10% 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
