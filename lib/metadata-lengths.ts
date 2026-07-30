@@ -2,7 +2,8 @@ import { compactConfig, displayKva, displayKwe, headlinePower, isVariableSpeedMe
 import type { Alternator, Engine } from './types'
 
 const MAX_TITLE = 60
-const MAX_DESCRIPTION = 155
+const MAX_PREFERRED_TITLE = 65
+const MAX_DESCRIPTION = 160
 
 function normalize(value: string): string {
   return value.replace(/\s+/g, ' ').trim()
@@ -57,7 +58,9 @@ function firstWithin(candidates: string[], maxLength: number): string {
   return clean.find((candidate) => candidate.length <= maxLength) ?? trimToSentence(clean.at(-1) ?? '', maxLength)
 }
 
-export function engineMetadataTitle(engine: Engine): string {
+export function engineMetadataTitle(engine: Engine, preferred?: string): string {
+  if (preferred && normalize(preferred).length <= MAX_PREFERRED_TITLE) return normalize(preferred)
+
   const name = engineName(engine)
   const rating = powerLabel(engine)
 
@@ -118,7 +121,9 @@ function alternatorName(alternator: Alternator): string {
   return normalize(`${alternator.brand} ${alternator.model}`)
 }
 
-export function alternatorMetadataTitle(alternator: Alternator): string {
+export function alternatorMetadataTitle(alternator: Alternator, preferred?: string): string {
+  if (preferred && normalize(preferred).length <= MAX_PREFERRED_TITLE) return normalize(preferred)
+
   const name = alternatorName(alternator)
   const rating = alternator.kva != null ? `${alternator.kva.toLocaleString()} kVA` : ''
 

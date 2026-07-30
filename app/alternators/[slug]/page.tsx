@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!a) return {}
   const quickWin = quickWinAlternatorSeo(slug)
 
-  const title = alternatorMetadataTitle(a)
+  const title = alternatorMetadataTitle(a, quickWin?.title)
   const bits = [a.kva != null ? `${a.kva} kVA` : '', a.poles ? `${a.poles}-pole` : '', a.series ? `${a.series} series` : '']
     .filter(Boolean).join(', ')
   const fallbackDescription = `Specifications, generator-set context, FAQ, and official data sheet for the ${a.brand} ${a.model} generator alternator${bits ? ` - ${bits}` : ''}.`

@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!engine) return {}
 
   const quickWin = quickWinEngineSeo(slug)
-  const title = engineMetadataTitle(engine)
+  const title = engineMetadataTitle(engine, quickWin?.title)
   const description = engineMetadataDescription(engine, quickWin?.description ?? engine.description ?? buildIntro(engine))
   const aliases = uniqueAliases([...(quickWin?.aliases ?? []), ...modelAliases(engine)])
   const variableSpeed = isVariableSpeedMechanical(engine)
