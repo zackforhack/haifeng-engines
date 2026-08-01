@@ -41,7 +41,7 @@ try {
   )
   const catalogCount = await page
     .locator('main')
-    .getByText(/^[\d,]+ engines$/)
+    .getByText(/^[\d,]+ matching engines$/)
     .first()
     .textContent()
   assert.ok(
@@ -74,7 +74,7 @@ try {
     'Origin search heading did not render',
   )
   await assert.doesNotReject(
-    () => page.getByText('8 engines', { exact: true }).waitFor(),
+    () => page.getByText('8 matching engines', { exact: true }).waitFor(),
     'Origin search count must remain eight',
   )
 
@@ -119,9 +119,18 @@ try {
   }
 
   await open('/engines?emissions=U.S.+EPA+Final+Tier+4')
-  await assert.doesNotReject(
-    () => waitForVisibleEngineLink(page, 'volvo-penta-twd1682ge'),
-    'EPA Final Tier 4 search omitted Volvo Penta TWD1682GE',
+  const tier4Links = await page
+    .locator('main a[href^="/engines/"]')
+    .evaluateAll((links) => [
+      ...new Set(
+        links
+          .map((link) => link.getAttribute('href'))
+          .filter((href) => href && !href.includes('/emissions/') && !href.includes('/power/') && !href.includes('/fuel/') && !href.includes('/configuration/') && !href.includes('/rpm/')),
+      ),
+    ])
+  assert.ok(
+    tier4Links.length <= 72,
+    `Filtered matrix must render one page of engines, not the full result set: ${tier4Links.length}`,
   )
   await page.getByLabel('Sort engines').selectOption('kwe_desc')
   await page.waitForURL(/sort=kwe_desc/)
@@ -134,7 +143,7 @@ try {
     'Changing sort must reset stale pagination',
   )
   await assert.doesNotReject(
-    () => page.getByText('Grid view shows each engine as a specification card.').waitFor(),
+    () => page.getByText('Cards show individual engine records.').waitFor(),
     'Sorted engine results should render as a card list instead of the power-band matrix',
   )
 

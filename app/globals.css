@@ -236,6 +236,108 @@ select option {
   pointer-events: none;
 }
 
+.home-photo::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 11;
+  width: 100%;
+  background: var(--accent);
+  transform-origin: left center;
+  content: "";
+  pointer-events: none;
+}
+
+@keyframes home-settle {
+  from {
+    opacity: 0.72;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes home-photo-settle {
+  from {
+    transform: scale(1.035);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes home-rail-open {
+  0% {
+    transform: scaleX(1);
+  }
+  42% {
+    transform: scaleX(0.18);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+.home-hero-copy,
+.home-stats,
+.home-starters {
+  animation: home-settle 720ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.home-stats {
+  animation-delay: 120ms;
+}
+
+.home-starters {
+  animation-delay: 220ms;
+}
+
+.home-photo img {
+  transform-origin: center;
+  animation: home-photo-settle 980ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.home-photo::before {
+  animation: home-rail-open 940ms 120ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.home-search form {
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.home-search form:focus-within {
+  border-color: var(--accent);
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+
+.motion-arrow {
+  transition:
+    color 150ms ease,
+    transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.starter-link,
+.motion-link {
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
+}
+
+.starter-link:hover .motion-arrow,
+.starter-link:focus-visible .motion-arrow,
+.motion-link:hover .motion-arrow,
+.motion-link:focus-visible .motion-arrow {
+  transform: translateX(6px);
+}
+
+.starter-link:active .motion-arrow,
+.motion-link:active .motion-arrow {
+  transform: translateX(2px);
+}
+
 /* Guides now inherit the same light system instead of switching themes. */
 .guide-light {
   min-height: 78vh;

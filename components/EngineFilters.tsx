@@ -1,16 +1,16 @@
 'use client'
 
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
+import type { ReactNode } from 'react'
 import { useState } from 'react'
 import { Filter, RotateCcw } from 'lucide-react'
 import type { FilterOptions } from '@/lib/engines'
 
 interface Props {
   options: FilterOptions
-  totalCount: number
 }
 
-export function EngineFilters({ options, totalCount }: Props) {
+export function EngineFilters({ options }: Props) {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -27,8 +27,6 @@ export function EngineFilters({ options, totalCount }: Props) {
   const status    = get('status')
   const minKwe    = get('min_kwe')
   const maxKwe    = get('max_kwe')
-  const sort      = get('sort')
-
   const activeCount = [brand, origin, emissions, config, fuel, fuelType, hz, minKwe, maxKwe, status].filter(Boolean).length
   const [open, setOpen] = useState(false)
 
@@ -37,7 +35,6 @@ export function EngineFilters({ options, totalCount }: Props) {
     if (value) p.set(key, value)
     else p.delete(key)
     p.delete('page')
-    if (key === 'sort' && value) p.set('view', 'grid')
     router.replace(`${pathname}?${p.toString()}`)
   }
 
@@ -69,112 +66,105 @@ export function EngineFilters({ options, totalCount }: Props) {
 
   return (
     <aside className="mb-6 xl:sticky xl:top-24 xl:mb-0 xl:self-start">
-      {/* Toolbar row */}
-      <div className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3 border-t border-gray-900 py-3 sm:flex sm:flex-wrap">
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-blue-600 select-none"
-        >
-          <Filter aria-hidden="true" className="h-4 w-4" />
-          Filters
-          {activeCount > 0 && (
-            <span className="px-1.5 py-0.5 rounded-full bg-blue-600 text-white text-xs font-bold leading-none">
-              {activeCount}
-            </span>
-          )}
-        </button>
-        {activeCount > 0 && (
-          <button type="button" onClick={clearAll} className="flex items-center gap-1 text-xs text-gray-500 hover:text-blue-600 transition-colors">
-            <RotateCcw aria-hidden="true" className="h-3 w-3" /> Clear
-          </button>
-        )}
-        <div className="col-span-2 flex min-w-0 items-center gap-3 sm:col-span-1 sm:ml-auto xl:ml-0 xl:w-full xl:flex-col xl:items-stretch">
-          <select
-            value={sort}
-            onChange={(e) => update('sort', e.target.value)}
-            aria-label="Sort engines"
-            className="min-w-0 flex-1 border border-gray-300 bg-white px-2 py-2 text-xs text-gray-700 focus:border-blue-600 focus:outline-none xl:w-full"
+      <div className="border-y border-gray-900 bg-white">
+        <div className="flex items-center justify-between gap-3 px-4 py-3">
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            className="flex min-h-10 items-center gap-2 text-sm font-bold text-gray-900 transition-colors hover:text-blue-600 xl:pointer-events-none"
           >
-            <option value="">Sort: Brand A → Z</option>
-            <option value="kwe_desc">Sort: Power high → low</option>
-            <option value="kwe_asc">Sort: Power low → high</option>
-            <option value="disp_desc">Sort: Displacement high → low</option>
-            <option value="disp_asc">Sort: Displacement low → high</option>
-          </select>
-          <span className="hidden text-sm font-bold text-blue-600 whitespace-nowrap sm:inline xl:block">
-            {totalCount.toLocaleString()} engine{totalCount !== 1 ? 's' : ''}
-          </span>
+            <Filter aria-hidden="true" className="h-4 w-4" />
+            Filters
+            {activeCount > 0 && (
+              <span className="bg-blue-600 px-1.5 py-0.5 text-xs font-bold leading-none text-white">
+                {activeCount}
+              </span>
+            )}
+          </button>
+          {activeCount > 0 && (
+            <button
+              type="button"
+              onClick={clearAll}
+              className="flex min-h-8 items-center gap-1.5 text-xs font-bold text-blue-700 transition-colors hover:text-blue-900"
+            >
+              <RotateCcw aria-hidden="true" className="h-3.5 w-3.5" />
+              Clear
+            </button>
+          )}
         </div>
-      </div>
 
-      {/* Filter panel */}
-      <div className={`${open ? 'block' : 'hidden'} border-t border-gray-200 bg-gray-50 py-4 space-y-5 xl:block xl:px-3`}>
-          {/* Dropdowns row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-1 gap-3">
-            <FilterSelect label="Brand"         param="brand"     value={brand}     options={options.brands}    onUpdate={update} />
-            <FilterSelect label="Origin"        param="origin"    value={origin}    options={options.origins}   onUpdate={update} />
-            <FilterSelect label="Emissions"     param="emissions" value={emissions} options={options.emissions} onUpdate={update} />
-            <FilterSelect label="Configuration" param="config"    value={config}    options={options.configs}   onUpdate={update} />
-            <FilterSelect label="Fuel Type"     param="fuel_type" value={fuelType}  options={options.fuelTypes} onUpdate={(_, v) => setFuelType(v)} />
-          </div>
+        <div className={`${open ? 'block' : 'hidden'} border-t border-gray-200 px-4 py-4 xl:block`}>
+          <div className="space-y-5">
+            <fieldset>
+              <legend className="mb-2 text-xs font-bold uppercase text-gray-500">Engine identity</legend>
+              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
+                <FilterSelect label="Brand"     param="brand"     value={brand}     options={options.brands}    onUpdate={update} />
+                <FilterSelect label="Origin"    param="origin"    value={origin}    options={options.origins}   onUpdate={update} />
+                <FilterSelect label="Emissions" param="emissions" value={emissions} options={options.emissions} onUpdate={update} />
+              </div>
+            </fieldset>
 
-          {/* Toggles + power range row */}
-          <div className="flex flex-wrap items-end gap-5 xl:flex-col xl:items-stretch">
-            {/* Status */}
-            <div className="min-w-0 xl:w-full">
-              <p className="text-xs font-medium text-gray-500 mb-1.5">Status</p>
-              <ToggleGroup
-                value={status}
-                options={[['', 'All'], ['active', 'Active'], ['discontinued', 'Disc.'], ['limited', 'Limited']]}
-                onSelect={(v) => update('status', v)}
-              />
-            </div>
+            <fieldset>
+              <legend className="mb-2 text-xs font-bold uppercase text-gray-500">Build</legend>
+              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
+                <FilterSelect label="Configuration" param="config"    value={config}   options={options.configs}   onUpdate={update} />
+                <FilterSelect label="Fuel Type"     param="fuel_type" value={fuelType} options={options.fuelTypes} onUpdate={(_, v) => setFuelType(v)} />
+              </div>
+            </fieldset>
 
-            {/* Fuel (broad bucket; mutually exclusive with the Fuel Type dropdown) */}
-            <div className="min-w-0 xl:w-full">
-              <p className="text-xs font-medium text-gray-500 mb-1.5">Fuel</p>
-              <ToggleGroup
-                value={fuel}
-                options={[['', 'All'], ['diesel', 'Diesel'], ['gas', 'Gas']]}
-                onSelect={(v) => setFuel(v)}
-              />
-            </div>
+            <fieldset>
+              <legend className="mb-2 text-xs font-bold uppercase text-gray-500">Operating profile</legend>
+              <div className="grid gap-3 sm:grid-cols-3 xl:grid-cols-1">
+                <FilterToggle label="Status">
+                  <ToggleGroup
+                    value={status}
+                    options={[['', 'All'], ['active', 'Active'], ['discontinued', 'Disc.'], ['limited', 'Limited']]}
+                    columns={2}
+                    onSelect={(v) => update('status', v)}
+                  />
+                </FilterToggle>
+                <FilterToggle label="Fuel">
+                  <ToggleGroup
+                    value={fuel}
+                    options={[['', 'All'], ['diesel', 'Diesel'], ['gas', 'Gas']]}
+                    onSelect={(v) => setFuel(v)}
+                  />
+                </FilterToggle>
+                <FilterToggle label="Frequency">
+                  <ToggleGroup
+                    value={hz}
+                    options={[['', 'Any'], ['50', '50 Hz'], ['60', '60 Hz']]}
+                    onSelect={(v) => update('hz', v)}
+                  />
+                </FilterToggle>
+              </div>
+            </fieldset>
 
-            {/* Hz */}
-            <div className="min-w-0 xl:w-full">
-              <p className="text-xs font-medium text-gray-500 mb-1.5">Frequency</p>
-              <ToggleGroup
-                value={hz}
-                options={[['', 'Any'], ['50', '50 Hz'], ['60', '60 Hz']]}
-                onSelect={(v) => update('hz', v)}
-              />
-            </div>
-
-            {/* Power range */}
-            <div className="min-w-0 xl:w-full">
-              <p className="text-xs font-medium text-gray-500 mb-1.5">Power (kWe)</p>
-              <div className="flex items-center gap-1.5">
+            <fieldset>
+              <legend className="mb-2 text-xs font-bold uppercase text-gray-500">Power output</legend>
+              <div className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 xl:grid-cols-1">
                 <input
                   type="number"
                   placeholder="Min"
                   value={minKwe}
                   onChange={(e) => update('min_kwe', e.target.value)}
-                  className="min-w-0 flex-1 border border-gray-300 bg-white px-2 py-1.5 text-xs focus:border-blue-600 focus:outline-none"
+                  className="h-10 w-full min-w-0 border border-gray-300 bg-white px-3 text-sm font-medium text-gray-900 placeholder:text-gray-500 focus:border-blue-600 focus:outline-none"
                   min={0}
                 />
-                <span className="text-xs text-gray-400">–</span>
+                <span className="text-center text-xs font-bold text-gray-500 xl:text-left">to</span>
                 <input
                   type="number"
                   placeholder="Max"
                   value={maxKwe}
                   onChange={(e) => update('max_kwe', e.target.value)}
-                  className="min-w-0 flex-1 border border-gray-300 bg-white px-2 py-1.5 text-xs focus:border-blue-600 focus:outline-none"
+                  className="h-10 w-full min-w-0 border border-gray-300 bg-white px-3 text-sm font-medium text-gray-900 placeholder:text-gray-500 focus:border-blue-600 focus:outline-none"
                   min={0}
                 />
               </div>
-            </div>
+            </fieldset>
           </div>
+        </div>
       </div>
     </aside>
   )
@@ -191,11 +181,11 @@ function FilterSelect({
 }) {
   return (
     <div>
-      <label className="block text-xs font-medium text-gray-500 mb-1">{label}</label>
+      <label className="mb-1 block text-xs font-bold text-gray-600">{label}</label>
       <select
         value={value}
         onChange={(e) => onUpdate(param, e.target.value)}
-        className="w-full border border-gray-300 bg-white px-2 py-2 text-sm text-gray-700 focus:border-blue-600 focus:outline-none"
+        className="h-10 w-full border border-gray-300 bg-white px-3 text-sm font-medium text-gray-900 focus:border-blue-600 focus:outline-none"
       >
         <option value="">All {label}{label.endsWith('s') ? '' : 's'}</option>
         {options.map((o) => (
@@ -206,21 +196,42 @@ function FilterSelect({
   )
 }
 
+function FilterToggle({
+  label, children,
+}: {
+  label: string
+  children: ReactNode
+}) {
+  return (
+    <div className="min-w-0">
+      <p className="mb-1 text-xs font-bold text-gray-600">{label}</p>
+      {children}
+    </div>
+  )
+}
+
 function ToggleGroup({
-  value, options, onSelect,
+  value, options, onSelect, columns,
 }: {
   value: string
   options: [string, string][]
   onSelect: (v: string) => void
+  columns?: 2 | 3 | 4
 }) {
+  const gridClass = columns === 2
+    ? 'grid-cols-2'
+    : columns === 4
+      ? 'grid-cols-4'
+      : 'grid-flow-col auto-cols-fr'
+
   return (
-    <div className="grid w-full min-w-0 grid-flow-col auto-cols-fr divide-x divide-gray-300 bg-white outline outline-1 outline-gray-300">
+    <div className={`grid w-full min-w-0 gap-px border border-gray-300 bg-gray-300 ${gridClass}`}>
       {options.map(([val, label]) => (
         <button
           type="button"
           key={val}
           onClick={() => onSelect(val)}
-          className={`min-w-0 px-1.5 py-1.5 text-xs font-medium ${
+          className={`min-h-9 min-w-0 px-2 text-xs font-bold transition-colors ${
             value === val
               ? 'bg-blue-600 text-white'
               : 'bg-white text-blue-700 hover:bg-blue-50'

@@ -42,7 +42,7 @@ export function BrandLogo({
       style={{ backgroundColor: '#fff' }}
     >
       {/* eslint-disable-next-line @next/next/no-img-element -- tiny static logos; next/image adds no value */}
-      <img src={src} alt={`${brand} logo`} className={`${s.img} w-auto object-contain`} loading="lazy" />
+      <img src={src} alt={`${brand} logo`} className={`${s.img} h-full w-auto object-contain`} loading="lazy" />
     </span>
   )
 }

@@ -24,7 +24,7 @@ const HERO_STARTERS = [
   {
     label: 'Find by model',
     desc: 'Known engine or alternator part number',
-    href: '/engines/cummins-hsk78g',
+    href: '/engines?view=grid',
   },
   {
     label: 'Browse 500-1,500 kWe',
@@ -113,9 +113,9 @@ export default async function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList).replace(/</g, '\\u003c') }}
       />
 
-      <section className="catalog-grid border-b border-gray-900 pb-10 pt-2 sm:pb-14 sm:pt-6">
+      <section className="home-hero catalog-grid border-b border-gray-900 pb-10 pt-2 sm:pb-14 sm:pt-6">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-7">
+          <div className="home-hero-copy lg:col-span-7">
             <h1 className="brand-display max-w-3xl font-bold text-gray-900">
               <span className="block text-blue-600">
                 <CountUp end={stats.total} />+
@@ -126,12 +126,12 @@ export default async function HomePage() {
               Search diesel and gas generator engines, alternators, manufacturer datasheets,
               emissions standards, and verified power ratings.
             </p>
-            <div className="mt-8 max-w-2xl">
+            <div className="home-search mt-8 max-w-2xl">
               <Suspense>
                 <SearchBar defaultValue="" target="/engines" viewOnSearch="grid" />
               </Suspense>
             </div>
-            <div className="mt-6 grid max-w-2xl grid-cols-1 border-b border-gray-900 sm:grid-cols-3 sm:border-b-0">
+            <div className="home-starters mt-6 grid max-w-2xl grid-cols-1 border-b border-gray-900 sm:grid-cols-3 sm:border-b-0">
               {HERO_STARTERS.map((starter) => (
                 <Link
                   key={starter.href}
@@ -146,13 +146,13 @@ export default async function HomePage() {
                       {starter.desc}
                     </span>
                   </span>
-                  <ArrowRight aria-hidden="true" className="h-4 w-4 shrink-0 text-blue-600" />
+                  <ArrowRight aria-hidden="true" className="motion-arrow h-4 w-4 shrink-0 text-blue-600" />
                 </Link>
               ))}
             </div>
           </div>
 
-          <dl className="grid grid-cols-3 border-t border-gray-900 lg:col-span-5">
+          <dl className="home-stats grid grid-cols-3 border-t border-gray-900 lg:col-span-5">
             {[
               { value: alternators.length, label: 'Alternators' },
               { value: stats.brandCount, label: 'Brands' },
@@ -173,7 +173,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="swiss-photo -mx-4 sm:-mx-6 lg:-mx-8">
+      <section className="home-photo swiss-photo -mx-4 sm:-mx-6 lg:-mx-8">
         <Image
           src="/hero/cummins-engine.jpg"
           alt="Cummins generator engine installation"
@@ -203,7 +203,7 @@ export default async function HomePage() {
                 <Link
                   key={section.href}
                   href={section.href}
-                  className="group grid grid-cols-[2.75rem_minmax(0,1fr)_auto] items-center gap-4 border-b border-gray-200 py-4 hover:bg-blue-50 sm:grid-cols-[3.5rem_9rem_minmax(0,1fr)_auto]"
+                  className="motion-link group grid grid-cols-[2.75rem_minmax(0,1fr)_auto] items-center gap-4 border-b border-gray-200 py-4 hover:bg-blue-50 sm:grid-cols-[3.5rem_9rem_minmax(0,1fr)_auto]"
                 >
                   <Icon aria-hidden="true" className="h-5 w-5 justify-self-center text-gray-400 group-hover:text-blue-600" />
                   <span className="min-w-0">
@@ -217,7 +217,7 @@ export default async function HomePage() {
                   <p className="col-span-2 max-w-[54ch] text-sm leading-relaxed text-gray-500 sm:col-span-1">
                     {section.desc}
                   </p>
-                  <ArrowRight aria-hidden="true" className="h-4 w-4 text-blue-600" />
+                  <ArrowRight aria-hidden="true" className="motion-arrow h-4 w-4 text-blue-600" />
                 </Link>
               )
             })}
@@ -242,7 +242,7 @@ export default async function HomePage() {
                 href={route.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group grid grid-cols-[minmax(0,1fr)_auto] gap-4 border-b border-gray-200 py-4 hover:bg-blue-50 sm:grid-cols-[15rem_minmax(0,1fr)_auto]"
+                className="motion-link group grid grid-cols-[minmax(0,1fr)_auto] gap-4 border-b border-gray-200 py-4 hover:bg-blue-50 sm:grid-cols-[15rem_minmax(0,1fr)_auto]"
               >
                 <span className="text-sm font-bold text-gray-900 group-hover:text-blue-600">
                   {route.label}
@@ -252,7 +252,7 @@ export default async function HomePage() {
                 </p>
                 <ArrowRight
                   aria-hidden="true"
-                  className="col-start-2 row-start-1 h-4 w-4 justify-self-end text-blue-600 sm:col-start-3"
+                  className="motion-arrow col-start-2 row-start-1 h-4 w-4 justify-self-end text-blue-600 sm:col-start-3"
                 />
               </a>
             ))}

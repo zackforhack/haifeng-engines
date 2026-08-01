@@ -36,12 +36,14 @@ const GROUPS: { heading: string; links: { label: string; href: string }[] }[] = 
 
 export function BrowseFacets() {
   return (
-    <section className="mt-14 border-t border-gray-900 pt-6">
-      <p className="section-index mb-3">Browse</p>
-      <h2 className="text-2xl font-bold text-gray-900 mb-7">Engines by category</h2>
+    <section className="mb-8 border-y border-gray-900 bg-white">
+      <div className="px-4 py-4">
+        <p className="section-index mb-2">Browse</p>
+        <h2 className="text-2xl font-bold text-gray-900">Engines by category</h2>
+      </div>
       <div className="grid grid-cols-1 border-t border-gray-900 sm:grid-cols-2 lg:grid-cols-3">
         {GROUPS.map((g) => (
-          <div key={g.heading} className="border-b border-r border-gray-200 p-4">
+          <div key={g.heading} className="border-b border-r border-gray-200 px-4 py-4">
             <p className="mb-4 text-xs font-bold text-gray-900">{g.heading}</p>
             <div className="flex flex-wrap gap-x-4 gap-y-2">
               {g.links.map((l) => (

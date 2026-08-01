@@ -15,6 +15,7 @@ export function SearchBar({
   defaultValue = '',
   target,
   viewOnSearch,
+  className = 'w-full max-w-2xl',
 }: {
   defaultValue?: string
   // Where to send a full-text search submit. Omit to search the current page
@@ -22,6 +23,7 @@ export function SearchBar({
   // on pages that don't handle `q` themselves (the homepage).
   target?: string
   viewOnSearch?: 'grid'
+  className?: string
 }) {
   const router = useRouter()
   const pathname = usePathname()
@@ -104,7 +106,7 @@ export function SearchBar({
   const hasHits = engines.length > 0 || alts.length > 0
 
   return (
-    <div ref={boxRef} className="relative w-full max-w-2xl">
+    <div ref={boxRef} className={`relative ${className}`}>
       <form
         onSubmit={(e) => { e.preventDefault(); runSearch(query) }}
         className="flex w-full border border-gray-900 bg-white"
@@ -136,10 +138,10 @@ export function SearchBar({
         <div
           id="search-suggestions"
           role="listbox"
-          className="absolute z-50 mt-1 w-full bg-white border border-gray-900 overflow-hidden text-left"
+          className="absolute left-0 right-0 z-50 mt-1 max-h-[min(60vh,420px)] overflow-y-auto border border-gray-900 bg-white text-left"
         >
           {engines.length > 0 && (
-            <div className="px-3 pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wide text-gray-400">Engines</div>
+            <div className="px-4 pb-1 pt-2 text-xs font-semibold uppercase text-gray-500">Engine matches</div>
           )}
           {engines.map((e, i) => {
             const kwe = e.prime_power_kwe_50hz ?? e.prime_power_kwe_60hz
@@ -160,7 +162,7 @@ export function SearchBar({
           })}
 
           {alts.length > 0 && (
-            <div className="px-3 pt-2 pb-1 text-[11px] font-semibold uppercase tracking-wide text-gray-400 border-t border-gray-100">Alternators</div>
+            <div className="border-t border-gray-100 px-4 pb-1 pt-2 text-xs font-semibold uppercase text-gray-500">Alternator matches</div>
           )}
           {alts.map((a, i) => {
             const idx = engines.length + i

@@ -18,6 +18,14 @@ export interface FilterParams {
   sort?: string
 }
 
+export interface EnginePageResult {
+  engines: Engine[]
+  total: number
+  page: number
+  pageSize: number
+  totalPages: number
+}
+
 // "Gas" covers gaseous power-gen fuels (natural gas, CNG/LNG, biogas/biomethane, coal-mine
 // gas/CBM, LPG/propane); "diesel" matches the compression-ignition diesels. Methanol (a liquid
 // alt-fuel), gasoline and unknown fuels match neither broad bucket but are still selectable via
@@ -26,6 +34,49 @@ const GAS_FUEL = /natural gas|biogas|biomethane|coal gas|cng|lng|lpg|propane/i
 // Full engine rows include nested PDF metadata. Keep each response below
 // Next.js's 2 MB data-cache entry limit so static generation can reuse it.
 const ENGINE_FETCH_PAGE = 500
+
+const ENGINE_LIST_SELECT = [
+  'id',
+  'slug',
+  'brand',
+  'model',
+  'series',
+  'status',
+  'year_discontinued',
+  'power_kw',
+  'prime_power_kw_50hz',
+  'prime_power_kwe_50hz',
+  'prime_power_kva_50hz',
+  'standby_power_kw_50hz',
+  'standby_power_kwe_50hz',
+  'standby_power_kva_50hz',
+  'prime_power_kw_60hz',
+  'prime_power_kwe_60hz',
+  'prime_power_kva_60hz',
+  'standby_power_kw_60hz',
+  'standby_power_kwe_60hz',
+  'standby_power_kva_60hz',
+  'displacement_l',
+  'cylinders',
+  'configuration',
+  'rpm_rated',
+  'fuel_type',
+  'emissions_standard',
+  'origin',
+  'created_at',
+  'updated_at',
+].join(',')
+
+const KWE_FILTER_COLUMNS = [
+  'standby_power_kwe_50hz',
+  'prime_power_kwe_50hz',
+  'standby_power_kwe_60hz',
+  'prime_power_kwe_60hz',
+  'standby_power_kw_50hz',
+  'prime_power_kw_50hz',
+  'standby_power_kw_60hz',
+  'prime_power_kw_60hz',
+]
 
 export function matchesFuel(fuelType: string | null | undefined, fuel: 'diesel' | 'gas'): boolean {
   const ft = fuelType ?? ''
@@ -46,6 +97,18 @@ export interface FilterOptions {
   emissions: string[]
   configs: string[]
   fuelTypes: string[]
+}
+
+function isFilterOptions(value: unknown): value is FilterOptions {
+  if (!value || typeof value !== 'object') return false
+  const candidate = value as Partial<Record<keyof FilterOptions, unknown>>
+  return (
+    Array.isArray(candidate.brands) &&
+    Array.isArray(candidate.origins) &&
+    Array.isArray(candidate.emissions) &&
+    Array.isArray(candidate.configs) &&
+    Array.isArray(candidate.fuelTypes)
+  )
 }
 
 function normalizeEmissionComponent(value: string): string {
@@ -81,6 +144,150 @@ function representativeKwe(e: Engine): number | null {
     (e.power_kw == null ? null : Math.round(e.power_kw * 0.9 * 10) / 10) ??
     null
   )
+}
+
+function escapeLike(value: string): string {
+  return value.replace(/[%_]/g, '\\$&')
+}
+
+function numericRangePredicate(column: string, min?: number, max?: number): string {
+  if (min != null && max != null) return `and(${column}.gte.${min},${column}.lte.${max})`
+  if (min != null) return `${column}.gte.${min}`
+  return `${column}.lte.${max}`
+}
+
+function powerRangePredicate(min?: number, max?: number): string {
+  const parts = KWE_FILTER_COLUMNS.map((column) => numericRangePredicate(column, min, max))
+  const mechanicalMin = min == null ? undefined : Math.round((min / 0.9) * 10) / 10
+  const mechanicalMax = max == null ? undefined : Math.round((max / 0.9) * 10) / 10
+  parts.push(numericRangePredicate('power_kw', mechanicalMin, mechanicalMax))
+  return parts.join(',')
+}
+
+function isMissingRepresentativeKwe(error: { message?: string; details?: string | null }): boolean {
+  const text = `${error.message ?? ''} ${error.details ?? ''}`.toLowerCase()
+  return text.includes('representative_kwe') && (
+    text.includes('does not exist') ||
+    text.includes('could not find') ||
+    text.includes('schema cache')
+  )
+}
+
+async function runEnginePageQuery(
+  params: FilterParams,
+  page: number,
+  pageSize: number,
+  useRepresentativePowerSort: boolean,
+): Promise<{ data: Engine[]; count: number }> {
+  let query = supabase
+    .from('engines')
+    .select(ENGINE_LIST_SELECT, { count: 'exact' })
+
+  if (params.q) {
+    const term = escapeLike(params.q.trim())
+    query = query.or(
+      `brand.ilike.%${term}%,model.ilike.%${term}%,series.ilike.%${term}%`
+    )
+  }
+  if (params.brand)  query = query.eq('brand', params.brand)
+  if (params.origin) query = query.eq('origin', params.origin)
+  if (params.config) query = query.eq('configuration', params.config)
+  if (params.rpm)    query = query.eq('rpm_rated', params.rpm)
+  if (params.status) query = query.eq('status', params.status)
+  if (params.emissions) query = query.ilike('emissions_standard', `%${escapeLike(params.emissions)}%`)
+
+  if (params.fuel === 'gas') {
+    query = query.or([
+      'fuel_type.ilike.%natural gas%',
+      'fuel_type.ilike.%biogas%',
+      'fuel_type.ilike.%biomethane%',
+      'fuel_type.ilike.%coal gas%',
+      'fuel_type.ilike.%cng%',
+      'fuel_type.ilike.%lng%',
+      'fuel_type.ilike.%lpg%',
+      'fuel_type.ilike.%propane%',
+    ].join(','))
+  } else if (params.fuel === 'diesel') {
+    query = query.ilike('fuel_type', '%diesel%')
+  }
+
+  if (params.fuel_type) {
+    query = params.fuel_type === 'Natural Gas'
+      ? query.ilike('fuel_type', 'Natural Gas%')
+      : query.eq('fuel_type', params.fuel_type)
+  }
+
+  if (params.hz === '50') {
+    query = query.or('prime_power_kwe_50hz.not.is.null,standby_power_kwe_50hz.not.is.null,prime_power_kw_50hz.not.is.null,standby_power_kw_50hz.not.is.null')
+  } else if (params.hz === '60') {
+    query = query.or('prime_power_kwe_60hz.not.is.null,standby_power_kwe_60hz.not.is.null,prime_power_kw_60hz.not.is.null,standby_power_kw_60hz.not.is.null')
+  }
+
+  if (params.min_kwe != null || params.max_kwe != null) {
+    query = query.or(powerRangePredicate(params.min_kwe, params.max_kwe))
+  }
+
+  if (params.sort === 'disp_desc') {
+    query = query.order('displacement_l', { ascending: false, nullsFirst: false })
+      .order('brand').order('model')
+  } else if (params.sort === 'disp_asc') {
+    query = query.order('displacement_l', { ascending: true, nullsFirst: false })
+      .order('brand').order('model')
+  } else if (params.sort === 'kwe_desc' && useRepresentativePowerSort) {
+    query = query.order('representative_kwe', { ascending: false, nullsFirst: false })
+      .order('brand').order('model')
+  } else if (params.sort === 'kwe_asc' && useRepresentativePowerSort) {
+    query = query.order('representative_kwe', { ascending: true, nullsFirst: false })
+      .order('brand').order('model')
+  } else {
+    query = query.order('brand').order('model')
+  }
+
+  const from = (page - 1) * pageSize
+  const { data, error, count } = await query.range(from, from + pageSize - 1)
+  if (error) throw error
+  return { data: (data ?? []) as unknown as Engine[], count: count ?? 0 }
+}
+
+export async function searchEnginesPage(
+  params: FilterParams,
+  { page = 1, pageSize }: { page?: number; pageSize: number },
+): Promise<EnginePageResult> {
+  const safePageSize = Math.max(1, Math.min(pageSize, 100))
+  const requestedPage = Math.max(1, Math.floor(page))
+
+  async function run(targetPage: number, useRepresentativePowerSort = true) {
+    try {
+      return await runEnginePageQuery(params, targetPage, safePageSize, useRepresentativePowerSort)
+    } catch (error) {
+      if (
+        useRepresentativePowerSort &&
+        (params.sort === 'kwe_desc' || params.sort === 'kwe_asc') &&
+        isMissingRepresentativeKwe(error as { message?: string; details?: string | null })
+      ) {
+        return runEnginePageQuery(params, targetPage, safePageSize, false)
+      }
+      throw error
+    }
+  }
+
+  let { data, count } = await run(requestedPage)
+  const totalPages = Math.max(1, Math.ceil(count / safePageSize))
+  const safePage = Math.min(requestedPage, totalPages)
+
+  if (safePage !== requestedPage) {
+    const rerun = await run(safePage)
+    data = rerun.data
+    count = rerun.count
+  }
+
+  return {
+    engines: data,
+    total: count,
+    page: safePage,
+    pageSize: safePageSize,
+    totalPages: Math.max(1, Math.ceil(count / safePageSize)),
+  }
 }
 
 export async function filterEngines(params: FilterParams): Promise<Engine[]> {
@@ -172,7 +379,7 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
   return result
 }
 
-export async function getFilterOptions(): Promise<FilterOptions> {
+async function getFilterOptionsByScan(): Promise<FilterOptions> {
   // Paginate — PostgREST caps a single request at 1000 rows, and the table
   // now exceeds that, so an unpaginated query silently drops brands/emissions
   // that only appear in later rows (e.g. recently-added Caterpillar).
@@ -218,6 +425,14 @@ export async function getFilterOptions(): Promise<FilterOptions> {
       ]
     })(),
   }
+}
+
+export async function getFilterOptions(): Promise<FilterOptions> {
+  const { data, error } = await supabase.rpc('engine_filter_options')
+  if (!error && isFilterOptions(data)) return data
+
+  // Local/dev databases may not have the performance RPC applied yet.
+  return getFilterOptionsByScan()
 }
 
 export async function getAllEngines(): Promise<Engine[]> {

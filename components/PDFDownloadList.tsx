@@ -20,7 +20,7 @@ export function PDFDownloadList({ pdfs }: { pdfs: EnginePDF[] }) {
 
   return (
     <div>
-      <h2 className="text-lg font-bold text-gray-900 mb-3">Downloads</h2>
+      <h2 className="mb-3 px-4 text-lg font-bold text-gray-900">Downloads</h2>
       <ul className="border-t border-gray-200">
         {pdfs.map((pdf) => (
           <li key={pdf.id}>
@@ -28,7 +28,7 @@ export function PDFDownloadList({ pdfs }: { pdfs: EnginePDF[] }) {
               href={getPDFUrl(pdf.storage_path)}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex w-full items-center gap-3 border-b border-gray-200 bg-white px-3 py-3 hover:bg-blue-50"
+              className="group flex w-full items-center gap-3 border-b border-gray-200 bg-white px-4 py-3 hover:bg-blue-50"
             >
               <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center bg-blue-600 text-white">
                 <Download aria-hidden="true" className="h-4 w-4" />

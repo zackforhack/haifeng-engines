@@ -18,7 +18,7 @@ const config: Record<EngineStatus, { label: string; classes: string }> = {
 export function StatusBadge({ status }: { status: EngineStatus }) {
   const { label, classes } = config[status]
   return (
-    <span className={`inline-flex items-center border-l-4 px-2.5 py-1 text-xs font-medium ${classes}`}>
+    <span className={`inline-flex items-center px-2.5 py-1 text-xs font-medium ${classes}`}>
       {label}
     </span>
   )

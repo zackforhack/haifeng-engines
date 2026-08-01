@@ -2,10 +2,11 @@ import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Link from 'next/link'
 import { ChevronLeft, ChevronRight, Grid2X2, List } from 'lucide-react'
-import { filterEngines, getFilterOptions } from '@/lib/engines'
+import { getFilterOptions, searchEnginesPage } from '@/lib/engines'
 import { EngineCard } from '@/components/EngineCard'
 import { SearchBar } from '@/components/SearchBar'
 import { EngineFilters } from '@/components/EngineFilters'
+import { EngineSortSelect } from '@/components/EngineCatalogControls'
 import { EngineTable } from '@/components/EngineTable'
 import { BrowseFacets } from '@/components/BrowseFacets'
 import { CommercialPathways } from '@/components/CommercialPathways'
@@ -14,12 +15,6 @@ import type { Engine } from '@/lib/types'
 
 // Always fetch fresh data — prevents Next.js data cache from hiding new DB rows.
 export const dynamic = 'force-dynamic'
-
-// The table is a brand-by-power-band comparison matrix. Paginating its input
-// produces incomplete bands (for example, later-alphabet gas brands disappear
-// from 2,000+ kWe), so keep common filtered catalogs together. Broad and
-// unfiltered catalogs still use normal pagination below.
-const FILTERED_TABLE_FULL_RESULT_LIMIT = 500
 
 interface Props {
   searchParams: Promise<{
@@ -72,8 +67,9 @@ export default async function EnginesPage({ searchParams }: Props) {
   const isGrid = p.view === 'grid'
   const currentPage = Math.max(1, Number(p.page) || 1)
 
-  const [allEngines, options] = await Promise.all([
-    filterEngines({
+  const requestedPageSize = isGrid ? ENGINE_GRID_PAGE_SIZE : ENGINE_TABLE_PAGE_SIZE
+  const [result, options] = await Promise.all([
+    searchEnginesPage({
       q:         p.q,
       brand:     p.brand,
       origin:    p.origin,
@@ -86,17 +82,15 @@ export default async function EnginesPage({ searchParams }: Props) {
       min_kwe:   p.min_kwe ? Number(p.min_kwe) : undefined,
       max_kwe:   p.max_kwe ? Number(p.max_kwe) : undefined,
       sort:      p.sort,
-    }),
+    }, { page: currentPage, pageSize: requestedPageSize }),
     getFilterOptions(),
   ])
 
-  const total = allEngines.length
-  const pageSize = !isGrid && hasFilters && total > 0 && total <= FILTERED_TABLE_FULL_RESULT_LIMIT
-    ? total
-    : isGrid ? ENGINE_GRID_PAGE_SIZE : ENGINE_TABLE_PAGE_SIZE
-  const totalPages = Math.max(1, Math.ceil(total / pageSize))
-  const safePage = Math.min(currentPage, totalPages)
-  const engines = allEngines.slice((safePage - 1) * pageSize, safePage * pageSize)
+  const total = result.total
+  const pageSize = result.pageSize
+  const totalPages = result.totalPages
+  const safePage = result.page
+  const engines = result.engines
   const resultLabel = `${total.toLocaleString()} matching engine${total !== 1 ? 's' : ''}`
 
   function pageHref(pg: number) {
@@ -113,6 +107,7 @@ export default async function EnginesPage({ searchParams }: Props) {
       ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
       ...(p.max_kwe   ? { max_kwe: p.max_kwe }      : {}),
       ...(p.sort      ? { sort: p.sort }            : {}),
+      ...(p.view      ? { view: p.view }            : {}),
       ...(pg > 1      ? { page: String(pg) }        : {}),
     })
     return `/engines?${sp.toString()}`
@@ -137,6 +132,50 @@ export default async function EnginesPage({ searchParams }: Props) {
     return `/engines?${sp.toString()}`
   }
 
+  function hrefWithout(keys: string[]) {
+    const sp = new URLSearchParams({
+      ...(p.q         ? { q: p.q }                 : {}),
+      ...(p.brand     ? { brand: p.brand }          : {}),
+      ...(p.origin    ? { origin: p.origin }        : {}),
+      ...(p.emissions ? { emissions: p.emissions }  : {}),
+      ...(p.config    ? { config: p.config }        : {}),
+      ...(p.fuel      ? { fuel: p.fuel }            : {}),
+      ...(p.fuel_type ? { fuel_type: p.fuel_type }  : {}),
+      ...(p.hz        ? { hz: p.hz }                : {}),
+      ...(p.status    ? { status: p.status }        : {}),
+      ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
+      ...(p.max_kwe   ? { max_kwe: p.max_kwe }      : {}),
+      ...(p.sort      ? { sort: p.sort }            : {}),
+      ...(p.view      ? { view: p.view }            : {}),
+    })
+    for (const key of keys) sp.delete(key)
+    sp.delete('page')
+    const qs = sp.toString()
+    return qs ? `/engines?${qs}` : '/engines'
+  }
+
+  const statusLabel: Record<string, string> = {
+    active: 'Active',
+    discontinued: 'Discontinued',
+    limited: 'Limited',
+  }
+  const activeCriteria = [
+    ...(p.q ? [{ label: 'Search', value: p.q, href: hrefWithout(['q']) }] : []),
+    ...(p.brand ? [{ label: 'Brand', value: p.brand, href: hrefWithout(['brand']) }] : []),
+    ...(p.origin ? [{ label: 'Origin', value: p.origin, href: hrefWithout(['origin']) }] : []),
+    ...(p.emissions ? [{ label: 'Emissions', value: p.emissions, href: hrefWithout(['emissions']) }] : []),
+    ...(p.config ? [{ label: 'Configuration', value: p.config, href: hrefWithout(['config']) }] : []),
+    ...(p.fuel ? [{ label: 'Fuel', value: p.fuel === 'gas' ? 'Gas' : 'Diesel', href: hrefWithout(['fuel']) }] : []),
+    ...(p.fuel_type ? [{ label: 'Fuel type', value: p.fuel_type, href: hrefWithout(['fuel_type']) }] : []),
+    ...(p.hz ? [{ label: 'Frequency', value: `${p.hz} Hz`, href: hrefWithout(['hz']) }] : []),
+    ...(p.status ? [{ label: 'Status', value: statusLabel[p.status] ?? p.status, href: hrefWithout(['status']) }] : []),
+    ...(p.min_kwe || p.max_kwe ? [{
+      label: 'Power',
+      value: `${p.min_kwe || '0'}-${p.max_kwe || 'max'} kWe`,
+      href: hrefWithout(['min_kwe', 'max_kwe']),
+    }] : []),
+  ]
+
   return (
     <div>
       <div className="catalog-grid border-b border-gray-900 pb-8 pt-2 mb-8">
@@ -144,54 +183,85 @@ export default async function EnginesPage({ searchParams }: Props) {
         <h1 className="brand-display mb-6 font-bold text-gray-900">
           {p.q ? `Results for "${p.q}"` : 'Generator Engine Specifications'}
         </h1>
-        <div className="max-w-2xl">
-          <Suspense>
-            <SearchBar defaultValue={p.q ?? ''} viewOnSearch="grid" />
-          </Suspense>
-        </div>
       </div>
+
+      {!hasFilters && <BrowseFacets />}
+
+      <section className="mb-8 border-y border-gray-900 bg-white">
+        <div className="grid grid-cols-1 gap-4 p-4 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start">
+          <Suspense>
+            <SearchBar defaultValue={p.q ?? ''} viewOnSearch="grid" className="w-full" />
+          </Suspense>
+          <div className="lg:min-w-64">
+            <p className="text-sm font-bold text-gray-900">{resultLabel}</p>
+            <p className="mt-1 text-xs leading-relaxed text-gray-500">
+              Search by brand, model, series, power, emissions, and package-fit criteria.
+            </p>
+          </div>
+        </div>
+
+        {activeCriteria.length > 0 && (
+          <div className="border-t border-gray-200 px-4 py-3">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-xs font-bold text-gray-500">Active criteria</span>
+              {activeCriteria.map((item) => (
+                <Link
+                  key={`${item.label}:${item.value}`}
+                  href={item.href}
+                  className="inline-flex min-h-8 items-center gap-2 border border-gray-300 bg-gray-50 px-2.5 py-1 text-xs font-medium text-blue-900 hover:bg-blue-50"
+                >
+                  <span className="font-bold text-gray-900">{item.label}</span>
+                  {item.value}
+                  <span aria-hidden="true" className="text-blue-700">×</span>
+                </Link>
+              ))}
+              <Link href={p.view === 'grid' ? '/engines?view=grid' : '/engines'} className="ml-auto text-xs font-bold text-blue-600 hover:underline">
+                Clear all
+              </Link>
+            </div>
+          </div>
+        )}
+
+        <div className="flex flex-col gap-3 border-t border-gray-900 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex min-w-0 flex-col gap-3 sm:flex-row sm:items-center">
+            <Suspense>
+              <EngineSortSelect />
+            </Suspense>
+            <span className="text-xs text-gray-500">
+              {isGrid ? 'Cards show individual engine records.' : 'Matrix groups engines by power band and brand.'}
+            </span>
+          </div>
+          <div className="flex border border-gray-900 bg-white" aria-label="Catalog view">
+            <Link
+              href={viewHref('table')}
+              title="Matrix view"
+              className={`flex min-h-10 items-center justify-center gap-2 border-r border-gray-900 px-3 text-sm font-semibold ${
+                !isGrid ? 'bg-blue-600 text-white' : 'text-blue-700 hover:bg-blue-50'
+              }`}
+            >
+              <List aria-hidden="true" className="h-4 w-4" />
+              Matrix
+            </Link>
+            <Link
+              href={viewHref('grid')}
+              title="Cards view"
+              className={`flex min-h-10 items-center justify-center gap-2 px-3 text-sm font-semibold ${
+                isGrid ? 'bg-blue-600 text-white' : 'text-blue-700 hover:bg-blue-50'
+              }`}
+            >
+              <Grid2X2 aria-hidden="true" className="h-4 w-4" />
+              Cards
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <div className="min-w-0 xl:grid xl:grid-cols-[240px_minmax(0,1fr)] xl:gap-8">
         <Suspense>
-          <EngineFilters options={options} totalCount={total} />
+          <EngineFilters options={options} />
         </Suspense>
 
         <div className="min-w-0">
-          {total > 0 && (
-            <div className="mb-5 flex flex-col gap-3 border-t border-gray-900 pt-3 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <h2 className="text-sm font-bold text-gray-900">{resultLabel}</h2>
-                <p className="mt-1 max-w-xl text-xs leading-relaxed text-gray-500">
-                  {isGrid
-                    ? 'Grid view shows each engine as a specification card.'
-                    : 'Table view becomes cards on mobile and a brand-by-power matrix on desktop.'}
-                </p>
-              </div>
-              <div className="flex border border-gray-900 bg-white" aria-label="Catalog view">
-                <Link
-                  href={viewHref('table')}
-                  title="Table view"
-                  className={`flex h-9 w-10 items-center justify-center border-r border-gray-900 ${
-                    !isGrid ? 'bg-blue-600 text-white' : 'text-blue-700 hover:bg-blue-50'
-                  }`}
-                >
-                  <List aria-hidden="true" className="h-4 w-4" />
-                  <span className="sr-only">Table</span>
-                </Link>
-                <Link
-                  href={viewHref('grid')}
-                  title="Grid view"
-                  className={`flex h-9 w-10 items-center justify-center ${
-                    isGrid ? 'bg-blue-600 text-white' : 'text-blue-700 hover:bg-blue-50'
-                  }`}
-                >
-                  <Grid2X2 aria-hidden="true" className="h-4 w-4" />
-                  <span className="sr-only">Grid</span>
-                </Link>
-              </div>
-            </div>
-          )}
-
           {total === 0 ? (
         <div className="text-center py-20 text-gray-400">
           <p className="text-lg">No engines found.</p>
@@ -205,11 +275,6 @@ export default async function EnginesPage({ searchParams }: Props) {
           <div className="hidden xl:block">
             <EngineTable engines={engines} />
           </div>
-          {hasFilters && total > ENGINE_TABLE_PAGE_SIZE && total <= FILTERED_TABLE_FULL_RESULT_LIMIT && (
-            <p className="text-xs text-gray-400 mt-3">
-              Showing all {total.toLocaleString()} filtered engines.
-            </p>
-          )}
         </>
           ) : (
         <EngineCardGrid engines={engines} />
@@ -258,14 +323,13 @@ export default async function EnginesPage({ searchParams }: Props) {
 
           {/* Internal-linking hub — shown on the canonical (unfiltered) listing. */}
           {!hasFilters && (
-            <>
+            <div className="mt-14">
               <CommercialPathways
                 eyebrow="Package routes"
                 title="Shortlist engines here, then choose the right Haifeng package path"
                 intro="The catalog helps compare model specifications before inquiry. These commercial routes connect engine shortlists to EPA standby diesel, gas, towable, EPC, and general industrial generator package pages."
               />
-              <BrowseFacets />
-            </>
+            </div>
           )}
         </div>
       </div>
