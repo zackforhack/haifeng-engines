@@ -104,6 +104,11 @@ function summarize(engines, documents) {
   const withAnyDocument = engines.filter(hasAnyDocument)
   const withDatasheet = engines.filter(hasDatasheet)
   const withExclusiveDatasheet = engines.filter(hasExclusivelyLinkedDatasheet)
+  const generatedDatasheets = documents.filter(
+    (document) =>
+      document.type === 'datasheet' &&
+      document.storage_path?.startsWith('generated/model-datasheets/'),
+  )
   const withOtherDocumentOnly = engines.filter(
     (engine) => hasAnyDocument(engine) && !hasDatasheet(engine),
   )
@@ -124,13 +129,16 @@ function summarize(engines, documents) {
       total: 0,
       anyDocument: 0,
       datasheet: 0,
+      exclusiveDatasheet: 0,
       noDocument: 0,
       missingDocumentEngines: [],
       missingDatasheetEngines: [],
+      missingExclusiveDatasheetEngines: [],
     }
     brand.total += 1
     if (hasAnyDocument(engine)) brand.anyDocument += 1
     if (hasDatasheet(engine)) brand.datasheet += 1
+    if (hasExclusivelyLinkedDatasheet(engine)) brand.exclusiveDatasheet += 1
     if (!hasAnyDocument(engine)) {
       brand.noDocument += 1
       brand.missingDocumentEngines.push({
@@ -145,6 +153,13 @@ function summarize(engines, documents) {
         hasOtherDocument: hasAnyDocument(engine),
       })
     }
+    if (!hasExclusivelyLinkedDatasheet(engine)) {
+      brand.missingExclusiveDatasheetEngines.push({
+        model: engine.model,
+        slug: engine.slug,
+        hasDatasheet: hasDatasheet(engine),
+      })
+    }
     brandMap.set(engine.brand, brand)
   }
 
@@ -153,6 +168,10 @@ function summarize(engines, documents) {
       ...brand,
       datasheetCoverage: percent(brand.datasheet, brand.total),
       documentCoverage: percent(brand.anyDocument, brand.total),
+      exclusiveDatasheetCoverage: percent(
+        brand.exclusiveDatasheet,
+        brand.total,
+      ),
     }))
     .sort(
       (a, b) =>
@@ -224,6 +243,7 @@ function summarize(engines, documents) {
       withAnyDocument: withAnyDocument.length,
       withDatasheet: withDatasheet.length,
       withExclusiveDatasheet: withExclusiveDatasheet.length,
+      generatedDatasheetLinks: generatedDatasheets.length,
       withOtherDocumentOnly: withOtherDocumentOnly.length,
       withoutDocument: withoutDocument.length,
       documentCoverage: percent(withAnyDocument.length, engines.length),
@@ -265,6 +285,15 @@ function buildMarkdown(report) {
         b.total - a.total ||
         a.brand.localeCompare(b.brand),
     )
+  const exclusiveGaps = report.brands
+    .filter((brand) => brand.total >= 10)
+    .sort(
+      (a, b) =>
+        b.missingExclusiveDatasheetEngines.length -
+          a.missingExclusiveDatasheetEngines.length ||
+        b.total - a.total ||
+        a.brand.localeCompare(b.brand),
+    )
 
   return `# Engine Datasheet Coverage
 
@@ -273,9 +302,10 @@ Generated: ${report.generatedAt}
 ## Headline
 
 - Engines: **${totals.engines.toLocaleString()}**
-- Engines with any linked manufacturer document: **${totals.withAnyDocument.toLocaleString()} (${totals.documentCoverage}%)**
+- Engines with any linked document: **${totals.withAnyDocument.toLocaleString()} (${totals.documentCoverage}%)**
 - Engines with a linked row classified as a datasheet: **${totals.withDatasheet.toLocaleString()} (${totals.datasheetCoverage}%)**
 - Engines with at least one exclusively linked datasheet file: **${totals.withExclusiveDatasheet.toLocaleString()} (${totals.exclusiveDatasheetCoverage}%)**
+- Generated Haifeng model datasheet links: **${totals.generatedDatasheetLinks.toLocaleString()}**
 - Engines with another document type but no datasheet: **${totals.withOtherDocumentOnly.toLocaleString()}**
 - Engines with no linked document: **${totals.withoutDocument.toLocaleString()}**
 - PDF links / unique stored files: **${totals.documentLinks.toLocaleString()} / ${totals.uniqueFiles.toLocaleString()}**
@@ -336,6 +366,22 @@ ${markdownTable(largeBrands.slice(0, 30), [
   { label: 'No document', value: (row) => row.noDocument },
 ])}
 
+## Largest Exclusive Datasheet Gaps Among Brands With 10+ Engines
+
+${markdownTable(exclusiveGaps.slice(0, 30), [
+  { label: 'Brand', value: (row) => row.brand },
+  {
+    label: 'Exclusive datasheets',
+    value: (row) =>
+      `${row.exclusiveDatasheet} (${row.exclusiveDatasheetCoverage}%)`,
+  },
+  { label: 'Total', value: (row) => row.total },
+  {
+    label: 'Missing exclusive',
+    value: (row) => row.missingExclusiveDatasheetEngines.length,
+  },
+])}
+
 ## Counting Definitions
 
 - **Any document:** ${report.definitions.anyDocument}
@@ -366,16 +412,49 @@ async function main() {
 
   const report = summarize(engines, documents)
   const stamp = report.generatedAt.slice(0, 10)
+  const exclusiveTarget = Math.ceil(report.totals.engines * 0.8)
+  const missingExclusiveReport = {
+    generatedAt: report.generatedAt,
+    total: report.totals.engines,
+    dedicated: report.totals.withExclusiveDatasheet,
+    target: exclusiveTarget,
+    need: Math.max(0, exclusiveTarget - report.totals.withExclusiveDatasheet),
+    groups: Object.fromEntries(
+      report.brands
+        .filter((brand) => brand.missingExclusiveDatasheetEngines.length > 0)
+        .sort(
+          (a, b) =>
+            b.missingExclusiveDatasheetEngines.length -
+              a.missingExclusiveDatasheetEngines.length ||
+            b.total - a.total ||
+            a.brand.localeCompare(b.brand),
+        )
+        .map((brand) => [
+          brand.brand,
+          brand.missingExclusiveDatasheetEngines,
+        ]),
+    ),
+  }
   await fs.mkdir(REPORT_DIR, { recursive: true })
   const jsonPath = path.join(REPORT_DIR, `${stamp}.json`)
   const markdownPath = path.join(REPORT_DIR, `${stamp}.md`)
+  const missingExclusivePath = path.join(
+    REPORT_DIR,
+    `missing-exclusive-${stamp}.json`,
+  )
   await Promise.all([
     fs.writeFile(jsonPath, `${JSON.stringify(report, null, 2)}\n`),
     fs.writeFile(markdownPath, buildMarkdown(report)),
+    fs.writeFile(
+      missingExclusivePath,
+      `${JSON.stringify(missingExclusiveReport, null, 2)}\n`,
+    ),
   ])
 
   console.log(buildMarkdown(report))
-  console.log(`\nReports written to:\n- ${jsonPath}\n- ${markdownPath}`)
+  console.log(
+    `\nReports written to:\n- ${jsonPath}\n- ${markdownPath}\n- ${missingExclusivePath}`,
+  )
 }
 
 main().catch((error) => {
