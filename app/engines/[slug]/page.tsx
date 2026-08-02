@@ -2,11 +2,12 @@ import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ArrowRight, Download, ExternalLink } from 'lucide-react'
+import { ArrowRight, Download, ExternalLink, MessageCircle } from 'lucide-react'
 import { getAllEngines, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/lib/engines'
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
+import { TrackedExternalLink } from '@/components/TrackedExternalLink'
 import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, ratedSpeeds, buildIntro, compactConfig, ratedFrequencies, isVariableSpeedMechanical } from '@/lib/engine-display'
 import { competitorsFor, pairSlug } from '@/lib/compare'
 import { buildEngineFaqs } from '@/lib/engine-faq'
@@ -17,6 +18,49 @@ import type { Engine, EnginePDF } from '@/lib/types'
 
 interface Props {
   params: Promise<{ slug: string }>
+}
+
+const HAIFENG_CONTACT_URL = 'https://www.haifengmachinery.com/contact-us/'
+const HAIFENG_WHATSAPP_NUMBER = '14163179500'
+const ENGINE_BASE_URL = 'https://engines.haifengmachinery.com'
+
+function engineContactLabel(engine: Engine): string {
+  const hp = headlinePower(engine)
+  const kva = displayKva(hp)
+  const out = displayOutput(hp)
+  const ratings = [
+    kva ? `${kva.toLocaleString()} kVA` : null,
+    out ? `${out.value.toLocaleString()} ${out.unit}` : null,
+  ].filter(Boolean)
+
+  return ratings.length ? `${engine.brand} ${engine.model} (${ratings.join(' / ')})` : `${engine.brand} ${engine.model}`
+}
+
+function whatsappHref(engine: Engine, slug: string): string {
+  const message = [
+    `Hi Haifeng Machinery, I am reviewing ${engineContactLabel(engine)} for a generator project.`,
+    '',
+    `Engine page: ${ENGINE_BASE_URL}/engines/${slug}`,
+    '',
+    'Can you help confirm:',
+    '- generator package options',
+    '- alternator sizing',
+    '- enclosure and voltage options',
+    '- quote availability',
+  ].join('\n')
+
+  return `https://wa.me/${HAIFENG_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
+}
+
+function contactTracking(engine: Engine, channel: 'quote' | 'whatsapp', placement: string) {
+  return {
+    channel,
+    placement,
+    brand: engine.brand,
+    model: engine.model,
+    slug: engine.slug,
+    engine: engineContactLabel(engine),
+  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -190,47 +234,58 @@ function TopTaskFlow({
   firstPdf,
   productPackage,
   competitors,
+  whatsappUrl,
 }: {
   engine: Engine
   firstPdf?: EnginePDF
   productPackage: { href: string; label: string }
   competitors: Engine[]
+  whatsappUrl: string
 }) {
   const modified = engine.updated_at ? engine.updated_at.slice(0, 10) : null
   const datasheetCount = engine.pdfs?.length ?? 0
-  const primaryHref = firstPdf ? getPDFUrl(firstPdf.storage_path) : 'https://www.haifengmachinery.com/contact-us/'
+  const primaryHref = firstPdf ? getPDFUrl(firstPdf.storage_path) : HAIFENG_CONTACT_URL
   const compareHref = competitors[0]
     ? `/engines/compare/${pairSlug(engine.slug, competitors[0].slug)}`
     : `/brands/${brandSlug(engine.brand)}`
 
   return (
     <section className="mb-8 border-y border-gray-900 bg-white">
-      <div className="grid grid-cols-1 text-sm sm:grid-cols-3">
+      <div className="grid grid-cols-1 text-sm sm:grid-cols-2 lg:grid-cols-4">
         <a
           href={primaryHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex min-h-14 items-center justify-between gap-3 border-b border-gray-900 bg-blue-600 px-4 py-3 font-bold text-white hover:bg-blue-700 sm:border-b-0 sm:border-r"
+          className="flex min-h-14 items-center justify-between gap-3 border-b border-gray-900 bg-blue-600 px-4 py-3 font-bold text-white hover:bg-blue-700 sm:border-r lg:border-b-0"
         >
           <span>{firstPdf ? 'Download datasheet' : 'Request datasheet'}</span>
           {firstPdf ? <Download aria-hidden="true" className="h-4 w-4" /> : <ExternalLink aria-hidden="true" className="h-4 w-4" />}
         </a>
         <Link
           href={compareHref}
-          className="flex min-h-14 items-center justify-between gap-3 border-b border-gray-200 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50 sm:border-b-0 sm:border-r"
+          className="flex min-h-14 items-center justify-between gap-3 border-b border-gray-200 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50 lg:border-b-0 lg:border-r"
         >
           <span>Compare engine</span>
           <ArrowRight aria-hidden="true" className="h-4 w-4" />
         </Link>
-        <a
-          href="https://www.haifengmachinery.com/contact-us/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex min-h-14 items-center justify-between gap-3 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50"
+        <TrackedExternalLink
+          href={HAIFENG_CONTACT_URL}
+          eventName="engine_contact_cta_click"
+          eventProperties={contactTracking(engine, 'quote', 'top_task_flow')}
+          className="flex min-h-14 items-center justify-between gap-3 border-b border-gray-200 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50 sm:border-b-0 sm:border-r"
         >
           <span>Get a quote</span>
           <ExternalLink aria-hidden="true" className="h-4 w-4" />
-        </a>
+        </TrackedExternalLink>
+        <TrackedExternalLink
+          href={whatsappUrl}
+          eventName="engine_contact_cta_click"
+          eventProperties={contactTracking(engine, 'whatsapp', 'top_task_flow')}
+          className="flex min-h-14 items-center justify-between gap-3 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50"
+        >
+          <span>Ask about this engine</span>
+          <MessageCircle aria-hidden="true" className="h-4 w-4" />
+        </TrackedExternalLink>
       </div>
 
       <dl className="grid grid-cols-1 border-t border-gray-900 bg-gray-50 text-xs text-gray-600 sm:grid-cols-3">
@@ -522,6 +577,31 @@ function ReferencePanel({ engine, slug }: { engine: Engine; slug: string }) {
   )
 }
 
+function MobileContactBar({ engine, quoteUrl, whatsappUrl }: { engine: Engine; quoteUrl: string; whatsappUrl: string }) {
+  return (
+    <div className="fixed inset-x-0 bottom-0 z-30 border-t border-gray-900 bg-white px-4 py-3 lg:hidden" style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}>
+      <div className="mx-auto grid max-w-[720px] grid-cols-2 gap-2 text-sm font-semibold">
+        <TrackedExternalLink
+          href={whatsappUrl}
+          eventName="engine_contact_cta_click"
+          eventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky')}
+          className="flex min-h-11 items-center justify-center gap-2 bg-blue-600 px-3 py-2 text-white hover:bg-blue-700"
+        >
+          Ask on WhatsApp <MessageCircle aria-hidden="true" className="h-4 w-4" />
+        </TrackedExternalLink>
+        <TrackedExternalLink
+          href={quoteUrl}
+          eventName="engine_contact_cta_click"
+          eventProperties={contactTracking(engine, 'quote', 'mobile_sticky')}
+          className="flex min-h-11 items-center justify-center gap-2 border border-blue-600 bg-white px-3 py-2 text-blue-600 hover:bg-blue-50"
+        >
+          Get quote <ExternalLink aria-hidden="true" className="h-4 w-4" />
+        </TrackedExternalLink>
+      </div>
+    </div>
+  )
+}
+
 export default async function EngineDetailPage({ params }: Props) {
   const { slug } = await params
   const engine = await getEngineBySlug(slug)
@@ -531,7 +611,7 @@ export default async function EngineDetailPage({ params }: Props) {
   const competitors = await competitorsFor(engine, 4)
   const quickWin = quickWinEngineSeo(slug)
   const intro = quickWin?.intro ?? engine.description ?? buildIntro(engine)
-  const base = 'https://engines.haifengmachinery.com'
+  const base = ENGINE_BASE_URL
 
   // Contextual link to the matching Haifeng Machinery genset product line (gas vs diesel, and
   // for diesel, emissions-regulated vs non-regulated) — useful to buyers and a relevant link to
@@ -549,6 +629,7 @@ export default async function EngineDetailPage({ params }: Props) {
   const out = displayOutput(hp)
   const variableSpeed = isVariableSpeedMechanical(engine)
   const fuelCategory = engine.fuel_type?.trim() || 'Diesel'
+  const whatsappUrl = whatsappHref(engine, slug)
 
   // Descriptive alt/caption for the spec-card image (Google Images + accessibility).
   const imageAlt =
@@ -653,7 +734,7 @@ export default async function EngineDetailPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
 
-      <div className="max-w-none">
+      <div className="max-w-none pb-24 lg:pb-0">
         {/* Breadcrumb */}
         <nav className="mb-6 border-b border-gray-200 pb-3 text-sm text-gray-400">
           <Link href="/engines" className="hover:text-blue-600">Engines</Link>
@@ -690,6 +771,7 @@ export default async function EngineDetailPage({ params }: Props) {
           firstPdf={firstPdf}
           productPackage={productPackage}
           competitors={competitors}
+          whatsappUrl={whatsappUrl}
         />
 
         <SpecHero engine={engine} />
@@ -801,19 +883,27 @@ export default async function EngineDetailPage({ params }: Props) {
             <ReferencePanel engine={engine} slug={slug} />
 
             <div className="border border-blue-600 bg-blue-50 p-5">
-              <p className="font-semibold text-gray-900 mb-1">Need this engine?</p>
+              <p className="font-semibold text-gray-900 mb-1">Need help using this engine?</p>
               <p className="text-sm text-blue-900 mb-3">
-                Need a generator package using this engine? Haifeng Machinery can help with sizing,
-                alternator selection, controller, enclosure, voltage, and compliance support.
+                Send this model to Haifeng on WhatsApp. We can help confirm whether it fits your
+                generator package, alternator, enclosure, voltage, and compliance needs.
               </p>
-              <a
-                href="https://www.haifengmachinery.com/contact-us/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <TrackedExternalLink
+                href={HAIFENG_CONTACT_URL}
+                eventName="engine_contact_cta_click"
+                eventProperties={contactTracking(engine, 'quote', 'sidebar_cta')}
                 className="flex items-center justify-center gap-2 bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
               >
                 Get a Quote <ExternalLink aria-hidden="true" className="h-4 w-4" />
-              </a>
+              </TrackedExternalLink>
+              <TrackedExternalLink
+                href={whatsappUrl}
+                eventName="engine_contact_cta_click"
+                eventProperties={contactTracking(engine, 'whatsapp', 'sidebar_cta')}
+                className="mt-2 flex items-center justify-center gap-2 border border-blue-600 bg-white px-4 py-2 text-sm font-semibold text-blue-600 hover:bg-blue-100"
+              >
+                Ask on WhatsApp <MessageCircle aria-hidden="true" className="h-4 w-4" />
+              </TrackedExternalLink>
               <p className="text-sm text-blue-900 mt-3">
                 Or browse Haifeng&apos;s{' '}
                 <a href={productPackage.href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
@@ -856,6 +946,7 @@ export default async function EngineDetailPage({ params }: Props) {
           </aside>
         </div>
       </div>
+      <MobileContactBar engine={engine} quoteUrl={HAIFENG_CONTACT_URL} whatsappUrl={whatsappUrl} />
     </>
   )
 }
