@@ -43,6 +43,7 @@ const TITLES = {
   'International': null,
   'Isuzu': 'Isuzu',
   'JCB': 'JCB (company)',
+  'JDP': null,
   'Jichai': null,             // CNPC Jichai — official CNPC logo (en.wikipedia fair-use), via LOCAL_LOGOS
   'John Deere': 'John Deere',
   'KEM': null,
@@ -51,9 +52,11 @@ const TITLES = {
   'Kohler': 'Kohler Co.',
   'Komatsu': 'Komatsu Limited',
   'Kubota': 'Kubota',
+  'Kukje': null,
   'Liebherr': 'Liebherr Group',
   'Lister Petter': null,       // user-provided logo, served via LOCAL_LOGOS
   'Laidong': null,
+  'Lion': null,
   'Lovol': 'Lovol',
   'MAN': 'MAN SE',
   'Mercedes-Benz': null,
@@ -120,15 +123,18 @@ const LOCAL_LOGOS = {
   'Guascor': 'guascor.svg',     // official "Guascor Energy" SVG (teal #005172 + green)
   'IMPCO': 'impco.png',
   'International': 'international.svg',
+  'JDP': 'jdp.svg',             // source-backed local "JDP Jindong" wordmark
   'Jichai': 'jichai.svg',       // CNPC corporate logo (red sunburst) for CNPC Jichai
   'Jenbacher': 'jenbacher.svg', // official black wordmark (green "N" accent)
   'KEM': 'kem.png',
   'Kipor': 'kipor.png',
+  'Kukje': 'kukje.svg',         // source-backed local legacy Kukje Machinery wordmark
   'Waukesha': 'waukesha.svg',   // official orange (#EF773C) script wordmark
   'Komatsu': 'komatsu.png',     // P154 SVGs were white-only variants (invisible on white chip)
   'Liebherr': 'liebherr.png',
   'Lister Petter': 'lister-petter.png',
   'Laidong': 'laidong.jpg',
+  'Lion': 'lion.jpg',           // official CCCME company profile image for Lion Engine
   'Liyu Power': 'liyu-power.png',   // site only ships a white "fanbai" logo; recolored dark for the white chip
   'Lovol': 'lovol.png',
   'Mercedes-Benz': 'mercedes-benz.svg',
@@ -139,6 +145,7 @@ const LOCAL_LOGOS = {
   'PUSH': 'push.png',
   'SDEC': 'sdec.png',
   'Shibaura': 'shibaura.svg',
+  'Tecogen': 'tecogen.svg',     // source-backed local wordmark; official site logo asset was referenced but not retrievable
   'TYM': 'tym.svg',
   'VMAN': 'vman.png',
   'Volvo Penta': 'volvo-penta.png',
@@ -151,7 +158,7 @@ const LOCAL_LOGOS = {
   'Zenith Power Products': 'zenith-power-products.png',
 }
 
-const WORDMARK_FALLBACKS = ['JDP', 'Kukje', 'Lion', 'Tecogen']
+const WORDMARK_FALLBACKS = []
 
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))

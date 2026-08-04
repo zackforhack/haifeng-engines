@@ -38,15 +38,11 @@ function engineContactLabel(engine: Engine): string {
 
 function whatsappHref(engine: Engine, slug: string): string {
   const message = [
-    `Hi Haifeng Machinery, I am reviewing ${engineContactLabel(engine)} for a generator project.`,
+    `Hi Haifeng Machinery, I am interested in ${engineContactLabel(engine)}.`,
     '',
     `Engine page: ${ENGINE_BASE_URL}/engines/${slug}`,
     '',
-    'Can you help confirm:',
-    '- generator package options',
-    '- alternator sizing',
-    '- enclosure and voltage options',
-    '- quote availability',
+    'Can we discuss generator package options and quote availability?',
   ].join('\n')
 
   return `https://wa.me/${HAIFENG_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
@@ -234,13 +230,11 @@ function TopTaskFlow({
   firstPdf,
   productPackage,
   competitors,
-  whatsappUrl,
 }: {
   engine: Engine
   firstPdf?: EnginePDF
   productPackage: { href: string; label: string }
   competitors: Engine[]
-  whatsappUrl: string
 }) {
   const modified = engine.updated_at ? engine.updated_at.slice(0, 10) : null
   const datasheetCount = engine.pdfs?.length ?? 0
@@ -251,7 +245,7 @@ function TopTaskFlow({
 
   return (
     <section className="mb-8 border-y border-gray-900 bg-white">
-      <div className="grid grid-cols-1 text-sm sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 text-sm sm:grid-cols-3">
         <a
           href={primaryHref}
           target="_blank"
@@ -272,19 +266,10 @@ function TopTaskFlow({
           href={HAIFENG_CONTACT_URL}
           eventName="engine_contact_cta_click"
           eventProperties={contactTracking(engine, 'quote', 'top_task_flow')}
-          className="flex min-h-14 items-center justify-between gap-3 border-b border-gray-200 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50 sm:border-b-0 sm:border-r"
+          className="flex min-h-14 items-center justify-between gap-3 border-b border-gray-200 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50 sm:border-b-0"
         >
           <span>Get a quote</span>
           <ExternalLink aria-hidden="true" className="h-4 w-4" />
-        </TrackedExternalLink>
-        <TrackedExternalLink
-          href={whatsappUrl}
-          eventName="engine_contact_cta_click"
-          eventProperties={contactTracking(engine, 'whatsapp', 'top_task_flow')}
-          className="flex min-h-14 items-center justify-between gap-3 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50"
-        >
-          <span>Ask about this engine</span>
-          <MessageCircle aria-hidden="true" className="h-4 w-4" />
         </TrackedExternalLink>
       </div>
 
@@ -318,6 +303,35 @@ function TopTaskFlow({
           </a>
         ))}
       </nav>
+    </section>
+  )
+}
+
+function SimpleWhatsAppCta({
+  engine,
+  whatsappUrl,
+}: {
+  engine: Engine
+  whatsappUrl: string
+}) {
+  return (
+    <section className="mb-8 border-y border-gray-900 bg-white">
+      <div className="flex flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
+        <div>
+          <h2 className="text-lg font-bold text-gray-900">Chat on WhatsApp about this engine</h2>
+          <p className="mt-1 text-sm text-gray-600">
+            Opens WhatsApp with {engine.brand} {engine.model} and this page link filled in.
+          </p>
+        </div>
+        <TrackedExternalLink
+          href={whatsappUrl}
+          eventName="engine_contact_cta_click"
+          eventProperties={contactTracking(engine, 'whatsapp', 'simple_cta')}
+          className="flex min-h-12 shrink-0 items-center justify-center gap-2 bg-blue-600 px-5 py-3 text-sm font-bold text-white hover:bg-blue-700"
+        >
+          Chat on WhatsApp <MessageCircle aria-hidden="true" className="h-4 w-4" />
+        </TrackedExternalLink>
+      </div>
     </section>
   )
 }
@@ -587,7 +601,7 @@ function MobileContactBar({ engine, quoteUrl, whatsappUrl }: { engine: Engine; q
           eventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky')}
           className="flex min-h-11 items-center justify-center gap-2 bg-blue-600 px-3 py-2 text-white hover:bg-blue-700"
         >
-          Ask on WhatsApp <MessageCircle aria-hidden="true" className="h-4 w-4" />
+          Chat <MessageCircle aria-hidden="true" className="h-4 w-4" />
         </TrackedExternalLink>
         <TrackedExternalLink
           href={quoteUrl}
@@ -766,12 +780,13 @@ export default async function EngineDetailPage({ params }: Props) {
           <p className="max-w-4xl text-gray-600 leading-relaxed">{intro}</p>
         </header>
 
+        <SimpleWhatsAppCta engine={engine} whatsappUrl={whatsappUrl} />
+
         <TopTaskFlow
           engine={engine}
           firstPdf={firstPdf}
           productPackage={productPackage}
           competitors={competitors}
-          whatsappUrl={whatsappUrl}
         />
 
         <SpecHero engine={engine} />
@@ -883,10 +898,9 @@ export default async function EngineDetailPage({ params }: Props) {
             <ReferencePanel engine={engine} slug={slug} />
 
             <div className="border border-blue-600 bg-blue-50 p-5">
-              <p className="font-semibold text-gray-900 mb-1">Need help using this engine?</p>
+              <p className="font-semibold text-gray-900 mb-1">Chat about this engine</p>
               <p className="text-sm text-blue-900 mb-3">
-                Send this model to Haifeng on WhatsApp. We can help confirm whether it fits your
-                generator package, alternator, enclosure, voltage, and compliance needs.
+                WhatsApp opens with this model and page link filled in.
               </p>
               <TrackedExternalLink
                 href={HAIFENG_CONTACT_URL}
@@ -902,7 +916,7 @@ export default async function EngineDetailPage({ params }: Props) {
                 eventProperties={contactTracking(engine, 'whatsapp', 'sidebar_cta')}
                 className="mt-2 flex items-center justify-center gap-2 border border-blue-600 bg-white px-4 py-2 text-sm font-semibold text-blue-600 hover:bg-blue-100"
               >
-                Ask on WhatsApp <MessageCircle aria-hidden="true" className="h-4 w-4" />
+                Chat on WhatsApp <MessageCircle aria-hidden="true" className="h-4 w-4" />
               </TrackedExternalLink>
               <p className="text-sm text-blue-900 mt-3">
                 Or browse Haifeng&apos;s{' '}

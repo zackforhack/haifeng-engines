@@ -30,6 +30,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "International": "/brand-logos/international.svg",
   "Isuzu": "/brand-logos/isuzu.svg",
   "JCB": "/brand-logos/jcb.jpg",
+  "JDP": "/brand-logos/jdp.svg",
   "Jenbacher": "/brand-logos/jenbacher.svg",
   "Jichai": "/brand-logos/jichai.svg",
   "John Deere": "/brand-logos/john-deere.png",
@@ -40,9 +41,11 @@ export const BRAND_LOGOS: Record<string, string> = {
   "Kohler": "/brand-logos/kohler.svg",
   "Komatsu": "/brand-logos/komatsu.png",
   "Kubota": "/brand-logos/kubota.svg",
+  "Kukje": "/brand-logos/kukje.svg",
   "Liebherr": "/brand-logos/liebherr.png",
   "Lister Petter": "/brand-logos/lister-petter.png",
   "Liyu Power": "/brand-logos/liyu-power.png",
+  "Lion": "/brand-logos/lion.jpg",
   "Laidong": "/brand-logos/laidong.jpg",
   "Lovol": "/brand-logos/lovol.png",
   "Mahindra": "/brand-logos/mahindra.svg",
@@ -60,6 +63,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "Scania": "/brand-logos/scania.svg",
   "SDEC": "/brand-logos/sdec.png",
   "Shibaura": "/brand-logos/shibaura.svg",
+  "Tecogen": "/brand-logos/tecogen.svg",
   "TYM": "/brand-logos/tym.svg",
   "VM Motori": "/brand-logos/vm-motori.svg",
   "VMAN": "/brand-logos/vman.png",
@@ -75,6 +79,6 @@ export const BRAND_LOGOS: Record<string, string> = {
   "Zenith Power Products": "/brand-logos/zenith-power-products.png",
 }
 
-// These EPA-source brand names do not currently have a clean, attributable
-// manufacturer asset. Render a text wordmark rather than a wrong parent logo.
-export const BRAND_LOGO_FALLBACKS = new Set(["JDP", "Kukje", "Lion", "Tecogen"])
+// Keep this set for truly unresolved future brands. Current legacy additions use
+// curated local assets rather than runtime text fallbacks.
+export const BRAND_LOGO_FALLBACKS = new Set<string>()

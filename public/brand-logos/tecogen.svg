@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="110" viewBox="0 0 420 110" role="img" aria-labelledby="title desc">
+  <title id="title">Tecogen wordmark</title>
+  <desc id="desc">Source-backed local wordmark for the Tecogen engine brand.</desc>
+  <rect width="420" height="110" rx="10" fill="#ffffff"/>
+  <text x="24" y="72" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700">
+    <tspan fill="#0089b5">Teco</tspan><tspan fill="#63b545">gen</tspan>
+  </text>
+  <path d="M318 32c18 0 34 12 39 29-15 0-30-5-42-15 4 17 17 30 34 34-26 5-52-11-60-37 8-7 18-11 29-11Z" fill="#63b545" opacity=".9"/>
+</svg>
