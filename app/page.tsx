@@ -22,19 +22,22 @@ const BASE = 'https://engines.haifengmachinery.com'
 
 const HERO_STARTERS = [
   {
-    label: 'Find by model',
-    desc: 'Known engine or alternator part number',
-    href: '/engines?view=grid',
+    tag: 'Data center',
+    label: '2,000+ kWe engines',
+    desc: 'High-output standby models for critical power research',
+    href: '/engines/power/2000-plus-kwe',
   },
   {
-    label: 'Browse 500-1,500 kWe',
-    desc: 'Mid-range standby and prime engines',
-    href: '/engines/power/500-1500-kwe',
+    tag: 'Compliance',
+    label: 'EPA-certified engines',
+    desc: 'U.S. EPA emissions listings for regulated projects',
+    href: '/engines?emissions=U.S.+EPA&view=grid',
   },
   {
-    label: 'EPA Tier 4 engines',
-    desc: 'Regulated standby package research',
-    href: '/engines?emissions=U.S.+EPA+Final+Tier+4',
+    tag: 'Gas power',
+    label: 'Gas generator engines',
+    desc: 'Natural gas, LPG, CNG/LNG, and biogas models',
+    href: '/engines/fuel/gas',
   },
 ]
 
@@ -139,6 +142,9 @@ export default async function HomePage() {
                   className="starter-link group p-4 sm:min-h-28 sm:border-b sm:border-r sm:border-t sm:border-gray-900 sm:last:border-r-0"
                 >
                   <span className="min-w-0">
+                    <span className="starter-link-kicker block text-[0.6875rem] font-bold uppercase text-blue-600">
+                      {starter.tag}
+                    </span>
                     <span className="block text-sm font-bold text-gray-900 group-hover:text-blue-600">
                       {starter.label}
                     </span>

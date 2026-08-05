@@ -27,8 +27,6 @@ interface Props {
     fuel_type?: string
     hz?: string
     status?: string
-    min_kwe?: string
-    max_kwe?: string
     sort?: string
     page?: string
     view?: string
@@ -61,7 +59,7 @@ export default async function EnginesPage({ searchParams }: Props) {
 
   const hasFilters = !!(
     p.q || p.brand || p.origin || p.emissions || p.config || p.fuel || p.fuel_type ||
-    p.hz || p.status || p.min_kwe || p.max_kwe
+    p.hz || p.status
   )
 
   const isGrid = p.view === 'grid'
@@ -79,8 +77,6 @@ export default async function EnginesPage({ searchParams }: Props) {
       fuel_type: p.fuel_type,
       hz:        p.hz === '50' || p.hz === '60' ? p.hz : undefined,
       status:    p.status,
-      min_kwe:   p.min_kwe ? Number(p.min_kwe) : undefined,
-      max_kwe:   p.max_kwe ? Number(p.max_kwe) : undefined,
       sort:      p.sort,
     }, { page: currentPage, pageSize: requestedPageSize }),
     getFilterOptions(),
@@ -104,8 +100,6 @@ export default async function EnginesPage({ searchParams }: Props) {
       ...(p.fuel_type ? { fuel_type: p.fuel_type }  : {}),
       ...(p.hz        ? { hz: p.hz }                : {}),
       ...(p.status    ? { status: p.status }        : {}),
-      ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
-      ...(p.max_kwe   ? { max_kwe: p.max_kwe }      : {}),
       ...(p.sort      ? { sort: p.sort }            : {}),
       ...(p.view      ? { view: p.view }            : {}),
       ...(pg > 1      ? { page: String(pg) }        : {}),
@@ -124,8 +118,6 @@ export default async function EnginesPage({ searchParams }: Props) {
       ...(p.fuel_type ? { fuel_type: p.fuel_type }  : {}),
       ...(p.hz        ? { hz: p.hz }                : {}),
       ...(p.status    ? { status: p.status }        : {}),
-      ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
-      ...(p.max_kwe   ? { max_kwe: p.max_kwe }      : {}),
       ...(p.sort      ? { sort: p.sort }            : {}),
       ...(v === 'grid' ? { view: 'grid' }           : {}),
     })
@@ -143,8 +135,6 @@ export default async function EnginesPage({ searchParams }: Props) {
       ...(p.fuel_type ? { fuel_type: p.fuel_type }  : {}),
       ...(p.hz        ? { hz: p.hz }                : {}),
       ...(p.status    ? { status: p.status }        : {}),
-      ...(p.min_kwe   ? { min_kwe: p.min_kwe }      : {}),
-      ...(p.max_kwe   ? { max_kwe: p.max_kwe }      : {}),
       ...(p.sort      ? { sort: p.sort }            : {}),
       ...(p.view      ? { view: p.view }            : {}),
     })
@@ -169,11 +159,6 @@ export default async function EnginesPage({ searchParams }: Props) {
     ...(p.fuel_type ? [{ label: 'Fuel type', value: p.fuel_type, href: hrefWithout(['fuel_type']) }] : []),
     ...(p.hz ? [{ label: 'Frequency', value: `${p.hz} Hz`, href: hrefWithout(['hz']) }] : []),
     ...(p.status ? [{ label: 'Status', value: statusLabel[p.status] ?? p.status, href: hrefWithout(['status']) }] : []),
-    ...(p.min_kwe || p.max_kwe ? [{
-      label: 'Power',
-      value: `${p.min_kwe || '0'}-${p.max_kwe || 'max'} kWe`,
-      href: hrefWithout(['min_kwe', 'max_kwe']),
-    }] : []),
   ]
 
   return (
@@ -195,7 +180,7 @@ export default async function EnginesPage({ searchParams }: Props) {
           <div className="lg:min-w-64">
             <p className="text-sm font-bold text-gray-900">{resultLabel}</p>
             <p className="mt-1 text-xs leading-relaxed text-gray-500">
-              Search by brand, model, series, power, emissions, and package-fit criteria.
+              Search by brand, model, series, fuel, frequency, emissions, and package-fit criteria.
             </p>
           </div>
         </div>

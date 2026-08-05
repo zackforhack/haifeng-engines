@@ -16,6 +16,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     `${base}/engines/power/100-500-kwe`,
     `${base}/engines/power/500-1500-kwe`,
     `${base}/engines/power/1500-plus-kwe`,
+    `${base}/engines/power/2000-plus-kwe`,
     ...Object.keys(CONFIG_FACETS).map((s) => `${base}/engines/configuration/${s}`),
     ...Object.keys(EMISSIONS_FACETS).map((s) => `${base}/engines/emissions/${s}`),
     ...Object.keys(RPM_FACETS).map((s) => `${base}/engines/rpm/${s}`),

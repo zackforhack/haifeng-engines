@@ -14,6 +14,7 @@ const RANGES = {
   '100-500-kwe':    { label: '100 – 500 kWe',    min: 100, max: 500 },
   '500-1500-kwe':   { label: '500 – 1,500 kWe',  min: 500, max: 1500 },
   '1500-plus-kwe':  { label: '1,500+ kWe',       min: 1500, max: undefined },
+  '2000-plus-kwe':  { label: '2,000+ kWe',       min: 2000, max: undefined },
 } as const
 
 type RangeKey = keyof typeof RANGES

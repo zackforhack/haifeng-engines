@@ -201,6 +201,10 @@ select option {
   border-top-color: var(--line);
 }
 
+.starter-link-kicker {
+  margin-bottom: 0.25rem;
+}
+
 .section-index::after {
   width: 2rem;
   height: 1px;

@@ -18,6 +18,14 @@ function n(v: string): number {
   return Number.isFinite(x) && x > 0 ? x : 0
 }
 
+function enginePowerRangeHref(requiredKw: number): string {
+  if (requiredKw < 100) return '/engines/power/under-100-kwe'
+  if (requiredKw < 500) return '/engines/power/100-500-kwe'
+  if (requiredKw < 1500) return '/engines/power/500-1500-kwe'
+  if (requiredKw < 2000) return '/engines/power/1500-plus-kwe'
+  return '/engines/power/2000-plus-kwe'
+}
+
 export function GeneratorSizingCalculator() {
   const [running, setRunning] = useState('200')
   const [motor, setMotor] = useState('45')
@@ -107,10 +115,10 @@ export function GeneratorSizingCalculator() {
             <div className="flex justify-between font-semibold text-gray-700"><span>Peak demand at startup</span><span>{Math.ceil(r.peakDemand).toLocaleString()} kW</span></div>
           </div>
           <Link
-            href={`/engines?min_kwe=${r.requiredKw}`}
+            href={enginePowerRangeHref(r.requiredKw)}
             className="mt-5 block text-center bg-blue-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-blue-700 transition-colors"
           >
-            Browse engines ≥ {r.requiredKw.toLocaleString()} kWe →
+            Browse the matching engine power range →
           </Link>
         </div>
       </div>

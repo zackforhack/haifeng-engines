@@ -18,6 +18,7 @@ const GROUPS: { heading: string; links: { label: string; href: string }[] }[] = 
       { label: '100–500 kWe', href: '/engines/power/100-500-kwe' },
       { label: '500–1,500 kWe', href: '/engines/power/500-1500-kwe' },
       { label: '1,500+ kWe', href: '/engines/power/1500-plus-kwe' },
+      { label: '2,000+ kWe', href: '/engines/power/2000-plus-kwe' },
     ],
   },
   {

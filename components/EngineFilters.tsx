@@ -25,17 +25,16 @@ export function EngineFilters({ options }: Props) {
   const fuelType  = get('fuel_type')
   const hz        = get('hz')
   const status    = get('status')
-  const minKwe    = get('min_kwe')
-  const maxKwe    = get('max_kwe')
-  const activeCount = [brand, origin, emissions, config, fuel, fuelType, hz, minKwe, maxKwe, status].filter(Boolean).length
-  const [open, setOpen] = useState(false)
+  const activeCount = [brand, origin, emissions, config, fuel, fuelType, hz, status].filter(Boolean).length
+  const [open, setOpen] = useState(activeCount > 0)
 
   function update(key: string, value: string) {
     const p = new URLSearchParams(searchParams.toString())
     if (value) p.set(key, value)
     else p.delete(key)
     p.delete('page')
-    router.replace(`${pathname}?${p.toString()}`)
+    const qs = p.toString()
+    router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false })
   }
 
   // The broad Fuel toggle (Diesel/Gas) and the granular Fuel Type dropdown target the same
@@ -46,7 +45,8 @@ export function EngineFilters({ options }: Props) {
     else p.delete('fuel')
     p.delete('fuel_type')
     p.delete('page')
-    router.replace(`${pathname}?${p.toString()}`)
+    const qs = p.toString()
+    router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false })
   }
 
   function setFuelType(value: string) {
@@ -55,13 +55,14 @@ export function EngineFilters({ options }: Props) {
     else p.delete('fuel_type')
     p.delete('fuel')
     p.delete('page')
-    router.replace(`${pathname}?${p.toString()}`)
+    const qs = p.toString()
+    router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false })
   }
 
   function clearAll() {
     const p = new URLSearchParams()
     if (q) p.set('q', q)
-    router.replace(`${pathname}${p.size ? '?' + p.toString() : ''}`)
+    router.replace(`${pathname}${p.size ? '?' + p.toString() : ''}`, { scroll: false })
   }
 
   return (
@@ -95,35 +96,10 @@ export function EngineFilters({ options }: Props) {
         </div>
 
         <div className={`${open ? 'block' : 'hidden'} border-t border-gray-200 px-4 py-4 xl:block`}>
-          <div className="space-y-5">
+          <div className="space-y-6">
             <fieldset>
-              <legend className="mb-2 text-xs font-bold uppercase text-gray-500">Engine identity</legend>
-              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
-                <FilterSelect label="Brand"     param="brand"     value={brand}     options={options.brands}    onUpdate={update} />
-                <FilterSelect label="Origin"    param="origin"    value={origin}    options={options.origins}   onUpdate={update} />
-                <FilterSelect label="Emissions" param="emissions" value={emissions} options={options.emissions} onUpdate={update} />
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <legend className="mb-2 text-xs font-bold uppercase text-gray-500">Build</legend>
-              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
-                <FilterSelect label="Configuration" param="config"    value={config}   options={options.configs}   onUpdate={update} />
-                <FilterSelect label="Fuel Type"     param="fuel_type" value={fuelType} options={options.fuelTypes} onUpdate={(_, v) => setFuelType(v)} />
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <legend className="mb-2 text-xs font-bold uppercase text-gray-500">Operating profile</legend>
-              <div className="grid gap-3 sm:grid-cols-3 xl:grid-cols-1">
-                <FilterToggle label="Status">
-                  <ToggleGroup
-                    value={status}
-                    options={[['', 'All'], ['active', 'Active'], ['discontinued', 'Disc.'], ['limited', 'Limited']]}
-                    columns={2}
-                    onSelect={(v) => update('status', v)}
-                  />
-                </FilterToggle>
+              <legend className="mb-3 text-xs font-bold uppercase text-gray-500">Quick filters</legend>
+              <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-1">
                 <FilterToggle label="Fuel">
                   <ToggleGroup
                     value={fuel}
@@ -138,28 +114,29 @@ export function EngineFilters({ options }: Props) {
                     onSelect={(v) => update('hz', v)}
                   />
                 </FilterToggle>
+                <FilterChoice
+                  label="Status"
+                  value={status}
+                  options={[['', 'All production statuses'], ['active', 'Active'], ['discontinued', 'Discontinued'], ['limited', 'Limited']]}
+                  onSelect={(v) => update('status', v)}
+                />
               </div>
             </fieldset>
 
             <fieldset>
-              <legend className="mb-2 text-xs font-bold uppercase text-gray-500">Power output</legend>
-              <div className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 xl:grid-cols-1">
-                <input
-                  type="number"
-                  placeholder="Min"
-                  value={minKwe}
-                  onChange={(e) => update('min_kwe', e.target.value)}
-                  className="h-10 w-full min-w-0 border border-gray-300 bg-white px-3 text-sm font-medium text-gray-900 placeholder:text-gray-500 focus:border-blue-600 focus:outline-none"
-                  min={0}
-                />
-                <span className="text-center text-xs font-bold text-gray-500 xl:text-left">to</span>
-                <input
-                  type="number"
-                  placeholder="Max"
-                  value={maxKwe}
-                  onChange={(e) => update('max_kwe', e.target.value)}
-                  className="h-10 w-full min-w-0 border border-gray-300 bg-white px-3 text-sm font-medium text-gray-900 placeholder:text-gray-500 focus:border-blue-600 focus:outline-none"
-                  min={0}
+              <legend className="mb-3 text-xs font-bold uppercase text-gray-500">Refine by specs</legend>
+              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-1">
+                <FilterSelect label="Brand"         param="brand"     value={brand}     options={options.brands}    onUpdate={update} />
+                <FilterSelect label="Emissions"     param="emissions" value={emissions} options={options.emissions} onUpdate={update} />
+                <FilterSelect label="Configuration" param="config"    value={config}    options={options.configs}   onUpdate={update} />
+                <FilterSelect label="Origin"        param="origin"    value={origin}    options={options.origins}   onUpdate={update} />
+                <FilterSelect
+                  label="Exact fuel"
+                  param="fuel_type"
+                  value={fuelType}
+                  options={options.fuelTypes}
+                  allLabel="All fuel types"
+                  onUpdate={(_, v) => setFuelType(v)}
                 />
               </div>
             </fieldset>
@@ -171,13 +148,14 @@ export function EngineFilters({ options }: Props) {
 }
 
 function FilterSelect({
-  label, param, value, options, onUpdate,
+  label, param, value, options, onUpdate, allLabel,
 }: {
   label: string
   param: string
   value: string
   options: string[]
   onUpdate: (k: string, v: string) => void
+  allLabel?: string
 }) {
   return (
     <div>
@@ -185,11 +163,35 @@ function FilterSelect({
       <select
         value={value}
         onChange={(e) => onUpdate(param, e.target.value)}
-        className="h-10 w-full border border-gray-300 bg-white px-3 text-sm font-medium text-gray-900 focus:border-blue-600 focus:outline-none"
+        className="h-9 w-full border border-gray-300 bg-white px-3 text-sm font-medium text-gray-900 focus:border-blue-600 focus:outline-none"
       >
-        <option value="">All {label}{label.endsWith('s') ? '' : 's'}</option>
+        <option value="">{allLabel ?? `All ${label}${label.endsWith('s') ? '' : 's'}`}</option>
         {options.map((o) => (
           <option key={o} value={o}>{o}</option>
+        ))}
+      </select>
+    </div>
+  )
+}
+
+function FilterChoice({
+  label, value, options, onSelect,
+}: {
+  label: string
+  value: string
+  options: [string, string][]
+  onSelect: (v: string) => void
+}) {
+  return (
+    <div>
+      <label className="mb-1 block text-xs font-bold text-gray-600">{label}</label>
+      <select
+        value={value}
+        onChange={(e) => onSelect(e.target.value)}
+        className="h-9 w-full border border-gray-300 bg-white px-3 text-sm font-medium text-gray-900 focus:border-blue-600 focus:outline-none"
+      >
+        {options.map(([val, label]) => (
+          <option key={val} value={val}>{label}</option>
         ))}
       </select>
     </div>
