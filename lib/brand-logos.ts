@@ -81,4 +81,6 @@ export const BRAND_LOGOS: Record<string, string> = {
 
 // Keep this set for truly unresolved future brands. Current legacy additions use
 // curated local assets rather than runtime text fallbacks.
-export const BRAND_LOGO_FALLBACKS = new Set<string>()
+export const BRAND_LOGO_FALLBACKS = new Set([
+  "Ricardo",
+])
