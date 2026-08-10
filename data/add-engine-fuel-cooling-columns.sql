@@ -26,7 +26,7 @@ WHERE brand = 'Scania'
 -- Scania OC16 natural gas engines (02-81, 02-82, 02-83)
 UPDATE engines
 SET
-  fuel_type      = 'Natural Gas (CNG/LNG)',
+  fuel_type      = 'Natural Gas',
   ignition_type  = 'Spark Ignition',
   cooling_method = 'Liquid-Cooled'
 WHERE slug IN (

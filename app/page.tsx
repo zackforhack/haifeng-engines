@@ -36,7 +36,7 @@ const HERO_STARTERS = [
   {
     tag: 'Gas power',
     label: 'Gas generator engines',
-    desc: 'Natural gas, LPG, CNG/LNG, and biogas models',
+    desc: 'Natural gas, propane (LPG), and biogas models',
     href: '/engines/fuel/gas',
   },
 ]

@@ -945,7 +945,7 @@ export default async function EngineDetailPage({ params }: Props) {
                       EPA standby diesel generators
                     </a>
                     <a href="https://www.haifengmachinery.com/gas-power-package-50hz-60hz/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
-                      CNG and LPG gas generator systems
+                      Natural gas and propane generator systems
                     </a>
                     <a href="https://www.haifengmachinery.com/towable-power-package/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
                       Rental and towable power

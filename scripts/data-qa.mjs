@@ -372,6 +372,20 @@ function analyzeEngines(
 
     const fuel = String(e.fuel_type ?? '').toLowerCase()
     const ignition = String(e.ignition_type ?? '').toLowerCase()
+    const rawFuel = String(e.fuel_type ?? '').trim()
+    const fuelAliasCanonical = [
+      [/^natural gas\s*\([^)]*(?:cng|lng)[^)]*\)$/i, 'Natural Gas'],
+      [/^natural gas\s*\/\s*biomethane$/i, 'Natural Gas'],
+      [/^(?:lpg|lp gas|propane\s*\/\s*lpg|lpg\s*\/\s*propane)$/i, 'Propane (LPG)'],
+    ].find(([pattern]) => pattern.test(rawFuel))
+    if (fuelAliasCanonical) {
+      issues.push(issue(
+        'high',
+        'fuel_type_alias_not_canonical',
+        e,
+        `${id(e)} uses fuel_type "${rawFuel}"; use canonical "${fuelAliasCanonical[1]}"`,
+      ))
+    }
     if (fuel.includes('diesel') && ignition && !ignition.includes('compression')) {
       issues.push(issue('medium', 'fuel_ignition_mismatch', e, `${id(e)} is diesel but ignition is "${e.ignition_type}"`))
     }

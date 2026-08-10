@@ -349,7 +349,7 @@ export default async function AlternatorDetailPage({ params }: Props) {
                   EPA standby diesel generators ↗
                 </a>
                 <a href="https://www.haifengmachinery.com/gas-power-package-50hz-60hz/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
-                  CNG and LPG gas generator systems ↗
+                  Natural gas and propane generator systems ↗
                 </a>
                 <a href="https://www.haifengmachinery.com/custom-epc-power-solutions/" target="_blank" rel="noopener noreferrer" className="block text-blue-600 hover:underline">
                   Custom EPC power solutions ↗

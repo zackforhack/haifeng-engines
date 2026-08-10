@@ -19,7 +19,7 @@ const engine = {
   rpm_rated: 1800,
   compression_ratio: '13.5:1',
   weight_kg: 1900,
-  fuel_type: 'Natural Gas / Biomethane',
+  fuel_type: 'Natural Gas',
   ignition_type: 'Spark Ignition',
   cooling_method: 'Liquid-Cooled',
   emissions_standard: 'U.S. EPA Stationary',

@@ -26,11 +26,11 @@ export interface EnginePageResult {
   totalPages: number
 }
 
-// "Gas" covers gaseous power-gen fuels (natural gas, CNG/LNG, biogas/biomethane, coal-mine
-// gas/CBM, LPG/propane); "diesel" matches the compression-ignition diesels. Methanol (a liquid
+// "Gas" covers gaseous power-gen fuels (natural gas including CNG/LNG, biogas/biomethane,
+// coal-mine gas/CBM, propane/LPG); "diesel" matches the compression-ignition diesels. Methanol (a liquid
 // alt-fuel), gasoline and unknown fuels match neither broad bucket but are still selectable via
 // the granular Fuel Type dropdown.
-const GAS_FUEL = /natural gas|biogas|biomethane|coal gas|cng|lng|lpg|propane/i
+const GAS_FUEL = /natural gas|bio\s?gas|biomethane|coal(?:\s|-)?(?:mine\s*)?gas|landfill gas|producer gas|syngas|cbm|cng|lng|lpg|propane|gaseous|(?:^|[^a-z])gas(?:$|[^a-z])/i
 // Full engine rows include nested PDF metadata. Keep each response below
 // Next.js's 2 MB data-cache entry limit so static generation can reuse it.
 const ENGINE_FETCH_PAGE = 500
@@ -83,12 +83,21 @@ export function matchesFuel(fuelType: string | null | undefined, fuel: 'diesel' 
   return fuel === 'gas' ? GAS_FUEL.test(ft) : /diesel/i.test(ft)
 }
 
-// Granular Fuel Type match. "Natural Gas" is a family: it also covers the variant strings
-// "Natural Gas (CNG/LNG)" and "Natural Gas / Biomethane". All other fuels match exactly.
+export function canonicalFuelType(fuelType: string | null | undefined): string {
+  const ft = (fuelType ?? '').trim().replace(/\s+/g, ' ')
+  if (!ft) return ''
+  if (/^natural gas(?:\s*\([^)]*(?:cng|lng)[^)]*\)|\s*\/\s*biomethane)$/i.test(ft)) {
+    return 'Natural Gas'
+  }
+  if (/^(?:lpg|lp gas|propane\s*\/\s*lpg|lpg\s*\/\s*propane)$/i.test(ft)) {
+    return 'Propane (LPG)'
+  }
+  return ft
+}
+
+// Granular Fuel Type match compares canonical labels so aliases do not split filters.
 export function matchesFuelType(fuelType: string | null | undefined, selected: string): boolean {
-  const ft = fuelType ?? ''
-  if (selected === 'Natural Gas') return /^natural gas/i.test(ft)
-  return ft === selected
+  return canonicalFuelType(fuelType) === canonicalFuelType(selected)
 }
 
 export interface FilterOptions {
@@ -202,10 +211,17 @@ async function runEnginePageQuery(
       'fuel_type.ilike.%biogas%',
       'fuel_type.ilike.%biomethane%',
       'fuel_type.ilike.%coal gas%',
+      'fuel_type.ilike.%coal-mine gas%',
+      'fuel_type.ilike.%landfill gas%',
+      'fuel_type.ilike.%producer gas%',
+      'fuel_type.ilike.%syngas%',
+      'fuel_type.ilike.%cbm%',
       'fuel_type.ilike.%cng%',
       'fuel_type.ilike.%lng%',
       'fuel_type.ilike.%lpg%',
       'fuel_type.ilike.%propane%',
+      'fuel_type.ilike.%gaseous%',
+      'fuel_type.eq.Gas',
     ].join(','))
   } else if (params.fuel === 'diesel') {
     query = query.ilike('fuel_type', '%diesel%')
@@ -351,7 +367,7 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
     result = result.filter((e) => matchesFuel(e.fuel_type, params.fuel!))
   }
 
-  // Granular fuel type (e.g. "Coal Gas", "Methanol"; "Natural Gas" spans its CNG/LNG + biomethane variants)
+  // Granular fuel type (e.g. "Coal Gas", "Methanol"; aliases are canonicalized before matching)
   if (params.fuel_type) {
     result = result.filter((e) => matchesFuelType(e.fuel_type, params.fuel_type!))
   }
@@ -412,12 +428,12 @@ async function getFilterOptionsByScan(): Promise<FilterOptions> {
     ],
     configs:   uniq(rows.map((r) => r.configuration)),
     // Most common fuels first (Diesel, Natural Gas), then the rest alphabetically.
-    // The "Natural Gas (CNG/LNG)" and "Natural Gas / Biomethane" variants collapse into a
-    // single "Natural Gas" entry, which the filter expands back to all of them.
+    // Alias variants collapse into canonical labels, so CNG/LNG appears as Natural Gas
+    // and LPG appears as Propane (LPG).
     fuelTypes: (() => {
       const pref = ['Diesel', 'Natural Gas']
       const list = [...new Set(
-        uniq(rows.map((r) => r.fuel_type)).map((f) => (/^natural gas/i.test(f) ? 'Natural Gas' : f)),
+        uniq(rows.map((r) => r.fuel_type)).map(canonicalFuelType),
       )]
       return [
         ...pref.filter((f) => list.includes(f)),

@@ -35,7 +35,9 @@ function classifyFuel(fuelType: string | undefined, fuel: Engine['fuel_type']): 
   const s = (fuelType ?? fuel ?? '').toLowerCase()
   if (!s) return null
   if (s.includes('diesel') || s.includes('hfo') || s.includes('dual')) return 'diesel'
-  if (s.includes('gas') || s.includes('lpg') || s.includes('cng') || s.includes('lng') || s.includes('biogas') || s.includes('methane')) return 'gas'
+  if (
+    /natural gas|bio\s?gas|biomethane|coal(?:\s|-)?(?:mine\s*)?gas|landfill gas|producer gas|syngas|cbm|cng|lng|lpg|propane|gaseous|(?:^|[^a-z])gas(?:$|[^a-z])/.test(s)
+  ) return 'gas'
   return null
 }
 
@@ -76,9 +78,9 @@ function fmtKwe(v: number): string {
 }
 
 function fuelPhrase(s: HubStats): string {
-  if (s.hasDiesel && s.hasGas) return 'both diesel and gas (natural gas, biogas and CNG/LNG)'
+  if (s.hasDiesel && s.hasGas) return 'both diesel and gas (natural gas including CNG/LNG, biogas and propane/LPG)'
   if (s.hasDiesel) return 'diesel'
-  if (s.hasGas) return 'gas (natural gas, biogas and CNG/LNG)'
+  if (s.hasGas) return 'gas (natural gas including CNG/LNG, biogas and propane/LPG)'
   return 'diesel and gas'
 }
 

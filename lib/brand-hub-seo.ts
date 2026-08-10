@@ -100,7 +100,7 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
     featuredModels: ['jenbacher-j920-flextra', 'jenbacher-j624', 'jenbacher-j620', 'jenbacher-j616', 'jenbacher-j420'],
     commonSearches: ['jenbacher generators', 'jenbacher gas engines', 'jenbacher industrial generators', 'jenbacher generator specs'],
     links: [
-      { label: 'CNG and LPG gas generator systems', href: GAS_PACKAGE_URL },
+      { label: 'Natural gas and propane generator systems', href: GAS_PACKAGE_URL },
       { label: 'Custom EPC power solutions', href: CUSTOM_EPC_URL },
       { label: 'Gas generator engines', href: '/engines/fuel/gas' },
       { label: '1,500+ kWe engines', href: '/engines/power/1500-plus-kwe' },
@@ -202,7 +202,7 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
     commonSearches: ['liebherr generator', 'liebherr generators', 'liebherr engine', 'liebherr gas engines', 'liebherr generator engine'],
     links: [
       { label: 'Custom EPC power solutions', href: CUSTOM_EPC_URL },
-      { label: 'CNG and LPG gas generator systems', href: GAS_PACKAGE_URL },
+      { label: 'Natural gas and propane generator systems', href: GAS_PACKAGE_URL },
       { label: 'Haifeng product offerings', href: DIESEL_NON_REGULATED_URL },
       { label: 'Gas generator engines', href: '/engines/fuel/gas' },
       { label: 'Diesel generator engines', href: '/engines/fuel/diesel' },
@@ -239,7 +239,7 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
     links: [
       { label: 'Custom EPC power solutions', href: CUSTOM_EPC_URL },
       { label: 'EPA standby diesel packages', href: DIESEL_REGULATED_URL },
-      { label: 'CNG and LPG gas generator systems', href: GAS_PACKAGE_URL },
+      { label: 'Natural gas and propane generator systems', href: GAS_PACKAGE_URL },
       { label: '1,500+ kWe engines', href: '/engines/power/1500-plus-kwe' },
       { label: 'Diesel generator engines', href: '/engines/fuel/diesel' },
       { label: 'Gas generator engines', href: '/engines/fuel/gas' },
@@ -339,7 +339,7 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
     featuredModels: ['guascor-g-56sl', 'guascor-g-48fl', 'guascor-g-42hm', 'guascor-g-36fl'],
     commonSearches: ['guascor engines', 'guascor generator', 'guascor gas engine', 'guascor gas generator'],
     links: [
-      { label: 'CNG and LPG gas generator systems', href: GAS_PACKAGE_URL },
+      { label: 'Natural gas and propane generator systems', href: GAS_PACKAGE_URL },
       { label: 'Custom EPC power solutions', href: CUSTOM_EPC_URL },
       { label: 'Gas generator engines', href: '/engines/fuel/gas' },
       { label: 'Gas vs diesel TCO guide', href: '/guides/diesel-vs-natural-gas-total-cost-of-ownership' },
@@ -463,7 +463,7 @@ export const BRAND_HUB_PROFILES: Record<string, BrandHubProfile> = {
     featuredModels: ['waukesha-vhp-l7044gsi', 'waukesha-vhp-l7042gsi', 'waukesha-vhp-f3524gsi', 'waukesha-275gl-16v'],
     commonSearches: ['waukesha generators', 'waukesha generator', 'waukesha gas engine', 'waukesha gas generator'],
     links: [
-      { label: 'CNG and LPG gas generator systems', href: GAS_PACKAGE_URL },
+      { label: 'Natural gas and propane generator systems', href: GAS_PACKAGE_URL },
       { label: 'Custom EPC power solutions', href: CUSTOM_EPC_URL },
       { label: 'Gas generator engines', href: '/engines/fuel/gas' },
       { label: 'Gas vs diesel TCO guide', href: '/guides/diesel-vs-natural-gas-total-cost-of-ownership' },

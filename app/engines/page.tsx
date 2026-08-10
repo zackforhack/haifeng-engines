@@ -43,7 +43,7 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
     ...(hasSearchParams(p) ? { robots: noindexFollowRobots } : {}),
   }
   if (brand) return { ...canonical, title: `${brand} Generator Engines`, description: `Browse ${brand} diesel and gas generator engine specifications.` }
-  if (fuel === 'gas') return { ...canonical, title: 'Gas Generator Engines', description: 'Natural gas, CNG/LNG and biogas engine specifications for electrical power generation.' }
+  if (fuel === 'gas') return { ...canonical, title: 'Gas Generator Engines', description: 'Natural gas, propane (LPG), and biogas engine specifications for electrical power generation.' }
   if (fuel === 'diesel') return { ...canonical, title: 'Diesel Generator Engines', description: 'Diesel engine specifications for electrical power generation.' }
   if (emissions) return { ...canonical, title: `${emissions} Engines`, description: `Generator engines meeting ${emissions} emissions standards.` }
   if (q) return { ...canonical, title: `Search: ${q}`, description: 'Search results for diesel and gas generator engine specifications.' }

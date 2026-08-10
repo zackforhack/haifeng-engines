@@ -10,9 +10,9 @@ export const COMMERCIAL_PATHWAYS = [
     desc: 'Review regulated emergency standby diesel generator packages and documentation needs.',
   },
   {
-    label: 'CNG and LPG gas generator systems',
+    label: 'Natural gas and propane generator systems',
     href: 'https://www.haifengmachinery.com/gas-power-package-50hz-60hz/',
-    desc: 'Match natural gas, CNG, LPG, and biogas engine options to 50/60 Hz packages.',
+    desc: 'Match natural gas, CNG/LNG, propane (LPG), and biogas engine options to 50/60 Hz packages.',
   },
   {
     label: 'Rental power and towable generator solutions',

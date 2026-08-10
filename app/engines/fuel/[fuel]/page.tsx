@@ -8,6 +8,7 @@ import { hubItemListElements } from '@/lib/hub-stats'
 import { limitedEngines, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
 
 const BASE = 'https://engines.haifengmachinery.com'
+const GAS_HUB_DISPLAY_LIMIT = 240
 
 const FUELS = {
   diesel: {
@@ -18,13 +19,34 @@ const FUELS = {
   gas: {
     label: 'Gas',
     title: 'Gas Generator Engines',
-    intro: 'Gas generator engines — natural gas, CNG/LNG and biogas — deliver lower-emission, lower-cost power for continuous and CHP duty. Browse the full gas range below.',
+    intro: 'Gas generator engines — natural gas including CNG/LNG, biogas, biomethane and propane (LPG) — support continuous, CHP, prime and standby power research. Browse the gas-engine range below.',
   },
 } as const
 
 type FuelKey = keyof typeof FUELS
 
 interface Props { params: Promise<{ fuel: string }> }
+
+function gasFamily(fuelType: string | null | undefined): string {
+  const fuel = (fuelType ?? '').toLowerCase()
+  if (/lpg|propane/.test(fuel)) return 'Propane (LPG)'
+  if (/biogas|bio gas|biomethane/.test(fuel)) return 'Biogas / biomethane'
+  if (/natural gas|cng|lng/.test(fuel)) return 'Natural gas'
+  if (/coal|cbm/.test(fuel)) return 'Coal gas / CBM'
+  return 'Other gas'
+}
+
+function gasFamilyCounts(engines: Awaited<ReturnType<typeof filterEngines>>) {
+  const order = ['Natural gas', 'Biogas / biomethane', 'Propane (LPG)', 'Coal gas / CBM', 'Other gas']
+  const counts = new Map<string, number>()
+  for (const engine of engines) {
+    const family = gasFamily(engine.fuel_type)
+    counts.set(family, (counts.get(family) ?? 0) + 1)
+  }
+  return order
+    .map((label) => ({ label, count: counts.get(label) ?? 0 }))
+    .filter((item) => item.count > 0)
+}
 
 export function generateStaticParams() {
   return Object.keys(FUELS).map((fuel) => ({ fuel }))
@@ -48,7 +70,9 @@ export default async function EngineFuelPage({ params }: Props) {
 
   const engines = await filterEngines({ fuel: fuel as FuelKey })
   if (!engines.length) notFound()
-  const displayedEngines = limitedEngines(engines)
+  const displayLimit = fuel === 'gas' ? GAS_HUB_DISPLAY_LIMIT : ENGINE_HUB_DISPLAY_LIMIT
+  const displayedEngines = limitedEngines(engines, displayLimit)
+  const gasFamilies = fuel === 'gas' ? gasFamilyCounts(engines) : []
 
   const brands = new Set(engines.map((e) => e.brand)).size
   const jsonLd = {
@@ -81,10 +105,20 @@ export default async function EngineFuelPage({ params }: Props) {
         </nav>
         <h1 className="text-2xl font-bold text-gray-900 mb-2">{cfg.title}</h1>
         <p className="text-gray-500 mb-6 max-w-3xl">{cfg.intro} <span className="text-gray-400">({engines.length.toLocaleString()} models across {brands} brands.)</span></p>
+        {gasFamilies.length > 0 && (
+          <div className="mb-6 grid grid-cols-2 border-y border-gray-900 bg-white sm:grid-cols-3 lg:grid-cols-5">
+            {gasFamilies.map((item) => (
+              <div key={item.label} className="border-r border-b border-gray-200 px-4 py-3 last:border-r-0 lg:border-b-0">
+                <p className="text-xs font-bold text-gray-500">{item.label}</p>
+                <p className="mt-1 text-lg font-bold text-gray-900">{item.count.toLocaleString()} models</p>
+              </div>
+            ))}
+          </div>
+        )}
         <EngineTable engines={displayedEngines} />
         {engines.length > displayedEngines.length && (
           <p className="text-xs text-gray-400 mt-3">
-            Showing the first {ENGINE_HUB_DISPLAY_LIMIT.toLocaleString()} of {engines.length.toLocaleString()} models on this fuel page. Use the filters on the main engine database for the full set.
+            Showing the first {displayLimit.toLocaleString()} of {engines.length.toLocaleString()} models on this fuel page. Use the filters on the main engine database for the full set.
           </p>
         )}
         <div className="mt-8 text-sm">

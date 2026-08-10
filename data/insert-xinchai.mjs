@@ -33,7 +33,7 @@ for (const line of txt.split('\n')) {
     model,
     status: 'active',
     origin: 'China',
-    fuel_type: isLpg ? 'LPG' : 'Diesel',
+    fuel_type: isLpg ? 'Propane (LPG)' : 'Diesel',
     ignition_type: isLpg ? 'Spark Ignition' : 'Compression Ignition',
     cooling_method: 'Liquid-Cooled',
     configuration: `L${cylinders}`,

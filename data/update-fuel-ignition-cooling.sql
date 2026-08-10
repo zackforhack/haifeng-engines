@@ -14,7 +14,7 @@ WHERE fuel_type IS NULL
 -- Step 2: Override Scania OC16 natural gas engines
 UPDATE engines
 SET
-  fuel_type     = 'Natural Gas (CNG/LNG)',
+  fuel_type     = 'Natural Gas',
   ignition_type = 'Spark Ignition',
   cooling_method = 'Liquid-Cooled'
 WHERE slug IN (
