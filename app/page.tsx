@@ -9,7 +9,7 @@ import { getAllGuides } from '@/lib/guides'
 import { SearchBar } from '@/components/SearchBar'
 import { CountUp } from '@/components/CountUp'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 
 export const metadata: Metadata = {
   title: { absolute: 'Generator Engine Specs Database by Haifeng Machinery' },

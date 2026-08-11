@@ -1,19 +1,19 @@
 import type { MetadataRoute } from 'next'
-import { getAllEngines, getAllBrands } from '@/lib/engines'
+import { getAllBrands, getEngineSitemapEntries } from '@/lib/engines'
 import { getAllAlternators, getAlternatorFilterOptions } from '@/lib/alternators'
 import { getAllGuides } from '@/lib/guides'
 import { CONFIG_FACETS, EMISSIONS_FACETS, RPM_FACETS } from '@/lib/facets'
 import { brandSlug } from '@/lib/seo'
 
-// Generate from live data on each request rather than a single build-time snapshot — the catalogue
-// grows often, and a one-shot build fetch can transiently undercount, caching a partial sitemap.
-export const dynamic = 'force-dynamic'
+// Keep crawler traffic from triggering live Supabase reads on every hit while
+// still refreshing often enough for this frequently growing catalog.
+export const revalidate = 3600
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = 'https://engines.haifengmachinery.com'
 
   const [engines, brands, alternators, altOptions] = await Promise.all([
-    getAllEngines(),
+    getEngineSitemapEntries(),
     getAllBrands(),
     getAllAlternators(),
     getAlternatorFilterOptions(),

@@ -67,6 +67,33 @@ const ENGINE_LIST_SELECT = [
   'updated_at',
 ].join(',')
 
+const ENGINE_COMPARE_SELECT = [
+  'id',
+  'slug',
+  'brand',
+  'model',
+  'series',
+  'status',
+  'power_kw',
+  'prime_power_kwe_50hz',
+  'standby_power_kwe_50hz',
+  'prime_power_kwe_60hz',
+  'standby_power_kwe_60hz',
+  'displacement_l',
+  'cylinders',
+  'configuration',
+  'rpm_rated',
+  'fuel_type',
+  'cooling_method',
+  'emissions_standard',
+  'origin',
+  'weight_kg',
+  'created_at',
+  'updated_at',
+].join(',')
+
+const ENGINE_HUB_SELECT = `${ENGINE_LIST_SELECT},pdfs:engine_pdfs(id)`
+
 const KWE_FILTER_COLUMNS = [
   'standby_power_kwe_50hz',
   'prime_power_kwe_50hz',
@@ -171,6 +198,53 @@ function powerRangePredicate(min?: number, max?: number): string {
   const mechanicalMax = max == null ? undefined : Math.round((max / 0.9) * 10) / 10
   parts.push(numericRangePredicate('power_kw', mechanicalMin, mechanicalMax))
   return parts.join(',')
+}
+
+function gasFuelPredicate(): string {
+  return [
+    'fuel_type.ilike.%natural gas%',
+    'fuel_type.ilike.%biogas%',
+    'fuel_type.ilike.%biomethane%',
+    'fuel_type.ilike.%coal gas%',
+    'fuel_type.ilike.%coal-mine gas%',
+    'fuel_type.ilike.%landfill gas%',
+    'fuel_type.ilike.%producer gas%',
+    'fuel_type.ilike.%syngas%',
+    'fuel_type.ilike.%cbm%',
+    'fuel_type.ilike.%cng%',
+    'fuel_type.ilike.%lng%',
+    'fuel_type.ilike.%lpg%',
+    'fuel_type.ilike.%propane%',
+    'fuel_type.ilike.%gaseous%',
+    'fuel_type.eq.Gas',
+  ].join(',')
+}
+
+function emissionsPrefilterPredicate(value: string): string | null {
+  const normalized = normalizeEmissionComponent(value)
+  if (/^U\.S\. EPA Final Tier 4$/i.test(normalized)) {
+    return [
+      'emissions_standard.ilike.%U.S. EPA Final Tier 4%',
+      'emissions_standard.ilike.%U.S. EPA Tier 4 Final%',
+      'emissions_standard.ilike.%EPA Final Tier 4%',
+      'emissions_standard.ilike.%EPA Tier 4 Final%',
+      'emissions_standard.ilike.%Tier 4f%',
+    ].join(',')
+  }
+  if (/^U\.S\. EPA Tier \d+/i.test(normalized)) {
+    const tier = normalized.match(/Tier\s+\d+/i)?.[0]
+    return tier ? `emissions_standard.ilike.%${tier}%` : null
+  }
+  if (/^U\.S\. EPA Stationary$/i.test(normalized)) {
+    return 'emissions_standard.ilike.%Stationary%'
+  }
+  if (/^Euro Stage/i.test(normalized)) {
+    return `emissions_standard.ilike.%${escapeLike(normalized.replace(/^Euro\s+/, ''))}%`
+  }
+  if (/^China National Stage/i.test(normalized)) {
+    return `emissions_standard.ilike.%${escapeLike(normalized.replace(/^China National\s+/, ''))}%`
+  }
+  return null
 }
 
 function isMissingRepresentativeKwe(error: { message?: string; details?: string | null }): boolean {
@@ -313,7 +387,7 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
   while (true) {
     let q = supabase
       .from('engines')
-      .select('*, pdfs:engine_pdfs(*)')
+      .select(ENGINE_HUB_SELECT)
 
     if (params.q) {
       q = q.or(
@@ -323,16 +397,36 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
     if (params.brand)  q = q.eq('brand', params.brand)
     if (params.origin) q = q.eq('origin', params.origin)
     if (params.config) q = q.eq('configuration', params.config)
-    if (params.rpm)    q = q.eq('rpm_rated', params.rpm)
-    if (params.status) q = q.eq('status', params.status)
-    // emissions: intentionally NOT pushed to DB — matched post-fetch so that
-    // selecting "U.S. EPA Final Tier 4" also returns "Euro Stage V / U.S. EPA Final Tier 4"
-
-    if (params.hz === '50') {
-      q = q.or('prime_power_kwe_50hz.not.is.null,standby_power_kwe_50hz.not.is.null')
-    } else if (params.hz === '60') {
-      q = q.or('prime_power_kwe_60hz.not.is.null,standby_power_kwe_60hz.not.is.null')
+  if (params.rpm)    q = q.eq('rpm_rated', params.rpm)
+  if (params.status) q = q.eq('status', params.status)
+    // Emissions still get a post-filter for component normalization, but a broad
+    // DB prefilter avoids scanning the whole catalog for static hub pages.
+    if (params.emissions) {
+      const predicate = emissionsPrefilterPredicate(params.emissions)
+      if (predicate) q = q.or(predicate)
     }
+
+    if (params.fuel === 'gas') {
+      q = q.or(gasFuelPredicate())
+    } else if (params.fuel === 'diesel') {
+      q = q.ilike('fuel_type', '%diesel%')
+    }
+
+    if (params.fuel_type) {
+      q = params.fuel_type === 'Natural Gas'
+        ? q.ilike('fuel_type', 'Natural Gas%')
+        : q.eq('fuel_type', params.fuel_type)
+    }
+
+  if (params.hz === '50') {
+      q = q.or('prime_power_kwe_50hz.not.is.null,standby_power_kwe_50hz.not.is.null,prime_power_kw_50hz.not.is.null,standby_power_kw_50hz.not.is.null')
+  } else if (params.hz === '60') {
+      q = q.or('prime_power_kwe_60hz.not.is.null,standby_power_kwe_60hz.not.is.null,prime_power_kw_60hz.not.is.null,standby_power_kw_60hz.not.is.null')
+    }
+
+    if (params.min_kwe != null || params.max_kwe != null) {
+      q = q.or(powerRangePredicate(params.min_kwe, params.max_kwe))
+  }
 
     if (params.sort === 'disp_desc') {
       q = q.order('displacement_l', { ascending: false, nullsFirst: false })
@@ -346,7 +440,7 @@ export async function filterEngines(params: FilterParams): Promise<Engine[]> {
 
     const { data, error } = await q.range(from, from + ENGINE_FETCH_PAGE - 1)
     if (error) throw error
-    all.push(...(data ?? []))
+    all.push(...((data ?? []) as unknown as Engine[]))
     if (!data || data.length < ENGINE_FETCH_PAGE) break
     from += ENGINE_FETCH_PAGE
   }
@@ -455,6 +549,25 @@ export async function getAllEngines(): Promise<Engine[]> {
   return filterEngines({})
 }
 
+export async function getAllEnginesForCompare(): Promise<Engine[]> {
+  const PAGE = 1000
+  const all: Engine[] = []
+  let from = 0
+  while (true) {
+    const { data, error } = await supabase
+      .from('engines')
+      .select(ENGINE_COMPARE_SELECT)
+      .order('brand')
+      .order('model')
+      .range(from, from + PAGE - 1)
+    if (error) throw error
+    all.push(...((data ?? []) as unknown as Engine[]))
+    if (!data || data.length < PAGE) break
+    from += PAGE
+  }
+  return all
+}
+
 // Memoized for the request: generateMetadata, the page body, and the OG image route all
 // call this for the same slug — cache() collapses those into a single Supabase round-trip.
 export const getEngineBySlug = cache(async (slug: string): Promise<Engine | null> => {
@@ -491,11 +604,11 @@ export const getBrandDisplayName = cache(async (slug: string): Promise<string | 
 export async function getEnginesByBrand(brand: string): Promise<Engine[]> {
   const { data, error } = await supabase
     .from('engines')
-    .select('*, pdfs:engine_pdfs(*)')
+    .select(ENGINE_HUB_SELECT)
     .ilike('brand', brand)
     .order('model', { ascending: true })
   if (error) throw error
-  return data ?? []
+  return (data ?? []) as unknown as Engine[]
 }
 
 export interface DbStats {
@@ -504,25 +617,92 @@ export interface DbStats {
   originCount: number
 }
 
+export interface EngineSitemapEntry {
+  slug: string
+  status: Engine['status']
+  updated_at: string
+}
+
+export interface BrandCount {
+  brand: string
+  total: number
+  active: number
+}
+
 export async function getDbStats(): Promise<DbStats> {
+  const [{ count, error }, options] = await Promise.all([
+    supabase.from('engines').select('id', { count: 'exact', head: true }),
+    getFilterOptions(),
+  ])
+  if (error) throw error
+  return {
+    total: count ?? 0,
+    brandCount: options.brands.length,
+    originCount: options.origins.length,
+  }
+}
+
+export async function getAllEngineSlugs(): Promise<string[]> {
   const PAGE = 1000
-  const all: { brand: string | null; origin: string | null }[] = []
+  const all: { slug: string }[] = []
   let from = 0
   while (true) {
     const { data, error } = await supabase
       .from('engines')
-      .select('brand, origin')
+      .select('slug')
+      .order('slug', { ascending: true })
       .range(from, from + PAGE - 1)
     if (error) throw error
     all.push(...(data ?? []))
     if (!data || data.length < PAGE) break
     from += PAGE
   }
-  return {
-    total: all.length,
-    brandCount: new Set(all.map((r) => r.brand).filter(Boolean)).size,
-    originCount: new Set(all.map((r) => r.origin).filter(Boolean)).size,
+  return all.map((row) => row.slug)
+}
+
+export async function getEngineSitemapEntries(): Promise<EngineSitemapEntry[]> {
+  const PAGE = 1000
+  const all: EngineSitemapEntry[] = []
+  let from = 0
+  while (true) {
+    const { data, error } = await supabase
+      .from('engines')
+      .select('slug, status, updated_at')
+      .order('slug', { ascending: true })
+      .range(from, from + PAGE - 1)
+    if (error) throw error
+    all.push(...((data ?? []) as EngineSitemapEntry[]))
+    if (!data || data.length < PAGE) break
+    from += PAGE
   }
+  return all
+}
+
+export async function getBrandCounts(): Promise<BrandCount[]> {
+  const PAGE = 1000
+  const all: { brand: string | null; status: Engine['status'] | null }[] = []
+  let from = 0
+  while (true) {
+    const { data, error } = await supabase
+      .from('engines')
+      .select('brand, status')
+      .order('brand', { ascending: true })
+      .range(from, from + PAGE - 1)
+    if (error) throw error
+    all.push(...((data ?? []) as { brand: string | null; status: Engine['status'] | null }[]))
+    if (!data || data.length < PAGE) break
+    from += PAGE
+  }
+
+  const counts = new Map<string, BrandCount>()
+  for (const row of all) {
+    if (!row.brand) continue
+    const current = counts.get(row.brand) ?? { brand: row.brand, total: 0, active: 0 }
+    current.total += 1
+    if (row.status === 'active') current.active += 1
+    counts.set(row.brand, current)
+  }
+  return [...counts.values()].sort((a, b) => a.brand.localeCompare(b.brand))
 }
 
 export async function getAllBrands(): Promise<string[]> {

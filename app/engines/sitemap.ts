@@ -1,12 +1,12 @@
 import type { MetadataRoute } from 'next'
-import { getAllEngines } from '@/lib/engines'
+import { getEngineSitemapEntries } from '@/lib/engines'
 import { CONFIG_FACETS, EMISSIONS_FACETS, RPM_FACETS } from '@/lib/facets'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 3600
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = 'https://engines.haifengmachinery.com'
-  const engines = await getAllEngines()
+  const engines = await getEngineSitemapEntries()
 
   const categoryUrls = [
     `${base}/engines`,

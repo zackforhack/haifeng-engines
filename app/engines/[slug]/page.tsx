@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowRight, Download, ExternalLink, MessageCircle } from 'lucide-react'
-import { getAllEngines, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/lib/engines'
+import { getAllEngineSlugs, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/lib/engines'
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
@@ -91,8 +91,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const engines = await getAllEngines()
-  return engines.map((e) => ({ slug: e.slug }))
+  const slugs = await getAllEngineSlugs()
+  return slugs.map((slug) => ({ slug }))
 }
 
 function SpecRow({ label, value }: { label: string; value?: string | number | null }) {

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { getAllGuides } from '@/lib/guides'
 
-export const dynamic = 'force-dynamic'
+export const revalidate = 86400
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://engines.haifengmachinery.com'

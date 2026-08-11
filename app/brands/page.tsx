@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { getAllBrands, getAllEngines } from '@/lib/engines'
+import { getBrandCounts } from '@/lib/engines'
 import { BrandLogo } from '@/components/BrandLogo'
 import { brandSlug } from '@/lib/seo'
 
@@ -11,18 +11,12 @@ export const metadata: Metadata = {
 }
 
 export default async function BrandsPage() {
-  const [brands, engines] = await Promise.all([getAllBrands(), getAllEngines()])
-
-  const brandCounts = brands.map((brand) => ({
-    brand,
-    total: engines.filter((e) => e.brand === brand).length,
-    active: engines.filter((e) => e.brand === brand && e.status === 'active').length,
-  }))
+  const brandCounts = await getBrandCounts()
 
   return (
     <div>
       <h1 className="brand-section-title mb-2 font-bold text-gray-900">Browse by Brand</h1>
-      <p className="text-gray-500 mb-8">{brands.length} brands in the database</p>
+      <p className="text-gray-500 mb-8">{brandCounts.length} brands in the database</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {brandCounts.map(({ brand, total, active }) => (

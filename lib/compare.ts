@@ -1,4 +1,4 @@
-import { getAllEngines } from './engines'
+import { getAllEnginesForCompare } from './engines'
 import type { Engine } from './types'
 
 // Head-to-head engine comparison pages. Pairs are curated (each engine vs its closest cross-brand
@@ -19,7 +19,7 @@ export function repKwe(e: Engine): number | null {
 
 let _mapPromise: Promise<Map<string, Engine>> | null = null
 function engineMap(): Promise<Map<string, Engine>> {
-  if (!_mapPromise) _mapPromise = getAllEngines().then((es) => new Map(es.map((e) => [e.slug, e])))
+  if (!_mapPromise) _mapPromise = getAllEnginesForCompare().then((es) => new Map(es.map((e) => [e.slug, e])))
   return _mapPromise
 }
 
