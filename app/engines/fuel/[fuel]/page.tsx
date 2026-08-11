@@ -14,11 +14,13 @@ const FUELS = {
   diesel: {
     label: 'Diesel',
     title: 'Diesel Generator Engines',
+    metaDescription: 'Diesel generator engines with specs, power ratings, emissions context and datasheets by brand and model.',
     intro: 'Diesel generator engines are the workhorse of standby and prime power — efficient, durable and available from a few kW to several megawatts. Browse the full diesel range below.',
   },
   gas: {
     label: 'Gas',
     title: 'Gas Generator Engines',
+    metaDescription: 'Natural gas, CNG/LNG, biogas, biomethane and propane/LPG generator engines with specs, ratings, emissions context and datasheets.',
     intro: 'Gas generator engines — natural gas including CNG/LNG, biogas, biomethane and propane (LPG) — support continuous, CHP, prime and standby power research. Browse the gas-engine range below.',
   },
 } as const
@@ -58,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!cfg) return {}
   return {
     title: { absolute: cfg.title },
-    description: `${cfg.label} generator engines with specs, power ratings, emissions context and datasheets by brand and model.`,
+    description: cfg.metaDescription,
     alternates: { canonical: `/engines/fuel/${fuel}` },
   }
 }
