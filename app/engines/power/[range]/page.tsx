@@ -5,7 +5,8 @@ import { filterEngines } from '@/lib/engines'
 import { EngineTable } from '@/components/EngineTable'
 import { HubContent } from '@/components/HubContent'
 import { hubItemListElements } from '@/lib/hub-stats'
-import { limitedEngines, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
+import { ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
+import type { Engine } from '@/lib/types'
 
 const BASE = 'https://engines.haifengmachinery.com'
 
@@ -20,6 +21,28 @@ const RANGES = {
 type RangeKey = keyof typeof RANGES
 
 interface Props { params: Promise<{ range: string }> }
+
+function representativeBrandShortlist(engines: Engine[], limit = ENGINE_HUB_DISPLAY_LIMIT): Engine[] {
+  if (engines.length <= limit) return engines
+
+  const selectedIds = new Set<string>()
+  const seenBrands = new Set<string>()
+
+  for (const engine of engines) {
+    if (!engine.brand || seenBrands.has(engine.brand)) continue
+    seenBrands.add(engine.brand)
+    selectedIds.add(engine.id)
+    if (seenBrands.size >= limit) break
+  }
+
+  for (const engine of engines) {
+    if (selectedIds.size >= limit) break
+    if (selectedIds.has(engine.id)) continue
+    selectedIds.add(engine.id)
+  }
+
+  return engines.filter((engine) => selectedIds.has(engine.id))
+}
 
 export function generateStaticParams() {
   return Object.keys(RANGES).map((range) => ({ range }))
@@ -44,9 +67,10 @@ export default async function EnginePowerPage({ params }: Props) {
 
   const engines = await filterEngines({ min_kwe: cfg.min, max_kwe: cfg.max })
   if (!engines.length) notFound()
-  const displayedEngines = limitedEngines(engines)
+  const displayedEngines = representativeBrandShortlist(engines)
 
-  const brands = new Set(engines.map((e) => e.brand)).size
+  const brands = new Set(engines.map((e) => e.brand).filter(Boolean)).size
+  const displayedBrands = new Set(displayedEngines.map((e) => e.brand).filter(Boolean)).size
   const related = [
     ...Object.entries(RANGES)
       .filter(([slug]) => slug !== range)
@@ -85,7 +109,7 @@ export default async function EnginePowerPage({ params }: Props) {
         <EngineTable engines={displayedEngines} />
         {engines.length > displayedEngines.length && (
           <p className="text-xs text-gray-400 mt-3">
-            Showing the first {ENGINE_HUB_DISPLAY_LIMIT.toLocaleString()} of {engines.length.toLocaleString()} models on this power-range page. Use the filters on the main engine database for the full set.
+            Showing a representative shortlist of {displayedEngines.length.toLocaleString()} models across {displayedBrands.toLocaleString()} of {brands.toLocaleString()} matching brands. Use the main engine database filters for the full set of {engines.length.toLocaleString()} models.
           </p>
         )}
         <div className="mt-8 text-sm">
