@@ -729,12 +729,18 @@ export async function searchEngines(query: string): Promise<Engine[]> {
   return filterEngines({ q: query })
 }
 
-// Spec-sheet PDFs are served under our own domain (/specsheets/...) and proxied to
-// Supabase storage by a rewrite in next.config — so the link, branding and any SEO
-// equity stay on engines.haifengmachinery.com rather than the Supabase host.
+// Stored spec-sheet PDFs are served under our own domain (/specsheets/...) and proxied
+// to Supabase storage. A few validated legacy manuals are external source references.
 export function getPDFUrl(storagePath: string): string {
+  if (/^https?:\/\//i.test(storagePath)) return storagePath
   const safe = storagePath.split('/').map(encodeURIComponent).join('/')
   return `/specsheets/${safe}`
+}
+
+export function getDocumentEncodingFormat(storagePath: string): string {
+  if (/\.pdf(?:[?#]|$)/i.test(storagePath)) return 'application/pdf'
+  if (/^https?:\/\//i.test(storagePath)) return 'text/html'
+  return 'application/pdf'
 }
 
 // Distinct spec-sheet PDF paths (many range datasheets are shared across engines),

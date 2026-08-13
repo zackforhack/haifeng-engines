@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowRight, Download, ExternalLink, MessageCircle } from 'lucide-react'
-import { getAllEngineSlugs, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/lib/engines'
+import { getAllEngineSlugs, getDocumentEncodingFormat, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/lib/engines'
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
@@ -707,8 +707,8 @@ export default async function EngineDetailPage({ params }: Props) {
       isBasedOn: engine.pdfs.map((pdf) => ({
         '@type': 'DigitalDocument',
         name: pdf.label,
-        encodingFormat: 'application/pdf',
-        url: `${base}${getPDFUrl(pdf.storage_path)}`,
+        encodingFormat: getDocumentEncodingFormat(pdf.storage_path),
+        url: absoluteDocumentUrl(base, pdf.storage_path),
       })),
     }),
     ...(props.length && { additionalProperty: props }),
@@ -963,4 +963,9 @@ export default async function EngineDetailPage({ params }: Props) {
       <MobileContactBar engine={engine} quoteUrl={HAIFENG_CONTACT_URL} whatsappUrl={whatsappUrl} />
     </>
   )
+}
+
+function absoluteDocumentUrl(base: string, storagePath: string): string {
+  const href = getPDFUrl(storagePath)
+  return /^https?:\/\//i.test(href) ? href : `${base}${href}`
 }
