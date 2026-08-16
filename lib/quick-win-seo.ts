@@ -30,11 +30,11 @@ const CUSTOM_EPC_URL = 'https://www.haifengmachinery.com/custom-epc-power-soluti
 
 export const QUICK_WIN_ENGINE_SEO: Record<string, QuickWinPageSeo> = {
   'kohler-kd62v12': {
-    title: 'Kohler KD62V12 Generator Engine Specs - 2,500 kWe / 3,125 kVA',
+    title: 'Kohler KD62V12 Specs: 2,500 kWe Generator Engine',
     h1: 'Kohler KD62V12 Generator Engine Specs',
-    description: 'Kohler KD62V12 generator engine specs for KD2000-KD2500 sets: 62.4 L V12 diesel, 2,250-2,500 kWe standby, 50/60 Hz ratings, EPA Tier 2 and datasheet links.',
-    intro: 'The Kohler KD62V12 is a 62.4 L V12 diesel generator engine used in KD2000-KD2500 generator sets. It is listed at 2,250 kWe standby at 50 Hz and 2,500 kWe standby at 60 Hz, with EPA Tier 2 emissions coverage and published prime/standby kWe and kVA ratings for high-power standby projects.',
-    aliases: ['kd62v12', 'KD62 V12', 'Kohler KD62 V12', 'Kohler KD2000', 'Kohler KD2500'],
+    description: 'Kohler KD62V12 specs: 62.4 L V12 diesel, KD2000-KD2500 generator sets, 2,250-2,500 kWe standby, 50/60 Hz ratings and datasheet links.',
+    intro: 'The Kohler KD62V12 is a 62.4 L V12 diesel generator engine used in KD2000-KD2500 generator sets. It is listed at 2,250 kWe standby at 50 Hz and 2,500 kWe standby at 60 Hz, with published prime/standby kWe and kVA ratings for high-power standby projects.',
+    aliases: ['kd62v12', 'KD62 V12', 'Kohler KD62 V12', 'Kohler KD2000', 'Kohler KD2500', 'KD62V12 specs'],
     links: [
       { label: 'Kohler engine hub', href: '/brands/kohler' },
       { label: '1,500+ kWe engines', href: '/engines/power/1500-plus-kwe' },
@@ -49,6 +49,28 @@ export const QUICK_WIN_ENGINE_SEO: Record<string, QuickWinPageSeo> = {
       primaryHref: CONTACT_URL,
       secondaryLabel: 'Diesel generator packages',
       secondaryHref: DIESEL_REGULATED_URL,
+    },
+  },
+  'isuzu-4bd1': {
+    title: 'Isuzu 4BD1 Engine Specs: 3.9 L Diesel 4-Cylinder',
+    h1: 'Isuzu 4BD1 Engine Specs',
+    description: 'Isuzu 4BD1 engine specs: 3.856 L naturally aspirated inline-4 diesel, 70.6 kW / 96 hp at 2800 rpm, 17.5:1 compression and datasheet links.',
+    intro: 'The Isuzu 4BD1 is a 3.856 L naturally aspirated inline-4 diesel engine from the Isuzu B Series. This reference page summarizes the 4BD1 displacement, cylinder layout, power rating, compression ratio, datasheet sources and related Isuzu 4B/6B models for buyers comparing compact diesel engine specifications.',
+    aliases: ['4bd1', '4BD1 engine', '4BD1 engine specs', 'Isuzu 4BD1 specs', 'Isuzu 4BD1 diesel'],
+    links: [
+      { label: 'Isuzu engine hub', href: '/brands/isuzu' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Inline-4 engines', href: '/engines/configuration/inline-4' },
+      { label: 'Under 100 kWe engines', href: '/engines/power/under-100-kwe' },
+      { label: 'Generator engine selection guide', href: '/guides/how-to-choose-a-generator-engine' },
+    ],
+    cta: {
+      title: 'Compare the 4BD1 before choosing a diesel package',
+      body: 'Haifeng Machinery can help compare the Isuzu 4BD1 with nearby diesel engine options, then review voltage, duty rating, enclosure, controls and export documentation for the complete generator package.',
+      primaryLabel: 'Request 4BD1 package support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Diesel generator packages',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
     },
   },
   'baudouin-20m33g2750-5': {
