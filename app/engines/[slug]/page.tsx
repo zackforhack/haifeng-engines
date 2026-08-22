@@ -23,6 +23,8 @@ interface Props {
 const HAIFENG_CONTACT_URL = 'https://www.haifengmachinery.com/contact-us/'
 const HAIFENG_WHATSAPP_NUMBER = '14163179500'
 const ENGINE_BASE_URL = 'https://engines.haifengmachinery.com'
+const WHATSAPP_CLICK_EVENTS = ['engine_contact_cta_click', 'engine_whatsapp_click'] as const
+const WHATSAPP_IMPRESSION_EVENT = 'engine_whatsapp_impression'
 
 type WhatsAppIntent = 'support' | 'source'
 
@@ -376,8 +378,10 @@ function WhatsAppLeadCta({
             <TrackedExternalLink
               key={item.intent}
               href={whatsappUrls[item.intent]}
-              eventName="engine_contact_cta_click"
+              eventName={WHATSAPP_CLICK_EVENTS}
               eventProperties={contactTracking(engine, 'whatsapp', 'intent_cta', item.intent)}
+              impressionEventName={WHATSAPP_IMPRESSION_EVENT}
+              impressionEventProperties={contactTracking(engine, 'whatsapp', 'intent_cta', item.intent)}
               className="group flex min-h-28 flex-col justify-between gap-3 border-b border-gray-200 px-4 py-4 text-left hover:bg-blue-50 sm:min-h-32 sm:border-b-0 sm:border-r last:border-b-0 last:sm:border-r-0"
             >
               <span>
@@ -665,16 +669,20 @@ function MobileContactBar({
       <div className="mx-auto grid max-w-[720px] grid-cols-3 gap-2 text-xs font-semibold">
         <TrackedExternalLink
           href={whatsappUrls.support}
-          eventName="engine_contact_cta_click"
+          eventName={WHATSAPP_CLICK_EVENTS}
           eventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky', 'support')}
+          impressionEventName={WHATSAPP_IMPRESSION_EVENT}
+          impressionEventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky', 'support')}
           className="flex min-h-11 items-center justify-center gap-1 bg-blue-600 px-2 py-2 text-center text-white hover:bg-blue-700"
         >
           Service <MessageCircle aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
         </TrackedExternalLink>
         <TrackedExternalLink
           href={whatsappUrls.source}
-          eventName="engine_contact_cta_click"
+          eventName={WHATSAPP_CLICK_EVENTS}
           eventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky', 'source')}
+          impressionEventName={WHATSAPP_IMPRESSION_EVENT}
+          impressionEventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky', 'source')}
           className="flex min-h-11 items-center justify-center gap-1 border border-blue-600 bg-white px-2 py-2 text-center text-blue-600 hover:bg-blue-50"
         >
           Source <MessageCircle aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
@@ -986,8 +994,10 @@ export default async function EngineDetailPage({ params }: Props) {
                   <TrackedExternalLink
                     key={item.intent}
                     href={whatsappUrls[item.intent]}
-                    eventName="engine_contact_cta_click"
+                    eventName={WHATSAPP_CLICK_EVENTS}
                     eventProperties={contactTracking(engine, 'whatsapp', 'sidebar_cta', item.intent)}
+                    impressionEventName={WHATSAPP_IMPRESSION_EVENT}
+                    impressionEventProperties={contactTracking(engine, 'whatsapp', 'sidebar_cta', item.intent)}
                     className="flex items-center justify-between gap-3 border border-blue-600 bg-white px-4 py-3 text-sm font-semibold text-blue-600 hover:bg-blue-100"
                   >
                     <span>{item.compactLabel}</span>
