@@ -24,6 +24,8 @@ const HAIFENG_CONTACT_URL = 'https://www.haifengmachinery.com/contact-us/'
 const HAIFENG_WHATSAPP_NUMBER = '14163179500'
 const ENGINE_BASE_URL = 'https://engines.haifengmachinery.com'
 
+type WhatsAppIntent = 'support' | 'source'
+
 function engineContactLabel(engine: Engine): string {
   const hp = headlinePower(engine)
   const kva = displayKva(hp)
@@ -36,28 +38,74 @@ function engineContactLabel(engine: Engine): string {
   return ratings.length ? `${engine.brand} ${engine.model} (${ratings.join(' / ')})` : `${engine.brand} ${engine.model}`
 }
 
-function whatsappHref(engine: Engine, slug: string): string {
-  const message = [
-    `Hi Haifeng Machinery, I am interested in ${engineContactLabel(engine)}.`,
-    '',
-    `Engine page: ${ENGINE_BASE_URL}/engines/${slug}`,
-    '',
-    'Can we discuss generator package options and quote availability?',
-  ].join('\n')
+function whatsappHref(engine: Engine, slug: string, intent: WhatsAppIntent): string {
+  const engineLabel = engineContactLabel(engine)
+  const pageUrl = `${ENGINE_BASE_URL}/engines/${slug}`
+  const message = intent === 'support'
+    ? [
+        `Hi Haifeng Machinery, I have a ${engineLabel} engine/generator and need support.`,
+        '',
+        `Engine page: ${pageUrl}`,
+        '',
+        'Support needed: overhaul / service / parts / documentation / troubleshooting',
+        'Engine serial number:',
+        'Generator set brand:',
+        'Location:',
+        'Photos available: yes/no',
+      ].join('\n')
+    : [
+        `Hi Haifeng Machinery, I am looking for a ${engineLabel} or equivalent generator engine for a project.`,
+        '',
+        `Engine page: ${pageUrl}`,
+        '',
+        'Project requirement:',
+        'New / used / equivalent acceptable:',
+        'Quantity:',
+        'Destination country:',
+        'Required power / frequency / voltage:',
+        'Tender deadline or timeline:',
+      ].join('\n')
 
   return `https://wa.me/${HAIFENG_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
 }
 
-function contactTracking(engine: Engine, channel: 'quote' | 'whatsapp', placement: string) {
+function contactTracking(engine: Engine, channel: 'quote' | 'whatsapp', placement: string, intent?: WhatsAppIntent) {
   return {
     channel,
     placement,
+    intent: intent ?? null,
     brand: engine.brand,
     model: engine.model,
     slug: engine.slug,
     engine: engineContactLabel(engine),
   }
 }
+
+const WHATSAPP_INTENT_COPY: {
+  intent: WhatsAppIntent
+  title: string
+  mobileBody: string
+  body: string
+  actionLabel: string
+  compactLabel: string
+}[] = [
+  {
+    intent: 'support',
+    title: 'I need service / overhaul support',
+    mobileBody: 'For overhaul, parts, documents, troubleshooting, or replacement matching.',
+    body: 'For clients who already have this engine or generator: overhaul, spare parts, documentation, troubleshooting, or replacement matching.',
+    actionLabel: 'WhatsApp service request',
+    compactLabel: 'Service support',
+  },
+  {
+    intent: 'source',
+    title: 'I need to source this engine',
+    mobileBody: 'For projects, tenders, overseas sourcing, availability, or equivalents.',
+    body: 'For projects, client leads, tenders, overseas sourcing, package availability, or acceptable equivalents.',
+    actionLabel: 'WhatsApp sourcing request',
+    compactLabel: 'Source for project',
+  },
+]
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
@@ -307,30 +355,42 @@ function TopTaskFlow({
   )
 }
 
-function SimpleWhatsAppCta({
+function WhatsAppLeadCta({
   engine,
-  whatsappUrl,
+  whatsappUrls,
 }: {
   engine: Engine
-  whatsappUrl: string
+  whatsappUrls: Record<WhatsAppIntent, string>
 }) {
   return (
     <section className="mb-8 border-y border-gray-900 bg-white">
-      <div className="flex flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-5">
-        <div>
-          <h2 className="text-lg font-bold text-gray-900">Chat on WhatsApp about this engine</h2>
-          <p className="mt-1 text-sm text-gray-600">
-            Opens WhatsApp with {engine.brand} {engine.model} and this page link filled in.
+      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+        <div className="px-4 py-5 sm:px-5">
+          <h2 className="text-lg font-bold text-gray-900">Get help with this engine</h2>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-gray-600">
+            Tell Haifeng whether you already own a {engine.brand} {engine.model} engine/generator or need to source this model for a project.
           </p>
         </div>
-        <TrackedExternalLink
-          href={whatsappUrl}
-          eventName="engine_contact_cta_click"
-          eventProperties={contactTracking(engine, 'whatsapp', 'simple_cta')}
-          className="flex min-h-12 shrink-0 items-center justify-center gap-2 bg-blue-600 px-5 py-3 text-sm font-bold text-white hover:bg-blue-700"
-        >
-          Chat on WhatsApp <MessageCircle aria-hidden="true" className="h-4 w-4" />
-        </TrackedExternalLink>
+        <div className="grid grid-cols-1 border-t border-gray-900 sm:grid-cols-2 lg:border-l lg:border-t-0">
+          {WHATSAPP_INTENT_COPY.map((item) => (
+            <TrackedExternalLink
+              key={item.intent}
+              href={whatsappUrls[item.intent]}
+              eventName="engine_contact_cta_click"
+              eventProperties={contactTracking(engine, 'whatsapp', 'intent_cta', item.intent)}
+              className="group flex min-h-28 flex-col justify-between gap-3 border-b border-gray-200 px-4 py-4 text-left hover:bg-blue-50 sm:min-h-32 sm:border-b-0 sm:border-r last:border-b-0 last:sm:border-r-0"
+            >
+              <span>
+                <span className="block text-base font-bold text-blue-600 group-hover:text-blue-900">{item.title}</span>
+                <span className="mt-2 block text-sm leading-relaxed text-gray-600 sm:hidden">{item.mobileBody}</span>
+                <span className="mt-2 hidden text-sm leading-relaxed text-gray-600 sm:block">{item.body}</span>
+              </span>
+              <span className="inline-flex items-center gap-2 text-sm font-bold text-blue-600">
+                {item.actionLabel} <MessageCircle aria-hidden="true" className="h-4 w-4" />
+              </span>
+            </TrackedExternalLink>
+          ))}
+        </div>
       </div>
     </section>
   )
@@ -591,25 +651,41 @@ function ReferencePanel({ engine, slug }: { engine: Engine; slug: string }) {
   )
 }
 
-function MobileContactBar({ engine, quoteUrl, whatsappUrl }: { engine: Engine; quoteUrl: string; whatsappUrl: string }) {
+function MobileContactBar({
+  engine,
+  quoteUrl,
+  whatsappUrls,
+}: {
+  engine: Engine
+  quoteUrl: string
+  whatsappUrls: Record<WhatsAppIntent, string>
+}) {
   return (
     <div className="fixed inset-x-0 bottom-0 z-30 border-t border-gray-900 bg-white px-4 py-3 lg:hidden" style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}>
-      <div className="mx-auto grid max-w-[720px] grid-cols-2 gap-2 text-sm font-semibold">
+      <div className="mx-auto grid max-w-[720px] grid-cols-3 gap-2 text-xs font-semibold">
         <TrackedExternalLink
-          href={whatsappUrl}
+          href={whatsappUrls.support}
           eventName="engine_contact_cta_click"
-          eventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky')}
-          className="flex min-h-11 items-center justify-center gap-2 bg-blue-600 px-3 py-2 text-white hover:bg-blue-700"
+          eventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky', 'support')}
+          className="flex min-h-11 items-center justify-center gap-1 bg-blue-600 px-2 py-2 text-center text-white hover:bg-blue-700"
         >
-          Chat <MessageCircle aria-hidden="true" className="h-4 w-4" />
+          Service <MessageCircle aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
+        </TrackedExternalLink>
+        <TrackedExternalLink
+          href={whatsappUrls.source}
+          eventName="engine_contact_cta_click"
+          eventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky', 'source')}
+          className="flex min-h-11 items-center justify-center gap-1 border border-blue-600 bg-white px-2 py-2 text-center text-blue-600 hover:bg-blue-50"
+        >
+          Source <MessageCircle aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
         </TrackedExternalLink>
         <TrackedExternalLink
           href={quoteUrl}
           eventName="engine_contact_cta_click"
           eventProperties={contactTracking(engine, 'quote', 'mobile_sticky')}
-          className="flex min-h-11 items-center justify-center gap-2 border border-blue-600 bg-white px-3 py-2 text-blue-600 hover:bg-blue-50"
+          className="flex min-h-11 items-center justify-center gap-1 border border-blue-600 bg-white px-2 py-2 text-center text-blue-600 hover:bg-blue-50"
         >
-          Get quote <ExternalLink aria-hidden="true" className="h-4 w-4" />
+          Form <ExternalLink aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
         </TrackedExternalLink>
       </div>
     </div>
@@ -643,7 +719,10 @@ export default async function EngineDetailPage({ params }: Props) {
   const out = displayOutput(hp)
   const variableSpeed = isVariableSpeedMechanical(engine)
   const fuelCategory = engine.fuel_type?.trim() || 'Diesel'
-  const whatsappUrl = whatsappHref(engine, slug)
+  const whatsappUrls: Record<WhatsAppIntent, string> = {
+    support: whatsappHref(engine, slug, 'support'),
+    source: whatsappHref(engine, slug, 'source'),
+  }
 
   // Descriptive alt/caption for the spec-card image (Google Images + accessibility).
   const imageAlt =
@@ -780,7 +859,7 @@ export default async function EngineDetailPage({ params }: Props) {
           <p className="max-w-4xl text-gray-600 leading-relaxed">{intro}</p>
         </header>
 
-        <SimpleWhatsAppCta engine={engine} whatsappUrl={whatsappUrl} />
+        <WhatsAppLeadCta engine={engine} whatsappUrls={whatsappUrls} />
 
         <TopTaskFlow
           engine={engine}
@@ -898,29 +977,36 @@ export default async function EngineDetailPage({ params }: Props) {
             <ReferencePanel engine={engine} slug={slug} />
 
             <div className="border border-blue-600 bg-blue-50 p-5">
-              <p className="font-semibold text-gray-900 mb-1">Chat about this engine</p>
-              <p className="text-sm text-blue-900 mb-3">
-                WhatsApp opens with this model and page link filled in.
+              <p className="mb-1 font-semibold text-gray-900">What kind of help do you need?</p>
+              <p className="mb-4 text-sm leading-relaxed text-blue-900">
+                Send a prefilled WhatsApp message for service support or overseas sourcing, with this model and page link included.
               </p>
-              <TrackedExternalLink
-                href={HAIFENG_CONTACT_URL}
-                eventName="engine_contact_cta_click"
-                eventProperties={contactTracking(engine, 'quote', 'sidebar_cta')}
-                className="flex items-center justify-center gap-2 bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
-              >
-                Get a Quote <ExternalLink aria-hidden="true" className="h-4 w-4" />
-              </TrackedExternalLink>
-              <TrackedExternalLink
-                href={whatsappUrl}
-                eventName="engine_contact_cta_click"
-                eventProperties={contactTracking(engine, 'whatsapp', 'sidebar_cta')}
-                className="mt-2 flex items-center justify-center gap-2 border border-blue-600 bg-white px-4 py-2 text-sm font-semibold text-blue-600 hover:bg-blue-100"
-              >
-                Chat on WhatsApp <MessageCircle aria-hidden="true" className="h-4 w-4" />
-              </TrackedExternalLink>
-              <p className="text-sm text-blue-900 mt-3">
+              <div className="space-y-2">
+                {WHATSAPP_INTENT_COPY.map((item) => (
+                  <TrackedExternalLink
+                    key={item.intent}
+                    href={whatsappUrls[item.intent]}
+                    eventName="engine_contact_cta_click"
+                    eventProperties={contactTracking(engine, 'whatsapp', 'sidebar_cta', item.intent)}
+                    className="flex items-center justify-between gap-3 border border-blue-600 bg-white px-4 py-3 text-sm font-semibold text-blue-600 hover:bg-blue-100"
+                  >
+                    <span>{item.compactLabel}</span>
+                    <MessageCircle aria-hidden="true" className="h-4 w-4 shrink-0" />
+                  </TrackedExternalLink>
+                ))}
+                <TrackedExternalLink
+                  href={HAIFENG_CONTACT_URL}
+                  eventName="engine_contact_cta_click"
+                  eventProperties={contactTracking(engine, 'quote', 'sidebar_cta')}
+                  className="flex items-center justify-between gap-3 bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700"
+                >
+                  <span>Use full inquiry form</span>
+                  <ExternalLink aria-hidden="true" className="h-4 w-4 shrink-0" />
+                </TrackedExternalLink>
+              </div>
+              <p className="mt-3 text-sm text-blue-900">
                 Or browse Haifeng&apos;s{' '}
-                <a href={productPackage.href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
+                <a href={productPackage.href} target="_blank" rel="noopener noreferrer" className="font-medium text-blue-600 hover:underline">
                   {productPackage.label}
                 </a>
               </p>
@@ -960,7 +1046,7 @@ export default async function EngineDetailPage({ params }: Props) {
           </aside>
         </div>
       </div>
-      <MobileContactBar engine={engine} quoteUrl={HAIFENG_CONTACT_URL} whatsappUrl={whatsappUrl} />
+      <MobileContactBar engine={engine} quoteUrl={HAIFENG_CONTACT_URL} whatsappUrls={whatsappUrls} />
     </>
   )
 }
