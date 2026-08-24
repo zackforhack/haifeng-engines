@@ -11,6 +11,9 @@ const GSC_SITE_URL = process.env.GSC_SITE_URL ?? 'sc-domain:engines.haifengmachi
 const GA4_PROPERTY_ID = process.env.GA4_PROPERTY_ID
 const ORIGIN = process.env.SEO_ORIGIN ?? 'https://engines.haifengmachinery.com'
 const OUT_DIR = process.env.SEO_REPORT_DIR ?? path.join(process.cwd(), 'reports', 'seo')
+const configuredTargetUrls = process.env.SEO_TARGET_URLS
+  ? process.env.SEO_TARGET_URLS.split(',').map((url) => url.trim()).filter(Boolean)
+  : null
 
 const periods = [
   { key: 'recent', label: 'Recent 28 days', startDate: process.env.SEO_START_DATE ?? '2026-07-26', endDate: process.env.SEO_END_DATE ?? '2026-08-22' },
@@ -103,6 +106,12 @@ function targetPage(urlOrSlug) {
   return `${ORIGIN}/engines/${urlOrSlug}`
 }
 
+const targetUrls = configuredTargetUrls ?? targetSlugs.map(targetPage)
+
+function targetLabel(url) {
+  return url.startsWith(ORIGIN) ? url.replace(ORIGIN, '') : url
+}
+
 async function ga4Report(analyticsdata, period, dimensions, metricNames = ['eventCount']) {
   if (!GA4_PROPERTY_ID) return []
 
@@ -179,14 +188,13 @@ function summarize(data) {
   const previousPages = mapRows(data.gsc.previous.pages)
   const recentQueryPages = data.gsc.recent.queryPages
 
-  const targetRows = targetSlugs
-    .map((slug) => {
-      const url = targetPage(slug)
+  const targetRows = targetUrls
+    .map((url) => {
       const recent = recentPages.find((row) => row.key === url)
       const previous = previousPages.get(url)
       return {
-        slug,
         url,
+        label: targetLabel(url),
         recent: recent ?? { clicks: 0, impressions: 0, ctr: 0, position: 0 },
         previous: previous ?? { clicks: 0, impressions: 0, ctr: 0, position: 0 },
       }
@@ -194,7 +202,7 @@ function summarize(data) {
     .sort((a, b) => b.recent.impressions - a.recent.impressions)
 
   const queryRows = recentQueryPages
-    .filter((row) => targetSlugs.some((slug) => row.keys[1] === targetPage(slug)))
+    .filter((row) => targetUrls.includes(row.keys[1]))
     .filter((row) => row.impressions >= 20 || row.clicks > 0)
     .sort((a, b) => b.impressions - a.impressions)
     .slice(0, 40)
@@ -224,7 +232,7 @@ Periods:
 ## Target Page CTR Baseline
 
 ${table(targetRows, [
-  { label: 'Page', value: (r) => `/engines/${r.slug}` },
+  { label: 'Page', value: (r) => r.label },
   { label: 'Recent clicks', value: (r) => r.recent.clicks },
   { label: 'Recent impr.', value: (r) => r.recent.impressions },
   { label: 'Recent CTR', value: (r) => pct(r.recent.ctr) },

@@ -27,6 +27,11 @@ export async function GET() {
 - [Alternators](${base}/alternators): browse generator alternators by brand, series, kVA output and pole count, with links to official manufacturer datasheets.
 - [Brands](${base}/brands): index of every engine brand in the database.
 
+## High-signal troubleshooting resources
+- [Diesel generator not starting](https://www.haifengmachinery.com/news/why-is-my-diesel-generator-not-starting-15-common-causes-solutions/): diagnostic checklist for weak batteries, fuel supply, air in fuel lines, blocked filters, controller alarms, starter faults, shutdown protection and no-start prevention.
+- [Diesel generator maintenance checklist](https://www.haifengmachinery.com/news/diesel-generator-maintenance-checklist-daily-weekly-monthly-annual-schedule/): daily, weekly, monthly and annual generator maintenance tasks.
+- [EPA emergency standby diesel generators](https://www.haifengmachinery.com/diesel-power-package-regulated/): regulated diesel generator package options for standby projects.
+
 ## Full data
 - [Full engine data](${base}/llms-full.txt): a flat plain-text dump of every engine's specifications (power ratings, displacement, configuration, fuel, emissions, origin, datasheet) for deep ingestion.
 
