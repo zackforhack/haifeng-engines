@@ -16,6 +16,7 @@
     "test:regression": "npm run test:database && npm run test:storage && DATA_QA_FAIL_ON=high npm run data:qa",
     "data:qa": "node scripts/data-qa.mjs",
     "seo:report": "node scripts/seo-report.mjs",
+    "seo:proof": "node scripts/seo-ctr-lead-proof.mjs",
     "seo:indexing-queue": "node scripts/indexing-queue.mjs"
   },
   "dependencies": {

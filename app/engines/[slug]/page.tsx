@@ -561,6 +561,13 @@ function EngineBuyerContext({
         </div>
       )}
 
+      {quickWin?.answer && (
+        <div className="mx-4 mt-5 border-l-4 border-blue-600 bg-blue-50 px-4 py-3">
+          <h3 className="mb-2 text-sm font-semibold text-gray-900">{quickWin.answer.heading}</h3>
+          <p className="text-sm leading-relaxed text-blue-950">{quickWin.answer.body}</p>
+        </div>
+      )}
+
       <div className="mt-5 grid grid-cols-1 border-t border-gray-200 text-sm sm:grid-cols-3">
         <Link href={`/brands/${brandSlug(engine.brand)}`} className="flex items-center justify-between gap-3 border-b border-r border-gray-200 px-4 py-3 text-blue-600 hover:bg-blue-50">
           <span>

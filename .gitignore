@@ -54,6 +54,7 @@ next-env.d.ts
 /data/volvo-pdf-results.json
 
 # local SEO analytics exports and credentials
+/.seo-cache/
 /reports/seo/
 /reports/data-qa/
 /google-service-account*.json

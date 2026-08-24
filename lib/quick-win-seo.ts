@@ -17,6 +17,10 @@ export interface QuickWinPageSeo {
   h1: string
   description: string
   intro: string
+  answer?: {
+    heading: string
+    body: string
+  }
   aliases: string[]
   links: QuickWinLink[]
   cta: QuickWinCta
@@ -34,6 +38,10 @@ export const QUICK_WIN_ENGINE_SEO: Record<string, QuickWinPageSeo> = {
     h1: 'Kohler KD62V12 Generator Engine Specs',
     description: 'Kohler KD62V12 specs: 62.4 L V12 diesel, KD2000-KD2500 generator sets, 2,250-2,500 kWe standby, 50/60 Hz ratings and datasheet links.',
     intro: 'The Kohler KD62V12 is a 62.4 L V12 diesel generator engine used in KD2000-KD2500 generator sets. It is listed at 2,250 kWe standby at 50 Hz and 2,500 kWe standby at 60 Hz, with published prime/standby kWe and kVA ratings for high-power standby projects.',
+    answer: {
+      heading: 'What is the Kohler KD62V12?',
+      body: 'The Kohler KD62V12 is a 62.4 L V12 diesel generator engine for very large standby and prime power packages. This reference page summarizes the KD62V12 as used in Kohler KD2000-KD2500 generator sets, including 50 Hz and 60 Hz ratings, displacement, cylinder layout, fuel type, emissions context, datasheet references and related high-power diesel engines. It is a strong candidate page for buyers comparing 2,000-2,500 kWe class generator-drive engines before confirming alternator frame, voltage, cooling, controls and enclosure scope.',
+    },
     aliases: ['kd62v12', 'KD62 V12', 'Kohler KD62 V12', 'Kohler KD2000', 'Kohler KD2500', 'KD62V12 specs'],
     links: [
       { label: 'Kohler engine hub', href: '/brands/kohler' },
@@ -52,10 +60,14 @@ export const QUICK_WIN_ENGINE_SEO: Record<string, QuickWinPageSeo> = {
     },
   },
   'isuzu-4bd1': {
-    title: 'Isuzu 4BD1 Engine Specs: 3.9 L Diesel 4-Cylinder',
+    title: 'Isuzu 4BD1 Engine Specs, Manual & Power - 3.856 L',
     h1: 'Isuzu 4BD1 Engine Specs',
-    description: 'Isuzu 4BD1 engine specs: 3.856 L naturally aspirated inline-4 diesel, 70.6 kW / 96 hp at 2800 rpm, 17.5:1 compression and datasheet links.',
+    description: 'Isuzu 4BD1 engine specs, manual links and power data: 3.856 L naturally aspirated inline-4 diesel, 70.6 kW at 2800 rpm, 17.5:1 compression.',
     intro: 'The Isuzu 4BD1 is a 3.856 L naturally aspirated inline-4 diesel engine from the Isuzu B Series. This reference page summarizes the 4BD1 displacement, cylinder layout, power rating, compression ratio, datasheet sources and related Isuzu 4B/6B models for buyers comparing compact diesel engine specifications.',
+    answer: {
+      heading: 'What is the Isuzu 4BD1?',
+      body: 'The Isuzu 4BD1 is a 3.856 L naturally aspirated inline-4 diesel engine in the Isuzu B Series. This page is built for 4BD1 engine specs searches: it lists the 70.6 kW / 96 hp maximum mechanical output at 2,800 rpm, 17.5:1 compression ratio, liquid cooling, diesel fuel, Japan origin and available manual/specification sources. Because the 4BD1 is a variable-speed industrial engine rather than a fixed-speed generator-drive rating, use the data here as an engine reference before confirming alternator sizing, package derating and replacement options.',
+    },
     aliases: ['4bd1', '4BD1 engine', '4BD1 engine specs', 'Isuzu 4BD1 specs', 'Isuzu 4BD1 diesel'],
     links: [
       { label: 'Isuzu engine hub', href: '/brands/isuzu' },
@@ -101,6 +113,10 @@ export const QUICK_WIN_ENGINE_SEO: Record<string, QuickWinPageSeo> = {
     h1: 'Cummins HSK78G Gas Generator Engine Specs',
     description: 'Cummins HSK78G specs for gas generator and CHP projects: 78 L V12 lean-burn natural-gas engine, 2,000 kWe prime at 50 Hz, HSK78 series and datasheet context.',
     intro: 'The Cummins HSK78G is a 78 L V12 lean-burn natural-gas generator engine for prime, continuous and CHP power projects. This page lists the HSK78G at 2,000 kWe / 2,500 kVA prime power at 50 Hz and gives buyers a quick path to compare ratings, datasheets, related engines and gas generator package requirements.',
+    answer: {
+      heading: 'What is the Cummins HSK78G?',
+      body: 'The Cummins HSK78G is a 78 L V12 lean-burn natural-gas generator engine for prime power, continuous duty and CHP projects. This page summarizes the HSK78G as a 2,000 kWe / 2,500 kVA class 50 Hz gas engine, with fuel type, displacement, configuration, datasheet context, related Cummins engines and package-selection links. It is intended for buyers comparing large gas generator engines before checking alternator frame, site gas supply, cooling system, controls, emissions context and power-plant integration needs.',
+    },
     aliases: ['hsk78g', 'HSK 78G', 'Cummins HSK 78G', 'Cummins HSK78', 'HSK78 gas engine'],
     links: [
       { label: 'Cummins engine hub', href: '/brands/cummins' },
@@ -116,6 +132,214 @@ export const QUICK_WIN_ENGINE_SEO: Record<string, QuickWinPageSeo> = {
       primaryHref: CONTACT_URL,
       secondaryLabel: 'Gas generator packages',
       secondaryHref: GAS_PACKAGE_URL,
+    },
+  },
+  'mercedes-benz-om-352': {
+    title: 'Mercedes-Benz OM352 Engine Specs & Manual - 5.675 L',
+    h1: 'Mercedes-Benz OM352 Engine Specs',
+    description: 'Mercedes-Benz OM352 engine specs and manual links: 5.675 L naturally aspirated inline-6 diesel, 96 kW at 2800 rpm, 17:1 compression.',
+    intro: 'The Mercedes-Benz OM352 is a 5.675 L naturally aspirated inline-6 diesel engine from the OM 300 Series. This reference page summarizes OM352 engine specs, manual links, displacement, cylinder layout, 96 kW maximum mechanical output, 17:1 compression and related Mercedes-Benz legacy diesel models.',
+    answer: {
+      heading: 'What is the Mercedes-Benz OM352?',
+      body: 'The Mercedes-Benz OM352 is a 5.675 L inline-6 diesel engine from the OM 300 Series. This page targets OM352 engine specs and manual searches with the key published fields buyers usually need first: naturally aspirated configuration, 96 kW maximum mechanical output at 2,800 rpm, 17:1 compression ratio, liquid cooling, diesel fuel and Germany origin. Because the OM352 is a legacy industrial engine rather than a current fixed-speed genset rating, treat the power figure as mechanical engine output and confirm alternator sizing, derating and replacement fit before packaging.',
+    },
+    aliases: ['om352', 'OM 352', 'Mercedes OM352', 'Mercedes-Benz OM 352', 'OM352 engine specs', 'OM352 manual'],
+    links: [
+      { label: 'Mercedes-Benz engine hub', href: '/brands/mercedes-benz' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Inline-6 engines', href: '/engines/configuration/inline-6' },
+      { label: 'Under 100 kWe engines', href: '/engines/power/under-100-kwe' },
+      { label: 'Generator engine selection guide', href: '/guides/how-to-choose-a-generator-engine' },
+    ],
+    cta: {
+      title: 'Review an OM352 replacement or diesel package',
+      body: 'Haifeng Machinery can help compare the OM352 with available legacy or equivalent diesel engines, then review alternator fit, controls, enclosure, voltage and export documentation for a complete package.',
+      primaryLabel: 'Request OM352 support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Diesel generator packages',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
+    },
+  },
+  'mercedes-benz-om-366-la': {
+    title: 'Mercedes-Benz OM366 LA Specs - Turbo Diesel 150 kW',
+    h1: 'Mercedes-Benz OM366 LA Engine Specs',
+    description: 'Mercedes-Benz OM366 LA specs: 5.958 L turbocharged charge-cooled inline-6 diesel, 150 kW at 2600 rpm, Euro Stage I and manual links.',
+    intro: 'The Mercedes-Benz OM366 LA is a 5.958 L turbocharged charge-cooled inline-6 diesel engine from the OM 300 Series. This reference page summarizes OM366 LA specs, 150 kW maximum mechanical output, Euro Stage I context, compression ratio, datasheet sources and related Mercedes-Benz legacy engines.',
+    answer: {
+      heading: 'What is the Mercedes-Benz OM366 LA?',
+      body: 'The Mercedes-Benz OM366 LA is a 5.958 L inline-6 diesel engine with turbocharging and charge cooling. This page gives searchers the core OM366 LA specs in one place: 150 kW maximum mechanical output at 2,600 rpm, 16.5:1 compression ratio, liquid cooling, diesel fuel, Euro Stage I emissions context and Germany origin. It is useful for legacy export equipment, replacement-engine research and generator-package feasibility checks, but the listed output is mechanical engine power and should be reviewed before alternator matching or derating.',
+    },
+    aliases: ['om366la', 'OM 366 LA', 'OM366 LA', 'Mercedes OM366 LA', 'Mercedes-Benz OM 366 LA', 'OM366 LA specs'],
+    links: [
+      { label: 'Mercedes-Benz engine hub', href: '/brands/mercedes-benz' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Inline-6 engines', href: '/engines/configuration/inline-6' },
+      { label: '100-500 kWe engines', href: '/engines/power/100-500-kwe' },
+      { label: 'Generator sizing guide', href: '/guides/how-to-size-a-generator' },
+    ],
+    cta: {
+      title: 'Compare the OM366 LA for a diesel package',
+      body: 'Haifeng Machinery can review whether the OM366 LA output class fits a standby or prime package, then match alternator, voltage, controller, enclosure and documentation requirements.',
+      primaryLabel: 'Request OM366 LA support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Diesel generator packages',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
+    },
+  },
+  'hino-j08c': {
+    title: 'Hino J08C Engine Specs & Manual - 7.961 L Diesel',
+    h1: 'Hino J08C Engine Specs',
+    description: 'Hino J08C engine specs and manual links: 7.961 L inline-6 diesel, 151 kW at 2900 rpm, 19.2:1 compression and legacy datasheet context.',
+    intro: 'The Hino J08C is a 7.961 L inline-6 diesel engine used in legacy truck, bus, construction, generator, power-unit and marine-conversion applications. This reference page summarizes J08C specs, manual links, 151 kW maximum mechanical output, compression ratio, datasheet context and related Hino engines.',
+    answer: {
+      heading: 'What is the Hino J08C?',
+      body: 'The Hino J08C is a 7.961 L inline-6 diesel engine associated with older Hino trucks, buses, construction equipment, generator power units and marine conversions. This page collects the key J08C specs: common-rail diesel configuration, 151 kW maximum mechanical output at 2,900 rpm, 19.2:1 compression ratio, liquid cooling, Japan origin and available documentation links. For generator applications, treat the listed value as engine output and confirm fixed-speed rating, alternator match, cooling package and replacement-engine availability before quoting.',
+    },
+    aliases: ['j08c', 'J08C engine', 'Hino J08C specs', 'Hino J08C manual', 'Hino J08C diesel'],
+    links: [
+      { label: 'Hino engine hub', href: '/brands/hino' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Inline-6 engines', href: '/engines/configuration/inline-6' },
+      { label: '100-500 kWe engines', href: '/engines/power/100-500-kwe' },
+      { label: 'Generator engine selection guide', href: '/guides/how-to-choose-a-generator-engine' },
+    ],
+    cta: {
+      title: 'Review J08C support or replacement options',
+      body: 'Haifeng Machinery can help compare the Hino J08C with nearby diesel engine options and review generator package fit, voltage, controls, enclosure and export documentation.',
+      primaryLabel: 'Request J08C support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Diesel generator packages',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
+    },
+  },
+  'isuzu-6bb1': {
+    title: 'Isuzu 6BB1 Engine Specs & Manual - 5.393 L Diesel',
+    h1: 'Isuzu 6BB1 Engine Specs',
+    description: 'Isuzu 6BB1 engine specs and manual links: 5.393 L naturally aspirated inline-6 diesel, 107 kW at 3200 rpm, 17.5:1 compression.',
+    intro: 'The Isuzu 6BB1 is a 5.393 L naturally aspirated inline-6 diesel engine from Isuzu legacy medium-duty applications. This reference page summarizes 6BB1 engine specs, manual sources, 107 kW maximum mechanical output, compression ratio, origin and related Isuzu 4B/6B engines.',
+    answer: {
+      heading: 'What is the Isuzu 6BB1?',
+      body: 'The Isuzu 6BB1 is a 5.393 L naturally aspirated inline-6 diesel engine introduced in the 1970s for medium-duty Isuzu applications. This page is built for 6BB1 engine specs searches and lists the core reference fields: 107 kW maximum mechanical output at 3,200 rpm, 17.5:1 compression ratio, liquid cooling, diesel fuel, Japan origin and available documentation context. For genset or replacement projects, verify whether the engine will run at the required fixed speed and confirm alternator sizing before packaging.',
+    },
+    aliases: ['6bb1', '6BB1 engine', 'Isuzu 6BB1 specs', 'Isuzu 6BB1 manual', 'Isuzu 6BB1 diesel'],
+    links: [
+      { label: 'Isuzu engine hub', href: '/brands/isuzu' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Inline-6 engines', href: '/engines/configuration/inline-6' },
+      { label: '100-500 kWe engines', href: '/engines/power/100-500-kwe' },
+      { label: 'Isuzu 4BD1 specs', href: '/engines/isuzu-4bd1' },
+    ],
+    cta: {
+      title: 'Compare the 6BB1 before sourcing a package',
+      body: 'Haifeng Machinery can help compare the Isuzu 6BB1 with related Isuzu engines, then review generator package fit, voltage, controls, enclosure and overseas sourcing options.',
+      primaryLabel: 'Request 6BB1 support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Diesel generator packages',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
+    },
+  },
+  'isuzu-6bd1': {
+    title: 'Isuzu 6BD1 Engine Specs & Manual - 5.785 L Diesel',
+    h1: 'Isuzu 6BD1 Engine Specs',
+    description: 'Isuzu 6BD1 engine specs and manual links: 5.785 L naturally aspirated inline-6 diesel, 106 kW at 2800 rpm, 17.5:1 compression.',
+    intro: 'The Isuzu 6BD1 is a 5.785 L naturally aspirated inline-6 diesel engine used in legacy truck, marine and industrial equipment applications. This reference page summarizes 6BD1 specs, manual links, 106 kW maximum mechanical output, compression ratio, origin and related Isuzu B Series engines.',
+    answer: {
+      heading: 'What is the Isuzu 6BD1?',
+      body: 'The Isuzu 6BD1 is a 5.785 L naturally aspirated inline-6 diesel engine used in older truck, marine and industrial equipment applications. This page collects the most useful 6BD1 engine specs for searchers: 106 kW maximum mechanical output at 2,800 rpm, 17.5:1 compression ratio, liquid cooling, diesel fuel, Japan origin, 1976 introduction and linked technical references. For generator or replacement-engine projects, confirm fixed-speed duty, alternator matching, cooling and availability before treating the mechanical output as package capacity.',
+    },
+    aliases: ['6bd1', '6BD1 engine', 'Isuzu 6BD1 specs', 'Isuzu 6BD1 manual', 'Isuzu 6BD1 diesel'],
+    links: [
+      { label: 'Isuzu engine hub', href: '/brands/isuzu' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Inline-6 engines', href: '/engines/configuration/inline-6' },
+      { label: '100-500 kWe engines', href: '/engines/power/100-500-kwe' },
+      { label: 'Isuzu 6BB1 specs', href: '/engines/isuzu-6bb1' },
+    ],
+    cta: {
+      title: 'Review 6BD1 replacement or package fit',
+      body: 'Haifeng Machinery can help compare the Isuzu 6BD1 with related Isuzu and equivalent diesel engines, then review alternator, controller, enclosure and sourcing options.',
+      primaryLabel: 'Request 6BD1 support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Diesel generator packages',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
+    },
+  },
+  'ford-2715e': {
+    title: 'Ford 2715E Engine Specs & Manual - Dorset 5.95 L',
+    h1: 'Ford 2715E Engine Specs',
+    description: 'Ford 2715E engine specs and manual links: Dorset 5.95 L naturally aspirated inline-6 diesel, 89 kW at 2500 rpm, 16.5:1 compression.',
+    intro: 'The Ford 2715E is a 5.95 L naturally aspirated inline-6 diesel engine in the Dorset 2700 Series. This reference page summarizes 2715E engine specs, manual links, 89 kW maximum mechanical output, compression ratio and related Ford industrial, marine and generator-package engines.',
+    answer: {
+      heading: 'What is the Ford 2715E?',
+      body: 'The Ford 2715E is a 5.95 L naturally aspirated inline-6 diesel engine from the Ford Dorset 2700 Series. This page targets Ford 2715E specs and manual searches with the main fields buyers need: 89 kW maximum mechanical output at 2,500 rpm, 16.5:1 compression ratio, liquid cooling, diesel fuel, United Kingdom origin and legacy industrial/marine/generator-package context. For replacement or genset use, confirm the required fixed speed, alternator rating, cooling configuration and parts availability before quoting the package.',
+    },
+    aliases: ['2715e', 'Ford 2715E specs', 'Ford 2715E manual', 'Ford Dorset 2715E', 'Ford 2715E diesel'],
+    links: [
+      { label: 'Ford engine hub', href: '/brands/ford' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Inline-6 engines', href: '/engines/configuration/inline-6' },
+      { label: 'Under 100 kWe engines', href: '/engines/power/under-100-kwe' },
+      { label: 'Ford 2712E specs', href: '/engines/ford-2712e' },
+    ],
+    cta: {
+      title: 'Review a Ford 2715E replacement or package',
+      body: 'Haifeng Machinery can help compare the 2715E with related Ford Dorset engines and modern equivalents, then review alternator fit, controls, enclosure and sourcing scope.',
+      primaryLabel: 'Request 2715E support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Diesel generator packages',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
+    },
+  },
+  'ford-2712e': {
+    title: 'Ford 2712E Engine Specs & Manual - Dorset 4.15 L',
+    h1: 'Ford 2712E Engine Specs',
+    description: 'Ford 2712E engine specs and manual links: Dorset 4.15 L inline-4 diesel, 60 kW at 1500 rpm, legacy marine and generator package context.',
+    intro: 'The Ford 2712E is a 4.15 L inline-4 diesel engine in the Ford Dorset/Dover family. This reference page summarizes 2712E specs, manual links, 60 kW output at 1,500 rpm, legacy marine and industrial context, and related Ford generator package engines.',
+    answer: {
+      heading: 'What is the Ford 2712E?',
+      body: 'The Ford 2712E is a 4.15 L inline-4 diesel engine from the Ford Dorset/Dover industrial and marine family. This page collects the key 2712E engine specs for buyers and owners: 60 kW output at 1,500 rpm, naturally aspirated marine/industrial diesel configuration, liquid cooling, United Kingdom origin and legacy manual/datasheet context. Because 1,500 rpm aligns with 50 Hz generator speed, the 2712E is especially relevant for older genset, marine and repower searches, but alternator and package fit still need confirmation.',
+    },
+    aliases: ['2712e', 'Ford 2712E specs', 'Ford 2712E manual', 'Ford Dorset 2712E', 'Ford Dover 2712E'],
+    links: [
+      { label: 'Ford engine hub', href: '/brands/ford' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Inline-4 engines', href: '/engines/configuration/inline-4' },
+      { label: 'Under 100 kWe engines', href: '/engines/power/under-100-kwe' },
+      { label: 'Ford 2715E specs', href: '/engines/ford-2715e' },
+    ],
+    cta: {
+      title: 'Review a Ford 2712E replacement or package',
+      body: 'Haifeng Machinery can help compare the 2712E with related Ford engines or modern equivalents, then review alternator, controls, enclosure, voltage and sourcing requirements.',
+      primaryLabel: 'Request 2712E support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Diesel generator packages',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
+    },
+  },
+  'volvo-penta-md11c': {
+    title: 'Volvo Penta MD11C Specs & Manual - 17 kW Diesel',
+    h1: 'Volvo Penta MD11C Engine Specs',
+    description: 'Volvo Penta MD11C specs and manual links: 2-cylinder marine diesel, 17 kW at 2500 rpm, production-year context and legacy replacement notes.',
+    intro: 'The Volvo Penta MD11C is a 2-cylinder marine diesel engine listed at 17 kW maximum mechanical output at 2,500 rpm. This reference page summarizes MD11C specs, manual links, production-year context, fuel type, cooling, related Volvo Penta engines and replacement-package considerations.',
+    answer: {
+      heading: 'What is the Volvo Penta MD11C?',
+      body: 'The Volvo Penta MD11C is a 2-cylinder legacy marine diesel engine listed at 17 kW maximum mechanical output at 2,500 rpm. This page is designed for MD11C specs and manual searches, summarizing the model identity, diesel fuel type, liquid cooling, Sweden origin, 1975 introduction context, linked Volvo Penta references and related small Volvo Penta engines. The MD11C is not a current fixed-speed generator-drive rating, so use this page for engine identification and replacement planning before confirming alternator, repower or genset suitability.',
+    },
+    aliases: ['md11c', 'MD11C', 'Volvo MD11C', 'Volvo Penta MD11C manual', 'Volvo Penta MD11C specs'],
+    links: [
+      { label: 'Volvo Penta engine hub', href: '/brands/volvo-penta' },
+      { label: 'Diesel engines', href: '/engines/fuel/diesel' },
+      { label: 'Volvo Penta MD7B specs', href: '/engines/volvo-penta-md7b' },
+      { label: 'Volvo Penta AQAD41A specs', href: '/engines/volvo-penta-aqad41a' },
+      { label: 'Generator engine selection guide', href: '/guides/how-to-choose-a-generator-engine' },
+    ],
+    cta: {
+      title: 'Review MD11C support or replacement options',
+      body: 'Haifeng Machinery can help compare the MD11C with available legacy or equivalent engines and review whether a diesel generator or repower package is practical.',
+      primaryLabel: 'Request MD11C support',
+      primaryHref: CONTACT_URL,
+      secondaryLabel: 'Diesel generator packages',
+      secondaryHref: DIESEL_NON_REGULATED_URL,
     },
   },
   'perkins-1206a-e70ttag2': {
