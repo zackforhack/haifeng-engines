@@ -39,6 +39,24 @@ const whatsappEvents = [
   'engine_whatsapp_impression',
   'engine_whatsapp_click',
   'engine_contact_cta_click',
+  'wp_whatsapp_impression',
+  'wp_whatsapp_click',
+  'wp_contact_cta_click',
+]
+
+const whatsappImpressionEvents = [
+  'engine_whatsapp_impression',
+  'wp_whatsapp_impression',
+]
+
+const whatsappClickEvents = [
+  'engine_whatsapp_click',
+  'wp_whatsapp_click',
+]
+
+const contactClickEvents = [
+  'engine_contact_cta_click',
+  'wp_contact_cta_click',
 ]
 
 function num(value) {
@@ -163,24 +181,41 @@ async function getGa4Proof(analyticsdata) {
     eventRows[period.key] = await ga4Report(analyticsdata, period, ['eventName'])
     pageRows[period.key] = await ga4Report(analyticsdata, period, ['eventName', 'pagePathPlusQueryString'])
 
+    const periodCustomRows = []
+
     try {
-      customRows[period.key] = await ga4Report(analyticsdata, period, [
+      periodCustomRows.push(...(await ga4Report(analyticsdata, period, [
         'eventName',
         'customEvent:slug',
         'customEvent:placement',
         'customEvent:intent',
-      ])
+      ])).map((row) => ({ ...row, dimensionSet: 'slug' })))
     } catch (error) {
-      customRows[period.key] = []
-      notes.push(`GA4 custom WhatsApp dimensions unavailable for ${period.label}: ${error.message}`)
+      notes.push(`GA4 engine WhatsApp custom dimensions unavailable for ${period.label}: ${error.message}`)
     }
+
+    try {
+      periodCustomRows.push(...(await ga4Report(analyticsdata, period, [
+        'eventName',
+        'customEvent:page_slug',
+        'customEvent:placement',
+        'customEvent:intent',
+      ])).map((row) => ({ ...row, dimensionSet: 'page_slug' })))
+    } catch (error) {
+      notes.push(`GA4 WordPress WhatsApp custom dimensions unavailable for ${period.label}: ${error.message}`)
+    }
+
+    customRows[period.key] = periodCustomRows
   }
 
   return { eventRows, pageRows, customRows, notes }
 }
 
-function eventCount(rows, name) {
-  return rows.find((row) => row.values[0] === name)?.metrics.eventCount ?? 0
+function eventCount(rows, names) {
+  const eventNames = Array.isArray(names) ? names : [names]
+  return rows
+    .filter((row) => eventNames.includes(row.values[0]))
+    .reduce((total, row) => total + (row.metrics.eventCount ?? 0), 0)
 }
 
 function summarize(data) {
@@ -209,12 +244,12 @@ function summarize(data) {
 
   const recentEvents = data.ga4.eventRows?.recent ?? []
   const previousEvents = data.ga4.eventRows?.previous ?? []
-  const recentImpressions = eventCount(recentEvents, 'engine_whatsapp_impression')
-  const previousImpressions = eventCount(previousEvents, 'engine_whatsapp_impression')
-  const recentWhatsAppClicks = eventCount(recentEvents, 'engine_whatsapp_click')
-  const previousWhatsAppClicks = eventCount(previousEvents, 'engine_whatsapp_click')
-  const recentAllContactClicks = eventCount(recentEvents, 'engine_contact_cta_click')
-  const previousAllContactClicks = eventCount(previousEvents, 'engine_contact_cta_click')
+  const recentImpressions = eventCount(recentEvents, whatsappImpressionEvents)
+  const previousImpressions = eventCount(previousEvents, whatsappImpressionEvents)
+  const recentWhatsAppClicks = eventCount(recentEvents, whatsappClickEvents)
+  const previousWhatsAppClicks = eventCount(previousEvents, whatsappClickEvents)
+  const recentAllContactClicks = eventCount(recentEvents, contactClickEvents)
+  const previousAllContactClicks = eventCount(previousEvents, contactClickEvents)
   const recentWhatsappRate = recentImpressions ? recentWhatsAppClicks / recentImpressions : 0
   const previousWhatsappRate = previousImpressions ? previousWhatsAppClicks / previousImpressions : 0
 

@@ -17,8 +17,9 @@
     "data:qa": "node scripts/data-qa.mjs",
     "seo:report": "node scripts/seo-report.mjs",
     "seo:proof": "node scripts/seo-ctr-lead-proof.mjs",
-    "seo:proof:main": "GSC_SITE_URL=sc-domain:haifengmachinery.com SEO_ORIGIN=https://www.haifengmachinery.com SEO_TARGET_URLS=https://www.haifengmachinery.com/news/why-is-my-diesel-generator-not-starting-15-common-causes-solutions/ node scripts/seo-ctr-lead-proof.mjs",
+    "seo:proof:main": "GSC_SITE_URL=sc-domain:haifengmachinery.com SEO_ORIGIN=https://www.haifengmachinery.com SEO_TARGET_URLS=https://www.haifengmachinery.com/news/why-is-my-diesel-generator-not-starting-15-common-causes-solutions/,https://www.haifengmachinery.com/news/diesel-generator-maintenance-checklist-daily-weekly-monthly-annual-schedule/,https://www.haifengmachinery.com/news/2026-industrial-generator-market-trends-growth-technology-regional-outlook/,https://www.haifengmachinery.com/news/how-to-choose-the-right-diesel-generator-for-your-industrial-project-complete-sizing-guide-2026/,https://www.haifengmachinery.com/diesel-power-package-regulated/,https://www.haifengmachinery.com/gas-power-package-50hz-60hz/,https://www.haifengmachinery.com/product-offerings/,https://www.haifengmachinery.com/contact-us/ node scripts/seo-ctr-lead-proof.mjs",
     "seo:patch:wp-ai": "node data/wp-gsc-ai-generative-patch.mjs",
+    "seo:patch:wp-ctas": "node data/wp-wire-ga4-whatsapp-ctas.mjs",
     "seo:indexing-queue": "node scripts/indexing-queue.mjs"
   },
   "dependencies": {
