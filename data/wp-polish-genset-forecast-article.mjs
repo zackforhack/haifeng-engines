@@ -71,6 +71,11 @@ const scopedStyle = `<style>
 .hf-genset-article img[src*="product-photobank"] {
   display: none !important;
 }
+.hf-genset-body p:has(> img),
+.hf-genset-body img {
+  display: none !important;
+  margin: 0 !important;
+}
 .hf-genset-copy p,
 .hf-genset-body p {
   font-size: 18px;
@@ -176,6 +181,12 @@ function normalizeIntro(content) {
     .replaceAll('<p><strong><b>Executive summary:</b></strong>', '<p><strong>Executive summary:</strong>')
 }
 
+function removeInjectedArticleImages(content) {
+  return content
+    .replace(/\s*<p>\s*<img[^>]+(?:haifeng-natgas-generator-cover|product-photobank)[^>]*>\s*<\/p>\s*/gi, '\n')
+    .replace(/\s*<img[^>]+(?:haifeng-natgas-generator-cover|product-photobank)[^>]*>\s*/gi, '\n')
+}
+
 function recoverGeneratedArticle(content) {
   if (!content.includes('hf-genset-article')) return content
 
@@ -205,6 +216,7 @@ function patchContent(content) {
   next = removeGeneratedToc(next)
   next = replaceLeadFigure(next)
   next = normalizeIntro(next)
+  next = removeInjectedArticleImages(next)
 
   const firstHeading = next.search(/<h2\b/i)
   const intro = firstHeading >= 0 ? next.slice(0, firstHeading).trim() : next.trim()
