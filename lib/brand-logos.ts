@@ -3,11 +3,13 @@
 // manufacturer of each engine. Re-run the script to refresh.
 export const BRAND_LOGOS: Record<string, string> = {
   "2G": "/brand-logos/2g.svg",
+  "ABC": "/brand-logos/abc-engines.png",
   "Arrow": "/brand-logos/arrow.png",
   "Ashok Leyland": "/brand-logos/ashok-leyland.png",
   "Baudouin": "/brand-logos/baudouin.png",
   "Bergen": "/brand-logos/bergen.svg",
   "Caterpillar": "/brand-logos/caterpillar.svg",
+  "CAMC Hanma": "/brand-logos/camc-hanma.png",
   "Cummins": "/brand-logos/cummins.svg",
   "Daedong": "/brand-logos/daedong.svg",
   "Daihatsu": "/brand-logos/daihatsu.png",
