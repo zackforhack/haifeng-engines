@@ -65,6 +65,7 @@ export const BRAND_LOGOS: Record<string, string> = {
   "Scania": "/brand-logos/scania.svg",
   "SDEC": "/brand-logos/sdec.png",
   "Shibaura": "/brand-logos/shibaura.svg",
+  "Sida Power": "/brand-logos/sida-power.webp",
   "Tecogen": "/brand-logos/tecogen.svg",
   "TYM": "/brand-logos/tym.svg",
   "VM Motori": "/brand-logos/vm-motori.svg",
