@@ -1,3 +1,4 @@
+import { ContextWhatsAppCta } from '@/components/ContextWhatsAppCta'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -120,6 +121,19 @@ export default async function GuidePage({ params }: Props) {
           })()
         ) : (
           <div className="guide-content" dangerouslySetInnerHTML={{ __html: g.html }} />
+        )}
+
+        {slug === 'north-american-voltage-standards' && (
+          <ContextWhatsAppCta title="Need a generator matched to your site voltage?"
+            detail="Share the destination, required voltage, phase, frequency and load list. We can discuss the generator configuration for your project."
+            message="Hi Haifeng Machinery, I need help matching a generator to my site. Destination: Voltage / phase / frequency: Required load:"
+            path={`/guides/${slug}`} placement="voltage_guide_after_answer" intent="voltage_matching" />
+        )}
+        {slug === 'kva-vs-kw' && (
+          <ContextWhatsAppCta title="Need help turning the rating into a generator requirement?"
+            detail="Share your load list, power factor if known, voltage and largest motor load to discuss generator sizing."
+            message="Hi Haifeng Machinery, I need help with generator sizing. Load list: Power factor if known: Voltage / frequency: Largest motor:"
+            path={`/guides/${slug}`} placement="kva_kw_guide_after_answer" intent="generator_sizing" />
         )}
 
         {slug === 'how-to-read-engine-nameplate-spec-sheet' && <OverhaulModelLinks />}

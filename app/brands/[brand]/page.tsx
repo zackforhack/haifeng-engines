@@ -1,3 +1,4 @@
+import { ContextWhatsAppCta } from '@/components/ContextWhatsAppCta'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound, redirect } from 'next/navigation'
@@ -361,6 +362,13 @@ export default async function BrandPage({ params }: Props) {
       <OverhaulModelLinks brand={name} />
 
       <BrandBuyerGuide name={name} engines={engines} stats={stats} brands={brands} profile={profile} />
+
+      <ContextWhatsAppCta
+        title={`Need help matching a ${name} engine?`}
+        detail="Share the engine model or nameplate, your application and destination. Tell us whether you need parts, a replacement or a complete generator package."
+        message={`Hi Haifeng Machinery, I need help with a ${name} engine.\nModel or nameplate:\nParts / replacement / generator package:\nApplication and destination:`}
+        path={`/brands/${brandSlug(name)}`} placement="brand_after_selection" intent="brand_matching"
+      />
 
       {activeEngines.length > 0 && (
         <section className="mb-10">
