@@ -1,3 +1,4 @@
+import { CatalogWhatsAppHelp } from '@/components/CatalogWhatsAppHelp'
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Link from 'next/link'
@@ -178,6 +179,8 @@ export default async function HomePage() {
           </dl>
         </div>
       </section>
+
+      <CatalogWhatsAppHelp context="home" />
 
       <section className="home-photo swiss-photo -mx-4 sm:-mx-6 lg:-mx-8">
         <Image

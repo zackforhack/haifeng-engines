@@ -51,23 +51,18 @@ function whatsappHref(engine: Engine, slug: string, intent: WhatsAppIntent): str
         '',
         `Engine page: ${pageUrl}`,
         '',
-        'Support needed: overhaul / service / parts / documentation / troubleshooting',
-        'Engine serial number:',
-        'Generator set brand:',
-        'Location:',
-        'Photos available: yes/no',
+        'I need help with:',
+        'My location:',
+        'I can share the engine nameplate or part number.',
       ].join('\n')
     : [
         `Hi Haifeng Machinery, I am looking for a ${engineLabel} or equivalent generator engine for a project.`,
         '',
         `Engine page: ${pageUrl}`,
         '',
-        'Project requirement:',
-        'New / used / equivalent acceptable:',
-        'Quantity:',
-        'Destination country:',
-        'Required power / frequency / voltage:',
-        'Tender deadline or timeline:',
+        'Quantity and destination:',
+        'Required delivery date:',
+        'An equivalent model is / is not acceptable.',
       ].join('\n')
 
   return `https://wa.me/${HAIFENG_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
@@ -77,6 +72,7 @@ function contactTracking(engine: Engine, channel: 'quote' | 'whatsapp', placemen
   return {
     channel,
     placement,
+    cta_version: '2026-09-06',
     intent: intent ?? null,
     brand: engine.brand,
     model: engine.model,
@@ -87,27 +83,18 @@ function contactTracking(engine: Engine, channel: 'quote' | 'whatsapp', placemen
 
 const WHATSAPP_INTENT_COPY: {
   intent: WhatsAppIntent
-  title: string
-  mobileBody: string
-  body: string
   actionLabel: string
   compactLabel: string
 }[] = [
   {
     intent: 'support',
-    title: 'I need service / overhaul support',
-    mobileBody: 'For overhaul, parts, documents, troubleshooting, or replacement matching.',
-    body: 'For clients who already have this engine or generator: overhaul, spare parts, documentation, troubleshooting, or replacement matching.',
-    actionLabel: 'WhatsApp service request',
-    compactLabel: 'Service support',
+    actionLabel: 'Ask about parts on WhatsApp',
+    compactLabel: 'WhatsApp parts / service',
   },
   {
     intent: 'source',
-    title: 'I need to source this engine',
-    mobileBody: 'For projects, tenders, overseas sourcing, availability, or equivalents.',
-    body: 'For projects, client leads, tenders, overseas sourcing, package availability, or acceptable equivalents.',
-    actionLabel: 'WhatsApp sourcing request',
-    compactLabel: 'Source for project',
+    actionLabel: 'Ask about sourcing on WhatsApp',
+    compactLabel: 'WhatsApp sourcing',
   },
 ]
 
@@ -293,13 +280,14 @@ function TopTaskFlow({
   const modified = engine.updated_at ? engine.updated_at.slice(0, 10) : null
   const datasheetCount = engine.pdfs?.length ?? 0
   const primaryHref = firstPdf ? getPDFUrl(firstPdf.storage_path) : HAIFENG_CONTACT_URL
+  const primaryIntent: WhatsAppIntent = engine.status === 'discontinued' ? 'support' : 'source'
   const compareHref = competitors[0]
     ? `/engines/compare/${pairSlug(engine.slug, competitors[0].slug)}`
     : `/brands/${brandSlug(engine.brand)}`
 
   return (
     <section className="mb-8 border-y border-gray-900 bg-white">
-      <div className="grid grid-cols-1 text-sm sm:grid-cols-3">
+      <div className="grid grid-cols-2 text-sm lg:grid-cols-4">
         <a
           href={primaryHref}
           target="_blank"
@@ -309,6 +297,16 @@ function TopTaskFlow({
           <span>{firstPdf ? 'Download datasheet' : 'Request datasheet'}</span>
           {firstPdf ? <Download aria-hidden="true" className="h-4 w-4" /> : <ExternalLink aria-hidden="true" className="h-4 w-4" />}
         </a>
+        <TrackedExternalLink
+          href={whatsappHref(engine, engine.slug, primaryIntent)}
+          eventName={WHATSAPP_CLICK_EVENTS}
+          eventProperties={contactTracking(engine, 'whatsapp', 'top_task_whatsapp', primaryIntent)}
+          impressionEventName={WHATSAPP_IMPRESSION_EVENT}
+          className="flex min-h-14 items-center justify-between gap-2 border-b border-gray-200 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50 lg:border-b-0 lg:border-r"
+        >
+          <span>WhatsApp<span className="block text-xs font-normal">{primaryIntent === 'support' ? 'Parts / service' : 'Sourcing'}</span></span>
+          <MessageCircle aria-hidden="true" className="h-4 w-4 shrink-0" />
+        </TrackedExternalLink>
         <Link
           href={compareHref}
           className="flex min-h-14 items-center justify-between gap-3 border-b border-gray-200 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50 lg:border-b-0 lg:border-r"
@@ -320,6 +318,7 @@ function TopTaskFlow({
           href={HAIFENG_CONTACT_URL}
           eventName="engine_contact_cta_click"
           eventProperties={contactTracking(engine, 'quote', 'top_task_flow')}
+          impressionEventName="engine_quote_impression"
           className="flex min-h-14 items-center justify-between gap-3 border-b border-gray-200 px-4 py-3 font-semibold text-blue-600 hover:bg-blue-50 sm:border-b-0"
         >
           <span>Get a quote</span>
@@ -369,36 +368,24 @@ function WhatsAppLeadCta({
   whatsappUrls: Record<WhatsAppIntent, string>
 }) {
   return (
-    <section className="mb-8 border-y border-gray-900 bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
-        <div className="px-4 py-5 sm:px-5">
-          <h2 className="text-lg font-bold text-gray-900">Get help with this engine</h2>
-          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-gray-600">
-            Tell Haifeng whether you already own a {engine.brand} {engine.model} engine/generator or need to source this model for a project.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 border-t border-gray-900 sm:grid-cols-2 lg:border-l lg:border-t-0">
-          {WHATSAPP_INTENT_COPY.map((item) => (
-            <TrackedExternalLink
-              key={item.intent}
-              href={whatsappUrls[item.intent]}
-              eventName={WHATSAPP_CLICK_EVENTS}
-              eventProperties={contactTracking(engine, 'whatsapp', 'intent_cta', item.intent)}
-              impressionEventName={WHATSAPP_IMPRESSION_EVENT}
-              impressionEventProperties={contactTracking(engine, 'whatsapp', 'intent_cta', item.intent)}
-              className="group flex min-h-28 flex-col justify-between gap-3 border-b border-gray-200 px-4 py-4 text-left hover:bg-blue-50 sm:min-h-32 sm:border-b-0 sm:border-r last:border-b-0 last:sm:border-r-0"
-            >
-              <span>
-                <span className="block text-base font-bold text-blue-600 group-hover:text-blue-900">{item.title}</span>
-                <span className="mt-2 block text-sm leading-relaxed text-gray-600 sm:hidden">{item.mobileBody}</span>
-                <span className="mt-2 hidden text-sm leading-relaxed text-gray-600 sm:block">{item.body}</span>
-              </span>
-              <span className="inline-flex items-center gap-2 text-sm font-bold text-blue-600">
-                {item.actionLabel} <MessageCircle aria-hidden="true" className="h-4 w-4" />
-              </span>
-            </TrackedExternalLink>
-          ))}
-        </div>
+    <section aria-label="Ask Haifeng about this engine" className="mb-8 border-y border-gray-900 bg-white px-4 py-4 sm:px-5">
+      <h2 className="text-lg font-bold text-gray-900">Ask about {engine.brand} {engine.model}</h2>
+      <p className="mt-1 text-sm text-gray-600">Choose parts / service or sourcing. Your message includes this model and page link.</p>
+      <div className="mt-4 grid gap-3 sm:grid-cols-2">
+        {WHATSAPP_INTENT_COPY.map((item) => (
+          <TrackedExternalLink
+            key={item.intent}
+            href={whatsappUrls[item.intent]}
+            eventName={WHATSAPP_CLICK_EVENTS}
+            eventProperties={contactTracking(engine, 'whatsapp', 'intent_cta', item.intent)}
+            impressionEventName={WHATSAPP_IMPRESSION_EVENT}
+            impressionEventProperties={contactTracking(engine, 'whatsapp', 'intent_cta', item.intent)}
+            className="flex min-h-12 items-center justify-between gap-3 border border-blue-600 px-4 py-3 text-sm font-semibold text-blue-600 hover:bg-blue-50 focus-visible:outline-2 focus-visible:outline-offset-2"
+          >
+            <span>{item.actionLabel}</span>
+            <MessageCircle aria-hidden="true" className="h-4 w-4 shrink-0" />
+          </TrackedExternalLink>
+        ))}
       </div>
     </section>
   )
@@ -677,7 +664,7 @@ function MobileContactBar({
 }) {
   return (
     <div className="fixed inset-x-0 bottom-0 z-30 border-t border-gray-900 bg-white px-4 py-3 lg:hidden" style={{ paddingBottom: 'calc(0.75rem + env(safe-area-inset-bottom))' }}>
-      <div className="mx-auto grid max-w-[720px] grid-cols-3 gap-2 text-xs font-semibold">
+      <div className="mx-auto grid max-w-[720px] grid-cols-[1fr_1fr_0.8fr] gap-2 text-xs font-semibold">
         <TrackedExternalLink
           href={whatsappUrls.support}
           eventName={WHATSAPP_CLICK_EVENTS}
@@ -686,7 +673,7 @@ function MobileContactBar({
           impressionEventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky', 'support')}
           className="flex min-h-11 items-center justify-center gap-1 bg-blue-600 px-2 py-2 text-center text-white hover:bg-blue-700"
         >
-          Service <MessageCircle aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
+          <span>WhatsApp<span className="block font-normal">Parts / service</span></span> <MessageCircle aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
         </TrackedExternalLink>
         <TrackedExternalLink
           href={whatsappUrls.source}
@@ -696,15 +683,16 @@ function MobileContactBar({
           impressionEventProperties={contactTracking(engine, 'whatsapp', 'mobile_sticky', 'source')}
           className="flex min-h-11 items-center justify-center gap-1 border border-blue-600 bg-white px-2 py-2 text-center text-blue-600 hover:bg-blue-50"
         >
-          Source <MessageCircle aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
+          <span>WhatsApp<span className="block font-normal">Sourcing</span></span> <MessageCircle aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
         </TrackedExternalLink>
         <TrackedExternalLink
           href={quoteUrl}
           eventName="engine_contact_cta_click"
           eventProperties={contactTracking(engine, 'quote', 'mobile_sticky')}
+          impressionEventName="engine_quote_impression"
           className="flex min-h-11 items-center justify-center gap-1 border border-blue-600 bg-white px-2 py-2 text-center text-blue-600 hover:bg-blue-50"
         >
-          Form <ExternalLink aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
+          Quote form <ExternalLink aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
         </TrackedExternalLink>
       </div>
     </div>
@@ -880,8 +868,6 @@ export default async function EngineDetailPage({ params }: Props) {
           <a href="#overhaul-parts" className="mt-5 inline-flex min-h-11 items-center gap-2 font-semibold text-blue-600 hover:underline">Overhaul &amp; repair parts <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
         </header>
 
-        <WhatsAppLeadCta engine={engine} whatsappUrls={whatsappUrls} />
-
         <TopTaskFlow
           engine={engine}
           firstPdf={firstPdf}
@@ -892,6 +878,8 @@ export default async function EngineDetailPage({ params }: Props) {
         <SpecHero engine={engine} />
 
         <PowerRatingsTable engine={engine} />
+
+        <WhatsAppLeadCta engine={engine} whatsappUrls={whatsappUrls} />
 
         <OverhaulParts brand={engine.brand} model={engine.model} slug={slug} preview={overhaulPreview} />
 
@@ -997,12 +985,10 @@ export default async function EngineDetailPage({ params }: Props) {
               </div>
             )}
 
-            <ReferencePanel engine={engine} slug={slug} />
-
             <div className="border border-blue-600 bg-blue-50 p-5">
-              <p className="mb-1 font-semibold text-gray-900">What kind of help do you need?</p>
+              <p className="mb-1 font-semibold text-gray-900">Need help after checking the documents?</p>
               <p className="mb-4 text-sm leading-relaxed text-blue-900">
-                Send a prefilled WhatsApp message for service support or overseas sourcing, with this model and page link included.
+                Ask about parts, service or sourcing. The message includes this engine model; you can add a nameplate photo in WhatsApp.
               </p>
               <div className="space-y-2">
                 {WHATSAPP_INTENT_COPY.map((item) => (
@@ -1023,6 +1009,7 @@ export default async function EngineDetailPage({ params }: Props) {
                   href={HAIFENG_CONTACT_URL}
                   eventName="engine_contact_cta_click"
                   eventProperties={contactTracking(engine, 'quote', 'sidebar_cta')}
+                  impressionEventName="engine_quote_impression"
                   className="flex items-center justify-between gap-3 bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700"
                 >
                   <span>Use full inquiry form</span>
@@ -1036,6 +1023,8 @@ export default async function EngineDetailPage({ params }: Props) {
                 </a>
               </p>
             </div>
+
+            <ReferencePanel engine={engine} slug={slug} />
 
             <div id="package-paths" className="scroll-mt-28 border-t border-gray-900 bg-white pt-5">
               <p className="mb-3 px-4 text-sm font-semibold text-gray-700">Generator package paths</p>

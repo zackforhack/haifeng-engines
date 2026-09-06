@@ -1,3 +1,4 @@
+import { CatalogWhatsAppHelp } from '@/components/CatalogWhatsAppHelp'
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Link from 'next/link'
@@ -240,6 +241,8 @@ export default async function EnginesPage({ searchParams }: Props) {
           </div>
         </div>
       </section>
+
+      <CatalogWhatsAppHelp context="engines" />
 
       <div className="min-w-0 xl:grid xl:grid-cols-[240px_minmax(0,1fr)] xl:gap-8">
         <Suspense>

@@ -1,3 +1,4 @@
+import { CatalogWhatsAppHelp } from '@/components/CatalogWhatsAppHelp'
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Link from 'next/link'
@@ -105,6 +106,7 @@ export default async function AlternatorsPage({ searchParams }: Props) {
             </Suspense>
           </div>
         </header>
+        <CatalogWhatsAppHelp context="alternators" />
 
         {PRIORITY_ALTERNATOR_SPECS.length > 0 && (
           <section className="border-b border-gray-300 py-10">
@@ -323,6 +325,7 @@ export default async function AlternatorsPage({ searchParams }: Props) {
           </div>
         </div>
       </header>
+      <CatalogWhatsAppHelp context="alternators" />
       <div className="py-6">
         <Suspense>
           <AlternatorFilters options={options} totalCount={total} />

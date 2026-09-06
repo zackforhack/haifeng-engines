@@ -61,14 +61,12 @@ export function TrackedExternalLink({
       trackEvents(impressionEventName, impressionEventProperties ?? eventProperties)
     }
 
-    if (!('IntersectionObserver' in window)) {
-      trackImpression()
-      return
-    }
+    // Without visibility support, clicks still work; do not invent an exposure.
+    if (!('IntersectionObserver' in window)) return
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (!entry?.isIntersecting) return
+        if (!entry?.isIntersecting || entry.intersectionRatio < 0.5) return
         trackImpression()
         observer.disconnect()
       },

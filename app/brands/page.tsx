@@ -1,3 +1,4 @@
+import { CatalogWhatsAppHelp } from '@/components/CatalogWhatsAppHelp'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getBrandCounts } from '@/lib/engines'
@@ -17,6 +18,8 @@ export default async function BrandsPage() {
     <div>
       <h1 className="brand-section-title mb-2 font-bold text-gray-900">Browse by Brand</h1>
       <p className="text-gray-500 mb-8">{brandCounts.length} brands in the database</p>
+
+      <CatalogWhatsAppHelp context="brands" />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {brandCounts.map(({ brand, total, active }) => (
