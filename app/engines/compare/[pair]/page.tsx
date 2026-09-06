@@ -1,3 +1,4 @@
+import { ContextWhatsAppCta } from '@/components/ContextWhatsAppCta'
 import type { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
@@ -224,6 +225,11 @@ export default async function ComparePage({ params }: Props) {
         </div>
 
         <ComparisonBuyerGuide a={a} b={b} />
+        <ContextWhatsAppCta
+          title="Need help choosing between these engines?"
+          detail="Share your load, operating duty and site requirements to discuss which engine fits the complete generator package."
+          message={`Hi Haifeng Machinery, I am comparing ${label(a)} and ${label(b)}.\nRequired load:\nOperating duty:\nVoltage / frequency:\nDestination:`}
+          path={`/engines/compare/${pair}`} placement="comparison_after_guidance" intent="engine_comparison" />
 
         {siblings.length > 0 && (
           <div className="mt-10">

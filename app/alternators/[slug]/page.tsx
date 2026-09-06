@@ -1,3 +1,4 @@
+import { ContextWhatsAppCta } from '@/components/ContextWhatsAppCta'
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
@@ -300,6 +301,11 @@ export default async function AlternatorDetailPage({ params }: Props) {
               </p>
             </div>
 
+            <ContextWhatsAppCta
+              title={`Need help matching the ${a.brand} ${a.model}?`}
+              detail="Share the required kVA, voltage, frequency and engine model to discuss an alternator or complete generator package."
+              message={`Hi Haifeng Machinery, I am considering the ${a.brand} ${a.model}.\nRequired kVA:\nVoltage / frequency:\nEngine model:\nDestination:`}
+              path={`/alternators/${slug}`} placement="alternator_after_specs" intent="alternator_matching" />
             <AlternatorFaq a={a} />
           </div>
 

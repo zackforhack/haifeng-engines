@@ -136,6 +136,14 @@ export default async function GuidePage({ params }: Props) {
             path={`/guides/${slug}`} placement="kva_kw_guide_after_answer" intent="generator_sizing" />
         )}
 
+        {['how-to-size-a-generator', 'how-to-choose-a-generator-engine', 'how-to-select-a-transfer-switch', 'alternator-voltage-and-frequency', 'generator-paralleling-explained', 'low-voltage-vs-medium-voltage-generators', 'prime-vs-standby-cop-dcp', 'diesel-vs-natural-gas-total-cost-of-ownership'].includes(slug) && (
+          <ContextWhatsAppCta
+            title="Applying this guide to a generator project?"
+            detail="Share your application, load, voltage, operating duty and project question to discuss package selection with Haifeng."
+            message={`Hi Haifeng Machinery, I am reading ${g.title}.\nApplication:\nLoad / voltage / frequency:\nOperating duty:\nDestination:\nProject question:`}
+            path={`/guides/${slug}`} placement="buyer_guide_after_answer" intent={slug} />
+        )}
+
         {slug === 'how-to-read-engine-nameplate-spec-sheet' && <OverhaulModelLinks />}
 
         {relatedGuides.length > 0 && (
