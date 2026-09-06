@@ -150,3 +150,16 @@ export function alternatorMetadataDescription(alternator: Alternator, preferred?
     `${name} alternator specs with kVA rating, pole count, series, datasheet link and generator-set matching context.`,
   ], MAX_DESCRIPTION)
 }
+
+// Only use parts metadata when the page actually renders reviewed references.
+export function engineRepairMetadata(engine: Pick<Engine, 'brand' | 'model'>, hasReferences: boolean): { title: string; description: string } | null {
+  if (!hasReferences) return null
+  const name = normalize(`${engine.brand} ${engine.model}`)
+  return {
+    title: firstWithin([`${name} Specs & Repair Parts`, `${engine.model} Specs & Repair Parts`], MAX_TITLE),
+    description: firstWithin([
+      `${name} specifications and selected repair part references. Check applicability and send your nameplate for help identifying the right parts.`,
+      `${engine.model} specs and repair part references. Check fitment requirements and send your engine nameplate for identification help.`,
+    ], MAX_DESCRIPTION),
+  }
+}

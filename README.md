@@ -199,3 +199,29 @@ Checks include:
 - fuel/ignition sanity
 - alternator missing data-sheet and rating checks
 - SEO-priority data fixes using the latest `reports/seo/*.json` file when present
+
+## Overhaul parts previews
+
+Engine detail pages include a bounded repair-parts preview and nameplate-led WhatsApp inquiry.
+Production reads `data/public/overhaul-previews.json` only; it does not need the Supabase
+service key or enable the raw parts catalog. This versioned snapshot includes up to eight
+categories and three distinct-category reviewed OEM-manual references per engine.
+Fitment conditions and source names accompany each number. Missing verification dates
+are omitted. Pages without reference numbers keep their existing specifications metadata.
+
+To review current private records locally, set `LOCAL_OVERHAUL_PREVIEW=1` with `npm run dev`.
+The flag cannot enable private-data reads in production. Exporting an updated public snapshot
+is an explicit release action: review evidence/coverage, run the following read-only exporter,
+review the JSON diff, then commit and deploy it. This does not publish database rows or change RLS.
+
+```bash
+node --env-file=.env.local scripts/audit-overhaul-preview-coverage.mjs --export-public-preview
+node tests/unit/overhaul-preview.mjs
+node tests/unit/engine-repair-metadata.mjs
+```
+
+The exporter requires `SUPABASE_SERVICE_KEY` locally. Omitting `--export-public-preview`
+only writes a local eligibility report under `outputs/overhaul-coverage/`.
+After deployment, monitor model-and-parts search queries alongside
+`engine_overhaul_impression` and `engine_overhaul_whatsapp_click`. Confirm received nameplates
+and qualified inquiries in the sales workflow; click events alone are not sent messages.

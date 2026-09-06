@@ -53,6 +53,11 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Overhaul preview disclosure and SEO contracts
+        run: |
+          node tests/unit/overhaul-preview.mjs
+          node tests/unit/engine-repair-metadata.mjs
+
       - name: Source-verified data QA
         if: steps.env.outputs.configured == 'true'
         env:

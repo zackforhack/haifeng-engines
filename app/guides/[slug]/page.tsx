@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getAllGuides, getGuideBySlug, getRelatedGuides } from '@/lib/guides'
+import { OverhaulModelLinks } from '@/components/OverhaulModelLinks'
 import { GeneratorSizingCalculator } from '@/components/GeneratorSizingCalculator'
 
 const BASE = 'https://engines.haifengmachinery.com'
@@ -120,6 +121,8 @@ export default async function GuidePage({ params }: Props) {
         ) : (
           <div className="guide-content" dangerouslySetInnerHTML={{ __html: g.html }} />
         )}
+
+        {slug === 'how-to-read-engine-nameplate-spec-sheet' && <OverhaulModelLinks />}
 
         {relatedGuides.length > 0 && (
           <section className="mt-12 border-t border-gray-200 pt-8">

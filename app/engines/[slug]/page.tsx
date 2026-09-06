@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { ArrowRight, Download, ExternalLink, MessageCircle } from 'lucide-react'
 import { getAllEngineSlugs, getDocumentEncodingFormat, getEngineBySlug, getPDFUrl, getRelatedEngines } from '@/lib/engines'
+import { OverhaulParts } from '@/components/OverhaulParts'
+import { getOverhaulPreview } from '@/lib/overhaul-preview'
 import { StatusBadge } from '@/components/StatusBadge'
 import { PDFDownloadList } from '@/components/PDFDownloadList'
 import { BrandLogo } from '@/components/BrandLogo'
@@ -13,7 +15,7 @@ import { competitorsFor, pairSlug } from '@/lib/compare'
 import { buildEngineFaqs } from '@/lib/engine-faq'
 import { brandSlug } from '@/lib/seo'
 import { quickWinEngineSeo, type QuickWinPageSeo } from '@/lib/quick-win-seo'
-import { engineMetadataDescription, engineMetadataTitle } from '@/lib/metadata-lengths'
+import { engineMetadataDescription, engineMetadataTitle, engineRepairMetadata } from '@/lib/metadata-lengths'
 import type { Engine, EnginePDF } from '@/lib/types'
 
 interface Props {
@@ -115,8 +117,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!engine) return {}
 
   const quickWin = quickWinEngineSeo(slug)
-  const title = engineMetadataTitle(engine, quickWin?.title)
-  const description = engineMetadataDescription(engine, quickWin?.description ?? engine.description ?? buildIntro(engine))
+  const preview = await getOverhaulPreview(engine.id)
+  const repairMetadata = engineRepairMetadata(engine, preview.references.length > 0)
+  const title = repairMetadata?.title ?? engineMetadataTitle(engine, quickWin?.title)
+  const description = repairMetadata?.description ?? engineMetadataDescription(engine, quickWin?.description ?? engine.description ?? buildIntro(engine))
   const aliases = uniqueAliases([...(quickWin?.aliases ?? []), ...modelAliases(engine)])
   const variableSpeed = isVariableSpeedMechanical(engine)
   const fuel = (engine.fuel_type ?? 'Diesel').trim()
@@ -712,6 +716,7 @@ export default async function EngineDetailPage({ params }: Props) {
   const engine = await getEngineBySlug(slug)
   if (!engine) notFound()
 
+  const overhaulPreview = await getOverhaulPreview(engine.id)
   const related = await getRelatedEngines(engine)
   const competitors = await competitorsFor(engine, 4)
   const quickWin = quickWinEngineSeo(slug)
@@ -872,6 +877,7 @@ export default async function EngineDetailPage({ params }: Props) {
           )}
 
           <p className="max-w-4xl text-gray-600 leading-relaxed">{intro}</p>
+          <a href="#overhaul-parts" className="mt-5 inline-flex min-h-11 items-center gap-2 font-semibold text-blue-600 hover:underline">Overhaul &amp; repair parts <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
         </header>
 
         <WhatsAppLeadCta engine={engine} whatsappUrls={whatsappUrls} />
@@ -886,6 +892,8 @@ export default async function EngineDetailPage({ params }: Props) {
         <SpecHero engine={engine} />
 
         <PowerRatingsTable engine={engine} />
+
+        <OverhaulParts brand={engine.brand} model={engine.model} slug={slug} preview={overhaulPreview} />
 
         {/* Spec-card lead image — a unique, owned, indexable graphic (Google Images / social). */}
         <figure className="my-8 max-w-4xl border-y border-gray-900 bg-white">

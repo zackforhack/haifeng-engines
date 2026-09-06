@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound, redirect } from 'next/navigation'
 import { getAllBrands, getEnginesByBrand } from '@/lib/engines'
+import { OverhaulModelLinks } from '@/components/OverhaulModelLinks'
 import { EngineCard } from '@/components/EngineCard'
 import { BrandLogo } from '@/components/BrandLogo'
 import { HubContent } from '@/components/HubContent'
@@ -356,6 +357,8 @@ export default async function BrandPage({ params }: Props) {
       <h1 className="brand-section-title mb-1 font-bold text-gray-900">{profile?.h1 ?? `${engines[0].brand} Generator Engines`}</h1>
       <p className="text-gray-500 mb-4">{engines.length} engines in the database</p>
       <p className="text-gray-600 leading-relaxed max-w-3xl mb-8">{overview}</p>
+
+      <OverhaulModelLinks brand={name} />
 
       <BrandBuyerGuide name={name} engines={engines} stats={stats} brands={brands} profile={profile} />
 
