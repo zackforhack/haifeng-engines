@@ -111,11 +111,11 @@ export const QUICK_WIN_ENGINE_SEO: Record<string, QuickWinPageSeo> = {
   'cummins-hsk78g': {
     title: 'Cummins HSK78G Gas Generator Engine Specs - 2,000 kWe',
     h1: 'Cummins HSK78G Gas Generator Engine Specs',
-    description: 'Cummins HSK78G specs for gas generator and CHP projects: 78 L V12 lean-burn natural-gas engine, 2,000 kWe prime at 50 Hz, HSK78 series and datasheet context.',
-    intro: 'The Cummins HSK78G is a 78 L V12 lean-burn natural-gas generator engine for prime, continuous and CHP power projects. This page lists the HSK78G at 2,000 kWe / 2,500 kVA prime power at 50 Hz and gives buyers a quick path to compare ratings, datasheets, related engines and gas generator package requirements.',
+    description: 'Cummins HSK78G 78 L V12 gas engine family: 1,600–2,000 kWe generator configurations, continuous duty, 50/60 Hz package differences and OEM sources.',
+    intro: 'The Cummins HSK78G is a 78 L V12 natural-gas engine family used in 1,600–2,000 kWe generator configurations. This record shows the 2,000 kWe, 50 Hz C2000N5CD configuration with the continuous (COP) duty defined in Cummins NAS-6109-EN (02/19). Confirm the exact generator model before selecting a package.',
     answer: {
       heading: 'What is the Cummins HSK78G?',
-      body: 'The Cummins HSK78G is a 78 L V12 lean-burn natural-gas generator engine for prime power, continuous duty and CHP projects. This page summarizes the HSK78G as a 2,000 kWe / 2,500 kVA class 50 Hz gas engine, with fuel type, displacement, configuration, datasheet context, related Cummins engines and package-selection links. It is intended for buyers comparing large gas generator engines before checking alternator frame, site gas supply, cooling system, controls, emissions context and power-plant integration needs.',
+      body: 'HSK78G identifies the engine family, while C1600, C1800 and C2000 identify different generator outputs. Cummins lists N5CD packages at 50 Hz with direct drive and N6CD packages at 60 Hz with a gearbox. Compare the exact model, duty, fuel conditions and manufacturer data sheet; the family name alone does not determine output or project compliance.',
     },
     aliases: ['hsk78g', 'HSK 78G', 'Cummins HSK 78G', 'Cummins HSK78', 'HSK78 gas engine'],
     links: [

@@ -1,17 +1,16 @@
 import type { Engine } from './types'
 import { ratedSpeeds, ratedFrequencies, compactConfig, isVariableSpeedMechanical } from './engine-display'
+import { primeDutyLabel, HSK78G_REFERENCE } from './engine-rating-reference'
 
 export interface EngineFaq { q: string; a: string }
 
-// kVA for a specific frequency + rating, derived from kVA / kWe / kW (in that order) at 0.8 pf.
+// Electrical kVA only: shaft kW cannot be converted without alternator efficiency.
 function kvaOf(e: Engine, hz: 50 | 60, rating: 'prime' | 'standby'): number | null {
   const f = e as unknown as Record<string, number | undefined>
   const kva = f[`${rating}_power_kva_${hz}hz`]
   if (kva) return Math.round(kva)
   const kwe = f[`${rating}_power_kwe_${hz}hz`]
   if (kwe) return Math.round(kwe / 0.8)
-  const kw = f[`${rating}_power_kw_${hz}hz`]
-  if (kw) return Math.round(kw / 0.8)
   return null
 }
 
@@ -52,7 +51,7 @@ export function buildEngineFaqs(engine: Engine): EngineFaq[] {
     const prime = kvaOf(engine, hz, 'prime')
     const r: string[] = []
     if (standby) r.push(`${standby.toLocaleString()} kVA standby`)
-    if (prime) r.push(`${prime.toLocaleString()} kVA prime`)
+    if (prime) r.push(`${prime.toLocaleString()} kVA ${primeDutyLabel(engine).toLowerCase()}`)
     if (r.length) powerBits.push(`${r.join(' / ')} at ${hz} Hz (${rpm.toLocaleString()} rpm)`)
   }
   if (powerBits.length) {
@@ -107,8 +106,8 @@ export function buildEngineFaqs(engine: Engine): EngineFaq[] {
   // Emissions
   if (engine.emissions_standard && !/unregulated/i.test(engine.emissions_standard)) {
     faqs.push({
-      q: `What emissions standard does the ${engine.model} meet?`,
-      a: `The ${name} is certified to ${engine.emissions_standard} emissions standards.`,
+      q: `What emissions information is listed for the ${engine.model}?`,
+      a: `This record lists ${engine.emissions_standard} for the ${name}. Confirm the exact engine family, model year, configuration and applicable manufacturer certification documents before specifying it for a regulated project. A database label does not establish certification of a complete generator package.`,
     })
   }
 
@@ -120,18 +119,24 @@ export function buildEngineFaqs(engine: Engine): EngineFaq[] {
     })
   } else if (engine.status === 'active') {
     faqs.push({
-      q: `Is the ${name} still in production?`,
-      a: `Yes — the ${name} is a current production model.`,
+      q: `What is the catalog status of the ${name}?`,
+      a: `The ${name} is marked active in this database. Confirm current production and availability with the manufacturer; catalog status is not a live supply check.`,
     })
   }
 
   // Datasheet availability
   if ((engine.pdfs?.length ?? 0) > 0) {
     faqs.push({
-      q: `Is a datasheet available for the ${engine.model}?`,
-      a: `Yes — an official ${engine.brand} datasheet for the ${name} can be downloaded from this page.`,
+      q: `Are reference documents available for the ${engine.model}?`,
+      a: `This page links reference documents for the ${name}. Check each document's title, model coverage, revision and rating conditions before using it for selection.`,
     })
   }
 
+  if (engine.slug === 'cummins-hsk78g') {
+    for (const faq of faqs) {
+      if (faq.q.startsWith('What is the power output')) faq.a = HSK78G_REFERENCE.summary
+      if (faq.q.startsWith('Does the ')) faq.a = HSK78G_REFERENCE.frequency
+    }
+  }
   return faqs
 }
