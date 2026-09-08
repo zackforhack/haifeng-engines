@@ -13,7 +13,16 @@ const enginePdfs = await fetchAll(
   'engine_pdfs',
   'storage_path,file_size_bytes',
 )
-const paths = [...new Set(enginePdfs.map((row) => row.storage_path).filter(Boolean))]
+const linkedPaths = [...new Set(enginePdfs.map((row) => row.storage_path).filter(Boolean))]
+// Match getPDFUrl: absolute HTTP(S) links are source references, not bucket keys.
+// Their availability and source applicability need a separate reference audit.
+const externalReferences = linkedPaths.filter((path) => /^https?:\/\//i.test(path))
+for (const reference of externalReferences) {
+  assert.doesNotThrow(() => new URL(reference), `Malformed external reference: ${reference}`)
+}
+const paths = linkedPaths.filter((path) => !/^https?:\/\//i.test(path))
+assert.ok(paths.length > 0, 'No stored PDF objects found; refusing an empty storage audit')
+console.log(`${externalReferences.length} external references excluded from bucket checks; availability not tested.`)
 const concurrency = Math.max(
   1,
   Math.min(32, Number(process.env.STORAGE_QA_CONCURRENCY) || 6),
