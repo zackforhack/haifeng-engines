@@ -119,6 +119,9 @@ try {
   }
 
   await open('/engines?emissions=U.S.+EPA+Final+Tier+4')
+  const tier4Count = Number((await page.locator('main')
+    .getByText(/^[\d,]+ matching engines$/).first().textContent())?.replace(/\D/g, ''))
+  assert.ok(tier4Count > 0, 'Tier 4 filter must return a nonempty catalog')
   const tier4Links = await page
     .locator('main a[href^="/engines/"]')
     .evaluateAll((links) => [
@@ -159,10 +162,17 @@ try {
     page.url().includes('view=grid'),
     'Searching the engine catalog must render ordered results in grid view',
   )
-  await assert.doesNotReject(
-    () => page.getByText('7 matching engines', { exact: true }).waitFor(),
-    'EPA Final Tier 4 Cummins search should return the expected narrowed result count',
-  )
+  const narrowedCount = Number((await page.locator('main')
+    .getByText(/^[\d,]+ matching engines$/).first().textContent())?.replace(/\D/g, ''))
+  assert.ok(narrowedCount > 0 && narrowedCount < tier4Count,
+    `Cummins search must narrow the Tier 4 catalog (${narrowedCount} of ${tier4Count})`)
+  const narrowedLinks = await page.locator('main a[href^="/engines/"]').evaluateAll((links) =>
+    [...new Set(links.filter(link => link.getClientRects().length > 0)
+      .map(link => link.getAttribute('href'))
+      .filter(href => /^\/engines\/[^/?#]+-[^/?#]+$/.test(href ?? '')))])
+  assert.ok(narrowedLinks.length > 0, 'Narrowed search must render engine records')
+  assert.ok(narrowedLinks.every(href => href.startsWith('/engines/cummins-')),
+    `Narrowed search included a non-Cummins engine: ${narrowedLinks.join(', ')}`)
 
   await open('/engines/origin-engines-3-6l-turbo')
   await assert.doesNotReject(
