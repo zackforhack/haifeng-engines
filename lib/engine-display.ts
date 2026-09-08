@@ -1,4 +1,5 @@
 import type { Engine } from './types'
+import { primeDutyLabel } from './engine-rating-reference'
 
 // Shared, pure display helpers used by the engine detail page, its generated OG image,
 // and its metadata — so the headline figures stay identical across all three.
@@ -69,7 +70,7 @@ export interface HeadlinePower {
   kwe?: number
   kw?: number
   hz: 50 | 60
-  rating: 'Standby' | 'Prime'
+  rating: 'Standby' | 'Prime' | 'Continuous'
 }
 
 // The single most marketable rating, preferring 50Hz standby, then 50Hz prime, then 60Hz.
@@ -85,7 +86,7 @@ export function headlinePower(e: Engine): HeadlinePower | null {
     const kva = f[`${p}_power_kva_${hz}hz`]
     const kwe = f[`${p}_power_kwe_${hz}hz`]
     const kw = f[`${p}_power_kw_${hz}hz`]
-    if (kva || kwe || kw) return { kva, kwe, kw, hz, rating }
+    if (kva || kwe || kw) return { kva, kwe, kw, hz, rating: p === 'prime' ? primeDutyLabel(e) : rating }
   }
   if (e.power_kw) return { kw: e.power_kw, hz: 50, rating: 'Standby' }
   return null

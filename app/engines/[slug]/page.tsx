@@ -13,6 +13,7 @@ import { TrackedExternalLink } from '@/components/TrackedExternalLink'
 import { headlinePower, displayKva, displayKwe, displayOutput, ratedSpeedLabel, ratedSpeeds, buildIntro, compactConfig, ratedFrequencies, isVariableSpeedMechanical } from '@/lib/engine-display'
 import { competitorsFor, pairSlug } from '@/lib/compare'
 import { buildEngineFaqs } from '@/lib/engine-faq'
+import { primeDutyLabel, HSK78G_REFERENCE } from '@/lib/engine-rating-reference'
 import { brandSlug } from '@/lib/seo'
 import { quickWinEngineSeo, type QuickWinPageSeo } from '@/lib/quick-win-seo'
 import { engineMetadataDescription, engineMetadataTitle, engineRepairMetadata } from '@/lib/metadata-lengths'
@@ -196,7 +197,7 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
                 <tbody>
                   {(engine.prime_power_kw_50hz || engine.prime_power_kwe_50hz || engine.prime_power_kva_50hz) && (
                     <tr className="border-t border-gray-100">
-                      <td className="py-2 px-3 text-gray-600 font-medium">Prime Power</td>
+                      <td className="py-2 px-3 text-gray-600 font-medium">{primeDutyLabel(engine)} Power</td>
                       <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.prime_power_kw_50hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kwe_50hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kva_50hz ?? '—'}</td>
@@ -235,7 +236,7 @@ function PowerRatingsTable({ engine }: { engine: Engine }) {
                 <tbody>
                   {(engine.prime_power_kw_60hz || engine.prime_power_kwe_60hz || engine.prime_power_kva_60hz) && (
                     <tr className="border-t border-gray-100">
-                      <td className="py-2 px-3 text-gray-600 font-medium">Prime Power</td>
+                      <td className="py-2 px-3 text-gray-600 font-medium">{primeDutyLabel(engine)} Power</td>
                       <td className="py-2 px-3 text-right font-semibold text-gray-900">{engine.prime_power_kw_60hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kwe_60hz ?? '—'}</td>
                       <td className="py-2 px-3 text-right text-gray-700">{engine.prime_power_kva_60hz ?? '—'}</td>
@@ -400,7 +401,7 @@ function SpecHero({ engine }: { engine: Engine }) {
   const cards: { label: string; value: string }[] = []
   if (kva) cards.push({ label: `${hp?.rating ?? 'Standby'} Power · ${hp?.hz ?? 50} Hz`, value: `${kva.toLocaleString()} kVA` })
   if (out) cards.push({
-    label: variableSpeed ? 'Maximum Mechanical Power' : 'Electrical Output',
+    label: variableSpeed ? 'Maximum Mechanical Power' : out?.unit === 'kW' ? 'Mechanical Output' : 'Electrical Output',
     value: `${out.value.toLocaleString()} ${out.unit}`,
   })
   if (engine.configuration || engine.cylinders) cards.push({ label: 'Cylinders', value: compactConfig(engine) ?? String(engine.cylinders) })
@@ -745,14 +746,14 @@ export default async function EngineDetailPage({ params }: Props) {
     if (value !== undefined && value !== null && value !== '') props.push({ '@type': 'PropertyValue', name, value: String(value) })
   }
   if (kva) addProp(`${hp?.rating ?? 'Standby'} Power (${hp?.hz ?? 50} Hz)`, `${kva} kVA`)
-  if (out) addProp(variableSpeed ? 'Maximum Mechanical Power' : 'Electrical Output', `${out.value} ${out.unit}`)
+  if (out) addProp(variableSpeed ? 'Maximum Mechanical Power' : out.unit === 'kW' ? 'Mechanical Output' : 'Electrical Output', `${out.value} ${out.unit}`)
   addProp('Configuration', engine.configuration)
   addProp('Cylinders', engine.cylinders)
   addProp('Displacement', engine.displacement_l ? `${engine.displacement_l} L` : undefined)
   addProp('Rated Speed', ratedSpeedLabel(engine))
   addProp('Cooling', engine.cooling_method)
   addProp('Fuel Type', engine.fuel_type)
-  addProp('Emissions Standard', engine.emissions_standard)
+  addProp('Emissions Standard', slug === 'cummins-hsk78g' ? 'Confirm exact configuration and manufacturer documentation' : engine.emissions_standard)
   addProp('Dry Weight', engine.weight_kg ? `${engine.weight_kg} kg` : undefined)
   addProp('Country of Origin', engine.origin)
   addProp('Compression Ratio', engine.compression_ratio)
@@ -763,9 +764,9 @@ export default async function EngineDetailPage({ params }: Props) {
   addProp('Year Introduced', engine.year_introduced)
   // Full power matrix (so the structured data mirrors the on-page ratings table)
   addProp('Standby Power (50 Hz)', engine.standby_power_kwe_50hz ? `${engine.standby_power_kwe_50hz} kWe` : undefined)
-  addProp('Prime Power (50 Hz)',   engine.prime_power_kwe_50hz   ? `${engine.prime_power_kwe_50hz} kWe`   : undefined)
+  addProp(`${primeDutyLabel(engine)} Power (50 Hz)`, engine.prime_power_kwe_50hz ? `${engine.prime_power_kwe_50hz} kWe` : undefined)
   addProp('Standby Power (60 Hz)', engine.standby_power_kwe_60hz ? `${engine.standby_power_kwe_60hz} kWe` : undefined)
-  addProp('Prime Power (60 Hz)',   engine.prime_power_kwe_60hz   ? `${engine.prime_power_kwe_60hz} kWe`   : undefined)
+  addProp(`${primeDutyLabel(engine)} Power (60 Hz)`, engine.prime_power_kwe_60hz ? `${engine.prime_power_kwe_60hz} kWe` : undefined)
 
   const productSchema = {
     '@context': 'https://schema.org',
@@ -878,6 +879,14 @@ export default async function EngineDetailPage({ params }: Props) {
         <SpecHero engine={engine} />
 
         <PowerRatingsTable engine={engine} />
+        {slug === 'cummins-hsk78g' && (
+          <section className="border-b border-gray-200 px-4 py-6" aria-labelledby="rating-source">
+            <h2 id="rating-source" className="text-xl font-bold">Rating scope and manufacturer source</h2>
+            <p className="mt-3 text-gray-700">{HSK78G_REFERENCE.summary}</p>
+            <p className="mt-3 text-gray-700">{HSK78G_REFERENCE.frequency}</p>
+            <p className="mt-3 text-sm"><a className="underline" href={HSK78G_REFERENCE.url}>{HSK78G_REFERENCE.document}</a> · Source checked {HSK78G_REFERENCE.reviewed}</p>
+          </section>
+        )}
 
         <WhatsAppLeadCta engine={engine} whatsappUrls={whatsappUrls} />
 
@@ -932,7 +941,7 @@ export default async function EngineDetailPage({ params }: Props) {
                   <SpecRow label="Fuel Type" value={engine.fuel_type} />
                   <SpecRow label="Ignition Type" value={engine.ignition_type} />
                   <SpecRow label="Cooling Method" value={engine.cooling_method} />
-                  <SpecRow label="Emissions Standard" value={engine.emissions_standard} />
+                  <SpecRow label="Emissions Standard" value={slug === 'cummins-hsk78g' ? 'Confirm exact configuration and manufacturer documentation' : engine.emissions_standard} />
                   <SpecRow label="Certifications" value={engine.certifications?.join(', ')} />
                   <SpecRow label="Country of Origin" value={engine.origin} />
                   <SpecRow label="Year Introduced" value={engine.year_introduced} />
