@@ -6,6 +6,8 @@ import { getAllBrands, getEnginesByBrand } from '@/lib/engines'
 import { OverhaulModelLinks } from '@/components/OverhaulModelLinks'
 import { EngineCard } from '@/components/EngineCard'
 import { BrandLogo } from '@/components/BrandLogo'
+import { BrandVideo } from '@/components/BrandVideo'
+import { brandVideo } from '@/lib/brand-videos'
 import { HubContent } from '@/components/HubContent'
 import { buildHubOverview, computeHubStats, engineKwe, hubItemListElements } from '@/lib/hub-stats'
 import { brandSlug, limitedEngines, resolveBrandSlug, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
@@ -315,6 +317,7 @@ export default async function BrandPage({ params }: Props) {
   const subject = `${name} generator engines`
   const stats = computeHubStats(engines)
   const profile = brandHubProfile(canonicalSlug)
+  const video = brandVideo(canonicalSlug)
   const overview = profile?.overview ?? buildHubOverview(subject, stats)
   const searchPhrases = brandSearchPhrases(name, stats, profile)
   const structuredData = [
@@ -358,6 +361,8 @@ export default async function BrandPage({ params }: Props) {
       <h1 className="brand-section-title mb-1 font-bold text-gray-900">{profile?.h1 ?? `${engines[0].brand} Generator Engines`}</h1>
       <p className="text-gray-500 mb-4">{engines.length} engines in the database</p>
       <p className="text-gray-600 leading-relaxed max-w-3xl mb-8">{overview}</p>
+
+      {video && <BrandVideo brand={name} video={video} />}
 
       <OverhaulModelLinks brand={name} />
 

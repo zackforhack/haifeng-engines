@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { getBrandCounts } from '@/lib/engines'
 import { BrandLogo } from '@/components/BrandLogo'
 import { brandSlug } from '@/lib/seo'
+import { brandVideo } from '@/lib/brand-videos'
 
 export const metadata: Metadata = {
   title: 'Generator Engine Brands',
@@ -33,6 +34,9 @@ export default async function BrandsPage() {
             <p className="text-sm text-gray-500">
               {total} engine{total !== 1 ? 's' : ''} &middot; {active} in production
             </p>
+            {brandVideo(brandSlug(brand)) && (
+              <p className="mt-3 text-xs font-semibold text-blue-600">Brand story video available →</p>
+            )}
           </Link>
         ))}
       </div>
