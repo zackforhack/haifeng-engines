@@ -8,7 +8,6 @@ import { hubItemListElements } from '@/lib/hub-stats'
 import { limitedEngines, ENGINE_HUB_DISPLAY_LIMIT } from '@/lib/seo'
 
 const BASE = 'https://engines.haifengmachinery.com'
-const GAS_HUB_DISPLAY_LIMIT = 240
 
 const FUELS = {
   diesel: {
@@ -72,8 +71,9 @@ export default async function EngineFuelPage({ params }: Props) {
 
   const engines = await filterEngines({ fuel: fuel as FuelKey })
   if (!engines.length) notFound()
-  const displayLimit = fuel === 'gas' ? GAS_HUB_DISPLAY_LIMIT : ENGINE_HUB_DISPLAY_LIMIT
-  const displayedEngines = limitedEngines(engines, displayLimit)
+  // Keep the complete gas range: an alphabetical cap hides entire brands,
+  // including MWM, even though they are included in the page's model counts.
+  const displayedEngines = fuel === 'gas' ? engines : limitedEngines(engines)
   const gasFamilies = fuel === 'gas' ? gasFamilyCounts(engines) : []
 
   const brands = new Set(engines.map((e) => e.brand)).size
@@ -120,7 +120,7 @@ export default async function EngineFuelPage({ params }: Props) {
         <EngineTable engines={displayedEngines} />
         {engines.length > displayedEngines.length && (
           <p className="text-xs text-gray-400 mt-3">
-            Showing the first {displayLimit.toLocaleString()} of {engines.length.toLocaleString()} models on this fuel page. Use the filters on the main engine database for the full set.
+            Showing the first {ENGINE_HUB_DISPLAY_LIMIT.toLocaleString()} of {engines.length.toLocaleString()} models on this fuel page. Use the filters on the main engine database for the full set.
           </p>
         )}
         <div className="mt-8 text-sm">
