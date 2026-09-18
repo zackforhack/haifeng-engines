@@ -16,6 +16,7 @@ const TITLES = {
   'Arrow': null,
   'Ashok Leyland': null,          // P154 is a grille-emblem photo; no clean free logo on Commons
   'Baudouin': 'Moteurs Baudouin',
+  'BEINEI': null,             // brochure-matched logo, served via LOCAL_LOGOS
   'Bergen': null,             // official navy SVG from bergenengines.com, served via LOCAL_LOGOS
   'Caterpillar': 'Caterpillar Inc.',
   'Cummins': 'Cummins',
@@ -112,6 +113,7 @@ const LOCAL_LOGOS = {
   'Arrow': 'arrow.png',
   'Ashok Leyland': 'ashok-leyland.png',
   'Baudouin': 'baudouin.png',
+  'BEINEI': 'beinei.jpg',      // dwfdj.cn; matched to the supplied BEINEI brochure
   'Bergen': 'bergen.svg',       // official navy "Bergen Engines" wordmark (red accent)
   'Daedong': 'daedong.svg',
   'Daihatsu': 'daihatsu.png',   // user-provided red-on-white (P154 was a white-only variant)
