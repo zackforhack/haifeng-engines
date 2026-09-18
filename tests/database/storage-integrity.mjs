@@ -11,7 +11,7 @@ const supabase = createPublicCatalogClient()
 const enginePdfs = await fetchAll(
   supabase,
   'engine_pdfs',
-  'storage_path,file_size_bytes',
+  'storage_path,file_size_bytes,type',
 )
 const linkedPaths = [...new Set(enginePdfs.map((row) => row.storage_path).filter(Boolean))]
 // Match getPDFUrl: absolute HTTP(S) links are source references, not bucket keys.
@@ -21,6 +21,10 @@ for (const reference of externalReferences) {
   assert.doesNotThrow(() => new URL(reference), `Malformed external reference: ${reference}`)
 }
 const paths = linkedPaths.filter((path) => !/^https?:\/\//i.test(path))
+// Source tables may be original PNG attachments, explicitly classified as "other".
+// PDF/manual/brochure links must still pass the existing PDF MIME check.
+const pngSourcePaths = new Set(paths.filter((path) => /\.png$/i.test(path)
+  && enginePdfs.filter((row) => row.storage_path === path).every((row) => row.type === 'other')))
 assert.ok(paths.length > 0, 'No stored PDF objects found; refusing an empty storage audit')
 console.log(`${externalReferences.length} external references excluded from bucket checks; availability not tested.`)
 const concurrency = Math.max(
@@ -56,8 +60,11 @@ async function inspectObject(path) {
       if (response.ok) {
         const contentType = response.headers.get('content-type') ?? ''
         const contentLength = response.headers.get('content-length')
+        const allowedTypes = pngSourcePaths.has(path)
+          ? ['image/png']
+          : ['application/pdf', 'application/octet-stream']
         const invalidType = contentType
-          && !/(application\/pdf|application\/octet-stream)/i.test(contentType)
+          && !allowedTypes.includes(contentType.split(';')[0].trim().toLowerCase())
         if (invalidType) {
           return `${path}: unexpected content-type ${contentType}`
         }
@@ -109,6 +116,6 @@ if (failures.length) {
 }
 
 console.log(
-  `Storage integrity passed: ${paths.length} unique linked PDF objects `
+  `Storage integrity passed: ${paths.length} unique linked document objects `
     + `across ${enginePdfs.length} engine document links.`,
 )
