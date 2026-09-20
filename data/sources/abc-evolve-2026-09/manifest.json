@@ -1,0 +1,41 @@
+{
+  "retrieved": "2026-09-20",
+  "sources": [
+    {
+      "key": "4el23",
+      "url": "https://www.abc-engines.com/en/markets/marine-propulsion/product/4el23",
+      "path": "data/sources/abc-evolve-2026-09/4el23.txt",
+      "sha256": "d74b2aa26c7a374d7b5c2631435124d41be413ff1a4d8d9ba97078a191d635d4"
+    },
+    {
+      "key": "6el23",
+      "url": "https://www.abc-engines.com/en/markets/marine-propulsion/product/6el23",
+      "path": "data/sources/abc-evolve-2026-09/6el23.txt",
+      "sha256": "d88e01a3ea3108e1cfd8af31e3dff5f8ee8de239c007136c5ab1f5a5a8a3c8a4"
+    },
+    {
+      "key": "8el23",
+      "url": "https://www.abc-engines.com/en/markets/marine-propulsion/product/8el23",
+      "path": "data/sources/abc-evolve-2026-09/8el23.txt",
+      "sha256": "9dc9a3412a9ebfa2166c288f58471a8288fd99ec0489418d40c3d9bab560d158"
+    },
+    {
+      "key": "20ev23",
+      "url": "https://www.abc-engines.com/en/markets/marine-propulsion/product/20ev23",
+      "path": "data/sources/abc-evolve-2026-09/20ev23.txt",
+      "sha256": "a8a1c7343bf9b1ad577f6f972a069839e15834ab7c02368e01f756e667dd5fbb"
+    },
+    {
+      "key": "12ev23-launch",
+      "url": "https://www.abc-engines.com/en/news/abc-introduces-the-evolve-12ev23",
+      "path": "data/sources/abc-evolve-2026-09/12ev23-launch.txt",
+      "sha256": "b2bd0c2b9040d0343601d668db56e331e9def87c4049159aafb4a9b20015ebbe"
+    },
+    {
+      "key": "16ev23-launch",
+      "url": "https://www.abc-engines.com/en/news/abc-completes-the-evolve-v-engine-range-with-the-launch-of-the-16ev23",
+      "path": "data/sources/abc-evolve-2026-09/16ev23-launch.txt",
+      "sha256": "67aac53905697acf6b76808210c0a71cbe298cfeb21bc909e9a7a847885d741d"
+    }
+  ]
+}
