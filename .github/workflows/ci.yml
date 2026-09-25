@@ -47,6 +47,9 @@ jobs:
             echo "::notice::Supabase Actions secrets are not configured; skipping Next.js production build in GitHub Actions. Vercel still performs the deployment build."
           fi
 
+      - name: Catalog input, pagination, and firewall contracts
+        run: npm run test:catalog
+
       - name: Type check
         run: npx tsc --noEmit
 

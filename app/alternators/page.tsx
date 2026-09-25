@@ -1,3 +1,5 @@
+import { redirect } from 'next/navigation'
+import { catalogParamsHref, catalogParamsChanged, catalogPage, normalizeCatalogParams, type CatalogSearchParams } from '@/lib/catalog-params'
 import { CatalogWhatsAppHelp } from '@/components/CatalogWhatsAppHelp'
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
@@ -9,7 +11,7 @@ import {
   Grid2X2,
   List,
 } from 'lucide-react'
-import { filterAlternators, getAlternatorFilterOptions } from '@/lib/alternators'
+import { searchAlternatorsPage, getFeaturedAlternators, getAlternatorFilterOptions } from '@/lib/alternators'
 import { SearchBar } from '@/components/SearchBar'
 import { AlternatorFilters } from '@/components/AlternatorFilters'
 import type { Alternator } from '@/lib/types'
@@ -29,21 +31,11 @@ const KVA_RANGES = [
 const PRIORITY_ALTERNATOR_SPECS = PRIORITY_MODEL_SPECS.filter((spec) => spec.type === 'alternator')
 
 interface Props {
-  searchParams: Promise<{
-    q?: string
-    brand?: string
-    series?: string
-    poles?: string
-    min_kva?: string
-    max_kva?: string
-    sort?: string
-    page?: string
-    view?: string
-  }>
+  searchParams: Promise<CatalogSearchParams>
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
-  const p = await searchParams
+  const p = normalizeCatalogParams(await searchParams, 'alternators')
   return {
     title: 'Browse Alternators',
     description: 'Browse generator alternator models by brand, series, kVA output and pole count, with links to official manufacturer data sheets.',
@@ -53,25 +45,18 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
 }
 
 export default async function AlternatorsPage({ searchParams }: Props) {
-  const p = await searchParams
+  const raw = await searchParams
+  const p = normalizeCatalogParams(raw, 'alternators')
+  if (catalogParamsChanged(raw, p)) redirect(catalogParamsHref('/alternators', p))
 
   const hasFilters = !!(p.q || p.brand || p.series || p.poles || p.min_kva || p.max_kva)
 
   // ── Landing view ──────────────────────────────────────────────────────────
   if (!hasFilters) {
-    const [options, stamfordAlternators] = await Promise.all([
+    const [options, featuredAlternators] = await Promise.all([
       getAlternatorFilterOptions(),
-      filterAlternators({ brand: 'Stamford' }),
+      getFeaturedAlternators(),
     ])
-    const landmarkAlternator = stamfordAlternators.find(
-      (alternator) => alternator.slug === 'stamford-uci224g'
-    )
-    const featuredAlternators = [
-      ...(landmarkAlternator ? [landmarkAlternator] : []),
-      ...stamfordAlternators
-        .filter((alternator) => alternator.slug !== landmarkAlternator?.slug)
-        .slice(0, 5),
-    ]
 
     function presetHref(params: Record<string, string>) {
       return `/alternators?${new URLSearchParams(params).toString()}`
@@ -273,10 +258,10 @@ export default async function AlternatorsPage({ searchParams }: Props) {
 
   // ── Results view ──────────────────────────────────────────────────────────
   const isTable = p.view !== 'grid'
-  const currentPage = Math.max(1, Number(p.page) || 1)
+  const currentPage = catalogPage(p.page)
 
-  const [allAlternators, options] = await Promise.all([
-    filterAlternators({
+  const [result, options] = await Promise.all([
+    searchAlternatorsPage({
       q:       p.q,
       brand:   p.brand,
       series:  p.series,
@@ -284,14 +269,15 @@ export default async function AlternatorsPage({ searchParams }: Props) {
       min_kva: p.min_kva ? Number(p.min_kva) : undefined,
       max_kva: p.max_kva ? Number(p.max_kva) : undefined,
       sort:    p.sort,
-    }),
+    }, { page: currentPage, pageSize: PAGE_SIZE }),
     getAlternatorFilterOptions(),
   ])
 
-  const total = allAlternators.length
-  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE))
-  const safePage = Math.min(currentPage, totalPages)
-  const pageItems = allAlternators.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE)
+  const total = result.total
+  const totalPages = result.totalPages
+  const safePage = result.page
+  if (safePage !== currentPage) redirect(catalogParamsHref('/alternators', { ...p, page: safePage > 1 ? String(safePage) : undefined }))
+  const pageItems = result.alternators
 
   function href(extra: Record<string, string>) {
     const sp = new URLSearchParams({
@@ -302,6 +288,7 @@ export default async function AlternatorsPage({ searchParams }: Props) {
       ...(p.min_kva ? { min_kva: p.min_kva } : {}),
       ...(p.max_kva ? { max_kva: p.max_kva } : {}),
       ...(p.sort    ? { sort: p.sort }       : {}),
+      ...(p.view    ? { view: p.view }       : {}),
       ...extra,
     })
     return `/alternators?${sp.toString()}`

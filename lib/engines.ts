@@ -1,3 +1,4 @@
+import { catalogPage, catalogSearchPattern } from './catalog-params'
 import { cache } from 'react'
 import { supabase } from './supabase'
 import type { Engine } from './types'
@@ -267,9 +268,9 @@ async function runEnginePageQuery(
     .select(ENGINE_LIST_SELECT, { count: 'exact' })
 
   if (params.q) {
-    const term = escapeLike(params.q.trim())
+    const term = catalogSearchPattern(params.q.trim())
     query = query.or(
-      `brand.ilike.%${term}%,model.ilike.%${term}%,series.ilike.%${term}%`
+      `brand.ilike.${term},model.ilike.${term},series.ilike.${term}`
     )
   }
   if (params.brand)  query = query.eq('brand', params.brand)
@@ -334,7 +335,7 @@ async function runEnginePageQuery(
   }
 
   const from = (page - 1) * pageSize
-  const { data, error, count } = await query.range(from, from + pageSize - 1)
+  const { data, error, count } = await query.order('id').range(from, from + pageSize - 1)
   if (error) throw error
   return { data: (data ?? []) as unknown as Engine[], count: count ?? 0 }
 }
@@ -343,8 +344,8 @@ export async function searchEnginesPage(
   params: FilterParams,
   { page = 1, pageSize }: { page?: number; pageSize: number },
 ): Promise<EnginePageResult> {
-  const safePageSize = Math.max(1, Math.min(pageSize, 100))
-  const requestedPage = Math.max(1, Math.floor(page))
+  const safePageSize = Number.isSafeInteger(pageSize) && pageSize > 0 ? Math.min(pageSize, 100) : 24
+  let requestedPage = catalogPage(page, safePageSize)
 
   async function run(targetPage: number, useRepresentativePowerSort = true) {
     try {
@@ -361,7 +362,26 @@ export async function searchEnginesPage(
     }
   }
 
-  let { data, count } = await run(requestedPage)
+  let result: { data: Engine[]; count: number }
+  try {
+    result = await run(requestedPage)
+  } catch (error) {
+    if (requestedPage === 1 || (error as { code?: string }).code !== 'PGRST103') throw error
+    // Failed ranges have no usable count. Fetch page one with the same filters.
+    result = await run(1)
+    requestedPage = Math.max(1, Math.ceil(result.count / safePageSize))
+    if (requestedPage > 1) {
+      try {
+        result = await run(requestedPage)
+      } catch (retryError) {
+        if ((retryError as { code?: string }).code !== 'PGRST103') throw retryError
+        // Concurrent deletions: fall back once, never loop.
+        requestedPage = 1
+        result = await run(1)
+      }
+    }
+  }
+  let { data, count } = result
   const totalPages = Math.max(1, Math.ceil(count / safePageSize))
   const safePage = Math.min(requestedPage, totalPages)
 

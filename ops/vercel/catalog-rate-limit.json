@@ -1,0 +1,25 @@
+{
+  "name": "Catalog request rate",
+  "description": "Observe GET/HEAD bursts on the two catalog listings. Tune against real traffic before switching the follow-up action to 429.",
+  "active": true,
+  "conditionGroup": [
+    {
+      "conditions": [
+        { "type": "path", "op": "re", "value": "^/(engines|alternators)/?$" },
+        { "type": "method", "op": "inc", "value": ["GET", "HEAD"] }
+      ]
+    }
+  ],
+  "action": {
+    "mitigate": {
+      "action": "rate_limit",
+      "rateLimit": {
+        "algo": "fixed_window",
+        "window": 60,
+        "limit": 120,
+        "keys": ["ip"],
+        "action": "log"
+      }
+    }
+  }
+}

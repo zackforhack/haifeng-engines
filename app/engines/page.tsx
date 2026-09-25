@@ -1,3 +1,5 @@
+import { redirect } from 'next/navigation'
+import { catalogParamsHref, catalogParamsChanged, catalogPage, normalizeCatalogParams, type CatalogSearchParams } from '@/lib/catalog-params'
 import { CatalogWhatsAppHelp } from '@/components/CatalogWhatsAppHelp'
 import type { Metadata } from 'next'
 import { Suspense } from 'react'
@@ -18,24 +20,11 @@ import type { Engine } from '@/lib/types'
 export const dynamic = 'force-dynamic'
 
 interface Props {
-  searchParams: Promise<{
-    q?: string
-    brand?: string
-    origin?: string
-    emissions?: string
-    config?: string
-    fuel?: string
-    fuel_type?: string
-    hz?: string
-    status?: string
-    sort?: string
-    page?: string
-    view?: string
-  }>
+  searchParams: Promise<CatalogSearchParams>
 }
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
-  const p = await searchParams
+  const p = normalizeCatalogParams(await searchParams, 'engines')
   const { q, brand, emissions, fuel } = p
   // Filtered views share one canonical (/engines) so filter permutations don't
   // dilute as duplicate URLs; brand/model pages are indexed on their own paths.
@@ -56,7 +45,9 @@ export async function generateMetadata({ searchParams }: Props): Promise<Metadat
 }
 
 export default async function EnginesPage({ searchParams }: Props) {
-  const p = await searchParams
+  const raw = await searchParams
+  const p = normalizeCatalogParams(raw, 'engines')
+  if (catalogParamsChanged(raw, p)) redirect(catalogParamsHref('/engines', p))
 
   const hasFilters = !!(
     p.q || p.brand || p.origin || p.emissions || p.config || p.fuel || p.fuel_type ||
@@ -64,7 +55,7 @@ export default async function EnginesPage({ searchParams }: Props) {
   )
 
   const isGrid = p.view === 'grid'
-  const currentPage = Math.max(1, Number(p.page) || 1)
+  const currentPage = catalogPage(p.page)
 
   const requestedPageSize = isGrid ? ENGINE_GRID_PAGE_SIZE : ENGINE_TABLE_PAGE_SIZE
   const [result, options] = await Promise.all([
@@ -87,6 +78,7 @@ export default async function EnginesPage({ searchParams }: Props) {
   const pageSize = result.pageSize
   const totalPages = result.totalPages
   const safePage = result.page
+  if (safePage !== currentPage) redirect(catalogParamsHref('/engines', { ...p, page: safePage > 1 ? String(safePage) : undefined }))
   const engines = result.engines
   const resultLabel = `${total.toLocaleString()} matching engine${total !== 1 ? 's' : ''}`
 
